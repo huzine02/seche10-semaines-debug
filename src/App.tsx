@@ -1,12 +1,77 @@
-import './App.css';
+import React from 'react';
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { AuthProvider, useAuth } from './AuthContext';
+import { Layout } from './components/Layout';
+import { Landing } from './pages/Landing';
+import { Auth } from './pages/Auth';
+import { SetupDiet } from './pages/SetupDiet';
+import { Dashboard } from './pages/Dashboard';
+import { Journal } from './pages/Journal';
+import { Profile } from './pages/Profile';
+// import { Pricing } from './pages/Pricing'; // Commenté pour l'instant
+import { NotFound } from './pages/NotFound';
+import { LoadingScreen } from './components/LoadingScreen';
 
-function App() {
+const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { user, loading, userProfile } = useAuth();
+  const location = useLocation();
+  
+  if (loading) return <LoadingScreen message="Vérification du compte..." />;
+  
+  if (!user) return <Navigate to="/login" />;
+  
+  if (user && !userProfile?.onboardingComplete && location.pathname !== '/setup') {
+     return <Navigate to="/setup" />;
+  }
+  
+  return <>{children}</>;
+};
+
+export default function App() {
   return (
-    <>
-      <h1>App Reconstruite</h1>
-      <p>La base saine fonctionne. Nous allons maintenant réintégrer les fonctionnalités.</p>
-    </>
+    <AuthProvider>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Auth />} />
+          {/* <Route path="/pricing" element={<Pricing />} /> */}
+          <Route 
+            path="/setup" 
+            element={
+              <ProtectedRoute>
+                <SetupDiet />
+              </ProtectedRoute>
+            } 
+          />
+          <Route element={<Layout />}>
+            <Route 
+              path="/dashboard" 
+              element={
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              } 
+            />
+             <Route 
+              path="/journal" 
+              element={
+                <ProtectedRoute>
+                  <Journal />
+                </ProtectedRoute>
+              } 
+            />
+             <Route 
+              path="/profile" 
+              element={
+                <ProtectedRoute>
+                  <Profile />
+                </ProtectedRoute>
+              } 
+            />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </HashRouter>
+    </AuthProvider>
   );
 }
-
-export default App;
