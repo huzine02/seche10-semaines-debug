@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Les utilisateurs ne peuvent lire et écrire que leurs propres documents
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      // Autoriser l'accès en cascade aux sous-collections (journal, pesées, etc.)
+      match /{document=**} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+    
+    // Ajoutez ici des règles pour d'éventuelles collections publiques (ex: articles de blog)
+    // match /articles/{articleId} {
+    //   allow read: if true;
+    // }
+  }
+}
