@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
@@ -120,8 +119,6 @@ const TBlock: React.FC<{ dot: string; glow?: boolean; label: string; time: strin
 // ─── MAIN COMPONENT ─────────────────────────────────────
 export const Journal: React.FC = () => {
   const { user, userProfile } = useAuth();
-  const navigate = useNavigate();
-
   const [date, setDate] = useState(new Date());
   const [day, setDay] = useState<DayData>(JSON.parse(JSON.stringify(DEFAULT_DAY)));
   const [modal, setModal] = useState(false);

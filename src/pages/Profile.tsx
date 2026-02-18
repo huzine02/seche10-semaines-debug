@@ -363,8 +363,6 @@ export const Profile: React.FC = () => {
       await uploadString(storageRef, base64, 'data_url');
       const url = await getDownloadURL(storageRef);
       
-      console.log('Upload success, url:', url);
-
       // 3. Update Firestore
       await updateDoc(doc(db, 'users', user.uid), { [field]: url });
       

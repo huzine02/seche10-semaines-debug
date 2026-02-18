@@ -24,15 +24,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [loading, setLoading] = useState(true);
 
   const fetchProfile = async (uid: string) => {
-    console.log("[AuthContext] Fetching profile for:", uid);
     try {
       const docRef = doc(db, 'users', uid);
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
-        console.log("[AuthContext] Profile found");
         setUserProfile({ uid, ...(docSnap.data() as any) } as UserProfile);
       } else {
-        console.log("[AuthContext] Profile NOT found (New user?)");
         setUserProfile(null);
       }
     } catch (error) {
@@ -42,7 +39,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
-      console.log("[AuthContext] Auth state changed:", currentUser?.uid);
       setUser(currentUser);
       if (currentUser) {
         await fetchProfile(currentUser.uid);
@@ -57,7 +53,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const refreshProfile = async () => {
     if (user) {
-      console.log("[AuthContext] Refreshing profile...");
       await fetchProfile(user.uid);
     }
   };
