@@ -12,7 +12,7 @@ import { createInitialUserProfile } from '../utils/onboarding';
 import { useAuth } from '../AuthContext';
 
 export const Auth: React.FC = () => {
-  const { user } = useAuth();
+  const { user, userProfile } = useAuth();
   const [view, setView] = useState<'login' | 'register' | 'reset'>('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -22,13 +22,20 @@ export const Auth: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-
   const redirectTo = new URLSearchParams(location.search).get('redirect');
-  const afterLoginPath = redirectTo ? `/${redirectTo}` : '/dashboard';
+
+  // Smart redirect: if no subscription, go to pricing
+  const getAfterLoginPath = () => {
+    if (redirectTo) return `/${redirectTo}`;
+    if (userProfile && userProfile.subscriptionStatus !== 'active' && userProfile.subscriptionStatus !== 'trialing') {
+      return '/pricing';
+    }
+    return '/dashboard';
+  };
 
   useEffect(() => {
-    if (user) navigate(afterLoginPath);
-  }, [user, navigate, afterLoginPath]);
+    if (user) navigate(getAfterLoginPath());
+  }, [user, userProfile, navigate]);
 
   // (Pas de getRedirectResult - on utilise signInWithPopup)
 
@@ -57,7 +64,7 @@ export const Auth: React.FC = () => {
         setView('login');
       } else if (view === 'login') {
         await signInWithEmailAndPassword(auth, email, password);
-        navigate(afterLoginPath);
+        // Navigation handled by useEffect watching user state
       } else {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const profile = createInitialUserProfile(res.user, name);
@@ -84,7 +91,7 @@ export const Auth: React.FC = () => {
         await setDoc(doc(db, 'users', res.user.uid), profile);
         navigate(redirectTo === 'pricing' ? '/pricing' : '/setup');
       } else {
-        navigate(afterLoginPath);
+        // Existing user — navigation handled by useEffect
       }
     } catch (err: unknown) {
       handleAuthError(err);
