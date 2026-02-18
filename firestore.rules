@@ -2,19 +2,47 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Les utilisateurs ne peuvent lire et écrire que leurs propres documents
-    match /users/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
 
-      // Autoriser l'accès en cascade aux sous-collections (journal, pesées, etc.)
-      match /{document=**} {
+    // ─── USERS ───────────────────────────────────────────────────────────────
+    match /users/{userId} {
+
+      // Lecture : uniquement le propriétaire
+      allow read: if request.auth != null && request.auth.uid == userId;
+
+      // Création : uniquement le propriétaire, champs requis présents
+      allow create: if request.auth != null
+        && request.auth.uid == userId
+        && request.resource.data.keys().hasAll(['uid', 'email', 'createdAt', 'onboardingComplete'])
+        && request.resource.data.uid == userId;
+
+      // Mise à jour : uniquement le propriétaire
+      // Les champs Stripe (stripeCustomerId, subscriptionStatus, etc.) sont
+      // écrits par les Firebase Functions (admin SDK) qui bypassent ces règles.
+      allow update: if request.auth != null
+        && request.auth.uid == userId
+        // Interdire aux clients de se falsifier le statut d'abonnement
+        && !request.resource.data.diff(resource.data).affectedKeys()
+            .hasAny(['stripeCustomerId', 'stripeSubscriptionId', 'subscriptionStatus',
+                     'subscriptionStartedAt', 'subscriptionCancelledAt']);
+
+      // Suppression : interdit depuis le client
+      allow delete: if false;
+
+      // Sous-collections (journal quotidien, etc.)
+      match /journal/{dateKey} {
         allow read, write: if request.auth != null && request.auth.uid == userId;
+        allow delete: if false;
+      }
+
+      match /{subcollection}/{docId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+        allow delete: if false;
       }
     }
-    
-    // Ajoutez ici des règles pour d'éventuelles collections publiques (ex: articles de blog)
-    // match /articles/{articleId} {
-    //   allow read: if true;
-    // }
+
+    // ─── TOUT LE RESTE : REFUSÉ ───────────────────────────────────────────────
+    match /{document=**} {
+      allow read, write: if false;
+    }
   }
 }

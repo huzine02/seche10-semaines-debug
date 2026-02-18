@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { doc, getDoc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { SubscriptionBanner } from '../components/SubscriptionBanner';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
@@ -296,6 +297,9 @@ export const Dashboard: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {/* SUBSCRIPTION BANNER */}
+      <SubscriptionBanner />
 
       {/* TIMELINE */}
       <div className="tl-scroll" ref={timelineRef}>
