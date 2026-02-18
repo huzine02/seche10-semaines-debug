@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 export const Landing: React.FC = () => {
   const [visibleSections, setVisibleSections] = useState(new Set<string>());
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [spotsLeft, setSpotsLeft] = useState(14);
+  const [spotsLeft] = useState(14);
   const [timer, setTimer] = useState({ h: 2, m: 47, s: 33 });
+  const [activeScreen, setActiveScreen] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -16,13 +17,12 @@ export const Landing: React.FC = () => {
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.1 }
     );
     document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
-  // Countdown timer
   useEffect(() => {
     const interval = setInterval(() => {
       setTimer((prev) => {
@@ -34,6 +34,14 @@ export const Landing: React.FC = () => {
         return { h, m, s };
       });
     }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Auto-rotate app screens
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveScreen((prev) => (prev + 1) % 3);
+    }, 3500);
     return () => clearInterval(interval);
   }, []);
 
@@ -56,198 +64,276 @@ export const Landing: React.FC = () => {
     body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
     .font-serif { font-family: 'Instrument Serif', serif; }
 
-    .site-header { position: sticky; top: 0; z-index: 100; background: rgba(7,24,40,0.97); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 14px 24px; }
+    /* ═══ HEADER ═══ */
+    .site-header { position: sticky; top: 0; z-index: 100; background: rgba(7,24,40,0.97); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 16px; }
     .header-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-family: 'Instrument Serif', serif; font-size: 22px; color: #fff; text-decoration: none; letter-spacing: -0.02em; }
+    .logo { font-family: 'Instrument Serif', serif; font-size: 20px; color: #fff; text-decoration: none; letter-spacing: -0.02em; }
     .logo span { color: var(--sage); }
-    .btn-member { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.25); padding: 9px 22px; border-radius: 100px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.3s; cursor: pointer; }
+    .btn-member { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.25); padding: 8px 18px; border-radius: 100px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.3s; cursor: pointer; }
     .btn-member:hover { border-color: var(--sage); color: var(--sage); }
 
-    .hero { background: linear-gradient(160deg, var(--ink-deep) 0%, #0F2C59 50%, #0a3d52 100%); padding: 80px 24px 70px; text-align: center; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(0,184,148,0.15) 0%, transparent 70%); }
-    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,184,148,0.12); border: 1px solid rgba(0,184,148,0.35); color: var(--sage-glow); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 16px; border-radius: 100px; margin-bottom: 24px; }
-    .hero h1 { font-family: 'Instrument Serif', serif; font-size: clamp(32px, 6vw, 64px); color: #fff; line-height: 1.08; letter-spacing: -0.03em; max-width: 820px; margin: 0 auto 20px; }
+    /* ═══ URGENCY BAR ═══ */
+    .urgency-bar { background: linear-gradient(90deg, #DC2626 0%, #B91C1C 100%); padding: 8px 16px; text-align: center; }
+    .urgency-inner { max-width: 700px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .urgency-text { color: #fff; font-size: 12px; font-weight: 700; }
+    .urgency-timer { display: inline-flex; gap: 3px; align-items: center; color: #fff; font-size: 12px; font-weight: 700; }
+    .urgency-digit { background: rgba(0,0,0,0.3); color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 12px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+    /* ═══ HERO — MOBILE FIRST ═══ */
+    .hero { background: linear-gradient(160deg, var(--ink-deep) 0%, #0F2C59 50%, #0a3d52 100%); padding: 48px 20px 40px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,184,148,0.12) 0%, transparent 70%); }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0,184,148,0.12); border: 1px solid rgba(0,184,148,0.35); color: var(--sage-glow); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Instrument Serif', serif; font-size: 34px; color: #fff; line-height: 1.1; letter-spacing: -0.03em; margin: 0 auto 16px; }
     .hero h1 em { color: var(--sage-glow); font-style: italic; }
-    .hero-sub { font-size: clamp(15px, 2vw, 18px); color: rgba(255,255,255,0.7); line-height: 1.65; max-width: 560px; margin: 0 auto 32px; }
+    .hero-sub { font-size: 15px; color: rgba(255,255,255,0.7); line-height: 1.6; max-width: 500px; margin: 0 auto 24px; }
     .hero-sub strong { color: rgba(255,255,255,0.95); }
-    .hero-cta-group { display: flex; flex-direction: column; align-items: center; gap: 14px; }
-    .btn-primary { display: inline-block; background: var(--sage); color: #fff; padding: 17px 36px; border-radius: 100px; font-size: 16px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; transition: all 0.3s; box-shadow: var(--shadow-green); animation: pulse-btn 2.5s ease-in-out infinite; }
+    .hero-cta-group { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 32px; }
+    .btn-primary { display: inline-block; background: var(--sage); color: #fff; padding: 16px 28px; border-radius: 100px; font-size: 15px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; transition: all 0.3s; box-shadow: var(--shadow-green); animation: pulse-btn 2.5s ease-in-out infinite; text-align: center; line-height: 1.3; }
     .btn-primary:hover { background: var(--sage-light); transform: translateY(-3px); box-shadow: 0 16px 50px rgba(0,184,148,0.5); }
     @keyframes pulse-btn { 0%, 100% { box-shadow: 0 8px 40px rgba(0,184,148,0.35); } 50% { box-shadow: 0 8px 60px rgba(0,184,148,0.6); } }
-    .hero-guarantee { font-size: 13px; color: rgba(255,255,255,0.5); }
+    .hero-guarantee { font-size: 12px; color: rgba(255,255,255,0.5); }
     .hero-guarantee strong { color: rgba(255,255,255,0.75); }
 
-    /* URGENCY BAR */
-    .urgency-bar { background: linear-gradient(90deg, #DC2626 0%, #B91C1C 100%); padding: 10px 24px; text-align: center; }
-    .urgency-inner { max-width: 700px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
-    .urgency-text { color: #fff; font-size: 13px; font-weight: 700; }
-    .urgency-timer { display: inline-flex; gap: 4px; }
-    .urgency-digit { background: rgba(0,0,0,0.3); color: #fff; padding: 3px 7px; border-radius: 4px; font-size: 13px; font-weight: 800; font-variant-numeric: tabular-nums; }
+    /* ═══ PHONE MOCKUP ═══ */
+    .hero-phone-wrapper { margin-top: 8px; display: flex; justify-content: center; }
+    .phone-frame { width: 220px; height: 440px; background: #111; border-radius: 32px; padding: 8px; box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 0 2px rgba(255,255,255,0.1); position: relative; overflow: hidden; }
+    .phone-notch { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 80px; height: 22px; background: #111; border-radius: 0 0 14px 14px; z-index: 10; }
+    .phone-screen { width: 100%; height: 100%; border-radius: 24px; overflow: hidden; position: relative; background: #F8FAFC; }
+    .phone-screen-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.5s ease; }
+    .phone-screen-slide.active { opacity: 1; }
 
-    /* TRUST BAR */
-    .trust-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 20px 24px; }
-    .trust-inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
-    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: var(--text-mid); }
-    .trust-icon { font-size: 16px; }
+    /* Mini Dashboard inside phone */
+    .mini-dash { padding: 32px 12px 12px; background: linear-gradient(180deg, #0F2C59 0%, #0F2C59 90px, #F0F4F8 90px); height: 100%; }
+    .mini-dash-greeting { font-size: 11px; color: rgba(255,255,255,0.7); margin-bottom: 2px; }
+    .mini-dash-title { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+    .mini-dash-card { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .mini-dash-card-title { font-size: 8px; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+    .mini-progress-bar { height: 6px; background: #E2E8F0; border-radius: 100px; overflow: hidden; margin-bottom: 4px; }
+    .mini-progress-fill { height: 100%; background: linear-gradient(90deg, #00B894, #34D399); border-radius: 100px; transition: width 1s ease; }
+    .mini-stat-row { display: flex; gap: 6px; }
+    .mini-stat { flex: 1; background: #F0F4F8; border-radius: 8px; padding: 6px; text-align: center; }
+    .mini-stat-value { font-size: 13px; font-weight: 700; color: #0F2C59; }
+    .mini-stat-label { font-size: 7px; color: #94A3B8; }
+    .mini-phase { background: linear-gradient(135deg, #00B894, #059669); border-radius: 10px; padding: 8px 10px; display: flex; align-items: center; gap: 8px; }
+    .mini-phase-week { font-size: 18px; font-weight: 700; color: #fff; }
+    .mini-phase-text { font-size: 8px; color: rgba(255,255,255,0.8); line-height: 1.3; }
+    .mini-phase-name { font-size: 9px; font-weight: 700; color: #fff; }
 
-    .section { padding: 80px 24px; }
+    /* Mini Journal inside phone */
+    .mini-journal { padding: 32px 12px 12px; background: #F8FAFC; height: 100%; }
+    .mini-journal-header { font-size: 14px; font-weight: 700; color: #0F2C59; margin-bottom: 4px; text-align: center; }
+    .mini-journal-date { font-size: 9px; color: #94A3B8; text-align: center; margin-bottom: 10px; }
+    .mini-meal { background: #fff; border-radius: 10px; padding: 8px 10px; margin-bottom: 6px; border-left: 3px solid #00B894; }
+    .mini-meal-title { font-size: 9px; font-weight: 700; color: #0F2C59; margin-bottom: 2px; }
+    .mini-meal-items { font-size: 7px; color: #64748B; line-height: 1.5; }
+    .mini-meal-macros { display: flex; gap: 6px; margin-top: 4px; }
+    .mini-macro { font-size: 7px; font-weight: 600; padding: 2px 5px; border-radius: 4px; }
+    .mini-macro.p { background: #DBEAFE; color: #2563EB; }
+    .mini-macro.g { background: #FEF3C7; color: #D97706; }
+    .mini-macro.l { background: #FCE7F3; color: #DB2777; }
+    .mini-check { display: flex; align-items: center; gap: 4px; font-size: 8px; color: #059669; font-weight: 600; margin-top: 4px; }
+
+    /* Mini Repas/Setup inside phone */
+    .mini-setup { padding: 32px 12px 12px; background: #F8FAFC; height: 100%; }
+    .mini-setup-header { font-size: 13px; font-weight: 700; color: #0F2C59; margin-bottom: 8px; text-align: center; }
+    .mini-setup-sub { font-size: 8px; color: #94A3B8; text-align: center; margin-bottom: 10px; }
+    .mini-input-group { margin-bottom: 8px; }
+    .mini-label { font-size: 8px; font-weight: 600; color: #475569; margin-bottom: 3px; }
+    .mini-input { width: 100%; height: 24px; background: #fff; border: 1px solid #E2E8F0; border-radius: 6px; padding: 0 8px; font-size: 8px; color: #1E293B; display: flex; align-items: center; }
+    .mini-select-row { display: flex; gap: 4px; margin-bottom: 8px; }
+    .mini-select-btn { flex: 1; padding: 6px 4px; border-radius: 8px; text-align: center; font-size: 8px; font-weight: 600; border: 1px solid #E2E8F0; background: #fff; color: #475569; }
+    .mini-select-btn.active { background: #0F2C59; color: #fff; border-color: #0F2C59; }
+    .mini-result-card { background: linear-gradient(135deg, #0F2C59, #163A70); border-radius: 10px; padding: 10px; margin-top: 8px; }
+    .mini-result-title { font-size: 8px; color: rgba(255,255,255,0.7); margin-bottom: 4px; }
+    .mini-result-value { font-size: 20px; font-weight: 700; color: #34D399; }
+    .mini-result-unit { font-size: 8px; color: rgba(255,255,255,0.5); }
+
+    /* Screen labels under phone */
+    .screen-tabs { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
+    .screen-tab { padding: 4px 12px; border-radius: 100px; font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s; border: 1px solid transparent; }
+    .screen-tab.active { color: var(--sage-glow); border-color: rgba(0,184,148,0.4); background: rgba(0,184,148,0.1); }
+
+    /* ═══ TRUST BAR ═══ */
+    .trust-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 16px; overflow-x: auto; }
+    .trust-inner { display: flex; justify-content: center; gap: 16px; min-width: max-content; }
+    .trust-item { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: var(--text-mid); white-space: nowrap; }
+
+    /* ═══ SECTIONS ═══ */
+    .section { padding: 56px 20px; }
     .container { max-width: 1100px; margin: 0 auto; }
     .text-center { text-align: center; }
-    .section-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); margin-bottom: 14px; }
-    .section-title { font-family: 'Instrument Serif', serif; font-size: clamp(26px, 4vw, 42px); color: var(--ink); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 14px; }
-    .section-sub { font-size: 16px; color: var(--text-mid); line-height: 1.65; max-width: 540px; margin: 0 auto 44px; }
+    .section-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); margin-bottom: 12px; }
+    .section-title { font-family: 'Instrument Serif', serif; font-size: 26px; color: var(--ink); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .section-sub { font-size: 14px; color: var(--text-mid); line-height: 1.6; max-width: 500px; margin: 0 auto 36px; }
 
-    /* PAIN */
+    /* ═══ APP PREVIEW SECTION ═══ */
+    .app-preview { background: linear-gradient(160deg, var(--ink-deep) 0%, #0F2C59 100%); padding: 56px 20px; position: relative; overflow: hidden; }
+    .app-preview::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(0,184,148,0.1) 0%, transparent 70%); }
+    .app-preview .section-tag { color: var(--sage-glow); }
+    .app-preview .section-title { color: #fff; }
+    .app-preview .section-sub { color: rgba(255,255,255,0.6); }
+    .preview-phones { display: flex; justify-content: center; gap: 16px; margin-top: 32px; perspective: 1200px; position: relative; z-index: 1; }
+    .preview-phone { width: 180px; flex-shrink: 0; }
+    .preview-phone-frame { width: 100%; aspect-ratio: 9/19; background: #111; border-radius: 24px; padding: 6px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); overflow: hidden; position: relative; }
+    .preview-phone-frame .phone-screen { border-radius: 18px; }
+    .preview-label { text-align: center; margin-top: 10px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.7); }
+    .preview-label span { color: var(--sage-glow); }
+
+    .feature-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 24px; position: relative; z-index: 1; }
+    .feature-pill { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); padding: 8px 14px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+    .feature-pill .pill-icon { margin-right: 5px; }
+
+    /* ═══ PAIN ═══ */
     .pain-section { background: linear-gradient(160deg, #fff8f8 0%, #fff 100%); }
-    .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 44px; }
-    .pain-item { display: flex; align-items: flex-start; gap: 12px; background: #fff; border: 1px solid #fde8e8; border-radius: 14px; padding: 18px 20px; }
+    .pain-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 32px; }
+    .pain-item { display: flex; align-items: flex-start; gap: 12px; background: #fff; border: 1px solid #fde8e8; border-radius: 14px; padding: 16px; }
     .pain-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
-    .pain-text { font-size: 14px; color: var(--text-mid); line-height: 1.55; }
-    .pain-text strong { color: var(--text); display: block; margin-bottom: 2px; font-size: 14px; }
+    .pain-text { font-size: 13px; color: var(--text-mid); line-height: 1.5; }
+    .pain-text strong { color: var(--text); display: block; margin-bottom: 2px; font-size: 13px; }
 
-    /* STEPS */
-    .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; }
-    .step-card { background: linear-gradient(145deg, #fff 0%, var(--sage-muted) 100%); border: 1px solid rgba(0,184,148,0.2); border-radius: 20px; padding: 32px 24px; text-align: center; transition: all 0.4s; }
-    .step-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
-    .step-number { width: 48px; height: 48px; background: var(--sage); color: #fff; border-radius: 50%; font-family: 'Instrument Serif', serif; font-size: 22px; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; box-shadow: 0 4px 20px rgba(0,184,148,0.3); }
-    .step-icon { font-size: 30px; margin-bottom: 10px; }
-    .step-title { font-family: 'Instrument Serif', serif; font-size: 20px; color: var(--ink); margin-bottom: 10px; }
-    .step-desc { font-size: 14px; color: var(--text-mid); line-height: 1.6; }
+    /* ═══ STEPS ═══ */
+    .steps-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 32px; }
+    .step-card { background: linear-gradient(145deg, #fff 0%, var(--sage-muted) 100%); border: 1px solid rgba(0,184,148,0.2); border-radius: 16px; padding: 24px 20px; text-align: center; transition: all 0.4s; }
+    .step-number { width: 40px; height: 40px; background: var(--sage); color: #fff; border-radius: 50%; font-family: 'Instrument Serif', serif; font-size: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; box-shadow: 0 4px 20px rgba(0,184,148,0.3); }
+    .step-icon { font-size: 28px; margin-bottom: 8px; }
+    .step-title { font-family: 'Instrument Serif', serif; font-size: 18px; color: var(--ink); margin-bottom: 8px; }
+    .step-desc { font-size: 13px; color: var(--text-mid); line-height: 1.55; }
 
-    /* TESTIMONIALS */
+    /* ═══ TESTIMONIALS ═══ */
     .testimonials-section { background: var(--cream); }
-    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; }
-    .testi-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 28px 24px; transition: all 0.4s; }
-    .testi-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-    .testi-stars { font-size: 14px; margin-bottom: 12px; }
-    .testi-quote { font-size: 14px; color: var(--text-mid); line-height: 1.65; margin-bottom: 18px; font-style: italic; }
-    .testi-result { background: var(--sage-muted); border: 1px solid rgba(0,184,148,0.25); border-radius: 10px; padding: 8px 14px; font-size: 13px; font-weight: 700; color: var(--sage-light); margin-bottom: 16px; }
-    .testi-author { display: flex; align-items: center; gap: 12px; }
-    .testi-avatar { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 17px; color: #fff; flex-shrink: 0; }
-    .testi-name { font-size: 13px; font-weight: 700; color: var(--ink); }
-    .testi-role { font-size: 11px; color: var(--text-light); margin-top: 1px; }
+    .testi-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 32px; }
+    .testi-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; transition: all 0.4s; }
+    .testi-stars { font-size: 13px; margin-bottom: 10px; }
+    .testi-quote { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 14px; font-style: italic; }
+    .testi-result { background: var(--sage-muted); border: 1px solid rgba(0,184,148,0.25); border-radius: 8px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: var(--sage-light); margin-bottom: 14px; display: inline-block; }
+    .testi-author { display: flex; align-items: center; gap: 10px; }
+    .testi-avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 15px; color: #fff; flex-shrink: 0; }
+    .testi-name { font-size: 12px; font-weight: 700; color: var(--ink); }
+    .testi-role { font-size: 10px; color: var(--text-light); margin-top: 1px; }
 
-    /* VALUE COMPARE */
+    /* ═══ VALUE COMPARE ═══ */
     .value-section { background: #fff; }
-    .value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 700px; margin: 0 auto; }
-    .value-card { border-radius: 16px; padding: 28px 24px; text-align: center; }
+    .value-grid { display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 500px; margin: 0 auto; }
+    .value-card { border-radius: 16px; padding: 24px 20px; }
     .value-card.old { background: #FEF2F2; border: 1px solid #FECACA; }
     .value-card.new { background: var(--sage-muted); border: 2px solid var(--sage); }
-    .value-price { font-family: 'Instrument Serif', serif; font-size: 36px; margin: 12px 0 8px; }
+    .value-price { font-family: 'Instrument Serif', serif; font-size: 32px; margin: 10px 0 8px; }
     .value-price.crossed { text-decoration: line-through; color: #DC2626; opacity: 0.7; }
     .value-list { list-style: none; text-align: left; font-size: 13px; color: var(--text-mid); }
-    .value-list li { padding: 6px 0; display: flex; align-items: center; gap: 8px; }
+    .value-list li { padding: 5px 0; display: flex; align-items: center; gap: 8px; }
 
-    /* PRICING */
+    /* ═══ PRICING ═══ */
     .pricing-section { background: linear-gradient(160deg, var(--ink-deep) 0%, var(--ink) 100%); }
     .pricing-section .section-tag { color: var(--sage-glow); }
     .pricing-section .section-title { color: #fff; }
     .pricing-section .section-sub { color: rgba(255,255,255,0.65); }
-    .pricing-card { max-width: 500px; margin: 0 auto; background: #fff; border-radius: 24px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.4); }
-    .pricing-header { background: linear-gradient(135deg, var(--sage) 0%, var(--sage-light) 100%); padding: 28px 32px; text-align: center; }
-    .pricing-badge { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 12px; }
-    .pricing-name { font-family: 'Instrument Serif', serif; font-size: 22px; color: #fff; margin-bottom: 8px; }
-    .pricing-price { display: flex; align-items: baseline; gap: 10px; justify-content: center; }
-    .price-amount { font-family: 'Instrument Serif', serif; font-size: 58px; color: #fff; line-height: 1; }
-    .price-details { color: rgba(255,255,255,0.8); font-size: 14px; }
-    .price-old { text-decoration: line-through; opacity: 0.6; font-size: 18px; }
-    .pricing-body { padding: 32px; }
-    .pricing-list { list-style: none; margin-bottom: 24px; }
-    .pricing-list li { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text); }
+    .pricing-card { max-width: 440px; margin: 0 auto; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.4); }
+    .pricing-header { background: linear-gradient(135deg, var(--sage) 0%, var(--sage-light) 100%); padding: 24px; text-align: center; }
+    .pricing-badge { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; margin-bottom: 10px; }
+    .pricing-name { font-family: 'Instrument Serif', serif; font-size: 20px; color: #fff; margin-bottom: 8px; }
+    .pricing-price { display: flex; align-items: baseline; gap: 8px; justify-content: center; }
+    .price-amount { font-family: 'Instrument Serif', serif; font-size: 52px; color: #fff; line-height: 1; }
+    .price-details { color: rgba(255,255,255,0.8); font-size: 13px; }
+    .price-old { text-decoration: line-through; opacity: 0.6; font-size: 16px; }
+    .pricing-body { padding: 24px; }
+    .pricing-list { list-style: none; margin-bottom: 20px; }
+    .pricing-list li { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text); }
     .pricing-list li:last-child { border-bottom: none; }
-    .pricing-list li::before { content: '✓'; color: var(--sage); font-weight: 700; font-size: 15px; flex-shrink: 0; }
-    .btn-pricing { display: block; width: 100%; background: var(--sage); color: #fff; padding: 17px 32px; border-radius: 100px; font-size: 16px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; text-align: center; transition: all 0.3s; box-shadow: var(--shadow-green); animation: pulse-btn 2.5s ease-in-out infinite; }
+    .pricing-list li::before { content: '✓'; color: var(--sage); font-weight: 700; font-size: 14px; flex-shrink: 0; }
+    .btn-pricing { display: block; width: 100%; background: var(--sage); color: #fff; padding: 16px 24px; border-radius: 100px; font-size: 15px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; text-align: center; transition: all 0.3s; box-shadow: var(--shadow-green); animation: pulse-btn 2.5s ease-in-out infinite; }
     .btn-pricing:hover { background: var(--sage-light); transform: translateY(-2px); }
-    .pricing-secure { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 12px; font-size: 11px; color: var(--text-light); }
+    .pricing-secure { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 10px; font-size: 10px; color: var(--text-light); }
 
-    /* GUARANTEE */
+    /* ═══ GUARANTEE ═══ */
     .guarantee-section { background: var(--sage-muted); }
-    .guarantee-box { max-width: 680px; margin: 0 auto; background: #fff; border: 2px solid rgba(0,184,148,0.3); border-radius: 24px; padding: 44px 36px; text-align: center; box-shadow: 0 10px 60px rgba(0,184,148,0.1); }
-    .guarantee-icon { font-size: 50px; margin-bottom: 18px; }
-    .guarantee-title { font-family: 'Instrument Serif', serif; font-size: 28px; color: var(--ink); margin-bottom: 14px; }
-    .guarantee-text { font-size: 15px; color: var(--text-mid); line-height: 1.7; }
+    .guarantee-box { max-width: 600px; margin: 0 auto; background: #fff; border: 2px solid rgba(0,184,148,0.3); border-radius: 20px; padding: 36px 24px; text-align: center; box-shadow: 0 10px 60px rgba(0,184,148,0.1); }
+    .guarantee-icon { font-size: 44px; margin-bottom: 14px; }
+    .guarantee-title { font-family: 'Instrument Serif', serif; font-size: 24px; color: var(--ink); margin-bottom: 12px; }
+    .guarantee-text { font-size: 14px; color: var(--text-mid); line-height: 1.65; }
 
-    /* FAQ */
+    /* ═══ FAQ ═══ */
     .faq-section { background: var(--cream); }
-    .faq-container { max-width: 700px; margin: 0 auto; }
-    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 14px; margin-bottom: 10px; overflow: hidden; transition: box-shadow 0.3s; }
-    .faq-item:hover { box-shadow: var(--shadow); }
-    .faq-question { width: 100%; background: none; border: none; padding: 20px 22px; font-size: 15px; font-weight: 600; color: var(--ink); text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: 'DM Sans', sans-serif; gap: 14px; }
-    .faq-chevron { flex-shrink: 0; font-size: 16px; transition: transform 0.3s; }
+    .faq-container { max-width: 600px; margin: 0 auto; }
+    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+    .faq-question { width: 100%; background: none; border: none; padding: 16px 18px; font-size: 14px; font-weight: 600; color: var(--ink); text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: 'DM Sans', sans-serif; gap: 12px; }
+    .faq-chevron { flex-shrink: 0; font-size: 14px; transition: transform 0.3s; }
     .faq-chevron.open { transform: rotate(180deg); }
-    .faq-answer { padding: 0 22px 20px; font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+    .faq-answer { padding: 0 18px 16px; font-size: 13px; color: var(--text-mid); line-height: 1.65; }
 
-    /* FINAL CTA */
-    .final-cta { background: linear-gradient(160deg, var(--ink-deep), var(--ink)); padding: 70px 24px; text-align: center; }
-    .final-cta h2 { font-family: 'Instrument Serif', serif; font-size: clamp(24px, 4vw, 38px); color: #fff; margin-bottom: 14px; }
-    .final-cta p { color: rgba(255,255,255,0.6); font-size: 15px; margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+    /* ═══ FINAL CTA ═══ */
+    .final-cta { background: linear-gradient(160deg, var(--ink-deep), var(--ink)); padding: 56px 20px; text-align: center; }
+    .final-cta h2 { font-family: 'Instrument Serif', serif; font-size: 26px; color: #fff; margin-bottom: 12px; line-height: 1.2; }
+    .final-cta p { color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 24px; max-width: 440px; margin-left: auto; margin-right: auto; line-height: 1.6; }
 
-    .site-footer { background: var(--ink-deep); padding: 36px 24px; text-align: center; }
-    .footer-logo { font-family: 'Instrument Serif', serif; font-size: 20px; color: #fff; margin-bottom: 10px; }
+    .site-footer { background: var(--ink-deep); padding: 32px 20px; text-align: center; }
+    .footer-logo { font-family: 'Instrument Serif', serif; font-size: 18px; color: #fff; margin-bottom: 10px; }
     .footer-logo span { color: var(--sage); }
-    .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 12px; }
-    .footer-links a { font-size: 12px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
-    .footer-links a:hover { color: var(--sage); }
-    .footer-copy { font-size: 11px; color: rgba(255,255,255,0.25); }
+    .footer-links { display: flex; justify-content: center; gap: 16px; margin-bottom: 10px; flex-wrap: wrap; }
+    .footer-links a { font-size: 11px; color: rgba(255,255,255,0.4); text-decoration: none; }
+    .footer-copy { font-size: 10px; color: rgba(255,255,255,0.25); }
 
-    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: var(--ink-deep); border-top: 1px solid rgba(255,255,255,0.1); padding: 10px 20px; display: none; align-items: center; justify-content: space-between; z-index: 99; }
-    .sticky-cta-text { font-size: 12px; color: rgba(255,255,255,0.7); }
-    .sticky-cta-btn { background: var(--sage); color: #fff; padding: 10px 20px; border-radius: 100px; font-size: 13px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    /* ═══ STICKY MOBILE CTA ═══ */
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(7,24,40,0.97); backdrop-filter: blur(16px); border-top: 1px solid rgba(255,255,255,0.1); padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; z-index: 99; }
+    .sticky-cta-text { font-size: 12px; color: rgba(255,255,255,0.8); line-height: 1.3; }
+    .sticky-cta-text strong { color: var(--sage-glow); }
+    .sticky-cta-btn { background: var(--sage); color: #fff; padding: 10px 18px; border-radius: 100px; font-size: 13px; font-weight: 700; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
 
+    /* ═══ DESKTOP OVERRIDES ═══ */
+    @media (min-width: 769px) {
+      .site-header { padding: 14px 24px; }
+      .hero { padding: 80px 24px 60px; }
+      .hero h1 { font-size: 56px; }
+      .hero-sub { font-size: 17px; }
+      .btn-primary { padding: 18px 36px; font-size: 16px; }
+      .section { padding: 80px 24px; }
+      .section-title { font-size: 40px; }
+      .section-sub { font-size: 16px; }
+      .pain-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid { grid-template-columns: repeat(3, 1fr); }
+      .testi-grid { grid-template-columns: repeat(3, 1fr); }
+      .value-grid { grid-template-columns: 1fr 1fr; max-width: 700px; }
+      .sticky-cta { display: none; }
+      .preview-phones { gap: 24px; }
+      .preview-phone { width: 220px; }
+      .phone-frame { width: 260px; height: 520px; }
+      .hero-phone-wrapper .phone-frame { width: 260px; height: 520px; }
+    }
+
+    /* ═══ BOTTOM SAFE AREA (sticky CTA) ═══ */
     @media (max-width: 768px) {
-      .pain-grid { grid-template-columns: 1fr; }
-      .steps-grid { grid-template-columns: 1fr; }
-      .testi-grid { grid-template-columns: 1fr; }
-      .value-grid { grid-template-columns: 1fr; }
-      .sticky-cta { display: flex; }
-      .pricing-body { padding: 24px; }
-      .guarantee-box { padding: 32px 22px; }
+      .site-footer { padding-bottom: 80px; }
     }
   `;
 
-  // POINT 4 — COPY ÉMOTIONNEL (viscéral, pas informatif)
   const pains = [
-    { icon: '😤', title: 'Votre pantalon de l\'an dernier ne ferme plus', desc: 'Et chaque matin devant le miroir, c\'est le même constat. Le ventre prend, la confiance recule.' },
-    { icon: '🔄', title: 'Les régimes ? Toujours le même cycle', desc: '-3 kg, +5 kg. Restriction, craquage, culpabilité. Depuis des années, rien ne tient.' },
-    { icon: '⏰', title: 'Zéro temps pour des plans compliqués', desc: 'Entre le boulot, les enfants et les dîners clients — compter les calories est juste irréaliste.' },
-    { icon: '📉', title: 'Votre métabolisme vous a lâché', desc: 'Ce qui marchait à 25 ans ne marche plus. Manger "normalement" vous fait grossir.' },
-    { icon: '😓', title: 'Essoufflé en montant les escaliers', desc: 'L\'énergie d\'avant a disparu. Fatigue chronique, sommeil médiocre, motivation en berne.' },
-    { icon: '🏖️', title: 'Vous évitez les photos en maillot', desc: 'L\'été approche et l\'idée de retirer votre t-shirt vous stresse. Ça ne devrait pas être comme ça.' },
+    { icon: '😤', title: 'Le pantalon de l\'an dernier ne ferme plus', desc: 'Chaque matin devant le miroir, même constat. Le ventre prend, la confiance recule.' },
+    { icon: '🔄', title: 'Les régimes ? Toujours le même cycle', desc: '-3 kg, +5 kg. Restriction, craquage, culpabilité. Rien ne tient.' },
+    { icon: '⏰', title: 'Zéro temps pour des plans compliqués', desc: 'Boulot, enfants, dîners clients — compter les calories est irréaliste.' },
+    { icon: '📉', title: 'Votre métabolisme vous a lâché', desc: 'Ce qui marchait à 25 ans ne marche plus. Manger "normalement" fait grossir.' },
+    { icon: '😓', title: 'Essoufflé en montant les escaliers', desc: 'L\'énergie d\'avant a disparu. Fatigue, sommeil médiocre, motivation en berne.' },
+    { icon: '🏖️', title: 'Vous évitez les photos en maillot', desc: 'L\'été approche et l\'idée de retirer votre t-shirt vous stresse.' },
   ];
 
-  // POINT 10 — TÉMOIGNAGES HONNÊTES (beta-testeurs, pas de faux)
   const testimonials = [
-    {
-      name: 'Marc', age: 42, role: 'Beta-testeur · Cadre en entreprise',
-      result: 'A suivi le protocole 7 semaines',
-      quote: 'Pour la première fois, j\'ai un plan que je peux suivre sans y passer 2h par jour. Les repas sont prêts, je n\'ai qu\'à suivre. Simple et efficace.',
-      avatar: 'M', color: '#6366F1'
-    },
-    {
-      name: 'Julien', age: 38, role: 'Beta-testeur · Commercial terrain',
-      result: 'A terminé le programme complet',
-      quote: 'Le journal quotidien m\'a surpris. C\'est comme avoir un coach dans la poche. Les variantes de repas c\'est top quand tu manges à l\'extérieur.',
-      avatar: 'J', color: '#F59E0B'
-    },
-    {
-      name: 'Thomas', age: 51, role: 'Beta-testeur · Entrepreneur',
-      result: 'En cours — semaine 6',
-      quote: 'À 51 ans j\'étais sceptique. Mais le protocole adapté à mon âge et mon profil glycémique, c\'est du sérieux. Pas un énième régime à la mode.',
-      avatar: 'T', color: '#EC4899'
-    },
+    { name: 'Marc', age: 42, role: 'Beta-testeur · Cadre en entreprise', result: 'A suivi le protocole 7 semaines', quote: 'Pour la première fois, j\'ai un plan que je peux suivre sans y passer 2h par jour. Simple et efficace.', avatar: 'M', color: '#6366F1' },
+    { name: 'Julien', age: 38, role: 'Beta-testeur · Commercial terrain', result: 'A terminé le programme complet', quote: 'Le journal quotidien m\'a surpris. C\'est comme avoir un coach dans la poche.', avatar: 'J', color: '#F59E0B' },
+    { name: 'Thomas', age: 51, role: 'Beta-testeur · Entrepreneur', result: 'En cours — semaine 6', quote: 'À 51 ans j\'étais sceptique. Mais le protocole adapté à mon âge, c\'est du sérieux.', avatar: 'T', color: '#EC4899' },
   ];
 
   const faqs = [
-    { q: 'Est-ce que je dois compter mes calories ?', a: 'Non. Chaque repas est pré-calculé pour votre profil. Vous suivez le journal — c\'est tout. Pas de pesée obsessionnelle, pas de macros à calculer vous-même.' },
-    { q: 'Ça marche vraiment après 40 ans ?', a: 'Le programme est spécifiquement conçu pour le métabolisme qui ralentit avec l\'âge. On utilise les équations de Mifflin-St Jeor calibrées pour votre profil + cyclage calorique training/repos.' },
-    { q: 'Combien de temps ça prend par jour ?', a: '5 minutes. Vous ouvrez le journal, suivez les repas du jour, cochez les compléments. Le programme s\'occupe du reste.' },
-    { q: 'Je peux annuler quand je veux ?', a: 'Oui, en 1 clic depuis votre profil. Aucun engagement, aucun frais de résiliation. Et vous êtes couvert par la garantie 14 jours.' },
-    { q: 'Et si ça ne marche pas pour moi ?', a: 'Vous êtes couvert par notre garantie 14 jours. Si vous suivez le protocole et ne voyez rien bouger, on vous rembourse intégralement. Sans question, sans délai.' },
-    { q: 'C\'est quoi la différence avec un simple régime ?', a: 'Un régime vous dit quoi ne pas manger. Ce programme vous dit exactement quoi manger, quand, et combien — personnalisé à votre âge, poids, profil de santé et objectif. Avec un suivi quotidien et un ajustement semaine par semaine.' },
+    { q: 'Est-ce que je dois compter mes calories ?', a: 'Non. Chaque repas est pré-calculé pour votre profil. Pas de pesée obsessionnelle.' },
+    { q: 'Ça marche vraiment après 40 ans ?', a: 'Le programme est conçu pour le métabolisme qui ralentit avec l\'âge. Équations de Mifflin-St Jeor calibrées + cyclage calorique.' },
+    { q: 'Combien de temps ça prend par jour ?', a: '5 minutes. Ouvrez le journal, suivez les repas, cochez les compléments. C\'est tout.' },
+    { q: 'Je peux annuler quand je veux ?', a: 'Oui, en 1 clic depuis votre profil. Aucun engagement. Garantie 14 jours.' },
+    { q: 'Et si ça ne marche pas pour moi ?', a: 'Garantie 14 jours. Si vous suivez le protocole et ne voyez rien bouger, remboursement intégral.' },
+    { q: 'C\'est quoi la différence avec un régime ?', a: 'Un régime dit quoi ne pas manger. Ce programme dit quoi manger, quand, combien — personnalisé à votre profil avec suivi quotidien.' },
   ];
+
+  const screenNames = ['Dashboard', 'Journal', 'Mon Plan'];
 
   return (
     <>
@@ -261,10 +347,10 @@ export const Landing: React.FC = () => {
         </div>
       </header>
 
-      {/* POINT 2 — URGENCY BAR */}
+      {/* URGENCY BAR */}
       <div className="urgency-bar">
         <div className="urgency-inner">
-          <span className="urgency-text">🔥 Offre de lancement — Plus que {spotsLeft} places à ce prix</span>
+          <span className="urgency-text">🔥 Offre de lancement — Plus que {spotsLeft} places</span>
           <div className="urgency-timer">
             <span className="urgency-digit">{pad(timer.h)}</span>:
             <span className="urgency-digit">{pad(timer.m)}</span>:
@@ -273,44 +359,167 @@ export const Landing: React.FC = () => {
         </div>
       </div>
 
-      {/* POINT 1+4 — HERO ÉMOTIONNEL */}
+      {/* HERO */}
       <section className="hero">
-        <div className="hero-badge">Programme de coaching nutritionnel · Hommes 35-55 ans</div>
-        <h1 className="font-serif">
-          Le corps que vous aviez<br />
-          <em>à 30 ans.</em> En 10 semaines.
-        </h1>
-        <p className="hero-sub">
-          Rejoignez le programme de sèche conçu pour les <strong>hommes actifs</strong> qui veulent perdre leur gras tenace — avec un plan alimentaire <strong>personnalisé par algorithme</strong>, sans compter une seule calorie.
-        </p>
-        <div className="hero-cta-group">
-          <Link to="/pricing" className="btn-primary">
-            Démarrer mon programme personnalisé — 14j satisfait ou remboursé
-          </Link>
-          <span className="hero-guarantee">
-            🛡️ <strong>Garantie 14 jours</strong> · Sans engagement · Annulation en 1 clic
-          </span>
+        <div className="hero-content">
+          <div className="hero-badge">🎯 Programme coaching · Hommes 35-55 ans</div>
+          <h1 className="font-serif">
+            Retrouvez le corps<br />que vous aviez <em>à 30 ans.</em>
+          </h1>
+          <p className="hero-sub">
+            Un programme de sèche <strong>100% personnalisé</strong> par algorithme.
+            Vos repas sont prêts chaque jour. <strong>5 minutes par jour suffisent.</strong>
+          </p>
+          <div className="hero-cta-group">
+            <Link to="/pricing" className="btn-primary">
+              Démarrer ma transformation →
+            </Link>
+            <span className="hero-guarantee">
+              🛡️ <strong>Garantie 14 jours</strong> · Sans engagement · 49€/mois
+            </span>
+          </div>
+
+          {/* PHONE MOCKUP IN HERO */}
+          <div className="hero-phone-wrapper">
+            <div className="phone-frame">
+              <div className="phone-notch" />
+              <div className="phone-screen">
+                {/* Screen 1: Dashboard */}
+                <div className={`phone-screen-slide ${activeScreen === 0 ? 'active' : ''}`}>
+                  <div className="mini-dash">
+                    <div className="mini-dash-greeting">Bonjour Marc 👋</div>
+                    <div className="mini-dash-title">Semaine 4 / 10</div>
+                    <div className="mini-dash-card">
+                      <div className="mini-dash-card-title">Progression</div>
+                      <div className="mini-progress-bar">
+                        <div className="mini-progress-fill" style={{ width: '40%' }} />
+                      </div>
+                      <div style={{ fontSize: 7, color: '#94A3B8', textAlign: 'right' }}>4.2 kg perdus</div>
+                    </div>
+                    <div className="mini-dash-card">
+                      <div className="mini-stat-row">
+                        <div className="mini-stat">
+                          <div className="mini-stat-value">1 680</div>
+                          <div className="mini-stat-label">kcal/jour</div>
+                        </div>
+                        <div className="mini-stat">
+                          <div className="mini-stat-value">140g</div>
+                          <div className="mini-stat-label">protéines</div>
+                        </div>
+                        <div className="mini-stat">
+                          <div className="mini-stat-value">🔥 12</div>
+                          <div className="mini-stat-label">jours streak</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mini-phase">
+                      <div className="mini-phase-week">S4</div>
+                      <div>
+                        <div className="mini-phase-name">Sèche Viscérale</div>
+                        <div className="mini-phase-text">Accélération Déficit</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Screen 2: Journal */}
+                <div className={`phone-screen-slide ${activeScreen === 1 ? 'active' : ''}`}>
+                  <div className="mini-journal">
+                    <div className="mini-journal-header">📋 Journal du jour</div>
+                    <div className="mini-journal-date">Mardi 18 Février · Jour Training</div>
+                    <div className="mini-meal">
+                      <div className="mini-meal-title">🌅 Petit-déjeuner</div>
+                      <div className="mini-meal-items">Omelette 3 œufs · Flocons d'avoine 40g · Myrtilles</div>
+                      <div className="mini-meal-macros">
+                        <span className="mini-macro p">P 32g</span>
+                        <span className="mini-macro g">G 38g</span>
+                        <span className="mini-macro l">L 14g</span>
+                      </div>
+                      <div className="mini-check">✅ Complété</div>
+                    </div>
+                    <div className="mini-meal">
+                      <div className="mini-meal-title">☀️ Déjeuner</div>
+                      <div className="mini-meal-items">Poulet grillé 180g · Riz basmati · Brocolis</div>
+                      <div className="mini-meal-macros">
+                        <span className="mini-macro p">P 48g</span>
+                        <span className="mini-macro g">G 52g</span>
+                        <span className="mini-macro l">L 8g</span>
+                      </div>
+                    </div>
+                    <div className="mini-meal">
+                      <div className="mini-meal-title">🌙 Dîner</div>
+                      <div className="mini-meal-items">Saumon 150g · Patate douce · Salade verte</div>
+                      <div className="mini-meal-macros">
+                        <span className="mini-macro p">P 38g</span>
+                        <span className="mini-macro g">G 34g</span>
+                        <span className="mini-macro l">L 18g</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Screen 3: Setup/Plan */}
+                <div className={`phone-screen-slide ${activeScreen === 2 ? 'active' : ''}`}>
+                  <div className="mini-setup">
+                    <div className="mini-setup-header">🎯 Votre profil</div>
+                    <div className="mini-setup-sub">Personnalisation par algorithme</div>
+                    <div className="mini-input-group">
+                      <div className="mini-label">Âge</div>
+                      <div className="mini-input">42 ans</div>
+                    </div>
+                    <div className="mini-input-group">
+                      <div className="mini-label">Objectif</div>
+                      <div className="mini-select-row">
+                        <div className="mini-select-btn">Perte douce</div>
+                        <div className="mini-select-btn active">Sèche</div>
+                        <div className="mini-select-btn">Sèche intense</div>
+                      </div>
+                    </div>
+                    <div className="mini-input-group">
+                      <div className="mini-label">Niveau d'activité</div>
+                      <div className="mini-select-row">
+                        <div className="mini-select-btn">Sédentaire</div>
+                        <div className="mini-select-btn active">Actif</div>
+                        <div className="mini-select-btn">Très actif</div>
+                      </div>
+                    </div>
+                    <div className="mini-result-card">
+                      <div className="mini-result-title">Votre TDEE calculé</div>
+                      <div className="mini-result-value">2 180 <span className="mini-result-unit">kcal/jour</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="screen-tabs">
+            {screenNames.map((name, i) => (
+              <div key={i} className={`screen-tab ${activeScreen === i ? 'active' : ''}`} onClick={() => setActiveScreen(i)}>
+                {name}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* TRUST BAR (remplace les fausses stats — Point 10) */}
+      {/* TRUST BAR */}
       <div className="trust-bar">
         <div className="trust-inner">
-          <div className="trust-item"><span className="trust-icon">🔬</span>Basé sur la science (Mifflin-St Jeor, ADA 2024)</div>
-          <div className="trust-item"><span className="trust-icon">🔒</span>Paiement sécurisé Stripe</div>
-          <div className="trust-item"><span className="trust-icon">🛡️</span>Garantie 14 jours</div>
-          <div className="trust-item"><span className="trust-icon">📱</span>Accessible sur mobile</div>
+          <div className="trust-item"><span>🔬</span>Science (Mifflin-St Jeor)</div>
+          <div className="trust-item"><span>🔒</span>Paiement Stripe</div>
+          <div className="trust-item"><span>🛡️</span>Garantie 14j</div>
+          <div className="trust-item"><span>📱</span>100% mobile</div>
         </div>
       </div>
 
-      {/* POINT 4 — PAIN POINTS ÉMOTIONNELS */}
+      {/* PAIN POINTS */}
       <section id="pain" className="section pain-section">
+        <div className="container text-center">
+          <div className="section-tag">VOUS RECONNAISSEZ-VOUS ?</div>
+          <h2 className="section-title">Si vous lisez cette page,<br />c'est que vous savez.</h2>
+          <p className="section-sub">Ces frustrations, vous les vivez depuis des mois — peut-être des années.</p>
+        </div>
         <div className="container">
-          <div className="text-center">
-            <div className="section-tag">VOUS RECONNAISSEZ-VOUS ?</div>
-            <h2 className="section-title">Si vous lisez cette page,<br />c'est que vous savez.</h2>
-            <p className="section-sub">Ces frustrations, vous les vivez depuis des mois — peut-être des années. Il est temps que ça change.</p>
-          </div>
           <div id="pain-grid" data-animate className={`pain-grid fade-up ${isVisible('pain-grid') ? 'visible' : ''}`}>
             {pains.map((p, i) => (
               <div key={i} className="pain-item">
@@ -322,19 +531,141 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
+      {/* APP PREVIEW — THE "WAHOU" SECTION */}
+      <section className="app-preview">
+        <div className="container text-center">
+          <div className="section-tag">DÉCOUVREZ L'APPLICATION</div>
+          <h2 className="section-title font-serif">Tout est déjà prêt.<br />Vous n'avez qu'à suivre.</h2>
+          <p className="section-sub">Dashboard intelligent, repas pré-calculés, suivi quotidien — tout dans votre poche.</p>
+        </div>
+        <div className="preview-phones">
+          {/* Phone 1: Dashboard */}
+          <div className="preview-phone">
+            <div className="preview-phone-frame">
+              <div className="phone-screen">
+                <div className="mini-dash">
+                  <div className="mini-dash-greeting">Bonjour Marc 👋</div>
+                  <div className="mini-dash-title">Semaine 4 / 10</div>
+                  <div className="mini-dash-card">
+                    <div className="mini-dash-card-title">Progression</div>
+                    <div className="mini-progress-bar">
+                      <div className="mini-progress-fill" style={{ width: '40%' }} />
+                    </div>
+                  </div>
+                  <div className="mini-dash-card">
+                    <div className="mini-stat-row">
+                      <div className="mini-stat">
+                        <div className="mini-stat-value">1 680</div>
+                        <div className="mini-stat-label">kcal</div>
+                      </div>
+                      <div className="mini-stat">
+                        <div className="mini-stat-value">140g</div>
+                        <div className="mini-stat-label">prot.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mini-phase">
+                    <div className="mini-phase-week">S4</div>
+                    <div>
+                      <div className="mini-phase-name">Sèche Viscérale</div>
+                      <div className="mini-phase-text">Phase 2</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="preview-label"><span>📊</span> Dashboard</div>
+          </div>
+
+          {/* Phone 2: Journal */}
+          <div className="preview-phone">
+            <div className="preview-phone-frame">
+              <div className="phone-screen">
+                <div className="mini-journal">
+                  <div className="mini-journal-header">📋 Journal</div>
+                  <div className="mini-journal-date">Jour Training</div>
+                  <div className="mini-meal">
+                    <div className="mini-meal-title">🌅 Petit-déj</div>
+                    <div className="mini-meal-items">Omelette · Avoine · Fruits</div>
+                    <div className="mini-check">✅ Fait</div>
+                  </div>
+                  <div className="mini-meal">
+                    <div className="mini-meal-title">☀️ Déjeuner</div>
+                    <div className="mini-meal-items">Poulet · Riz · Brocolis</div>
+                  </div>
+                  <div className="mini-meal">
+                    <div className="mini-meal-title">🌙 Dîner</div>
+                    <div className="mini-meal-items">Saumon · Patate douce</div>
+                  </div>
+                  <div className="mini-meal">
+                    <div className="mini-meal-title">💊 Compléments</div>
+                    <div className="mini-meal-items">Oméga-3 · Vitamine D · Magnésium</div>
+                    <div className="mini-check">✅ Pris</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="preview-label"><span>📋</span> Journal quotidien</div>
+          </div>
+
+          {/* Phone 3: Setup */}
+          <div className="preview-phone">
+            <div className="preview-phone-frame">
+              <div className="phone-screen">
+                <div className="mini-setup">
+                  <div className="mini-setup-header">🎯 Profil</div>
+                  <div className="mini-setup-sub">Personnalisé pour vous</div>
+                  <div className="mini-input-group">
+                    <div className="mini-label">Objectif</div>
+                    <div className="mini-select-row">
+                      <div className="mini-select-btn">Douce</div>
+                      <div className="mini-select-btn active">Sèche</div>
+                      <div className="mini-select-btn">Intense</div>
+                    </div>
+                  </div>
+                  <div className="mini-input-group">
+                    <div className="mini-label">Activité</div>
+                    <div className="mini-select-row">
+                      <div className="mini-select-btn">Séd.</div>
+                      <div className="mini-select-btn active">Actif</div>
+                      <div className="mini-select-btn">Très</div>
+                    </div>
+                  </div>
+                  <div className="mini-result-card">
+                    <div className="mini-result-title">TDEE calculé</div>
+                    <div className="mini-result-value">2 180</div>
+                    <div className="mini-result-unit">kcal/jour</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="preview-label"><span>🎯</span> Plan personnalisé</div>
+          </div>
+        </div>
+
+        <div className="feature-pills">
+          <div className="feature-pill"><span className="pill-icon">📊</span>Suivi progression</div>
+          <div className="feature-pill"><span className="pill-icon">🍽️</span>Repas pré-calculés</div>
+          <div className="feature-pill"><span className="pill-icon">🔄</span>Cyclage calorique auto</div>
+          <div className="feature-pill"><span className="pill-icon">🏋️</span>Programme PPL</div>
+          <div className="feature-pill"><span className="pill-icon">📈</span>Courbe de poids</div>
+          <div className="feature-pill"><span className="pill-icon">💊</span>Compléments guidés</div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section id="how" className="section" style={{ background: '#fff' }}>
+        <div className="container text-center">
+          <div className="section-tag">COMMENT ÇA MARCHE</div>
+          <h2 className="section-title font-serif">3 étapes. 5 minutes par jour.</h2>
+          <p className="section-sub">Notre algorithme crée votre protocole unique. Ensuite, vous suivez.</p>
+        </div>
         <div className="container">
-          <div className="text-center">
-            <div className="section-tag">COMMENT ÇA MARCHE</div>
-            <h2 className="section-title">Un système personnalisé.<br />Pas un régime de plus.</h2>
-            <p className="section-sub">En 5 minutes, notre algorithme crée votre protocole unique. Ensuite, vous n'avez qu'à suivre.</p>
-          </div>
           <div className="steps-grid">
             {[
-              { num: 1, icon: '🎯', title: 'Votre bilan en 5 min', desc: 'Âge, poids, profil glycémique, mode de vie. Notre algorithme calcule votre plan alimentaire unique — TDEE, macros, cyclage calorique.' },
-              { num: 2, icon: '📱', title: 'Suivez votre journal', desc: 'Chaque jour, ouvrez l\'app. Vos 3 repas sont prêts, les compléments listés, l\'entraînement détaillé. 5 minutes par jour suffisent.' },
-              { num: 3, icon: '📉', title: 'Votre corps change', desc: 'Semaine après semaine, suivez votre courbe de poids, votre tour de taille, vos marqueurs de santé. Le protocole s\'ajuste à vos résultats.' },
+              { num: 1, icon: '🎯', title: 'Votre bilan en 5 min', desc: 'Âge, poids, profil glycémique, mode de vie. L\'algorithme calcule votre plan unique.' },
+              { num: 2, icon: '📱', title: 'Suivez votre journal', desc: 'Vos 3 repas sont prêts chaque jour, compléments listés, entraînement détaillé.' },
+              { num: 3, icon: '📉', title: 'Votre corps change', desc: 'Suivez votre courbe de poids, tour de taille, marqueurs de santé semaine après semaine.' },
             ].map((step, i) => (
               <div key={i} id={`step-${i}`} data-animate className={`step-card fade-up ${isVisible(`step-${i}`) ? 'visible' : ''}`} style={{ transitionDelay: `${i * 0.12}s` }}>
                 <div className="step-icon">{step.icon}</div>
@@ -347,46 +678,43 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
-      {/* POINT 3 — VALUE COMPARISON */}
+      {/* VALUE COMPARISON */}
       <section className="section value-section">
         <div className="container text-center">
           <div className="section-tag">COMPAREZ</div>
-          <h2 className="section-title">Combien coûte une vraie transformation ?</h2>
-          <p className="section-sub">Le même accompagnement avec un professionnel coûte 10× plus cher.</p>
+          <h2 className="section-title font-serif">Le même résultat,<br />10× moins cher.</h2>
+          <p className="section-sub">Un accompagnement pro coûte 480€/mois minimum.</p>
           <div id="value-grid" data-animate className={`value-grid fade-up ${isVisible('value-grid') ? 'visible' : ''}`}>
             <div className="value-card old">
-              <div style={{ fontSize: 13, fontWeight: 700, color: '#DC2626', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Accompagnement classique</div>
-              <div className="value-price crossed">480€<span style={{ fontSize: 16, fontWeight: 400 }}>/mois</span></div>
+              <div style={{ fontSize: 12, fontWeight: 700, color: '#DC2626', textTransform: 'uppercase' as const, letterSpacing: '0.1em' }}>Accompagnement classique</div>
+              <div className="value-price crossed">480€<span style={{ fontSize: 14, fontWeight: 400 }}>/mois</span></div>
               <ul className="value-list">
-                <li>❌ Nutritionniste 120€ × 4 séances</li>
-                <li>❌ Temps de trajet + attente</li>
-                <li>❌ Plan générique (pas personnalisé)</li>
+                <li>❌ Nutritionniste 120€ × 4</li>
+                <li>❌ Plan générique</li>
                 <li>❌ Pas de suivi quotidien</li>
               </ul>
             </div>
             <div className="value-card new">
-              <div style={{ fontSize: 13, fontWeight: 700, color: '#059669', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Sèche 10 Semaines</div>
-              <div className="value-price" style={{ color: '#059669' }}>49€<span style={{ fontSize: 16, fontWeight: 400 }}>/mois</span></div>
+              <div style={{ fontSize: 12, fontWeight: 700, color: '#059669', textTransform: 'uppercase' as const, letterSpacing: '0.1em' }}>Sèche 10 Semaines</div>
+              <div className="value-price" style={{ color: '#059669' }}>49€<span style={{ fontSize: 14, fontWeight: 400 }}>/mois</span></div>
               <ul className="value-list">
-                <li>✅ Plan alimentaire personnalisé par algorithme</li>
-                <li>✅ Journal quotidien avec repas détaillés</li>
-                <li>✅ Suivi poids, tour de taille, glycémie</li>
-                <li>✅ Protocole d'entraînement PPL complet</li>
-                <li>✅ Guide complet + communauté privée</li>
+                <li>✅ Plan personnalisé par algorithme</li>
+                <li>✅ Journal quotidien détaillé</li>
+                <li>✅ Suivi complet + entraînement</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS — HONNÊTES */}
+      {/* TESTIMONIALS */}
       <section id="testimonials" className="section testimonials-section">
+        <div className="container text-center">
+          <div className="section-tag">PREMIERS RETOURS</div>
+          <h2 className="section-title font-serif">Ce qu'en disent nos beta-testeurs.</h2>
+          <p className="section-sub">De vrais utilisateurs. Résultats individuels.</p>
+        </div>
         <div className="container">
-          <div className="text-center">
-            <div className="section-tag">PREMIERS RETOURS</div>
-            <h2 className="section-title">Ce qu'en disent nos beta-testeurs.</h2>
-            <p className="section-sub">De vrais utilisateurs qui ont testé le programme. Résultats individuels, non contractuels.</p>
-          </div>
           <div className="testi-grid">
             {testimonials.map((t, i) => (
               <div key={i} id={`testi-${i}`} data-animate className={`testi-card fade-up ${isVisible(`testi-${i}`) ? 'visible' : ''}`} style={{ transitionDelay: `${i * 0.12}s` }}>
@@ -406,16 +734,16 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
-      {/* PRICING — POINT 3 */}
+      {/* PRICING */}
       <section id="pricing" className="section pricing-section text-center">
         <div className="container">
           <div className="section-tag">OFFRE DE LANCEMENT</div>
-          <h2 className="section-title">Tout inclus. Résultats garantis.</h2>
+          <h2 className="section-title font-serif">Tout inclus. Résultats garantis.</h2>
           <p className="section-sub">L'investissement le plus rentable de votre santé.</p>
 
           <div id="pricing-card" data-animate className={`pricing-card fade-up ${isVisible('pricing-card') ? 'visible' : ''}`}>
             <div className="pricing-header">
-              <div className="pricing-badge">🔥 Offre limitée — {spotsLeft} places restantes</div>
+              <div className="pricing-badge">🔥 {spotsLeft} places restantes</div>
               <div className="pricing-name">Programme Complet · 10 Semaines</div>
               <div className="pricing-price">
                 <span className="price-amount">49€</span>
@@ -428,20 +756,20 @@ export const Landing: React.FC = () => {
             <div className="pricing-body">
               <ul className="pricing-list">
                 {[
-                  'Plan alimentaire 100% personnalisé (algorithme Mifflin-St Jeor)',
-                  'Cyclage calorique Training / Repos automatique',
-                  'Journal quotidien avec repas pré-calculés',
-                  'Programme d\'entraînement PPL avec vidéos',
-                  'Suivi poids, tour de taille et glycémie',
+                  'Plan alimentaire 100% personnalisé',
+                  'Cyclage calorique Training / Repos',
+                  'Journal quotidien avec repas détaillés',
+                  'Programme d\'entraînement PPL complet',
+                  'Suivi poids, tour de taille, glycémie',
                   'Guide complet téléchargeable',
                   'Communauté privée Telegram',
                   'Garantie 14 jours satisfait ou remboursé',
                 ].map((item, i) => <li key={i}>{item}</li>)}
               </ul>
               <Link to="/pricing" className="btn-pricing">
-                Démarrer mon programme — 14j satisfait ou remboursé
+                Démarrer mon programme →
               </Link>
-              <div className="pricing-secure">🔒 Paiement sécurisé Stripe · SSL · Annulation en 1 clic</div>
+              <div className="pricing-secure">🔒 Paiement sécurisé · Annulation en 1 clic</div>
             </div>
           </div>
         </div>
@@ -452,11 +780,10 @@ export const Landing: React.FC = () => {
         <div className="container">
           <div id="guarantee" data-animate className={`guarantee-box fade-up ${isVisible('guarantee') ? 'visible' : ''}`}>
             <div className="guarantee-icon">🛡️</div>
-            <div className="guarantee-title">Garantie 14 jours — Zéro risque pour vous</div>
+            <div className="guarantee-title font-serif">Garantie 14 jours — Zéro risque</div>
             <p className="guarantee-text">
-              Essayez le programme pendant 14 jours. Si vous suivez le protocole et que vous n'êtes pas convaincu, on vous rembourse intégralement.<br /><br />
-              <strong>Pas de conditions cachées. Pas de formulaire compliqué. Un email suffit.</strong><br /><br />
-              On prend le risque à votre place — parce qu'on sait que le programme fonctionne.
+              Essayez pendant 14 jours. Si vous n'êtes pas convaincu, remboursement intégral.<br /><br />
+              <strong>Pas de conditions cachées. Un email suffit.</strong>
             </p>
           </div>
         </div>
@@ -465,9 +792,9 @@ export const Landing: React.FC = () => {
       {/* FAQ */}
       <section id="faq" className="section faq-section">
         <div className="container faq-container">
-          <div className="text-center" style={{ marginBottom: '36px' }}>
-            <div className="section-tag">QUESTIONS FRÉQUENTES</div>
-            <h2 className="section-title">Vos questions. Nos réponses.</h2>
+          <div className="text-center" style={{ marginBottom: 28 }}>
+            <div className="section-tag">FAQ</div>
+            <h2 className="section-title font-serif">Vos questions.</h2>
           </div>
           {faqs.map((faq, i) => (
             <div key={i} className="faq-item">
@@ -483,8 +810,8 @@ export const Landing: React.FC = () => {
 
       {/* FINAL CTA */}
       <section className="final-cta">
-        <h2 className="font-serif">Prêt à retrouver le corps que vous méritez ?</h2>
-        <p>Votre transformation commence par une décision. Le reste, on s'en occupe.</p>
+        <h2 className="font-serif">Prêt à retrouver le corps<br />que vous méritez ?</h2>
+        <p>Votre transformation commence par une décision.</p>
         <Link to="/pricing" className="btn-primary">
           Commencer maintenant — 49€/mois
         </Link>
@@ -499,12 +826,12 @@ export const Landing: React.FC = () => {
           <a href="#">Mentions légales</a>
           <a href="#">CGV</a>
         </div>
-        <div className="footer-copy">© 2025 Sèche10Semaines. Tous droits réservés. Résultats individuels, non contractuels.</div>
+        <div className="footer-copy">© 2025 Sèche10Semaines · Résultats individuels, non contractuels.</div>
       </footer>
 
-      {/* STICKY CTA (mobile) */}
+      {/* STICKY MOBILE CTA */}
       <div className="sticky-cta">
-        <span className="sticky-cta-text">49€/mois · Garanti 14j</span>
+        <div className="sticky-cta-text"><strong>49€/mois</strong> · Garanti 14j</div>
         <Link to="/pricing" className="sticky-cta-btn">Commencer →</Link>
       </div>
     </>
