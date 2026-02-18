@@ -8,22 +8,22 @@ import { SetupDiet } from './pages/SetupDiet';
 import { Dashboard } from './pages/Dashboard';
 import { Journal } from './pages/Journal';
 import { Profile } from './pages/Profile';
-// import { Pricing } from './pages/Pricing'; // Commenté pour l'instant
+import { Pricing } from './pages/Pricing';
 import { NotFound } from './pages/NotFound';
 import { LoadingScreen } from './components/LoadingScreen';
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, loading, userProfile } = useAuth();
   const location = useLocation();
-  
+
   if (loading) return <LoadingScreen message="Vérification du compte..." />;
-  
+
   if (!user) return <Navigate to="/login" />;
-  
+
   if (user && !userProfile?.onboardingComplete && location.pathname !== '/setup') {
-     return <Navigate to="/setup" />;
+    return <Navigate to="/setup" />;
   }
-  
+
   return <>{children}</>;
 };
 
@@ -34,39 +34,39 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Auth />} />
-          {/* <Route path="/pricing" element={<Pricing />} /> */}
-          <Route 
-            path="/setup" 
+          <Route path="/pricing" element={<Pricing />} />
+          <Route
+            path="/setup"
             element={
               <ProtectedRoute>
                 <SetupDiet />
               </ProtectedRoute>
-            } 
+            }
           />
           <Route element={<Layout />}>
-            <Route 
-              path="/dashboard" 
+            <Route
+              path="/dashboard"
               element={
                 <ProtectedRoute>
                   <Dashboard />
                 </ProtectedRoute>
-              } 
+              }
             />
-             <Route 
-              path="/journal" 
+            <Route
+              path="/journal"
               element={
                 <ProtectedRoute>
                   <Journal />
                 </ProtectedRoute>
-              } 
+              }
             />
-             <Route 
-              path="/profile" 
+            <Route
+              path="/profile"
               element={
                 <ProtectedRoute>
                   <Profile />
                 </ProtectedRoute>
-              } 
+              }
             />
           </Route>
           <Route path="*" element={<NotFound />} />
