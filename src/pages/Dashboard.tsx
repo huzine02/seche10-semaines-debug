@@ -398,6 +398,23 @@ export const Dashboard: React.FC = () => {
               {currentWeek * 10}% du programme
             </div>
           </div>
+
+          {/* Programme progress bar */}
+          <div style={{ marginBottom: 14 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 9, marginBottom: 4 }}>
+              <span style={{ opacity: 0.5 }}>Progression programme</span>
+              <span style={{ color: '#34D399', fontWeight: 700 }}>Semaine {currentWeek}/10</span>
+            </div>
+            <div style={{ height: 6, background: 'rgba(255,255,255,0.08)', borderRadius: 100, overflow: 'hidden' }}>
+              <div style={{ height: '100%', background: 'linear-gradient(90deg, #00B894, #34D399)', borderRadius: 100, width: `${currentWeek * 10}%`, transition: 'width 1s ease' }} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 3 }}>
+              {Array.from({ length: 10 }, (_, i) => (
+                <div key={i} style={{ width: 4, height: 4, borderRadius: '50%', background: i < currentWeek ? '#34D399' : 'rgba(255,255,255,0.15)' }} />
+              ))}
+            </div>
+          </div>
+
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8 }}>
             <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 10, padding: '10px 8px', textAlign: 'center' }}>
               <div style={{ fontSize: 20, fontWeight: 800, color: '#34D399' }}>
@@ -418,11 +435,55 @@ export const Dashboard: React.FC = () => {
               <div style={{ fontSize: 8, opacity: 0.5, marginTop: 2 }}>jours parfaits</div>
             </div>
           </div>
+
+          {/* Weekly days tracker (Mon-Sun dots) */}
+          <div style={{ marginTop: 12, background: 'rgba(255,255,255,0.04)', borderRadius: 8, padding: '8px 10px' }}>
+            <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.4, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Cette semaine</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              {['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'].map((d, i) => {
+                const today = new Date();
+                const dayOfWeek = (today.getDay() + 6) % 7; // 0=Mon
+                const isPast = i < dayOfWeek;
+                const isToday = i === dayOfWeek;
+                return (
+                  <div key={d} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+                    <span style={{ fontSize: 7, opacity: isToday ? 1 : 0.4, color: isToday ? '#34D399' : '#fff', fontWeight: isToday ? 700 : 400 }}>{d}</span>
+                    <div style={{
+                      width: 20, height: 20, borderRadius: '50%',
+                      background: isPast && streak > dayOfWeek - i ? 'linear-gradient(135deg, #00B894, #34D399)' : isToday ? 'rgba(0,184,148,0.3)' : 'rgba(255,255,255,0.06)',
+                      border: isToday ? '2px solid #34D399' : '1px solid rgba(255,255,255,0.08)',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: 9, color: '#fff',
+                    }}>
+                      {isPast && streak > dayOfWeek - i ? '✓' : isToday ? '•' : ''}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
           {streak >= 3 && (
             <div style={{ marginTop: 10, fontSize: 11, color: 'rgba(255,255,255,0.6)', textAlign: 'center', fontStyle: 'italic' }}>
-              {streak >= 14 ? '🏆 Vous êtes dans le top 5% des utilisateurs. Inarrêtable.'
+              {streak >= 30 ? '👑 30 jours. Vous êtes une légende. Le programme est devenu votre mode de vie.'
+                : streak >= 14 ? '🏆 Vous êtes dans le top 5% des utilisateurs. Inarrêtable.'
                 : streak >= 7 ? '🔥 7+ jours consécutifs — votre métabolisme s\'adapte, ne lâchez rien !'
                 : '💪 Beau streak ! La régularité bat l\'intensité, continuez.'}
+            </div>
+          )}
+
+          {/* Next milestone */}
+          {streak < 30 && (
+            <div style={{ marginTop: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, fontSize: 10, opacity: 0.5 }}>
+              <span>🎯</span>
+              <span>
+                Prochain badge dans {
+                  streak < 3 ? `${3 - streak} jour${3 - streak > 1 ? 's' : ''}`
+                  : streak < 7 ? `${7 - streak} jour${7 - streak > 1 ? 's' : ''}`
+                  : streak < 14 ? `${14 - streak} jour${14 - streak > 1 ? 's' : ''}`
+                  : `${30 - streak} jours`
+                }
+              </span>
             </div>
           )}
         </div>

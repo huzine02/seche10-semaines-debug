@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
+import { StreakBadge } from '../components/StreakBadge';
 
 // ─── COLORS ─────────────────────────────────────────────
 const C = {
@@ -126,6 +127,8 @@ export const Journal: React.FC = () => {
   const [modal, setModal] = useState(false);
   const [flash, setFlash] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
 
   // Profile — use training/rest from new SetupDiet
   const diet = userProfile?.dietProfile;
@@ -162,6 +165,44 @@ export const Journal: React.FC = () => {
 
   // ─── DATA LOAD/SAVE ─────────────────────────────────────
   useEffect(() => { loadDay(); }, [date, user]);
+
+  // Streak calculation
+  useEffect(() => {
+    if (!user) return;
+    (async () => {
+      try {
+        const journalRef = collection(db, 'users', user.uid, 'journal');
+        const snap = await getDocs(journalRef);
+        if (snap.empty) return;
+        const entries: Record<string, number> = {};
+        snap.forEach((d) => {
+          const data = d.data() as any;
+          const meals = data.meals || {};
+          const stacks = data.stacks || {};
+          const vCount = Object.values(meals).filter((m: any) => m?.validated).length;
+          const stacksDone = Object.entries(stacks).filter(([k, v]) => v && k !== 'workout').length;
+          const stacksTotal = Object.keys(stacks).filter(k => k !== 'workout').length || 1;
+          const water = data.water || 0;
+          entries[d.id] = Math.round(((vCount / 3) * 0.5 + (stacksDone / stacksTotal) * 0.25 + (stacks.workout ? 0.15 : 0) + (water >= 2500 ? 0.10 : (water / 2500) * 0.10)) * 100);
+        });
+        const today = new Date();
+        let cs = 0;
+        for (let i = 0; i < 60; i++) {
+          const d = new Date(today); d.setDate(d.getDate() - i);
+          const key = d.toISOString().split('T')[0];
+          if (entries[key] !== undefined && entries[key] >= 70) { cs++; }
+          else if (i === 0) { continue; }
+          else { break; }
+        }
+        setStreak(cs);
+        let best = 0, cur = 0;
+        Object.keys(entries).sort().forEach(k => {
+          if (entries[k] >= 70) { cur++; best = Math.max(best, cur); } else { cur = 0; }
+        });
+        setBestStreak(best);
+      } catch (e) { console.error('[Journal Streak]', e); }
+    })();
+  }, [user]);
 
   const loadDay = async () => {
     if (!user) { setLoading(false); return; }
@@ -253,6 +294,11 @@ export const Journal: React.FC = () => {
         <button onClick={() => changeDate(1)} style={{ padding: 6, background: 'none', border: 'none', color: C.textMuted, cursor: 'pointer', fontSize: 15 }}>▶</button>
         {flash && <div style={{ position: 'absolute', top: 10, right: 10, fontSize: 9, fontWeight: 700, color: 'white', background: C.accent, padding: '3px 8px', borderRadius: 4, zIndex: 25 }}>✓ Sauvegardé</div>}
       </header>
+
+      {/* STREAK BADGE */}
+      <div style={{ padding: '12px 14px 0' }}>
+        <StreakBadge streak={streak} bestStreak={bestStreak} compact />
+      </div>
 
       <main style={{ padding: 14, display: 'flex', flexDirection: 'column', gap: 14 }}>
 
