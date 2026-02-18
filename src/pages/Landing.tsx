@@ -185,7 +185,7 @@ export const Landing: React.FC = () => {
     .cinema-section .section-title { color: #fff; }
     .cinema-section .section-sub { color: rgba(255,255,255,0.55); }
 
-    .cinema-frame { max-width: 600px; margin: 32px auto 0; aspect-ratio: 16/10; background: #000; border-radius: 16px; position: relative; overflow: hidden; box-shadow: 0 30px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08), 0 0 80px rgba(0,184,148,0.15); z-index: 1; }
+    .cinema-frame { max-width: 600px; margin: 32px auto 0; aspect-ratio: 3/4; background: #000; border-radius: 16px; position: relative; overflow: hidden; box-shadow: 0 30px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08), 0 0 80px rgba(0,184,148,0.15); z-index: 1; }
     .cinema-inner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
 
     /* Each cinema slide */
@@ -193,7 +193,8 @@ export const Landing: React.FC = () => {
     .cinema-slide.active { opacity: 1; transform: scale(1); }
 
     /* Slide: Intro (Marc) */
-    .cinema-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, #1a3a6e, #0F2C59); border: 3px solid rgba(0,184,148,0.5); display: flex; align-items: center; justify-content: center; font-size: 28px; margin-bottom: 14px; box-shadow: 0 0 30px rgba(0,184,148,0.3); }
+    .cinema-avatar { width: 90px; height: 90px; border-radius: 50%; border: 3px solid rgba(0,184,148,0.5); margin-bottom: 14px; box-shadow: 0 0 30px rgba(0,184,148,0.3); overflow: hidden; }
+    .cinema-avatar img { width: 100%; height: 100%; object-fit: cover; }
     .cinema-name { font-family: 'Instrument Serif', serif; font-size: 24px; color: #fff; margin-bottom: 4px; }
     .cinema-meta { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.05em; }
 
@@ -221,7 +222,7 @@ export const Landing: React.FC = () => {
     .cinema-ba-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 8px; }
     .cinema-ba-label.before { color: #EF4444; }
     .cinema-ba-label.after { color: var(--sage-glow); }
-    .cinema-ba-num { font-family: 'Instrument Serif', serif; font-size: 44px; line-height: 1; margin-bottom: 4px; }
+    .cinema-ba-num { font-family: 'Instrument Serif', serif; font-size: 38px; line-height: 1; margin-bottom: 4px; }
     .cinema-ba-num.before { color: rgba(255,255,255,0.3); }
     .cinema-ba-num.after { color: var(--sage-glow); text-shadow: 0 0 30px rgba(0,184,148,0.5); }
     .cinema-ba-sub { font-size: 11px; color: rgba(255,255,255,0.4); }
@@ -230,13 +231,13 @@ export const Landing: React.FC = () => {
     .cinema-ba-diff span { font-size: 13px; font-weight: 700; color: var(--sage-glow); }
 
     /* Slide: Result */
-    .cinema-result-icon { font-size: 48px; margin-bottom: 12px; }
-    .cinema-result-title { font-family: 'Instrument Serif', serif; font-size: 26px; color: #fff; margin-bottom: 8px; line-height: 1.2; }
-    .cinema-result-sub { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.5; max-width: 280px; }
-    .cinema-result-stats { display: flex; gap: 20px; margin-top: 16px; }
+    .cinema-result-icon { font-size: 40px; margin-bottom: 10px; }
+    .cinema-result-title { font-family: 'Instrument Serif', serif; font-size: 22px; color: #fff; margin-bottom: 6px; line-height: 1.2; }
+    .cinema-result-sub { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.5; max-width: 260px; }
+    .cinema-result-stats { display: flex; gap: 16px; margin-top: 14px; }
     .cinema-result-stat { text-align: center; }
-    .cinema-result-stat .val { font-family: 'Instrument Serif', serif; font-size: 22px; color: var(--sage-glow); }
-    .cinema-result-stat .lab { font-size: 9px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+    .cinema-result-stat .val { font-family: 'Instrument Serif', serif; font-size: 20px; color: var(--sage-glow); }
+    .cinema-result-stat .lab { font-size: 8px; color: rgba(255,255,255,0.4); margin-top: 2px; }
 
     /* Progress dots */
     .cinema-dots { display: flex; justify-content: center; gap: 6px; margin-top: 16px; position: relative; z-index: 1; }
@@ -365,7 +366,7 @@ export const Landing: React.FC = () => {
       .testi-grid { grid-template-columns: repeat(3, 1fr); }
       .value-grid { grid-template-columns: 1fr 1fr; max-width: 700px; }
       .sticky-cta { display: none; }
-      .cinema-frame { max-width: 700px; aspect-ratio: 16/9; }
+      .cinema-frame { max-width: 700px; aspect-ratio: 16/10; }
       .cinema-stat-grid { max-width: 400px; }
       .cinema-slide { padding: 32px; }
       .phone-frame { width: 260px; height: 520px; }
@@ -612,7 +613,9 @@ export const Landing: React.FC = () => {
           <div className="cinema-inner">
             {/* Slide 0: Intro — Who is Marc */}
             <div className={`cinema-slide ${cinemaStep === 0 ? 'active' : ''}`}>
-              <div className="cinema-avatar">👤</div>
+              <div className="cinema-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Marc" />
+              </div>
               <div className="cinema-name">Marc, 42 ans</div>
               <div className="cinema-meta">Cadre · Lyon · Père de 2 enfants</div>
               <div style={{ marginTop: 16, fontSize: 13, color: 'rgba(255,255,255,0.45)', fontStyle: 'italic', maxWidth: 260, lineHeight: 1.5 }}>
