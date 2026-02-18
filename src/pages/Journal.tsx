@@ -256,6 +256,23 @@ export const Journal: React.FC = () => {
 
       <main style={{ padding: 14, display: 'flex', flexDirection: 'column', gap: 14 }}>
 
+        {/* COMPLIANCE CONGRATULATIONS */}
+        {compliancePct >= 80 && (
+          <div style={{ background: 'linear-gradient(135deg, #059669 0%, #00B894 100%)', borderRadius: 14, padding: '14px 18px', display: 'flex', alignItems: 'center', gap: 12, color: '#fff' }}>
+            <span style={{ fontSize: 28 }}>🔥</span>
+            <div>
+              <div style={{ fontWeight: 700, fontSize: 14 }}>
+                {compliancePct >= 95 ? 'Journée parfaite !' : 'Excellent travail !'}
+              </div>
+              <div style={{ fontSize: 12, opacity: 0.85 }}>
+                {compliancePct >= 95
+                  ? 'Vous êtes dans les 5% les plus assidus. Continuez comme ça.'
+                  : `${compliancePct}% de compliance — vous êtes sur la bonne voie.`}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* MODE + COMPLIANCE */}
         <Card>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>

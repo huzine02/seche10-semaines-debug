@@ -283,6 +283,12 @@ export const SetupDiet: React.FC = () => {
         {/* ═══════ STEP 1 ═══════ */}
         {step === 1 && (
           <div className="slide" key="s1">
+            {/* Intro motivationnelle */}
+            <div style={{ background: 'linear-gradient(135deg, #0F2C59, #163A70)', borderRadius: 14, padding: '20px 22px', marginBottom: 22, color: '#fff', textAlign: 'center' }}>
+              <div style={{ fontSize: 24, marginBottom: 6 }}>🔬</div>
+              <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>En 5 minutes, on crée votre protocole unique.</div>
+              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', lineHeight: 1.5 }}>Notre algorithme va calculer vos besoins exacts — TDEE, macros, cyclage calorique — pour un plan taillé sur mesure.</div>
+            </div>
             <h1 style={s.h1}>Profil Physiologique</h1>
             <p style={s.sub}>Données pour le calcul précis de votre métabolisme et composition corporelle.</p>
 
@@ -370,6 +376,12 @@ export const SetupDiet: React.FC = () => {
 
         {/* ═══════ STEP 2 ═══════ */}
         {step === 2 && !loading && (
+          <>
+          {/* Encouragement */}
+          <div style={{ background: '#ECFDF5', border: '1px solid rgba(0,184,148,0.25)', borderRadius: 12, padding: '14px 18px', marginBottom: 18, textAlign: 'center' }}>
+            <div style={{ fontSize: 14, fontWeight: 700, color: '#059669' }}>✅ Parfait{bio.firstName ? ` ${bio.firstName}` : ''} ! Votre profil est prometteur.</div>
+            <div style={{ fontSize: 12, color: '#475569', marginTop: 3 }}>Encore une étape pour personnaliser votre protocole.</div>
+          </div>
           <div className="slide" key="s2">
             <h1 style={s.h1}>Contexte Métabolique</h1>
             <p style={s.sub}>Vos macros seront optimisés selon votre profil — c'est ce qui différencie ce protocole d'un régime générique.</p>
@@ -414,6 +426,7 @@ export const SetupDiet: React.FC = () => {
               </button>
             </div>
           </div>
+          </>
         )}
 
         {/* ═══════ LOADER ═══════ */}
@@ -431,6 +444,17 @@ export const SetupDiet: React.FC = () => {
         {/* ═══════ STEP 3: RÉSULTATS ═══════ */}
         {step === 3 && diet && (
           <div className="slide" key="s3">
+            {/* Message motivationnel personnalisé */}
+            <div style={{ background: '#ECFDF5', border: '1px solid rgba(0,184,148,0.25)', borderRadius: 14, padding: '16px 20px', marginBottom: 18, textAlign: 'center' }}>
+              <div style={{ fontSize: 22, marginBottom: 4 }}>🎯</div>
+              <div style={{ fontWeight: 700, fontSize: 15, color: '#059669', marginBottom: 4 }}>
+                {bio.firstName ? `${bio.firstName}, v` : 'V'}otre protocole est prêt.
+              </div>
+              <div style={{ fontSize: 12, color: '#475569', lineHeight: 1.5 }}>
+                Basé sur votre profil unique. Ce n'est pas un plan générique — c'est le vôtre.
+              </div>
+            </div>
+
             <h1 style={s.h1}>Votre Protocole Personnalisé</h1>
             <p style={s.sub}>Deux sets de macros : entraînement vs repos. C'est le cyclage calorique.</p>
 
