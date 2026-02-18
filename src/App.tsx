@@ -9,6 +9,7 @@ import { Dashboard } from './pages/Dashboard';
 import { Journal } from './pages/Journal';
 import { Profile } from './pages/Profile';
 import { Pricing } from './pages/Pricing';
+import { Success } from './pages/Success';
 import { NotFound } from './pages/NotFound';
 import { LoadingScreen } from './components/LoadingScreen';
 
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Auth />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/success" element={<Success />} />
           <Route
             path="/setup"
             element={
