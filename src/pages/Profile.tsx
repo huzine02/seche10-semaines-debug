@@ -1,10 +1,12 @@
 import React, { useState, useRef, useMemo, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { doc, updateDoc } from 'firebase/firestore';
+import { doc, updateDoc, collection, getDocs } from 'firebase/firestore';
 import { ref, uploadString, getDownloadURL } from 'firebase/storage';
 import { auth, db, storage } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
+import { StreakBadge } from '../components/StreakBadge';
+import { AchievementGrid } from '../components/Achievements';
 
 // ─── DESIGN SYSTEM ───
 const C = {
@@ -104,6 +106,52 @@ export const Profile: React.FC = () => {
   const diet = profile?.dietProfile;
 
   const [uploadStatus, setUploadStatus] = useState('');
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [totalDays, setTotalDays] = useState(0);
+  const [perfectDays, setPerfectDays] = useState(0);
+
+  // Streak calculation
+  useEffect(() => {
+    if (!user) return;
+    (async () => {
+      try {
+        const snap = await getDocs(collection(db, 'users', user.uid, 'journal'));
+        if (snap.empty) return;
+        const entries: Record<string, number> = {};
+        snap.forEach((d) => {
+          const data = d.data() as any;
+          const meals = data.meals || {};
+          const stacks = data.stacks || {};
+          const vCount = Object.values(meals).filter((m: any) => m?.validated).length;
+          const stacksDone = Object.entries(stacks).filter(([k, v]) => v && k !== 'workout').length;
+          const stacksTotal = Object.keys(stacks).filter(k => k !== 'workout').length || 1;
+          const water = data.water || 0;
+          entries[d.id] = Math.round(((vCount / 3) * 0.5 + (stacksDone / stacksTotal) * 0.25 + (stacks.workout ? 0.15 : 0) + (water >= 2500 ? 0.10 : (water / 2500) * 0.10)) * 100);
+        });
+        const dates = Object.keys(entries).sort();
+        setTotalDays(dates.length);
+        setPerfectDays(dates.filter(d => entries[d] >= 95).length);
+        // Current streak
+        const today = new Date();
+        let cs = 0;
+        for (let i = 0; i < 60; i++) {
+          const d = new Date(today); d.setDate(d.getDate() - i);
+          const key = d.toISOString().split('T')[0];
+          if (entries[key] !== undefined && entries[key] >= 70) cs++;
+          else if (i === 0) continue;
+          else break;
+        }
+        setStreak(cs);
+        // Best streak
+        let best = 0, cur = 0;
+        for (const d of dates) {
+          if (entries[d] >= 70) { cur++; best = Math.max(best, cur); } else cur = 0;
+        }
+        setBestStreak(best);
+      } catch (e) { console.error('[Streak]', e); }
+    })();
+  }, [user]);
   const [showTraining, setShowTraining] = useState(true);
   
   // États locaux pour affichage immédiat après upload
@@ -399,6 +447,23 @@ export const Profile: React.FC = () => {
               </div>
               <div style={{ fontSize: 9, color: C.textMuted, marginTop: 2 }}>Cible: -{projectedLoss}kg</div>
             </div>
+          </div>
+        </div>
+
+        {/* 2b. STREAK + BADGES */}
+        <div style={cardStyle}>
+          <StreakBadge streak={streak} bestStreak={bestStreak} />
+          <div style={{ marginTop: 16 }}>
+            <AchievementGrid
+              stats={{
+                totalDays,
+                streak,
+                bestStreak,
+                perfectDays,
+                weightLost: (startWeight && latestWeight) ? Math.max(0, startWeight - latestWeight.value) : 0,
+                waistLost: (startWaist && latestWaist) ? Math.max(0, startWaist - latestWaist.value) : 0,
+              }}
+            />
           </div>
         </div>
 

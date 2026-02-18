@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { doc, getDoc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { doc, getDoc, updateDoc, arrayUnion, collection, getDocs } from 'firebase/firestore';
 import { SubscriptionBanner } from '../components/SubscriptionBanner';
+import { StreakBadge } from '../components/StreakBadge';
+import { AchievementGrid } from '../components/Achievements';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
@@ -70,6 +72,11 @@ export const Dashboard: React.FC = () => {
 
   useEffect(() => { if (ctxProfile) setData(ctxProfile); }, [ctxProfile]);
 
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [totalDays, setTotalDays] = useState(0);
+  const [perfectDays, setPerfectDays] = useState(0);
+
   // Week calculation
   useEffect(() => {
     if (data?.createdAt) {
@@ -79,6 +86,68 @@ export const Dashboard: React.FC = () => {
       if (selectedWeek === 1 && w !== 1) setSelectedWeek(w);
     }
   }, [data]);
+
+  // Streak calculation from journal entries
+  useEffect(() => {
+    if (!user) return;
+    (async () => {
+      try {
+        const journalRef = collection(db, 'users', user.uid, 'journal');
+        const snap = await getDocs(journalRef);
+        if (snap.empty) return;
+
+        const entries: Record<string, { compliance: number }> = {};
+        snap.forEach((d) => {
+          const data = d.data() as any;
+          const meals = data.meals || {};
+          const stacks = data.stacks || {};
+          const vCount = Object.values(meals).filter((m: any) => m?.validated).length;
+          const stacksDone = Object.entries(stacks).filter(([k, v]) => v && k !== 'workout').length;
+          const stacksTotal = Object.keys(stacks).filter(k => k !== 'workout').length || 1;
+          const water = data.water || 0;
+          const pct = Math.round(((vCount / 3) * 0.5 + (stacksDone / stacksTotal) * 0.25 + (stacks.workout ? 0.15 : 0) + (water >= 2500 ? 0.10 : (water / 2500) * 0.10)) * 100);
+          entries[d.id] = { compliance: pct };
+        });
+
+        // Sort dates
+        const sortedDates = Object.keys(entries).sort().reverse();
+        setTotalDays(sortedDates.length);
+        setPerfectDays(sortedDates.filter(d => entries[d].compliance >= 95).length);
+
+        // Calculate current streak (consecutive days >= 70% going backwards from today)
+        const today = new Date();
+        let currentStreak = 0;
+        for (let i = 0; i < 60; i++) {
+          const d = new Date(today);
+          d.setDate(d.getDate() - i);
+          const key = d.toISOString().split('T')[0];
+          const entry = entries[key];
+          if (entry && entry.compliance >= 70) {
+            currentStreak++;
+          } else if (i === 0) {
+            continue; // today might not be filled yet
+          } else {
+            break;
+          }
+        }
+        setStreak(currentStreak);
+
+        // Calculate best streak
+        let best = 0;
+        let current = 0;
+        const allDates = Object.keys(entries).sort();
+        for (let i = 0; i < allDates.length; i++) {
+          if (entries[allDates[i]].compliance >= 70) {
+            current++;
+            best = Math.max(best, current);
+          } else {
+            current = 0;
+          }
+        }
+        setBestStreak(best);
+      } catch (e) { console.error('[Streak] error:', e); }
+    })();
+  }, [user]);
 
   // Auto-scroll timeline
   useEffect(() => {
@@ -300,6 +369,22 @@ export const Dashboard: React.FC = () => {
 
       {/* SUBSCRIPTION BANNER */}
       <SubscriptionBanner />
+
+      {/* STREAK + BADGES */}
+      <div style={{ padding: '12px 16px 0', display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <StreakBadge streak={streak} bestStreak={bestStreak} />
+        <AchievementGrid
+          stats={{
+            totalDays,
+            streak,
+            bestStreak,
+            perfectDays,
+            weightLost: lastPesee ? Math.max(0, initialWeight - lastPesee.poids) : 0,
+            waistLost: lastTaille && initialWaist ? Math.max(0, initialWaist - lastTaille.value) : 0,
+          }}
+          compact
+        />
+      </div>
 
       {/* TIMELINE */}
       <div className="tl-scroll" ref={timelineRef}>
