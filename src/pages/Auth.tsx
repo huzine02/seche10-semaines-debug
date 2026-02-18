@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import * as ReactRouterDOM from 'react-router-dom';
-import { 
-  createUserWithEmailAndPassword, 
-  signInWithEmailAndPassword, 
-  signInWithRedirect, 
+import { useNavigate, useLocation, Link } from 'react-router-dom';
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signInWithRedirect,
   getRedirectResult,
-  sendPasswordResetEmail 
+  sendPasswordResetEmail
 } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { auth, db, googleProvider } from '../firebase';
 import { createInitialUserProfile } from '../utils/onboarding';
 import { useAuth } from '../AuthContext';
-
-const { useNavigate } = ReactRouterDOM;
 
 export const Auth: React.FC = () => {
   const { user } = useAuth();
@@ -24,49 +22,50 @@ export const Auth: React.FC = () => {
   const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
-  // Redirection automatique si l'utilisateur est déjà connecté (ex: retour de Google, ou session persistante)
+  // Lire le redirect dans l'URL (ex: ?redirect=pricing)
+  const redirectTo = new URLSearchParams(location.search).get('redirect');
+  const afterLoginPath = redirectTo ? `/${redirectTo}` : '/dashboard';
+
   useEffect(() => {
-    if (user) {
-      navigate('/dashboard');
-    }
-  }, [user, navigate]);
+    if (user) navigate(afterLoginPath);
+  }, [user, navigate, afterLoginPath]);
 
-  // Gestion du retour de redirection Google (création de profil si nécessaire)
   useEffect(() => {
     const checkRedirect = async () => {
       try {
         const res = await getRedirectResult(auth);
         if (res) {
-          // L'utilisateur revient de Google, on vérifie/crée son profil
           const userDoc = await getDoc(doc(db, 'users', res.user.uid));
           if (!userDoc.exists()) {
-             const profile = createInitialUserProfile(res.user);
-             // @ts-ignore
+            const profile = createInitialUserProfile(res.user);
+            // @ts-ignore
             await setDoc(doc(db, 'users', res.user.uid), profile);
+            navigate('/setup');
+          } else {
+            navigate(afterLoginPath);
           }
-          navigate('/dashboard');
         }
-      } catch (err: any) {
+      } catch (err: unknown) {
         handleAuthError(err);
       }
     };
-    
     checkRedirect();
-  }, [navigate]);
+  }, [navigate, afterLoginPath]);
 
-  const handleAuthError = (err: any) => {
-    console.error("Auth Error:", err);
-    if (err.code === 'permission-denied') {
-      setError("Erreur de permissions : Veuillez configurer les règles Firestore dans la console Firebase.");
-    } else if (err.code === 'auth/invalid-credential' || err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password') {
-      setError("Email ou mot de passe incorrect.");
-    } else if (err.code === 'auth/email-already-in-use') {
-      setError("Cet email est déjà utilisé.");
-    } else if (err.code === 'auth/popup-closed-by-user') {
-      setError("Connexion annulée par l'utilisateur.");
+  const handleAuthError = (err: unknown) => {
+    const e = err as { code?: string; message?: string };
+    if (e.code === 'auth/invalid-credential' || e.code === 'auth/user-not-found' || e.code === 'auth/wrong-password') {
+      setError('Email ou mot de passe incorrect.');
+    } else if (e.code === 'auth/email-already-in-use') {
+      setError('Cet email est déjà utilisé.');
+    } else if (e.code === 'auth/weak-password') {
+      setError('Mot de passe trop faible (6 caractères min).');
+    } else if (e.code === 'permission-denied') {
+      setError('Erreur de permissions Firestore.');
     } else {
-      setError(err.message || "Une erreur est survenue.");
+      setError(e.message || 'Une erreur est survenue.');
     }
   };
 
@@ -75,23 +74,23 @@ export const Auth: React.FC = () => {
     setLoading(true);
     setError('');
     setSuccess('');
-
     try {
       if (view === 'reset') {
         await sendPasswordResetEmail(auth, email);
-        setSuccess('Email de réinitialisation envoyé ! Vérifiez vos spams.');
+        setSuccess('Email envoyé ! Vérifiez vos spams.');
         setView('login');
       } else if (view === 'login') {
         await signInWithEmailAndPassword(auth, email, password);
-        navigate('/dashboard');
+        navigate(afterLoginPath);
       } else {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const profile = createInitialUserProfile(res.user, name);
         // @ts-ignore
         await setDoc(doc(db, 'users', res.user.uid), profile);
-        navigate('/setup');
+        // Après inscription, aller au pricing si redirect=pricing, sinon setup
+        navigate(redirectTo === 'pricing' ? '/pricing' : '/setup');
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       handleAuthError(err);
     } finally {
       setLoading(false);
@@ -101,126 +100,235 @@ export const Auth: React.FC = () => {
   const handleGoogle = async () => {
     try {
       setError('');
-      // Utilisation de la redirection au lieu de la popup pour éviter les erreurs COOP/Mobile
       await signInWithRedirect(auth, googleProvider);
-    } catch (err: any) {
+    } catch (err: unknown) {
       handleAuthError(err);
     }
   };
 
+  const styles = `
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap');
+    :root {
+      --ink: #0F2C59; --ink-deep: #071828;
+      --sage: #00B894; --sage-light: #059669; --sage-glow: #34D399; --sage-muted: #ECFDF5;
+      --text: #1E293B; --text-mid: #475569; --text-light: #94A3B8;
+      --border: #E2E8F0; --red: #EF4444; --red-light: #FEF2F2;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+
+    .auth-page {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--ink-deep) 0%, var(--ink) 60%, #0a3d52 100%);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 40px 20px;
+    }
+    .auth-logo {
+      font-family: 'Instrument Serif', serif;
+      font-size: 26px; color: #fff;
+      text-decoration: none; margin-bottom: 32px;
+      display: block; text-align: center;
+    }
+    .auth-logo span { color: var(--sage); }
+    .auth-card {
+      background: #fff; border-radius: 24px;
+      padding: 40px 36px; width: 100%; max-width: 420px;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+      animation: slide-up 0.4s ease both;
+    }
+    @keyframes slide-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .auth-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 26px; color: var(--ink);
+      text-align: center; margin-bottom: 6px;
+    }
+    .auth-sub {
+      font-size: 14px; color: var(--text-light);
+      text-align: center; margin-bottom: 28px;
+    }
+
+    .auth-error {
+      background: var(--red-light); border: 1px solid #FECACA;
+      color: var(--red); border-radius: 10px;
+      padding: 12px 14px; font-size: 13px;
+      margin-bottom: 16px; text-align: center;
+    }
+    .auth-success {
+      background: var(--sage-muted); border: 1px solid rgba(0,184,148,0.3);
+      color: var(--sage-light); border-radius: 10px;
+      padding: 12px 14px; font-size: 13px;
+      margin-bottom: 16px; text-align: center;
+    }
+
+    .auth-form { display: flex; flex-direction: column; gap: 12px; }
+    .auth-input {
+      width: 100%; padding: 14px 16px;
+      background: #F8FAFC; border: 1.5px solid var(--border);
+      border-radius: 12px; font-size: 15px;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text); outline: none;
+      transition: border-color 0.2s;
+    }
+    .auth-input:focus { border-color: var(--ink); background: #fff; }
+    .auth-input::placeholder { color: var(--text-light); }
+
+    .btn-auth {
+      width: 100%; padding: 15px;
+      background: var(--ink); color: #fff;
+      border: none; border-radius: 100px;
+      font-size: 16px; font-weight: 700;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer; transition: all 0.3s;
+      margin-top: 4px;
+    }
+    .btn-auth:hover:not(:disabled) { background: var(--sage); transform: translateY(-1px); }
+    .btn-auth:disabled { opacity: 0.6; cursor: not-allowed; }
+    .btn-auth.green {
+      background: var(--sage);
+      box-shadow: 0 6px 30px rgba(0,184,148,0.35);
+      animation: pulse-btn 2.5s ease-in-out infinite;
+    }
+    .btn-auth.green:hover:not(:disabled) { background: var(--sage-light); }
+    @keyframes pulse-btn {
+      0%, 100% { box-shadow: 0 6px 30px rgba(0,184,148,0.35); }
+      50% { box-shadow: 0 6px 50px rgba(0,184,148,0.55); }
+    }
+
+    .auth-divider {
+      display: flex; align-items: center; gap: 12px;
+      margin: 20px 0; color: var(--text-light); font-size: 12px;
+      font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .auth-divider::before, .auth-divider::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+
+    .btn-google {
+      width: 100%; padding: 13px;
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 100px; font-size: 15px; font-weight: 600;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer; transition: all 0.2s;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      color: var(--text);
+    }
+    .btn-google:hover { background: #F8FAFC; border-color: #CBD5E1; }
+    .btn-google img { width: 20px; height: 20px; }
+
+    .auth-links { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; text-align: center; }
+    .auth-link {
+      font-size: 14px; font-weight: 600;
+      color: var(--sage); background: none; border: none;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .auth-link:hover { opacity: 0.75; }
+    .auth-link.muted { color: var(--text-light); font-weight: 500; font-size: 13px; }
+
+    .auth-pricing-hint {
+      background: var(--sage-muted); border: 1px solid rgba(0,184,148,0.2);
+      border-radius: 12px; padding: 12px 16px;
+      font-size: 13px; color: var(--sage-light);
+      text-align: center; margin-bottom: 20px;
+    }
+    .auth-pricing-hint strong { color: var(--ink); }
+  `;
+
+  const titles = {
+    login: { title: 'Espace Membre', sub: 'Connectez-vous pour accéder au programme.' },
+    register: { title: 'Créer mon compte', sub: 'Commencez votre transformation maintenant.' },
+    reset: { title: 'Mot de passe oublié', sub: 'Entrez votre email, on vous envoie un lien.' },
+  };
+
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-6 font-sans">
-      <div className="mb-8 text-center">
-        <h1 className="text-3xl font-extrabold text-[#0F2C59] font-display">
-          Sèche<span className="text-[#00B894]">10</span>Semaines
-        </h1>
-        <p className="text-xs font-bold text-[#00B894] uppercase tracking-widest mt-1">Protocole Métabolique</p>
-      </div>
+    <>
+      <style>{styles}</style>
+      <div className-auth-page style={{ minHeight: '100vh', background: 'linear-gradient(160deg, #071828 0%, #0F2C59 60%, #0a3d52 100%)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
+        <Link to="/" style={{ fontFamily: "'Instrument Serif', serif", fontSize: '26px', color: '#fff', textDecoration: 'none', marginBottom: '32px', display: 'block', textAlign: 'center' }}>
+          Sèche<span style={{ color: '#00B894' }}>10</span>Semaines
+        </Link>
 
-      <div className="bg-white w-full max-w-sm p-8 rounded-3xl shadow-xl border border-slate-100">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-[#0F2C59] font-display">
-            {view === 'login' ? 'Espace Membre' : view === 'register' ? 'Créer un compte' : 'Mot de passe oublié'}
-          </h2>
-          <p className="text-sm text-slate-500 mt-1">
-            {view === 'login' ? 'Connectez-vous pour accéder au programme.' : view === 'register' ? 'Commencez votre transformation.' : 'Entrez votre email.'}
-          </p>
-        </div>
+        <div style={{ background: '#fff', borderRadius: '24px', padding: '40px 36px', width: '100%', maxWidth: '420px', boxShadow: '0 40px 100px rgba(0,0,0,0.4)', animation: 'slide-up 0.4s ease both' }}>
 
-        {error && (
-          <div className="bg-red-50 text-red-500 text-xs p-3 rounded-lg mb-4 text-center border border-red-200 font-medium leading-relaxed">
-            {error}
-          </div>
-        )}
-        {success && (
-          <div className="bg-emerald-50 text-emerald-600 text-xs p-3 rounded-lg mb-4 text-center border border-emerald-200 font-medium">
-            {success}
-          </div>
-        )}
-
-        <form onSubmit={handleAuth} className="space-y-4">
-          {view === 'register' && (
-            <input
-              type="text"
-              placeholder="Votre Prénom"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:border-[#0F2C59] outline-none font-medium"
-              required
-            />
-          )}
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:border-[#0F2C59] outline-none font-medium"
-            required
-          />
-          {view !== 'reset' && (
-            <input
-              type="password"
-              placeholder="Mot de passe"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:border-[#0F2C59] outline-none font-medium"
-              required
-            />
-          )}
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full py-3 bg-[#0F2C59] text-white font-bold rounded-xl shadow-md hover:bg-[#163A70] transition disabled:opacity-50"
-          >
-            {loading ? 'Chargement...' : (view === 'login' ? 'Se connecter' : view === 'register' ? 'Commencer' : 'Envoyer le lien')}
-          </button>
-        </form>
-
-        {view !== 'reset' && (
-          <>
-            <div className="relative my-6">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-slate-200"></div>
-              </div>
-              <div className="relative flex justify-center text-xs uppercase font-bold text-slate-400 bg-white px-2">
-                Ou continuer avec
-              </div>
+          {/* Hint si redirect depuis pricing */}
+          {redirectTo === 'pricing' && (
+            <div className="auth-pricing-hint">
+              🔒 Créez un compte gratuit pour finaliser votre abonnement <strong>49€/mois</strong>
             </div>
+          )}
 
+          <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+            <div style={{ fontFamily: "'Instrument Serif', serif", fontSize: '26px', color: '#0F2C59', marginBottom: '6px' }}>
+              {titles[view].title}
+            </div>
+            <div style={{ fontSize: '14px', color: '#94A3B8' }}>{titles[view].sub}</div>
+          </div>
+
+          {error && <div className="auth-error">⚠️ {error}</div>}
+          {success && <div className="auth-success">✅ {success}</div>}
+
+          <form onSubmit={handleAuth} className="auth-form">
+            {view === 'register' && (
+              <input className="auth-input" type="text" placeholder="Votre prénom" value={name}
+                onChange={(e) => setName(e.target.value)} required />
+            )}
+            <input className="auth-input" type="email" placeholder="Email" value={email}
+              onChange={(e) => setEmail(e.target.value)} required />
+            {view !== 'reset' && (
+              <input className="auth-input" type="password" placeholder="Mot de passe (6 caractères min)" value={password}
+                onChange={(e) => setPassword(e.target.value)} required />
+            )}
             <button
-              type="button"
-              onClick={handleGoogle}
-              className="w-full py-3 bg-white border border-slate-200 text-slate-700 font-bold rounded-xl shadow-sm hover:bg-slate-50 transition flex items-center justify-center gap-2"
+              type="submit"
+              disabled={loading}
+              className={`btn-auth ${view === 'register' ? 'green' : ''}`}
             >
-              <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" className="w-5 h-5" alt="Google" />
-              Google
+              {loading ? '⏳ Chargement...' : (
+                view === 'login' ? 'Se connecter →' :
+                view === 'register' ? 'Créer mon compte →' :
+                'Envoyer le lien'
+              )}
             </button>
-          </>
-        )}
+          </form>
 
-        <div className="mt-6 text-center text-sm space-y-2">
-          {view === 'login' && (
+          {view !== 'reset' && (
             <>
-              <button onClick={() => setView('register')} className="block w-full text-[#00B894] font-bold hover:underline">
-                Pas encore membre ? Créer un compte
-              </button>
-              <button onClick={() => setView('reset')} className="block w-full text-slate-400 text-xs hover:text-slate-600">
-                Mot de passe oublié ?
+              <div className="auth-divider">ou</div>
+              <button type="button" onClick={handleGoogle} className="btn-google">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" />
+                Continuer avec Google
               </button>
             </>
           )}
-          {view === 'register' && (
-            <button onClick={() => setView('login')} className="text-[#00B894] font-bold hover:underline">
-              Déjà membre ? Se connecter
-            </button>
-          )}
-          {view === 'reset' && (
-            <button onClick={() => setView('login')} className="text-slate-500 font-bold hover:underline">
-              Retour à la connexion
-            </button>
-          )}
+
+          <div className="auth-links">
+            {view === 'login' && (
+              <>
+                <button onClick={() => setView('register')} className="auth-link">
+                  Pas encore membre ? Créer un compte
+                </button>
+                <button onClick={() => setView('reset')} className="auth-link muted">
+                  Mot de passe oublié ?
+                </button>
+              </>
+            )}
+            {view === 'register' && (
+              <button onClick={() => setView('login')} className="auth-link">
+                Déjà membre ? Se connecter
+              </button>
+            )}
+            {view === 'reset' && (
+              <button onClick={() => setView('login')} className="auth-link muted">
+                ← Retour à la connexion
+              </button>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
