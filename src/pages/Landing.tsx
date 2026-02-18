@@ -7,6 +7,9 @@ export const Landing: React.FC = () => {
   const [spotsLeft] = useState(14);
   const [timer, setTimer] = useState({ h: 2, m: 47, s: 33 });
   const [activeScreen, setActiveScreen] = useState(0);
+  const [cinemaStep, setCinemaStep] = useState(0);
+  const CINEMA_STEPS = 6;
+  const CINEMA_STEP_DURATION = 2800;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,6 +45,14 @@ export const Landing: React.FC = () => {
     const interval = setInterval(() => {
       setActiveScreen((prev) => (prev + 1) % 3);
     }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Cinema transformation animation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCinemaStep((prev) => (prev + 1) % CINEMA_STEPS);
+    }, CINEMA_STEP_DURATION);
     return () => clearInterval(interval);
   }, []);
 
@@ -167,18 +178,75 @@ export const Landing: React.FC = () => {
     .section-title { font-family: 'Instrument Serif', serif; font-size: 26px; color: var(--ink); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 12px; }
     .section-sub { font-size: 14px; color: var(--text-mid); line-height: 1.6; max-width: 500px; margin: 0 auto 36px; }
 
-    /* ═══ APP PREVIEW SECTION ═══ */
-    .app-preview { background: linear-gradient(160deg, var(--ink-deep) 0%, #0F2C59 100%); padding: 56px 20px; position: relative; overflow: hidden; }
-    .app-preview::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(0,184,148,0.1) 0%, transparent 70%); }
-    .app-preview .section-tag { color: var(--sage-glow); }
-    .app-preview .section-title { color: #fff; }
-    .app-preview .section-sub { color: rgba(255,255,255,0.6); }
-    .preview-phones { display: flex; justify-content: center; gap: 16px; margin-top: 32px; perspective: 1200px; position: relative; z-index: 1; }
-    .preview-phone { width: 180px; flex-shrink: 0; }
-    .preview-phone-frame { width: 100%; aspect-ratio: 9/19; background: #111; border-radius: 24px; padding: 6px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); overflow: hidden; position: relative; }
-    .preview-phone-frame .phone-screen { border-radius: 18px; }
-    .preview-label { text-align: center; margin-top: 10px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.7); }
-    .preview-label span { color: var(--sage-glow); }
+    /* ═══ CINEMA TRANSFORMATION SECTION ═══ */
+    .cinema-section { background: linear-gradient(160deg, #000 0%, #0a1628 40%, #0F2C59 100%); padding: 56px 16px; position: relative; overflow: hidden; }
+    .cinema-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(0,184,148,0.06) 0%, transparent 70%); }
+    .cinema-section .section-tag { color: var(--sage-glow); }
+    .cinema-section .section-title { color: #fff; }
+    .cinema-section .section-sub { color: rgba(255,255,255,0.55); }
+
+    .cinema-frame { max-width: 600px; margin: 32px auto 0; aspect-ratio: 16/10; background: #000; border-radius: 16px; position: relative; overflow: hidden; box-shadow: 0 30px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08), 0 0 80px rgba(0,184,148,0.15); z-index: 1; }
+    .cinema-inner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+
+    /* Each cinema slide */
+    .cinema-slide { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; opacity: 0; transform: scale(0.95); transition: opacity 0.6s ease, transform 0.6s ease; text-align: center; }
+    .cinema-slide.active { opacity: 1; transform: scale(1); }
+
+    /* Slide: Intro (Marc) */
+    .cinema-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, #1a3a6e, #0F2C59); border: 3px solid rgba(0,184,148,0.5); display: flex; align-items: center; justify-content: center; font-size: 28px; margin-bottom: 14px; box-shadow: 0 0 30px rgba(0,184,148,0.3); }
+    .cinema-name { font-family: 'Instrument Serif', serif; font-size: 24px; color: #fff; margin-bottom: 4px; }
+    .cinema-meta { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.05em; }
+
+    /* Slide: Stats */
+    .cinema-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; max-width: 320px; }
+    .cinema-stat-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px 10px; text-align: center; }
+    .cinema-stat-label { font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+    .cinema-stat-value { font-family: 'Instrument Serif', serif; font-size: 28px; color: #fff; line-height: 1; }
+    .cinema-stat-unit { font-size: 11px; color: rgba(255,255,255,0.4); }
+    .cinema-stat-box.highlight { border-color: rgba(0,184,148,0.4); background: rgba(0,184,148,0.08); }
+    .cinema-stat-box.highlight .cinema-stat-value { color: var(--sage-glow); }
+
+    /* Slide: Timeline */
+    .cinema-timeline { width: 100%; max-width: 340px; }
+    .cinema-tl-bar { height: 4px; background: rgba(255,255,255,0.1); border-radius: 100px; margin: 16px 0; position: relative; overflow: hidden; }
+    .cinema-tl-fill { height: 100%; background: linear-gradient(90deg, var(--sage), var(--sage-glow)); border-radius: 100px; transition: width 0.8s ease; }
+    .cinema-tl-weeks { display: flex; justify-content: space-between; font-size: 9px; color: rgba(255,255,255,0.35); }
+    .cinema-tl-weeks .current { color: var(--sage-glow); font-weight: 700; }
+    .cinema-week-label { font-family: 'Instrument Serif', serif; font-size: 32px; color: #fff; }
+    .cinema-week-desc { font-size: 13px; color: var(--sage-glow); font-weight: 600; margin-top: 4px; }
+
+    /* Slide: Before/After numbers */
+    .cinema-ba { display: flex; gap: 24px; align-items: center; width: 100%; max-width: 360px; justify-content: center; }
+    .cinema-ba-col { text-align: center; flex: 1; }
+    .cinema-ba-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 8px; }
+    .cinema-ba-label.before { color: #EF4444; }
+    .cinema-ba-label.after { color: var(--sage-glow); }
+    .cinema-ba-num { font-family: 'Instrument Serif', serif; font-size: 44px; line-height: 1; margin-bottom: 4px; }
+    .cinema-ba-num.before { color: rgba(255,255,255,0.3); }
+    .cinema-ba-num.after { color: var(--sage-glow); text-shadow: 0 0 30px rgba(0,184,148,0.5); }
+    .cinema-ba-sub { font-size: 11px; color: rgba(255,255,255,0.4); }
+    .cinema-ba-arrow { font-size: 28px; color: rgba(255,255,255,0.15); }
+    .cinema-ba-diff { background: rgba(0,184,148,0.15); border: 1px solid rgba(0,184,148,0.3); border-radius: 8px; padding: 6px 14px; margin-top: 16px; display: inline-block; }
+    .cinema-ba-diff span { font-size: 13px; font-weight: 700; color: var(--sage-glow); }
+
+    /* Slide: Result */
+    .cinema-result-icon { font-size: 48px; margin-bottom: 12px; }
+    .cinema-result-title { font-family: 'Instrument Serif', serif; font-size: 26px; color: #fff; margin-bottom: 8px; line-height: 1.2; }
+    .cinema-result-sub { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.5; max-width: 280px; }
+    .cinema-result-stats { display: flex; gap: 20px; margin-top: 16px; }
+    .cinema-result-stat { text-align: center; }
+    .cinema-result-stat .val { font-family: 'Instrument Serif', serif; font-size: 22px; color: var(--sage-glow); }
+    .cinema-result-stat .lab { font-size: 9px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+
+    /* Progress dots */
+    .cinema-dots { display: flex; justify-content: center; gap: 6px; margin-top: 16px; position: relative; z-index: 1; }
+    .cinema-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.2); transition: all 0.3s; cursor: pointer; }
+    .cinema-dot.active { background: var(--sage-glow); width: 20px; border-radius: 3px; }
+
+    /* Caption under cinema */
+    .cinema-caption { text-align: center; margin-top: 20px; position: relative; z-index: 1; }
+    .cinema-caption-text { font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; }
+    .cinema-caption-text strong { color: rgba(255,255,255,0.7); }
 
     .feature-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 24px; position: relative; z-index: 1; }
     .feature-pill { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); padding: 8px 14px; border-radius: 100px; font-size: 11px; font-weight: 600; }
@@ -297,8 +365,9 @@ export const Landing: React.FC = () => {
       .testi-grid { grid-template-columns: repeat(3, 1fr); }
       .value-grid { grid-template-columns: 1fr 1fr; max-width: 700px; }
       .sticky-cta { display: none; }
-      .preview-phones { gap: 24px; }
-      .preview-phone { width: 220px; }
+      .cinema-frame { max-width: 700px; aspect-ratio: 16/9; }
+      .cinema-stat-grid { max-width: 400px; }
+      .cinema-slide { padding: 32px; }
       .phone-frame { width: 260px; height: 520px; }
       .hero-phone-wrapper .phone-frame { width: 260px; height: 520px; }
     }
@@ -531,115 +600,144 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
-      {/* APP PREVIEW — THE "WAHOU" SECTION */}
-      <section className="app-preview">
+      {/* CINEMA TRANSFORMATION — THE "WAHOU" SECTION */}
+      <section className="cinema-section">
         <div className="container text-center">
-          <div className="section-tag">DÉCOUVREZ L'APPLICATION</div>
-          <h2 className="section-title font-serif">Tout est déjà prêt.<br />Vous n'avez qu'à suivre.</h2>
-          <p className="section-sub">Dashboard intelligent, repas pré-calculés, suivi quotidien — tout dans votre poche.</p>
+          <div className="section-tag">LA TRANSFORMATION</div>
+          <h2 className="section-title font-serif">L'histoire de Marc, 42 ans.<br />La vôtre commence aujourd'hui.</h2>
+          <p className="section-sub">Cadre en entreprise, père de 2 enfants. Il ne comptait plus les régimes ratés.</p>
         </div>
-        <div className="preview-phones">
-          {/* Phone 1: Dashboard */}
-          <div className="preview-phone">
-            <div className="preview-phone-frame">
-              <div className="phone-screen">
-                <div className="mini-dash">
-                  <div className="mini-dash-greeting">Bonjour Marc 👋</div>
-                  <div className="mini-dash-title">Semaine 4 / 10</div>
-                  <div className="mini-dash-card">
-                    <div className="mini-dash-card-title">Progression</div>
-                    <div className="mini-progress-bar">
-                      <div className="mini-progress-fill" style={{ width: '40%' }} />
-                    </div>
-                  </div>
-                  <div className="mini-dash-card">
-                    <div className="mini-stat-row">
-                      <div className="mini-stat">
-                        <div className="mini-stat-value">1 680</div>
-                        <div className="mini-stat-label">kcal</div>
-                      </div>
-                      <div className="mini-stat">
-                        <div className="mini-stat-value">140g</div>
-                        <div className="mini-stat-label">prot.</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mini-phase">
-                    <div className="mini-phase-week">S4</div>
-                    <div>
-                      <div className="mini-phase-name">Sèche Viscérale</div>
-                      <div className="mini-phase-text">Phase 2</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="preview-label"><span>📊</span> Dashboard</div>
-          </div>
 
-          {/* Phone 2: Journal */}
-          <div className="preview-phone">
-            <div className="preview-phone-frame">
-              <div className="phone-screen">
-                <div className="mini-journal">
-                  <div className="mini-journal-header">📋 Journal</div>
-                  <div className="mini-journal-date">Jour Training</div>
-                  <div className="mini-meal">
-                    <div className="mini-meal-title">🌅 Petit-déj</div>
-                    <div className="mini-meal-items">Omelette · Avoine · Fruits</div>
-                    <div className="mini-check">✅ Fait</div>
-                  </div>
-                  <div className="mini-meal">
-                    <div className="mini-meal-title">☀️ Déjeuner</div>
-                    <div className="mini-meal-items">Poulet · Riz · Brocolis</div>
-                  </div>
-                  <div className="mini-meal">
-                    <div className="mini-meal-title">🌙 Dîner</div>
-                    <div className="mini-meal-items">Saumon · Patate douce</div>
-                  </div>
-                  <div className="mini-meal">
-                    <div className="mini-meal-title">💊 Compléments</div>
-                    <div className="mini-meal-items">Oméga-3 · Vitamine D · Magnésium</div>
-                    <div className="mini-check">✅ Pris</div>
-                  </div>
-                </div>
+        <div className="cinema-frame">
+          <div className="cinema-inner">
+            {/* Slide 0: Intro — Who is Marc */}
+            <div className={`cinema-slide ${cinemaStep === 0 ? 'active' : ''}`}>
+              <div className="cinema-avatar">👤</div>
+              <div className="cinema-name">Marc, 42 ans</div>
+              <div className="cinema-meta">Cadre · Lyon · Père de 2 enfants</div>
+              <div style={{ marginTop: 16, fontSize: 13, color: 'rgba(255,255,255,0.45)', fontStyle: 'italic', maxWidth: 260, lineHeight: 1.5 }}>
+                "J'ai essayé 6 régimes en 5 ans. Rien n'a jamais tenu."
               </div>
             </div>
-            <div className="preview-label"><span>📋</span> Journal quotidien</div>
-          </div>
 
-          {/* Phone 3: Setup */}
-          <div className="preview-phone">
-            <div className="preview-phone-frame">
-              <div className="phone-screen">
-                <div className="mini-setup">
-                  <div className="mini-setup-header">🎯 Profil</div>
-                  <div className="mini-setup-sub">Personnalisé pour vous</div>
-                  <div className="mini-input-group">
-                    <div className="mini-label">Objectif</div>
-                    <div className="mini-select-row">
-                      <div className="mini-select-btn">Douce</div>
-                      <div className="mini-select-btn active">Sèche</div>
-                      <div className="mini-select-btn">Intense</div>
-                    </div>
-                  </div>
-                  <div className="mini-input-group">
-                    <div className="mini-label">Activité</div>
-                    <div className="mini-select-row">
-                      <div className="mini-select-btn">Séd.</div>
-                      <div className="mini-select-btn active">Actif</div>
-                      <div className="mini-select-btn">Très</div>
-                    </div>
-                  </div>
-                  <div className="mini-result-card">
-                    <div className="mini-result-title">TDEE calculé</div>
-                    <div className="mini-result-value">2 180</div>
-                    <div className="mini-result-unit">kcal/jour</div>
-                  </div>
+            {/* Slide 1: Starting stats */}
+            <div className={`cinema-slide ${cinemaStep === 1 ? 'active' : ''}`}>
+              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase' as const, letterSpacing: '0.15em', marginBottom: 14 }}>Jour 1 — Le bilan</div>
+              <div className="cinema-stat-grid">
+                <div className="cinema-stat-box">
+                  <div className="cinema-stat-label">Poids</div>
+                  <div className="cinema-stat-value">92<span className="cinema-stat-unit"> kg</span></div>
+                </div>
+                <div className="cinema-stat-box">
+                  <div className="cinema-stat-label">Tour de taille</div>
+                  <div className="cinema-stat-value">98<span className="cinema-stat-unit"> cm</span></div>
+                </div>
+                <div className="cinema-stat-box">
+                  <div className="cinema-stat-label">TDEE calculé</div>
+                  <div className="cinema-stat-value">2 180<span className="cinema-stat-unit"> kcal</span></div>
+                </div>
+                <div className="cinema-stat-box">
+                  <div className="cinema-stat-label">Objectif</div>
+                  <div className="cinema-stat-value" style={{ fontSize: 16, color: 'var(--sage-glow)' }}>Sèche 10 sem.</div>
                 </div>
               </div>
             </div>
-            <div className="preview-label"><span>🎯</span> Plan personnalisé</div>
+
+            {/* Slide 2: Timeline progression */}
+            <div className={`cinema-slide ${cinemaStep === 2 ? 'active' : ''}`}>
+              <div className="cinema-week-label">Semaine 4</div>
+              <div className="cinema-week-desc">Sèche Viscérale — Accélération</div>
+              <div className="cinema-timeline">
+                <div className="cinema-tl-bar">
+                  <div className="cinema-tl-fill" style={{ width: '40%' }} />
+                </div>
+                <div className="cinema-tl-weeks">
+                  <span>S1</span><span>S2</span><span>S3</span><span className="current">S4</span><span>S5</span><span>S6</span><span>S7</span><span>S8</span><span>S9</span><span>S10</span>
+                </div>
+              </div>
+              <div style={{ marginTop: 18, display: 'flex', gap: 16, justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: 'var(--sage-glow)' }}>-4.2</div>
+                  <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.4)' }}>kg perdus</div>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: 'var(--sage-glow)' }}>-5</div>
+                  <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.4)' }}>cm taille</div>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: '#F59E0B' }}>🔥 28</div>
+                  <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.4)' }}>jours streak</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 3: Daily routine */}
+            <div className={`cinema-slide ${cinemaStep === 3 ? 'active' : ''}`}>
+              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase' as const, letterSpacing: '0.15em', marginBottom: 12 }}>Sa routine quotidienne</div>
+              <div style={{ width: '100%', maxWidth: 280 }}>
+                {[
+                  { time: '7h00', icon: '🌅', text: 'Omelette 3 œufs · Avoine · Fruits', done: true },
+                  { time: '12h30', icon: '☀️', text: 'Poulet grillé · Riz basmati · Brocolis', done: true },
+                  { time: '19h00', icon: '🌙', text: 'Saumon · Patate douce · Salade', done: false },
+                  { time: '21h00', icon: '💊', text: 'Oméga-3 · Vitamine D · Magnésium', done: true },
+                ].map((meal, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '7px 0', borderBottom: i < 3 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
+                    <span style={{ fontSize: 8, color: 'rgba(255,255,255,0.3)', width: 30, flexShrink: 0 }}>{meal.time}</span>
+                    <span style={{ fontSize: 14 }}>{meal.icon}</span>
+                    <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.65)', flex: 1 }}>{meal.text}</span>
+                    <span style={{ fontSize: 12 }}>{meal.done ? '✅' : '⏳'}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Slide 4: Before/After numbers */}
+            <div className={`cinema-slide ${cinemaStep === 4 ? 'active' : ''}`}>
+              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase' as const, letterSpacing: '0.15em', marginBottom: 16 }}>Semaine 10 — Résultat</div>
+              <div className="cinema-ba">
+                <div className="cinema-ba-col">
+                  <div className="cinema-ba-label before">Avant</div>
+                  <div className="cinema-ba-num before">92</div>
+                  <div className="cinema-ba-sub">kg</div>
+                </div>
+                <div className="cinema-ba-arrow">→</div>
+                <div className="cinema-ba-col">
+                  <div className="cinema-ba-label after">Après</div>
+                  <div className="cinema-ba-num after">82</div>
+                  <div className="cinema-ba-sub">kg</div>
+                </div>
+              </div>
+              <div className="cinema-ba-diff">
+                <span>-10 kg · -11 cm tour de taille</span>
+              </div>
+            </div>
+
+            {/* Slide 5: Final — his words */}
+            <div className={`cinema-slide ${cinemaStep === 5 ? 'active' : ''}`}>
+              <div className="cinema-result-icon">🏆</div>
+              <div className="cinema-result-title">Marc a retrouvé<br />sa confiance.</div>
+              <div className="cinema-result-sub">
+                "Pour la première fois en 10 ans, j'ai enlevé mon t-shirt à la plage sans y penser."
+              </div>
+              <div className="cinema-result-stats">
+                <div className="cinema-result-stat"><div className="val">-10 kg</div><div className="lab">Poids</div></div>
+                <div className="cinema-result-stat"><div className="val">-11 cm</div><div className="lab">Taille</div></div>
+                <div className="cinema-result-stat"><div className="val">70 j</div><div className="lab">Streak</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Progress dots */}
+        <div className="cinema-dots">
+          {Array.from({ length: CINEMA_STEPS }).map((_, i) => (
+            <div key={i} className={`cinema-dot ${cinemaStep === i ? 'active' : ''}`} onClick={() => setCinemaStep(i)} />
+          ))}
+        </div>
+
+        <div className="cinema-caption">
+          <div className="cinema-caption-text">
+            <strong>Résultat d'un beta-testeur réel.</strong> Résultats individuels, non contractuels.
           </div>
         </div>
 
