@@ -214,11 +214,11 @@ export const SetupDiet: React.FC = () => {
 
   // ─── STYLES ─────────────────────────────────────────────
   const s = {
-    page: { fontFamily: "'DM Sans', sans-serif", background: C.bg, color: C.text, minHeight: '100vh', display: 'flex', flexDirection: 'column' as const },
-    header: { background: C.surface, padding: '16px 20px', textAlign: 'center' as const, borderBottom: `1px solid ${C.border}` },
+    page: { fontFamily: "'DM Sans', sans-serif", background: C.bg, color: C.text, minHeight: '100vh', display: 'flex', flexDirection: 'column' as const, alignItems: 'stretch' as const, width: '100%', overflowX: 'hidden' as const },
+    header: { background: C.surface, padding: '16px 20px', textAlign: 'center' as const, borderBottom: `1px solid ${C.border}`, width: '100%' },
     logo: { fontFamily: "'Cabinet Grotesk', sans-serif", fontWeight: 800, color: C.primary, fontSize: '1.15rem', letterSpacing: '-0.02em' },
     logoA: { color: C.accent },
-    wrap: { flex: 1, maxWidth: 560, margin: '0 auto', width: '100%', padding: '24px 20px 40px' },
+    wrap: { flex: 1, maxWidth: 560, margin: '0 auto', width: '100%', padding: '24px 20px 40px', boxSizing: 'border-box' as const, alignSelf: 'center' as const },
     progBg: { background: C.border, height: 5, borderRadius: 10, overflow: 'hidden' as const, marginBottom: 8 },
     progFill: { height: '100%', background: `linear-gradient(90deg, ${C.accent}, ${C.accentDark})`, transition: 'width 0.5s', width: progressPct, borderRadius: 10 },
     steps: { display: 'flex', justifyContent: 'space-between', fontSize: 10, fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: 1, marginBottom: 28, color: C.textLight },

@@ -1,125 +1,205 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export const Success: React.FC = () => {
+  const [visible, setVisible] = useState(false);
+
   useEffect(() => {
-    // Scroll to top
     window.scrollTo(0, 0);
+    setTimeout(() => setVisible(true), 100);
   }, []);
 
-  const styles = `
-    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap');
-    :root {
-      --ink: #0F2C59; --sage: #00B894; --sage-muted: #ECFDF5; --sage-glow: #34D399;
-      --text-mid: #475569; --border: #E2E8F0;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
-    .success-page {
-      min-height: 100vh;
-      background: linear-gradient(160deg, #071828 0%, #0F2C59 100%);
-      display: flex; align-items: center; justify-content: center;
-      padding: 40px 24px;
-    }
-    .success-card {
-      background: #fff; border-radius: 28px;
-      padding: 56px 48px; text-align: center;
-      max-width: 520px; width: 100%;
-      box-shadow: 0 40px 120px rgba(0,0,0,0.4);
-      animation: pop-in 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
-    }
-    @keyframes pop-in {
-      from { opacity: 0; transform: scale(0.85) translateY(20px); }
-      to { opacity: 1; transform: scale(1) translateY(0); }
-    }
-    .success-icon {
-      width: 80px; height: 80px;
-      background: var(--sage-muted);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 38px; margin: 0 auto 24px;
-      border: 3px solid rgba(0,184,148,0.3);
-    }
-    .success-title {
-      font-family: 'Instrument Serif', serif;
-      font-size: 34px; color: var(--ink);
-      line-height: 1.15; margin-bottom: 14px;
-    }
-    .success-sub {
-      font-size: 16px; color: var(--text-mid);
-      line-height: 1.65; margin-bottom: 36px;
-    }
-    .success-steps {
-      background: var(--sage-muted);
-      border: 1px solid rgba(0,184,148,0.2);
-      border-radius: 16px; padding: 24px 28px;
-      text-align: left; margin-bottom: 32px;
-    }
-    .success-steps h4 {
-      font-size: 13px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--sage); margin-bottom: 16px;
-    }
-    .success-steps ol {
-      list-style: none; padding: 0;
-    }
-    .success-steps li {
-      display: flex; align-items: center; gap: 12px;
-      font-size: 15px; color: #1E293B;
-      padding: 8px 0; border-bottom: 1px solid rgba(0,184,148,0.15);
-    }
-    .success-steps li:last-child { border-bottom: none; }
-    .step-num {
-      width: 26px; height: 26px; border-radius: 50%;
-      background: var(--sage); color: #fff;
-      font-size: 13px; font-weight: 700;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .btn-dashboard {
-      display: block; width: 100%;
-      background: var(--sage); color: #fff;
-      padding: 16px 32px; border-radius: 100px;
-      font-size: 16px; font-weight: 700;
-      text-decoration: none; text-align: center;
-      transition: all 0.3s;
-      box-shadow: 0 8px 40px rgba(0,184,148,0.35);
-    }
-    .btn-dashboard:hover { background: #059669; transform: translateY(-2px); }
-    .success-footer {
-      margin-top: 20px; font-size: 12px; color: #94A3B8;
-    }
-  `;
+  const s = {
+    page: {
+      minHeight: '100dvh',
+      background: 'linear-gradient(160deg, #071828 0%, #0F2C59 55%, #0a3d52 100%)',
+      display: 'flex' as const,
+      flexDirection: 'column' as const,
+      alignItems: 'center' as const,
+      justifyContent: 'center' as const,
+      padding: '24px 16px',
+      fontFamily: "'DM Sans', sans-serif",
+      position: 'relative' as const,
+      overflow: 'hidden' as const,
+    },
+    glow: {
+      position: 'absolute' as const,
+      top: '-80px', left: '50%',
+      transform: 'translateX(-50%)',
+      width: '400px', height: '400px',
+      background: 'radial-gradient(circle, rgba(0,184,148,0.22) 0%, transparent 70%)',
+      pointerEvents: 'none' as const,
+    },
+    card: {
+      background: '#fff',
+      borderRadius: '24px',
+      padding: '40px 28px',
+      width: '100%',
+      maxWidth: '440px',
+      textAlign: 'center' as const,
+      boxShadow: '0 32px 80px rgba(0,0,0,0.45)',
+      position: 'relative' as const,
+      zIndex: 1,
+      opacity: visible ? 1 : 0,
+      transform: visible ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.97)',
+      transition: 'opacity 0.5s ease, transform 0.5s cubic-bezier(0.34,1.56,0.64,1)',
+    },
+    confetti: {
+      fontSize: '52px',
+      marginBottom: '12px',
+      display: 'block',
+      animation: 'bounce 1s ease-in-out infinite alternate',
+    },
+    badge: {
+      display: 'inline-block',
+      background: '#ECFDF5',
+      border: '1px solid rgba(0,184,148,0.35)',
+      color: '#059669',
+      fontSize: '11px', fontWeight: 700,
+      letterSpacing: '0.1em', textTransform: 'uppercase' as const,
+      padding: '5px 14px', borderRadius: '100px',
+      marginBottom: '16px',
+    },
+    title: {
+      fontFamily: "'Instrument Serif', serif",
+      fontSize: 'clamp(26px, 7vw, 36px)',
+      color: '#0F2C59',
+      lineHeight: 1.15,
+      marginBottom: '10px',
+      letterSpacing: '-0.02em',
+    },
+    sub: {
+      fontSize: '15px',
+      color: '#64748B',
+      lineHeight: 1.6,
+      marginBottom: '28px',
+    },
+    stepsBox: {
+      background: '#F8FAFC',
+      border: '1px solid #E2E8F0',
+      borderRadius: '16px',
+      padding: '20px',
+      textAlign: 'left' as const,
+      marginBottom: '24px',
+    },
+    stepsTitle: {
+      fontSize: '11px', fontWeight: 700,
+      letterSpacing: '0.12em', textTransform: 'uppercase' as const,
+      color: '#00B894', marginBottom: '14px',
+    },
+    step: {
+      display: 'flex' as const,
+      alignItems: 'center' as const,
+      gap: '12px',
+      padding: '10px 0',
+      borderBottom: '1px solid #F1F5F9',
+    },
+    stepNum: {
+      width: '28px', height: '28px',
+      borderRadius: '50%',
+      background: 'linear-gradient(135deg, #00B894, #059669)',
+      color: '#fff',
+      fontSize: '13px', fontWeight: 700,
+      display: 'flex' as const, alignItems: 'center' as const, justifyContent: 'center' as const,
+      flexShrink: 0,
+      boxShadow: '0 2px 8px rgba(0,184,148,0.3)',
+    },
+    stepText: { flex: 1 },
+    stepLabel: { fontSize: '14px', fontWeight: 600, color: '#1E293B' },
+    stepDesc: { fontSize: '11px', color: '#94A3B8', marginTop: '1px' },
+    cta: {
+      display: 'block',
+      width: '100%',
+      background: '#00B894',
+      color: '#fff',
+      padding: '16px 24px',
+      borderRadius: '100px',
+      fontSize: '16px', fontWeight: 700,
+      textDecoration: 'none',
+      textAlign: 'center' as const,
+      boxShadow: '0 8px 32px rgba(0,184,148,0.4)',
+      transition: 'all 0.3s',
+      marginBottom: '12px',
+    },
+    secure: {
+      fontSize: '11px',
+      color: '#94A3B8',
+      marginBottom: '4px',
+    },
+    footer: {
+      marginTop: '20px',
+      padding: '0 4px',
+    },
+    footerText: {
+      fontSize: '11px',
+      color: '#94A3B8',
+      lineHeight: 1.6,
+    },
+    footerLink: {
+      color: '#00B894',
+      textDecoration: 'none',
+      fontWeight: 600,
+    },
+  };
 
   return (
     <>
-      <style>{styles}</style>
-      <div className="success-page">
-        <div className="success-card">
-          <div className="success-icon">🎉</div>
-          <h1 className="success-title">
-            Bienvenue dans<br />Sèche 10 Semaines !
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;600;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        @keyframes bounce {
+          from { transform: translateY(0px); }
+          to   { transform: translateY(-8px); }
+        }
+        @keyframes pulse-cta {
+          0%, 100% { box-shadow: 0 8px 32px rgba(0,184,148,0.4); }
+          50%       { box-shadow: 0 8px 48px rgba(0,184,148,0.65); }
+        }
+      `}</style>
+
+      <div style={s.page}>
+        <div style={s.glow} />
+
+        <div style={s.card}>
+          <span style={s.confetti}>🎉</span>
+          <div style={s.badge}>Paiement confirmé ✓</div>
+
+          <h1 style={s.title}>
+            Bienvenue dans<br />
+            <em style={{ color: '#00B894', fontStyle: 'italic' }}>Sèche 10 Semaines</em>
           </h1>
-          <p className="success-sub">
-            Votre abonnement est activé. Votre transformation commence maintenant.
+          <p style={s.sub}>
+            Votre abonnement est activé. La transformation commence maintenant — suivez ces 3 étapes pour démarrer.
           </p>
 
-          <div className="success-steps">
-            <h4>Vos prochaines étapes</h4>
-            <ol>
-              <li><span className="step-num">1</span>Configurez votre profil alimentaire</li>
-              <li><span className="step-num">2</span>Recevez votre plan personnalisé</li>
-              <li><span className="step-num">3</span>Commencez dès aujourd'hui</li>
-            </ol>
+          <div style={s.stepsBox}>
+            <div style={s.stepsTitle}>🚀 Vos prochaines étapes</div>
+            {[
+              { n: 1, label: 'Créer votre profil', desc: 'Biométrie + profil santé (5 min)' },
+              { n: 2, label: 'Recevoir votre plan', desc: 'Macros personnalisés + cyclage calorique' },
+              { n: 3, label: 'Commencer dès aujourd\'hui', desc: 'Journal quotidien + suivi glycémie' },
+            ].map((step, i, arr) => (
+              <div key={step.n} style={{ ...s.step, borderBottom: i === arr.length - 1 ? 'none' : '1px solid #F1F5F9' }}>
+                <div style={s.stepNum}>{step.n}</div>
+                <div style={s.stepText}>
+                  <div style={s.stepLabel}>{step.label}</div>
+                  <div style={s.stepDesc}>{step.desc}</div>
+                </div>
+              </div>
+            ))}
           </div>
 
-          <Link to="/setup" className="btn-dashboard">
+          <Link to="/setup" style={s.cta}>
             Configurer mon profil →
           </Link>
-          <p className="success-footer">
-            Un email de confirmation a été envoyé par Stripe. <br />
-            Des questions ? <a href="mailto:contact@seche10semaines.fr" style={{color: 'var(--sage)'}}>contact@seche10semaines.fr</a>
-          </p>
+          <div style={s.secure}>🔒 Données sécurisées · Annulable à tout moment</div>
+
+          <div style={s.footer}>
+            <p style={s.footerText}>
+              Un email de confirmation Stripe vous a été envoyé.<br />
+              Une question ? <a href="mailto:contact@seche10semaines.fr" style={s.footerLink}>contact@seche10semaines.fr</a>
+            </p>
+          </div>
         </div>
       </div>
     </>
