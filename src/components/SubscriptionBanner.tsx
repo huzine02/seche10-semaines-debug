@@ -22,7 +22,7 @@ export const SubscriptionBanner: React.FC = () => {
   const configs: Record<string, { bg: string; border: string; color: string; icon: string; text: string; cta: string }> = {
     inactive: {
       bg: '#EFF6FF', border: '#BFDBFE', color: '#1D4ED8',
-      icon: '🔒', text: 'Accédez au programme complet — 49€/mois, sans engagement.',
+      icon: '🔒', text: 'Accédez au programme complet — 29€/mois (offre lancement), sans engagement.',
       cta: 'Commencer maintenant',
     },
     payment_failed: {

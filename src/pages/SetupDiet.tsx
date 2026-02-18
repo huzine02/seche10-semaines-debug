@@ -195,7 +195,7 @@ export const SetupDiet: React.FC = () => {
         createdAt: new Date().toISOString(),
       }, { merge: true });
       await refreshProfile();
-      navigate('/dashboard');
+      navigate('/pricing');
     } catch (e: any) {
       console.error(e);
       alert('Erreur : ' + e.message);
