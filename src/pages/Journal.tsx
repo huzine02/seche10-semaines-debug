@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
@@ -527,19 +527,7 @@ export const Journal: React.FC = () => {
         </div>
       )}
 
-      {/* BOTTOM NAV */}
-      <nav style={{ position: 'fixed', bottom: 0, width: '100%', background: C.surface, borderTop: `1px solid ${C.borderLight}`, padding: '8px 24px 20px', display: 'flex', justifyContent: 'space-around', zIndex: 30, boxShadow: '0 -2px 12px rgba(0,0,0,0.03)' }}>
-        {[
-          { to: '/dashboard', icon: '🏠', label: 'Suivi', active: false },
-          { to: '/journal', icon: '📖', label: 'Journal', active: true },
-          { to: '/profile', icon: '👤', label: 'Profil', active: false },
-        ].map(item => (
-          <Link key={item.to} to={item.to} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, padding: 8, textDecoration: 'none', color: item.active ? C.accent : '#CBD5E1' }}>
-            <span style={{ fontSize: 18 }}>{item.icon}</span>
-            <span style={{ fontSize: 9, fontWeight: 700 }}>{item.label}</span>
-          </Link>
-        ))}
-      </nav>
+      {/* Bottom nav handled by Layout */}
     </div>
   );
 };

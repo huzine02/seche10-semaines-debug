@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { doc, getDoc, updateDoc, arrayUnion, collection, getDocs } from 'firebase/firestore';
 import { SubscriptionBanner } from '../components/SubscriptionBanner';
 import { StreakBadge } from '../components/StreakBadge';
@@ -724,19 +723,7 @@ export const Dashboard: React.FC = () => {
         </Card>
       </main>
 
-      {/* ═══ BOTTOM NAV ═══ */}
-      <nav style={{ position: 'fixed', bottom: 0, width: '100%', background: C.surface, borderTop: `1px solid ${C.borderLight}`, padding: '8px 24px 20px', display: 'flex', justifyContent: 'space-around', zIndex: 30, boxShadow: '0 -2px 12px rgba(0,0,0,0.03)' }}>
-        {[
-          { to: '/dashboard', icon: '🏠', label: 'Suivi', active: true },
-          { to: '/journal', icon: '📖', label: 'Journal', active: false },
-          { to: '/profile', icon: '👤', label: 'Profil', active: false },
-        ].map(item => (
-          <Link key={item.to} to={item.to} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, padding: 8, textDecoration: 'none', color: item.active ? C.accent : '#CBD5E1' }}>
-            <span style={{ fontSize: 18 }}>{item.icon}</span>
-            <span style={{ fontSize: 9, fontWeight: 700 }}>{item.label}</span>
-          </Link>
-        ))}
-      </nav>
+      {/* Bottom nav handled by Layout */}
     </div>
   );
 };
