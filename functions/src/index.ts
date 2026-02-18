@@ -20,7 +20,7 @@ const stripe = new Stripe(stripeSecretKey, { apiVersion: '2025-01-27.acacia' });
 // ─── PLAN STRIPE ──────────────────────────────────────────────────────────────
 // Créez un produit à 49€/mois dans dashboard.stripe.com/products
 // puis copiez l'ID price_XXXX ici ou dans functions/.env
-const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID || 'price_seche10_49eur_month';
+const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID || 'price_1T2BqFDcPMJMvgTWxoW5rHzM';
 
 // ─── 1. createCheckoutSession ─────────────────────────────────────────────────
 export const createCheckoutSession = functions

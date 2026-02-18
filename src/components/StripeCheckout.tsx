@@ -36,7 +36,7 @@ export const StripeCheckout: React.FC = () => {
           Authorization: `Bearer ${idToken}`,
         },
         body: JSON.stringify({
-          priceId: 'price_seche10_49eur_month', // À remplacer par l'ID Stripe réel
+          priceId: 'price_1T2BqFDcPMJMvgTWxoW5rHzM',
           successUrl: `${window.location.origin}/#/success`,
           cancelUrl: `${window.location.origin}/#/pricing`,
         }),
