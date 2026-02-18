@@ -14,7 +14,7 @@ import { useAuth } from '../AuthContext';
  *  5. Stripe redirect vers /success?session_id=... ou /cancel
  */
 
-const FUNCTIONS_URL = import.meta.env.VITE_FIREBASE_FUNCTIONS_URL as string;
+const FUNCTIONS_URL = 'https://us-central1-seche10semaines.cloudfunctions.net';
 
 export const StripeCheckout: React.FC = () => {
   const { user } = useAuth();
