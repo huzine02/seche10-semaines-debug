@@ -6,15 +6,21 @@ admin.initializeApp();
 const db = admin.firestore();
 
 // ─── STRIPE ───────────────────────────────────────────────────────────────────
-// Clés via: firebase functions:config:set stripe.secret_key="sk_test_..." stripe.webhook_secret="whsec_..."
-const stripeSecretKey = functions.config().stripe?.secret_key || process.env.STRIPE_SECRET_KEY || '';
-const stripeWebhookSecret = functions.config().stripe?.webhook_secret || process.env.STRIPE_WEBHOOK_SECRET || '';
+// Clés lues depuis functions/.env (local) ou Secret Manager (production)
+// Déploiement: firebase functions:secrets:set STRIPE_SECRET_KEY
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY || '';
+const stripeWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET || '';
+
+if (!stripeSecretKey) {
+  console.warn('⚠️  STRIPE_SECRET_KEY manquante dans les variables d\'environnement');
+}
 
 const stripe = new Stripe(stripeSecretKey, { apiVersion: '2025-01-27.acacia' });
 
 // ─── PLAN STRIPE ──────────────────────────────────────────────────────────────
-// Créez ce prix dans votre dashboard Stripe, puis copiez l'ID ici
-const STRIPE_PRICE_ID = functions.config().stripe?.price_id || 'price_seche10_49eur_month';
+// Créez un produit à 49€/mois dans dashboard.stripe.com/products
+// puis copiez l'ID price_XXXX ici ou dans functions/.env
+const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID || 'price_seche10_49eur_month';
 
 // ─── 1. createCheckoutSession ─────────────────────────────────────────────────
 export const createCheckoutSession = functions
