@@ -10,6 +10,7 @@ import { Journal } from './pages/Journal';
 import { Profile } from './pages/Profile';
 import { Pricing } from './pages/Pricing';
 import { Success } from './pages/Success';
+import { Guide } from './pages/Guide';
 import { NotFound } from './pages/NotFound';
 import { LoadingScreen } from './components/LoadingScreen';
 
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/login" element={<Auth />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/success" element={<Success />} />
+          <Route path="/guide" element={<Guide />} />
           <Route
             path="/setup"
             element={

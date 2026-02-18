@@ -229,8 +229,8 @@ export const SetupDiet: React.FC = () => {
     labelOpt: { color: C.textLight, fontWeight: 500 as const, textTransform: 'none' as const, letterSpacing: 0 },
     input: { width: '100%', padding: '13px 14px', border: `2px solid ${C.border}`, borderRadius: 10, fontSize: '1rem', fontFamily: "'DM Sans'", background: C.surface, color: C.primary, fontWeight: 600, outline: 'none', transition: '0.2s', boxSizing: 'border-box' as const },
     formG: { marginBottom: 16 },
-    grid2: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 },
-    grid3: { display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 },
+    grid2: { display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 },
+    grid3: { display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 },
     card: { background: C.surface, border: `2px solid ${C.border}`, padding: '13px 14px', borderRadius: 10, cursor: 'pointer', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: 12, position: 'relative' as const },
     cardOn: { borderColor: C.accent, background: '#F0FDF4', boxShadow: '0 3px 12px rgba(0,184,148,0.12)' },
     cardTitle: { fontWeight: 700, color: C.primary, fontSize: '0.88rem', display: 'block' },
@@ -254,6 +254,14 @@ export const SetupDiet: React.FC = () => {
         @keyframes slideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
         .slide{animation:slideUp 0.35s ease-out}
         input:focus{border-color:${C.primary} !important}
+        .grid3-resp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+        .grid2-resp{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+        .dual-col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+        @media(max-width:480px){
+          .grid3-resp{grid-template-columns:1fr!important}
+          .grid2-resp{grid-template-columns:1fr!important}
+          .dual-col{grid-template-columns:1fr 1fr!important}
+        }
       `}</style>
 
       <header style={s.header}>
@@ -285,7 +293,7 @@ export const SetupDiet: React.FC = () => {
 
             <div style={s.formG}>
               <label style={s.label}>Sexe biologique</label>
-              <div style={s.grid2}>
+              <div className="grid2-resp">
                 {(['male', 'female'] as const).map(g => (
                   <div key={g} style={{ ...s.card, ...(bio.gender === g ? s.cardOn : {}) }} onClick={() => setBio({ ...bio, gender: g })}>
                     <span style={s.icon}>{g === 'male' ? '♂️' : '♀️'}</span>
@@ -296,7 +304,7 @@ export const SetupDiet: React.FC = () => {
               </div>
             </div>
 
-            <div style={s.grid3}>
+            <div className="grid3-resp">
               <div style={s.formG}>
                 <label style={s.label}>Âge</label>
                 <input style={s.input} type="number" inputMode="numeric" placeholder="42" value={bio.age} onChange={e => setBio({ ...bio, age: e.target.value })} />
@@ -318,7 +326,7 @@ export const SetupDiet: React.FC = () => {
                 <span style={{ fontWeight: 700, fontSize: 12, color: C.primary }}>Mesures corporelles</span>
                 <span style={{ fontSize: 9, color: C.textLight, background: C.surface, padding: '2px 8px', borderRadius: 20, fontWeight: 600 }}>Pour estimation masse grasse</span>
               </div>
-              <div style={s.grid2}>
+              <div className="dual-col">
                 <div>
                   <label style={s.label}>Tour de taille (cm)</label>
                   <input style={s.input} type="number" inputMode="decimal" placeholder="92" value={bio.waistline} onChange={e => setBio({ ...bio, waistline: e.target.value })} />
@@ -449,7 +457,7 @@ export const SetupDiet: React.FC = () => {
             </div>
 
             {/* TDEE / Deficit / Protein per kg */}
-            <div style={{ display: 'flex', gap: 8, marginBottom: 14 }}>
+            <div className="grid3-resp" style={{ marginBottom: 14 }}>
               {[
                 { l: 'TDEE', v: String(diet.tdee), u: 'kcal/j', bg: C.primaryBg, c: C.primary },
                 { l: 'Déficit', v: `${diet.deficitPercent}%`, u: 'adaptatif', bg: C.accentBg, c: C.accentDark },
@@ -464,7 +472,7 @@ export const SetupDiet: React.FC = () => {
             </div>
 
             {/* Dual macro cards */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 14 }}>
+            <div className="dual-col" style={{ marginBottom: 14 }}>
               {[
                 { label: '🔥 Training', data: diet.training, borderColor: C.accent, badgeBg: C.accent },
                 { label: '😴 Repos', data: diet.rest, borderColor: C.border, badgeBg: C.textLight },

@@ -344,7 +344,16 @@ export const Profile: React.FC = () => {
 
   return (
     <div style={{ fontFamily: "'DM Sans', sans-serif", background: C.bg, minHeight: '100vh', paddingBottom: 100, color: C.text }}>
-      <style>{`@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500&display=swap');`}</style>
+      <style>{`
+        @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap');
+        .stat-grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+        .stat-grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; }
+        @media (max-width: 380px) {
+          .stat-grid-3 { grid-template-columns: 1fr 1fr !important; }
+          .stat-grid-2 { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
 
       {/* HEADER */}
       <header style={{ background: C.surface, padding: '32px 20px 16px', borderBottom: `1px solid ${C.border}` }}>
@@ -370,7 +379,7 @@ export const Profile: React.FC = () => {
         {/* 2. BILAN PROGRESSION (DELTAS) */}
         <div style={cardStyle}>
           <h3 style={sectionTitleStyle}>📉 Bilan Progression</h3>
-          <div style={{ display: 'flex', gap: 10 }}>
+          <div className="stat-grid-3">
             <div style={statBox()}>
               <div style={statLabel}>Poids Actuel</div>
               <div style={statValue}>{latestWeight ? `${latestWeight.value} kg` : '--'}</div>
@@ -406,7 +415,7 @@ export const Profile: React.FC = () => {
               )}
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 12 }}>
+            <div className="stat-grid-3" style={{ marginBottom: 12 }}>
               <div style={statBox(C.bg)}>
                 <div style={statLabel}>TDEE</div>
                 <div style={statValue}>{diet.tdee} <span style={{fontSize:9, fontWeight:400}}>kcal</span></div>
@@ -510,14 +519,14 @@ export const Profile: React.FC = () => {
         {/* 6. LIENS & GUIDE */}
         <div style={cardStyle}>
           <h3 style={sectionTitleStyle}>📚 Ressources</h3>
-          <div onClick={openDynamicGuide} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 0', borderBottom: `1px solid ${C.borderLight}`, cursor: 'pointer' }}>
+          <Link to="/guide" style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 0', borderBottom: `1px solid ${C.borderLight}`, textDecoration: 'none' }}>
             <span style={{ fontSize: 20 }}>📕</span>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>Guide Sèche 10 Semaines</div>
-              <div style={{ fontSize: 11, color: C.textMuted }}>Ouvrir le Guide Complet</div>
+              <div style={{ fontSize: 11, color: C.textMuted }}>Protocole complet + FAQ + Suppléments</div>
             </div>
             <span style={{ color: C.textMuted }}>→</span>
-          </div>
+          </Link>
           <a href="https://t.me/+dOa-aLAck3c2Mjk0" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 0', textDecoration: 'none' }}>
             <span style={{ fontSize: 20 }}>💬</span>
             <div style={{ flex: 1 }}>
@@ -528,7 +537,50 @@ export const Profile: React.FC = () => {
           </a>
         </div>
 
-        {/* 7. ACTIONS COMPTE */}
+        {/* 7. ABONNEMENT */}
+        <div style={cardStyle}>
+          <h3 style={sectionTitleStyle}>💳 Abonnement</h3>
+          {(() => {
+            const status = profile?.subscriptionStatus;
+            const statusConfig: Record<string, { label: string; color: string; bg: string }> = {
+              active:        { label: '✅ Actif',          color: '#059669', bg: '#ECFDF5' },
+              trialing:      { label: '🎁 Période d\'essai', color: '#0EA5E9', bg: '#F0F9FF' },
+              cancelling:    { label: '⏳ Annulation prévue', color: '#D97706', bg: '#FFFBEB' },
+              cancelled:     { label: '❌ Annulé',         color: '#DC2626', bg: '#FEF2F2' },
+              payment_failed:{ label: '⚠️ Paiement échoué', color: '#DC2626', bg: '#FEF2F2' },
+              inactive:      { label: '🔒 Inactif',        color: '#64748B', bg: '#F8FAFC' },
+            };
+            const cfg = status ? statusConfig[status] : statusConfig.inactive;
+            return (
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+                  <span style={{ fontSize: 13, color: C.textMuted }}>Statut</span>
+                  <span style={{ background: cfg.bg, color: cfg.color, padding: '4px 10px', borderRadius: 20, fontSize: 12, fontWeight: 700 }}>
+                    {cfg.label}
+                  </span>
+                </div>
+                {profile?.subscriptionStartedAt && (
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8, fontSize: 12 }}>
+                    <span style={{ color: C.textMuted }}>Début</span>
+                    <span style={{ fontWeight: 600 }}>{new Date(profile.subscriptionStartedAt).toLocaleDateString('fr-FR')}</span>
+                  </div>
+                )}
+                {status === 'active' && (
+                  <div style={{ marginTop: 12, fontSize: 11, color: C.textMuted, textAlign: 'center', padding: '8px', background: C.bg, borderRadius: 8 }}>
+                    Annulation possible à tout moment, sans frais.
+                  </div>
+                )}
+                {(!status || status === 'inactive' || status === 'cancelled') && (
+                  <Link to="/pricing" style={{ display: 'block', marginTop: 12, padding: '11px', background: '#00B894', color: '#fff', borderRadius: '100px', textAlign: 'center', textDecoration: 'none', fontSize: 13, fontWeight: 700, boxShadow: '0 4px 20px rgba(0,184,148,0.3)' }}>
+                    Activer le programme → 49€/mois
+                  </Link>
+                )}
+              </div>
+            );
+          })()}
+        </div>
+
+        {/* 8. ACTIONS COMPTE */}
         <div>
           <h3 style={sectionTitleStyle}>Zone de danger</h3>
           <Link to="/setup" style={{ display: 'block', padding: 12, background: C.surface, borderRadius: 8, textAlign: 'center', fontSize: 12, fontWeight: 700, color: C.textMuted, textDecoration: 'none', border: `1px solid ${C.border}`, marginBottom: 12 }}>
