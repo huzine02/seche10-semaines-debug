@@ -3,25 +3,29 @@ import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 import { Request, Response } from 'express';
 
-// Firebase Functions v2 étend Request avec rawBody
-interface FirebaseRequest extends Request {
-  rawBody?: Buffer;
-}
-
 admin.initializeApp();
 const db = admin.firestore();
 
-// ─── STRIPE ───────────────────────────────────────────────────────────────────
-// Clés lues depuis functions/.env (local) ou Secret Manager (production)
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY || '';
-const stripeWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET || '';
-const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID || 'price_1T2BqFDcPMJMvgTWxoW5rHzM';
+// ─── STRIPE (lazy init) ───────────────────────────────────────────────────────
+// La clé est chargée depuis functions/.env (local) ou Secret Manager (prod)
+// On initialise Stripe à la première requête, pas au chargement du module
+let _stripe: Stripe | null = null;
+const getStripe = (): Stripe => {
+  if (!_stripe) {
+    const key = process.env.STRIPE_SECRET_KEY || '';
+    if (!key) throw new Error('STRIPE_SECRET_KEY manquante dans les variables d\'environnement');
+    _stripe = new Stripe(key, { apiVersion: '2025-02-24.acacia' });
+  }
+  return _stripe;
+};
 
-if (!stripeSecretKey) {
-  console.warn('⚠️  STRIPE_SECRET_KEY manquante dans les variables d\'environnement');
+const getWebhookSecret = () => process.env.STRIPE_WEBHOOK_SECRET || '';
+const getPriceId = () => process.env.STRIPE_PRICE_ID || 'price_1T2BqFDcPMJMvgTWxoW5rHzM';
+
+// ─── Firebase Functions v2 étend Request avec rawBody ─────────────────────────
+interface FirebaseRequest extends Request {
+  rawBody?: Buffer;
 }
-
-const stripe = new Stripe(stripeSecretKey, { apiVersion: '2025-02-24.acacia' });
 
 // ─── CORS helper ──────────────────────────────────────────────────────────────
 const setCors = (res: Response) => {
@@ -38,7 +42,6 @@ export const createCheckoutSession = onRequest(
     if (req.method !== 'POST') { res.status(405).json({ error: 'Method not allowed' }); return; }
 
     try {
-      // Vérifier le token Firebase
       const authHeader = req.headers.authorization || '';
       if (!authHeader.startsWith('Bearer ')) {
         res.status(401).json({ error: 'Non authentifié' }); return;
@@ -52,19 +55,23 @@ export const createCheckoutSession = onRequest(
 
       // Récupérer ou créer le customer Stripe
       const userDoc = await db.collection('users').doc(uid).get();
-      let stripeCustomerId: string | undefined = (userDoc.data() as { stripeCustomerId?: string })?.stripeCustomerId;
+      let stripeCustomerId: string | undefined =
+        (userDoc.data() as { stripeCustomerId?: string })?.stripeCustomerId;
 
       if (!stripeCustomerId) {
-        const customer = await stripe.customers.create({ email, metadata: { firebaseUID: uid } });
+        const customer = await getStripe().customers.create({
+          email,
+          metadata: { firebaseUID: uid },
+        });
         stripeCustomerId = customer.id;
         await db.collection('users').doc(uid).set({ stripeCustomerId }, { merge: true });
       }
 
-      // Créer la Checkout Session (abonnement)
-      const session = await stripe.checkout.sessions.create({
+      // Créer la Checkout Session abonnement
+      const session = await getStripe().checkout.sessions.create({
         mode: 'subscription',
         customer: stripeCustomerId,
-        line_items: [{ price: STRIPE_PRICE_ID, quantity: 1 }],
+        line_items: [{ price: getPriceId(), quantity: 1 }],
         success_url: successUrl || 'https://seche10-semaines-debug.vercel.app/#/success',
         cancel_url: cancelUrl || 'https://seche10-semaines-debug.vercel.app/#/pricing',
         allow_promotion_codes: true,
@@ -90,10 +97,10 @@ export const stripeWebhook = onRequest(
 
     let event: Stripe.Event;
     try {
-      event = stripe.webhooks.constructEvent(
+      event = getStripe().webhooks.constructEvent(
         req.rawBody || Buffer.from(JSON.stringify(req.body)),
         sig,
-        stripeWebhookSecret
+        getWebhookSecret()
       );
     } catch (err) {
       console.error('Webhook signature error:', err);
@@ -180,7 +187,7 @@ export const cancelSubscription = onRequest(
         res.status(404).json({ error: 'Aucun abonnement actif' }); return;
       }
 
-      await stripe.subscriptions.update(stripeSubscriptionId, { cancel_at_period_end: true });
+      await getStripe().subscriptions.update(stripeSubscriptionId, { cancel_at_period_end: true });
       await db.collection('users').doc(uid).set({ subscriptionStatus: 'cancelling' }, { merge: true });
 
       res.json({ success: true, message: 'Abonnement annulé à la prochaine échéance' });
