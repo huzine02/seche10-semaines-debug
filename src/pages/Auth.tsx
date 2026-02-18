@@ -3,8 +3,7 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signInWithRedirect,
-  getRedirectResult,
+  signInWithPopup,
   sendPasswordResetEmail
 } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
@@ -31,27 +30,7 @@ export const Auth: React.FC = () => {
     if (user) navigate(afterLoginPath);
   }, [user, navigate, afterLoginPath]);
 
-  useEffect(() => {
-    const checkRedirect = async () => {
-      try {
-        const res = await getRedirectResult(auth);
-        if (res) {
-          const userDoc = await getDoc(doc(db, 'users', res.user.uid));
-          if (!userDoc.exists()) {
-            const profile = createInitialUserProfile(res.user);
-            // @ts-ignore
-            await setDoc(doc(db, 'users', res.user.uid), profile);
-            navigate('/setup');
-          } else {
-            navigate(afterLoginPath);
-          }
-        }
-      } catch (err: unknown) {
-        handleAuthError(err);
-      }
-    };
-    checkRedirect();
-  }, [navigate, afterLoginPath]);
+  // (Pas de getRedirectResult - on utilise signInWithPopup)
 
   const handleAuthError = (err: unknown) => {
     const e = err as { code?: string; message?: string };
@@ -96,9 +75,21 @@ export const Auth: React.FC = () => {
   const handleGoogle = async () => {
     try {
       setError('');
-      await signInWithRedirect(auth, googleProvider);
+      setLoading(true);
+      const res = await signInWithPopup(auth, googleProvider);
+      const userDoc = await getDoc(doc(db, 'users', res.user.uid));
+      if (!userDoc.exists()) {
+        const profile = createInitialUserProfile(res.user);
+        // @ts-ignore
+        await setDoc(doc(db, 'users', res.user.uid), profile);
+        navigate(redirectTo === 'pricing' ? '/pricing' : '/setup');
+      } else {
+        navigate(afterLoginPath);
+      }
     } catch (err: unknown) {
       handleAuthError(err);
+    } finally {
+      setLoading(false);
     }
   };
 
