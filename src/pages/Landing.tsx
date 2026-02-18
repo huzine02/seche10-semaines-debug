@@ -445,7 +445,7 @@ export const Landing: React.FC = () => {
               Démarrer ma transformation →
             </Link>
             <span className="hero-guarantee">
-              🛡️ <strong>Garantie 14 jours</strong> · Sans engagement · 49€/mois
+              🛡️ <strong>Garantie 14 jours</strong> · Sans engagement · 29€/mois au lieu de 49€
             </span>
           </div>
 
@@ -797,7 +797,7 @@ export const Landing: React.FC = () => {
             </div>
             <div className="value-card new">
               <div style={{ fontSize: 12, fontWeight: 700, color: '#059669', textTransform: 'uppercase' as const, letterSpacing: '0.1em' }}>Sèche 10 Semaines</div>
-              <div className="value-price" style={{ color: '#059669' }}>49€<span style={{ fontSize: 14, fontWeight: 400 }}>/mois</span></div>
+              <div className="value-price" style={{ color: '#059669' }}>29€<span style={{ fontSize: 14, fontWeight: 400 }}>/mois</span></div>
               <ul className="value-list">
                 <li>✅ Plan personnalisé par algorithme</li>
                 <li>✅ Journal quotidien détaillé</li>
@@ -844,15 +844,16 @@ export const Landing: React.FC = () => {
 
           <div id="pricing-card" data-animate className={`pricing-card fade-up ${isVisible('pricing-card') ? 'visible' : ''}`}>
             <div className="pricing-header">
-              <div className="pricing-badge">🔥 {spotsLeft} places restantes</div>
+              <div className="pricing-badge">🔥 {spotsLeft} places à ce prix</div>
               <div className="pricing-name">Programme Complet · 10 Semaines</div>
               <div className="pricing-price">
-                <span className="price-amount">49€</span>
+                <span className="price-amount">29€</span>
                 <div className="price-details">
                   <div>/mois</div>
-                  <div className="price-old">97€</div>
+                  <div className="price-old">49€</div>
                 </div>
               </div>
+              <div style={{ marginTop: 8, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,0.8)', background: 'rgba(255,255,255,0.15)', display: 'inline-block', padding: '3px 10px', borderRadius: 100 }}>-40% pour les 50 premiers</div>
             </div>
             <div className="pricing-body">
               <ul className="pricing-list">
@@ -868,7 +869,7 @@ export const Landing: React.FC = () => {
                 ].map((item, i) => <li key={i}>{item}</li>)}
               </ul>
               <Link to="/pricing" className="btn-pricing">
-                Démarrer mon programme →
+                Démarrer mon programme — 29€/mois →
               </Link>
               <div className="pricing-secure">🔒 Paiement sécurisé · Annulation en 1 clic</div>
             </div>
@@ -914,7 +915,7 @@ export const Landing: React.FC = () => {
         <h2 className="font-serif">Prêt à retrouver le corps<br />que vous méritez ?</h2>
         <p>Votre transformation commence par une décision.</p>
         <Link to="/pricing" className="btn-primary">
-          Commencer maintenant — 49€/mois
+          Commencer maintenant — 29€/mois
         </Link>
       </section>
 
@@ -932,7 +933,7 @@ export const Landing: React.FC = () => {
 
       {/* STICKY MOBILE CTA */}
       <div className="sticky-cta">
-        <div className="sticky-cta-text"><strong>49€/mois</strong> · Garanti 14j</div>
+        <div className="sticky-cta-text"><strong>29€/mois</strong> <span style={{textDecoration:'line-through',opacity:0.6}}>49€</span> · Garanti 14j</div>
         <Link to="/pricing" className="sticky-cta-btn">Commencer →</Link>
       </div>
     </>
