@@ -272,10 +272,33 @@ export const SetupDiet: React.FC = () => {
         {!loading && (
           <div style={{ marginBottom: 24 }}>
             <div style={s.progBg}><div style={s.progFill} /></div>
-            <div style={s.steps}>
-              <span style={step >= 1 ? s.stepAct : {}}>1. Biométrie</span>
-              <span style={step >= 2 ? s.stepAct : {}}>2. Métabolique</span>
-              <span style={step >= 3 ? s.stepAct : {}}>3. Votre Plan</span>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 28 }}>
+              {[
+                { num: 1, label: 'Biométrie', icon: '📏' },
+                { num: 2, label: 'Métabolique', icon: '🔬' },
+                { num: 3, label: 'Votre Plan', icon: '🎯' },
+              ].map((s2, i) => {
+                const done = step > s2.num;
+                const active = step === s2.num;
+                return (
+                  <div key={s2.num} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, flex: 1 }}>
+                    <div style={{
+                      width: 32, height: 32, borderRadius: '50%',
+                      background: done ? C.accent : active ? C.primary : C.border,
+                      color: done || active ? '#fff' : C.textLight,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: done ? 14 : 12, fontWeight: 700,
+                      transition: 'all 0.4s ease',
+                      boxShadow: active ? '0 4px 12px rgba(15,44,89,0.25)' : done ? '0 4px 12px rgba(0,184,148,0.25)' : 'none',
+                    }}>
+                      {done ? '✓' : s2.icon}
+                    </div>
+                    <span style={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: active ? C.accent : done ? C.accent : C.textLight }}>
+                      {s2.label}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
