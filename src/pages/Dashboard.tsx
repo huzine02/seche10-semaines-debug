@@ -384,6 +384,48 @@ export const Dashboard: React.FC = () => {
           }}
           compact
         />
+
+        {/* WEEKLY SUMMARY CARD */}
+        <div style={{
+          background: 'linear-gradient(135deg, #0F2C59 0%, #163A70 100%)',
+          borderRadius: 14, padding: '16px 18px', color: '#fff',
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+            <div style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.6 }}>
+              📊 Résumé Semaine {currentWeek}
+            </div>
+            <div style={{ fontSize: 9, background: 'rgba(0,184,148,0.2)', color: '#34D399', padding: '2px 8px', borderRadius: 100, fontWeight: 700 }}>
+              {currentWeek * 10}% du programme
+            </div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8 }}>
+            <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 10, padding: '10px 8px', textAlign: 'center' }}>
+              <div style={{ fontSize: 20, fontWeight: 800, color: '#34D399' }}>
+                {streak}
+              </div>
+              <div style={{ fontSize: 8, opacity: 0.5, marginTop: 2 }}>jours streak</div>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 10, padding: '10px 8px', textAlign: 'center' }}>
+              <div style={{ fontSize: 20, fontWeight: 800, color: '#34D399' }}>
+                {totalDays}
+              </div>
+              <div style={{ fontSize: 8, opacity: 0.5, marginTop: 2 }}>jours complétés</div>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 10, padding: '10px 8px', textAlign: 'center' }}>
+              <div style={{ fontSize: 20, fontWeight: 800, color: '#34D399' }}>
+                {perfectDays}
+              </div>
+              <div style={{ fontSize: 8, opacity: 0.5, marginTop: 2 }}>jours parfaits</div>
+            </div>
+          </div>
+          {streak >= 3 && (
+            <div style={{ marginTop: 10, fontSize: 11, color: 'rgba(255,255,255,0.6)', textAlign: 'center', fontStyle: 'italic' }}>
+              {streak >= 14 ? '🏆 Vous êtes dans le top 5% des utilisateurs. Inarrêtable.'
+                : streak >= 7 ? '🔥 7+ jours consécutifs — votre métabolisme s\'adapte, ne lâchez rien !'
+                : '💪 Beau streak ! La régularité bat l\'intensité, continuez.'}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* TIMELINE */}
