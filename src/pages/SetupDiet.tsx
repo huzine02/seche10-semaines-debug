@@ -336,15 +336,15 @@ export const SetupDiet: React.FC = () => {
             <div className="grid3-resp">
               <div style={s.formG}>
                 <label style={s.label}>Âge</label>
-                <input style={s.input} type="number" inputMode="numeric" placeholder="42" value={bio.age} onChange={e => setBio({ ...bio, age: e.target.value })} />
+                <input style={s.input} type="text" inputMode="numeric" pattern="[0-9]*" placeholder="42" value={bio.age} onChange={e => setBio({ ...bio, age: e.target.value.replace(/[^0-9]/g, '') })} />
               </div>
               <div style={s.formG}>
                 <label style={s.label}>Poids (kg)</label>
-                <input style={s.input} type="number" inputMode="decimal" step="0.1" placeholder="85.5" value={bio.weight} onChange={e => setBio({ ...bio, weight: e.target.value })} />
+                <input style={s.input} type="text" inputMode="decimal" pattern="[0-9.]*" placeholder="85.5" value={bio.weight} onChange={e => setBio({ ...bio, weight: e.target.value.replace(/[^0-9.]/g, '') })} />
               </div>
               <div style={s.formG}>
                 <label style={s.label}>Taille (cm)</label>
-                <input style={s.input} type="number" inputMode="numeric" placeholder="178" value={bio.height} onChange={e => setBio({ ...bio, height: e.target.value })} />
+                <input style={s.input} type="text" inputMode="numeric" pattern="[0-9]*" placeholder="178" value={bio.height} onChange={e => setBio({ ...bio, height: e.target.value.replace(/[^0-9]/g, '') })} />
               </div>
             </div>
 
@@ -358,12 +358,12 @@ export const SetupDiet: React.FC = () => {
               <div className="dual-col">
                 <div>
                   <label style={s.label}>Tour de taille (cm)</label>
-                  <input style={s.input} type="number" inputMode="decimal" placeholder="92" value={bio.waistline} onChange={e => setBio({ ...bio, waistline: e.target.value })} />
+                  <input style={s.input} type="text" inputMode="decimal" pattern="[0-9.]*" placeholder="92" value={bio.waistline} onChange={e => setBio({ ...bio, waistline: e.target.value.replace(/[^0-9.]/g, '') })} />
                   <div style={{ fontSize: 9, color: C.textLight, marginTop: 3 }}>Au nombril, matin à jeun</div>
                 </div>
                 <div>
                   <label style={s.label}>Tour de cou (cm)</label>
-                  <input style={s.input} type="number" inputMode="decimal" placeholder="40" value={bio.neck} onChange={e => setBio({ ...bio, neck: e.target.value })} />
+                  <input style={s.input} type="text" inputMode="decimal" pattern="[0-9.]*" placeholder="40" value={bio.neck} onChange={e => setBio({ ...bio, neck: e.target.value.replace(/[^0-9.]/g, '') })} />
                   <div style={{ fontSize: 9, color: C.textLight, marginTop: 3 }}>Sous la pomme d'Adam</div>
                 </div>
               </div>
@@ -428,8 +428,8 @@ export const SetupDiet: React.FC = () => {
 
             <div style={{ ...s.formG, marginTop: 20 }}>
               <label style={s.label}>Glycémie à jeun (g/L) <span style={s.labelOpt}>— sur votre dernière prise de sang</span></label>
-              <input style={s.input} type="number" inputMode="decimal" step="0.01" placeholder="Ex: 1.05"
-                value={health.glucose} onChange={e => setHealth({ ...health, glucose: e.target.value })} />
+              <input style={s.input} type="text" inputMode="decimal" pattern="[0-9.]*" placeholder="Ex: 1.05"
+                value={health.glucose} onChange={e => setHealth({ ...health, glucose: e.target.value.replace(/[^0-9.]/g, '') })} />
               {glucoseInfo && (
                 <div style={{ ...s.hint, background: glucoseInfo.bg, borderColor: glucoseInfo.color + '40', color: glucoseInfo.color }}>
                   <span>{glucoseInfo.color === C.accent ? '✅' : '⚠️'}</span><span>{glucoseInfo.text}</span>
