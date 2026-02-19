@@ -209,20 +209,12 @@ export const Pricing: React.FC = () => {
                 ))}
               </ul>
 
-              {showCheckout ? (
+              {user ? (
                 <StripeCheckout />
               ) : (
-                <>
-                  {user ? (
-                    <button className="btn-checkout" onClick={() => setShowCheckout(true)}>
-                      Démarrer mon programme — 29€/mois →
-                    </button>
-                  ) : (
-                    <Link to="/login?redirect=pricing" className="btn-checkout">
-                      Créer mon compte — 29€/mois →
-                    </Link>
-                  )}
-                </>
+                <Link to="/login?redirect=pricing" className="btn-checkout">
+                  Créer mon compte — 29€/mois →
+                </Link>
               )}
 
               <div className="plan-secure">🔒 Paiement sécurisé Stripe · SSL · Annulation en 1 clic</div>
