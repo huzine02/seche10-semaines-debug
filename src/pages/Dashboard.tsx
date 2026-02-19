@@ -72,6 +72,7 @@ export const Dashboard: React.FC = () => {
   const [lipides, setLipides] = useState({ total: '', ldl: '', hdl: '', triglycerides: '', date: '' });
   const [saving, setSaving] = useState('');
   const [flash, setFlash] = useState('');
+  const [weightFeedback, setWeightFeedback] = useState('');
 
   const dateStr = new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
 
@@ -236,6 +237,21 @@ export const Dashboard: React.FC = () => {
       setData(prev => prev ? { ...prev, pesees: [...(prev.pesees || []), entry] } : null);
       setPoidsInput('');
       doFlash('Poids enregistré');
+      // Weight feedback vs objective
+      const newWeight = entry.poids;
+      const totalLoss = initialWeight - newWeight;
+      const expectedWeeklyLoss = projectedTotalLoss / 10;
+      const expectedLossSoFar = expectedWeeklyLoss * currentWeek;
+      if (totalLoss < 0) {
+        setWeightFeedback('📊 Fluctuation normale — focus sur la tendance');
+      } else if (totalLoss > expectedLossSoFar * 1.1) {
+        setWeightFeedback('🎯 En avance sur l\'objectif !');
+      } else if (totalLoss >= expectedLossSoFar * 0.8) {
+        setWeightFeedback('✅ Parfaitement dans les clous');
+      } else {
+        setWeightFeedback('💪 Continue, la régularité paie');
+      }
+      setTimeout(() => setWeightFeedback(''), 5000);
       refreshProfile();
     } catch (e) { alert('Erreur sauvegarde'); }
     finally { setSaving(''); }
@@ -687,6 +703,11 @@ export const Dashboard: React.FC = () => {
               {saving === 'poids' ? '...' : 'Enregistrer'}
             </button>
           </div>
+          {weightFeedback && (
+            <div style={{ marginTop: 10, padding: '10px 14px', background: C.accentBg, borderRadius: 8, fontSize: 13, fontWeight: 600, color: C.accentDark, textAlign: 'center', border: `1px solid ${C.accent}30` }}>
+              {weightFeedback}
+            </div>
+          )}
         </Card>
 
         {/* ═══ TOUR DE TAILLE (fonctionnel) ═══ */}
