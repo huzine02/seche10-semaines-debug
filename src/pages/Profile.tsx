@@ -621,8 +621,30 @@ export const Profile: React.FC = () => {
                   </div>
                 )}
                 {status === 'active' && (
-                  <div style={{ marginTop: 12, fontSize: 11, color: C.textMuted, textAlign: 'center', padding: '8px', background: C.bg, borderRadius: 8 }}>
-                    Annulation possible à tout moment, sans frais.
+                  <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    <button
+                      onClick={async () => {
+                        if (!window.confirm('Êtes-vous sûr de vouloir annuler votre abonnement ? Vous conserverez l\'accès jusqu\'à la fin de la période en cours.')) return;
+                        try {
+                          const token = await user?.getIdToken();
+                          const res = await fetch('https://cancelsubscription-vyniq7423a-uc.a.run.app', {
+                            method: 'POST',
+                            headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+                          });
+                          if (!res.ok) throw new Error('Erreur serveur');
+                          refreshProfile();
+                          alert('Votre abonnement a été annulé. Vous conservez l\'accès jusqu\'à la fin de la période.');
+                        } catch (e: any) {
+                          alert('Erreur lors de l\'annulation : ' + e.message);
+                        }
+                      }}
+                      style={{ width: '100%', padding: 11, background: '#FEF2F2', color: C.red, border: '1px solid #FECACA', borderRadius: 8, fontSize: 12, fontWeight: 700, cursor: 'pointer' }}
+                    >
+                      Annuler mon abonnement
+                    </button>
+                    <div style={{ fontSize: 11, color: C.textMuted, textAlign: 'center', padding: '4px' }}>
+                      Annulation possible à tout moment, sans frais.
+                    </div>
                   </div>
                 )}
                 {(!status || status === 'inactive' || status === 'cancelled') && (
