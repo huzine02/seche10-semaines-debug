@@ -39,8 +39,18 @@ export const Auth: React.FC = () => {
   };
 
   useEffect(() => {
-    // Wait until profile is loaded before redirecting
-    if (user && userProfile) navigate(getAfterLoginPath());
+    // Only auto-redirect if user has active subscription (→ dashboard)
+    // or needs onboarding (→ setup). Don't redirect to pricing automatically
+    // so user can see the login page and switch accounts if needed.
+    if (user && userProfile) {
+      const sub = userProfile.subscriptionStatus;
+      if (!userProfile.onboardingComplete) {
+        navigate('/setup');
+      } else if (sub === 'active' || sub === 'trialing') {
+        navigate('/dashboard');
+      }
+      // If no sub → stay on login page (user can see they're logged in)
+    }
   }, [user, userProfile, navigate]);
 
   // (Pas de getRedirectResult - on utilise signInWithPopup)
