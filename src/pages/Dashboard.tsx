@@ -39,6 +39,23 @@ function glucoseColor(val: number): string {
   return C.red;
 }
 
+// ─── REUSABLE SUB-COMPONENTS (outside to avoid re-mount on state change) ──
+const Card: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
+  <section style={{ background: C.surface, borderRadius: 14, padding: 18, border: `1px solid ${C.borderLight}`, boxShadow: '0 2px 12px -2px rgba(15,44,89,0.04)', ...style }}>
+    {children}
+  </section>
+);
+
+const SectionTitle: React.FC<{ icon: string; iconBg: string; iconColor: string; children: React.ReactNode; right?: React.ReactNode }> = ({ icon, iconBg, iconColor, children, right }) => (
+  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+    <h3 style={{ fontFamily: "'Cabinet Grotesk'", fontWeight: 700, fontSize: '1.05rem', color: C.primary, display: 'flex', alignItems: 'center', gap: 8 }}>
+      <span style={{ background: iconBg, color: iconColor, padding: 4, borderRadius: 6, fontSize: 13, lineHeight: 1 }}>{icon}</span>
+      {children}
+    </h3>
+    {right}
+  </div>
+);
+
 // ─── COMPONENT ──────────────────────────────────────────
 export const Dashboard: React.FC = () => {
   const { user, userProfile: ctxProfile, refreshProfile } = useAuth();
@@ -313,23 +330,6 @@ export const Dashboard: React.FC = () => {
       </svg>
     );
   };
-
-  // ─── CARD COMPONENT ─────────────────────────────────────
-  const Card: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
-    <section style={{ background: C.surface, borderRadius: 14, padding: 18, border: `1px solid ${C.borderLight}`, boxShadow: '0 2px 12px -2px rgba(15,44,89,0.04)', ...style }}>
-      {children}
-    </section>
-  );
-
-  const SectionTitle: React.FC<{ icon: string; iconBg: string; iconColor: string; children: React.ReactNode; right?: React.ReactNode }> = ({ icon, iconBg, iconColor, children, right }) => (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
-      <h3 style={{ fontFamily: "'Cabinet Grotesk'", fontWeight: 700, fontSize: '1.05rem', color: C.primary, display: 'flex', alignItems: 'center', gap: 8 }}>
-        <span style={{ background: iconBg, color: iconColor, padding: 4, borderRadius: 6, fontSize: 13, lineHeight: 1 }}>{icon}</span>
-        {children}
-      </h3>
-      {right}
-    </div>
-  );
 
   // ─── RENDER ─────────────────────────────────────────────
   return (

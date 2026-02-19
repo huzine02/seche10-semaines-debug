@@ -194,17 +194,26 @@ export const SetupDiet: React.FC = () => {
     if (!diet || !user) return;
     setSaving(true);
     try {
-      await setDoc(doc(db, 'users', user.uid), {
+      const profileData: any = {
         firstName: bio.firstName,
         gender: bio.gender,
         dietProfile: diet,
         initialWaistline: parseFloat(bio.waistline) || null,
         initialWeight: parseFloat(bio.weight),
         onboardingComplete: true,
-        createdAt: new Date().toISOString(),
-      }, { merge: true });
+      };
+      // Only set createdAt on first setup, not recalibration
+      if (!isRecalibrate) {
+        profileData.createdAt = new Date().toISOString();
+      }
+      await setDoc(doc(db, 'users', user.uid), profileData, { merge: true });
       await refreshProfile();
-      navigate('/pricing');
+      // If recalibrating (already paid), go to dashboard. Otherwise go to pricing.
+      if (isRecalibrate) {
+        navigate('/dashboard', { replace: true });
+      } else {
+        navigate('/pricing');
+      }
     } catch (e: any) {
       console.error(e);
       alert('Erreur : ' + e.message);
