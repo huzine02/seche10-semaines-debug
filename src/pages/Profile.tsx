@@ -632,7 +632,9 @@ export const Profile: React.FC = () => {
                             headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
                           });
                           if (!res.ok) throw new Error('Erreur serveur');
-                          refreshProfile();
+                          // Update local state immediately (webhook may take a moment)
+                          await updateDoc(doc(db, 'users', user!.uid), { subscriptionStatus: 'cancelling' });
+                          await refreshProfile();
                           alert('Votre abonnement a été annulé. Vous conservez l\'accès jusqu\'à la fin de la période.');
                         } catch (e: any) {
                           alert('Erreur lors de l\'annulation : ' + e.message);

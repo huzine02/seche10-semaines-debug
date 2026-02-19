@@ -48,8 +48,9 @@ export const Auth: React.FC = () => {
         navigate('/setup');
       } else if (sub === 'active' || sub === 'trialing') {
         navigate('/dashboard');
+      } else {
+        navigate('/pricing');
       }
-      // If no sub → stay on login page (user can see they're logged in)
     }
   }, [user, userProfile, navigate]);
 
@@ -267,7 +268,7 @@ export const Auth: React.FC = () => {
 
         {redirectTo === 'pricing' && (
           <div style={s.hint}>
-            🔒 Créez un compte pour finaliser votre abonnement <strong style={{ color: '#0F2C59' }}>49€/mois</strong>
+            🔒 Créez un compte pour finaliser votre abonnement <strong style={{ color: '#0F2C59' }}>29€/mois</strong>
           </div>
         )}
 

@@ -226,7 +226,7 @@ export const Journal: React.FC = () => {
   // Compliance score
   const vCount = Object.values(day.meals).filter((m: any) => m.validated).length;
   const stacksDone = Object.entries(day.stacks).filter(([k, v]) => v && k !== 'workout').length;
-  const stacksTotal = Object.keys(day.stacks).filter(k => k !== 'workout').length;
+  const stacksTotal = Object.keys(day.stacks).filter(k => k !== 'workout').length || 1;
   const mealScore = isFri ? (vCount >= 2 ? 3 : vCount) : vCount; // Friday: 2 validated = full meal score
   const compliancePct = Math.round(((mealScore / 3) * 0.5 + (stacksDone / stacksTotal) * 0.25 + (day.stacks.workout ? 0.15 : 0) + (day.water >= 2500 ? 0.10 : (day.water / 2500) * 0.10)) * 100);
   const calPct = Math.round((vCount / 3) * 100);
@@ -448,7 +448,7 @@ export const Journal: React.FC = () => {
         <div style={{ background: C.primary, borderRadius: 10, padding: '12px 14px', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <div style={{ fontSize: 9, fontWeight: 700, color: C.accent, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 2 }}>Fenêtre 16/8</div>
-            <div style={{ fontFamily: "'Cabinet Grotesk'", fontSize: '1.15rem', fontWeight: 700 }}>{fmtH(ifStart)} <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>→</span> {`${String(ifEnd).padStart(2, '0')}h30`}</div>
+            <div style={{ fontFamily: "'Cabinet Grotesk'", fontSize: '1.15rem', fontWeight: 700 }}>{fmtH(ifStart)} <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>→</span> {fmtH(ifEnd)}</div>
           </div>
           <span style={{ fontSize: 22, opacity: 0.3 }}>⏳</span>
         </div>
@@ -551,7 +551,7 @@ export const Journal: React.FC = () => {
                 <div style={{ marginTop: 8, display: 'flex', alignItems: 'center', gap: 8, paddingTop: 8, borderTop: `1px solid ${C.borderLight}` }}>
                   <span style={{ fontSize: 16 }}>🍨</span>
                   <div style={{ fontSize: 11 }}>
-                    <div style={{ fontWeight: 700, color: C.primary }}>Dessert (20h30)</div>
+                    <div style={{ fontWeight: 700, color: C.primary }}>Dessert ({fmtH(ifEnd)})</div>
                     <div style={{ color: C.textMuted }}>Skyr 200g + Miel 20g + Framboises 50g</div>
                   </div>
                 </div>

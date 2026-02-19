@@ -102,12 +102,12 @@ function computeDiet(bio: Bio, health: Health): DietResult {
   else fatPct = 0.28;
 
   const restFat = Math.round((restCal * fatPct) / 9);
-  const restCarbs = Math.round((restCal - protein * 4 - restFat * 9) / 4);
+  const restCarbs = Math.max(0, Math.round((restCal - protein * 4 - restFat * 9) / 4));
 
   // TRAINING DAY (half deficit — extra cals go to carbs)
   const trainCal = Math.round(tdee * (1 - deficitPct * 0.5));
   const trainFat = restFat;
-  const trainCarbs = Math.round((trainCal - protein * 4 - trainFat * 9) / 4);
+  const trainCarbs = Math.max(0, Math.round((trainCal - protein * 4 - trainFat * 9) / 4));
 
   // Projection: 3 training + 4 rest per week × 10 weeks
   const weeklyDeficit = 3 * (tdee - trainCal) + 4 * (tdee - restCal);

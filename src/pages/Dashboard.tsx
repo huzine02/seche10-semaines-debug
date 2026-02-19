@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { doc, getDoc, updateDoc, arrayUnion, collection, getDocs } from 'firebase/firestore';
+import { doc, updateDoc, arrayUnion, collection, getDocs } from 'firebase/firestore';
 import { SubscriptionBanner } from '../components/SubscriptionBanner';
 import { StreakBadge } from '../components/StreakBadge';
 import { AchievementGrid } from '../components/Achievements';
@@ -76,17 +76,7 @@ export const Dashboard: React.FC = () => {
 
   const dateStr = new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
 
-  // ─── DATA LOADING ───────────────────────────────────────
-  useEffect(() => {
-    if (!user) return;
-    (async () => {
-      try {
-        const snap = await getDoc(doc(db, 'users', user.uid));
-        if (snap.exists()) setData(snap.data() as UserProfile);
-      } catch (e) { console.error('[Dashboard] fetch error:', e); }
-    })();
-  }, [user]);
-
+  // ─── DATA LOADING (use context only, no double fetch) ───
   useEffect(() => { if (ctxProfile) setData(ctxProfile); }, [ctxProfile]);
 
   const [streak, setStreak] = useState(0);
@@ -149,11 +139,20 @@ export const Dashboard: React.FC = () => {
         }
         setStreak(currentStreak);
 
-        // Calculate best streak
+        // Calculate best streak (with date continuity check)
         let best = 0;
         let current = 0;
         const allDates = Object.keys(entries).sort();
         for (let i = 0; i < allDates.length; i++) {
+          // Check if this date is consecutive to the previous one
+          if (i > 0 && current > 0) {
+            const prev = new Date(allDates[i - 1]);
+            const curr = new Date(allDates[i]);
+            const diffMs = curr.getTime() - prev.getTime();
+            if (diffMs > 86400000 * 1.5) { // More than ~1.5 days apart = gap
+              current = 0;
+            }
+          }
           if (entries[allDates[i]].compliance >= 70) {
             current++;
             best = Math.max(best, current);
