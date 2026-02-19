@@ -413,7 +413,7 @@ export const Landing: React.FC = () => {
       <header className="site-header">
         <div className="header-inner">
           <Link to="/" className="logo">Sèche<span>10</span>Semaines</Link>
-          <Link to="/dashboard" className="btn-member">Espace Membre</Link>
+          <Link to="/login" className="btn-member">Espace Membre</Link>
         </div>
       </header>
 
@@ -923,7 +923,7 @@ export const Landing: React.FC = () => {
       <footer className="site-footer">
         <div className="footer-logo">Sèche<span>10</span>Semaines</div>
         <div className="footer-links">
-          <Link to="/dashboard">Espace Membre</Link>
+          <Link to="/login">Espace Membre</Link>
           <a href="mailto:contact@seche10semaines.fr">Contact</a>
           <a href="#">Mentions légales</a>
           <a href="#">CGV</a>
