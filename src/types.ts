@@ -60,6 +60,7 @@ export interface UserProfile {
   initialWeight?: number;
   initialWaistline?: number;
   guidePdfUrl?: string;
+  ifWindow?: string;
   // Stripe / Subscription
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;

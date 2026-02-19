@@ -162,6 +162,7 @@ export const SetupDiet: React.FC = () => {
   const [bio, setBio] = useState<Bio>({
     firstName: '', gender: '', age: '', weight: '', height: '', waistline: '', neck: '', activity: '',
   });
+  const [ifWindow, setIfWindow] = useState('12-20');
   const [health, setHealth] = useState<Health>({ profile: 'standard', glucose: '' });
   const [diet, setDiet] = useState<DietResult | null>(null);
 
@@ -201,6 +202,7 @@ export const SetupDiet: React.FC = () => {
         initialWaistline: parseFloat(bio.waistline) || null,
         initialWeight: parseFloat(bio.weight),
         onboardingComplete: true,
+        ifWindow,
       };
       // Only set createdAt on first setup, not recalibration
       if (!isRecalibrate) {
@@ -404,6 +406,22 @@ export const SetupDiet: React.FC = () => {
                   <div key={o.val} style={{ ...s.card, ...(bio.activity === o.val ? s.cardOn : {}) }} onClick={() => setBio({ ...bio, activity: o.val })}>
                     <div><span style={s.cardTitle}>{o.t}</span><span style={s.cardDesc}>{o.d}</span></div>
                     {bio.activity === o.val && <span style={s.check}>✓</span>}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={s.formG}>
+              <label style={s.label}>Fenêtre de Jeûne Intermittent <span style={s.labelOpt}>(optionnel)</span></label>
+              <div className="grid3-resp">
+                {[
+                  { val: '12-20', t: '12h → 20h', d: 'Classique' },
+                  { val: '13-21', t: '13h → 21h', d: 'Décalé' },
+                  { val: '14-22', t: '14h → 22h', d: 'Tardif' },
+                ].map(o => (
+                  <div key={o.val} style={{ ...s.card, ...(ifWindow === o.val ? s.cardOn : {}) }} onClick={() => setIfWindow(o.val)}>
+                    <div><span style={s.cardTitle}>{o.t}</span><span style={s.cardDesc}>{o.d}</span></div>
+                    {ifWindow === o.val && <span style={s.check}>✓</span>}
                   </div>
                 ))}
               </div>

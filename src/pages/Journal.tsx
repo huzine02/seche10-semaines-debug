@@ -333,6 +333,12 @@ export const Journal: React.FC = () => {
 
   const tip = TIPS[date.getDate() % TIPS.length];
 
+  // IF Window hours from profile (default 12-20)
+  const ifWindowRaw = userProfile?.ifWindow || '12-20';
+  const [ifStart, ifEnd] = ifWindowRaw.split('-').map(Number);
+  const ifMid = ifStart + Math.round((ifEnd - ifStart) / 2);
+  const fmtH = (h: number) => `${String(h).padStart(2, '0')}h00`;
+
   // ─── LOADING STATE ──────────────────────────────────────
   if (loading) return (
     <div style={{ fontFamily: "'DM Sans'", background: C.bg, minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -442,7 +448,7 @@ export const Journal: React.FC = () => {
         <div style={{ background: C.primary, borderRadius: 10, padding: '12px 14px', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <div style={{ fontSize: 9, fontWeight: 700, color: C.accent, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 2 }}>Fenêtre 16/8</div>
-            <div style={{ fontFamily: "'Cabinet Grotesk'", fontSize: '1.15rem', fontWeight: 700 }}>12h00 <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>→</span> 20h30</div>
+            <div style={{ fontFamily: "'Cabinet Grotesk'", fontSize: '1.15rem', fontWeight: 700 }}>{fmtH(ifStart)} <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>→</span> {`${String(ifEnd).padStart(2, '0')}h30`}</div>
           </div>
           <span style={{ fontSize: 22, opacity: 0.3 }}>⏳</span>
         </div>
@@ -492,7 +498,7 @@ export const Journal: React.FC = () => {
           </TBlock>
 
           {/* REPAS 1 */}
-          <TBlock dot={C.accent} glow label="Repas 1 — Rupture du Jeûne" time="12h00">
+          <TBlock dot={C.accent} glow label="Repas 1 — Rupture du Jeûne" time={fmtH(ifStart)}>
             <MealCardV2 id={1} text={mealText(1)} validated={day.meals[1].validated} onValidate={() => validateMeal(1)} onVariant={() => nextVariant(1)} />
             <div style={{ marginTop: 6, paddingTop: 6, borderTop: `1px solid ${C.borderLight}` }}>
               <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
@@ -521,12 +527,12 @@ export const Journal: React.FC = () => {
           )}
 
           {/* REPAS 2 */}
-          <TBlock dot={C.accent} label="Repas 2 — Post-Training" time="16h00">
+          <TBlock dot={C.accent} label="Repas 2 — Post-Training" time={fmtH(ifMid)}>
             <MealCardV2 id={2} text={mealText(2)} validated={day.meals[2].validated} onValidate={() => validateMeal(2)} onVariant={() => nextVariant(2)} />
           </TBlock>
 
           {/* REPAS 3 / VENDREDI */}
-          <TBlock dot={C.accent} label={isFri ? 'Repas 3 — Vendredi Détente' : 'Repas 3 — Dîner Volume'} time="20h00">
+          <TBlock dot={C.accent} label={isFri ? 'Repas 3 — Vendredi Détente' : 'Repas 3 — Dîner Volume'} time={fmtH(ifEnd)}>
             {isFri ? (
               <Card style={{ background: '#FAF5FF', borderColor: '#E9D5FF' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
