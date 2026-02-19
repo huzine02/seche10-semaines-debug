@@ -577,8 +577,8 @@ export const Dashboard: React.FC = () => {
             Suivi Glycémie
           </SectionTitle>
           <div style={{ display: 'flex', gap: 8, height: 42 }}>
-            <input type="number" inputMode="decimal" step="0.01" placeholder="Glycémie à jeun (g/L)" value={glucoseInput}
-              onChange={e => setGlucoseInput(e.target.value)}
+            <input type="text" inputMode="decimal" pattern="[0-9.]*" placeholder="Glycémie à jeun (g/L)" value={glucoseInput}
+              onChange={e => setGlucoseInput(e.target.value.replace(/[^0-9.]/g, ''))}
               style={{ flex: 1, padding: '0 14px', background: C.bg, border: `1px solid ${C.border}`, borderRadius: 10, fontSize: 13, fontWeight: 600, outline: 'none', fontFamily: "'DM Sans'" }} />
             <button onClick={saveGlucose}
               style={{ padding: '0 18px', background: C.accent, color: 'white', fontWeight: 700, borderRadius: 10, border: 'none', cursor: 'pointer', fontSize: 13 }}>
@@ -612,8 +612,8 @@ export const Dashboard: React.FC = () => {
                 ].map(f => (
                   <div key={f.id}>
                     <label style={{ fontSize: 9, fontWeight: 700, color: C.textMuted, textTransform: 'uppercase' }}>{f.label}</label>
-                    <input type="number" placeholder={f.ph} value={(lipides as any)[f.id]}
-                      onChange={e => setLipides({ ...lipides, [f.id]: e.target.value })}
+                    <input type="text" inputMode="decimal" pattern="[0-9.]*" placeholder={f.ph} value={(lipides as any)[f.id]}
+                      onChange={e => setLipides({ ...lipides, [f.id]: e.target.value.replace(/[^0-9.]/g, '') })}
                       style={{ width: '100%', padding: 9, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 8, fontSize: 13, fontWeight: 700, outline: 'none', fontFamily: "'DM Sans'", marginTop: 3 }} />
                   </div>
                 ))}
@@ -679,8 +679,8 @@ export const Dashboard: React.FC = () => {
             {renderWeightChart()}
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
-            <input type="number" inputMode="decimal" placeholder="Poids (kg)" step="0.1" value={poidsInput}
-              onChange={e => setPoidsInput(e.target.value)}
+            <input type="text" inputMode="decimal" pattern="[0-9.]*" placeholder="Poids (kg)" value={poidsInput}
+              onChange={e => setPoidsInput(e.target.value.replace(/[^0-9.]/g, ''))}
               style={{ padding: 12, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 10, fontSize: 13, outline: 'none', fontFamily: "'DM Sans'" }} />
             <button onClick={savePoids}
               style={{ background: C.primary, color: 'white', fontWeight: 700, borderRadius: 10, border: 'none', cursor: 'pointer', fontSize: 13 }}>
@@ -712,8 +712,8 @@ export const Dashboard: React.FC = () => {
             </div>
           )}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
-            <input type="number" inputMode="decimal" placeholder="Tour de taille (cm)" step="0.5" value={tailleInput}
-              onChange={e => setTailleInput(e.target.value)}
+            <input type="text" inputMode="decimal" pattern="[0-9.]*" placeholder="Tour de taille (cm)" value={tailleInput}
+              onChange={e => setTailleInput(e.target.value.replace(/[^0-9.]/g, ''))}
               style={{ padding: 12, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 10, fontSize: 13, outline: 'none', fontFamily: "'DM Sans'" }} />
             <button onClick={saveTaille}
               style={{ background: C.primary, color: 'white', fontWeight: 700, borderRadius: 10, border: 'none', cursor: 'pointer', fontSize: 13 }}>

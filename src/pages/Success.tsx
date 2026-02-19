@@ -175,9 +175,9 @@ export const Success: React.FC = () => {
           <div style={s.stepsBox}>
             <div style={s.stepsTitle}>🚀 Vos prochaines étapes</div>
             {[
-              { n: 1, label: 'Créer votre profil', desc: 'Biométrie + profil santé (5 min)' },
-              { n: 2, label: 'Recevoir votre plan', desc: 'Macros personnalisés + cyclage calorique' },
-              { n: 3, label: 'Commencer dès aujourd\'hui', desc: 'Journal quotidien + suivi glycémie' },
+              { n: 1, label: 'Profil configuré ✓', desc: 'Biométrie + profil santé complétés' },
+              { n: 2, label: 'Plan personnalisé prêt ✓', desc: 'Macros + cyclage calorique calculés' },
+              { n: 3, label: 'Commencer dès maintenant', desc: 'Journal quotidien + suivi progression' },
             ].map((step, i, arr) => (
               <div key={step.n} style={{ ...s.step, borderBottom: i === arr.length - 1 ? 'none' : '1px solid #F1F5F9' }}>
                 <div style={s.stepNum}>{step.n}</div>
@@ -189,8 +189,8 @@ export const Success: React.FC = () => {
             ))}
           </div>
 
-          <Link to="/setup" style={s.cta}>
-            Configurer mon profil →
+          <Link to="/dashboard" style={s.cta}>
+            Accéder à mon programme →
           </Link>
           <div style={s.secure}>🔒 Données sécurisées · Annulable à tout moment</div>
 

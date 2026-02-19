@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -142,8 +142,15 @@ function glucoseFeedback(val: number | null): { text: string; color: string; bg:
 
 // ─── COMPONENT ──────────────────────────────────────────
 export const SetupDiet: React.FC = () => {
-  const { user, refreshProfile } = useAuth();
+  const { user, userProfile, refreshProfile } = useAuth();
   const navigate = useNavigate();
+
+  // If onboarding already done, skip to dashboard
+  useEffect(() => {
+    if (userProfile?.onboardingComplete) {
+      navigate('/dashboard', { replace: true });
+    }
+  }, [userProfile, navigate]);
 
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);

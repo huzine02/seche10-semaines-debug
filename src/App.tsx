@@ -22,7 +22,9 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
 
   if (!user) return <Navigate to="/login" />;
 
-  if (user && !userProfile?.onboardingComplete && location.pathname !== '/setup') {
+  // Only redirect to setup if we have a profile and onboarding is not complete
+  // (if userProfile is null, profile is still loading — don't redirect yet)
+  if (user && userProfile && !userProfile.onboardingComplete && location.pathname !== '/setup') {
     return <Navigate to="/setup" />;
   }
 
