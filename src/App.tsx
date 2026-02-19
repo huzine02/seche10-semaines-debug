@@ -13,7 +13,11 @@ import { Pricing } from './pages/Pricing';
 import { Success } from './pages/Success';
 import { Guide } from './pages/Guide';
 import { NotFound } from './pages/NotFound';
+import { MentionsLegales } from './pages/MentionsLegales';
+import { CGV } from './pages/CGV';
+import { PolitiqueConfidentialite } from './pages/PolitiqueConfidentialite';
 import { LoadingScreen } from './components/LoadingScreen';
+import { CookieBanner } from './components/CookieBanner';
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode; requireSub?: boolean }> = ({ children, requireSub = true }) => {
   const { user, loading, userProfile } = useAuth();
@@ -53,6 +57,9 @@ export default function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/success" element={<ProtectedRoute requireSub={false}><Success /></ProtectedRoute>} />
           <Route path="/guide" element={<Guide />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/cgv" element={<CGV />} />
+          <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route
             path="/setup"
             element={
@@ -89,6 +96,7 @@ export default function App() {
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CookieBanner />
       </HashRouter>
     </AuthProvider>
     </ThemeProvider>

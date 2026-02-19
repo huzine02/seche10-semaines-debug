@@ -925,10 +925,11 @@ export const Landing: React.FC = () => {
         <div className="footer-links">
           <Link to="/login">Espace Membre</Link>
           <a href="mailto:contact@seche10semaines.fr">Contact</a>
-          <a href="#">Mentions légales</a>
-          <a href="#">CGV</a>
+          <Link to="/mentions-legales">Mentions légales</Link>
+          <Link to="/cgv">CGV</Link>
+          <Link to="/politique-confidentialite">Politique de confidentialité</Link>
         </div>
-        <div className="footer-copy">© 2025 Sèche10Semaines · Résultats individuels, non contractuels.</div>
+        <div className="footer-copy">© 2026 Sèche10Semaines · Résultats individuels, non contractuels.</div>
       </footer>
 
       {/* STICKY MOBILE CTA */}

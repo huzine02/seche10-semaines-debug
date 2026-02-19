@@ -235,6 +235,12 @@ export const Pricing: React.FC = () => {
             <div className="trust-item">🛡️ Garanti 14 jours</div>
           </div>
         </div>
+
+        <footer style={{ padding: '20px 20px 32px', display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' as const }}>
+          <Link to="/mentions-legales" style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Mentions légales</Link>
+          <Link to="/cgv" style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>CGV</Link>
+          <Link to="/politique-confidentialite" style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Politique de confidentialité</Link>
+        </footer>
       </div>
     </>
   );
