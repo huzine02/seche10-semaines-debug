@@ -1,8 +1,7 @@
 import React, { useState, useRef, useMemo, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { doc, updateDoc, collection, getDocs } from 'firebase/firestore';
-import { ref, uploadString, getDownloadURL } from 'firebase/storage';
-import { auth, db, storage } from '../firebase';
+import { auth, db } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
 import { StreakBadge } from '../components/StreakBadge';
@@ -350,27 +349,19 @@ export const Profile: React.FC = () => {
     setUploadStatus('Traitement...');
     
     try {
-      // 1. Resize client-side
-      const base64 = await resizeImage(file, 1024, 0.7);
+      // 1. Resize client-side (small enough for Firestore — max ~200KB base64)
+      const base64 = await resizeImage(file, 800, 0.6);
       
       setUploadStatus('Envoi...');
       
-      // 2. Upload to Firebase Storage
-      // Important : Chemin unique avec timestamp pour éviter le cache
-      const path = `users/${user.uid}/${field}_${Date.now()}.jpg`;
-      const storageRef = ref(storage, path);
+      // 2. Save base64 directly to Firestore (avoids Storage rules issues)
+      await updateDoc(doc(db, 'users', user.uid), { [field]: base64 });
       
-      await uploadString(storageRef, base64, 'data_url');
-      const url = await getDownloadURL(storageRef);
+      // 3. Update Local State immediately
+      if (field === 'photoStart') setLocalPhotoStart(base64);
+      if (field === 'photoCurrent') setLocalPhotoCurrent(base64);
       
-      // 3. Update Firestore
-      await updateDoc(doc(db, 'users', user.uid), { [field]: url });
-      
-      // 4. Update Local State immediately (Feedback instantané)
-      if (field === 'photoStart') setLocalPhotoStart(url);
-      if (field === 'photoCurrent') setLocalPhotoCurrent(url);
-      
-      // 5. Refresh Context in background
+      // 4. Refresh Context in background
       refreshProfile();
       
       setUploadStatus('✅ Sauvegardé');
@@ -378,8 +369,9 @@ export const Profile: React.FC = () => {
       
     } catch (e: any) {
       console.error("Upload error:", e);
-      alert('Erreur lors de l\'upload : ' + e.message);
-      setUploadStatus('');
+      setUploadStatus('❌ Erreur');
+      alert('Erreur : ' + e.message);
+      setTimeout(() => setUploadStatus(''), 3000);
     }
   };
 
@@ -646,7 +638,7 @@ export const Profile: React.FC = () => {
         {/* 8. ACTIONS COMPTE */}
         <div>
           <h3 style={sectionTitleStyle}>Zone de danger</h3>
-          <Link to="/setup" style={{ display: 'block', padding: 12, background: C.surface, borderRadius: 8, textAlign: 'center', fontSize: 12, fontWeight: 700, color: C.textMuted, textDecoration: 'none', border: `1px solid ${C.border}`, marginBottom: 12 }}>
+          <Link to="/setup?recalibrate=1" style={{ display: 'block', padding: 12, background: C.surface, borderRadius: 8, textAlign: 'center', fontSize: 12, fontWeight: 700, color: C.textMuted, textDecoration: 'none', border: `1px solid ${C.border}`, marginBottom: 12 }}>
             ⚙️ Recalibrer mon programme
           </Link>
           <button onClick={logout} style={{ width: '100%', padding: 12, background: '#FEF2F2', color: C.red, border: '1px solid #FECACA', borderRadius: 8, fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>

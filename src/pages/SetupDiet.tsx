@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
@@ -144,13 +144,15 @@ function glucoseFeedback(val: number | null): { text: string; color: string; bg:
 export const SetupDiet: React.FC = () => {
   const { user, userProfile, refreshProfile } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const isRecalibrate = searchParams.get('recalibrate') === '1';
 
-  // If onboarding already done, skip to dashboard
+  // If onboarding already done AND not recalibrating, skip to dashboard
   useEffect(() => {
-    if (userProfile?.onboardingComplete) {
+    if (userProfile?.onboardingComplete && !isRecalibrate) {
       navigate('/dashboard', { replace: true });
     }
-  }, [userProfile, navigate]);
+  }, [userProfile, navigate, isRecalibrate]);
 
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
