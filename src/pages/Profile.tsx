@@ -627,7 +627,7 @@ export const Profile: React.FC = () => {
                 )}
                 {(!status || status === 'inactive' || status === 'cancelled') && (
                   <Link to="/pricing" style={{ display: 'block', marginTop: 12, padding: '11px', background: '#00B894', color: '#fff', borderRadius: '100px', textAlign: 'center', textDecoration: 'none', fontSize: 13, fontWeight: 700, boxShadow: '0 4px 20px rgba(0,184,148,0.3)' }}>
-                    Activer le programme → 49€/mois
+                    Activer le programme → 29€/mois
                   </Link>
                 )}
               </div>

@@ -14,7 +14,7 @@ import { Guide } from './pages/Guide';
 import { NotFound } from './pages/NotFound';
 import { LoadingScreen } from './components/LoadingScreen';
 
-const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const ProtectedRoute: React.FC<{ children: React.ReactNode; requireSub?: boolean }> = ({ children, requireSub = true }) => {
   const { user, loading, userProfile } = useAuth();
   const location = useLocation();
 
@@ -22,10 +22,20 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
 
   if (!user) return <Navigate to="/login" />;
 
-  // Only redirect to setup if we have a profile and onboarding is not complete
-  // (if userProfile is null, profile is still loading — don't redirect yet)
-  if (user && userProfile && !userProfile.onboardingComplete && location.pathname !== '/setup') {
+  // Wait for profile to load before deciding
+  if (!userProfile) return <LoadingScreen message="Chargement du profil..." />;
+
+  // Onboarding not done → setup first
+  if (!userProfile.onboardingComplete && location.pathname !== '/setup') {
     return <Navigate to="/setup" />;
+  }
+
+  // Subscription check: block access if no active/trialing subscription
+  if (requireSub && userProfile.onboardingComplete) {
+    const sub = userProfile.subscriptionStatus;
+    if (sub !== 'active' && sub !== 'trialing') {
+      return <Navigate to="/pricing" />;
+    }
   }
 
   return <>{children}</>;
@@ -44,7 +54,7 @@ export default function App() {
           <Route
             path="/setup"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute requireSub={false}>
                 <SetupDiet />
               </ProtectedRoute>
             }
