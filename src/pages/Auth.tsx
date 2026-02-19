@@ -24,9 +24,14 @@ export const Auth: React.FC = () => {
   const location = useLocation();
   const redirectTo = new URLSearchParams(location.search).get('redirect');
 
-  // Smart redirect: if no subscription, go to pricing
+  // Smart redirect: setup first, then pricing if no sub, then dashboard
   const getAfterLoginPath = () => {
     if (redirectTo) return `/${redirectTo}`;
+    // Onboarding not done → questionnaire first
+    if (userProfile && !userProfile.onboardingComplete) {
+      return '/setup';
+    }
+    // Onboarding done but no active subscription → pricing
     if (userProfile && userProfile.subscriptionStatus !== 'active' && userProfile.subscriptionStatus !== 'trialing') {
       return '/pricing';
     }
@@ -34,7 +39,8 @@ export const Auth: React.FC = () => {
   };
 
   useEffect(() => {
-    if (user) navigate(getAfterLoginPath());
+    // Wait until profile is loaded before redirecting
+    if (user && userProfile) navigate(getAfterLoginPath());
   }, [user, userProfile, navigate]);
 
   // (Pas de getRedirectResult - on utilise signInWithPopup)
