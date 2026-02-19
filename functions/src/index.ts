@@ -14,7 +14,7 @@ const getStripe = (): Stripe => {
   if (!_stripe) {
     const key = process.env.STRIPE_SECRET_KEY || '';
     if (!key) throw new Error('STRIPE_SECRET_KEY manquante dans les variables d\'environnement');
-    _stripe = new Stripe(key, { apiVersion: '2025-02-24.acacia' });
+    _stripe = new Stripe(key, { apiVersion: '2024-12-18.acacia' as any });
   }
   return _stripe;
 };
@@ -57,6 +57,16 @@ export const createCheckoutSession = onRequest(
       const userDoc = await db.collection('users').doc(uid).get();
       let stripeCustomerId: string | undefined =
         (userDoc.data() as { stripeCustomerId?: string })?.stripeCustomerId;
+
+      if (stripeCustomerId) {
+        // Verify the customer exists on the current Stripe account
+        try {
+          await getStripe().customers.retrieve(stripeCustomerId);
+        } catch {
+          // Customer from old Stripe account — recreate
+          stripeCustomerId = undefined;
+        }
+      }
 
       if (!stripeCustomerId) {
         const customer = await getStripe().customers.create({
