@@ -79,8 +79,17 @@ export const Auth: React.FC = () => {
         setSuccess('Email envoyé ! Vérifiez vos spams.');
         setView('login');
       } else if (view === 'login') {
-        await signInWithEmailAndPassword(auth, email, password);
-        // Navigation handled by useEffect watching user state
+        const cred = await signInWithEmailAndPassword(auth, email, password);
+        // Navigate based on profile
+        const snap = await getDoc(doc(db, 'users', cred.user.uid));
+        if (snap.exists()) {
+          const data = snap.data() as any;
+          if (!data.onboardingComplete) navigate('/setup');
+          else if (data.subscriptionStatus === 'active' || data.subscriptionStatus === 'trialing') navigate('/dashboard');
+          else navigate('/pricing');
+        } else {
+          navigate('/setup');
+        }
       } else {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const profile = createInitialUserProfile(res.user, name);
@@ -107,7 +116,15 @@ export const Auth: React.FC = () => {
         await setDoc(doc(db, 'users', res.user.uid), profile);
         navigate(redirectTo === 'pricing' ? '/pricing' : '/setup');
       } else {
-        // Existing user — navigation handled by useEffect
+        // Existing user — navigate based on profile
+        const data = userDoc.data() as any;
+        if (!data.onboardingComplete) {
+          navigate('/setup');
+        } else if (data.subscriptionStatus === 'active' || data.subscriptionStatus === 'trialing') {
+          navigate('/dashboard');
+        } else {
+          navigate('/pricing');
+        }
       }
     } catch (err: unknown) {
       handleAuthError(err);
