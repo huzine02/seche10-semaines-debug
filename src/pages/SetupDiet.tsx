@@ -3,6 +3,8 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
+import { useTheme } from '../contexts/ThemeContext';
+import { lightTheme, darkTheme } from '../theme';
 
 // ─── TYPES ──────────────────────────────────────────────
 interface Bio {
@@ -36,15 +38,8 @@ interface DietResult {
   macros: { protein: number; carbs: number; fats: number };
 }
 
-// ─── COLORS ─────────────────────────────────────────────
-const C = {
-  primary: '#0F2C59', primaryLight: '#163A70', primaryBg: '#F0F4F8',
-  accent: '#00B894', accentDark: '#008E72', accentBg: '#E0F2F1',
-  bg: '#F8FAFC', surface: '#FFFFFF', text: '#1E293B',
-  textMuted: '#64748B', textLight: '#94A3B8',
-  border: '#E2E8F0', borderLight: '#F1F5F9',
-  red: '#EF4444', orange: '#F59E0B', blue: '#3B82F6',
-};
+// ─── COLORS (mutable, set at render) ─────────────────────
+const C: Record<string, string> = { ...lightTheme };
 
 // ─── SCIENCE ENGINE ─────────────────────────────────────
 
@@ -143,6 +138,8 @@ function glucoseFeedback(val: number | null): { text: string; color: string; bg:
 // ─── COMPONENT ──────────────────────────────────────────
 export const SetupDiet: React.FC = () => {
   const { user, userProfile, refreshProfile } = useAuth();
+  const { isDark } = useTheme();
+  Object.assign(C, isDark ? darkTheme : lightTheme);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const isRecalibrate = searchParams.get('recalibrate') === '1';
@@ -240,7 +237,7 @@ export const SetupDiet: React.FC = () => {
     logoA: { color: C.accent },
     wrap: { flex: 1, maxWidth: 560, margin: '0 auto', width: '100%', padding: '24px 20px 40px', boxSizing: 'border-box' as const, alignSelf: 'center' as const },
     progBg: { background: C.border, height: 5, borderRadius: 10, overflow: 'hidden' as const, marginBottom: 8 },
-    progFill: { height: '100%', background: `linear-gradient(90deg, ${C.accent}, ${C.accentDark})`, transition: 'width 0.5s', width: progressPct, borderRadius: 10 },
+    progFill: { height: '100%', background: `linear-gradient(90deg, ${C.accent}, ${C.accentDark})`, transition: 'width 0.6s ease', width: progressPct, borderRadius: 10, animation: 'progFill 0.6s ease' },
     steps: { display: 'flex', justifyContent: 'space-between', fontSize: 10, fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: 1, marginBottom: 28, color: C.textLight },
     stepAct: { color: C.accent },
     h1: { fontFamily: "'Cabinet Grotesk'", fontSize: '1.6rem', fontWeight: 800, color: C.primary, marginBottom: 6, lineHeight: 1.15 },
@@ -272,7 +269,9 @@ export const SetupDiet: React.FC = () => {
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
         @keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
         @keyframes slideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-        .slide{animation:slideUp 0.35s ease-out}
+        @keyframes slideInRight{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+        .slide{animation:slideInRight 0.4s ease-out}
+        @keyframes progFill{from{width:0}}
         input:focus{border-color:${C.primary} !important}
         .grid3-resp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
         .grid2-resp{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}

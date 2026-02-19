@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AuthProvider, useAuth } from './AuthContext';
+import { ThemeProvider } from './contexts/ThemeContext';
 import { Layout } from './components/Layout';
 import { Landing } from './pages/Landing';
 import { Auth } from './pages/Auth';
@@ -43,6 +44,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode; requireSub?: boolean
 
 export default function App() {
   return (
+    <ThemeProvider>
     <AuthProvider>
       <HashRouter>
         <Routes>
@@ -89,5 +91,6 @@ export default function App() {
         </Routes>
       </HashRouter>
     </AuthProvider>
+    </ThemeProvider>
   );
 }

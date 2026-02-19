@@ -6,16 +6,11 @@ import { AchievementGrid } from '../components/Achievements';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
+import { useTheme } from '../contexts/ThemeContext';
+import { lightTheme, darkTheme } from '../theme';
 
-// ─── COLORS ─────────────────────────────────────────────
-const C = {
-  primary: '#0F2C59', primaryLight: '#163A70', primaryBg: '#F0F4F8',
-  accent: '#00B894', accentDark: '#008E72', accentBg: '#E0F2F1',
-  bg: '#F8FAFC', surface: '#FFFFFF', text: '#1E293B',
-  textMuted: '#64748B', textLight: '#94A3B8',
-  border: '#E2E8F0', borderLight: '#F1F5F9',
-  orange: '#F59E0B', red: '#EF4444', blue: '#3B82F6', purple: '#A855F7',
-};
+// ─── COLORS (mutable, set at render) ─────────────────────
+const C: Record<string, string> = { ...lightTheme, purple: '#A855F7' };
 
 // ─── PHASES ─────────────────────────────────────────────
 // Loss values are proportional multipliers (of projected total)
@@ -59,6 +54,8 @@ const SectionTitle: React.FC<{ icon: string; iconBg: string; iconColor: string; 
 // ─── COMPONENT ──────────────────────────────────────────
 export const Dashboard: React.FC = () => {
   const { user, userProfile: ctxProfile, refreshProfile } = useAuth();
+  const { isDark } = useTheme();
+  Object.assign(C, isDark ? darkTheme : lightTheme, { purple: isDark ? '#A78BFA' : '#A855F7' });
   const timelineRef = useRef<HTMLDivElement>(null);
 
   const [data, setData] = useState<UserProfile | null>(ctxProfile);
@@ -352,15 +349,21 @@ export const Dashboard: React.FC = () => {
       <style>{`
         @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-        .tl-scroll{overflow-x:auto;display:flex;gap:10px;padding:12px 20px;background:white;border-bottom:1px solid ${C.border};scrollbar-width:none}
+        .tl-scroll{overflow-x:auto;display:flex;gap:10px;padding:12px 20px;background:${C.surface};border-bottom:1px solid ${C.border};scrollbar-width:none}
         .tl-scroll::-webkit-scrollbar{display:none}
         @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
         .fu{animation:fadeUp 0.35s ease-out}
+        @keyframes barGrow{from{width:0}to{width:var(--bar-w)}}
+        @keyframes statFadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+        .stat-fade{animation:statFadeIn 0.5s ease-out both}
+        .stat-fade:nth-child(1){animation-delay:0.1s}.stat-fade:nth-child(2){animation-delay:0.2s}.stat-fade:nth-child(3){animation-delay:0.3s}
+        @keyframes flashSlideIn{from{opacity:0;transform:translate(-50%,-20px)}to{opacity:1;transform:translate(-50%,0)}}
+        .flash-slide{animation:flashSlideIn 0.3s ease-out}
       `}</style>
 
       {/* FLASH */}
       {flash && (
-        <div style={{ position: 'fixed', top: 12, left: '50%', transform: 'translateX(-50%)', background: C.accent, color: 'white', padding: '8px 18px', borderRadius: 8, fontSize: 12, fontWeight: 700, zIndex: 50, boxShadow: '0 4px 12px rgba(0,184,148,0.3)' }}>
+        <div className="flash-slide" style={{ position: 'fixed', top: 12, left: '50%', transform: 'translateX(-50%)', background: C.accent, color: 'white', padding: '8px 18px', borderRadius: 8, fontSize: 12, fontWeight: 700, zIndex: 50, boxShadow: '0 4px 12px rgba(0,184,148,0.3)' }}>
           ✓ {flash}
         </div>
       )}

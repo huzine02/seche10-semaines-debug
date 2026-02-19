@@ -6,42 +6,25 @@ import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
 import { StreakBadge } from '../components/StreakBadge';
 import { AchievementGrid } from '../components/Achievements';
-
-// ─── DESIGN SYSTEM ───
-const C = {
-  primary: '#0F2C59',
-  accent: '#00B894',
-  accentDark: '#008E72',
-  accentBg: '#E0F2F1',
-  bg: '#F8FAFC',
-  surface: '#FFF',
-  text: '#1E293B',
-  textMuted: '#64748B',
-  border: '#E2E8F0',
-  borderLight: '#F1F5F9',
-  red: '#EF4444',
-  orange: '#F59E0B',
-  blue: '#3B82F6',
-  blueBg: '#EFF6FF',
-};
+import { useTheme } from '../contexts/ThemeContext';
+import { lightTheme, darkTheme } from '../theme';
 
 // ─── HELPERS ───
-const cardStyle: React.CSSProperties = {
-  background: C.surface,
-  borderRadius: 12,
-  padding: 16,
-  border: `1px solid ${C.borderLight}`,
-  boxShadow: '0 2px 12px -2px rgba(15,44,89,0.04)',
-};
+// C is module-level mutable; component reassigns values at render start
+const C: Record<string, string> = { ...lightTheme, blueBg: '#EFF6FF' };
 
-const sectionTitleStyle: React.CSSProperties = {
-  fontSize: 11,
-  fontWeight: 700,
-  color: C.textMuted,
-  textTransform: 'uppercase',
-  letterSpacing: 1,
-  marginBottom: 12,
-};
+const cardStyle: React.CSSProperties = {};
+const sectionTitleStyle: React.CSSProperties = {};
+const statLabel: React.CSSProperties = {};
+const statValue: React.CSSProperties = {};
+
+function refreshStyles() {
+  Object.assign(cardStyle, { background: C.surface, borderRadius: 12, padding: 16, border: `1px solid ${C.borderLight}`, boxShadow: '0 2px 12px -2px rgba(15,44,89,0.04)' });
+  Object.assign(sectionTitleStyle, { fontSize: 11, fontWeight: 700, color: C.textMuted, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 12 });
+  Object.assign(statLabel, { fontSize: 10, color: C.textMuted, fontWeight: 600, marginBottom: 4 });
+  Object.assign(statValue, { fontSize: 14, fontWeight: 700, color: C.primary });
+}
+refreshStyles();
 
 const statBox = (bg = C.bg): React.CSSProperties => ({
   background: bg,
@@ -50,9 +33,6 @@ const statBox = (bg = C.bg): React.CSSProperties => ({
   textAlign: 'center',
   flex: 1,
 });
-
-const statLabel: React.CSSProperties = { fontSize: 10, color: C.textMuted, fontWeight: 600, marginBottom: 4 };
-const statValue: React.CSSProperties = { fontSize: 14, fontWeight: 700, color: C.primary };
 
 function getPhase(createdAt?: string): { name: string; label: string; color: string; bg: string } {
   if (!createdAt) return { name: 'Démarrage', label: 'S1', color: C.blue, bg: C.blueBg };
@@ -100,6 +80,10 @@ function DeltaBadge({ initial, current, unit, invert = false }: { initial?: numb
 export const Profile: React.FC = () => {
   const { user, userProfile, refreshProfile } = useAuth();
   const navigate = useNavigate();
+  const { isDark, mode, setMode } = useTheme();
+  // Update module-level C with current theme
+  Object.assign(C, isDark ? darkTheme : lightTheme, { blueBg: isDark ? '#1E3A5F' : '#EFF6FF' });
+  refreshStyles();
   
   const profile = userProfile;
   const diet = profile?.dietProfile;
@@ -657,6 +641,33 @@ export const Profile: React.FC = () => {
               </div>
             );
           })()}
+        </div>
+
+        {/* 7b. APPARENCE */}
+        <div style={cardStyle}>
+          <h3 style={sectionTitleStyle}>🎨 Apparence</h3>
+          <div style={{ display: 'flex', gap: 8 }}>
+            {([
+              { value: 'light' as const, label: '☀️ Clair' },
+              { value: 'dark' as const, label: '🌙 Sombre' },
+              { value: 'auto' as const, label: '📱 Auto' },
+            ]).map(opt => (
+              <button
+                key={opt.value}
+                onClick={() => setMode(opt.value)}
+                style={{
+                  flex: 1, padding: '10px 8px', borderRadius: 10,
+                  border: mode === opt.value ? `2px solid ${C.accent}` : `1px solid ${C.border}`,
+                  background: mode === opt.value ? C.accentBg : C.bg,
+                  color: mode === opt.value ? C.accent : C.textMuted,
+                  fontSize: 12, fontWeight: 700, cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* 8. ACTIONS COMPTE */}

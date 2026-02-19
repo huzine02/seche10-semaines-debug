@@ -1,0 +1,43 @@
+export const lightTheme = {
+  primary: '#0F2C59',
+  primaryLight: '#163A70',
+  primaryBg: '#F0F4F8',
+  accent: '#00B894',
+  accentDark: '#059669',
+  accentBg: '#ECFDF5',
+  bg: '#F8FAFC',
+  surface: '#FFFFFF',
+  text: '#1E293B',
+  textMuted: '#64748B',
+  textLight: '#94A3B8',
+  border: '#E2E8F0',
+  borderLight: '#F1F5F9',
+  red: '#DC2626',
+  orange: '#D97706',
+  blue: '#2563EB',
+  purple: '#7C3AED',
+  indigo: '#4F46E5',
+};
+
+export const darkTheme = {
+  primary: '#E2E8F0',
+  primaryLight: '#CBD5E1',
+  primaryBg: '#1E293B',
+  accent: '#34D399',
+  accentDark: '#6EE7B7',
+  accentBg: 'rgba(52,211,153,0.1)',
+  bg: '#0F172A',
+  surface: '#1E293B',
+  text: '#F1F5F9',
+  textMuted: '#94A3B8',
+  textLight: '#64748B',
+  border: '#334155',
+  borderLight: '#1E293B',
+  red: '#EF4444',
+  orange: '#F59E0B',
+  blue: '#3B82F6',
+  purple: '#A78BFA',
+  indigo: '#818CF8',
+};
+
+export type AppTheme = typeof lightTheme;

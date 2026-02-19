@@ -3,14 +3,11 @@ import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { StreakBadge } from '../components/StreakBadge';
+import { useTheme } from '../contexts/ThemeContext';
+import { lightTheme, darkTheme } from '../theme';
 
-// ─── COLORS ─────────────────────────────────────────────
-const C = {
-  primary: '#0F2C59', accent: '#00B894', accentDark: '#008E72', accentBg: '#E0F2F1',
-  bg: '#F8FAFC', surface: '#FFF', text: '#1E293B', textMuted: '#64748B', textLight: '#94A3B8',
-  border: '#E2E8F0', borderLight: '#F1F5F9',
-  orange: '#F59E0B', red: '#EF4444', blue: '#3B82F6', indigo: '#6366F1', purple: '#7C3AED',
-};
+// ─── COLORS (mutable, set at render) ─────────────────────
+const C: Record<string, string> = { ...lightTheme, indigo: '#6366F1' };
 
 // ─── WORKOUT DB ─────────────────────────────────────────
 // Rotation-based: cycles through PUSH→PULL→LEGS based on session count
@@ -190,7 +187,10 @@ const TBlock: React.FC<{ dot: string; glow?: boolean; label: string; time: strin
 // ─── MAIN COMPONENT ─────────────────────────────────────
 export const Journal: React.FC = () => {
   const { user, userProfile } = useAuth();
+  const { isDark } = useTheme();
+  Object.assign(C, isDark ? darkTheme : lightTheme, { indigo: isDark ? '#818CF8' : '#6366F1' });
   const [date, setDate] = useState(new Date());
+  const [showConfetti, setShowConfetti] = useState(false);
   const [day, setDay] = useState<DayData>(JSON.parse(JSON.stringify(DEFAULT_DAY)));
   const [modal, setModal] = useState(false);
   const [flash, setFlash] = useState(false);
@@ -331,6 +331,15 @@ export const Journal: React.FC = () => {
       .replace(/{cl}/g, String(Math.round(carbsPerMeal * 1.5)));
   };
 
+  // Confetti trigger
+  useEffect(() => {
+    if (compliancePct >= 95) {
+      setShowConfetti(true);
+      const t = setTimeout(() => setShowConfetti(false), 2500);
+      return () => clearTimeout(t);
+    }
+  }, [compliancePct >= 95]); // eslint-disable-line
+
   const tip = TIPS[date.getDate() % TIPS.length];
 
   // IF Window hours from profile (default 12-20)
@@ -356,6 +365,17 @@ export const Journal: React.FC = () => {
       <style>{`
         @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+        @keyframes meal-bounce{0%{transform:scale(1)}50%{transform:scale(1.15)}100%{transform:scale(1)}}
+        .meal-validated{animation:meal-bounce 0.3s ease}
+        @keyframes water-ripple{0%{box-shadow:0 0 0 0 rgba(37,99,235,0.4)}100%{box-shadow:0 0 0 12px rgba(37,99,235,0)}}
+        .water-btn:active{animation:water-ripple 0.4s ease-out}
+        @keyframes check-pop{0%{transform:scale(1)}50%{transform:scale(1.3)}100%{transform:scale(1)}}
+        input[type="checkbox"]:checked{animation:check-pop 0.2s ease}
+        @keyframes ring-fill{from{stroke-dashoffset:var(--ring-circ)}to{stroke-dashoffset:var(--ring-offset)}}
+        @keyframes confetti-fall{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+        .confetti-piece{position:fixed;top:-10px;width:8px;height:8px;z-index:100;animation:confetti-fall 2s ease-in forwards}
+        @keyframes congrats-slide{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+        .congrats-anim{animation:congrats-slide 0.5s ease-out}
       `}</style>
 
       {/* HEADER */}
@@ -376,9 +396,21 @@ export const Journal: React.FC = () => {
 
       <main style={{ padding: 14, display: 'flex', flexDirection: 'column', gap: 14 }}>
 
+        {/* CONFETTI */}
+        {showConfetti && Array.from({ length: 30 }).map((_, i) => (
+          <div key={i} className="confetti-piece" style={{
+            left: `${Math.random() * 100}%`,
+            background: ['#00B894','#F59E0B','#3B82F6','#EF4444','#7C3AED','#F472B6'][i % 6],
+            animationDelay: `${Math.random() * 0.8}s`,
+            borderRadius: Math.random() > 0.5 ? '50%' : '0',
+            width: 6 + Math.random() * 6,
+            height: 6 + Math.random() * 6,
+          }} />
+        ))}
+
         {/* COMPLIANCE CONGRATULATIONS */}
         {compliancePct >= 80 && (
-          <div style={{ background: 'linear-gradient(135deg, #059669 0%, #00B894 100%)', borderRadius: 14, padding: '14px 18px', display: 'flex', alignItems: 'center', gap: 12, color: '#fff' }}>
+          <div className="congrats-anim" style={{ background: 'linear-gradient(135deg, #059669 0%, #00B894 100%)', borderRadius: 14, padding: '14px 18px', display: 'flex', alignItems: 'center', gap: 12, color: '#fff' }}>
             <span style={{ fontSize: 28 }}>🔥</span>
             <div>
               <div style={{ fontWeight: 700, fontSize: 14 }}>
@@ -396,17 +428,30 @@ export const Journal: React.FC = () => {
         {/* MODE + COMPLIANCE */}
         <Card>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-            <div>
-              <span style={{ fontWeight: 700, fontSize: 13, color: C.primary }}>Mode du Jour</span>
-              <div style={{ fontSize: 11, color: C.textLight, marginTop: 1 }}>
-                {isT ? `${macros.calories} kcal — Training` : `${macros.calories} kcal — Repos`}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              {/* Progress Ring */}
+              {(() => {
+                const r = 20, circ = 2 * Math.PI * r, offset = circ - (compliancePct / 100) * circ;
+                return (
+                  <svg width="50" height="50" style={{ flexShrink: 0 }}>
+                    <circle cx="25" cy="25" r={r} fill="none" stroke={C.border} strokeWidth="4" />
+                    <circle cx="25" cy="25" r={r} fill="none" stroke={C.accent} strokeWidth="4"
+                      strokeLinecap="round" strokeDasharray={circ} strokeDashoffset={offset}
+                      style={{ transition: 'stroke-dashoffset 0.6s ease', transform: 'rotate(-90deg)', transformOrigin: '50% 50%' }} />
+                    <text x="25" y="25" textAnchor="middle" dominantBaseline="central" fontSize="11" fontWeight="700" fill={C.primary}>
+                      {compliancePct}%
+                    </text>
+                  </svg>
+                );
+              })()}
+              <div>
+                <span style={{ fontWeight: 700, fontSize: 13, color: C.primary }}>Mode du Jour</span>
+                <div style={{ fontSize: 11, color: C.textLight, marginTop: 1 }}>
+                  {isT ? `${macros.calories} kcal — Training` : `${macros.calories} kcal — Repos`}
+                </div>
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              {/* Compliance badge */}
-              <div style={{ background: compliancePct >= 80 ? C.accentBg : compliancePct >= 50 ? '#FFF7ED' : C.bg, padding: '4px 8px', borderRadius: 6, fontSize: 11, fontWeight: 700, color: compliancePct >= 80 ? C.accentDark : compliancePct >= 50 ? C.orange : C.textMuted }}>
-                {compliancePct}%
-              </div>
               {/* Toggle */}
               <div onClick={() => update(d => ({ ...d, training: !d.training }))} style={{ width: 44, height: 22, borderRadius: 11, background: isT ? C.accent : '#CBD5E1', position: 'relative', cursor: 'pointer', transition: '0.3s' }}>
                 <div style={{ width: 18, height: 18, borderRadius: '50%', background: 'white', position: 'absolute', top: 2, left: isT ? 24 : 2, transition: '0.3s', boxShadow: '0 1px 3px rgba(0,0,0,0.15)' }} />
@@ -460,7 +505,7 @@ export const Journal: React.FC = () => {
               <span style={{ fontWeight: 700, fontSize: 13, color: C.primary }}>💧 Hydratation</span>
               <div style={{ fontSize: 11, color: C.textMuted, marginTop: 1 }}>{((day.water || 0) / 1000).toFixed(1)}L / 3.0L</div>
             </div>
-            <button onClick={addWater} style={{ padding: '6px 12px', background: C.blue, color: 'white', borderRadius: 7, border: 'none', fontWeight: 700, fontSize: 11, cursor: 'pointer' }}>+ 250ml</button>
+            <button onClick={addWater} className="water-btn" style={{ padding: '6px 12px', background: C.blue, color: 'white', borderRadius: 7, border: 'none', fontWeight: 700, fontSize: 11, cursor: 'pointer' }}>+ 250ml</button>
           </div>
           <div style={{ width: '100%', height: 4, background: C.bg, borderRadius: 2, marginTop: 6 }}>
             <div style={{ height: '100%', background: C.blue, borderRadius: 2, width: `${Math.min(((day.water || 0) / 3000) * 100, 100)}%`, transition: 'width 0.3s' }} />
