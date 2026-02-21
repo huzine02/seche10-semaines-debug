@@ -426,7 +426,7 @@ export const Landing: React.FC = () => {
           </p>
           <div className="hero-cta-group">
             <Link to="/login" className="btn-primary">
-              Démarrer ma transformation →
+              Commencer mon essai gratuit →
             </Link>
             <span className="hero-guarantee">
               🛡️ <strong>Garantie 14 jours</strong> · Sans engagement · 29€/mois au lieu de 49€
@@ -853,7 +853,7 @@ export const Landing: React.FC = () => {
                 ].map((item, i) => <li key={i}>{item}</li>)}
               </ul>
               <Link to="/login" className="btn-pricing">
-                Démarrer mon programme — 29€/mois →
+                Essai gratuit 7 jours → puis 29€/mois
               </Link>
               <div className="pricing-secure">🔒 Paiement sécurisé · Annulation en 1 clic</div>
             </div>
@@ -944,7 +944,7 @@ export const Landing: React.FC = () => {
             Valable jusqu'au <strong>31 mars 2026</strong> · Sans engagement
           </p>
           <Link to="/login" className="btn-primary" style={{ background: '#fff', color: '#00a381' }}>
-            Profiter de l'offre →
+            Commencer mon essai gratuit →
           </Link>
         </div>
       </section>
@@ -954,7 +954,7 @@ export const Landing: React.FC = () => {
         <h2 className="font-serif">Prêt à retrouver le corps<br />que vous méritez ?</h2>
         <p>Votre transformation commence par une décision.</p>
         <Link to="/login" className="btn-primary">
-          Commencer maintenant — 29€/mois
+          Commencer mon essai gratuit →
         </Link>
       </section>
 

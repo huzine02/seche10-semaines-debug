@@ -90,6 +90,7 @@ export const createCheckoutSession = onRequest(
         line_items: [{ price: getPriceId(), quantity: 1 }],
         success_url: successUrl || 'https://seche10semaines.fr/#/success',
         cancel_url: cancelUrl || 'https://seche10semaines.fr/#/pricing',
+        subscription_data: { trial_period_days: 7 },
         allow_promotion_codes: true,
         billing_address_collection: 'auto',
         locale: 'fr',

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
+import { trackEvent } from '../utils/analytics';
 
 export const Success: React.FC = () => {
   const { userProfile, refreshProfile } = useAuth();
@@ -35,6 +36,7 @@ export const Success: React.FC = () => {
   useEffect(() => {
     if (isActive && !activated) {
       setActivated(true);
+      trackEvent('subscription_active');
     }
   }, [isActive, activated]);
 

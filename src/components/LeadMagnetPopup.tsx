@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
+import { trackEvent } from '../utils/analytics';
 
 export const LeadMagnetPopup: React.FC = () => {
   const [show, setShow] = useState(false);
@@ -49,6 +50,7 @@ export const LeadMagnetPopup: React.FC = () => {
     } catch (_err) {
       // Firestore rules may block — silent fail, we'll fix rules later
     }
+    trackEvent('lead_captured');
     setSubmitted(true);
     setLoading(false);
   };

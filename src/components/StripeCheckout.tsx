@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../AuthContext';
+import { trackEvent } from '../utils/analytics';
 
 /**
  * StripeCheckout
@@ -23,6 +24,7 @@ export const StripeCheckout: React.FC = () => {
 
   const handleCheckout = async () => {
     if (!user) return;
+    trackEvent('checkout_start');
     setLoading(true);
     setError(null);
 
@@ -105,7 +107,7 @@ export const StripeCheckout: React.FC = () => {
               Redirection vers le paiement...
             </span>
           ) : (
-            'Démarrer mon programme — 29€/mois →'
+            'Essai gratuit 7 jours → puis 29€/mois'
           )}
         </button>
 

@@ -4,6 +4,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
+import { trackEvent } from '../utils/analytics';
 import { lightTheme, darkTheme } from '../theme';
 
 // ─── TYPES ──────────────────────────────────────────────
@@ -206,6 +207,7 @@ export const SetupDiet: React.FC = () => {
         profileData.createdAt = new Date().toISOString();
       }
       await setDoc(doc(db, 'users', user.uid), profileData, { merge: true });
+      trackEvent('setup_complete', { body_fat: diet.bodyFatEstimate || 0 });
       await refreshProfile();
       // If recalibrating (already paid), go to dashboard. Otherwise go to pricing.
       if (isRecalibrate) {

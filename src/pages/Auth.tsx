@@ -10,6 +10,7 @@ import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { auth, db, googleProvider } from '../firebase';
 import { createInitialUserProfile } from '../utils/onboarding';
 import { useAuth } from '../AuthContext';
+import { trackEvent } from '../utils/analytics';
 
 export const Auth: React.FC = () => {
   const { user, userProfile } = useAuth();
@@ -84,6 +85,7 @@ export const Auth: React.FC = () => {
       } else if (view === 'login') {
         const cred = await signInWithEmailAndPassword(auth, email, password);
         // Navigate based on profile
+        trackEvent('login_success');
         const snap = await getDoc(doc(db, 'users', cred.user.uid));
         if (snap.exists()) {
           const data = snap.data() as any;

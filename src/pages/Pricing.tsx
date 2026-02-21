@@ -2,11 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
 import { StripeCheckout } from '../components/StripeCheckout';
+import { trackEvent } from '../utils/analytics';
 
 export const Pricing: React.FC = () => {
   const { user, userProfile, loading } = useAuth();
   const navigate = useNavigate();
   const [showCheckout, setShowCheckout] = useState(false);
+
+  useEffect(() => { trackEvent('pricing_view'); }, []);
 
   // Redirect to setup if onboarding not complete
   useEffect(() => {
@@ -192,11 +195,12 @@ export const Pricing: React.FC = () => {
             Votre transformation<br />commence aujourd'hui.
           </h1>
           <p className="pricing-sub">
-            Sans engagement. Annulation en 1 clic. Garantie 14 jours.
+            7 jours d'essai gratuit. Sans engagement. Annulation en 1 clic.
           </p>
 
           <div className="plan-card">
             <div className="plan-header">
+              <div className="plan-badge" style={{background: 'rgba(255,255,255,0.3)', fontSize: 12, padding: '6px 16px', marginBottom: 6}}>🎁 ESSAI GRATUIT 7 JOURS</div>
               <div className="plan-badge">🚀 Offre de lancement</div>
               <div className="plan-name">Programme Complet · 10 Semaines</div>
               <div className="plan-price-row">
@@ -206,7 +210,7 @@ export const Pricing: React.FC = () => {
                   <div className="plan-old">49€</div>
                 </div>
               </div>
-              <div className="plan-saving">⏰ Offre de lancement — valable jusqu'au 31 mars 2026</div>
+              <div className="plan-saving">🎁 7 jours d'essai gratuit · puis 29€/mois</div>
             </div>
 
             <div className="plan-body">
@@ -220,7 +224,7 @@ export const Pricing: React.FC = () => {
                 <StripeCheckout />
               ) : (
                 <Link to="/login?redirect=pricing" className="btn-checkout">
-                  Créer mon compte — 29€/mois →
+                  Commencer mon essai gratuit →
                 </Link>
               )}
 
