@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { blogArticles } from '../data/blogArticles';
+import { seoArticles25 } from '../data/seoArticles25';
 
 export const Blog: React.FC = () => {
   const styles = `
@@ -94,6 +95,17 @@ export const Blog: React.FC = () => {
             </div>
             <h2>{article.title}</h2>
             <p>{article.excerpt}</p>
+            <div className="blog-card-arrow">Lire l'article →</div>
+          </Link>
+        ))}
+        {seoArticles25.map((article) => (
+          <Link to={`/blog/${article.slug}`} className="blog-card" key={article.slug}>
+            <div className="blog-card-meta">
+              <span className="blog-card-date">Fév 2026</span>
+              <span className="blog-card-read">⏱ 10 min</span>
+            </div>
+            <h2>{article.title}</h2>
+            <p>{article.metaDescription}</p>
             <div className="blog-card-arrow">Lire l'article →</div>
           </Link>
         ))}

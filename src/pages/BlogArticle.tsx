@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { blogArticles } from '../data/blogArticles';
+import { seoArticles25 } from '../data/seoArticles25';
 
 export const BlogArticle: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const article = blogArticles.find((a) => a.slug === slug);
+  const article = blogArticles.find((a) => a.slug === slug) || seoArticles25.find((a) => a.slug === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -162,9 +163,9 @@ export const BlogArticle: React.FC = () => {
             <Link to="/">Accueil</Link> → <Link to="/blog">Blog</Link> → Article
           </div>
           <div className="art-meta">
-            <span>{formatDate(article.date)}</span>
-            <span>⏱ {article.readTime}</span>
-            <span className="keyword">{article.keyword}</span>
+            <span>{('date' in article) ? formatDate((article as any).date) : 'Fév 2026'}</span>
+            <span>⏱ {('readTime' in article) ? (article as any).readTime : '10 min'}</span>
+            {('keyword' in article) && <span className="keyword">{(article as any).keyword}</span>}
           </div>
           <h1>{article.title}</h1>
         </div>
