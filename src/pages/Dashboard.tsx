@@ -7,6 +7,7 @@ import { db } from '../firebase';
 import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
 import { useTheme } from '../contexts/ThemeContext';
+import { HealthScore } from '../components/HealthScore';
 import { lightTheme, darkTheme } from '../theme';
 
 // ─── COLORS (mutable, set at render) ─────────────────────
@@ -386,6 +387,26 @@ export const Dashboard: React.FC = () => {
 
       {/* SUBSCRIPTION BANNER */}
       <SubscriptionBanner />
+
+      {/* HEALTH SCORE */}
+      <div style={{ padding: '12px 16px 0' }}>
+        <HealthScore
+          glucoseReadings={data?.glucoseReadings}
+          tourDeTaille={data?.tourDeTaille}
+          pesees={data?.pesees}
+          lipidesReadings={data?.lipidesReadings}
+          initialWeight={initialWeight || undefined}
+          initialWaistline={initialWaist || undefined}
+          projectedLoss={diet?.projectedLoss}
+          streak={streak}
+          totalDays={totalDays}
+          perfectDays={perfectDays}
+          firstName={data?.firstName}
+          createdAt={data?.createdAt}
+          colors={C}
+          isDark={isDark}
+        />
+      </div>
 
       {/* STREAK + BADGES */}
       <div style={{ padding: '12px 16px 0', display: 'flex', flexDirection: 'column', gap: 12 }}>
