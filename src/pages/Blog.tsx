@@ -112,6 +112,20 @@ export const Blog: React.FC = () => {
         ))}
       </div>
 
+      <noscript>
+        <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+          <h2>Articles du blog</h2>
+          <ul>
+            {blogArticles.map((a) => (
+              <li key={a.slug}><a href={`/blog/${a.slug}`}>{a.title}</a></li>
+            ))}
+            {[...seoArticles25, ...seoArticlesRewrite].filter((a, i, arr) => arr.findIndex(b => b.slug === a.slug) === i).map((a) => (
+              <li key={a.slug}><a href={`/blog/${a.slug}`}>{a.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      </noscript>
+
       <footer className="blog-footer">
         <div className="blog-footer-logo">Sèche<span>10</span>Semaines</div>
         <div className="blog-footer-links">
