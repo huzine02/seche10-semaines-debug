@@ -40,6 +40,16 @@ service cloud.firestore {
       }
     }
 
+    // ─── LEADS (popup guide gratuit) ──────────────────────────────────────────
+    match /leads/{leadId} {
+      // N'importe qui peut créer un lead (email capture, pas d'auth requise)
+      allow create: if request.resource.data.keys().hasAll(['email', 'source', 'createdAt'])
+        && request.resource.data.email is string
+        && request.resource.data.email.size() > 0;
+      // Pas de lecture/update/delete depuis le client
+      allow read, update, delete: if false;
+    }
+
     // ─── TOUT LE RESTE : REFUSÉ ───────────────────────────────────────────────
     match /{document=**} {
       allow read, write: if false;

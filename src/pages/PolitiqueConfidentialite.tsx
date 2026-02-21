@@ -46,8 +46,9 @@ export const PolitiqueConfidentialite: React.FC = () => {
 
           <h2>1. Responsable du traitement</h2>
           <p>
-            [Nom à compléter] — Entreprise Individuelle (en cours de création)<br />
+            BH Digital — Entreprise Individuelle<br />
             5 bis rue de la Bouvine, 34130 Candillargues, France<br />
+            SIRET : 509 791 885 00015<br />
             Email : <a href="mailto:contact@seche10semaines.fr">contact@seche10semaines.fr</a>
           </p>
 

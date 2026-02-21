@@ -22,7 +22,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored === 'light' || stored === 'dark' || stored === 'auto') return stored;
     } catch { /* noop */ }
-    return 'auto';
+    return 'light';
   });
 
   const [systemDark, setSystemDark] = useState(() =>

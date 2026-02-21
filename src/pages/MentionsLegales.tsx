@@ -32,14 +32,14 @@ export const MentionsLegales: React.FC = () => {
 
           <h2>Éditeur du site</h2>
           <p>
-            [Nom à compléter] — Entreprise Individuelle (en cours de création)<br />
+            BH Digital — Entreprise Individuelle<br />
             5 bis rue de la Bouvine, 34130 Candillargues, France<br />
-            SIRET : [En cours d'immatriculation]<br />
+            SIRET : 509 791 885 00015<br />
             Email : <a href="mailto:contact@seche10semaines.fr">contact@seche10semaines.fr</a>
           </p>
 
           <h2>Directeur de la publication</h2>
-          <p>[Nom à compléter], en qualité de gérant.</p>
+          <p>Hocine Bouhend, en qualité de gérant.</p>
 
           <h2>Hébergeur</h2>
           <p>

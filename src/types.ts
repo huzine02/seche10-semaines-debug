@@ -67,6 +67,7 @@ export interface UserProfile {
   subscriptionStatus?: SubscriptionStatus;
   subscriptionStartedAt?: string;
   subscriptionCancelledAt?: string;
+  subscriptionEndsAt?: string;
   lastPaymentError?: string;
 }
 

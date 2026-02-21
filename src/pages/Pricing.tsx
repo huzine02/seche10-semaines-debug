@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
 import { StripeCheckout } from '../components/StripeCheckout';
 
 export const Pricing: React.FC = () => {
-  const { user } = useAuth();
+  const { user, userProfile, loading } = useAuth();
+  const navigate = useNavigate();
   const [showCheckout, setShowCheckout] = useState(false);
-  const [spotsLeft] = useState(14);
+
+  // Redirect to setup if onboarding not complete
+  useEffect(() => {
+    if (!loading && user && userProfile && !userProfile.onboardingComplete) {
+      navigate('/setup');
+    }
+  }, [loading, user, userProfile, navigate]);
 
   const styles = `
     @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap');
@@ -179,8 +186,8 @@ export const Pricing: React.FC = () => {
         </header>
 
         <div className="pricing-content">
-          <div className="spots-banner">🔥 Plus que {spotsLeft} places à ce tarif</div>
-          <div className="pricing-tag">Offre de lancement · 50 premiers inscrits</div>
+          <div className="spots-banner">🚀 Offre de lancement — 29€/mois au lieu de 49€</div>
+          <div className="pricing-tag">Tarif préférentiel</div>
           <h1 className="pricing-headline">
             Votre transformation<br />commence aujourd'hui.
           </h1>
@@ -190,7 +197,7 @@ export const Pricing: React.FC = () => {
 
           <div className="plan-card">
             <div className="plan-header">
-              <div className="plan-badge">🔥 Offre limitée — {spotsLeft} places</div>
+              <div className="plan-badge">🚀 Offre de lancement</div>
               <div className="plan-name">Programme Complet · 10 Semaines</div>
               <div className="plan-price-row">
                 <span className="plan-price">29€</span>

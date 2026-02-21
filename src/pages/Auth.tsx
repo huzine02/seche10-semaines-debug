@@ -39,16 +39,18 @@ export const Auth: React.FC = () => {
   };
 
   useEffect(() => {
-    // Only auto-redirect if user has active subscription (→ dashboard)
-    // or needs onboarding (→ setup). Don't redirect to pricing automatically
-    // so user can see the login page and switch accounts if needed.
+    // Auto-redirect logged-in users to the right place
+    // Only redirect if NOT coming from "Espace Membre" (no redirect param = organic visit)
     if (user && userProfile) {
       const sub = userProfile.subscriptionStatus;
-      if (!userProfile.onboardingComplete) {
-        navigate('/setup');
-      } else if (sub === 'active' || sub === 'trialing') {
+      if (sub === 'active' || sub === 'trialing' || sub === 'cancelling') {
+        // Active/cancelling subscriber → always go to dashboard
         navigate('/dashboard');
+      } else if (!userProfile.onboardingComplete) {
+        // Not onboarded → setup first
+        navigate('/setup');
       } else {
+        // Onboarded but no active sub → pricing
         navigate('/pricing');
       }
     }
@@ -86,7 +88,7 @@ export const Auth: React.FC = () => {
         if (snap.exists()) {
           const data = snap.data() as any;
           if (!data.onboardingComplete) navigate('/setup');
-          else if (data.subscriptionStatus === 'active' || data.subscriptionStatus === 'trialing') navigate('/dashboard');
+          else if (data.subscriptionStatus === 'active' || data.subscriptionStatus === 'trialing' || data.subscriptionStatus === 'cancelling') navigate('/dashboard');
           else navigate('/pricing');
         } else {
           navigate('/setup');
@@ -96,7 +98,8 @@ export const Auth: React.FC = () => {
         const profile = createInitialUserProfile(res.user, name);
         // @ts-ignore
         await setDoc(doc(db, 'users', res.user.uid), profile);
-        navigate(redirectTo === 'pricing' ? '/pricing' : '/setup');
+        // Always go to setup first for new accounts (onboarding required)
+        navigate('/setup');
       }
     } catch (err: unknown) {
       handleAuthError(err);
@@ -115,13 +118,14 @@ export const Auth: React.FC = () => {
         const profile = createInitialUserProfile(res.user);
         // @ts-ignore
         await setDoc(doc(db, 'users', res.user.uid), profile);
-        navigate(redirectTo === 'pricing' ? '/pricing' : '/setup');
+        // Always go to setup first for new accounts (onboarding required)
+        navigate('/setup');
       } else {
         // Existing user — navigate based on profile
         const data = userDoc.data() as any;
         if (!data.onboardingComplete) {
           navigate('/setup');
-        } else if (data.subscriptionStatus === 'active' || data.subscriptionStatus === 'trialing') {
+        } else if (data.subscriptionStatus === 'active' || data.subscriptionStatus === 'trialing' || data.subscriptionStatus === 'cancelling') {
           navigate('/dashboard');
         } else {
           navigate('/pricing');

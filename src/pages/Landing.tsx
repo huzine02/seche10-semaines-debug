@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { LeadMagnetPopup } from '../components/LeadMagnetPopup';
 
 export const Landing: React.FC = () => {
   const [visibleSections, setVisibleSections] = useState(new Set<string>());
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [spotsLeft] = useState(14);
-  const [timer, setTimer] = useState({ h: 2, m: 47, s: 33 });
+  // Removed fake spotsLeft counter and fake timer (DGCCRF compliance)
   const [activeScreen, setActiveScreen] = useState(0);
   const [cinemaStep, setCinemaStep] = useState(0);
   const CINEMA_STEPS = 6;
@@ -26,19 +26,7 @@ export const Landing: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimer((prev) => {
-        let { h, m, s } = prev;
-        s--;
-        if (s < 0) { s = 59; m--; }
-        if (m < 0) { m = 59; h--; }
-        if (h < 0) { h = 23; m = 59; s = 59; }
-        return { h, m, s };
-      });
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
+  // Timer removed (was fake/non-persistent)
 
   // Auto-rotate app screens
   useEffect(() => {
@@ -57,7 +45,7 @@ export const Landing: React.FC = () => {
   }, []);
 
   const isVisible = (id: string) => visibleSections.has(id);
-  const pad = (n: number) => String(n).padStart(2, '0');
+  // pad() removed with timer
 
   const styles = `
     @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
@@ -413,6 +401,7 @@ export const Landing: React.FC = () => {
       <header className="site-header">
         <div className="header-inner">
           <Link to="/" className="logo">Sèche<span>10</span>Semaines</Link>
+          <Link to="/blog" className="btn-member" style={{marginRight: 8, borderColor: 'rgba(255,255,255,0.15)'}}>Blog</Link>
           <Link to="/login" className="btn-member">Espace Membre</Link>
         </div>
       </header>
@@ -420,12 +409,7 @@ export const Landing: React.FC = () => {
       {/* URGENCY BAR */}
       <div className="urgency-bar">
         <div className="urgency-inner">
-          <span className="urgency-text">🔥 Offre de lancement — Plus que {spotsLeft} places</span>
-          <div className="urgency-timer">
-            <span className="urgency-digit">{pad(timer.h)}</span>:
-            <span className="urgency-digit">{pad(timer.m)}</span>:
-            <span className="urgency-digit">{pad(timer.s)}</span>
-          </div>
+          <span className="urgency-text">🚀 Offre de lancement — 29€/mois au lieu de 49€</span>
         </div>
       </div>
 
@@ -441,7 +425,7 @@ export const Landing: React.FC = () => {
             Vos repas sont prêts chaque jour. <strong>5 minutes par jour suffisent.</strong>
           </p>
           <div className="hero-cta-group">
-            <Link to="/pricing" className="btn-primary">
+            <Link to="/login" className="btn-primary">
               Démarrer ma transformation →
             </Link>
             <span className="hero-guarantee">
@@ -844,7 +828,7 @@ export const Landing: React.FC = () => {
 
           <div id="pricing-card" data-animate className={`pricing-card fade-up ${isVisible('pricing-card') ? 'visible' : ''}`}>
             <div className="pricing-header">
-              <div className="pricing-badge">🔥 {spotsLeft} places à ce prix</div>
+              <div className="pricing-badge">🚀 Offre de lancement</div>
               <div className="pricing-name">Programme Complet · 10 Semaines</div>
               <div className="pricing-price">
                 <span className="price-amount">29€</span>
@@ -868,7 +852,7 @@ export const Landing: React.FC = () => {
                   'Garantie 14 jours satisfait ou remboursé',
                 ].map((item, i) => <li key={i}>{item}</li>)}
               </ul>
-              <Link to="/pricing" className="btn-pricing">
+              <Link to="/login" className="btn-pricing">
                 Démarrer mon programme — 29€/mois →
               </Link>
               <div className="pricing-secure">🔒 Paiement sécurisé · Annulation en 1 clic</div>
@@ -914,7 +898,7 @@ export const Landing: React.FC = () => {
       <section className="final-cta">
         <h2 className="font-serif">Prêt à retrouver le corps<br />que vous méritez ?</h2>
         <p>Votre transformation commence par une décision.</p>
-        <Link to="/pricing" className="btn-primary">
+        <Link to="/login" className="btn-primary">
           Commencer maintenant — 29€/mois
         </Link>
       </section>
@@ -923,6 +907,7 @@ export const Landing: React.FC = () => {
       <footer className="site-footer">
         <div className="footer-logo">Sèche<span>10</span>Semaines</div>
         <div className="footer-links">
+          <Link to="/blog">Blog</Link>
           <Link to="/login">Espace Membre</Link>
           <a href="mailto:contact@seche10semaines.fr">Contact</a>
           <Link to="/mentions-legales">Mentions légales</Link>
@@ -935,8 +920,10 @@ export const Landing: React.FC = () => {
       {/* STICKY MOBILE CTA */}
       <div className="sticky-cta">
         <div className="sticky-cta-text"><strong>29€/mois</strong> <span style={{textDecoration:'line-through',opacity:0.6}}>49€</span> · Garanti 14j</div>
-        <Link to="/pricing" className="sticky-cta-btn">Commencer →</Link>
+        <Link to="/login" className="sticky-cta-btn">Commencer →</Link>
       </div>
+
+      <LeadMagnetPopup />
     </>
   );
 };

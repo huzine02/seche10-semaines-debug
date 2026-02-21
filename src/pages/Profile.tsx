@@ -604,6 +604,12 @@ export const Profile: React.FC = () => {
                     <span style={{ fontWeight: 600 }}>{new Date(profile.subscriptionStartedAt).toLocaleDateString('fr-FR')}</span>
                   </div>
                 )}
+                {status === 'cancelling' && profile?.subscriptionEndsAt && (
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8, fontSize: 12 }}>
+                    <span style={{ color: C.textMuted }}>Accès jusqu'au</span>
+                    <span style={{ fontWeight: 600, color: '#D97706' }}>{new Date(profile.subscriptionEndsAt).toLocaleDateString('fr-FR')}</span>
+                  </div>
+                )}
                 {status === 'active' && (
                   <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 8 }}>
                     <button
@@ -615,22 +621,21 @@ export const Profile: React.FC = () => {
                             method: 'POST',
                             headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
                           });
-                          if (!res.ok) throw new Error('Erreur serveur');
-                          // Update local state immediately (webhook may take a moment)
-                          await updateDoc(doc(db, 'users', user!.uid), { subscriptionStatus: 'cancelling' });
+                          if (!res.ok) {
+                            const err = await res.json().catch(() => ({ error: 'Erreur serveur' }));
+                            throw new Error(err.error || 'Erreur serveur');
+                          }
+                          // Function already updated Firestore via Admin SDK, just refresh local state
                           await refreshProfile();
                           alert('Votre abonnement a été annulé. Vous conservez l\'accès jusqu\'à la fin de la période.');
                         } catch (e: any) {
                           alert('Erreur lors de l\'annulation : ' + e.message);
                         }
                       }}
-                      style={{ width: '100%', padding: 11, background: '#FEF2F2', color: C.red, border: '1px solid #FECACA', borderRadius: 8, fontSize: 12, fontWeight: 700, cursor: 'pointer' }}
+                      style={{ width: 'auto', padding: '6px 0', background: 'transparent', color: C.textMuted, border: 'none', borderRadius: 0, fontSize: 11, fontWeight: 500, cursor: 'pointer', textDecoration: 'underline', margin: '0 auto', display: 'block' }}
                     >
                       Annuler mon abonnement
                     </button>
-                    <div style={{ fontSize: 11, color: C.textMuted, textAlign: 'center', padding: '4px' }}>
-                      Annulation possible à tout moment, sans frais.
-                    </div>
                   </div>
                 )}
                 {(!status || status === 'inactive' || status === 'cancelled') && (
