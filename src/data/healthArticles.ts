@@ -2013,188 +2013,190 @@ export const healthArticles: BlogArticle[] = [
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
 <p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Optimisez votre bilan lipidique en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin pour interprÃ©ter votre bilan lipidique complet.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Un bilan lipidique perturbé nécessite un suivi médical régulier.</em></p>
 </article>`
   },
   {
     slug: "taux-sucre-sang-normal-age",
-    title: "Taux de Sucre dans le Sang : Les Normes par Ã‚ge (Tableau)",
-    metaDescription: "Quel est le taux de sucre normal dans le sang selon votre Ã¢ge ? Tableau complet des normes, quand s'inquiÃ©ter et comment maintenir une glycÃ©mie saine.",
+    title: "Taux de Sucre dans le Sang : Les Normes par Âge (Tableau)",
+    metaDescription: "Quel est le taux de sucre normal dans le sang selon l'âge ? Tableau complet des normes glycémiques, HbA1c et quand s'inquiéter.",
     date: "2026-02-21",
-    readTime: "10 min",
-    keyword: "taux sucre sang normal Ã¢ge",
+    readTime: "11 min",
+    keyword: "taux sucre sang normal âge",
     content: `<article>
-<h1>Taux de Sucre dans le Sang : Les Normes par Ã‚ge (Tableau)</h1>
+<h1>Taux de Sucre dans le Sang : Les Normes par Âge (Tableau)</h1>
 
-<p>Â« Est-ce que mon taux de sucre est normal ? Â» C'est l'une des questions les plus frÃ©quentes en consultation. Et la rÃ©ponse n'est pas aussi simple qu'un chiffre unique, car les normes varient selon <strong>l'Ã¢ge, le moment de la mesure et votre Ã©tat de santÃ©</strong>.</p>
+<p>« Votre glycémie est à 1,05 g/L, c'est un peu élevé. » Cette phrase peut déclencher une vague d'inquiétude. Mais qu'est-ce qu'un taux de sucre « normal » ? Et surtout, <strong>ces normes changent-elles avec l'âge ?</strong> Les seuils officiels ne varient pas, mais la réalité physiologique évolue.</p>
 
-<p>Dans cet article, vous trouverez les <strong>tableaux complets</strong> des normes glycÃ©miques, comment les interprÃ©ter, et surtout quand il faut agir.</p>
+<h2>Les normes officielles de glycémie</h2>
 
-<h2>Les bases : qu'est-ce que la glycÃ©mie ?</h2>
-
-<p>La glycÃ©mie est la <strong>concentration de glucose dans le sang</strong>, exprimÃ©e en g/L (ou mmol/L). Le glucose est le carburant principal de vos cellules, mais en excÃ¨s, il devient toxique pour les vaisseaux sanguins, les nerfs et les organes.</p>
-
-<p>Votre corps maintient normalement la glycÃ©mie dans une <strong>fourchette Ã©troite</strong> grÃ¢ce Ã  deux hormones principales :</p>
+<h3>Glycémie à jeun (GAJ)</h3>
 <ul>
-<li><strong>Insuline</strong> : fait baisser la glycÃ©mie (stockage)</li>
-<li><strong>Glucagon</strong> : fait monter la glycÃ©mie (dÃ©stockage)</li>
+<li><strong>Normal</strong> : 0,70 à 0,99 g/L (3,9-5,5 mmol/L)</li>
+<li><strong>Prédiabète</strong> : 1,00 à 1,25 g/L (5,6-6,9 mmol/L)</li>
+<li><strong>Diabète</strong> : ≥ 1,26 g/L (≥ 7,0 mmol/L) — confirmé sur 2 prélèvements</li>
 </ul>
 
-<h2>GlycÃ©mie Ã  jeun : les normes par Ã¢ge</h2>
+<h3>HbA1c (hémoglobine glyquée)</h3>
+<p>Reflète la glycémie moyenne des <strong>2-3 derniers mois</strong> :</p>
+<ul>
+<li><strong>Normal</strong> : &lt; 5,7 %</li>
+<li><strong>Prédiabète</strong> : 5,7-6,4 %</li>
+<li><strong>Diabète</strong> : ≥ 6,5 %</li>
+</ul>
 
-<table style="width:100%;border-collapse:collapse;margin:20px 0;">
-<thead>
-<tr style="background:#f3f4f6;">
-<th style="padding:12px;border:1px solid #e5e7eb;">Tranche d'Ã¢ge</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">Normal</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">PrÃ©diabÃ¨te</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">DiabÃ¨te</th>
-</tr>
-</thead>
-<tbody>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Enfants (moins de 6 ans)</td><td style="padding:12px;border:1px solid #e5e7eb;">0.60 â€“ 1.00 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">â€”</td><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 1.26 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Enfants (6-12 ans)</td><td style="padding:12px;border:1px solid #e5e7eb;">0.70 â€“ 1.00 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">â€”</td><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 1.26 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Adolescents (13-17 ans)</td><td style="padding:12px;border:1px solid #e5e7eb;">0.70 â€“ 1.00 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">1.10 â€“ 1.25 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 1.26 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Adultes (18-45 ans)</td><td style="padding:12px;border:1px solid #e5e7eb;">0.70 â€“ 1.00 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">1.10 â€“ 1.25 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 1.26 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Adultes (46-60 ans)</td><td style="padding:12px;border:1px solid #e5e7eb;">0.70 â€“ 1.10 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">1.10 â€“ 1.25 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 1.26 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Seniors (plus de 60 ans)</td><td style="padding:12px;border:1px solid #e5e7eb;">0.70 â€“ 1.10 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">1.10 â€“ 1.25 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 1.26 g/L</td></tr>
-</tbody>
-</table>
-
-<p><strong>Note importante :</strong> les seuils de diagnostic du diabÃ¨te et du prÃ©diabÃ¨te sont identiques quel que soit l'Ã¢ge chez l'adulte. Cependant, la glycÃ©mie Â« optimale Â» augmente lÃ©gÃ¨rement avec l'Ã¢ge en raison de l'insulino-rÃ©sistance physiologique.</p>
+<h3>Glycémie postprandiale (2h après repas)</h3>
+<ul>
+<li><strong>Normal</strong> : &lt; 1,40 g/L</li>
+<li><strong>Prédiabète</strong> : 1,40-1,99 g/L</li>
+<li><strong>Diabète</strong> : ≥ 2,00 g/L</li>
+</ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude DECODE (2003, <em>The Lancet</em>) portant sur <strong>22 000 participants europÃ©ens</strong> a montrÃ© que le risque de mortalitÃ© cardiovasculaire augmente de maniÃ¨re continue Ã  partir d'une glycÃ©mie Ã  jeun de <strong>0.95 g/L</strong> â€” bien en dessous du seuil Â« officiel Â» de prÃ©diabÃ¨te (1.10 g/L).
+🔬 <strong>Ce que dit la science :</strong> L'étude DECODE (DECODE Study Group, 2001, <em>The Lancet</em>), menée sur 25 364 participants européens, a démontré que la <strong>glycémie postprandiale</strong> (2h après charge en glucose) était un meilleur prédicteur de mortalité cardiovasculaire que la glycémie à jeun seule. Un taux à 2h &gt; 1,40 g/L augmentait la mortalité de <strong>33 %</strong>, même quand la glycémie à jeun était normale.
 </blockquote>
 
-<h2>GlycÃ©mie post-prandiale : les normes</h2>
+<h2>Tableau des normes glycémiques par âge</h2>
 
-<p>La glycÃ©mie 2 heures aprÃ¨s un repas est tout aussi importante :</p>
+<p>Les seuils officiels (OMS, ADA) sont identiques pour tous les adultes. Voici ce que la recherche observe en pratique :</p>
 
+<div style="overflow-x:auto;">
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <thead>
-<tr style="background:#f3f4f6;">
-<th style="padding:12px;border:1px solid #e5e7eb;">Statut</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">GlycÃ©mie 2h post-repas</th>
+<tr style="background:#1e40af;color:white;">
+<th style="padding:12px;text-align:left;border:1px solid #ddd;">Tranche d'âge</th>
+<th style="padding:12px;text-align:center;border:1px solid #ddd;">GAJ moyenne observée</th>
+<th style="padding:12px;text-align:center;border:1px solid #ddd;">HbA1c moyenne</th>
+<th style="padding:12px;text-align:center;border:1px solid #ddd;">Objectif optimal</th>
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">âœ… Normal</td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.40 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">âš ï¸ PrÃ©diabÃ¨te</td><td style="padding:12px;border:1px solid #e5e7eb;">1.40 â€“ 1.99 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">ðŸ”´ DiabÃ¨te</td><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 2.00 g/L</td></tr>
-</tbody>
-</table>
-
-<p><strong>Optimal :</strong> une glycÃ©mie qui ne dÃ©passe pas <strong>1.20 g/L</strong> aprÃ¨s les repas et revient sous 1.00 g/L dans les 2 heures.</p>
-
-<h2>HbA1c : le reflet sur 3 mois</h2>
-
-<p>L'hÃ©moglobine glyquÃ©e (HbA1c) mesure la glycÃ©mie moyenne sur 2-3 mois :</p>
-
-<table style="width:100%;border-collapse:collapse;margin:20px 0;">
-<thead>
-<tr style="background:#f3f4f6;">
-<th style="padding:12px;border:1px solid #e5e7eb;">HbA1c</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">InterprÃ©tation</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">GlycÃ©mie moyenne estimÃ©e</th>
+<tr style="background:#f9fafb;">
+<td style="padding:12px;border:1px solid #ddd;"><strong>20-30 ans</strong></td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">0,82-0,90 g/L</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">4,8-5,2 %</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">&lt; 0,90 g/L</td>
 </tr>
-</thead>
-<tbody>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 5.7 %</td><td style="padding:12px;border:1px solid #e5e7eb;">âœ… Normal</td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.17 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">5.7 â€“ 6.4 %</td><td style="padding:12px;border:1px solid #e5e7eb;">âš ï¸ PrÃ©diabÃ¨te</td><td style="padding:12px;border:1px solid #e5e7eb;">1.17 â€“ 1.37 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">â‰¥ 6.5 %</td><td style="padding:12px;border:1px solid #e5e7eb;">ðŸ”´ DiabÃ¨te</td><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 1.37 g/L</td></tr>
+<tr>
+<td style="padding:12px;border:1px solid #ddd;"><strong>30-40 ans</strong></td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">0,85-0,95 g/L</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">5,0-5,4 %</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">&lt; 0,92 g/L</td>
+</tr>
+<tr style="background:#f9fafb;">
+<td style="padding:12px;border:1px solid #ddd;"><strong>40-50 ans</strong></td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">0,88-1,00 g/L</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">5,1-5,6 %</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">&lt; 0,95 g/L</td>
+</tr>
+<tr>
+<td style="padding:12px;border:1px solid #ddd;"><strong>50-60 ans</strong></td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">0,90-1,05 g/L</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">5,3-5,8 %</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">&lt; 1,00 g/L</td>
+</tr>
+<tr style="background:#f9fafb;">
+<td style="padding:12px;border:1px solid #ddd;"><strong>60-70 ans</strong></td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">0,92-1,10 g/L</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">5,4-6,0 %</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">&lt; 1,05 g/L</td>
+</tr>
+<tr>
+<td style="padding:12px;border:1px solid #ddd;"><strong>70+ ans</strong></td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">0,95-1,15 g/L</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">5,5-6,2 %</td>
+<td style="padding:12px;text-align:center;border:1px solid #ddd;">&lt; 1,10 g/L</td>
+</tr>
 </tbody>
 </table>
+</div>
+
+<p><strong>Important :</strong> « observé en moyenne » ne signifie pas « normal » ou « sans risque ». La hausse avec l'âge reflète l'accumulation de facteurs de risque (sédentarité, perte musculaire, prise de poids), pas un vieillissement inévitable.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Peter Attia, MD :</strong> Â« Je vise une HbA1c en dessous de 5.1 % chez mes patients. Le seuil officiel de 5.7 % pour le prÃ©diabÃ¨te est trop tardif â€” les dommages commencent bien avant. Si vous Ãªtes au-dessus de 5.0 %, il est temps d'agir. Â»
+💬 <strong>Avis d'expert :</strong> « Un homme de 55 ans avec une glycémie à jeun à 1,02 g/L est techniquement "prédiabétique" selon les critères officiels. Mais en pratique, beaucoup de médecins lui diront "c'est normal pour votre âge". C'est une erreur. Ce n'est pas normal — c'est fréquent. La fréquence n'est pas la normalité. » — <strong>Dr. Peter Attia</strong>, médecin spécialisé en longévité
 </blockquote>
 
-<h2>Les marqueurs que votre mÃ©decin ne mesure pas (et devrait)</h2>
+<h2>Pourquoi la glycémie augmente avec l'âge</h2>
 
-<h3>Insuline Ã  jeun</h3>
-<p>Le marqueur le plus <strong>prÃ©coce</strong> de dysrÃ©gulation glycÃ©mique. L'insuline monte des annÃ©es avant que la glycÃ©mie ne bouge.</p>
+<p>Après 40 ans, la glycémie à jeun augmente d'environ <strong>0,01 g/L par décennie</strong> en moyenne. Les causes principales :</p>
+
 <ul>
-<li><strong>Optimal</strong> : moins de 6 ÂµUI/mL</li>
-<li><strong>Acceptable</strong> : 6-10 ÂµUI/mL</li>
-<li><strong>Suspect</strong> : 10-15 ÂµUI/mL</li>
-<li><strong>Insulino-rÃ©sistance probable</strong> : plus de 15 ÂµUI/mL</li>
+<li><strong>Sarcopénie</strong> : perte de 3-8 % de masse musculaire par décennie après 30 ans → moins de captation du glucose</li>
+<li><strong>Augmentation de la graisse viscérale</strong> : même à poids stable, la composition corporelle évolue vers plus de gras</li>
+<li><strong>Baisse de la sensibilité à l'insuline</strong> : les récepteurs cellulaires répondent moins bien</li>
+<li><strong>Réduction de l'activité physique</strong> : le nombre de pas quotidiens diminue en moyenne de 15 % par décennie</li>
+<li><strong>Baisse de testostérone</strong> (hommes) : -1 à -2 % par an après 40 ans, favorisant le stockage abdominal</li>
 </ul>
 
-<h3>HOMA-IR</h3>
-<p>Formule : (insuline Ã  jeun Ã— glycÃ©mie Ã  jeun en mmol/L) / 22.5</p>
+<p>Cette augmentation n'est <strong>pas une fatalité</strong>. Les hommes qui maintiennent leur masse musculaire et une alimentation adaptée conservent une glycémie stable à tout âge.</p>
+
+<h2>Glycémie « normale » vs glycémie « optimale »</h2>
+
+<p>Il y a une différence entre « ne pas être diabétique » et « avoir une glycémie optimale ». Les recherches en longévité suggèrent des niveaux bien en dessous des seuils de diagnostic :</p>
+
 <ul>
-<li><strong>Normal</strong> : moins de 1.5</li>
-<li><strong>Limite</strong> : 1.5-2.5</li>
-<li><strong>Insulino-rÃ©sistance</strong> : plus de 2.5</li>
+<li><strong>Glycémie à jeun optimale</strong> : 0,78-0,88 g/L</li>
+<li><strong>HbA1c optimale</strong> : 4,8-5,2 %</li>
+<li><strong>Glycémie post-repas optimale</strong> : pic &lt; 1,20 g/L, retour sous 1,00 g/L en 2h</li>
+<li><strong>Variabilité glycémique</strong> : faible (pas de montagnes russes)</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> TabÃ¡k et al. (2009, <em>The Lancet</em>) ont suivi 6 538 fonctionnaires britanniques pendant 13 ans et montrÃ© que la <strong>rÃ©sistance Ã  l'insuline prÃ©cÃ¨de le diagnostic de diabÃ¨te de 13 ans en moyenne</strong>. La glycÃ©mie ne s'Ã©lÃ¨ve significativement que 3 ans avant le diagnostic â€” trop tard pour une prÃ©vention optimale.
+🔬 <strong>Ce que dit la science :</strong> Bancks et al. (2019, <em>BMJ</em>) ont suivi 13 163 adultes sur 25 ans et montré que les individus avec une HbA1c entre <strong>5,5 et 5,6 %</strong> (techniquement « normale ») avaient un risque de diabète <strong>4 fois plus élevé</strong> que ceux avec une HbA1c &lt; 5,0 %. Le risque cardiovasculaire commençait à augmenter dès une glycémie à jeun de <strong>0,95 g/L</strong>.
 </blockquote>
 
-<h2>Comment la glycÃ©mie Ã©volue avec l'Ã¢ge</h2>
-
-<p>AprÃ¨s 40 ans, la glycÃ©mie Ã  jeun augmente d'environ <strong>0.01 g/L par dÃ©cennie</strong>. Cette hausse est liÃ©e Ã  :</p>
-<ul>
-<li><strong>SarcopÃ©nie</strong> : perte de masse musculaire â†’ moins de captation du glucose</li>
-<li><strong>Augmentation de la graisse viscÃ©rale</strong> â†’ insulino-rÃ©sistance</li>
-<li><strong>Baisse de testostÃ©rone</strong> chez l'homme â†’ favorise le stockage abdominal</li>
-<li><strong>SÃ©dentaritÃ© accrue</strong></li>
-</ul>
-
-<p>Cette augmentation n'est <strong>pas une fatalitÃ©</strong>. Les hommes qui maintiennent leur masse musculaire et une alimentation adaptÃ©e conservent une glycÃ©mie stable Ã  tout Ã¢ge.</p>
-
-<h2>Quand s'inquiÃ©ter : les signaux d'alerte</h2>
+<h2>Quand s'inquiéter : les signaux d'alerte</h2>
 
 <ul>
-<li>GlycÃ©mie Ã  jeun <strong>â‰¥ 1.00 g/L</strong> rÃ©guliÃ¨rement (mÃªme si Â« normal Â») â†’ tendance Ã  surveiller</li>
-<li>GlycÃ©mie Ã  jeun <strong>â‰¥ 1.10 g/L</strong> â†’ prÃ©diabÃ¨te officiel, action nÃ©cessaire</li>
-<li><strong>Fatigue aprÃ¨s les repas</strong> : signe de montagnes russes glycÃ©miques</li>
-<li><strong>Soif excessive, urination frÃ©quente</strong> : signes classiques d'hyperglycÃ©mie</li>
-<li><strong>Tour de taille en augmentation</strong> : souvent liÃ© Ã  l'insulino-rÃ©sistance</li>
-<li><strong>AntÃ©cÃ©dents familiaux</strong> de diabÃ¨te de type 2</li>
+<li>Glycémie à jeun <strong>≥ 1,00 g/L</strong> régulièrement — prédiabète officiel, action nécessaire</li>
+<li><strong>Fatigue après les repas</strong> : signe de montagnes russes glycémiques</li>
+<li><strong>Soif excessive, urinations fréquentes</strong> : signes classiques d'hyperglycémie</li>
+<li><strong>Tour de taille en augmentation</strong> : souvent lié à l'insulino-résistance</li>
+<li><strong>Antécédents familiaux</strong> de diabète de type 2</li>
+<li><strong>Envies de sucré</strong> irrésistibles après les repas</li>
 </ul>
 
-<h2>Comment maintenir une glycÃ©mie saine Ã  tout Ã¢ge</h2>
+<h2>Comment maintenir une glycémie saine à tout âge</h2>
 
 <h3>Alimentation</h3>
 <ul>
-<li>PrivilÃ©gier les aliments Ã  <strong>index glycÃ©mique bas</strong></li>
-<li>ProtÃ©ines Ã  chaque repas (1.6-2 g/kg)</li>
+<li>Privilégier les aliments à <strong>index glycémique bas</strong></li>
+<li>Protéines à chaque repas (1,6-2 g/kg)</li>
 <li>Fibres : 30-40 g/jour</li>
-<li>Limiter sucres ajoutÃ©s et glucides raffinÃ©s</li>
+<li>Manger légumes et protéines AVANT les glucides</li>
+<li>Limiter sucres ajoutés et glucides raffinés</li>
 </ul>
 
 <h3>Exercice</h3>
 <ul>
-<li><strong>Musculation</strong> 3x/semaine : combat la sarcopÃ©nie et augmente les GLUT-4</li>
-<li><strong>Marche post-repas</strong> : 10-15 min â†’ -30 Ã  -50 % du pic glycÃ©mique</li>
-<li><strong>ActivitÃ© quotidienne</strong> : 8 000-10 000 pas</li>
+<li><strong>Musculation</strong> 3x/semaine : combat la sarcopénie et augmente les GLUT-4</li>
+<li><strong>Marche post-repas</strong> : 10-15 min → -30 à -50 % du pic glycémique</li>
+<li><strong>Activité quotidienne</strong> : 8 000-10 000 pas</li>
 </ul>
 
 <h3>Mode de vie</h3>
 <ul>
 <li>Sommeil 7-9 heures</li>
 <li>Gestion du stress</li>
-<li>Bilan sanguin annuel incluant <strong>insuline Ã  jeun</strong> (pas seulement la glycÃ©mie !)</li>
+<li>Bilan sanguin annuel incluant <strong>insuline à jeun</strong> (pas seulement la glycémie !)</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Colberg et al. (2016, <em>Diabetes Care</em>) ont confirmÃ© dans une revue systÃ©matique que l'exercice physique rÃ©gulier amÃ©liore la sensibilitÃ© Ã  l'insuline de <strong>20-65 %</strong> selon le type, l'intensitÃ© et la durÃ©e, avec un effet dose-rÃ©ponse clair.
+🔬 <strong>Ce que dit la science :</strong> Tabák et al. (2012, <em>The Lancet</em>) ont analysé la trajectoire glycémique de 6 538 adultes sur 13 ans avant le diagnostic de diabète. L'insulino-résistance (HOMA-IR) est détectable <strong>13 ans avant</strong> le diagnostic, tandis que la glycémie ne dévie que 5-6 ans avant. D'où l'importance de demander un dosage d'insuline à jeun.
 </blockquote>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> combine alimentation Ã  IG bas, musculation progressive et marche quotidienne pour maintenir une glycÃ©mie optimale â€” quel que soit votre Ã¢ge. ConÃ§u pour les hommes de 35-60 ans soucieux de leur santÃ© mÃ©tabolique.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> combine alimentation à IG bas, musculation progressive et marche quotidienne pour maintenir une glycémie optimale — quel que soit votre âge. Conçu pour les hommes de 35-60 ans soucieux de leur santé métabolique.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Stabilisez votre glycÃ©mie en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Stabilisez votre glycémie en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Si votre glycÃ©mie Ã  jeun dÃ©passe 1.10 g/L, consultez votre mÃ©decin pour un bilan complet.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Si votre glycémie à jeun dépasse 1,00 g/L, consultez votre médecin pour un bilan complet.</em></p>
 </article>`
-  },
+  }
 ];
