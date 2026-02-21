@@ -11,92 +11,92 @@ export interface BlogArticle {
 export const healthArticles: BlogArticle[] = [
   {
     slug: "prediabete-que-faire",
-    title: "PrÃ©diabÃ¨te : Que Faire ? Guide Complet pour Inverser la Tendance",
-    metaDescription: "PrÃ©diabÃ¨te diagnostiquÃ© ? DÃ©couvrez les stratÃ©gies prouvÃ©es par la science pour inverser la tendance : alimentation, exercice et changements durables.",
+    title: "Prédiabète : Que Faire ? Guide Complet pour Inverser la Tendance",
+    metaDescription: "Prédiabète diagnostiqué ? Découvrez les stratégies prouvées par la science pour inverser la tendance : alimentation, exercice et changements durables.",
     date: "2026-02-21",
     readTime: "12 min",
-    keyword: "prÃ©diabÃ¨te que faire",
+    keyword: "prédiabète que faire",
     content: `<article>
-<h1>PrÃ©diabÃ¨te : Que Faire ? Guide Complet pour Inverser la Tendance</h1>
+<h1>Prédiabète : Que Faire ? Guide Complet pour Inverser la Tendance</h1>
 
-<p>Votre mÃ©decin vient de prononcer le mot <strong>prÃ©diabÃ¨te</strong>. Votre glycÃ©mie Ã  jeun se situe entre 1,00 et 1,25 g/L, ou votre HbA1c entre 5,7 % et 6,4 %. C'est un signal d'alarme â€” mais c'est surtout <strong>une opportunitÃ©</strong>. Contrairement au diabÃ¨te de type 2 installÃ©, le prÃ©diabÃ¨te est rÃ©versible dans la majoritÃ© des cas.</p>
+<p>Votre médecin vient de prononcer le mot <strong>prédiabète</strong>. Votre glycémie à jeun se situe entre 1,00 et 1,25 g/L, ou votre HbA1c entre 5,7 % et 6,4 %. C'est un signal d'alarme — mais c'est surtout <strong>une opportunité</strong>. Contrairement au diabète de type 2 installé, le prédiabète est réversible dans la majorité des cas.</p>
 
-<p>En France, on estime que <strong>5 Ã  10 millions de personnes</strong> sont en situation de prÃ©diabÃ¨te sans le savoir. Si vous lisez cet article, vous avez dÃ©jÃ  une longueur d'avance : vous savez, et vous pouvez agir.</p>
+<p>En France, on estime que <strong>5 à 10 millions de personnes</strong> sont en situation de prédiabète sans le savoir. Si vous lisez cet article, vous avez déjà une longueur d'avance : vous savez, et vous pouvez agir.</p>
 
-<h2>Qu'est-ce que le prÃ©diabÃ¨te exactement ?</h2>
+<h2>Qu'est-ce que le prédiabète exactement ?</h2>
 
-<p>Le prÃ©diabÃ¨te est un Ã©tat intermÃ©diaire oÃ¹ votre organisme commence Ã  mal gÃ©rer le glucose. Votre pancrÃ©as produit encore de l'insuline, mais vos cellules y rÃ©pondent de moins en moins bien â€” c'est ce qu'on appelle l'<strong>insulino-rÃ©sistance</strong>.</p>
+<p>Le prédiabète est un état intermédiaire où votre organisme commence à mal gérer le glucose. Votre pancréas produit encore de l'insuline, mais vos cellules y répondent de moins en moins bien — c'est ce qu'on appelle l'<strong>insulino-résistance</strong>.</p>
 
 <p>Les seuils diagnostiques sont clairs :</p>
 <ul>
-<li><strong>GlycÃ©mie Ã  jeun</strong> : entre 1,00 et 1,25 g/L (normale : &lt; 1,00 g/L)</li>
+<li><strong>Glycémie à jeun</strong> : entre 1,00 et 1,25 g/L (normale : &lt; 1,00 g/L)</li>
 <li><strong>HbA1c</strong> : entre 5,7 % et 6,4 % (normale : &lt; 5,7 %)</li>
-<li><strong>GlycÃ©mie post-charge (HGPO)</strong> : entre 1,40 et 1,99 g/L Ã  2 heures</li>
+<li><strong>Glycémie post-charge (HGPO)</strong> : entre 1,40 et 1,99 g/L à 2 heures</li>
 </ul>
 
-<p>Sans intervention, environ <strong>5 Ã  10 % des prÃ©diabÃ©tiques</strong> basculent vers le diabÃ¨te de type 2 chaque annÃ©e. Mais avec les bonnes stratÃ©gies, vous pouvez non seulement stopper cette progression, mais revenir Ã  des valeurs normales.</p>
+<p>Sans intervention, environ <strong>5 à 10 % des prédiabétiques</strong> basculent vers le diabète de type 2 chaque année. Mais avec les bonnes stratégies, vous pouvez non seulement stopper cette progression, mais revenir à des valeurs normales.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude DPP (Diabetes Prevention Program), publiÃ©e dans le <em>New England Journal of Medicine</em> (Knowler et al., 2002), a dÃ©montrÃ© qu'une modification du mode de vie rÃ©duisait le risque de progression vers le diabÃ¨te de <strong>58 %</strong> â€” soit presque deux fois plus efficace que le mÃ©dicament metformine (31 %). Ces rÃ©sultats ont Ã©tÃ© confirmÃ©s sur 15 ans de suivi.
+🔬 <strong>Ce que dit la science :</strong> L'étude DPP (Diabetes Prevention Program), publiée dans le <em>New England Journal of Medicine</em> (Knowler et al., 2002), a démontré qu'une modification du mode de vie réduisait le risque de progression vers le diabète de <strong>58 %</strong> — soit presque deux fois plus efficace que le médicament metformine (31 %). Ces résultats ont été confirmés sur 15 ans de suivi.
 </blockquote>
 
-<h2>Les 5 piliers pour inverser le prÃ©diabÃ¨te</h2>
+<h2>Les 5 piliers pour inverser le prédiabète</h2>
 
-<h3>1. Repenser son alimentation (sans rÃ©gime drastique)</h3>
+<h3>1. Repenser son alimentation (sans régime drastique)</h3>
 
-<p>L'objectif n'est pas de compter chaque calorie, mais de <strong>rÃ©duire la charge glycÃ©mique</strong> de votre alimentation. ConcrÃ¨tement :</p>
+<p>L'objectif n'est pas de compter chaque calorie, mais de <strong>réduire la charge glycémique</strong> de votre alimentation. Concrètement :</p>
 
 <ul>
-<li><strong>RÃ©duisez les glucides raffinÃ©s</strong> : pain blanc, pÃ¢tes blanches, riz blanc, viennoiseries. Remplacez-les par des versions complÃ¨tes ou des alternatives (patate douce, quinoa, lÃ©gumineuses).</li>
-<li><strong>Augmentez les fibres</strong> : visez 30 g/jour minimum. LÃ©gumes verts, lÃ©gumineuses, graines de chia, psyllium.</li>
-<li><strong>Priorisez les protÃ©ines</strong> : elles stabilisent la glycÃ©mie et favorisent la satiÃ©tÃ©. Poisson, volaille, Å“ufs, tofu.</li>
-<li><strong>IntÃ©grez des graisses saines</strong> : huile d'olive extra-vierge, avocat, noix, poissons gras.</li>
-<li><strong>Ã‰liminez les sucres liquides</strong> : sodas, jus de fruits, boissons sucrÃ©es. C'est la mesure la plus impactante.</li>
+<li><strong>Réduisez les glucides raffinés</strong> : pain blanc, pâtes blanches, riz blanc, viennoiseries. Remplacez-les par des versions complètes ou des alternatives (patate douce, quinoa, légumineuses).</li>
+<li><strong>Augmentez les fibres</strong> : visez 30 g/jour minimum. Légumes verts, légumineuses, graines de chia, psyllium.</li>
+<li><strong>Priorisez les protéines</strong> : elles stabilisent la glycémie et favorisent la satiété. Poisson, volaille, Å“ufs, tofu.</li>
+<li><strong>Intégrez des graisses saines</strong> : huile d'olive extra-vierge, avocat, noix, poissons gras.</li>
+<li><strong>Éliminez les sucres liquides</strong> : sodas, jus de fruits, boissons sucrées. C'est la mesure la plus impactante.</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Le prÃ©diabÃ¨te n'est pas une maladie de l'excÃ¨s de sucre dans le sang â€” c'est une maladie de l'excÃ¨s d'insuline. Si vous ne traitez que la glycÃ©mie sans adresser l'insulino-rÃ©sistance sous-jacente, vous ne rÃ©glez rien. Â» â€” <strong>Dr. Jason Fung</strong>, nÃ©phrologue, auteur de <em>The Diabetes Code</em>
+💬 <strong>Avis d'expert :</strong> « Le prédiabète n'est pas une maladie de l'excès de sucre dans le sang — c'est une maladie de l'excès d'insuline. Si vous ne traitez que la glycémie sans adresser l'insulino-résistance sous-jacente, vous ne réglez rien. » — <strong>Dr. Jason Fung</strong>, néphrologue, auteur de <em>The Diabetes Code</em>
 </blockquote>
 
 <h3>2. Bouger intelligemment</h3>
 
-<p>L'activitÃ© physique agit comme un <strong>mÃ©dicament puissant</strong> contre l'insulino-rÃ©sistance. Vos muscles sont le plus grand rÃ©servoir de glucose de votre corps â€” quand ils travaillent, ils absorbent le glucose mÃªme sans insuline.</p>
+<p>L'activité physique agit comme un <strong>médicament puissant</strong> contre l'insulino-résistance. Vos muscles sont le plus grand réservoir de glucose de votre corps — quand ils travaillent, ils absorbent le glucose même sans insuline.</p>
 
 <ul>
-<li><strong>Marche aprÃ¨s les repas</strong> : 15 Ã  20 minutes de marche aprÃ¨s chaque repas rÃ©duit les pics glycÃ©miques de 30 Ã  50 %.</li>
-<li><strong>Musculation</strong> : 2 Ã  3 sÃ©ances par semaine. Plus vous avez de masse musculaire, plus votre corps Â« Ã©ponge Â» le glucose efficacement.</li>
-<li><strong>HIIT modÃ©rÃ©</strong> : des intervalles courts (30 secondes d'effort, 1 minute de rÃ©cupÃ©ration) amÃ©liorent la sensibilitÃ© Ã  l'insuline rapidement.</li>
+<li><strong>Marche après les repas</strong> : 15 à 20 minutes de marche après chaque repas réduit les pics glycémiques de 30 à 50 %.</li>
+<li><strong>Musculation</strong> : 2 à 3 séances par semaine. Plus vous avez de masse musculaire, plus votre corps « éponge » le glucose efficacement.</li>
+<li><strong>HIIT modéré</strong> : des intervalles courts (30 secondes d'effort, 1 minute de récupération) améliorent la sensibilité à l'insuline rapidement.</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Une mÃ©ta-analyse de Colberg et al. (2016), publiÃ©e dans <em>Diabetes Care</em>, a montrÃ© que la combinaison exercice aÃ©robie + musculation amÃ©liorait l'HbA1c de <strong>-0,89 %</strong> en moyenne â€” un effet comparable Ã  certains mÃ©dicaments antidiabÃ©tiques.
+🔬 <strong>Ce que dit la science :</strong> Une méta-analyse de Colberg et al. (2016), publiée dans <em>Diabetes Care</em>, a montré que la combinaison exercice aérobie + musculation améliorait l'HbA1c de <strong>-0,89 %</strong> en moyenne — un effet comparable à certains médicaments antidiabétiques.
 </blockquote>
 
-<h3>3. Perdre le gras viscÃ©ral (pas juste du poids)</h3>
+<h3>3. Perdre le gras viscéral (pas juste du poids)</h3>
 
-<p>La balance n'est pas le meilleur indicateur. C'est la <strong>graisse viscÃ©rale</strong> â€” celle qui entoure vos organes abdominaux â€” qui alimente l'insulino-rÃ©sistance. Un tour de taille supÃ©rieur Ã  <strong>94 cm chez l'homme</strong> ou <strong>80 cm chez la femme</strong> est un signal d'alerte mÃ©tabolique.</p>
+<p>La balance n'est pas le meilleur indicateur. C'est la <strong>graisse viscérale</strong> — celle qui entoure vos organes abdominaux — qui alimente l'insulino-résistance. Un tour de taille supérieur à <strong>94 cm chez l'homme</strong> ou <strong>80 cm chez la femme</strong> est un signal d'alerte métabolique.</p>
 
-<p>La bonne nouvelle : la graisse viscÃ©rale est la <strong>premiÃ¨re Ã  partir</strong> quand vous adoptez les bons changements. Une perte de seulement 5 Ã  7 % du poids corporel suffit souvent pour normaliser la glycÃ©mie.</p>
+<p>La bonne nouvelle : la graisse viscérale est la <strong>première à partir</strong> quand vous adoptez les bons changements. Une perte de seulement 5 à 7 % du poids corporel suffit souvent pour normaliser la glycémie.</p>
 
 <h3>4. Optimiser son sommeil</h3>
 
-<p>Le manque de sommeil est un facteur mÃ©connu du prÃ©diabÃ¨te. Dormir moins de 6 heures par nuit augmente l'insulino-rÃ©sistance de <strong>40 %</strong> dÃ¨s le lendemain.</p>
+<p>Le manque de sommeil est un facteur méconnu du prédiabète. Dormir moins de 6 heures par nuit augmente l'insulino-résistance de <strong>40 %</strong> dès le lendemain.</p>
 
 <ul>
-<li>Visez 7 Ã  8 heures de sommeil par nuit</li>
-<li>Maintenez des horaires rÃ©guliers (mÃªme le week-end)</li>
-<li>Ã‰vitez les Ã©crans 1 heure avant le coucher</li>
-<li>Gardez votre chambre fraÃ®che (18-19Â°C)</li>
+<li>Visez 7 à 8 heures de sommeil par nuit</li>
+<li>Maintenez des horaires réguliers (même le week-end)</li>
+<li>Évitez les écrans 1 heure avant le coucher</li>
+<li>Gardez votre chambre fraîche (18-19°C)</li>
 </ul>
 
-<h3>5. GÃ©rer le stress chronique</h3>
+<h3>5. Gérer le stress chronique</h3>
 
-<p>Le cortisol, l'hormone du stress, Ã©lÃ¨ve directement la glycÃ©mie. Un stress chronique maintient votre corps dans un Ã©tat de Â« mode survie Â» qui favorise le stockage de graisse viscÃ©rale et l'insulino-rÃ©sistance.</p>
+<p>Le cortisol, l'hormone du stress, élève directement la glycémie. Un stress chronique maintient votre corps dans un état de « mode survie » qui favorise le stockage de graisse viscérale et l'insulino-résistance.</p>
 
-<p>Les techniques prouvÃ©es : mÃ©ditation (mÃªme 10 minutes/jour), cohÃ©rence cardiaque, marche en nature, activitÃ© physique rÃ©guliÃ¨re.</p>
+<p>Les techniques prouvées : méditation (même 10 minutes/jour), cohérence cardiaque, marche en nature, activité physique régulière.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude finlandaise de prÃ©vention du diabÃ¨te (Tuomilehto et al., 2001, <em>NEJM</em>) a montrÃ© que les participants ayant atteint au moins 4 des 5 objectifs de mode de vie avaient un risque de diabÃ¨te rÃ©duit de <strong>0 %</strong> sur la durÃ©e du suivi â€” aucun d'entre eux n'a dÃ©veloppÃ© le diabÃ¨te.
+🔬 <strong>Ce que dit la science :</strong> L'étude finlandaise de prévention du diabète (Tuomilehto et al., 2001, <em>NEJM</em>) a montré que les participants ayant atteint au moins 4 des 5 objectifs de mode de vie avaient un risque de diabète réduit de <strong>0 %</strong> sur la durée du suivi — aucun d'entre eux n'a développé le diabète.
 </blockquote>
 
 <h2>Le plan d'action concret</h2>
@@ -104,1004 +104,1004 @@ export const healthArticles: BlogArticle[] = [
 <p>Voici votre feuille de route pour les 10 prochaines semaines :</p>
 
 <ol>
-<li><strong>Semaine 1-2</strong> : Ã‰liminez les sucres liquides et les glucides raffinÃ©s au petit-dÃ©jeuner</li>
-<li><strong>Semaine 3-4</strong> : IntÃ©grez 20 minutes de marche aprÃ¨s le dÃ©jeuner et le dÃ®ner</li>
-<li><strong>Semaine 5-6</strong> : Ajoutez 2 sÃ©ances de musculation par semaine</li>
-<li><strong>Semaine 7-8</strong> : Optimisez votre sommeil (routine du soir, rÃ©gularitÃ©)</li>
-<li><strong>Semaine 9-10</strong> : Consolidez les habitudes et mesurez vos progrÃ¨s (glycÃ©mie, tour de taille)</li>
+<li><strong>Semaine 1-2</strong> : Éliminez les sucres liquides et les glucides raffinés au petit-déjeuner</li>
+<li><strong>Semaine 3-4</strong> : Intégrez 20 minutes de marche après le déjeuner et le dîner</li>
+<li><strong>Semaine 5-6</strong> : Ajoutez 2 séances de musculation par semaine</li>
+<li><strong>Semaine 7-8</strong> : Optimisez votre sommeil (routine du soir, régularité)</li>
+<li><strong>Semaine 9-10</strong> : Consolidez les habitudes et mesurez vos progrès (glycémie, tour de taille)</li>
 </ol>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Le prÃ©diabÃ¨te est le meilleur diagnostic que vous puissiez recevoir. C'est votre corps qui vous envoie un avertissement clair â€” et vous avez encore le temps d'agir. La fenÃªtre d'opportunitÃ© est maintenant. Â» â€” <strong>Dr. Peter Attia</strong>, mÃ©decin spÃ©cialisÃ© en longÃ©vitÃ©
+💬 <strong>Avis d'expert :</strong> « Le prédiabète est le meilleur diagnostic que vous puissiez recevoir. C'est votre corps qui vous envoie un avertissement clair — et vous avez encore le temps d'agir. La fenêtre d'opportunité est maintenant. » — <strong>Dr. Peter Attia</strong>, médecin spécialisé en longévité
 </blockquote>
 
-<h2>Le programme SÃ¨che 10 Semaines : votre alliÃ© contre le prÃ©diabÃ¨te</h2>
+<h2>Le programme Sèche 10 Semaines : votre allié contre le prédiabète</h2>
 
-<p>Si vous cherchez un cadre structurÃ© pour mettre en place ces changements, le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> a Ã©tÃ© conÃ§u exactement pour cela. Il combine alimentation anti-inflammatoire, exercice progressif et suivi personnalisÃ© â€” les trois piliers validÃ©s par la science pour inverser le prÃ©diabÃ¨te.</p>
+<p>Si vous cherchez un cadre structuré pour mettre en place ces changements, le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> a été conçu exactement pour cela. Il combine alimentation anti-inflammatoire, exercice progressif et suivi personnalisé — les trois piliers validés par la science pour inverser le prédiabète.</p>
 
-<p>Des centaines d'hommes ont dÃ©jÃ  utilisÃ© ce programme pour normaliser leur glycÃ©mie, rÃ©duire leur tour de taille et reprendre le contrÃ´le de leur santÃ© mÃ©tabolique.</p>
+<p>Des centaines d'hommes ont déjà utilisé ce programme pour normaliser leur glycémie, réduire leur tour de taille et reprendre le contrôle de leur santé métabolique.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">PrÃªt Ã  inverser votre prÃ©diabÃ¨te ?</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir SÃ¨che 10 Semaines â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Prêt à inverser votre prédiabète ?</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir Sèche 10 Semaines →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin pour un suivi adaptÃ© Ã  votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
     slug: "glycemie-a-jeun-elevee-causes-solutions",
-    title: "GlycÃ©mie Ã  Jeun Ã‰levÃ©e : Causes, Risques et Solutions Naturelles",
-    metaDescription: "GlycÃ©mie Ã  jeun Ã©levÃ©e ? DÃ©couvrez les causes, les risques rÃ©els et les solutions naturelles validÃ©es pour retrouver des valeurs normales.",
+    title: "Glycémie à Jeun Élevée : Causes, Risques et Solutions Naturelles",
+    metaDescription: "Glycémie à jeun élevée ? Découvrez les causes, les risques réels et les solutions naturelles validées pour retrouver des valeurs normales.",
     date: "2026-02-21",
     readTime: "11 min",
-    keyword: "glycÃ©mie Ã  jeun Ã©levÃ©e causes solutions",
+    keyword: "glycémie à jeun élevée causes solutions",
     content: `<article>
-<h1>GlycÃ©mie Ã  Jeun Ã‰levÃ©e : Causes, Risques et Solutions Naturelles</h1>
+<h1>Glycémie à Jeun Élevée : Causes, Risques et Solutions Naturelles</h1>
 
-<p>Votre prise de sang affiche une glycÃ©mie Ã  jeun au-dessus de <strong>1,00 g/L</strong>. Ce chiffre vous inquiÃ¨te â€” et c'est normal. Mais avant de paniquer, il est essentiel de comprendre ce que cette valeur signifie rÃ©ellement, quelles en sont les causes, et surtout ce que vous pouvez faire concrÃ¨tement.</p>
+<p>Votre prise de sang affiche une glycémie à jeun au-dessus de <strong>1,00 g/L</strong>. Ce chiffre vous inquiète — et c'est normal. Mais avant de paniquer, il est essentiel de comprendre ce que cette valeur signifie réellement, quelles en sont les causes, et surtout ce que vous pouvez faire concrètement.</p>
 
-<h2>Comprendre votre glycÃ©mie Ã  jeun</h2>
+<h2>Comprendre votre glycémie à jeun</h2>
 
-<p>La glycÃ©mie Ã  jeun mesure la quantitÃ© de glucose dans votre sang aprÃ¨s <strong>8 Ã  12 heures sans manger</strong>. C'est un reflet direct de la capacitÃ© de votre foie Ã  rÃ©guler la production de glucose pendant la nuit.</p>
+<p>La glycémie à jeun mesure la quantité de glucose dans votre sang après <strong>8 à 12 heures sans manger</strong>. C'est un reflet direct de la capacité de votre foie à réguler la production de glucose pendant la nuit.</p>
 
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
-<tr style="background:#f3f4f6;"><th style="padding:12px;border:1px solid #d1d5db;text-align:left;">Valeur</th><th style="padding:12px;border:1px solid #d1d5db;text-align:left;">InterprÃ©tation</th></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">&lt; 1,00 g/L (5,6 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">âœ… Normale</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">1,00 - 1,25 g/L (5,6 - 6,9 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">âš ï¸ PrÃ©diabÃ¨te</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">â‰¥ 1,26 g/L (7,0 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">ðŸ”´ DiabÃ¨te (Ã  confirmer)</td></tr>
+<tr style="background:#f3f4f6;"><th style="padding:12px;border:1px solid #d1d5db;text-align:left;">Valeur</th><th style="padding:12px;border:1px solid #d1d5db;text-align:left;">Interprétation</th></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">&lt; 1,00 g/L (5,6 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">✅ Normale</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">1,00 - 1,25 g/L (5,6 - 6,9 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">⚠ï¸ Prédiabète</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">≥ 1,26 g/L (7,0 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">🔴 Diabète (à confirmer)</td></tr>
 </table>
 
-<h2>Les 7 causes principales d'une glycÃ©mie Ã  jeun Ã©levÃ©e</h2>
+<h2>Les 7 causes principales d'une glycémie à jeun élevée</h2>
 
-<h3>1. L'insulino-rÃ©sistance</h3>
-<p>C'est la cause numÃ©ro un. Vos cellules rÃ©pondent mal Ã  l'insuline, obligeant le pancrÃ©as Ã  en produire davantage. Le foie, lui aussi rÃ©sistant Ã  l'insuline, continue de libÃ©rer du glucose pendant la nuit alors qu'il ne devrait pas â€” c'est le <strong>phÃ©nomÃ¨ne de l'aube</strong>.</p>
+<h3>1. L'insulino-résistance</h3>
+<p>C'est la cause numéro un. Vos cellules répondent mal à l'insuline, obligeant le pancréas à en produire davantage. Le foie, lui aussi résistant à l'insuline, continue de libérer du glucose pendant la nuit alors qu'il ne devrait pas — c'est le <strong>phénomène de l'aube</strong>.</p>
 
-<h3>2. L'excÃ¨s de graisse viscÃ©rale</h3>
-<p>La graisse autour des organes abdominaux libÃ¨re des acides gras libres et des cytokines inflammatoires qui perturbent directement la signalisation de l'insuline. Un tour de taille Ã©levÃ© est souvent le premier signe visible.</p>
+<h3>2. L'excès de graisse viscérale</h3>
+<p>La graisse autour des organes abdominaux libère des acides gras libres et des cytokines inflammatoires qui perturbent directement la signalisation de l'insuline. Un tour de taille élevé est souvent le premier signe visible.</p>
 
 <h3>3. Le manque de sommeil</h3>
-<p>MÃªme une seule nuit de sommeil insuffisant (moins de 6 heures) peut augmenter la glycÃ©mie Ã  jeun du lendemain. Le manque de sommeil chronique altÃ¨re la sensibilitÃ© Ã  l'insuline et augmente la production de cortisol.</p>
+<p>Même une seule nuit de sommeil insuffisant (moins de 6 heures) peut augmenter la glycémie à jeun du lendemain. Le manque de sommeil chronique altère la sensibilité à l'insuline et augmente la production de cortisol.</p>
 
 <h3>4. Le stress chronique</h3>
-<p>Le cortisol stimule la nÃ©oglucogenÃ¨se hÃ©patique â€” votre foie fabrique du glucose Ã  partir de protÃ©ines et de graisses, mÃªme quand vous n'en avez pas besoin. Un stress permanent maintient ce mÃ©canisme en activitÃ© constante.</p>
+<p>Le cortisol stimule la néoglucogenèse hépatique — votre foie fabrique du glucose à partir de protéines et de graisses, même quand vous n'en avez pas besoin. Un stress permanent maintient ce mécanisme en activité constante.</p>
 
-<h3>5. La sÃ©dentaritÃ©</h3>
-<p>L'inactivitÃ© physique rÃ©duit le nombre de transporteurs de glucose (GLUT4) dans vos muscles. RÃ©sultat : le glucose reste dans le sang au lieu d'Ãªtre utilisÃ© par les cellules.</p>
+<h3>5. La sédentarité</h3>
+<p>L'inactivité physique réduit le nombre de transporteurs de glucose (GLUT4) dans vos muscles. Résultat : le glucose reste dans le sang au lieu d'être utilisé par les cellules.</p>
 
-<h3>6. L'alimentation riche en glucides raffinÃ©s</h3>
-<p>Un dÃ®ner riche en glucides Ã  indice glycÃ©mique Ã©levÃ© (pain blanc, pÃ¢tes, dessert sucrÃ©) provoque un pic d'insuline le soir, suivi d'un rebond glycÃ©mique matinal.</p>
+<h3>6. L'alimentation riche en glucides raffinés</h3>
+<p>Un dîner riche en glucides à indice glycémique élevé (pain blanc, pâtes, dessert sucré) provoque un pic d'insuline le soir, suivi d'un rebond glycémique matinal.</p>
 
-<h3>7. La stÃ©atose hÃ©patique (foie gras)</h3>
-<p>Un foie infiltrÃ© de graisse perd sa capacitÃ© Ã  rÃ©guler correctement le glucose. On estime que <strong>70 Ã  80 % des personnes avec une glycÃ©mie Ã  jeun Ã©levÃ©e</strong> ont une stÃ©atose hÃ©patique non diagnostiquÃ©e.</p>
+<h3>7. La stéatose hépatique (foie gras)</h3>
+<p>Un foie infiltré de graisse perd sa capacité à réguler correctement le glucose. On estime que <strong>70 à 80 % des personnes avec une glycémie à jeun élevée</strong> ont une stéatose hépatique non diagnostiquée.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Une Ã©tude de Petersen et al. (2005), publiÃ©e dans <em>PNAS</em>, a dÃ©montrÃ© que la stÃ©atose hÃ©patique est le principal dÃ©terminant de la glycÃ©mie Ã  jeun Ã©levÃ©e, indÃ©pendamment du poids corporel. RÃ©duire la graisse hÃ©patique de seulement 20 % normalise la glycÃ©mie chez la majoritÃ© des patients.
+🔬 <strong>Ce que dit la science :</strong> Une étude de Petersen et al. (2005), publiée dans <em>PNAS</em>, a démontré que la stéatose hépatique est le principal déterminant de la glycémie à jeun élevée, indépendamment du poids corporel. Réduire la graisse hépatique de seulement 20 % normalise la glycémie chez la majorité des patients.
 </blockquote>
 
-<h2>Les risques d'une glycÃ©mie Ã  jeun Ã©levÃ©e non traitÃ©e</h2>
+<h2>Les risques d'une glycémie à jeun élevée non traitée</h2>
 
-<p>Une glycÃ©mie Ã  jeun Ã©levÃ©e n'est jamais Â« juste un chiffre Â». Elle signale un dÃ©rÃ¨glement mÃ©tabolique qui affecte tout l'organisme :</p>
+<p>Une glycémie à jeun élevée n'est jamais « juste un chiffre ». Elle signale un dérèglement métabolique qui affecte tout l'organisme :</p>
 
 <ul>
-<li><strong>Progression vers le diabÃ¨te de type 2</strong> (5-10 % par an sans intervention)</li>
-<li><strong>Risque cardiovasculaire augmentÃ©</strong> : mÃªme en zone prÃ©diabÃ¨te, le risque d'infarctus est majorÃ© de 20 %</li>
+<li><strong>Progression vers le diabète de type 2</strong> (5-10 % par an sans intervention)</li>
+<li><strong>Risque cardiovasculaire augmenté</strong> : même en zone prédiabète, le risque d'infarctus est majoré de 20 %</li>
 <li><strong>Inflammation chronique de bas grade</strong> alimentant l'ensemble des maladies chroniques</li>
-<li><strong>Dommages vasculaires silencieux</strong> : rÃ©tinopathie, nÃ©phropathie, neuropathie dÃ©butantes</li>
-<li><strong>DÃ©clin cognitif accÃ©lÃ©rÃ©</strong> : le diabÃ¨te de type 2 est parfois appelÃ© Â« diabÃ¨te de type 3 Â» pour son lien avec Alzheimer</li>
+<li><strong>Dommages vasculaires silencieux</strong> : rétinopathie, néphropathie, neuropathie débutantes</li>
+<li><strong>Déclin cognitif accéléré</strong> : le diabète de type 2 est parfois appelé « diabète de type 3 » pour son lien avec Alzheimer</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude DECODE (Diabetes Epidemiology: Collaborative analysis Of Diagnostic criteria in Europe, 2001, <em>The Lancet</em>) a montrÃ© que la glycÃ©mie Ã©levÃ©e â€” mÃªme en dessous du seuil diabÃ©tique â€” est un facteur de risque indÃ©pendant de mortalitÃ© cardiovasculaire.
+🔬 <strong>Ce que dit la science :</strong> L'étude DECODE (Diabetes Epidemiology: Collaborative analysis Of Diagnostic criteria in Europe, 2001, <em>The Lancet</em>) a montré que la glycémie élevée — même en dessous du seuil diabétique — est un facteur de risque indépendant de mortalité cardiovasculaire.
 </blockquote>
 
-<h2>8 solutions naturelles pour faire baisser votre glycÃ©mie Ã  jeun</h2>
+<h2>8 solutions naturelles pour faire baisser votre glycémie à jeun</h2>
 
-<h3>1. Restructurez votre dÃ®ner</h3>
-<p>Terminez votre repas du soir par des <strong>protÃ©ines et des fibres</strong>, pas par des glucides. Un dÃ®ner Ã  base de poisson, lÃ©gumes verts et huile d'olive stabilise la glycÃ©mie nocturne bien mieux qu'un plat de pÃ¢tes.</p>
+<h3>1. Restructurez votre dîner</h3>
+<p>Terminez votre repas du soir par des <strong>protéines et des fibres</strong>, pas par des glucides. Un dîner à base de poisson, légumes verts et huile d'olive stabilise la glycémie nocturne bien mieux qu'un plat de pâtes.</p>
 
-<h3>2. Marchez 15 minutes aprÃ¨s le dÃ®ner</h3>
-<p>Une simple promenade digestive aide vos muscles Ã  capter le glucose circulant et rÃ©duit la glycÃ©mie post-prandiale de 20 Ã  30 %.</p>
+<h3>2. Marchez 15 minutes après le dîner</h3>
+<p>Une simple promenade digestive aide vos muscles à capter le glucose circulant et réduit la glycémie post-prandiale de 20 à 30 %.</p>
 
-<h3>3. Adoptez un jeÃ»ne nocturne de 12-14 heures</h3>
-<p>DÃ®nez avant 20h et petit-dÃ©jeunez aprÃ¨s 8h. Ce jeÃ»ne intermittent lÃ©ger permet Ã  votre foie de vider ses rÃ©serves de glycogÃ¨ne et d'amÃ©liorer sa sensibilitÃ© Ã  l'insuline.</p>
+<h3>3. Adoptez un jeûne nocturne de 12-14 heures</h3>
+<p>Dînez avant 20h et petit-déjeunez après 8h. Ce jeûne intermittent léger permet à votre foie de vider ses réserves de glycogène et d'améliorer sa sensibilité à l'insuline.</p>
 
-<h3>4. IntÃ©grez le vinaigre de cidre</h3>
-<p>1 Ã  2 cuillÃ¨res Ã  soupe de vinaigre de cidre diluÃ© dans l'eau avant le dÃ®ner peut rÃ©duire la glycÃ©mie Ã  jeun de 4 Ã  6 %. L'acide acÃ©tique inhibe partiellement la digestion des amidons et amÃ©liore la sensibilitÃ© Ã  l'insuline hÃ©patique.</p>
+<h3>4. Intégrez le vinaigre de cidre</h3>
+<p>1 à 2 cuillères à soupe de vinaigre de cidre dilué dans l'eau avant le dîner peut réduire la glycémie à jeun de 4 à 6 %. L'acide acétique inhibe partiellement la digestion des amidons et améliore la sensibilité à l'insuline hépatique.</p>
 
-<h3>5. Musculation : le traitement sous-estimÃ©</h3>
-<p>Chaque kilo de masse musculaire gagnÃ© augmente votre capacitÃ© Ã  stocker et utiliser le glucose. La musculation 2-3 fois par semaine est l'un des outils les plus puissants contre l'insulino-rÃ©sistance.</p>
+<h3>5. Musculation : le traitement sous-estimé</h3>
+<p>Chaque kilo de masse musculaire gagné augmente votre capacité à stocker et utiliser le glucose. La musculation 2-3 fois par semaine est l'un des outils les plus puissants contre l'insulino-résistance.</p>
 
-<h3>6. Dormez 7 Ã  8 heures</h3>
-<p>Le sommeil n'est pas un luxe â€” c'est un rÃ©gulateur mÃ©tabolique fondamental. Priorisez la rÃ©gularitÃ© des horaires avant tout.</p>
+<h3>6. Dormez 7 à 8 heures</h3>
+<p>Le sommeil n'est pas un luxe — c'est un régulateur métabolique fondamental. Priorisez la régularité des horaires avant tout.</p>
 
-<h3>7. MagnÃ©sium : le minÃ©ral oubliÃ©</h3>
-<p>La carence en magnÃ©sium touche jusqu'Ã  50 % de la population et aggrave l'insulino-rÃ©sistance. Sources : amandes, Ã©pinards, chocolat noir (&gt;85 %), graines de citrouille. Visez 400-500 mg/jour.</p>
+<h3>7. Magnésium : le minéral oublié</h3>
+<p>La carence en magnésium touche jusqu'à 50 % de la population et aggrave l'insulino-résistance. Sources : amandes, épinards, chocolat noir (&gt;85 %), graines de citrouille. Visez 400-500 mg/jour.</p>
 
-<h3>8. RÃ©duisez le stress</h3>
-<p>La cohÃ©rence cardiaque (5 minutes, 3 fois par jour) a dÃ©montrÃ© des effets mesurables sur la rÃ©duction du cortisol et l'amÃ©lioration de la glycÃ©mie.</p>
+<h3>8. Réduisez le stress</h3>
+<p>La cohérence cardiaque (5 minutes, 3 fois par jour) a démontré des effets mesurables sur la réduction du cortisol et l'amélioration de la glycémie.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« La glycÃ©mie Ã  jeun est comme un thermomÃ¨tre mÃ©tabolique. Elle vous indique l'Ã©tat de santÃ© de votre foie et votre niveau d'insulino-rÃ©sistance. Mais le vrai objectif n'est pas de faire baisser un chiffre â€” c'est de restaurer la flexibilitÃ© mÃ©tabolique de votre organisme. Â» â€” <strong>Dr. Robert Lustig</strong>, endocrinologue pÃ©diatrique, UCSF
+💬 <strong>Avis d'expert :</strong> « La glycémie à jeun est comme un thermomètre métabolique. Elle vous indique l'état de santé de votre foie et votre niveau d'insulino-résistance. Mais le vrai objectif n'est pas de faire baisser un chiffre — c'est de restaurer la flexibilité métabolique de votre organisme. » — <strong>Dr. Robert Lustig</strong>, endocrinologue pédiatrique, UCSF
 </blockquote>
 
-<h2>Passez Ã  l'action avec un plan structurÃ©</h2>
+<h2>Passez à l'action avec un plan structuré</h2>
 
-<p>Ces stratÃ©gies sont puissantes, mais elles demandent de la constance et de l'organisation. Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> intÃ¨gre prÃ©cisÃ©ment ces principes dans un plan alimentaire et sportif progressif, conÃ§u pour les hommes qui veulent normaliser leur glycÃ©mie tout en perdant la graisse viscÃ©rale responsable du problÃ¨me.</p>
+<p>Ces stratégies sont puissantes, mais elles demandent de la constance et de l'organisation. Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> intègre précisément ces principes dans un plan alimentaire et sportif progressif, conçu pour les hommes qui veulent normaliser leur glycémie tout en perdant la graisse viscérale responsable du problème.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Normalisez votre glycÃ©mie en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Normalisez votre glycémie en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin pour un suivi adaptÃ© Ã  votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
     slug: "cholesterol-regime-alimentaire-homme",
-    title: "CholestÃ©rol Ã‰levÃ© : Le RÃ©gime Alimentaire Qui Fait Baisser les Chiffres",
-    metaDescription: "CholestÃ©rol Ã©levÃ© chez l'homme ? DÃ©couvrez le rÃ©gime alimentaire anti-cholestÃ©rol validÃ© par la science pour amÃ©liorer votre bilan lipidique.",
+    title: "Cholestérol Élevé : Le Régime Alimentaire Qui Fait Baisser les Chiffres",
+    metaDescription: "Cholestérol élevé chez l'homme ? Découvrez le régime alimentaire anti-cholestérol validé par la science pour améliorer votre bilan lipidique.",
     date: "2026-02-21",
     readTime: "13 min",
-    keyword: "cholestÃ©rol rÃ©gime alimentaire homme",
+    keyword: "cholestérol régime alimentaire homme",
     content: `<article>
-<h1>CholestÃ©rol Ã‰levÃ© : Le RÃ©gime Alimentaire Qui Fait Baisser les Chiffres</h1>
+<h1>Cholestérol Élevé : Le Régime Alimentaire Qui Fait Baisser les Chiffres</h1>
 
-<p>Votre dernier bilan lipidique affiche un LDL-cholestÃ©rol au-dessus de <strong>1,6 g/L</strong> et votre mÃ©decin parle de statines. Avant d'en arriver lÃ  â€” ou en complÃ©ment d'un traitement â€” l'alimentation reste le levier le plus puissant pour amÃ©liorer votre profil lipidique. Voici le rÃ©gime alimentaire anti-cholestÃ©rol fondÃ© sur les donnÃ©es scientifiques les plus solides.</p>
+<p>Votre dernier bilan lipidique affiche un LDL-cholestérol au-dessus de <strong>1,6 g/L</strong> et votre médecin parle de statines. Avant d'en arriver là — ou en complément d'un traitement — l'alimentation reste le levier le plus puissant pour améliorer votre profil lipidique. Voici le régime alimentaire anti-cholestérol fondé sur les données scientifiques les plus solides.</p>
 
 <h2>Comprendre votre bilan lipidique</h2>
 
-<p>Le cholestÃ©rol total seul ne dit pas grand-chose. Ce qui compte, c'est le <strong>dÃ©tail du profil</strong> :</p>
+<p>Le cholestérol total seul ne dit pas grand-chose. Ce qui compte, c'est le <strong>détail du profil</strong> :</p>
 
 <ul>
-<li><strong>LDL-cholestÃ©rol</strong> (Â« mauvais Â») : ce sont les particules qui s'accumulent dans les parois artÃ©rielles. L'objectif dÃ©pend de votre risque cardiovasculaire global.</li>
-<li><strong>HDL-cholestÃ©rol</strong> (Â« bon Â») : il assure le transport inverse du cholestÃ©rol, des artÃ¨res vers le foie. Un HDL &gt; 0,40 g/L chez l'homme est protecteur.</li>
-<li><strong>TriglycÃ©rides</strong> : Ã©levÃ©s, ils signalent un problÃ¨me de mÃ©tabolisme des sucres plus que des graisses. IdÃ©alement &lt; 1,50 g/L.</li>
-<li><strong>Rapport triglycÃ©rides/HDL</strong> : c'est le meilleur marqueur d'insulino-rÃ©sistance. IdÃ©alement &lt; 2.</li>
+<li><strong>LDL-cholestérol</strong> (« mauvais ») : ce sont les particules qui s'accumulent dans les parois artérielles. L'objectif dépend de votre risque cardiovasculaire global.</li>
+<li><strong>HDL-cholestérol</strong> (« bon ») : il assure le transport inverse du cholestérol, des artères vers le foie. Un HDL &gt; 0,40 g/L chez l'homme est protecteur.</li>
+<li><strong>Triglycérides</strong> : élevés, ils signalent un problème de métabolisme des sucres plus que des graisses. Idéalement &lt; 1,50 g/L.</li>
+<li><strong>Rapport triglycérides/HDL</strong> : c'est le meilleur marqueur d'insulino-résistance. Idéalement &lt; 2.</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Le cholestÃ©rol alimentaire a trÃ¨s peu d'impact sur le cholestÃ©rol sanguin chez la majoritÃ© des gens. Ce sont les glucides raffinÃ©s et les sucres ajoutÃ©s qui Ã©lÃ¨vent les triglycÃ©rides et produisent les petites particules LDL denses â€” les plus dangereuses. Â» â€” <strong>Dr. David Ludwig</strong>, endocrinologue, Harvard Medical School
+💬 <strong>Avis d'expert :</strong> « Le cholestérol alimentaire a très peu d'impact sur le cholestérol sanguin chez la majorité des gens. Ce sont les glucides raffinés et les sucres ajoutés qui élèvent les triglycérides et produisent les petites particules LDL denses — les plus dangereuses. » — <strong>Dr. David Ludwig</strong>, endocrinologue, Harvard Medical School
 </blockquote>
 
-<h2>Les 7 piliers du rÃ©gime anti-cholestÃ©rol</h2>
+<h2>Les 7 piliers du régime anti-cholestérol</h2>
 
 <h3>1. L'huile d'olive extra-vierge : votre arme principale</h3>
-<p>Les polyphÃ©nols de l'huile d'olive protÃ¨gent les particules LDL de l'oxydation â€” c'est le LDL <em>oxydÃ©</em> qui est dangereux, pas le LDL en soi. Visez <strong>3 Ã  4 cuillÃ¨res Ã  soupe par jour</strong> en assaisonnement ou cuisson douce.</p>
+<p>Les polyphénols de l'huile d'olive protègent les particules LDL de l'oxydation — c'est le LDL <em>oxydé</em> qui est dangereux, pas le LDL en soi. Visez <strong>3 à 4 cuillères à soupe par jour</strong> en assaisonnement ou cuisson douce.</p>
 
-<h3>2. Les fibres solubles : l'Ã©ponge Ã  cholestÃ©rol</h3>
-<p>Les fibres solubles (avoine, orge, lÃ©gumineuses, psyllium, pommes) se lient aux acides biliaires dans l'intestin, forÃ§ant le foie Ã  utiliser du cholestÃ©rol sanguin pour en fabriquer de nouveaux. RÃ©sultat : une baisse du LDL de <strong>5 Ã  15 %</strong>.</p>
+<h3>2. Les fibres solubles : l'éponge à cholestérol</h3>
+<p>Les fibres solubles (avoine, orge, légumineuses, psyllium, pommes) se lient aux acides biliaires dans l'intestin, forçant le foie à utiliser du cholestérol sanguin pour en fabriquer de nouveaux. Résultat : une baisse du LDL de <strong>5 à 15 %</strong>.</p>
 
 <ul>
-<li>Flocons d'avoine au petit-dÃ©jeuner (3 g de bÃªta-glucanes = -5 Ã  10 % de LDL)</li>
-<li>LÃ©gumineuses au dÃ©jeuner : lentilles, pois chiches, haricots rouges</li>
-<li>1 cuillÃ¨re Ã  soupe de psyllium le soir</li>
+<li>Flocons d'avoine au petit-déjeuner (3 g de bêta-glucanes = -5 à 10 % de LDL)</li>
+<li>Légumineuses au déjeuner : lentilles, pois chiches, haricots rouges</li>
+<li>1 cuillère à soupe de psyllium le soir</li>
 </ul>
 
-<h3>3. Les poissons gras : omÃ©ga-3 anti-triglycÃ©rides</h3>
-<p>Saumon, sardines, maquereau, hareng â€” visez <strong>3 portions par semaine</strong>. Les omÃ©ga-3 EPA et DHA rÃ©duisent les triglycÃ©rides de 15 Ã  30 % et amÃ©liorent le profil des particules LDL (moins denses, moins dangereuses).</p>
+<h3>3. Les poissons gras : oméga-3 anti-triglycérides</h3>
+<p>Saumon, sardines, maquereau, hareng — visez <strong>3 portions par semaine</strong>. Les oméga-3 EPA et DHA réduisent les triglycérides de 15 à 30 % et améliorent le profil des particules LDL (moins denses, moins dangereuses).</p>
 
 <h3>4. Les noix et amandes : le snack cardioprotecteur</h3>
-<p>Une poignÃ©e quotidienne (30 g) de noix, amandes ou noisettes rÃ©duit le LDL de 5 Ã  7 %. L'Ã©tude PREDIMED a montrÃ© un bÃ©nÃ©fice cardiovasculaire majeur avec seulement 30 g de noix mixtes par jour.</p>
+<p>Une poignée quotidienne (30 g) de noix, amandes ou noisettes réduit le LDL de 5 à 7 %. L'étude PREDIMED a montré un bénéfice cardiovasculaire majeur avec seulement 30 g de noix mixtes par jour.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude PREDIMED (Estruch et al., 2013, rÃ©visÃ©e 2018, <em>NEJM</em>) a dÃ©montrÃ© qu'un rÃ©gime mÃ©diterranÃ©en enrichi en huile d'olive ou en noix rÃ©duisait les Ã©vÃ©nements cardiovasculaires majeurs de <strong>30 %</strong> par rapport Ã  un rÃ©gime pauvre en graisses â€” sans aucune restriction calorique.
+🔬 <strong>Ce que dit la science :</strong> L'étude PREDIMED (Estruch et al., 2013, révisée 2018, <em>NEJM</em>) a démontré qu'un régime méditerranéen enrichi en huile d'olive ou en noix réduisait les événements cardiovasculaires majeurs de <strong>30 %</strong> par rapport à un régime pauvre en graisses — sans aucune restriction calorique.
 </blockquote>
 
-<h3>5. Les phytostÃ©rols : les bloqueurs naturels</h3>
-<p>Les stÃ©rols vÃ©gÃ©taux (prÃ©sents dans les graines, les lÃ©gumineuses, et certains aliments enrichis) bloquent l'absorption intestinale du cholestÃ©rol. Une consommation de 2 g/jour rÃ©duit le LDL de <strong>8 Ã  10 %</strong>.</p>
+<h3>5. Les phytostérols : les bloqueurs naturels</h3>
+<p>Les stérols végétaux (présents dans les graines, les légumineuses, et certains aliments enrichis) bloquent l'absorption intestinale du cholestérol. Une consommation de 2 g/jour réduit le LDL de <strong>8 à 10 %</strong>.</p>
 
-<h3>6. RÃ©duisez les glucides raffinÃ©s (plus important que le gras)</h3>
-<p>Paradoxalement, ce ne sont pas les graisses alimentaires qui Ã©lÃ¨vent le plus le cholestÃ©rol dangereux â€” ce sont les <strong>sucres et glucides raffinÃ©s</strong>. Ils augmentent les triglycÃ©rides, rÃ©duisent le HDL et favorisent les petites particules LDL denses.</p>
+<h3>6. Réduisez les glucides raffinés (plus important que le gras)</h3>
+<p>Paradoxalement, ce ne sont pas les graisses alimentaires qui élèvent le plus le cholestérol dangereux — ce sont les <strong>sucres et glucides raffinés</strong>. Ils augmentent les triglycérides, réduisent le HDL et favorisent les petites particules LDL denses.</p>
 
 <ul>
 <li>Remplacez le pain blanc par du pain complet au levain</li>
-<li>TroquÃ©z les pÃ¢tes blanches contre des lentilles ou du quinoa</li>
-<li>Supprimez les boissons sucrÃ©es et les jus de fruits</li>
+<li>Troquéz les pâtes blanches contre des lentilles ou du quinoa</li>
+<li>Supprimez les boissons sucrées et les jus de fruits</li>
 </ul>
 
-<h3>7. Les aliments fermentÃ©s : le microbiote au service du cholestÃ©rol</h3>
-<p>Un microbiote intestinal diversifiÃ© participe activement au mÃ©tabolisme du cholestÃ©rol. IntÃ©grez quotidiennement : yaourt nature, kÃ©fir, choucroute, kimchi, miso.</p>
+<h3>7. Les aliments fermentés : le microbiote au service du cholestérol</h3>
+<p>Un microbiote intestinal diversifié participe activement au métabolisme du cholestérol. Intégrez quotidiennement : yaourt nature, kéfir, choucroute, kimchi, miso.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Une mÃ©ta-analyse de Jenkins et al. (2003, <em>JAMA</em>) a montrÃ© qu'un Â« Portfolio Diet Â» combinant fibres solubles, protÃ©ines de soja, phytostÃ©rols et amandes rÃ©duisait le LDL-cholestÃ©rol de <strong>29 %</strong> â€” un rÃ©sultat comparable aux statines Ã  faible dose.
+🔬 <strong>Ce que dit la science :</strong> Une méta-analyse de Jenkins et al. (2003, <em>JAMA</em>) a montré qu'un « Portfolio Diet » combinant fibres solubles, protéines de soja, phytostérols et amandes réduisait le LDL-cholestérol de <strong>29 %</strong> — un résultat comparable aux statines à faible dose.
 </blockquote>
 
-<h2>Exemple de journÃ©e type anti-cholestÃ©rol</h2>
+<h2>Exemple de journée type anti-cholestérol</h2>
 
-<p><strong>Petit-dÃ©jeuner :</strong> Porridge d'avoine (50 g) avec noix (15 g), myrtilles, graines de chia (10 g), cannelle</p>
-<p><strong>DÃ©jeuner :</strong> Salade de lentilles vertes, avocat, tomates, oignon rouge, vinaigrette Ã  l'huile d'olive extra-vierge. Sardines grillÃ©es.</p>
-<p><strong>Collation :</strong> PoignÃ©e d'amandes (20 g) + 1 pomme</p>
-<p><strong>DÃ®ner :</strong> Saumon au four avec brocoli vapeur et patate douce. Filet d'huile d'olive. Yaourt nature en dessert.</p>
+<p><strong>Petit-déjeuner :</strong> Porridge d'avoine (50 g) avec noix (15 g), myrtilles, graines de chia (10 g), cannelle</p>
+<p><strong>Déjeuner :</strong> Salade de lentilles vertes, avocat, tomates, oignon rouge, vinaigrette à l'huile d'olive extra-vierge. Sardines grillées.</p>
+<p><strong>Collation :</strong> Poignée d'amandes (20 g) + 1 pomme</p>
+<p><strong>Dîner :</strong> Saumon au four avec brocoli vapeur et patate douce. Filet d'huile d'olive. Yaourt nature en dessert.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« ArrÃªtez de compter le cholestÃ©rol dans vos Å“ufs. Concentrez-vous sur la qualitÃ© globale de votre alimentation : plus de vÃ©gÃ©taux, plus de fibres, plus de bonnes graisses, moins de sucres raffinÃ©s. C'est lÃ  que se joue vraiment votre santÃ© cardiovasculaire. Â» â€” <strong>Dr. Peter Attia</strong>
+💬 <strong>Avis d'expert :</strong> « Arrêtez de compter le cholestérol dans vos Å“ufs. Concentrez-vous sur la qualité globale de votre alimentation : plus de végétaux, plus de fibres, plus de bonnes graisses, moins de sucres raffinés. C'est là que se joue vraiment votre santé cardiovasculaire. » — <strong>Dr. Peter Attia</strong>
 </blockquote>
 
-<h2>Au-delÃ  de l'alimentation : les autres leviers</h2>
+<h2>Au-delà de l'alimentation : les autres leviers</h2>
 
 <ul>
-<li><strong>Exercice physique</strong> : 150 minutes/semaine d'activitÃ© modÃ©rÃ©e augmentent le HDL de 5 Ã  10 %</li>
-<li><strong>Perte de poids</strong> : chaque kg perdu rÃ©duit le LDL d'environ 0,8 mg/dL</li>
-<li><strong>ArrÃªt du tabac</strong> : augmente le HDL de 5 Ã  10 % en quelques semaines</li>
-<li><strong>Gestion du stress</strong> : le cortisol chronique Ã©lÃ¨ve le cholestÃ©rol total</li>
+<li><strong>Exercice physique</strong> : 150 minutes/semaine d'activité modérée augmentent le HDL de 5 à 10 %</li>
+<li><strong>Perte de poids</strong> : chaque kg perdu réduit le LDL d'environ 0,8 mg/dL</li>
+<li><strong>Arrêt du tabac</strong> : augmente le HDL de 5 à 10 % en quelques semaines</li>
+<li><strong>Gestion du stress</strong> : le cortisol chronique élève le cholestérol total</li>
 </ul>
 
-<h2>Structurez votre transformation avec SÃ¨che 10 Semaines</h2>
+<h2>Structurez votre transformation avec Sèche 10 Semaines</h2>
 
-<p>Savoir quoi manger est une chose. Le mettre en pratique au quotidien en est une autre. Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> vous fournit un plan alimentaire complet, des menus semaine par semaine, et un programme sportif progressif â€” exactement ce qu'il faut pour amÃ©liorer votre bilan lipidique durablement.</p>
+<p>Savoir quoi manger est une chose. Le mettre en pratique au quotidien en est une autre. Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> vous fournit un plan alimentaire complet, des menus semaine par semaine, et un programme sportif progressif — exactement ce qu'il faut pour améliorer votre bilan lipidique durablement.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">AmÃ©liorez votre cholestÃ©rol en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Améliorez votre cholestérol en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin pour un suivi adaptÃ© Ã  votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
     slug: "comment-faire-baisser-glycemie-naturellement",
-    title: "Comment Faire Baisser Sa GlycÃ©mie Naturellement (MÃ©thodes ProuvÃ©es)",
-    metaDescription: "DÃ©couvrez 10 mÃ©thodes naturelles prouvÃ©es par la science pour faire baisser votre glycÃ©mie : alimentation, exercice, complÃ©ments et habitudes.",
+    title: "Comment Faire Baisser Sa Glycémie Naturellement (Méthodes Prouvées)",
+    metaDescription: "Découvrez 10 méthodes naturelles prouvées par la science pour faire baisser votre glycémie : alimentation, exercice, compléments et habitudes.",
     date: "2026-02-21",
     readTime: "12 min",
-    keyword: "comment faire baisser glycÃ©mie naturellement",
+    keyword: "comment faire baisser glycémie naturellement",
     content: `<article>
-<h1>Comment Faire Baisser Sa GlycÃ©mie Naturellement (MÃ©thodes ProuvÃ©es)</h1>
+<h1>Comment Faire Baisser Sa Glycémie Naturellement (Méthodes Prouvées)</h1>
 
-<p>Que vous soyez prÃ©diabÃ©tique, diabÃ©tique de type 2 ou simplement soucieux de votre santÃ© mÃ©tabolique, la question revient toujours : <strong>comment faire baisser sa glycÃ©mie sans dÃ©pendre uniquement des mÃ©dicaments ?</strong> La rÃ©ponse est encourageante â€” les mÃ©thodes naturelles sont non seulement efficaces, mais souvent supÃ©rieures aux traitements pharmacologiques pour les stades prÃ©coces.</p>
+<p>Que vous soyez prédiabétique, diabétique de type 2 ou simplement soucieux de votre santé métabolique, la question revient toujours : <strong>comment faire baisser sa glycémie sans dépendre uniquement des médicaments ?</strong> La réponse est encourageante — les méthodes naturelles sont non seulement efficaces, mais souvent supérieures aux traitements pharmacologiques pour les stades précoces.</p>
 
-<h2>Pourquoi votre glycÃ©mie est Ã©levÃ©e : comprendre pour agir</h2>
+<h2>Pourquoi votre glycémie est élevée : comprendre pour agir</h2>
 
-<p>Une glycÃ©mie Ã©levÃ©e n'est pas le problÃ¨me â€” c'est le <strong>symptÃ´me</strong>. Le problÃ¨me sous-jacent est presque toujours l'insulino-rÃ©sistance : vos cellules ne rÃ©pondent plus correctement Ã  l'insuline, le glucose s'accumule dans le sang.</p>
+<p>Une glycémie élevée n'est pas le problème — c'est le <strong>symptôme</strong>. Le problème sous-jacent est presque toujours l'insulino-résistance : vos cellules ne répondent plus correctement à l'insuline, le glucose s'accumule dans le sang.</p>
 
 <p>Les causes profondes :</p>
 <ul>
-<li>ExcÃ¨s de graisse viscÃ©rale et hÃ©patique</li>
+<li>Excès de graisse viscérale et hépatique</li>
 <li>Inflammation chronique de bas grade</li>
-<li>SÃ©dentaritÃ© et perte de masse musculaire</li>
-<li>Alimentation hyperglycÃ©miante (sucres, farines blanches)</li>
+<li>Sédentarité et perte de masse musculaire</li>
+<li>Alimentation hyperglycémiante (sucres, farines blanches)</li>
 <li>Stress chronique et manque de sommeil</li>
 </ul>
 
-<p>Traiter ces causes â€” et non juste le chiffre â€” est la clÃ© d'une amÃ©lioration durable.</p>
+<p>Traiter ces causes — et non juste le chiffre — est la clé d'une amélioration durable.</p>
 
-<h2>Les 10 mÃ©thodes naturelles les plus efficaces</h2>
+<h2>Les 10 méthodes naturelles les plus efficaces</h2>
 
 <h3>1. L'ordre des aliments dans l'assiette</h3>
-<p>Une dÃ©couverte simple mais puissante : manger les <strong>lÃ©gumes et protÃ©ines en premier</strong>, puis les glucides en dernier, rÃ©duit le pic glycÃ©mique de <strong>30 Ã  40 %</strong> â€” sans changer le contenu du repas.</p>
+<p>Une découverte simple mais puissante : manger les <strong>légumes et protéines en premier</strong>, puis les glucides en dernier, réduit le pic glycémique de <strong>30 à 40 %</strong> — sans changer le contenu du repas.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Shukla et al. (2015), dans une Ã©tude publiÃ©e dans <em>Diabetes Care</em>, ont montrÃ© que manger les lÃ©gumes et protÃ©ines avant les glucides rÃ©duisait le pic de glucose post-prandial de <strong>37 %</strong> et le pic d'insuline de <strong>25 %</strong>, mÃªme chez des patients diabÃ©tiques de type 2.
+🔬 <strong>Ce que dit la science :</strong> Shukla et al. (2015), dans une étude publiée dans <em>Diabetes Care</em>, ont montré que manger les légumes et protéines avant les glucides réduisait le pic de glucose post-prandial de <strong>37 %</strong> et le pic d'insuline de <strong>25 %</strong>, même chez des patients diabétiques de type 2.
 </blockquote>
 
 <h3>2. La marche post-prandiale</h3>
-<p>15 Ã  20 minutes de marche aprÃ¨s un repas est l'un des outils les plus simples et les plus efficaces. Vos muscles en activitÃ© captent directement le glucose sanguin via des transporteurs GLUT4, indÃ©pendamment de l'insuline.</p>
+<p>15 à 20 minutes de marche après un repas est l'un des outils les plus simples et les plus efficaces. Vos muscles en activité captent directement le glucose sanguin via des transporteurs GLUT4, indépendamment de l'insuline.</p>
 
 <h3>3. Le vinaigre de cidre avant les repas</h3>
-<p>1 Ã  2 cuillÃ¨res Ã  soupe diluÃ©es dans un grand verre d'eau, 15 minutes avant le repas. L'acide acÃ©tique ralentit la vidange gastrique et inhibe partiellement les enzymes digestives des amidons. RÃ©sultat : un pic glycÃ©mique rÃ©duit de <strong>20 Ã  35 %</strong>.</p>
+<p>1 à 2 cuillères à soupe diluées dans un grand verre d'eau, 15 minutes avant le repas. L'acide acétique ralentit la vidange gastrique et inhibe partiellement les enzymes digestives des amidons. Résultat : un pic glycémique réduit de <strong>20 à 35 %</strong>.</p>
 
-<h3>4. Les fibres : votre meilleur alliÃ©</h3>
-<p>Les fibres solubles forment un gel dans l'intestin qui ralentit l'absorption du glucose. Visez <strong>30 Ã  40 g de fibres par jour</strong> :</p>
+<h3>4. Les fibres : votre meilleur allié</h3>
+<p>Les fibres solubles forment un gel dans l'intestin qui ralentit l'absorption du glucose. Visez <strong>30 à 40 g de fibres par jour</strong> :</p>
 <ul>
 <li>Graines de chia et de lin (moulues)</li>
-<li>Psyllium (1 c. Ã  soupe avant les repas)</li>
-<li>LÃ©gumineuses Ã  chaque repas</li>
-<li>LÃ©gumes verts en abondance</li>
+<li>Psyllium (1 c. à soupe avant les repas)</li>
+<li>Légumineuses à chaque repas</li>
+<li>Légumes verts en abondance</li>
 <li>Avoine et orge</li>
 </ul>
 
-<h3>5. La musculation : le rÃ©servoir Ã  glucose</h3>
-<p>Vos muscles stockent 80 % du glucose absorbÃ©. Plus vous avez de masse musculaire, plus votre corps a de capacitÃ© Ã  gÃ©rer le glucose. La musculation 2 Ã  3 fois par semaine amÃ©liore la sensibilitÃ© Ã  l'insuline pendant <strong>48 Ã  72 heures</strong> aprÃ¨s chaque sÃ©ance.</p>
+<h3>5. La musculation : le réservoir à glucose</h3>
+<p>Vos muscles stockent 80 % du glucose absorbé. Plus vous avez de masse musculaire, plus votre corps a de capacité à gérer le glucose. La musculation 2 à 3 fois par semaine améliore la sensibilité à l'insuline pendant <strong>48 à 72 heures</strong> après chaque séance.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Si l'exercice physique Ã©tait un mÃ©dicament, ce serait le plus prescrit au monde. La musculation en particulier est dramatiquement sous-utilisÃ©e chez les personnes Ã  risque de diabÃ¨te. C'est pourtant l'outil le plus puissant pour augmenter votre capacitÃ© Ã  stocker le glucose. Â» â€” <strong>Dr. Peter Attia</strong>
+💬 <strong>Avis d'expert :</strong> « Si l'exercice physique était un médicament, ce serait le plus prescrit au monde. La musculation en particulier est dramatiquement sous-utilisée chez les personnes à risque de diabète. C'est pourtant l'outil le plus puissant pour augmenter votre capacité à stocker le glucose. » — <strong>Dr. Peter Attia</strong>
 </blockquote>
 
-<h3>6. Le jeÃ»ne intermittent lÃ©ger (12-16h)</h3>
-<p>Un jeÃ»ne nocturne de 12 Ã  16 heures permet au corps de vider ses rÃ©serves de glycogÃ¨ne hÃ©patique et d'amÃ©liorer la sensibilitÃ© Ã  l'insuline. Commencez par 12h (dÃ®ner Ã  20h, petit-dÃ©jeuner Ã  8h) puis progressez si vous le souhaitez.</p>
+<h3>6. Le jeûne intermittent léger (12-16h)</h3>
+<p>Un jeûne nocturne de 12 à 16 heures permet au corps de vider ses réserves de glycogène hépatique et d'améliorer la sensibilité à l'insuline. Commencez par 12h (dîner à 20h, petit-déjeuner à 8h) puis progressez si vous le souhaitez.</p>
 
 <h3>7. La cannelle de Ceylan</h3>
-<p>1 Ã  3 g de cannelle de Ceylan par jour peut rÃ©duire la glycÃ©mie Ã  jeun de 10 Ã  25 mg/dL. Elle agit en mimant partiellement l'action de l'insuline et en ralentissant la vidange gastrique. Ajoutez-la dans vos porridges, yaourts ou boissons chaudes.</p>
+<p>1 à 3 g de cannelle de Ceylan par jour peut réduire la glycémie à jeun de 10 à 25 mg/dL. Elle agit en mimant partiellement l'action de l'insuline et en ralentissant la vidange gastrique. Ajoutez-la dans vos porridges, yaourts ou boissons chaudes.</p>
 
-<h3>8. Le magnÃ©sium</h3>
-<p>La carence en magnÃ©sium est extrÃªmement frÃ©quente et aggrave directement l'insulino-rÃ©sistance. Sources alimentaires : amandes, Ã©pinards, chocolat noir, graines de citrouille, avocats. Si nÃ©cessaire, un complÃ©ment de bisglycinate de magnÃ©sium (300-400 mg/jour).</p>
+<h3>8. Le magnésium</h3>
+<p>La carence en magnésium est extrêmement fréquente et aggrave directement l'insulino-résistance. Sources alimentaires : amandes, épinards, chocolat noir, graines de citrouille, avocats. Si nécessaire, un complément de bisglycinate de magnésium (300-400 mg/jour).</p>
 
-<h3>9. Le sommeil de qualitÃ©</h3>
-<p>Une seule nuit de mauvais sommeil augmente l'insulino-rÃ©sistance du lendemain de 25 Ã  40 %. Le sommeil n'est pas nÃ©gociable pour la rÃ©gulation glycÃ©mique.</p>
+<h3>9. Le sommeil de qualité</h3>
+<p>Une seule nuit de mauvais sommeil augmente l'insulino-résistance du lendemain de 25 à 40 %. Le sommeil n'est pas négociable pour la régulation glycémique.</p>
 
 <ul>
-<li>7 Ã  8 heures par nuit minimum</li>
-<li>Horaires rÃ©guliers (Â±30 min)</li>
-<li>Chambre fraÃ®che, sombre, silencieuse</li>
-<li>Pas de cafÃ©ine aprÃ¨s 14h</li>
+<li>7 à 8 heures par nuit minimum</li>
+<li>Horaires réguliers (±30 min)</li>
+<li>Chambre fraîche, sombre, silencieuse</li>
+<li>Pas de caféine après 14h</li>
 </ul>
 
 <h3>10. La gestion du stress</h3>
-<p>Le cortisol Ã©lÃ¨ve directement la glycÃ©mie. Techniques efficaces : cohÃ©rence cardiaque (5-5-5 : 5 secondes inspiration, 5 secondes expiration, 5 minutes), mÃ©ditation guidÃ©e, marche en nature.</p>
+<p>Le cortisol élève directement la glycémie. Techniques efficaces : cohérence cardiaque (5-5-5 : 5 secondes inspiration, 5 secondes expiration, 5 minutes), méditation guidée, marche en nature.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Une mÃ©ta-analyse de Qiu et al. (2017), publiÃ©e dans <em>Medicine</em>, portant sur 13 essais contrÃ´lÃ©s randomisÃ©s, a conclu que le jeÃ»ne intermittent rÃ©duisait significativement la glycÃ©mie Ã  jeun (-4,16 mg/dL en moyenne), l'insulinÃ©mie et l'insulino-rÃ©sistance (HOMA-IR) chez les personnes en surpoids ou obÃ¨ses.
+🔬 <strong>Ce que dit la science :</strong> Une méta-analyse de Qiu et al. (2017), publiée dans <em>Medicine</em>, portant sur 13 essais contrôlés randomisés, a conclu que le jeûne intermittent réduisait significativement la glycémie à jeun (-4,16 mg/dL en moyenne), l'insulinémie et l'insulino-résistance (HOMA-IR) chez les personnes en surpoids ou obèses.
 </blockquote>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude de Spiegel et al. (1999, <em>The Lancet</em>) a Ã©tÃ© l'une des premiÃ¨res Ã  dÃ©montrer qu'une restriction de sommeil Ã  4 heures par nuit pendant seulement 6 jours suffisait Ã  induire un Ã©tat prÃ©-diabÃ©tique chez des sujets jeunes et en bonne santÃ©.
+🔬 <strong>Ce que dit la science :</strong> L'étude de Spiegel et al. (1999, <em>The Lancet</em>) a été l'une des premières à démontrer qu'une restriction de sommeil à 4 heures par nuit pendant seulement 6 jours suffisait à induire un état pré-diabétique chez des sujets jeunes et en bonne santé.
 </blockquote>
 
-<h2>Le protocole combinÃ© : maximiser les rÃ©sultats</h2>
+<h2>Le protocole combiné : maximiser les résultats</h2>
 
-<p>La puissance de ces mÃ©thodes se multiplie quand on les combine intelligemment. Voici un protocole quotidien optimal :</p>
+<p>La puissance de ces méthodes se multiplie quand on les combine intelligemment. Voici un protocole quotidien optimal :</p>
 
 <ol>
-<li><strong>Matin</strong> : Petit-dÃ©jeuner protÃ©inÃ© + fibres (pas de jus de fruits ni cÃ©rÃ©ales sucrÃ©es)</li>
-<li><strong>Midi</strong> : LÃ©gumes â†’ ProtÃ©ines â†’ Glucides (dans cet ordre). Marche de 15 min aprÃ¨s.</li>
-<li><strong>AprÃ¨s-midi</strong> : SÃ©ance de musculation (jours d'entraÃ®nement) ou marche active de 30 min</li>
-<li><strong>Soir</strong> : Vinaigre de cidre + dÃ®ner lÃ©ger en glucides. Marche digestive.</li>
-<li><strong>Nuit</strong> : Routine de sommeil rÃ©guliÃ¨re. JeÃ»ne nocturne de 12-14h.</li>
+<li><strong>Matin</strong> : Petit-déjeuner protéiné + fibres (pas de jus de fruits ni céréales sucrées)</li>
+<li><strong>Midi</strong> : Légumes → Protéines → Glucides (dans cet ordre). Marche de 15 min après.</li>
+<li><strong>Après-midi</strong> : Séance de musculation (jours d'entraînement) ou marche active de 30 min</li>
+<li><strong>Soir</strong> : Vinaigre de cidre + dîner léger en glucides. Marche digestive.</li>
+<li><strong>Nuit</strong> : Routine de sommeil régulière. Jeûne nocturne de 12-14h.</li>
 </ol>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Ne cherchez pas la solution miracle unique. La magie rÃ©side dans l'empilement de petites habitudes qui, ensemble, transforment votre mÃ©tabolisme. Chacune de ces stratÃ©gies a un effet modeste isolÃ©ment, mais leur combinaison est spectaculaire. Â» â€” <strong>Dr. Jason Fung</strong>
+💬 <strong>Avis d'expert :</strong> « Ne cherchez pas la solution miracle unique. La magie réside dans l'empilement de petites habitudes qui, ensemble, transforment votre métabolisme. Chacune de ces stratégies a un effet modeste isolément, mais leur combinaison est spectaculaire. » — <strong>Dr. Jason Fung</strong>
 </blockquote>
 
-<h2>Mettez ces mÃ©thodes en pratique avec SÃ¨che 10 Semaines</h2>
+<h2>Mettez ces méthodes en pratique avec Sèche 10 Semaines</h2>
 
-<p>Vous connaissez maintenant les mÃ©thodes. Le plus dur, c'est de les intÃ©grer dans votre quotidien de maniÃ¨re structurÃ©e et progressive. C'est exactement ce que fait le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> : un plan semaine par semaine qui combine alimentation anti-glycÃ©mique, musculation progressive et habitudes de vie optimisÃ©es.</p>
+<p>Vous connaissez maintenant les méthodes. Le plus dur, c'est de les intégrer dans votre quotidien de manière structurée et progressive. C'est exactement ce que fait le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> : un plan semaine par semaine qui combine alimentation anti-glycémique, musculation progressive et habitudes de vie optimisées.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Baissez votre glycÃ©mie naturellement en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Commencer le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Baissez votre glycémie naturellement en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Commencer le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin pour un suivi adaptÃ© Ã  votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
     slug: "triglycerides-eleves-alimentation",
-    title: "TriglycÃ©rides Ã‰levÃ©s : L'Alimentation Qui Change Tout",
-    metaDescription: "TriglycÃ©rides Ã©levÃ©s ? DÃ©couvrez les changements alimentaires qui font baisser vos triglycÃ©rides rapidement, validÃ©s par les Ã©tudes scientifiques.",
+    title: "Triglycérides Élevés : L'Alimentation Qui Change Tout",
+    metaDescription: "Triglycérides élevés ? Découvrez les changements alimentaires qui font baisser vos triglycérides rapidement, validés par les études scientifiques.",
     date: "2026-02-21",
     readTime: "11 min",
-    keyword: "triglycÃ©rides Ã©levÃ©s alimentation",
+    keyword: "triglycérides élevés alimentation",
     content: `<article>
-<h1>TriglycÃ©rides Ã‰levÃ©s : L'Alimentation Qui Change Tout</h1>
+<h1>Triglycérides Élevés : L'Alimentation Qui Change Tout</h1>
 
-<p>Des triglycÃ©rides au-dessus de <strong>1,50 g/L</strong> sur votre bilan sanguin ? Ce n'est pas un problÃ¨me de graisses alimentaires â€” c'est presque toujours un <strong>problÃ¨me de sucres</strong>. Cette distinction fondamentale change tout dans l'approche alimentaire Ã  adopter.</p>
+<p>Des triglycérides au-dessus de <strong>1,50 g/L</strong> sur votre bilan sanguin ? Ce n'est pas un problème de graisses alimentaires — c'est presque toujours un <strong>problème de sucres</strong>. Cette distinction fondamentale change tout dans l'approche alimentaire à adopter.</p>
 
-<h2>Qu'est-ce que les triglycÃ©rides et pourquoi sont-ils Ã©levÃ©s ?</h2>
+<h2>Qu'est-ce que les triglycérides et pourquoi sont-ils élevés ?</h2>
 
-<p>Les triglycÃ©rides sont des graisses fabriquÃ©es par votre <strong>foie Ã  partir des glucides excÃ©dentaires</strong>. Quand vous consommez plus de sucres et de fÃ©culents que vos muscles ne peuvent en brÃ»ler, le foie convertit le surplus en triglycÃ©rides et les libÃ¨re dans le sang.</p>
+<p>Les triglycérides sont des graisses fabriquées par votre <strong>foie à partir des glucides excédentaires</strong>. Quand vous consommez plus de sucres et de féculents que vos muscles ne peuvent en brûler, le foie convertit le surplus en triglycérides et les libère dans le sang.</p>
 
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <tr style="background:#f3f4f6;"><th style="padding:12px;border:1px solid #d1d5db;">Niveau</th><th style="padding:12px;border:1px solid #d1d5db;">Valeur</th></tr>
 <tr><td style="padding:12px;border:1px solid #d1d5db;">Normal</td><td style="padding:12px;border:1px solid #d1d5db;">&lt; 1,50 g/L</td></tr>
 <tr><td style="padding:12px;border:1px solid #d1d5db;">Limite</td><td style="padding:12px;border:1px solid #d1d5db;">1,50 - 2,00 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">Ã‰levÃ©</td><td style="padding:12px;border:1px solid #d1d5db;">2,00 - 5,00 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">TrÃ¨s Ã©levÃ©</td><td style="padding:12px;border:1px solid #d1d5db;">&gt; 5,00 g/L</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">Élevé</td><td style="padding:12px;border:1px solid #d1d5db;">2,00 - 5,00 g/L</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">Très élevé</td><td style="padding:12px;border:1px solid #d1d5db;">&gt; 5,00 g/L</td></tr>
 </table>
 
-<p>Les vrais coupables de triglycÃ©rides Ã©levÃ©s :</p>
+<p>Les vrais coupables de triglycérides élevés :</p>
 <ul>
-<li><strong>Le fructose</strong> : sodas, jus de fruits, sirop de maÃ¯s â€” le fructose est mÃ©tabolisÃ© exclusivement par le foie qui le transforme directement en triglycÃ©rides</li>
-<li><strong>L'alcool</strong> : mÃªme modÃ©rÃ©, l'alcool est prioritairement converti en triglycÃ©rides hÃ©patiques</li>
-<li><strong>Les glucides raffinÃ©s</strong> : pain blanc, pÃ¢tisseries, cÃ©rÃ©ales sucrÃ©es</li>
-<li><strong>L'excÃ¨s calorique global</strong> : surtout sous forme de glucides</li>
-<li><strong>La sÃ©dentaritÃ©</strong> : les muscles inactifs ne consomment pas le glucose disponible</li>
+<li><strong>Le fructose</strong> : sodas, jus de fruits, sirop de maïs — le fructose est métabolisé exclusivement par le foie qui le transforme directement en triglycérides</li>
+<li><strong>L'alcool</strong> : même modéré, l'alcool est prioritairement converti en triglycérides hépatiques</li>
+<li><strong>Les glucides raffinés</strong> : pain blanc, pâtisseries, céréales sucrées</li>
+<li><strong>L'excès calorique global</strong> : surtout sous forme de glucides</li>
+<li><strong>La sédentarité</strong> : les muscles inactifs ne consomment pas le glucose disponible</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Stanhope et al. (2009), dans une Ã©tude publiÃ©e dans le <em>Journal of Clinical Investigation</em>, ont montrÃ© que la consommation de boissons sucrÃ©es au fructose pendant 10 semaines augmentait les triglycÃ©rides de <strong>32 %</strong>, la graisse viscÃ©rale et l'insulino-rÃ©sistance â€” contrairement aux boissons sucrÃ©es au glucose qui n'avaient pas ces effets spÃ©cifiques sur les triglycÃ©rides.
+🔬 <strong>Ce que dit la science :</strong> Stanhope et al. (2009), dans une étude publiée dans le <em>Journal of Clinical Investigation</em>, ont montré que la consommation de boissons sucrées au fructose pendant 10 semaines augmentait les triglycérides de <strong>32 %</strong>, la graisse viscérale et l'insulino-résistance — contrairement aux boissons sucrées au glucose qui n'avaient pas ces effets spécifiques sur les triglycérides.
 </blockquote>
 
-<h2>Le plan alimentaire anti-triglycÃ©rides</h2>
+<h2>Le plan alimentaire anti-triglycérides</h2>
 
-<h3>Ã‰tape 1 : Ã‰liminer les sucres liquides (impact immÃ©diat)</h3>
-<p>C'est la mesure la plus efficace. Supprimez complÃ¨tement :</p>
+<h3>Étape 1 : Éliminer les sucres liquides (impact immédiat)</h3>
+<p>C'est la mesure la plus efficace. Supprimez complètement :</p>
 <ul>
-<li>Sodas et boissons sucrÃ©es</li>
-<li>Jus de fruits (mÃªme 100 % pur jus â€” le fructose libre est identique)</li>
-<li>Smoothies trÃ¨s sucrÃ©s</li>
+<li>Sodas et boissons sucrées</li>
+<li>Jus de fruits (même 100 % pur jus — le fructose libre est identique)</li>
+<li>Smoothies très sucrés</li>
 <li>Alcool (au moins temporairement, 4 semaines minimum)</li>
 </ul>
-<p>Cette seule mesure peut faire baisser vos triglycÃ©rides de <strong>20 Ã  40 %</strong> en 4 semaines.</p>
+<p>Cette seule mesure peut faire baisser vos triglycérides de <strong>20 à 40 %</strong> en 4 semaines.</p>
 
-<h3>Ã‰tape 2 : RÃ©duire les glucides raffinÃ©s</h3>
-<p>Remplacez systÃ©matiquement :</p>
+<h3>Étape 2 : Réduire les glucides raffinés</h3>
+<p>Remplacez systématiquement :</p>
 <ul>
-<li>Pain blanc â†’ Pain complet au levain (ou supprimez le pain au dÃ®ner)</li>
-<li>PÃ¢tes blanches â†’ Lentilles, pois chiches, quinoa</li>
-<li>Riz blanc â†’ Riz basmati complet ou patate douce</li>
-<li>CÃ©rÃ©ales du petit-dÃ©jeuner â†’ Porridge d'avoine nature ou Å“ufs</li>
+<li>Pain blanc → Pain complet au levain (ou supprimez le pain au dîner)</li>
+<li>Pâtes blanches → Lentilles, pois chiches, quinoa</li>
+<li>Riz blanc → Riz basmati complet ou patate douce</li>
+<li>Céréales du petit-déjeuner → Porridge d'avoine nature ou Å“ufs</li>
 </ul>
 
-<h3>Ã‰tape 3 : Augmenter les omÃ©ga-3</h3>
-<p>Les omÃ©ga-3 EPA et DHA rÃ©duisent directement la production hÃ©patique de triglycÃ©rides. Sources :</p>
+<h3>Étape 3 : Augmenter les oméga-3</h3>
+<p>Les oméga-3 EPA et DHA réduisent directement la production hépatique de triglycérides. Sources :</p>
 <ul>
 <li><strong>Poissons gras</strong> : saumon sauvage, sardines, maquereau (3-4 fois/semaine)</li>
-<li><strong>ComplÃ©mentation</strong> : si nÃ©cessaire, 2 Ã  4 g d'EPA+DHA par jour (sous supervision mÃ©dicale pour les doses Ã©levÃ©es)</li>
+<li><strong>Complémentation</strong> : si nécessaire, 2 à 4 g d'EPA+DHA par jour (sous supervision médicale pour les doses élevées)</li>
 </ul>
 
-<h3>Ã‰tape 4 : Manger plus de bonnes graisses</h3>
-<p>Cela semble contre-intuitif, mais remplacer les glucides par des graisses saines fait <em>baisser</em> les triglycÃ©rides :</p>
+<h3>Étape 4 : Manger plus de bonnes graisses</h3>
+<p>Cela semble contre-intuitif, mais remplacer les glucides par des graisses saines fait <em>baisser</em> les triglycérides :</p>
 <ul>
-<li>Huile d'olive extra-vierge (3-4 c. Ã  soupe/jour)</li>
-<li>Avocat (1/2 Ã  1 par jour)</li>
+<li>Huile d'olive extra-vierge (3-4 c. à soupe/jour)</li>
+<li>Avocat (1/2 à 1 par jour)</li>
 <li>Noix et amandes (30 g/jour)</li>
-<li>Beurre de qualitÃ© (en modÃ©ration)</li>
+<li>Beurre de qualité (en modération)</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Les triglycÃ©rides Ã©levÃ©s ne sont pas causÃ©s par les graisses alimentaires. Ils sont causÃ©s par les glucides que votre foie convertit en graisses. La solution n'est pas un rÃ©gime pauvre en graisses â€” c'est un rÃ©gime pauvre en sucres. C'est l'exact opposÃ© de ce qu'on recommande depuis 40 ans. Â» â€” <strong>Dr. Robert Lustig</strong>, endocrinologue, UCSF
+💬 <strong>Avis d'expert :</strong> « Les triglycérides élevés ne sont pas causés par les graisses alimentaires. Ils sont causés par les glucides que votre foie convertit en graisses. La solution n'est pas un régime pauvre en graisses — c'est un régime pauvre en sucres. C'est l'exact opposé de ce qu'on recommande depuis 40 ans. » — <strong>Dr. Robert Lustig</strong>, endocrinologue, UCSF
 </blockquote>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Volek et al. (2009, <em>Lipids</em>) ont dÃ©montrÃ© qu'un rÃ©gime pauvre en glucides rÃ©duisait les triglycÃ©rides de <strong>51 %</strong> en 12 semaines, contre seulement 19 % pour un rÃ©gime pauvre en graisses avec le mÃªme dÃ©ficit calorique.
+🔬 <strong>Ce que dit la science :</strong> Volek et al. (2009, <em>Lipids</em>) ont démontré qu'un régime pauvre en glucides réduisait les triglycérides de <strong>51 %</strong> en 12 semaines, contre seulement 19 % pour un régime pauvre en graisses avec le même déficit calorique.
 </blockquote>
 
-<h3>Ã‰tape 5 : Bouger aprÃ¨s les repas</h3>
-<p>L'activitÃ© physique post-prandiale est particuliÃ¨rement efficace pour rÃ©duire les triglycÃ©rides. Une marche de 30 minutes aprÃ¨s le repas principal rÃ©duit les triglycÃ©rides post-prandiaux de 30 Ã  50 %.</p>
+<h3>Étape 5 : Bouger après les repas</h3>
+<p>L'activité physique post-prandiale est particulièrement efficace pour réduire les triglycérides. Une marche de 30 minutes après le repas principal réduit les triglycérides post-prandiaux de 30 à 50 %.</p>
 
-<h2>RÃ©sultats attendus</h2>
+<h2>Résultats attendus</h2>
 
 <p>Avec ces changements alimentaires, voici ce que vous pouvez attendre :</p>
 <ul>
-<li><strong>2 semaines</strong> : premiers signes de baisse (surtout si arrÃªt de l'alcool et des sucres liquides)</li>
-<li><strong>4 semaines</strong> : baisse significative de 20 Ã  40 %</li>
-<li><strong>8-10 semaines</strong> : normalisation dans la majoritÃ© des cas (si les triglycÃ©rides initiaux Ã©taient &lt; 4 g/L)</li>
+<li><strong>2 semaines</strong> : premiers signes de baisse (surtout si arrêt de l'alcool et des sucres liquides)</li>
+<li><strong>4 semaines</strong> : baisse significative de 20 à 40 %</li>
+<li><strong>8-10 semaines</strong> : normalisation dans la majorité des cas (si les triglycérides initiaux étaient &lt; 4 g/L)</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Les triglycÃ©rides sont le marqueur le plus rÃ©actif Ã  l'alimentation. Si vous changez ce que vous mangez, vos triglycÃ©rides rÃ©pondront en quelques semaines. C'est extrÃªmement motivant â€” vous voyez rapidement le rÃ©sultat de vos efforts sur votre bilan sanguin. Â» â€” <strong>Dr. Peter Attia</strong>
+💬 <strong>Avis d'expert :</strong> « Les triglycérides sont le marqueur le plus réactif à l'alimentation. Si vous changez ce que vous mangez, vos triglycérides répondront en quelques semaines. C'est extrêmement motivant — vous voyez rapidement le résultat de vos efforts sur votre bilan sanguin. » — <strong>Dr. Peter Attia</strong>
 </blockquote>
 
-<h2>Faites baisser vos triglycÃ©rides avec SÃ¨che 10 Semaines</h2>
+<h2>Faites baisser vos triglycérides avec Sèche 10 Semaines</h2>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> est parfaitement alignÃ© avec les principes anti-triglycÃ©rides : rÃ©duction des glucides raffinÃ©s, augmentation des protÃ©ines et bonnes graisses, exercice progressif. En 10 semaines, attendez-vous Ã  des changements visibles sur votre bilan sanguin.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> est parfaitement aligné avec les principes anti-triglycérides : réduction des glucides raffinés, augmentation des protéines et bonnes graisses, exercice progressif. En 10 semaines, attendez-vous à des changements visibles sur votre bilan sanguin.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Normalisez vos triglycÃ©rides en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Normalisez vos triglycérides en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin pour un suivi adaptÃ© Ã  votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
     slug: "perdre-ventre-homme-50-ans-diabete",
-    title: "Perdre du Ventre AprÃ¨s 50 Ans avec PrÃ©diabÃ¨te : Le Guide",
-    metaDescription: "Homme de 50+ ans avec prÃ©diabÃ¨te ? DÃ©couvrez le guide complet pour perdre du ventre, normaliser votre glycÃ©mie et retrouver votre santÃ©.",
+    title: "Perdre du Ventre Après 50 Ans avec Prédiabète : Le Guide",
+    metaDescription: "Homme de 50+ ans avec prédiabète ? Découvrez le guide complet pour perdre du ventre, normaliser votre glycémie et retrouver votre santé.",
     date: "2026-02-21",
     readTime: "13 min",
-    keyword: "perdre ventre homme 50 ans diabÃ¨te",
+    keyword: "perdre ventre homme 50 ans diabète",
     content: `<article>
-<h1>Perdre du Ventre AprÃ¨s 50 Ans avec PrÃ©diabÃ¨te : Le Guide</h1>
+<h1>Perdre du Ventre Après 50 Ans avec Prédiabète : Le Guide</h1>
 
-<p>Vous avez passÃ© les 50 ans, votre tour de taille dÃ©passe les 100 cm, et votre mÃ©decin vient de vous annoncer un <strong>prÃ©diabÃ¨te</strong>. La graisse abdominale qui s'est installÃ©e progressivement n'est pas qu'un problÃ¨me esthÃ©tique â€” c'est le <strong>moteur principal</strong> de votre dÃ©rÃ¨glement mÃ©tabolique. Mais voici la bonne nouvelle : c'est aussi la graisse la plus rÃ©active aux bonnes stratÃ©gies.</p>
+<p>Vous avez passé les 50 ans, votre tour de taille dépasse les 100 cm, et votre médecin vient de vous annoncer un <strong>prédiabète</strong>. La graisse abdominale qui s'est installée progressivement n'est pas qu'un problème esthétique — c'est le <strong>moteur principal</strong> de votre dérèglement métabolique. Mais voici la bonne nouvelle : c'est aussi la graisse la plus réactive aux bonnes stratégies.</p>
 
-<h2>Pourquoi le ventre grossit aprÃ¨s 50 ans</h2>
+<h2>Pourquoi le ventre grossit après 50 ans</h2>
 
-<p>Plusieurs facteurs convergent Ã  cet Ã¢ge :</p>
+<p>Plusieurs facteurs convergent à cet âge :</p>
 <ul>
-<li><strong>Baisse de la testostÃ©rone</strong> : -1 Ã  2 % par an Ã  partir de 30 ans. La testostÃ©rone freine le stockage viscÃ©ral ; sa diminution favorise le dÃ©pÃ´t de graisse abdominale.</li>
-<li><strong>SarcopÃ©nie</strong> : perte de masse musculaire de 3 Ã  8 % par dÃ©cennie aprÃ¨s 30 ans. Moins de muscle = moins de calories brÃ»lÃ©es au repos = plus de stockage.</li>
-<li><strong>Insulino-rÃ©sistance progressive</strong> : plus vous avez de graisse viscÃ©rale, plus vous Ãªtes rÃ©sistant Ã  l'insuline, plus vous stockez de la graisse viscÃ©rale â€” un cercle vicieux.</li>
-<li><strong>Stress et cortisol</strong> : carriÃ¨re, responsabilitÃ©s familiales, qualitÃ© de sommeil dÃ©gradÃ©e â€” tout cela Ã©lÃ¨ve le cortisol qui favorise le stockage abdominal.</li>
+<li><strong>Baisse de la testostérone</strong> : -1 à 2 % par an à partir de 30 ans. La testostérone freine le stockage viscéral ; sa diminution favorise le dépôt de graisse abdominale.</li>
+<li><strong>Sarcopénie</strong> : perte de masse musculaire de 3 à 8 % par décennie après 30 ans. Moins de muscle = moins de calories brûlées au repos = plus de stockage.</li>
+<li><strong>Insulino-résistance progressive</strong> : plus vous avez de graisse viscérale, plus vous êtes résistant à l'insuline, plus vous stockez de la graisse viscérale — un cercle vicieux.</li>
+<li><strong>Stress et cortisol</strong> : carrière, responsabilités familiales, qualité de sommeil dégradée — tout cela élève le cortisol qui favorise le stockage abdominal.</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude Look AHEAD (Action for Health in Diabetes), publiÃ©e dans le <em>NEJM</em> (2013), a suivi plus de 5 000 participants diabÃ©tiques pendant 10 ans. Le groupe Â« intervention intensive Â» (alimentation + exercice) a perdu en moyenne 6 % de leur poids et a significativement amÃ©liorÃ© leur contrÃ´le glycÃ©mique, leur pression artÃ©rielle et leur profil lipidique par rapport au groupe tÃ©moin.
+🔬 <strong>Ce que dit la science :</strong> L'étude Look AHEAD (Action for Health in Diabetes), publiée dans le <em>NEJM</em> (2013), a suivi plus de 5 000 participants diabétiques pendant 10 ans. Le groupe « intervention intensive » (alimentation + exercice) a perdu en moyenne 6 % de leur poids et a significativement amélioré leur contrôle glycémique, leur pression artérielle et leur profil lipidique par rapport au groupe témoin.
 </blockquote>
 
-<h2>L'approche spÃ©cifique pour l'homme de 50+ ans</h2>
+<h2>L'approche spécifique pour l'homme de 50+ ans</h2>
 
-<h3>1. La musculation : prioritÃ© absolue</h3>
-<p>Ã€ 50 ans, l'erreur classique est de faire du cardio exclusivement. Courir ou faire du vÃ©lo brÃ»le des calories, mais ne reconstruit pas le muscle perdu. La musculation est votre <strong>traitement anti-Ã¢ge mÃ©tabolique</strong>.</p>
+<h3>1. La musculation : priorité absolue</h3>
+<p>À 50 ans, l'erreur classique est de faire du cardio exclusivement. Courir ou faire du vélo brûle des calories, mais ne reconstruit pas le muscle perdu. La musculation est votre <strong>traitement anti-âge métabolique</strong>.</p>
 
 <ul>
-<li><strong>2 Ã  3 sÃ©ances par semaine</strong> de musculation full-body</li>
-<li><strong>Exercices composÃ©s</strong> : squats (ou presse), dÃ©veloppÃ© couchÃ©/poussÃ©, rowing, soulevÃ© de terre roumain</li>
+<li><strong>2 à 3 séances par semaine</strong> de musculation full-body</li>
+<li><strong>Exercices composés</strong> : squats (ou presse), développé couché/poussé, rowing, soulevé de terre roumain</li>
 <li><strong>Charges progressives</strong> : augmentez graduellement le poids. Le muscle se construit sous la contrainte.</li>
-<li><strong>RÃ©cupÃ©ration</strong> : Ã  50 ans, prÃ©voyez 48h entre les sÃ©ances ciblant les mÃªmes groupes musculaires</li>
+<li><strong>Récupération</strong> : à 50 ans, prévoyez 48h entre les séances ciblant les mêmes groupes musculaires</li>
 </ul>
 
-<p>Chaque kilo de muscle gagnÃ© augmente votre dÃ©pense Ã©nergÃ©tique au repos de 13 kcal/jour et amÃ©liore votre sensibilitÃ© Ã  l'insuline pendant 48 Ã  72h.</p>
+<p>Chaque kilo de muscle gagné augmente votre dépense énergétique au repos de 13 kcal/jour et améliore votre sensibilité à l'insuline pendant 48 à 72h.</p>
 
-<h3>2. L'alimentation protÃ©inÃ©e et anti-inflammatoire</h3>
-<p>AprÃ¨s 50 ans, les besoins en protÃ©ines augmentent (rÃ©sistance anabolique). Visez <strong>1,6 Ã  2 g de protÃ©ines par kg de poids corporel par jour</strong> rÃ©partis sur 3-4 repas.</p>
+<h3>2. L'alimentation protéinée et anti-inflammatoire</h3>
+<p>Après 50 ans, les besoins en protéines augmentent (résistance anabolique). Visez <strong>1,6 à 2 g de protéines par kg de poids corporel par jour</strong> répartis sur 3-4 repas.</p>
 
-<p><strong>Petit-dÃ©jeuner type :</strong> 3 Å“ufs brouillÃ©s + avocat + tomates + cafÃ© noir</p>
-<p><strong>DÃ©jeuner type :</strong> 150 g de poulet ou poisson + lÃ©gumes verts + huile d'olive + patate douce (petite portion)</p>
-<p><strong>DÃ®ner type :</strong> 150 g de saumon + brocoli vapeur + salade + noix</p>
+<p><strong>Petit-déjeuner type :</strong> 3 Å“ufs brouillés + avocat + tomates + café noir</p>
+<p><strong>Déjeuner type :</strong> 150 g de poulet ou poisson + légumes verts + huile d'olive + patate douce (petite portion)</p>
+<p><strong>Dîner type :</strong> 150 g de saumon + brocoli vapeur + salade + noix</p>
 
-<h3>3. La marche quotidienne : 8 000 Ã  10 000 pas</h3>
-<p>La marche est le complÃ©ment idÃ©al de la musculation. Elle brÃ»le les graisses sans stresser les articulations et rÃ©duit le cortisol. Visez une marche de 20 minutes aprÃ¨s chaque repas principal.</p>
+<h3>3. La marche quotidienne : 8 000 à 10 000 pas</h3>
+<p>La marche est le complément idéal de la musculation. Elle brûle les graisses sans stresser les articulations et réduit le cortisol. Visez une marche de 20 minutes après chaque repas principal.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« AprÃ¨s 50 ans, la musculation n'est pas optionnelle â€” c'est une nÃ©cessitÃ© mÃ©dicale. La sarcopÃ©nie (perte de muscle liÃ©e Ã  l'Ã¢ge) est l'un des principaux moteurs du diabÃ¨te de type 2 chez les hommes vieillissants. Reconstruire du muscle, c'est reconstruire votre mÃ©tabolisme. Â» â€” <strong>Dr. Peter Attia</strong>
+💬 <strong>Avis d'expert :</strong> « Après 50 ans, la musculation n'est pas optionnelle — c'est une nécessité médicale. La sarcopénie (perte de muscle liée à l'âge) est l'un des principaux moteurs du diabète de type 2 chez les hommes vieillissants. Reconstruire du muscle, c'est reconstruire votre métabolisme. » — <strong>Dr. Peter Attia</strong>
 </blockquote>
 
-<h3>4. GÃ©rer le cortisol et le sommeil</h3>
-<p>AprÃ¨s 50 ans, la qualitÃ© du sommeil diminue naturellement (moins de sommeil profond). Or c'est pendant le sommeil profond que l'hormone de croissance est sÃ©crÃ©tÃ©e â€” essentielle pour la rÃ©cupÃ©ration musculaire et la mobilisation des graisses.</p>
+<h3>4. Gérer le cortisol et le sommeil</h3>
+<p>Après 50 ans, la qualité du sommeil diminue naturellement (moins de sommeil profond). Or c'est pendant le sommeil profond que l'hormone de croissance est sécrétée — essentielle pour la récupération musculaire et la mobilisation des graisses.</p>
 
 <ul>
-<li>Couchez-vous Ã  heures fixes (mÃªme le week-end)</li>
-<li>Pas d'Ã©cran 1h avant le coucher</li>
-<li>Chambre fraÃ®che (18Â°C) et totalement obscure</li>
+<li>Couchez-vous à heures fixes (même le week-end)</li>
+<li>Pas d'écran 1h avant le coucher</li>
+<li>Chambre fraîche (18°C) et totalement obscure</li>
 <li>Limitez l'alcool (perturbe le sommeil profond)</li>
-<li>Envisagez un complÃ©ment de magnÃ©sium glycinate le soir (300-400 mg)</li>
+<li>Envisagez un complément de magnésium glycinate le soir (300-400 mg)</li>
 </ul>
 
-<h3>5. Les objectifs rÃ©alistes</h3>
-<p>Ne visez pas la perfection â€” visez la progression :</p>
+<h3>5. Les objectifs réalistes</h3>
+<p>Ne visez pas la perfection — visez la progression :</p>
 <ul>
-<li><strong>Semaines 1-4</strong> : -2 Ã  3 cm de tour de taille, habitudes alimentaires en place</li>
-<li><strong>Semaines 5-8</strong> : -4 Ã  6 cm de tour de taille, force en augmentation</li>
-<li><strong>Semaines 9-10</strong> : glycÃ©mie en amÃ©lioration mesurable, -6 Ã  10 cm de tour de taille possible</li>
+<li><strong>Semaines 1-4</strong> : -2 à 3 cm de tour de taille, habitudes alimentaires en place</li>
+<li><strong>Semaines 5-8</strong> : -4 à 6 cm de tour de taille, force en augmentation</li>
+<li><strong>Semaines 9-10</strong> : glycémie en amélioration mesurable, -6 à 10 cm de tour de taille possible</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude de BoulÃ© et al. (2001, <em>JAMA</em>), une mÃ©ta-analyse de 14 Ã©tudes, a montrÃ© que l'exercice structurÃ© (aÃ©robie et/ou musculation) rÃ©duisait l'HbA1c de <strong>0,66 %</strong> chez les diabÃ©tiques de type 2, indÃ©pendamment de toute perte de poids â€” dÃ©montrant un effet direct de l'exercice sur le mÃ©tabolisme du glucose.
+🔬 <strong>Ce que dit la science :</strong> L'étude de Boulé et al. (2001, <em>JAMA</em>), une méta-analyse de 14 études, a montré que l'exercice structuré (aérobie et/ou musculation) réduisait l'HbA1c de <strong>0,66 %</strong> chez les diabétiques de type 2, indépendamment de toute perte de poids — démontrant un effet direct de l'exercice sur le métabolisme du glucose.
 </blockquote>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Prof. Roy Taylor (UniversitÃ© de Newcastle) a dÃ©montrÃ© dans l'Ã©tude DiRECT (2018, <em>The Lancet</em>) que <strong>46 % des participants</strong> ayant perdu du poids de maniÃ¨re significative Ã©taient en rÃ©mission de leur diabÃ¨te de type 2 aprÃ¨s 12 mois. Chez ceux ayant perdu plus de 15 kg, ce taux montait Ã  <strong>86 %</strong>.
+🔬 <strong>Ce que dit la science :</strong> Prof. Roy Taylor (Université de Newcastle) a démontré dans l'étude DiRECT (2018, <em>The Lancet</em>) que <strong>46 % des participants</strong> ayant perdu du poids de manière significative étaient en rémission de leur diabète de type 2 après 12 mois. Chez ceux ayant perdu plus de 15 kg, ce taux montait à <strong>86 %</strong>.
 </blockquote>
 
-<h2>Le programme adaptÃ© Ã  votre situation</h2>
+<h2>Le programme adapté à votre situation</h2>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> est conÃ§u pour les hommes qui veulent perdre la graisse abdominale tout en prÃ©servant (et reconstruisant) leur masse musculaire. Avec un plan alimentaire riche en protÃ©ines, un programme de musculation progressif et des conseils d'hygiÃ¨ne de vie, c'est l'outil idÃ©al pour l'homme de 50+ qui veut reprendre le contrÃ´le.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> est conçu pour les hommes qui veulent perdre la graisse abdominale tout en préservant (et reconstruisant) leur masse musculaire. Avec un plan alimentaire riche en protéines, un programme de musculation progressif et des conseils d'hygiène de vie, c'est l'outil idéal pour l'homme de 50+ qui veut reprendre le contrôle.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Reprenez le contrÃ´le aprÃ¨s 50 ans</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir SÃ¨che 10 Semaines â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Reprenez le contrôle après 50 ans</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir Sèche 10 Semaines →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin avant de commencer un programme d'exercice, surtout si vous avez des antÃ©cÃ©dents cardiovasculaires.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin avant de commencer un programme d'exercice, surtout si vous avez des antécédents cardiovasculaires.</em></p>
 </article>`
   },
   {
     slug: "hba1c-trop-elevee-que-faire",
-    title: "HbA1c Trop Ã‰levÃ©e : Comprendre et Agir Avant le DiabÃ¨te",
-    metaDescription: "HbA1c entre 5,7 et 6,4 % ? Comprenez ce que signifie ce marqueur et dÃ©couvrez comment le faire baisser naturellement avant le diabÃ¨te.",
+    title: "HbA1c Trop Élevée : Comprendre et Agir Avant le Diabète",
+    metaDescription: "HbA1c entre 5,7 et 6,4 % ? Comprenez ce que signifie ce marqueur et découvrez comment le faire baisser naturellement avant le diabète.",
     date: "2026-02-21",
     readTime: "11 min",
-    keyword: "HbA1c trop Ã©levÃ©e que faire",
+    keyword: "HbA1c trop élevée que faire",
     content: `<article>
-<h1>HbA1c Trop Ã‰levÃ©e : Comprendre et Agir Avant le DiabÃ¨te</h1>
+<h1>HbA1c Trop Élevée : Comprendre et Agir Avant le Diabète</h1>
 
-<p>Votre analyse de sang indique une <strong>HbA1c entre 5,7 % et 6,4 %</strong>. Ce chiffre, peut-Ãªtre un peu abstrait pour vous, est en rÃ©alitÃ© l'un des marqueurs les plus importants de votre santÃ© mÃ©tabolique. Il reflÃ¨te votre glycÃ©mie moyenne sur les <strong>2 Ã  3 derniers mois</strong> â€” impossible de tricher.</p>
+<p>Votre analyse de sang indique une <strong>HbA1c entre 5,7 % et 6,4 %</strong>. Ce chiffre, peut-être un peu abstrait pour vous, est en réalité l'un des marqueurs les plus importants de votre santé métabolique. Il reflète votre glycémie moyenne sur les <strong>2 à 3 derniers mois</strong> — impossible de tricher.</p>
 
 <h2>Qu'est-ce que l'HbA1c exactement ?</h2>
 
-<p>L'hÃ©moglobine glyquÃ©e (HbA1c) mesure le pourcentage d'hÃ©moglobine (la protÃ©ine des globules rouges qui transporte l'oxygÃ¨ne) qui s'est liÃ©e au glucose. Plus votre glycÃ©mie est Ã©levÃ©e en permanence, plus de glucose se fixe sur l'hÃ©moglobine.</p>
+<p>L'hémoglobine glyquée (HbA1c) mesure le pourcentage d'hémoglobine (la protéine des globules rouges qui transporte l'oxygène) qui s'est liée au glucose. Plus votre glycémie est élevée en permanence, plus de glucose se fixe sur l'hémoglobine.</p>
 
-<p>C'est une Â« mÃ©moire glycÃ©mique Â» sur 2-3 mois :</p>
+<p>C'est une « mémoire glycémique » sur 2-3 mois :</p>
 
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
-<tr style="background:#f3f4f6;"><th style="padding:12px;border:1px solid #d1d5db;">HbA1c</th><th style="padding:12px;border:1px solid #d1d5db;">InterprÃ©tation</th><th style="padding:12px;border:1px solid #d1d5db;">GlycÃ©mie moyenne estimÃ©e</th></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">&lt; 5,7 %</td><td style="padding:12px;border:1px solid #d1d5db;">âœ… Normale</td><td style="padding:12px;border:1px solid #d1d5db;">~1,00 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">5,7 - 6,4 %</td><td style="padding:12px;border:1px solid #d1d5db;">âš ï¸ PrÃ©diabÃ¨te</td><td style="padding:12px;border:1px solid #d1d5db;">1,17 - 1,37 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">â‰¥ 6,5 %</td><td style="padding:12px;border:1px solid #d1d5db;">ðŸ”´ DiabÃ¨te</td><td style="padding:12px;border:1px solid #d1d5db;">â‰¥ 1,40 g/L</td></tr>
+<tr style="background:#f3f4f6;"><th style="padding:12px;border:1px solid #d1d5db;">HbA1c</th><th style="padding:12px;border:1px solid #d1d5db;">Interprétation</th><th style="padding:12px;border:1px solid #d1d5db;">Glycémie moyenne estimée</th></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">&lt; 5,7 %</td><td style="padding:12px;border:1px solid #d1d5db;">✅ Normale</td><td style="padding:12px;border:1px solid #d1d5db;">~1,00 g/L</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">5,7 - 6,4 %</td><td style="padding:12px;border:1px solid #d1d5db;">⚠ï¸ Prédiabète</td><td style="padding:12px;border:1px solid #d1d5db;">1,17 - 1,37 g/L</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">≥ 6,5 %</td><td style="padding:12px;border:1px solid #d1d5db;">🔴 Diabète</td><td style="padding:12px;border:1px solid #d1d5db;">≥ 1,40 g/L</td></tr>
 </table>
 
-<h2>Pourquoi l'HbA1c est supÃ©rieure Ã  la glycÃ©mie Ã  jeun</h2>
+<h2>Pourquoi l'HbA1c est supérieure à la glycémie à jeun</h2>
 
-<p>La glycÃ©mie Ã  jeun est un instantanÃ©. Elle peut varier d'un jour Ã  l'autre selon votre stress, votre sommeil, votre repas de la veille. L'HbA1c, elle, ne ment pas : elle capture votre <strong>exposition glycÃ©mique chronique</strong>.</p>
+<p>La glycémie à jeun est un instantané. Elle peut varier d'un jour à l'autre selon votre stress, votre sommeil, votre repas de la veille. L'HbA1c, elle, ne ment pas : elle capture votre <strong>exposition glycémique chronique</strong>.</p>
 
-<p>Un patient peut avoir une glycÃ©mie Ã  jeun normale mais des pics post-prandiaux importants â€” l'HbA1c captera ces pics que la glycÃ©mie Ã  jeun manque.</p>
+<p>Un patient peut avoir une glycémie à jeun normale mais des pics post-prandiaux importants — l'HbA1c captera ces pics que la glycémie à jeun manque.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude ARIC (Atherosclerosis Risk in Communities), analysÃ©e par Selvin et al. (2010, <em>NEJM</em>), a montrÃ© que l'HbA1c est un prÃ©dicteur indÃ©pendant du risque de diabÃ¨te, de maladie cardiovasculaire et de mortalitÃ© toutes causes. Chaque augmentation de 1 % de l'HbA1c est associÃ©e Ã  une augmentation de <strong>20 % du risque cardiovasculaire</strong>.
+🔬 <strong>Ce que dit la science :</strong> L'étude ARIC (Atherosclerosis Risk in Communities), analysée par Selvin et al. (2010, <em>NEJM</em>), a montré que l'HbA1c est un prédicteur indépendant du risque de diabète, de maladie cardiovasculaire et de mortalité toutes causes. Chaque augmentation de 1 % de l'HbA1c est associée à une augmentation de <strong>20 % du risque cardiovasculaire</strong>.
 </blockquote>
 
 <h2>Comment faire baisser votre HbA1c naturellement</h2>
 
-<h3>Objectif : rÃ©duire les pics glycÃ©miques quotidiens</h3>
-<p>Puisque l'HbA1c reflÃ¨te la glycÃ©mie moyenne, la stratÃ©gie est simple : <strong>rÃ©duire la frÃ©quence et l'amplitude des pics glycÃ©miques</strong> tout au long de la journÃ©e.</p>
+<h3>Objectif : réduire les pics glycémiques quotidiens</h3>
+<p>Puisque l'HbA1c reflète la glycémie moyenne, la stratégie est simple : <strong>réduire la fréquence et l'amplitude des pics glycémiques</strong> tout au long de la journée.</p>
 
 <h3>1. Restructurez vos repas</h3>
 <ul>
-<li><strong>RÃ©duisez les glucides Ã  IG Ã©levÃ©</strong> : pain blanc, riz blanc, pommes de terre, pÃ¢tisseries</li>
-<li><strong>Chaque repas doit contenir</strong> : protÃ©ines + fibres + bonnes graisses</li>
-<li><strong>Ordre des aliments</strong> : lÃ©gumes â†’ protÃ©ines/graisses â†’ glucides (rÃ©duit les pics de 30-40 %)</li>
-<li><strong>Petit-dÃ©jeuner protÃ©inÃ©</strong> : Å“ufs, yaourt grec nature, fromage blanc plutÃ´t que cÃ©rÃ©ales et jus d'orange</li>
+<li><strong>Réduisez les glucides à IG élevé</strong> : pain blanc, riz blanc, pommes de terre, pâtisseries</li>
+<li><strong>Chaque repas doit contenir</strong> : protéines + fibres + bonnes graisses</li>
+<li><strong>Ordre des aliments</strong> : légumes → protéines/graisses → glucides (réduit les pics de 30-40 %)</li>
+<li><strong>Petit-déjeuner protéiné</strong> : Å“ufs, yaourt grec nature, fromage blanc plutôt que céréales et jus d'orange</li>
 </ul>
 
-<h3>2. L'exercice ciblÃ©</h3>
+<h3>2. L'exercice ciblé</h3>
 <ul>
-<li><strong>Musculation 2-3x/semaine</strong> : augmente la capacitÃ© de stockage du glucose dans les muscles</li>
-<li><strong>Marche post-prandiale</strong> : 15-20 min aprÃ¨s chaque repas principal</li>
-<li><strong>HIIT 1-2x/semaine</strong> : amÃ©liore la sensibilitÃ© Ã  l'insuline plus rapidement que le cardio modÃ©rÃ©</li>
+<li><strong>Musculation 2-3x/semaine</strong> : augmente la capacité de stockage du glucose dans les muscles</li>
+<li><strong>Marche post-prandiale</strong> : 15-20 min après chaque repas principal</li>
+<li><strong>HIIT 1-2x/semaine</strong> : améliore la sensibilité à l'insuline plus rapidement que le cardio modéré</li>
 </ul>
 
-<h3>3. Les complÃ©ments Ã  considÃ©rer</h3>
+<h3>3. Les compléments à considérer</h3>
 <ul>
-<li><strong>BerbÃ©rine</strong> : 500 mg 2-3x/jour avant les repas. Plusieurs Ã©tudes montrent une rÃ©duction de l'HbA1c de 0,5 Ã  1 % (comparable Ã  la metformine)</li>
-<li><strong>MagnÃ©sium</strong> : 300-400 mg de bisglycinate le soir</li>
+<li><strong>Berbérine</strong> : 500 mg 2-3x/jour avant les repas. Plusieurs études montrent une réduction de l'HbA1c de 0,5 à 1 % (comparable à la metformine)</li>
+<li><strong>Magnésium</strong> : 300-400 mg de bisglycinate le soir</li>
 <li><strong>Cannelle de Ceylan</strong> : 1-3 g/jour</li>
-<li><strong>Chrome</strong> : 200-400 Âµg/jour (amÃ©liore la signalisation de l'insuline)</li>
+<li><strong>Chrome</strong> : 200-400 µg/jour (améliore la signalisation de l'insuline)</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Yin et al. (2008, <em>Metabolism</em>) ont comparÃ© la berbÃ©rine Ã  la metformine chez des patients diabÃ©tiques de type 2. La berbÃ©rine a rÃ©duit l'HbA1c de <strong>0,9 %</strong> en 3 mois (vs 0,7 % pour la metformine), avec une amÃ©lioration significative des triglycÃ©rides et du cholestÃ©rol total en bonus.
+🔬 <strong>Ce que dit la science :</strong> Yin et al. (2008, <em>Metabolism</em>) ont comparé la berbérine à la metformine chez des patients diabétiques de type 2. La berbérine a réduit l'HbA1c de <strong>0,9 %</strong> en 3 mois (vs 0,7 % pour la metformine), avec une amélioration significative des triglycérides et du cholestérol total en bonus.
 </blockquote>
 
 <h3>4. Optimisez votre sommeil et votre stress</h3>
-<p>Le cortisol chronique et le manque de sommeil maintiennent une hyperglycÃ©mie permanente de bas grade qui se reflÃ¨te directement dans l'HbA1c.</p>
+<p>Le cortisol chronique et le manque de sommeil maintiennent une hyperglycémie permanente de bas grade qui se reflète directement dans l'HbA1c.</p>
 
 <h3>5. Suivi et objectifs</h3>
-<p>L'HbA1c met 2-3 mois Ã  reflÃ©ter les changements. Planifiez un contrÃ´le 3 mois aprÃ¨s avoir modifiÃ© votre mode de vie. Un objectif rÃ©aliste est une <strong>baisse de 0,3 Ã  0,5 %</strong> en 3 mois avec les modifications de style de vie seul.</p>
+<p>L'HbA1c met 2-3 mois à refléter les changements. Planifiez un contrôle 3 mois après avoir modifié votre mode de vie. Un objectif réaliste est une <strong>baisse de 0,3 à 0,5 %</strong> en 3 mois avec les modifications de style de vie seul.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« L'HbA1c est comme le bulletin trimestriel de votre mÃ©tabolisme. Vous ne pouvez pas tricher avec un ou deux jours de bonne conduite avant le contrÃ´le. C'est l'effort constant sur des semaines qui compte â€” et c'est pour Ã§a que c'est un marqueur si prÃ©cieux. Â» â€” <strong>Dr. Jason Fung</strong>
+💬 <strong>Avis d'expert :</strong> « L'HbA1c est comme le bulletin trimestriel de votre métabolisme. Vous ne pouvez pas tricher avec un ou deux jours de bonne conduite avant le contrôle. C'est l'effort constant sur des semaines qui compte — et c'est pour ça que c'est un marqueur si précieux. » — <strong>Dr. Jason Fung</strong>
 </blockquote>
 
 <h2>Un programme de 10 semaines pour baisser votre HbA1c</h2>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> couvre exactement la durÃ©e nÃ©cessaire pour voir un impact mesurable sur votre HbA1c. Alimentation Ã  charge glycÃ©mique contrÃ´lÃ©e, musculation progressive, gestion du stress â€” tout est structurÃ© pour maximiser votre amÃ©lioration mÃ©tabolique.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> couvre exactement la durée nécessaire pour voir un impact mesurable sur votre HbA1c. Alimentation à charge glycémique contrôlée, musculation progressive, gestion du stress — tout est structuré pour maximiser votre amélioration métabolique.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
 <p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Faites baisser votre HbA1c en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. La berbÃ©rine peut interagir avec certains mÃ©dicaments â€” consultez votre mÃ©decin avant toute supplÃ©mentation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. La berbérine peut interagir avec certains médicaments — consultez votre médecin avant toute supplémentation.</em></p>
 </article>`
   },
   {
     slug: "regime-prediabete-menu-semaine",
-    title: "RÃ©gime PrÃ©diabÃ¨te : Menu Type d'une Semaine ComplÃ¨te",
-    metaDescription: "RÃ©gime prÃ©diabÃ¨te : menus dÃ©taillÃ©s pour 7 jours, petit-dÃ©jeuner, dÃ©jeuner, dÃ®ner et collations. Plan alimentaire pratique et gourmand.",
+    title: "Régime Prédiabète : Menu Type d'une Semaine Complète",
+    metaDescription: "Régime prédiabète : menus détaillés pour 7 jours, petit-déjeuner, déjeuner, dîner et collations. Plan alimentaire pratique et gourmand.",
     date: "2026-02-21",
     readTime: "14 min",
-    keyword: "rÃ©gime prÃ©diabÃ¨te menu semaine",
+    keyword: "régime prédiabète menu semaine",
     content: `<article>
-<h1>RÃ©gime PrÃ©diabÃ¨te : Menu Type d'une Semaine ComplÃ¨te</h1>
+<h1>Régime Prédiabète : Menu Type d'une Semaine Complète</h1>
 
-<p>Vous savez qu'il faut Â« mieux manger Â» pour inverser votre prÃ©diabÃ¨te, mais concrÃ¨tement, <strong>que mettre dans votre assiette au quotidien ?</strong> Voici un plan alimentaire complet sur 7 jours, avec des repas simples, savoureux et optimisÃ©s pour stabiliser votre glycÃ©mie.</p>
+<p>Vous savez qu'il faut « mieux manger » pour inverser votre prédiabète, mais concrètement, <strong>que mettre dans votre assiette au quotidien ?</strong> Voici un plan alimentaire complet sur 7 jours, avec des repas simples, savoureux et optimisés pour stabiliser votre glycémie.</p>
 
-<h2>Les principes de base du menu prÃ©diabÃ¨te</h2>
+<h2>Les principes de base du menu prédiabète</h2>
 
 <ul>
-<li><strong>ProtÃ©ines Ã  chaque repas</strong> (1,5 Ã  2 g/kg/jour) : stabilisent la glycÃ©mie et favorisent la satiÃ©tÃ©</li>
+<li><strong>Protéines à chaque repas</strong> (1,5 à 2 g/kg/jour) : stabilisent la glycémie et favorisent la satiété</li>
 <li><strong>Fibres abondantes</strong> (30-40 g/jour) : ralentissent l'absorption du glucose</li>
-<li><strong>Glucides Ã  IG bas</strong> : lÃ©gumineuses, patate douce, quinoa, avoine plutÃ´t que pain blanc et pÃ¢tes</li>
+<li><strong>Glucides à IG bas</strong> : légumineuses, patate douce, quinoa, avoine plutôt que pain blanc et pâtes</li>
 <li><strong>Bonnes graisses</strong> : huile d'olive, avocat, noix, poissons gras</li>
-<li><strong>Ordre de consommation</strong> : lÃ©gumes â†’ protÃ©ines â†’ glucides</li>
-<li><strong>Pas de sucres liquides</strong> : eau, thÃ© vert, cafÃ© noir</li>
+<li><strong>Ordre de consommation</strong> : légumes → protéines → glucides</li>
+<li><strong>Pas de sucres liquides</strong> : eau, thé vert, café noir</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Salas-SalvadÃ³ et al. (2011, <em>Annals of Internal Medicine</em>) ont montrÃ© qu'un rÃ©gime mÃ©diterranÃ©en sans restriction calorique rÃ©duisait le risque de dÃ©velopper un diabÃ¨te de type 2 de <strong>52 %</strong> chez les personnes Ã  risque Ã©levÃ© â€” plus efficace que n'importe quel rÃ©gime hypocalorique.
+🔬 <strong>Ce que dit la science :</strong> Salas-Salvadó et al. (2011, <em>Annals of Internal Medicine</em>) ont montré qu'un régime méditerranéen sans restriction calorique réduisait le risque de développer un diabète de type 2 de <strong>52 %</strong> chez les personnes à risque élevé — plus efficace que n'importe quel régime hypocalorique.
 </blockquote>
 
 <h2>Menu complet : Semaine type</h2>
 
-<h3>ðŸŸ¢ Lundi</h3>
-<p><strong>Petit-dÃ©jeuner :</strong> Omelette 3 Å“ufs aux Ã©pinards et champignons + 1/2 avocat + cafÃ© noir<br/>
-<strong>DÃ©jeuner :</strong> Salade de quinoa, pois chiches, concombre, tomates, feta, olives, vinaigrette huile d'olive/citron. 1 pomme en dessert.<br/>
-<strong>Collation :</strong> 20 g d'amandes + 1 carrÃ© de chocolat noir 85 %<br/>
-<strong>DÃ®ner :</strong> PavÃ© de saumon au four + haricots verts vapeur + filet d'huile d'olive. Yaourt nature.</p>
+<h3>🟢 Lundi</h3>
+<p><strong>Petit-déjeuner :</strong> Omelette 3 Å“ufs aux épinards et champignons + 1/2 avocat + café noir<br/>
+<strong>Déjeuner :</strong> Salade de quinoa, pois chiches, concombre, tomates, feta, olives, vinaigrette huile d'olive/citron. 1 pomme en dessert.<br/>
+<strong>Collation :</strong> 20 g d'amandes + 1 carré de chocolat noir 85 %<br/>
+<strong>Dîner :</strong> Pavé de saumon au four + haricots verts vapeur + filet d'huile d'olive. Yaourt nature.</p>
 
-<h3>ðŸŸ¢ Mardi</h3>
-<p><strong>Petit-dÃ©jeuner :</strong> Porridge d'avoine (50 g) cuit Ã  l'eau + 1 c. Ã  soupe de beurre d'amande + myrtilles + cannelle<br/>
-<strong>DÃ©jeuner :</strong> Poulet grillÃ© (150 g) + lentilles vertes en salade tiÃ¨de + roquette + huile d'olive + graines de courge<br/>
+<h3>🟢 Mardi</h3>
+<p><strong>Petit-déjeuner :</strong> Porridge d'avoine (50 g) cuit à l'eau + 1 c. à soupe de beurre d'amande + myrtilles + cannelle<br/>
+<strong>Déjeuner :</strong> Poulet grillé (150 g) + lentilles vertes en salade tiède + roquette + huile d'olive + graines de courge<br/>
 <strong>Collation :</strong> 1 pomme + 15 g de noix<br/>
-<strong>DÃ®ner :</strong> Soupe de brocoli maison + 2 Å“ufs mollets + pain complet au levain (1 tranche)</p>
+<strong>Dîner :</strong> Soupe de brocoli maison + 2 Å“ufs mollets + pain complet au levain (1 tranche)</p>
 
-<h3>ðŸŸ¢ Mercredi</h3>
-<p><strong>Petit-dÃ©jeuner :</strong> Yaourt grec nature (150 g) + graines de chia (15 g) + framboises + noix concassÃ©es<br/>
-<strong>DÃ©jeuner :</strong> Sardines grillÃ©es + taboulÃ© de chou-fleur (chou-fleur rÃ¢pÃ©, persil, menthe, tomates, citron, huile d'olive)<br/>
-<strong>Collation :</strong> BÃ¢tonnets de cÃ©leri + houmous maison (2 c. Ã  soupe)<br/>
-<strong>DÃ®ner :</strong> SautÃ© de bÅ“uf (120 g) aux lÃ©gumes (poivrons, courgettes, oignons) + riz basmati complet (petite portion)</p>
+<h3>🟢 Mercredi</h3>
+<p><strong>Petit-déjeuner :</strong> Yaourt grec nature (150 g) + graines de chia (15 g) + framboises + noix concassées<br/>
+<strong>Déjeuner :</strong> Sardines grillées + taboulé de chou-fleur (chou-fleur râpé, persil, menthe, tomates, citron, huile d'olive)<br/>
+<strong>Collation :</strong> Bâtonnets de céleri + houmous maison (2 c. à soupe)<br/>
+<strong>Dîner :</strong> Sauté de bÅ“uf (120 g) aux légumes (poivrons, courgettes, oignons) + riz basmati complet (petite portion)</p>
 
-<h3>ðŸŸ¢ Jeudi</h3>
-<p><strong>Petit-dÃ©jeuner :</strong> 2 Å“ufs au plat + 2 tranches de jambon de qualitÃ© + tomate grillÃ©e + cafÃ© noir<br/>
-<strong>DÃ©jeuner :</strong> Bowl mÃ©diterranÃ©en : houmous, falafel (maison), salade verte, concombre, tomates sÃ©chÃ©es, huile d'olive<br/>
+<h3>🟢 Jeudi</h3>
+<p><strong>Petit-déjeuner :</strong> 2 Å“ufs au plat + 2 tranches de jambon de qualité + tomate grillée + café noir<br/>
+<strong>Déjeuner :</strong> Bowl méditerranéen : houmous, falafel (maison), salade verte, concombre, tomates séchées, huile d'olive<br/>
 <strong>Collation :</strong> 30 g de fromage + 5 noix<br/>
-<strong>DÃ®ner :</strong> Filet de cabillaud en papillote (citron, herbes) + ratatouille + 1 patate douce moyenne</p>
+<strong>Dîner :</strong> Filet de cabillaud en papillote (citron, herbes) + ratatouille + 1 patate douce moyenne</p>
 
-<h3>ðŸŸ¢ Vendredi</h3>
-<p><strong>Petit-dÃ©jeuner :</strong> Smoothie protÃ©inÃ© : lait d'amande, 1 mesure protÃ©ine whey vanille, 1/2 banane, Ã©pinards, beurre de cacahuÃ¨te (1 c. Ã  soupe)<br/>
-<strong>DÃ©jeuner :</strong> Salade niÃ§oise revisitÃ©e : thon (en conserve, huile d'olive), haricots verts, Å“uf dur, olives, tomates, anchois<br/>
+<h3>🟢 Vendredi</h3>
+<p><strong>Petit-déjeuner :</strong> Smoothie protéiné : lait d'amande, 1 mesure protéine whey vanille, 1/2 banane, épinards, beurre de cacahuète (1 c. à soupe)<br/>
+<strong>Déjeuner :</strong> Salade niçoise revisitée : thon (en conserve, huile d'olive), haricots verts, Å“uf dur, olives, tomates, anchois<br/>
 <strong>Collation :</strong> 1 poire + 15 g d'amandes<br/>
-<strong>DÃ®ner :</strong> Soupe de lentilles corail au curcuma + 1 filet de poulet grillÃ© + salade verte</p>
+<strong>Dîner :</strong> Soupe de lentilles corail au curcuma + 1 filet de poulet grillé + salade verte</p>
 
-<h3>ðŸŸ¢ Samedi</h3>
-<p><strong>Petit-dÃ©jeuner :</strong> Pancakes protÃ©inÃ©s (2 Å“ufs, 1 banane Ã©crasÃ©e, 30 g flocons d'avoine) + myrtilles + cannelle<br/>
-<strong>DÃ©jeuner :</strong> Magret de canard dÃ©graissÃ© (150 g) + salade de roquette, noix, poire, parmesan, vinaigre balsamique<br/>
+<h3>🟢 Samedi</h3>
+<p><strong>Petit-déjeuner :</strong> Pancakes protéinés (2 Å“ufs, 1 banane écrasée, 30 g flocons d'avoine) + myrtilles + cannelle<br/>
+<strong>Déjeuner :</strong> Magret de canard dégraissé (150 g) + salade de roquette, noix, poire, parmesan, vinaigre balsamique<br/>
 <strong>Collation :</strong> Edamame (100 g)<br/>
-<strong>DÃ®ner :</strong> Gambas sautÃ©es Ã  l'ail + courgettes grillÃ©es + quinoa (petite portion)</p>
+<strong>Dîner :</strong> Gambas sautées à l'ail + courgettes grillées + quinoa (petite portion)</p>
 
-<h3>ðŸŸ¢ Dimanche</h3>
-<p><strong>Petit-dÃ©jeuner :</strong> Brunch : Shakshuka (2 Å“ufs pochÃ©s dans une sauce tomate Ã©picÃ©e) + avocat + pain complet grillÃ©<br/>
-<strong>DÃ©jeuner :</strong> RÃ´ti de veau (150 g) + gratin de lÃ©gumes (courgettes, aubergines, tomates, huile d'olive) + mesclun<br/>
-<strong>Collation :</strong> Yaourt nature + noix + carrÃ© chocolat noir 85 %<br/>
-<strong>DÃ®ner :</strong> VeloutÃ© de butternut + saumon fumÃ© (80 g) + salade de mÃ¢che</p>
+<h3>🟢 Dimanche</h3>
+<p><strong>Petit-déjeuner :</strong> Brunch : Shakshuka (2 Å“ufs pochés dans une sauce tomate épicée) + avocat + pain complet grillé<br/>
+<strong>Déjeuner :</strong> Rôti de veau (150 g) + gratin de légumes (courgettes, aubergines, tomates, huile d'olive) + mesclun<br/>
+<strong>Collation :</strong> Yaourt nature + noix + carré chocolat noir 85 %<br/>
+<strong>Dîner :</strong> Velouté de butternut + saumon fumé (80 g) + salade de mâche</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Le meilleur rÃ©gime pour le prÃ©diabÃ¨te est celui que vous pouvez suivre sur le long terme. Pas de restriction drastique, pas de frustration. Un rÃ©gime mÃ©diterranÃ©en enrichi en protÃ©ines, avec des glucides Ã  index glycÃ©mique bas, est la formule la plus durable et la plus efficace. Â» â€” <strong>Dr. David Ludwig</strong>, endocrinologue, Harvard
+💬 <strong>Avis d'expert :</strong> « Le meilleur régime pour le prédiabète est celui que vous pouvez suivre sur le long terme. Pas de restriction drastique, pas de frustration. Un régime méditerranéen enrichi en protéines, avec des glucides à index glycémique bas, est la formule la plus durable et la plus efficace. » — <strong>Dr. David Ludwig</strong>, endocrinologue, Harvard
 </blockquote>
 
 <h2>La liste de courses type</h2>
 
-<p><strong>ProtÃ©ines :</strong> Å“ufs (18), poulet (500 g), saumon (400 g), sardines, bÅ“uf maigre (250 g), cabillaud (200 g), gambas, yaourt grec nature (500 g), fromage</p>
-<p><strong>LÃ©gumes :</strong> Ã©pinards, brocoli, haricots verts, courgettes, poivrons, tomates, concombres, roquette, avocat (3-4), oignons, ail</p>
+<p><strong>Protéines :</strong> Å“ufs (18), poulet (500 g), saumon (400 g), sardines, bÅ“uf maigre (250 g), cabillaud (200 g), gambas, yaourt grec nature (500 g), fromage</p>
+<p><strong>Légumes :</strong> épinards, brocoli, haricots verts, courgettes, poivrons, tomates, concombres, roquette, avocat (3-4), oignons, ail</p>
 <p><strong>Glucides IG bas :</strong> avoine, quinoa, lentilles, pois chiches, patate douce, pain complet au levain, riz basmati complet</p>
 <p><strong>Graisses :</strong> huile d'olive extra-vierge, amandes, noix, beurre d'amande, olives</p>
 <p><strong>Autres :</strong> graines de chia, cannelle, curcuma, chocolat noir 85 %, myrtilles, framboises, pommes, citrons</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Esposito et al. (2009, <em>Annals of Internal Medicine</em>) ont comparÃ© le rÃ©gime mÃ©diterranÃ©en au rÃ©gime pauvre en graisses chez des diabÃ©tiques de type 2. AprÃ¨s 4 ans, le groupe mÃ©diterranÃ©en avait un contrÃ´le glycÃ©mique significativement meilleur et <strong>moins besoin de mÃ©dicaments antidiabÃ©tiques</strong> (-56 % de mise sous traitement vs le groupe pauvre en graisses).
+🔬 <strong>Ce que dit la science :</strong> Esposito et al. (2009, <em>Annals of Internal Medicine</em>) ont comparé le régime méditerranéen au régime pauvre en graisses chez des diabétiques de type 2. Après 4 ans, le groupe méditerranéen avait un contrôle glycémique significativement meilleur et <strong>moins besoin de médicaments antidiabétiques</strong> (-56 % de mise sous traitement vs le groupe pauvre en graisses).
 </blockquote>
 
 <h2>Conseils pratiques</h2>
 
 <ul>
-<li><strong>PrÃ©parez le dimanche</strong> : cuisinez les lentilles, le quinoa et les protÃ©ines en batch pour la semaine</li>
-<li><strong>Gardez des options d'urgence</strong> : boÃ®tes de sardines, Å“ufs durs, noix â€” pour ne jamais vous retrouver sans option saine</li>
-<li><strong>Hydratation</strong> : 2L d'eau par jour minimum. ThÃ© vert (riche en catÃ©chines anti-glycÃ©miques) en journÃ©e</li>
-<li><strong>Ne sautez pas le petit-dÃ©jeuner</strong> si vous n'Ãªtes pas en jeÃ»ne intermittent â€” un petit-dÃ©jeuner protÃ©inÃ© stabilise la glycÃ©mie pour toute la matinÃ©e</li>
+<li><strong>Préparez le dimanche</strong> : cuisinez les lentilles, le quinoa et les protéines en batch pour la semaine</li>
+<li><strong>Gardez des options d'urgence</strong> : boîtes de sardines, Å“ufs durs, noix — pour ne jamais vous retrouver sans option saine</li>
+<li><strong>Hydratation</strong> : 2L d'eau par jour minimum. Thé vert (riche en catéchines anti-glycémiques) en journée</li>
+<li><strong>Ne sautez pas le petit-déjeuner</strong> si vous n'êtes pas en jeûne intermittent — un petit-déjeuner protéiné stabilise la glycémie pour toute la matinée</li>
 </ul>
 
-<h2>Allez plus loin avec SÃ¨che 10 Semaines</h2>
+<h2>Allez plus loin avec Sèche 10 Semaines</h2>
 
-<p>Ce menu d'une semaine vous donne un aperÃ§u. Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> vous fournit <strong>10 semaines complÃ¨tes de menus</strong>, adaptÃ©s semaine par semaine avec une progression optimisÃ©e, accompagnÃ©s d'un programme sportif et de conseils de suivi mÃ©tabolique.</p>
+<p>Ce menu d'une semaine vous donne un aperçu. Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> vous fournit <strong>10 semaines complètes de menus</strong>, adaptés semaine par semaine avec une progression optimisée, accompagnés d'un programme sportif et de conseils de suivi métabolique.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">10 semaines de menus anti-prÃ©diabÃ¨te</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">AccÃ©der au programme complet â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">10 semaines de menus anti-prédiabète</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Accéder au programme complet →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Adaptez les portions Ã  vos besoins caloriques personnels et consultez un diÃ©tÃ©ticien si nÃ©cessaire.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Adaptez les portions à vos besoins caloriques personnels et consultez un diététicien si nécessaire.</em></p>
 </article>`
   },
   {
     slug: "steatose-hepatique-alimentation",
-    title: "StÃ©atose HÃ©patique (Foie Gras) : L'Alimentation Qui GuÃ©rit",
-    metaDescription: "StÃ©atose hÃ©patique diagnostiquÃ©e ? DÃ©couvrez l'alimentation qui permet de rÃ©duire la graisse du foie et inverser cette condition silencieuse.",
+    title: "Stéatose Hépatique (Foie Gras) : L'Alimentation Qui Guérit",
+    metaDescription: "Stéatose hépatique diagnostiquée ? Découvrez l'alimentation qui permet de réduire la graisse du foie et inverser cette condition silencieuse.",
     date: "2026-02-21",
     readTime: "12 min",
-    keyword: "stÃ©atose hÃ©patique alimentation",
+    keyword: "stéatose hépatique alimentation",
     content: `<article>
-<h1>StÃ©atose HÃ©patique (Foie Gras) : L'Alimentation Qui GuÃ©rit</h1>
+<h1>Stéatose Hépatique (Foie Gras) : L'Alimentation Qui Guérit</h1>
 
-<p>La stÃ©atose hÃ©patique non alcoolique (NAFLD) touche aujourd'hui <strong>25 Ã  30 % de la population adulte</strong> dans les pays dÃ©veloppÃ©s. C'est l'affection hÃ©patique la plus frÃ©quente au monde â€” et elle est directement liÃ©e au syndrome mÃ©tabolique, au prÃ©diabÃ¨te et Ã  l'insulino-rÃ©sistance. La bonne nouvelle : <strong>il n'existe aucun mÃ©dicament approuvÃ©</strong> pour la traiter, mais l'alimentation peut la guÃ©rir.</p>
+<p>La stéatose hépatique non alcoolique (NAFLD) touche aujourd'hui <strong>25 à 30 % de la population adulte</strong> dans les pays développés. C'est l'affection hépatique la plus fréquente au monde — et elle est directement liée au syndrome métabolique, au prédiabète et à l'insulino-résistance. La bonne nouvelle : <strong>il n'existe aucun médicament approuvé</strong> pour la traiter, mais l'alimentation peut la guérir.</p>
 
-<h2>Comprendre la stÃ©atose hÃ©patique</h2>
+<h2>Comprendre la stéatose hépatique</h2>
 
-<p>Votre foie stocke normalement trÃ¨s peu de graisse (&lt;5 %). Quand cette proportion dÃ©passe 5 %, on parle de stÃ©atose hÃ©patique. Au-delÃ , le foie peut s'inflammer (NASH â€” stÃ©ato-hÃ©patite), puis Ã©voluer vers la fibrose et la cirrhose.</p>
+<p>Votre foie stocke normalement très peu de graisse (&lt;5 %). Quand cette proportion dépasse 5 %, on parle de stéatose hépatique. Au-delà, le foie peut s'inflammer (NASH — stéato-hépatite), puis évoluer vers la fibrose et la cirrhose.</p>
 
 <p><strong>Les causes principales :</strong></p>
 <ul>
-<li><strong>Le fructose</strong> : mÃ©tabolisÃ© exclusivement par le foie, il est directement converti en graisse hÃ©patique. Sodas, jus de fruits et sirop de maÃ¯s sont les premiers responsables.</li>
-<li><strong>L'excÃ¨s de glucides raffinÃ©s</strong> : quand les rÃ©serves de glycogÃ¨ne sont pleines, le foie transforme le glucose excÃ©dentaire en graisse (lipogenÃ¨se de novo).</li>
-<li><strong>L'alcool</strong> : mÃªme en quantitÃ© modÃ©rÃ©e, il contribue Ã  l'accumulation graisseuse hÃ©patique.</li>
-<li><strong>L'insulino-rÃ©sistance</strong> : elle empÃªche le foie de freiner sa production de glucose et de graisse.</li>
+<li><strong>Le fructose</strong> : métabolisé exclusivement par le foie, il est directement converti en graisse hépatique. Sodas, jus de fruits et sirop de maïs sont les premiers responsables.</li>
+<li><strong>L'excès de glucides raffinés</strong> : quand les réserves de glycogène sont pleines, le foie transforme le glucose excédentaire en graisse (lipogenèse de novo).</li>
+<li><strong>L'alcool</strong> : même en quantité modérée, il contribue à l'accumulation graisseuse hépatique.</li>
+<li><strong>L'insulino-résistance</strong> : elle empêche le foie de freiner sa production de glucose et de graisse.</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Lustig et al. (2016, <em>Obesity</em>) ont menÃ© une Ã©tude spectaculaire : en remplaÃ§ant simplement le fructose par de l'amidon dans l'alimentation d'enfants obÃ¨ses (mÃªme nombre de calories), ils ont observÃ© une rÃ©duction de la graisse hÃ©patique de <strong>22 %</strong> en seulement 9 jours.
+🔬 <strong>Ce que dit la science :</strong> Lustig et al. (2016, <em>Obesity</em>) ont mené une étude spectaculaire : en remplaçant simplement le fructose par de l'amidon dans l'alimentation d'enfants obèses (même nombre de calories), ils ont observé une réduction de la graisse hépatique de <strong>22 %</strong> en seulement 9 jours.
 </blockquote>
 
-<h2>L'alimentation anti-stÃ©atose : le protocole complet</h2>
+<h2>L'alimentation anti-stéatose : le protocole complet</h2>
 
-<h3>1. Ã‰liminer le fructose ajoutÃ© (prioritÃ© #1)</h3>
-<p>Le fructose est le principal coupable de l'accumulation de graisse hÃ©patique. Supprimez :</p>
+<h3>1. Éliminer le fructose ajouté (priorité #1)</h3>
+<p>Le fructose est le principal coupable de l'accumulation de graisse hépatique. Supprimez :</p>
 <ul>
-<li>Tous les sodas et boissons sucrÃ©es</li>
-<li>Jus de fruits (mÃªme 100 % pur jus)</li>
-<li>PÃ¢tisseries industrielles, biscuits, glaces</li>
-<li>Sauces industrielles (ketchup, BBQ â€” riches en sucre ajoutÃ©)</li>
-<li>CÃ©rÃ©ales du petit-dÃ©jeuner sucrÃ©es</li>
+<li>Tous les sodas et boissons sucrées</li>
+<li>Jus de fruits (même 100 % pur jus)</li>
+<li>Pâtisseries industrielles, biscuits, glaces</li>
+<li>Sauces industrielles (ketchup, BBQ — riches en sucre ajouté)</li>
+<li>Céréales du petit-déjeuner sucrées</li>
 </ul>
 <p><em>Note : les fruits entiers sont acceptables (2-3 portions/jour) car leurs fibres ralentissent l'absorption du fructose et limitent la dose.</em></p>
 
-<h3>2. RÃ©duire drastiquement les glucides raffinÃ©s</h3>
-<p>La lipogenÃ¨se de novo (fabrication de graisse par le foie) est stimulÃ©e par l'excÃ¨s de glucides. RÃ©duire les glucides est plus efficace pour dÃ©graisser le foie que rÃ©duire les graisses alimentaires.</p>
+<h3>2. Réduire drastiquement les glucides raffinés</h3>
+<p>La lipogenèse de novo (fabrication de graisse par le foie) est stimulée par l'excès de glucides. Réduire les glucides est plus efficace pour dégraisser le foie que réduire les graisses alimentaires.</p>
 
-<h3>3. Augmenter les protÃ©ines</h3>
-<p>Les protÃ©ines rÃ©duisent la lipogenÃ¨se hÃ©patique et favorisent la rÃ©gÃ©nÃ©ration des cellules du foie. Visez 1,5 Ã  2 g/kg/jour.</p>
+<h3>3. Augmenter les protéines</h3>
+<p>Les protéines réduisent la lipogenèse hépatique et favorisent la régénération des cellules du foie. Visez 1,5 à 2 g/kg/jour.</p>
 
-<h3>4. Miser sur les aliments hÃ©patoprotecteurs</h3>
+<h3>4. Miser sur les aliments hépatoprotecteurs</h3>
 <ul>
-<li><strong>CafÃ©</strong> : 2-3 tasses/jour. Le cafÃ© est l'aliment le plus protecteur du foie dans la littÃ©rature scientifique (rÃ©duction de 40 % du risque de fibrose).</li>
-<li><strong>Huile d'olive extra-vierge</strong> : ses polyphÃ©nols rÃ©duisent l'inflammation hÃ©patique</li>
-<li><strong>Poissons gras</strong> : les omÃ©ga-3 rÃ©duisent la graisse hÃ©patique de 15 Ã  30 %</li>
-<li><strong>LÃ©gumes crucifÃ¨res</strong> : brocoli, chou-fleur, chou â€” contiennent des composÃ©s soufrÃ©s qui soutiennent la dÃ©toxification hÃ©patique</li>
-<li><strong>Betterave</strong> : riche en bÃ©taÃ¯ne, un donneur de mÃ©thyle qui protÃ¨ge le foie</li>
-<li><strong>Curcuma</strong> : anti-inflammatoire puissant sur le tissu hÃ©patique</li>
-<li><strong>Artichaut</strong> : stimule la production de bile et la fonction hÃ©patique</li>
+<li><strong>Café</strong> : 2-3 tasses/jour. Le café est l'aliment le plus protecteur du foie dans la littérature scientifique (réduction de 40 % du risque de fibrose).</li>
+<li><strong>Huile d'olive extra-vierge</strong> : ses polyphénols réduisent l'inflammation hépatique</li>
+<li><strong>Poissons gras</strong> : les oméga-3 réduisent la graisse hépatique de 15 à 30 %</li>
+<li><strong>Légumes crucifères</strong> : brocoli, chou-fleur, chou — contiennent des composés soufrés qui soutiennent la détoxification hépatique</li>
+<li><strong>Betterave</strong> : riche en bétaïne, un donneur de méthyle qui protège le foie</li>
+<li><strong>Curcuma</strong> : anti-inflammatoire puissant sur le tissu hépatique</li>
+<li><strong>Artichaut</strong> : stimule la production de bile et la fonction hépatique</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Mardinoglu et al. (2018, <em>Cell Metabolism</em>) ont dÃ©montrÃ© qu'un rÃ©gime hyperprotÃ©inÃ© et pauvre en glucides rÃ©duisait la graisse hÃ©patique de <strong>50 %</strong> en seulement 2 semaines chez des sujets atteints de NAFLD, tout en amÃ©liorant l'ensemble des marqueurs mÃ©taboliques.
+🔬 <strong>Ce que dit la science :</strong> Mardinoglu et al. (2018, <em>Cell Metabolism</em>) ont démontré qu'un régime hyperprotéiné et pauvre en glucides réduisait la graisse hépatique de <strong>50 %</strong> en seulement 2 semaines chez des sujets atteints de NAFLD, tout en améliorant l'ensemble des marqueurs métaboliques.
 </blockquote>
 
-<h3>5. Le jeÃ»ne intermittent : un outil puissant pour le foie</h3>
-<p>Le jeÃ»ne intermittent (16/8 ou mÃªme 14/10) force le foie Ã  puiser dans ses rÃ©serves de graisse pour produire de l'Ã©nergie. C'est l'un des outils les plus efficaces pour rÃ©duire la stÃ©atose.</p>
+<h3>5. Le jeûne intermittent : un outil puissant pour le foie</h3>
+<p>Le jeûne intermittent (16/8 ou même 14/10) force le foie à puiser dans ses réserves de graisse pour produire de l'énergie. C'est l'un des outils les plus efficaces pour réduire la stéatose.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« La stÃ©atose hÃ©patique est la manifestation visible d'un problÃ¨me systÃ©mique d'excÃ¨s d'insuline. Le fructose est toxique pour le foie exactement comme l'alcool est toxique pour le foie â€” par les mÃªmes voies mÃ©taboliques. Traitez la NAFLD comme vous traiteriez une maladie alcoolique du foie : en supprimant l'agent responsable. Â» â€” <strong>Dr. Robert Lustig</strong>, endocrinologue, UCSF
+💬 <strong>Avis d'expert :</strong> « La stéatose hépatique est la manifestation visible d'un problème systémique d'excès d'insuline. Le fructose est toxique pour le foie exactement comme l'alcool est toxique pour le foie — par les mêmes voies métaboliques. Traitez la NAFLD comme vous traiteriez une maladie alcoolique du foie : en supprimant l'agent responsable. » — <strong>Dr. Robert Lustig</strong>, endocrinologue, UCSF
 </blockquote>
 
-<h2>Plan alimentaire anti-stÃ©atose : journÃ©e type</h2>
+<h2>Plan alimentaire anti-stéatose : journée type</h2>
 
-<p><strong>Matin (10h â€” aprÃ¨s jeÃ»ne 16/8) :</strong> 3 Å“ufs brouillÃ©s au curcuma + avocat + cafÃ© noir (2 tasses)</p>
-<p><strong>Midi :</strong> Sardines grillÃ©es + grande salade de roquette, betterave crue rÃ¢pÃ©e, noix + huile d'olive + citron</p>
-<p><strong>Collation :</strong> PoignÃ©e d'amandes + thÃ© vert</p>
-<p><strong>Soir (avant 20h) :</strong> Poulet rÃ´ti + brocoli vapeur + filet d'huile d'olive + artichaut vinaigrette</p>
+<p><strong>Matin (10h — après jeûne 16/8) :</strong> 3 Å“ufs brouillés au curcuma + avocat + café noir (2 tasses)</p>
+<p><strong>Midi :</strong> Sardines grillées + grande salade de roquette, betterave crue râpée, noix + huile d'olive + citron</p>
+<p><strong>Collation :</strong> Poignée d'amandes + thé vert</p>
+<p><strong>Soir (avant 20h) :</strong> Poulet rôti + brocoli vapeur + filet d'huile d'olive + artichaut vinaigrette</p>
 
-<h2>RÃ©sultats attendus</h2>
+<h2>Résultats attendus</h2>
 <ul>
 <li><strong>2 semaines</strong> : baisse des transaminases (ALAT/ASAT) mesurable</li>
-<li><strong>4-6 semaines</strong> : rÃ©duction significative de la graisse hÃ©patique (visible en Ã©chographie)</li>
-<li><strong>10-12 semaines</strong> : normalisation possible de la stÃ©atose chez les cas lÃ©gers Ã  modÃ©rÃ©s</li>
+<li><strong>4-6 semaines</strong> : réduction significative de la graisse hépatique (visible en échographie)</li>
+<li><strong>10-12 semaines</strong> : normalisation possible de la stéatose chez les cas légers à modérés</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Le foie est un organe remarquablement rÃ©silient. Il peut se rÃ©gÃ©nÃ©rer complÃ¨tement si vous lui en donnez l'occasion. Supprimez les agresseurs â€” fructose, alcool, glucides raffinÃ©s â€” et donnez-lui les bons nutriments. En 10 semaines, les rÃ©sultats sont souvent spectaculaires. Â» â€” <strong>Dr. Jason Fung</strong>
+💬 <strong>Avis d'expert :</strong> « Le foie est un organe remarquablement résilient. Il peut se régénérer complètement si vous lui en donnez l'occasion. Supprimez les agresseurs — fructose, alcool, glucides raffinés — et donnez-lui les bons nutriments. En 10 semaines, les résultats sont souvent spectaculaires. » — <strong>Dr. Jason Fung</strong>
 </blockquote>
 
-<h2>DÃ©graissez votre foie avec SÃ¨che 10 Semaines</h2>
+<h2>Dégraissez votre foie avec Sèche 10 Semaines</h2>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> Ã©limine les glucides raffinÃ©s et le fructose ajoutÃ©, augmente les protÃ©ines et intÃ¨gre tous les aliments hÃ©patoprotecteurs. En prime, la perte de graisse viscÃ©rale qu'il gÃ©nÃ¨re contribue directement Ã  dÃ©graisser votre foie.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> élimine les glucides raffinés et le fructose ajouté, augmente les protéines et intègre tous les aliments hépatoprotecteurs. En prime, la perte de graisse viscérale qu'il génère contribue directement à dégraisser votre foie.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">LibÃ©rez votre foie en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Libérez votre foie en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Si vos transaminases sont Ã©levÃ©es, consultez un hÃ©patologue pour un bilan complet.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si vos transaminases sont élevées, consultez un hépatologue pour un bilan complet.</em></p>
 </article>`
   },
   {
     slug: "syndrome-metabolique-traitement-naturel",
-    title: "Syndrome MÃ©tabolique : 5 Traitements Naturels ValidÃ©s par la Science",
-    metaDescription: "Syndrome mÃ©tabolique diagnostiquÃ© ? Voici 5 traitements naturels validÃ©s par la recherche pour inverser chaque composante de ce syndrome.",
+    title: "Syndrome Métabolique : 5 Traitements Naturels Validés par la Science",
+    metaDescription: "Syndrome métabolique diagnostiqué ? Voici 5 traitements naturels validés par la recherche pour inverser chaque composante de ce syndrome.",
     date: "2026-02-21",
     readTime: "12 min",
-    keyword: "syndrome mÃ©tabolique traitement naturel",
+    keyword: "syndrome métabolique traitement naturel",
     content: `<article>
-<h1>Syndrome MÃ©tabolique : 5 Traitements Naturels ValidÃ©s par la Science</h1>
+<h1>Syndrome Métabolique : 5 Traitements Naturels Validés par la Science</h1>
 
-<p>Le syndrome mÃ©tabolique n'est pas une maladie unique â€” c'est un <strong>cluster de 5 facteurs de risque</strong> qui, combinÃ©s, multiplient dangereusement votre risque de diabÃ¨te de type 2, de maladies cardiovasculaires et d'AVC. Vous avez le syndrome mÃ©tabolique si vous prÃ©sentez <strong>au moins 3 des 5 critÃ¨res</strong> suivants :</p>
+<p>Le syndrome métabolique n'est pas une maladie unique — c'est un <strong>cluster de 5 facteurs de risque</strong> qui, combinés, multiplient dangereusement votre risque de diabète de type 2, de maladies cardiovasculaires et d'AVC. Vous avez le syndrome métabolique si vous présentez <strong>au moins 3 des 5 critères</strong> suivants :</p>
 
 <ol>
 <li><strong>Tour de taille</strong> &gt; 94 cm (homme) / &gt; 80 cm (femme)</li>
-<li><strong>TriglycÃ©rides</strong> â‰¥ 1,50 g/L</li>
-<li><strong>HDL-cholestÃ©rol</strong> &lt; 0,40 g/L (homme) / &lt; 0,50 g/L (femme)</li>
-<li><strong>Pression artÃ©rielle</strong> â‰¥ 130/85 mmHg</li>
-<li><strong>GlycÃ©mie Ã  jeun</strong> â‰¥ 1,00 g/L</li>
+<li><strong>Triglycérides</strong> ≥ 1,50 g/L</li>
+<li><strong>HDL-cholestérol</strong> &lt; 0,40 g/L (homme) / &lt; 0,50 g/L (femme)</li>
+<li><strong>Pression artérielle</strong> ≥ 130/85 mmHg</li>
+<li><strong>Glycémie à jeun</strong> ≥ 1,00 g/L</li>
 </ol>
 
-<p>La prÃ©valence est alarmante : <strong>20 Ã  25 % des adultes</strong> en France sont concernÃ©s, et ce chiffre atteint 40 % aprÃ¨s 60 ans. Le dÃ©nominateur commun de ces 5 critÃ¨res ? <strong>L'insulino-rÃ©sistance.</strong></p>
+<p>La prévalence est alarmante : <strong>20 à 25 % des adultes</strong> en France sont concernés, et ce chiffre atteint 40 % après 60 ans. Le dénominateur commun de ces 5 critères ? <strong>L'insulino-résistance.</strong></p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Grundy et al. (2005, <em>Circulation</em>) ont Ã©tabli dans le consensus AHA/NHLBI que le syndrome mÃ©tabolique multiplie le risque de diabÃ¨te de type 2 par <strong>5</strong> et le risque cardiovasculaire par <strong>2</strong>. Cependant, les interventions sur le mode de vie peuvent inverser chaque composante individuellement.
+🔬 <strong>Ce que dit la science :</strong> Grundy et al. (2005, <em>Circulation</em>) ont établi dans le consensus AHA/NHLBI que le syndrome métabolique multiplie le risque de diabète de type 2 par <strong>5</strong> et le risque cardiovasculaire par <strong>2</strong>. Cependant, les interventions sur le mode de vie peuvent inverser chaque composante individuellement.
 </blockquote>
 
-<h2>Les 5 traitements naturels validÃ©s</h2>
+<h2>Les 5 traitements naturels validés</h2>
 
-<h3>Traitement #1 : Le rÃ©gime mÃ©diterranÃ©en enrichi</h3>
+<h3>Traitement #1 : Le régime méditerranéen enrichi</h3>
 
-<p>Le rÃ©gime mÃ©diterranÃ©en est le plus Ã©tudiÃ© et le plus efficace pour le syndrome mÃ©tabolique. Il agit simultanÃ©ment sur les 5 composantes.</p>
+<p>Le régime méditerranéen est le plus étudié et le plus efficace pour le syndrome métabolique. Il agit simultanément sur les 5 composantes.</p>
 
 <p><strong>Les piliers :</strong></p>
 <ul>
-<li>Huile d'olive extra-vierge comme source de graisse principale (4+ c. Ã  soupe/jour)</li>
+<li>Huile d'olive extra-vierge comme source de graisse principale (4+ c. à soupe/jour)</li>
 <li>Poissons gras 3-4 fois/semaine</li>
-<li>LÃ©gumineuses quotidiennes</li>
+<li>Légumineuses quotidiennes</li>
 <li>Noix et amandes (30 g/jour)</li>
-<li>LÃ©gumes Ã  volontÃ©, fruits entiers modÃ©rÃ©ment</li>
-<li>Viande rouge limitÃ©e (&lt;2 fois/semaine)</li>
-<li>ZÃ©ro sucre ajoutÃ© et glucides raffinÃ©s</li>
+<li>Légumes à volonté, fruits entiers modérément</li>
+<li>Viande rouge limitée (&lt;2 fois/semaine)</li>
+<li>Zéro sucre ajouté et glucides raffinés</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Kastorini et al. (2011, <em>Journal of the American College of Cardiology</em>), dans une mÃ©ta-analyse de 50 Ã©tudes portant sur 534 906 participants, ont conclu que le rÃ©gime mÃ©diterranÃ©en rÃ©duit significativement le tour de taille (-0,42 cm), les triglycÃ©rides (-6,14 mg/dL), la glycÃ©mie Ã  jeun (-3,89 mg/dL), la pression systolique (-2,35 mmHg) et augmente le HDL (+1,17 mg/dL).
+🔬 <strong>Ce que dit la science :</strong> Kastorini et al. (2011, <em>Journal of the American College of Cardiology</em>), dans une méta-analyse de 50 études portant sur 534 906 participants, ont conclu que le régime méditerranéen réduit significativement le tour de taille (-0,42 cm), les triglycérides (-6,14 mg/dL), la glycémie à jeun (-3,89 mg/dL), la pression systolique (-2,35 mmHg) et augmente le HDL (+1,17 mg/dL).
 </blockquote>
 
-<h3>Traitement #2 : L'exercice combinÃ© (aÃ©robie + musculation)</h3>
+<h3>Traitement #2 : L'exercice combiné (aérobie + musculation)</h3>
 
-<p>L'exercice est le deuxiÃ¨me pilier incontournable. La combinaison aÃ©robie + musculation est supÃ©rieure Ã  chaque modalitÃ© isolÃ©e.</p>
+<p>L'exercice est le deuxième pilier incontournable. La combinaison aérobie + musculation est supérieure à chaque modalité isolée.</p>
 
 <p><strong>Le protocole optimal :</strong></p>
 <ul>
-<li><strong>Musculation</strong> : 2-3 sÃ©ances/semaine, exercices composÃ©s (squats, dÃ©veloppÃ©, rowing), 3-4 sÃ©ries de 8-12 rÃ©pÃ©titions</li>
-<li><strong>AÃ©robie</strong> : 150 minutes/semaine d'activitÃ© modÃ©rÃ©e (marche rapide, vÃ©lo) ou 75 minutes d'activitÃ© intense</li>
-<li><strong>HIIT</strong> : 1-2 sÃ©ances/semaine pour maximiser l'amÃ©lioration de la sensibilitÃ© Ã  l'insuline</li>
-<li><strong>NEAT (activitÃ© non-exercice)</strong> : marche aprÃ¨s les repas, escaliers, station debout â€” visez 8 000-10 000 pas/jour</li>
+<li><strong>Musculation</strong> : 2-3 séances/semaine, exercices composés (squats, développé, rowing), 3-4 séries de 8-12 répétitions</li>
+<li><strong>Aérobie</strong> : 150 minutes/semaine d'activité modérée (marche rapide, vélo) ou 75 minutes d'activité intense</li>
+<li><strong>HIIT</strong> : 1-2 séances/semaine pour maximiser l'amélioration de la sensibilité à l'insuline</li>
+<li><strong>NEAT (activité non-exercice)</strong> : marche après les repas, escaliers, station debout — visez 8 000-10 000 pas/jour</li>
 </ul>
 
-<h3>Traitement #3 : Le jeÃ»ne intermittent</h3>
+<h3>Traitement #3 : Le jeûne intermittent</h3>
 
-<p>Le jeÃ»ne intermittent (time-restricted eating) est particuliÃ¨rement efficace pour le syndrome mÃ©tabolique car il cible directement l'hyperinsulinÃ©mie â€” le moteur sous-jacent.</p>
+<p>Le jeûne intermittent (time-restricted eating) est particulièrement efficace pour le syndrome métabolique car il cible directement l'hyperinsulinémie — le moteur sous-jacent.</p>
 
-<p><strong>Protocole recommandÃ© :</strong></p>
+<p><strong>Protocole recommandé :</strong></p>
 <ul>
-<li>Commencez par 12h de jeÃ»ne nocturne (facile : dÃ®ner Ã  20h, petit-dÃ©jeuner Ã  8h)</li>
-<li>Progressez vers 14-16h si tolÃ©rÃ©</li>
-<li>Maintenez 2-3 repas nutritifs pendant la fenÃªtre alimentaire (pas de grignotage)</li>
+<li>Commencez par 12h de jeûne nocturne (facile : dîner à 20h, petit-déjeuner à 8h)</li>
+<li>Progressez vers 14-16h si toléré</li>
+<li>Maintenez 2-3 repas nutritifs pendant la fenêtre alimentaire (pas de grignotage)</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Avis d'expert :</strong> Â« Le syndrome mÃ©tabolique est une maladie d'hyperinsulinÃ©mie. Chaque fois que vous mangez, vous stimulez l'insuline. Le jeÃ»ne intermittent est le moyen le plus simple et le plus naturel de rÃ©duire les niveaux d'insuline â€” vous n'avez littÃ©ralement rien Ã  faire, juste Ã  ne pas manger pendant quelques heures. Â» â€” <strong>Dr. Jason Fung</strong>
+💬 <strong>Avis d'expert :</strong> « Le syndrome métabolique est une maladie d'hyperinsulinémie. Chaque fois que vous mangez, vous stimulez l'insuline. Le jeûne intermittent est le moyen le plus simple et le plus naturel de réduire les niveaux d'insuline — vous n'avez littéralement rien à faire, juste à ne pas manger pendant quelques heures. » — <strong>Dr. Jason Fung</strong>
 </blockquote>
 
 <h3>Traitement #4 : La gestion du stress et du sommeil</h3>
 
-<p>Le cortisol chronique aggrave chaque composante du syndrome mÃ©tabolique : il augmente la glycÃ©mie, la pression artÃ©rielle, les triglycÃ©rides et le stockage viscÃ©ral.</p>
+<p>Le cortisol chronique aggrave chaque composante du syndrome métabolique : il augmente la glycémie, la pression artérielle, les triglycérides et le stockage viscéral.</p>
 
 <p><strong>Protocole :</strong></p>
 <ul>
-<li><strong>Sommeil</strong> : 7-8h/nuit, horaires rÃ©guliers, chambre fraÃ®che et obscure</li>
-<li><strong>CohÃ©rence cardiaque</strong> : 5 minutes, 3 fois/jour (inspiration 5s, expiration 5s)</li>
+<li><strong>Sommeil</strong> : 7-8h/nuit, horaires réguliers, chambre fraîche et obscure</li>
+<li><strong>Cohérence cardiaque</strong> : 5 minutes, 3 fois/jour (inspiration 5s, expiration 5s)</li>
 <li><strong>Marche en nature</strong> : 30 minutes, 3-4 fois/semaine</li>
-<li><strong>MagnÃ©sium le soir</strong> : 300-400 mg de bisglycinate (relaxant et hypoglycÃ©miant)</li>
+<li><strong>Magnésium le soir</strong> : 300-400 mg de bisglycinate (relaxant et hypoglycémiant)</li>
 </ul>
 
-<h3>Traitement #5 : Les supplÃ©ments ciblÃ©s</h3>
+<h3>Traitement #5 : Les suppléments ciblés</h3>
 
-<p>En complÃ©ment des 4 premiers piliers (et non en remplacement) :</p>
+<p>En complément des 4 premiers piliers (et non en remplacement) :</p>
 
 <ul>
-<li><strong>OmÃ©ga-3 (EPA+DHA)</strong> : 2-4 g/jour â€” rÃ©duisent les triglycÃ©rides de 15-30 % et l'inflammation</li>
-<li><strong>MagnÃ©sium</strong> : 300-400 mg/jour â€” amÃ©liore la sensibilitÃ© Ã  l'insuline et la pression artÃ©rielle</li>
-<li><strong>Vitamine D</strong> : si carence (trÃ¨s frÃ©quente) â€” 2 000-4 000 UI/jour. La carence en vitamine D est associÃ©e Ã  un risque accru de syndrome mÃ©tabolique.</li>
-<li><strong>BerbÃ©rine</strong> : 500 mg 2-3x/jour â€” rÃ©duit la glycÃ©mie, les triglycÃ©rides et le cholestÃ©rol</li>
-<li><strong>Probiotiques</strong> : souches spÃ©cifiques (Lactobacillus, Bifidobacterium) amÃ©liorent le mÃ©tabolisme du glucose</li>
+<li><strong>Oméga-3 (EPA+DHA)</strong> : 2-4 g/jour — réduisent les triglycérides de 15-30 % et l'inflammation</li>
+<li><strong>Magnésium</strong> : 300-400 mg/jour — améliore la sensibilité à l'insuline et la pression artérielle</li>
+<li><strong>Vitamine D</strong> : si carence (très fréquente) — 2 000-4 000 UI/jour. La carence en vitamine D est associée à un risque accru de syndrome métabolique.</li>
+<li><strong>Berbérine</strong> : 500 mg 2-3x/jour — réduit la glycémie, les triglycérides et le cholestérol</li>
+<li><strong>Probiotiques</strong> : souches spécifiques (Lactobacillus, Bifidobacterium) améliorent le métabolisme du glucose</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Yamaoka & Tango (2012, <em>BMC Medicine</em>), dans une mÃ©ta-analyse de 8 essais contrÃ´lÃ©s randomisÃ©s, ont montrÃ© que les modifications de mode de vie (alimentation + exercice) rÃ©solvaient le syndrome mÃ©tabolique chez <strong>67 % des participants</strong> aprÃ¨s 1 an, contre seulement 28 % dans le groupe tÃ©moin.
+🔬 <strong>Ce que dit la science :</strong> Yamaoka & Tango (2012, <em>BMC Medicine</em>), dans une méta-analyse de 8 essais contrôlés randomisés, ont montré que les modifications de mode de vie (alimentation + exercice) résolvaient le syndrome métabolique chez <strong>67 % des participants</strong> après 1 an, contre seulement 28 % dans le groupe témoin.
 </blockquote>
 
 <h2>Le plan d'action en 10 semaines</h2>
 
 <ol>
-<li><strong>Semaines 1-2</strong> : Adoptez le rÃ©gime mÃ©diterranÃ©en. Supprimez sucres et glucides raffinÃ©s.</li>
-<li><strong>Semaines 3-4</strong> : Ajoutez l'exercice combinÃ© (musculation + marche quotidienne).</li>
-<li><strong>Semaines 5-6</strong> : IntÃ©grez le jeÃ»ne intermittent 14/10.</li>
+<li><strong>Semaines 1-2</strong> : Adoptez le régime méditerranéen. Supprimez sucres et glucides raffinés.</li>
+<li><strong>Semaines 3-4</strong> : Ajoutez l'exercice combiné (musculation + marche quotidienne).</li>
+<li><strong>Semaines 5-6</strong> : Intégrez le jeûne intermittent 14/10.</li>
 <li><strong>Semaines 7-8</strong> : Optimisez sommeil et gestion du stress.</li>
-<li><strong>Semaines 9-10</strong> : Ajoutez les supplÃ©ments ciblÃ©s si nÃ©cessaire. Bilan sanguin de contrÃ´le.</li>
+<li><strong>Semaines 9-10</strong> : Ajoutez les suppléments ciblés si nécessaire. Bilan sanguin de contrôle.</li>
 </ol>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Dr. Jason Fung, nÃ©phrologue :</strong> Â« Le syndrome mÃ©tabolique n'est pas cinq maladies â€” c'est une seule maladie avec cinq manifestations. Traitez l'hyperinsulinÃ©mie, et tout s'amÃ©liore. Â»
+💬 <strong>Dr. Jason Fung, néphrologue :</strong> « Le syndrome métabolique n'est pas cinq maladies — c'est une seule maladie avec cinq manifestations. Traitez l'hyperinsulinémie, et tout s'améliore. »
 </blockquote>
 
 <h2>Conclusion</h2>
 
-<p>Le syndrome mÃ©tabolique est <strong>rÃ©versible</strong>. Alimentation mÃ©diterranÃ©enne, exercice combinÃ©, gestion du stress â€” les rÃ©sultats sont mesurables en quelques semaines.</p>
+<p>Le syndrome métabolique est <strong>réversible</strong>. Alimentation méditerranéenne, exercice combiné, gestion du stress — les résultats sont mesurables en quelques semaines.</p>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> intÃ¨gre ces cinq piliers dans un protocole structurÃ© et progressif.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> intègre ces cinq piliers dans un protocole structuré et progressif.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Inversez votre syndrome mÃ©tabolique en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Inversez votre syndrome métabolique en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
 </article>`
   },
   {
     slug: "tour-de-taille-homme-dangereux",
-    title: "Tour de Taille Homme : Ã€ Partir de Combien C'est Dangereux ?",
-    metaDescription: "Tour de taille homme : dÃ©couvrez les seuils dangereux, les risques santÃ© et comment rÃ©duire votre tour de taille efficacement et durablement.",
+    title: "Tour de Taille Homme : À Partir de Combien C'est Dangereux ?",
+    metaDescription: "Tour de taille homme : découvrez les seuils dangereux, les risques santé et comment réduire votre tour de taille efficacement et durablement.",
     date: "2026-02-21",
     readTime: "10 min",
     keyword: "tour de taille homme dangereux",
     content: `<article>
-<h1>Tour de Taille Homme : Ã€ Partir de Combien C'est Dangereux ?</h1>
+<h1>Tour de Taille Homme : À Partir de Combien C'est Dangereux ?</h1>
 
-<p>Vous connaissez votre poids, peut-Ãªtre votre IMC. Mais connaissez-vous votre <strong>tour de taille</strong> ? Ce simple chiffre, mesurable en 10 secondes avec un mÃ¨tre ruban, est considÃ©rÃ© par de nombreux experts comme <strong>le meilleur indicateur de risque cardiovasculaire et mÃ©tabolique</strong> â€” bien plus fiable que la balance.</p>
+<p>Vous connaissez votre poids, peut-être votre IMC. Mais connaissez-vous votre <strong>tour de taille</strong> ? Ce simple chiffre, mesurable en 10 secondes avec un mètre ruban, est considéré par de nombreux experts comme <strong>le meilleur indicateur de risque cardiovasculaire et métabolique</strong> — bien plus fiable que la balance.</p>
 
-<p>Car ce n'est pas le poids total qui tue, c'est <strong>oÃ¹</strong> la graisse se stocke. Et chez l'homme, elle se concentre principalement autour de l'abdomen, enveloppant les organes vitaux. C'est la fameuse <strong>graisse viscÃ©rale</strong> â€” et elle est redoutable.</p>
+<p>Car ce n'est pas le poids total qui tue, c'est <strong>où</strong> la graisse se stocke. Et chez l'homme, elle se concentre principalement autour de l'abdomen, enveloppant les organes vitaux. C'est la fameuse <strong>graisse viscérale</strong> — et elle est redoutable.</p>
 
-<h2>Les seuils officiels : quand faut-il s'inquiÃ©ter ?</h2>
+<h2>Les seuils officiels : quand faut-il s'inquiéter ?</h2>
 
-<p>L'Organisation Mondiale de la SantÃ© (OMS) et la FÃ©dÃ©ration Internationale du DiabÃ¨te (FID) ont Ã©tabli des seuils clairs :</p>
+<p>L'Organisation Mondiale de la Santé (OMS) et la Fédération Internationale du Diabète (FID) ont établi des seuils clairs :</p>
 
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <thead>
@@ -1111,443 +1111,443 @@ export const healthArticles: BlogArticle[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 94 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">âœ… Normal</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">94 Ã  102 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">âš ï¸ Risque accru</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 102 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">ðŸ”´ Risque Ã©levÃ©</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 94 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">✅ Normal</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">94 à 102 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">⚠ï¸ Risque accru</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 102 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">🔴 Risque élevé</td></tr>
 </tbody>
 </table>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Une mÃ©ta-analyse de Czernichow et al. (2011, <em>The Lancet</em>), portant sur 220 000 participants, a dÃ©montrÃ© que chaque augmentation de <strong>5 cm du tour de taille</strong> est associÃ©e Ã  une hausse de <strong>17 % du risque de mortalitÃ© cardiovasculaire</strong>, indÃ©pendamment de l'IMC.
+🔬 <strong>Ce que dit la science :</strong> Une méta-analyse de Czernichow et al. (2011, <em>The Lancet</em>), portant sur 220 000 participants, a démontré que chaque augmentation de <strong>5 cm du tour de taille</strong> est associée à une hausse de <strong>17 % du risque de mortalité cardiovasculaire</strong>, indépendamment de l'IMC.
 </blockquote>
 
 <h2>Comment mesurer correctement son tour de taille</h2>
 
 <ol>
-<li><strong>Debout, dÃ©tendu</strong>, pieds Ã©cartÃ©s de la largeur des Ã©paules</li>
-<li>Placez le mÃ¨tre ruban <strong>Ã  mi-chemin entre le bas de la derniÃ¨re cÃ´te et le haut de la crÃªte iliaque</strong></li>
-<li>Le ruban doit Ãªtre <strong>horizontal, bien Ã  plat</strong>, sans comprimer la peau</li>
+<li><strong>Debout, détendu</strong>, pieds écartés de la largeur des épaules</li>
+<li>Placez le mètre ruban <strong>à mi-chemin entre le bas de la dernière côte et le haut de la crête iliaque</strong></li>
+<li>Le ruban doit être <strong>horizontal, bien à plat</strong>, sans comprimer la peau</li>
 <li>Mesurez en <strong>fin d'expiration normale</strong> (ne rentrez pas le ventre !)</li>
-<li>Prenez la mesure <strong>le matin Ã  jeun</strong> pour plus de fiabilitÃ©</li>
+<li>Prenez la mesure <strong>le matin à jeun</strong> pour plus de fiabilité</li>
 </ol>
 
 <h2>Pourquoi le tour de taille est plus important que l'IMC</h2>
 
-<p>L'IMC ne distingue pas masse musculaire et masse grasse, et ne dit rien sur la <strong>distribution</strong> de la graisse. Un homme musclÃ© peut Ãªtre classÃ© Â« obÃ¨se Â» Ã  tort, tandis qu'un homme mince avec un gros ventre (Â« skinny fat Â») passe sous le radar.</p>
+<p>L'IMC ne distingue pas masse musculaire et masse grasse, et ne dit rien sur la <strong>distribution</strong> de la graisse. Un homme musclé peut être classé « obèse » à tort, tandis qu'un homme mince avec un gros ventre (« skinny fat ») passe sous le radar.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Pischon et al. (2008, <em>New England Journal of Medicine</em>), dans une Ã©tude sur <strong>359 387 participants europÃ©ens</strong>, ont montrÃ© que le tour de taille et le rapport taille/hanche Ã©taient des prÃ©dicteurs de mortalitÃ© <strong>significativement supÃ©rieurs Ã  l'IMC</strong>.
+🔬 <strong>Ce que dit la science :</strong> Pischon et al. (2008, <em>New England Journal of Medicine</em>), dans une étude sur <strong>359 387 participants européens</strong>, ont montré que le tour de taille et le rapport taille/hanche étaient des prédicteurs de mortalité <strong>significativement supérieurs à l'IMC</strong>.
 </blockquote>
 
-<h2>Le rapport taille/taille : encore plus prÃ©cis</h2>
+<h2>Le rapport taille/taille : encore plus précis</h2>
 
 <p>Le WHtR (<em>Waist-to-Height Ratio</em>) est un indicateur puissant :</p>
 <ul>
 <li><strong>Moins de 0.5</strong> : sain</li>
-<li><strong>0.5 Ã  0.6</strong> : risque accru</li>
-<li><strong>Plus de 0.6</strong> : risque Ã©levÃ©</li>
+<li><strong>0.5 à 0.6</strong> : risque accru</li>
+<li><strong>Plus de 0.6</strong> : risque élevé</li>
 </ul>
 
-<p>RÃ¨gle simple : <strong>votre tour de taille ne devrait pas dÃ©passer la moitiÃ© de votre taille</strong>.</p>
+<p>Règle simple : <strong>votre tour de taille ne devrait pas dépasser la moitié de votre taille</strong>.</p>
 
 <h2>Les risques concrets d'un tour de taille excessif</h2>
 
 <ul>
-<li><strong>DiabÃ¨te de type 2</strong> : risque multipliÃ© par 3 Ã  5</li>
+<li><strong>Diabète de type 2</strong> : risque multiplié par 3 à 5</li>
 <li><strong>Maladies cardiovasculaires</strong> : infarctus, AVC, hypertension</li>
-<li><strong>StÃ©atose hÃ©patique</strong> : prÃ©sente chez 80 % des hommes avec un tour de taille supÃ©rieur Ã  102 cm</li>
-<li><strong>ApnÃ©e du sommeil</strong></li>
-<li><strong>Baisse de testostÃ©rone</strong> : l'aromatase convertit la testostÃ©rone en Å“strogÃ¨nes</li>
+<li><strong>Stéatose hépatique</strong> : présente chez 80 % des hommes avec un tour de taille supérieur à 102 cm</li>
+<li><strong>Apnée du sommeil</strong></li>
+<li><strong>Baisse de testostérone</strong> : l'aromatase convertit la testostérone en Å“strogènes</li>
 <li><strong>Inflammation chronique</strong> : cytokines pro-inflammatoires (TNF-Î±, IL-6)</li>
-<li><strong>Certains cancers</strong> : cÃ´lon, prostate, pancrÃ©as</li>
+<li><strong>Certains cancers</strong> : côlon, prostate, pancréas</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Peter Attia, MD :</strong> Â« Le tour de taille est le signe vital que presque personne ne mesure. Si je ne devais garder qu'un seul chiffre pour Ã©valuer la santÃ© mÃ©tabolique d'un patient, ce serait celui-lÃ  â€” pas le poids, pas l'IMC. Â»
+💬 <strong>Peter Attia, MD :</strong> « Le tour de taille est le signe vital que presque personne ne mesure. Si je ne devais garder qu'un seul chiffre pour évaluer la santé métabolique d'un patient, ce serait celui-là — pas le poids, pas l'IMC. »
 </blockquote>
 
-<h2>Comment rÃ©duire son tour de taille efficacement</h2>
+<h2>Comment réduire son tour de taille efficacement</h2>
 
-<h3>1. Alimentation ciblÃ©e</h3>
+<h3>1. Alimentation ciblée</h3>
 <ul>
-<li><strong>RÃ©duire les sucres ajoutÃ©s et glucides raffinÃ©s</strong> â€” stimulent l'insuline et le stockage viscÃ©ral</li>
-<li><strong>Augmenter les protÃ©ines</strong> Ã  1.6-2 g/kg</li>
-<li><strong>Fibres</strong> : 30-40 g/jour â€” chaque +10 g rÃ©duit la graisse viscÃ©rale de 3.7 % sur 5 ans</li>
-<li><strong>Ã‰viter l'alcool</strong> : favorise spÃ©cifiquement le stockage abdominal</li>
+<li><strong>Réduire les sucres ajoutés et glucides raffinés</strong> — stimulent l'insuline et le stockage viscéral</li>
+<li><strong>Augmenter les protéines</strong> à 1.6-2 g/kg</li>
+<li><strong>Fibres</strong> : 30-40 g/jour — chaque +10 g réduit la graisse viscérale de 3.7 % sur 5 ans</li>
+<li><strong>Éviter l'alcool</strong> : favorise spécifiquement le stockage abdominal</li>
 </ul>
 
-<h3>2. Exercice stratÃ©gique</h3>
+<h3>2. Exercice stratégique</h3>
 <ul>
 <li><strong>Musculation</strong> 3-4x/semaine</li>
-<li><strong>HIIT</strong> 2x/semaine â€” brÃ»le prÃ©fÃ©rentiellement la graisse abdominale</li>
+<li><strong>HIIT</strong> 2x/semaine — brûle préférentiellement la graisse abdominale</li>
 <li><strong>Marche quotidienne</strong> 8 000-10 000 pas</li>
 </ul>
 
 <h3>3. Gestion du stress et du sommeil</h3>
 <ul>
 <li>Le cortisol chronique dirige la graisse vers l'abdomen</li>
-<li>7-9 heures de sommeil sont non nÃ©gociables</li>
-<li>Dormir moins de 6 heures augmente la graisse viscÃ©rale de 32 % en 5 ans</li>
+<li>7-9 heures de sommeil sont non négociables</li>
+<li>Dormir moins de 6 heures augmente la graisse viscérale de 32 % en 5 ans</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Ohkawara et al. (2007, <em>International Journal of Obesity</em>) ont montrÃ© dans une mÃ©ta-analyse que l'exercice aÃ©robie combinÃ© Ã  un rÃ©gime alimentaire produisait une rÃ©duction de la graisse viscÃ©rale de <strong>24.2 cmÂ²</strong> en moyenne.
+🔬 <strong>Ce que dit la science :</strong> Ohkawara et al. (2007, <em>International Journal of Obesity</em>) ont montré dans une méta-analyse que l'exercice aérobie combiné à un régime alimentaire produisait une réduction de la graisse viscérale de <strong>24.2 cm²</strong> en moyenne.
 </blockquote>
 
-<h2>Objectifs rÃ©alistes</h2>
+<h2>Objectifs réalistes</h2>
 
-<p>Avec un programme structurÃ© :</p>
+<p>Avec un programme structuré :</p>
 <ul>
-<li><strong>Semaines 1-4</strong> : -2 Ã  -4 cm</li>
-<li><strong>Semaines 5-8</strong> : -3 Ã  -5 cm supplÃ©mentaires</li>
-<li><strong>Semaines 9-12</strong> : -2 Ã  -3 cm supplÃ©mentaires</li>
+<li><strong>Semaines 1-4</strong> : -2 à -4 cm</li>
+<li><strong>Semaines 5-8</strong> : -3 à -5 cm supplémentaires</li>
+<li><strong>Semaines 9-12</strong> : -2 à -3 cm supplémentaires</li>
 </ul>
 
-<p>Soit <strong>7 Ã  12 cm en 10-12 semaines</strong>.</p>
+<p>Soit <strong>7 à 12 cm en 10-12 semaines</strong>.</p>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> est conÃ§u pour cibler la graisse abdominale chez les hommes. Alimentation optimisÃ©e, musculation progressive, et suivi hebdomadaire du tour de taille.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> est conçu pour cibler la graisse abdominale chez les hommes. Alimentation optimisée, musculation progressive, et suivi hebdomadaire du tour de taille.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">RÃ©duisez votre tour de taille de 7 Ã  12 cm en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Réduisez votre tour de taille de 7 à 12 cm en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Si votre tour de taille dÃ©passe 102 cm, consultez votre mÃ©decin pour un bilan mÃ©tabolique complet.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si votre tour de taille dépasse 102 cm, consultez votre médecin pour un bilan métabolique complet.</em></p>
 </article>`
   },
   {
     slug: "graisse-viscerale-danger-sante",
-    title: "Graisse ViscÃ©rale : Le Danger Invisible (et Comment l'Ã‰liminer)",
-    metaDescription: "La graisse viscÃ©rale est le type de graisse le plus dangereux. DÃ©couvrez comment la mesurer, ses risques et les mÃ©thodes prouvÃ©es pour l'Ã©liminer.",
+    title: "Graisse Viscérale : Le Danger Invisible (et Comment l'Éliminer)",
+    metaDescription: "La graisse viscérale est le type de graisse le plus dangereux. Découvrez comment la mesurer, ses risques et les méthodes prouvées pour l'éliminer.",
     date: "2026-02-21",
     readTime: "11 min",
-    keyword: "graisse viscÃ©rale danger santÃ©",
+    keyword: "graisse viscérale danger santé",
     content: `<article>
-<h1>Graisse ViscÃ©rale : Le Danger Invisible (et Comment l'Ã‰liminer)</h1>
+<h1>Graisse Viscérale : Le Danger Invisible (et Comment l'Éliminer)</h1>
 
-<p>Toutes les graisses ne se valent pas. La graisse sous-cutanÃ©e â€” celle que vous pouvez pincer â€” est relativement inoffensive. Mais il existe un autre type, <strong>cachÃ© en profondeur autour de vos organes</strong> : foie, pancrÃ©as, intestins, cÅ“ur. C'est la <strong>graisse viscÃ©rale</strong>, le moteur silencieux de presque toutes les maladies mÃ©taboliques.</p>
+<p>Toutes les graisses ne se valent pas. La graisse sous-cutanée — celle que vous pouvez pincer — est relativement inoffensive. Mais il existe un autre type, <strong>caché en profondeur autour de vos organes</strong> : foie, pancréas, intestins, cÅ“ur. C'est la <strong>graisse viscérale</strong>, le moteur silencieux de presque toutes les maladies métaboliques.</p>
 
-<p>Vous pouvez avoir un IMC normal et Ãªtre en danger. C'est pourquoi on l'appelle le <strong>Â« tueur silencieux Â»</strong>.</p>
+<p>Vous pouvez avoir un IMC normal et être en danger. C'est pourquoi on l'appelle le <strong>« tueur silencieux »</strong>.</p>
 
-<h2>Graisse viscÃ©rale vs sous-cutanÃ©e</h2>
+<h2>Graisse viscérale vs sous-cutanée</h2>
 
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <thead>
 <tr style="background:#f3f4f6;">
 <th style="padding:12px;border:1px solid #e5e7eb;"></th>
-<th style="padding:12px;border:1px solid #e5e7eb;">Sous-cutanÃ©e</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">ViscÃ©rale</th>
+<th style="padding:12px;border:1px solid #e5e7eb;">Sous-cutanée</th>
+<th style="padding:12px;border:1px solid #e5e7eb;">Viscérale</th>
 </tr>
 </thead>
 <tbody>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Localisation</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Sous la peau</td><td style="padding:12px;border:1px solid #e5e7eb;">Autour des organes</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Visible</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Oui (plis)</td><td style="padding:12px;border:1px solid #e5e7eb;">Non (ventre dur)</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Danger</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">EsthÃ©tique</td><td style="padding:12px;border:1px solid #e5e7eb;">Maladies graves</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>RÃ©ponse au rÃ©gime</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Lente</td><td style="padding:12px;border:1px solid #e5e7eb;">Rapide</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Danger</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Esthétique</td><td style="padding:12px;border:1px solid #e5e7eb;">Maladies graves</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Réponse au régime</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Lente</td><td style="padding:12px;border:1px solid #e5e7eb;">Rapide</td></tr>
 </tbody>
 </table>
 
-<p><strong>Indice simple :</strong> ventre <strong>dur et rond</strong> = graisse viscÃ©rale probable. Ventre mou et pinÃ§able = plutÃ´t sous-cutanÃ©e.</p>
+<p><strong>Indice simple :</strong> ventre <strong>dur et rond</strong> = graisse viscérale probable. Ventre mou et pinçable = plutôt sous-cutanée.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> DesprÃ©s (2012, <em>Nature</em>) a dÃ©montrÃ© que la graisse viscÃ©rale se comporte comme un <strong>organe endocrinien actif</strong>, sÃ©crÃ©tant plus de 600 molÃ©cules bioactives qui perturbent le mÃ©tabolisme du glucose, des lipides et la fonction cardiovasculaire.
+🔬 <strong>Ce que dit la science :</strong> Després (2012, <em>Nature</em>) a démontré que la graisse viscérale se comporte comme un <strong>organe endocrinien actif</strong>, sécrétant plus de 600 molécules bioactives qui perturbent le métabolisme du glucose, des lipides et la fonction cardiovasculaire.
 </blockquote>
 
-<h2>Pourquoi la graisse viscÃ©rale est-elle si dangereuse ?</h2>
+<h2>Pourquoi la graisse viscérale est-elle si dangereuse ?</h2>
 
 <h3>1. Inflammation chronique</h3>
-<p>Elle sÃ©crÃ¨te des cytokines pro-inflammatoires (TNF-Î±, IL-6, MCP-1) crÃ©ant un Ã©tat d'<strong>inflammation systÃ©mique de bas grade</strong> â€” terrain commun de toutes les maladies chroniques.</p>
+<p>Elle sécrète des cytokines pro-inflammatoires (TNF-Î±, IL-6, MCP-1) créant un état d'<strong>inflammation systémique de bas grade</strong> — terrain commun de toutes les maladies chroniques.</p>
 
-<h3>2. Insulino-rÃ©sistance</h3>
-<p>Les acides gras libÃ©rÃ©s vont directement au foie via la veine porte, provoquant stÃ©atose hÃ©patique, rÃ©sistance Ã  l'insuline et hyperinsulinÃ©mie compensatoire.</p>
+<h3>2. Insulino-résistance</h3>
+<p>Les acides gras libérés vont directement au foie via la veine porte, provoquant stéatose hépatique, résistance à l'insuline et hyperinsulinémie compensatoire.</p>
 
 <h3>3. Perturbation hormonale</h3>
 <ul>
-<li><strong>Baisse de testostÃ©rone</strong> : l'aromatase convertit la testostÃ©rone en Å“stradiol</li>
-<li><strong>RÃ©sistance Ã  la leptine</strong> : vous ne ressentez plus la satiÃ©tÃ©</li>
-<li><strong>Augmentation du cortisol</strong> : plus de rÃ©cepteurs au cortisol dans la graisse viscÃ©rale</li>
+<li><strong>Baisse de testostérone</strong> : l'aromatase convertit la testostérone en Å“stradiol</li>
+<li><strong>Résistance à la leptine</strong> : vous ne ressentez plus la satiété</li>
+<li><strong>Augmentation du cortisol</strong> : plus de récepteurs au cortisol dans la graisse viscérale</li>
 </ul>
 
 <h3>4. Risque cardiovasculaire accru</h3>
-<p>Augmente les triglycÃ©rides, le LDL oxydÃ©, rÃ©duit le HDL, favorise l'athÃ©rosclÃ©rose.</p>
+<p>Augmente les triglycérides, le LDL oxydé, réduit le HDL, favorise l'athérosclérose.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Dr. Robert Lustig, endocrinologue :</strong> Â« La graisse viscÃ©rale est la graisse que votre foie n'a pas pu traiter. C'est le signe que votre mÃ©tabolisme est submergÃ© â€” principalement par le fructose et les glucides ultra-transformÃ©s. Â»
+💬 <strong>Dr. Robert Lustig, endocrinologue :</strong> « La graisse viscérale est la graisse que votre foie n'a pas pu traiter. C'est le signe que votre métabolisme est submergé — principalement par le fructose et les glucides ultra-transformés. »
 </blockquote>
 
-<h2>Comment mesurer sa graisse viscÃ©rale</h2>
+<h2>Comment mesurer sa graisse viscérale</h2>
 
 <h3>En clinique</h3>
 <ul>
 <li><strong>Scanner abdominal</strong> : le gold standard</li>
-<li><strong>IRM abdominale</strong> : prÃ©cise mais coÃ»teuse</li>
+<li><strong>IRM abdominale</strong> : précise mais coûteuse</li>
 <li><strong>DEXA scan</strong> : bonne estimation</li>
 </ul>
 
-<h3>Ã€ domicile</h3>
+<h3>À domicile</h3>
 <ul>
-<li><strong>Tour de taille</strong> : plus de 94 cm = risque accru, plus de 102 cm = risque Ã©levÃ©</li>
-<li><strong>Rapport taille/hanche</strong> : plus de 0.90 = risque Ã©levÃ©</li>
-<li><strong>Rapport taille/taille</strong> : plus de 0.5 = excÃ¨s probable</li>
+<li><strong>Tour de taille</strong> : plus de 94 cm = risque accru, plus de 102 cm = risque élevé</li>
+<li><strong>Rapport taille/hanche</strong> : plus de 0.90 = risque élevé</li>
+<li><strong>Rapport taille/taille</strong> : plus de 0.5 = excès probable</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Shuster et al. (2012, <em>Diabetology &amp; Metabolic Syndrome</em>) ont confirmÃ© que le tour de taille est corrÃ©lÃ© Ã  <strong>r = 0.82</strong> avec la graisse viscÃ©rale mesurÃ©e par scanner â€” un excellent proxy gratuit.
+🔬 <strong>Ce que dit la science :</strong> Shuster et al. (2012, <em>Diabetology &amp; Metabolic Syndrome</em>) ont confirmé que le tour de taille est corrélé à <strong>r = 0.82</strong> avec la graisse viscérale mesurée par scanner — un excellent proxy gratuit.
 </blockquote>
 
-<h2>5 stratÃ©gies pour Ã©liminer la graisse viscÃ©rale</h2>
+<h2>5 stratégies pour éliminer la graisse viscérale</h2>
 
-<h3>1. Supprimer sucres ajoutÃ©s et glucides raffinÃ©s</h3>
-<p>Le fructose est mÃ©tabolisÃ© exclusivement par le foie et converti en graisse viscÃ©rale. Les glucides raffinÃ©s provoquent des pics d'insuline orientant le stockage vers l'abdomen.</p>
+<h3>1. Supprimer sucres ajoutés et glucides raffinés</h3>
+<p>Le fructose est métabolisé exclusivement par le foie et converti en graisse viscérale. Les glucides raffinés provoquent des pics d'insuline orientant le stockage vers l'abdomen.</p>
 
-<h3>2. JeÃ»ne intermittent</h3>
-<p>Le 16/8 rÃ©duit l'insuline et Â« dÃ©verrouille Â» la graisse viscÃ©rale, qui est brÃ»lÃ©e prÃ©fÃ©rentiellement pendant le jeÃ»ne.</p>
+<h3>2. Jeûne intermittent</h3>
+<p>Le 16/8 réduit l'insuline et « déverrouille » la graisse viscérale, qui est brûlée préférentiellement pendant le jeûne.</p>
 
 <h3>3. Musculation + HIIT</h3>
 <ul>
-<li><strong>Musculation</strong> : augmente le mÃ©tabolisme basal</li>
-<li><strong>HIIT</strong> : stimule les catÃ©cholamines qui mobilisent spÃ©cifiquement la graisse viscÃ©rale (plus de rÃ©cepteurs Î²-adrÃ©nergiques)</li>
+<li><strong>Musculation</strong> : augmente le métabolisme basal</li>
+<li><strong>HIIT</strong> : stimule les catécholamines qui mobilisent spécifiquement la graisse viscérale (plus de récepteurs Î²-adrénergiques)</li>
 </ul>
 
 <h3>4. Optimiser le sommeil</h3>
-<p>Le manque de sommeil augmente cortisol et ghrÃ©line, rÃ©duit la leptine. RÃ©sultat : stockage viscÃ©ral accru.</p>
+<p>Le manque de sommeil augmente cortisol et ghréline, réduit la leptine. Résultat : stockage viscéral accru.</p>
 
-<h3>5. GÃ©rer le stress</h3>
-<p>Le cortisol chronique est un puissant driver de stockage viscÃ©ral. Marche en nature, respiration profonde, mÃ©ditation.</p>
+<h3>5. Gérer le stress</h3>
+<p>Le cortisol chronique est un puissant driver de stockage viscéral. Marche en nature, respiration profonde, méditation.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Ismail et al. (2012, <em>Obesity Reviews</em>) ont montrÃ© dans une mÃ©ta-analyse de 35 Ã©tudes que l'exercice aÃ©robie rÃ©duisait la graisse viscÃ©rale de <strong>6.1 %</strong> mÃªme sans perte de poids significative.
+🔬 <strong>Ce que dit la science :</strong> Ismail et al. (2012, <em>Obesity Reviews</em>) ont montré dans une méta-analyse de 35 études que l'exercice aérobie réduisait la graisse viscérale de <strong>6.1 %</strong> même sans perte de poids significative.
 </blockquote>
 
-<h2>RÃ©sultats attendus</h2>
+<h2>Résultats attendus</h2>
 
 <ul>
-<li><strong>Semaines 1-2</strong> : -2 Ã  -3 cm de tour de taille (rÃ©tention d'eau + ballonnement)</li>
-<li><strong>Semaines 3-6</strong> : -3 Ã  -5 cm (fonte viscÃ©rale significative)</li>
-<li><strong>Semaines 7-10</strong> : -2 Ã  -4 cm supplÃ©mentaires, bilan sanguin amÃ©liorÃ©</li>
+<li><strong>Semaines 1-2</strong> : -2 à -3 cm de tour de taille (rétention d'eau + ballonnement)</li>
+<li><strong>Semaines 3-6</strong> : -3 à -5 cm (fonte viscérale significative)</li>
+<li><strong>Semaines 7-10</strong> : -2 à -4 cm supplémentaires, bilan sanguin amélioré</li>
 </ul>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> cible spÃ©cifiquement la graisse viscÃ©rale avec nutrition anti-inflammatoire, musculation progressive et rÃ©cupÃ©ration optimisÃ©e.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> cible spécifiquement la graisse viscérale avec nutrition anti-inflammatoire, musculation progressive et récupération optimisée.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Ã‰liminez votre graisse viscÃ©rale en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Éliminez votre graisse viscérale en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
 </article>`
   },
   {
     slug: "insulino-resistance-perte-de-poids",
-    title: "Insulino-RÃ©sistance et Perte de Poids : Le Guide Complet",
-    metaDescription: "L'insulino-rÃ©sistance bloque votre perte de poids ? Comprenez le mÃ©canisme et dÃ©couvrez les stratÃ©gies validÃ©es pour restaurer la sensibilitÃ© Ã  l'insuline.",
+    title: "Insulino-Résistance et Perte de Poids : Le Guide Complet",
+    metaDescription: "L'insulino-résistance bloque votre perte de poids ? Comprenez le mécanisme et découvrez les stratégies validées pour restaurer la sensibilité à l'insuline.",
     date: "2026-02-21",
     readTime: "12 min",
-    keyword: "insulino-rÃ©sistance perte de poids",
+    keyword: "insulino-résistance perte de poids",
     content: `<article>
-<h1>Insulino-RÃ©sistance et Perte de Poids : Le Guide Complet</h1>
+<h1>Insulino-Résistance et Perte de Poids : Le Guide Complet</h1>
 
-<p>Vous mangez correctement, vous faites du sport, mais <strong>les kilos ne bougent pas</strong>. Pire, vous prenez du ventre malgrÃ© vos efforts. Si ce scÃ©nario vous parle, il y a de fortes chances que vous soyez <strong>insulino-rÃ©sistant</strong> â€” et que personne ne vous l'ait dit.</p>
+<p>Vous mangez correctement, vous faites du sport, mais <strong>les kilos ne bougent pas</strong>. Pire, vous prenez du ventre malgré vos efforts. Si ce scénario vous parle, il y a de fortes chances que vous soyez <strong>insulino-résistant</strong> — et que personne ne vous l'ait dit.</p>
 
-<p>L'insulino-rÃ©sistance touche environ <strong>40 % des adultes</strong> occidentaux. C'est le <strong>verrou mÃ©tabolique nÂ°1</strong> qui empÃªche de perdre du poids.</p>
+<p>L'insulino-résistance touche environ <strong>40 % des adultes</strong> occidentaux. C'est le <strong>verrou métabolique n°1</strong> qui empêche de perdre du poids.</p>
 
-<h2>Qu'est-ce que l'insulino-rÃ©sistance ?</h2>
+<h2>Qu'est-ce que l'insulino-résistance ?</h2>
 
-<p>L'insuline permet au glucose d'entrer dans vos cellules. Quand les cellules <strong>n'Ã©coutent plus l'insuline</strong>, le pancrÃ©as en produit de plus en plus. Cet <strong>hyperinsulinisme compensatoire</strong> a des consÃ©quences dÃ©sastreuses sur le poids.</p>
+<p>L'insuline permet au glucose d'entrer dans vos cellules. Quand les cellules <strong>n'écoutent plus l'insuline</strong>, le pancréas en produit de plus en plus. Cet <strong>hyperinsulinisme compensatoire</strong> a des conséquences désastreuses sur le poids.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Reaven (1988, <em>Diabetes</em>) a Ã©tÃ© le premier Ã  dÃ©crire le Â« syndrome X Â», dÃ©montrant que l'insulino-rÃ©sistance est le <strong>mÃ©canisme central</strong> reliant obÃ©sitÃ© abdominale, hypertriglycÃ©ridÃ©mie, HDL bas, hypertension et hyperglycÃ©mie.
+🔬 <strong>Ce que dit la science :</strong> Reaven (1988, <em>Diabetes</em>) a été le premier à décrire le « syndrome X », démontrant que l'insulino-résistance est le <strong>mécanisme central</strong> reliant obésité abdominale, hypertriglycéridémie, HDL bas, hypertension et hyperglycémie.
 </blockquote>
 
-<h2>Pourquoi l'insulino-rÃ©sistance bloque la perte de poids</h2>
+<h2>Pourquoi l'insulino-résistance bloque la perte de poids</h2>
 
-<p>L'insuline est l'<strong>hormone de stockage</strong>. Quand elle est Ã©levÃ©e :</p>
+<p>L'insuline est l'<strong>hormone de stockage</strong>. Quand elle est élevée :</p>
 <ul>
-<li><strong>Stockage de graisse activÃ©</strong> â€” surtout abdominal</li>
-<li><strong>DÃ©stockage bloquÃ©</strong> â€” la lipolyse est inhibÃ©e</li>
-<li><strong>Foie produit plus de triglycÃ©rides</strong></li>
-<li><strong>Faim augmentÃ©e</strong> â€” montagnes russes glycÃ©miques</li>
-<li><strong>MÃ©tabolisme ralenti</strong> â€” mode conservation</li>
+<li><strong>Stockage de graisse activé</strong> — surtout abdominal</li>
+<li><strong>Déstockage bloqué</strong> — la lipolyse est inhibée</li>
+<li><strong>Foie produit plus de triglycérides</strong></li>
+<li><strong>Faim augmentée</strong> — montagnes russes glycémiques</li>
+<li><strong>Métabolisme ralenti</strong> — mode conservation</li>
 </ul>
 
-<p>Tant que votre insuline reste Ã©levÃ©e, <strong>votre corps est en mode stockage permanent</strong>.</p>
+<p>Tant que votre insuline reste élevée, <strong>votre corps est en mode stockage permanent</strong>.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Dr. Jason Fung, nÃ©phrologue :</strong> Â« L'obÃ©sitÃ© n'est pas un problÃ¨me de calories â€” c'est un problÃ¨me hormonal. L'insuline est l'interrupteur principal. Tant qu'elle reste Ã©levÃ©e, le corps stocke. Baissez l'insuline, et le corps commence Ã  brÃ»ler. Â»
+💬 <strong>Dr. Jason Fung, néphrologue :</strong> « L'obésité n'est pas un problème de calories — c'est un problème hormonal. L'insuline est l'interrupteur principal. Tant qu'elle reste élevée, le corps stocke. Baissez l'insuline, et le corps commence à brûler. »
 </blockquote>
 
-<h2>Comment savoir si vous Ãªtes insulino-rÃ©sistant</h2>
+<h2>Comment savoir si vous êtes insulino-résistant</h2>
 
 <h3>Signes cliniques</h3>
 <ul>
 <li>Graisse abdominale (tour de taille plus de 94 cm)</li>
-<li>DifficultÃ© Ã  perdre du poids</li>
-<li>Fatigue aprÃ¨s les repas riches en glucides</li>
-<li>Fringales sucrÃ©es l'aprÃ¨s-midi</li>
-<li>Acanthosis nigricans (peau foncÃ©e au cou, aisselles)</li>
+<li>Difficulté à perdre du poids</li>
+<li>Fatigue après les repas riches en glucides</li>
+<li>Fringales sucrées l'après-midi</li>
+<li>Acanthosis nigricans (peau foncée au cou, aisselles)</li>
 </ul>
 
 <h3>Analyses sanguines</h3>
 <ul>
-<li><strong>Insuline Ã  jeun</strong> : plus de 10 ÂµUI/mL = suspect, plus de 15 = probable</li>
-<li><strong>HOMA-IR</strong> : (insuline Ã— glycÃ©mie) / 22.5 â€” plus de 2.5 = insulino-rÃ©sistance</li>
-<li><strong>TriglycÃ©rides/HDL</strong> : ratio plus de 2 = suspect, plus de 3.5 = trÃ¨s probable</li>
-<li><strong>HbA1c</strong> : 5.7-6.4 % = prÃ©diabÃ¨te</li>
+<li><strong>Insuline à jeun</strong> : plus de 10 µUI/mL = suspect, plus de 15 = probable</li>
+<li><strong>HOMA-IR</strong> : (insuline × glycémie) / 22.5 — plus de 2.5 = insulino-résistance</li>
+<li><strong>Triglycérides/HDL</strong> : ratio plus de 2 = suspect, plus de 3.5 = très probable</li>
+<li><strong>HbA1c</strong> : 5.7-6.4 % = prédiabète</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Kraft (2011), dans une analyse de <strong>14 384 HGPO</strong>, a dÃ©montrÃ© que 75 % des patients avec une glycÃ©mie Â« normale Â» avaient une <strong>insuline anormalement Ã©levÃ©e</strong> â€” l'insulino-rÃ©sistance prÃ©cÃ¨de le diabÃ¨te de 10-15 ans.
+🔬 <strong>Ce que dit la science :</strong> Kraft (2011), dans une analyse de <strong>14 384 HGPO</strong>, a démontré que 75 % des patients avec une glycémie « normale » avaient une <strong>insuline anormalement élevée</strong> — l'insulino-résistance précède le diabète de 10-15 ans.
 </blockquote>
 
-<h2>6 stratÃ©gies pour inverser l'insulino-rÃ©sistance</h2>
+<h2>6 stratégies pour inverser l'insulino-résistance</h2>
 
-<h3>1. RÃ©duire la charge glycÃ©mique</h3>
+<h3>1. Réduire la charge glycémique</h3>
 <ul>
-<li><strong>Ã‰liminer</strong> : sucre, pain blanc, riz blanc, jus de fruits</li>
-<li><strong>PrivilÃ©gier</strong> : lÃ©gumes, lÃ©gumineuses, patate douce</li>
-<li><strong>Combiner</strong> glucides avec protÃ©ines + fibres + graisses</li>
+<li><strong>Éliminer</strong> : sucre, pain blanc, riz blanc, jus de fruits</li>
+<li><strong>Privilégier</strong> : légumes, légumineuses, patate douce</li>
+<li><strong>Combiner</strong> glucides avec protéines + fibres + graisses</li>
 </ul>
 
-<h3>2. Augmenter les protÃ©ines</h3>
-<p>1.6-2.2 g/kg, 30-40 g par repas minimum. Les protÃ©ines stimulent peu l'insuline et augmentent le glucagon.</p>
+<h3>2. Augmenter les protéines</h3>
+<p>1.6-2.2 g/kg, 30-40 g par repas minimum. Les protéines stimulent peu l'insuline et augmentent le glucagon.</p>
 
-<h3>3. JeÃ»ne intermittent</h3>
-<p>Le 16/8 permet Ã  l'insuline de redescendre Ã  son niveau basal et active l'autophagie.</p>
+<h3>3. Jeûne intermittent</h3>
+<p>Le 16/8 permet à l'insuline de redescendre à son niveau basal et active l'autophagie.</p>
 
-<h3>4. Musculation en prioritÃ©</h3>
-<p>Le muscle est la plus grande Â« Ã©ponge Ã  glucose Â». La contraction musculaire fait entrer le glucose <strong>sans insuline</strong> (via GLUT-4).</p>
+<h3>4. Musculation en priorité</h3>
+<p>Le muscle est la plus grande « éponge à glucose ». La contraction musculaire fait entrer le glucose <strong>sans insuline</strong> (via GLUT-4).</p>
 
 <h3>5. Marche post-repas</h3>
-<p>10-15 minutes aprÃ¨s chaque repas rÃ©duisent le pic glycÃ©mique de 30-50 %.</p>
+<p>10-15 minutes après chaque repas réduisent le pic glycémique de 30-50 %.</p>
 
 <h3>6. Sommeil et stress</h3>
-<p>Une seule nuit de mauvais sommeil rÃ©duit la sensibilitÃ© Ã  l'insuline de 25 %.</p>
+<p>Une seule nuit de mauvais sommeil réduit la sensibilité à l'insuline de 25 %.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude DPP (2002, <em>NEJM</em>) a dÃ©montrÃ© que les modifications de mode de vie rÃ©duisaient le risque de diabÃ¨te de <strong>58 %</strong> â€” plus efficace que la metformine (31 %).
+🔬 <strong>Ce que dit la science :</strong> L'étude DPP (2002, <em>NEJM</em>) a démontré que les modifications de mode de vie réduisaient le risque de diabète de <strong>58 %</strong> — plus efficace que la metformine (31 %).
 </blockquote>
 
-<h2>RÃ©sultats attendus</h2>
+<h2>Résultats attendus</h2>
 
 <ul>
-<li><strong>Semaines 1-2</strong> : rÃ©duction des fringales, Ã©nergie stabilisÃ©e</li>
+<li><strong>Semaines 1-2</strong> : réduction des fringales, énergie stabilisée</li>
 <li><strong>Semaines 3-4</strong> : la balance bouge, le tour de taille diminue</li>
-<li><strong>Semaines 5-8</strong> : insuline Ã  jeun et HOMA-IR amÃ©liorÃ©s</li>
-<li><strong>Semaines 9-12</strong> : sensibilitÃ© Ã  l'insuline restaurÃ©e</li>
+<li><strong>Semaines 5-8</strong> : insuline à jeun et HOMA-IR améliorés</li>
+<li><strong>Semaines 9-12</strong> : sensibilité à l'insuline restaurée</li>
 </ul>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> est conÃ§u pour les hommes insulino-rÃ©sistants. Chaque repas minimise la rÃ©ponse insulinique tout en maximisant la satiÃ©tÃ©.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> est conçu pour les hommes insulino-résistants. Chaque repas minimise la réponse insulinique tout en maximisant la satiété.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">DÃ©bloquez votre perte de poids en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Débloquez votre perte de poids en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Si vous suspectez une insulino-rÃ©sistance, demandez un dosage d'insuline Ã  jeun.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si vous suspectez une insulino-résistance, demandez un dosage d'insuline à jeun.</em></p>
 </article>`
   },
   {
     slug: "comment-eviter-diabete-type-2",
-    title: "Comment Ã‰viter le DiabÃ¨te de Type 2 : PrÃ©vention Efficace",
-    metaDescription: "DÃ©couvrez les stratÃ©gies de prÃ©vention du diabÃ¨te type 2 validÃ©es par la science : alimentation, exercice et changements de mode de vie efficaces.",
+    title: "Comment Éviter le Diabète de Type 2 : Prévention Efficace",
+    metaDescription: "Découvrez les stratégies de prévention du diabète type 2 validées par la science : alimentation, exercice et changements de mode de vie efficaces.",
     date: "2026-02-21",
     readTime: "11 min",
-    keyword: "comment Ã©viter diabÃ¨te type 2",
+    keyword: "comment éviter diabète type 2",
     content: `<article>
-<h1>Comment Ã‰viter le DiabÃ¨te de Type 2 : PrÃ©vention Efficace</h1>
+<h1>Comment Éviter le Diabète de Type 2 : Prévention Efficace</h1>
 
-<p>Le diabÃ¨te de type 2 est souvent prÃ©sentÃ© comme irrÃ©versible. C'est <strong>faux</strong>. Dans l'immense majoritÃ© des cas, il est <strong>Ã©vitable</strong> â€” et mÃªme <strong>rÃ©versible</strong> Ã  ses stades prÃ©coces.</p>
+<p>Le diabète de type 2 est souvent présenté comme irréversible. C'est <strong>faux</strong>. Dans l'immense majorité des cas, il est <strong>évitable</strong> — et même <strong>réversible</strong> à ses stades précoces.</p>
 
-<p>En France, <strong>3.5 millions de personnes</strong> sont diabÃ©tiques de type 2, et environ <strong>10 millions</strong> sont prÃ©diabÃ©tiques. Chacun a une fenÃªtre d'action.</p>
+<p>En France, <strong>3.5 millions de personnes</strong> sont diabétiques de type 2, et environ <strong>10 millions</strong> sont prédiabétiques. Chacun a une fenêtre d'action.</p>
 
-<h2>Comment le diabÃ¨te s'installe</h2>
+<h2>Comment le diabète s'installe</h2>
 
 <ol>
-<li><strong>Phase 1 â€” Insulino-rÃ©sistance</strong> : les cellules rÃ©pondent moins bien. Le pancrÃ©as compense.</li>
-<li><strong>Phase 2 â€” HyperinsulinÃ©mie</strong> : insuline chroniquement Ã©levÃ©e, glycÃ©mie encore normale.</li>
-<li><strong>Phase 3 â€” PrÃ©diabÃ¨te</strong> : glycÃ©mie Ã  jeun 1.10-1.25 g/L ou HbA1c 5.7-6.4 %.</li>
-<li><strong>Phase 4 â€” DiabÃ¨te</strong> : glycÃ©mie â‰¥ 1.26 g/L ou HbA1c â‰¥ 6.5 %.</li>
+<li><strong>Phase 1 — Insulino-résistance</strong> : les cellules répondent moins bien. Le pancréas compense.</li>
+<li><strong>Phase 2 — Hyperinsulinémie</strong> : insuline chroniquement élevée, glycémie encore normale.</li>
+<li><strong>Phase 3 — Prédiabète</strong> : glycémie à jeun 1.10-1.25 g/L ou HbA1c 5.7-6.4 %.</li>
+<li><strong>Phase 4 — Diabète</strong> : glycémie ≥ 1.26 g/L ou HbA1c ≥ 6.5 %.</li>
 </ol>
 
-<p>Aux phases 1-3, le processus est <strong>entiÃ¨rement rÃ©versible</strong>.</p>
+<p>Aux phases 1-3, le processus est <strong>entièrement réversible</strong>.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude Da Qing (2008, <em>The Lancet</em>), suivant des prÃ©diabÃ©tiques pendant <strong>20 ans</strong>, a montrÃ© que les interventions mode de vie rÃ©duisaient l'incidence du diabÃ¨te de <strong>43 %</strong> sur cette pÃ©riode.
+🔬 <strong>Ce que dit la science :</strong> L'étude Da Qing (2008, <em>The Lancet</em>), suivant des prédiabétiques pendant <strong>20 ans</strong>, a montré que les interventions mode de vie réduisaient l'incidence du diabète de <strong>43 %</strong> sur cette période.
 </blockquote>
 
-<h2>Les 7 piliers de la prÃ©vention</h2>
+<h2>Les 7 piliers de la prévention</h2>
 
 <h3>1. Perdre la graisse abdominale</h3>
-<p>Une perte de <strong>5-7 % du poids corporel</strong> rÃ©duit le risque de diabÃ¨te de 58 %. Visez un tour de taille infÃ©rieur Ã  94 cm.</p>
+<p>Une perte de <strong>5-7 % du poids corporel</strong> réduit le risque de diabète de 58 %. Visez un tour de taille inférieur à 94 cm.</p>
 
-<h3>2. Alimentation Ã  faible charge glycÃ©mique</h3>
+<h3>2. Alimentation à faible charge glycémique</h3>
 <ul>
-<li>Remplacer glucides raffinÃ©s par des complets</li>
+<li>Remplacer glucides raffinés par des complets</li>
 <li>30-40 g de fibres/jour</li>
-<li>ProtÃ©ines Ã  chaque repas</li>
+<li>Protéines à chaque repas</li>
 <li>Graisses saines : olive, poissons gras, noix</li>
-<li>Supprimer sodas et ultra-transformÃ©s</li>
+<li>Supprimer sodas et ultra-transformés</li>
 </ul>
 
 <h3>3. Bouger 150 minutes/semaine</h3>
 <ul>
-<li><strong>Musculation</strong> : augmente les rÃ©cepteurs GLUT-4</li>
-<li><strong>Cardio/marche</strong> : amÃ©liore la sensibilitÃ© Ã  l'insuline 24-48h</li>
-<li><strong>Marche post-repas</strong> : -30 Ã  -50 % du pic glycÃ©mique</li>
+<li><strong>Musculation</strong> : augmente les récepteurs GLUT-4</li>
+<li><strong>Cardio/marche</strong> : améliore la sensibilité à l'insuline 24-48h</li>
+<li><strong>Marche post-repas</strong> : -30 à -50 % du pic glycémique</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Prof. Roy Taylor, UniversitÃ© de Newcastle :</strong> Â« Nos Ã©tudes DiRECT ont prouvÃ© que le diabÃ¨te de type 2 peut entrer en rÃ©mission chez 46 % des patients avec une perte de poids ciblÃ©e. Le pancrÃ©as peut se rÃ©gÃ©nÃ©rer si on Ã©limine la graisse qui l'engorge. Â»
+💬 <strong>Prof. Roy Taylor, Université de Newcastle :</strong> « Nos études DiRECT ont prouvé que le diabète de type 2 peut entrer en rémission chez 46 % des patients avec une perte de poids ciblée. Le pancréas peut se régénérer si on élimine la graisse qui l'engorge. »
 </blockquote>
 
 <h3>4. Dormir 7-9 heures</h3>
-<p>Dormir moins de 6 heures augmente le risque de diabÃ¨te de 28 %.</p>
+<p>Dormir moins de 6 heures augmente le risque de diabète de 28 %.</p>
 
-<h3>5. GÃ©rer le stress</h3>
-<p>Le stress chronique augmente le risque de diabÃ¨te de 45 %. Marche en nature, respiration, mÃ©ditation.</p>
+<h3>5. Gérer le stress</h3>
+<p>Le stress chronique augmente le risque de diabète de 45 %. Marche en nature, respiration, méditation.</p>
 
 <h3>6. Limiter l'alcool</h3>
 <p>Maximum 2 verres de vin rouge par jour.</p>
 
 <h3>7. Surveiller ses marqueurs</h3>
 <ul>
-<li>GlycÃ©mie Ã  jeun : 1x/an</li>
+<li>Glycémie à jeun : 1x/an</li>
 <li>HbA1c : reflet sur 3 mois</li>
-<li>Insuline Ã  jeun : le marqueur le plus prÃ©coce</li>
-<li>Ratio TG/HDL : prÃ©dictif de l'insulino-rÃ©sistance</li>
+<li>Insuline à jeun : le marqueur le plus précoce</li>
+<li>Ratio TG/HDL : prédictif de l'insulino-résistance</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> L'Ã©tude finlandaise DPS (Tuomilehto et al., 2001, <em>NEJM</em>) a dÃ©montrÃ© qu'une intervention alimentation + exercice rÃ©duisait le risque de diabÃ¨te de <strong>58 %</strong> â€” reproduit dans plus de 10 Ã©tudes internationales.
+🔬 <strong>Ce que dit la science :</strong> L'étude finlandaise DPS (Tuomilehto et al., 2001, <em>NEJM</em>) a démontré qu'une intervention alimentation + exercice réduisait le risque de diabète de <strong>58 %</strong> — reproduit dans plus de 10 études internationales.
 </blockquote>
 
 <h2>Le cas des hommes de plus de 40 ans</h2>
 
-<p>AprÃ¨s 40 ans : baisse de testostÃ©rone, sarcopÃ©nie dÃ©butante, sÃ©dentaritÃ©, stress. Un programme structurÃ© est souvent nÃ©cessaire.</p>
+<p>Après 40 ans : baisse de testostérone, sarcopénie débutante, sédentarité, stress. Un programme structuré est souvent nécessaire.</p>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> intÃ¨gre les 7 piliers de prÃ©vention : alimentation Ã  faible charge glycÃ©mique, musculation, marche quotidienne et gestion du stress.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> intègre les 7 piliers de prévention : alimentation à faible charge glycémique, musculation, marche quotidienne et gestion du stress.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">PrÃ©venez le diabÃ¨te en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Prévenez le diabète en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Si votre glycÃ©mie dÃ©passe 1.10 g/L, consultez rapidement.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si votre glycémie dépasse 1.10 g/L, consultez rapidement.</em></p>
 </article>`
   },
   {
     slug: "bilan-lipidique-mauvais-que-manger",
-    title: "Bilan Lipidique Mauvais : Que Manger pour AmÃ©liorer ses RÃ©sultats",
-    metaDescription: "Bilan lipidique mauvais ? DÃ©couvrez les aliments et stratÃ©gies nutritionnelles prouvÃ©s pour amÃ©liorer cholestÃ©rol, triglycÃ©rides et ratio LDL/HDL.",
+    title: "Bilan Lipidique Mauvais : Que Manger pour Améliorer ses Résultats",
+    metaDescription: "Bilan lipidique mauvais ? Découvrez les aliments et stratégies nutritionnelles prouvés pour améliorer cholestérol, triglycérides et ratio LDL/HDL.",
     date: "2026-02-21",
     readTime: "11 min",
     keyword: "bilan lipidique mauvais que manger",
     content: `<article>
-<h1>Bilan Lipidique Mauvais : Que Manger pour AmÃ©liorer ses RÃ©sultats</h1>
+<h1>Bilan Lipidique Mauvais : Que Manger pour Améliorer ses Résultats</h1>
 
-<p>CholestÃ©rol total Ã©levÃ©, LDL trop haut, HDL trop bas, triglycÃ©rides en hausse. La premiÃ¨re question : <strong>Â« Qu'est-ce que je dois manger ? Â»</strong></p>
+<p>Cholestérol total élevé, LDL trop haut, HDL trop bas, triglycérides en hausse. La première question : <strong>« Qu'est-ce que je dois manger ? »</strong></p>
 
-<p>L'alimentation est le <strong>levier le plus puissant</strong> pour amÃ©liorer votre profil lipidique. Mais les conseils classiques (Â« Ã©vitez le gras Â») sont largement <strong>obsolÃ¨tes</strong>.</p>
+<p>L'alimentation est le <strong>levier le plus puissant</strong> pour améliorer votre profil lipidique. Mais les conseils classiques (« évitez le gras ») sont largement <strong>obsolètes</strong>.</p>
 
 <h2>Comprendre votre bilan lipidique</h2>
 
@@ -1555,131 +1555,131 @@ export const healthArticles: BlogArticle[] = [
 <thead>
 <tr style="background:#f3f4f6;">
 <th style="padding:12px;border:1px solid #e5e7eb;">Marqueur</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">Valeur idÃ©ale</th>
+<th style="padding:12px;border:1px solid #e5e7eb;">Valeur idéale</th>
 <th style="padding:12px;border:1px solid #e5e7eb;">Signification</th>
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>CholestÃ©rol total</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 2 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">Peu informatif seul</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>LDL</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.3 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">Â« Mauvais Â» cholestÃ©rol (nuancÃ©)</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Cholestérol total</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 2 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">Peu informatif seul</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>LDL</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.3 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">« Mauvais » cholestérol (nuancé)</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>HDL</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 0.4 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">Protecteur</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>TriglycÃ©rides</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.5 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">Marqueur sucre/alcool</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Ratio TG/HDL</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 2</td><td style="padding:12px;border:1px solid #e5e7eb;">Meilleur prÃ©dicteur CV</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Triglycérides</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.5 g/L</td><td style="padding:12px;border:1px solid #e5e7eb;">Marqueur sucre/alcool</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>Ratio TG/HDL</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 2</td><td style="padding:12px;border:1px solid #e5e7eb;">Meilleur prédicteur CV</td></tr>
 </tbody>
 </table>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Da Luz et al. (2008, <em>Clinics</em>) ont montrÃ© que le <strong>ratio TG/HDL</strong> est un meilleur prÃ©dicteur de maladie coronarienne que le LDL seul. Un ratio supÃ©rieur Ã  3.5 multiplie le risque cardiovasculaire par <strong>16</strong>.
+🔬 <strong>Ce que dit la science :</strong> Da Luz et al. (2008, <em>Clinics</em>) ont montré que le <strong>ratio TG/HDL</strong> est un meilleur prédicteur de maladie coronarienne que le LDL seul. Un ratio supérieur à 3.5 multiplie le risque cardiovasculaire par <strong>16</strong>.
 </blockquote>
 
-<h2>La vÃ©ritÃ© sur le cholestÃ©rol alimentaire</h2>
+<h2>La vérité sur le cholestérol alimentaire</h2>
 
-<p>Les recommandations amÃ©ricaines 2015-2020 ont <strong>supprimÃ© la limite de cholestÃ©rol alimentaire</strong>. Le cholestÃ©rol alimentaire a peu d'impact sur le cholestÃ©rol sanguin. Les <strong>vrais coupables</strong> : sucres ajoutÃ©s, glucides raffinÃ©s, huiles vÃ©gÃ©tales industrielles, alcool excessif.</p>
+<p>Les recommandations américaines 2015-2020 ont <strong>supprimé la limite de cholestérol alimentaire</strong>. Le cholestérol alimentaire a peu d'impact sur le cholestérol sanguin. Les <strong>vrais coupables</strong> : sucres ajoutés, glucides raffinés, huiles végétales industrielles, alcool excessif.</p>
 
-<h2>Les 10 aliments qui amÃ©liorent le bilan</h2>
+<h2>Les 10 aliments qui améliorent le bilan</h2>
 
 <ol>
-<li><strong>Poissons gras</strong> (saumon, sardines, maquereau) : omÃ©ga-3 rÃ©duisent les TG de 15-30 %</li>
-<li><strong>Huile d'olive extra-vierge</strong> : augmente le HDL, rÃ©duit l'oxydation du LDL</li>
-<li><strong>Noix et amandes</strong> : 30 g/jour rÃ©duisent le LDL de 5-10 %</li>
-<li><strong>Avoine et orge</strong> : le bÃªta-glucane rÃ©duit le LDL de 5-10 %</li>
-<li><strong>LÃ©gumineuses</strong> : une portion quotidienne rÃ©duit le LDL de 5 %</li>
-<li><strong>Avocat</strong> : rÃ©duit le LDL oxydÃ©, augmente le HDL</li>
-<li><strong>Ail</strong> : rÃ©duit modestement cholestÃ©rol total et TG</li>
-<li><strong>Baies et fruits rouges</strong> : polyphÃ©nols rÃ©duisent l'oxydation du LDL</li>
-<li><strong>Graines de lin et chia</strong> : omÃ©ga-3 ALA et fibres solubles</li>
-<li><strong>ThÃ© vert</strong> : catÃ©chines rÃ©duisent l'absorption du cholestÃ©rol</li>
+<li><strong>Poissons gras</strong> (saumon, sardines, maquereau) : oméga-3 réduisent les TG de 15-30 %</li>
+<li><strong>Huile d'olive extra-vierge</strong> : augmente le HDL, réduit l'oxydation du LDL</li>
+<li><strong>Noix et amandes</strong> : 30 g/jour réduisent le LDL de 5-10 %</li>
+<li><strong>Avoine et orge</strong> : le bêta-glucane réduit le LDL de 5-10 %</li>
+<li><strong>Légumineuses</strong> : une portion quotidienne réduit le LDL de 5 %</li>
+<li><strong>Avocat</strong> : réduit le LDL oxydé, augmente le HDL</li>
+<li><strong>Ail</strong> : réduit modestement cholestérol total et TG</li>
+<li><strong>Baies et fruits rouges</strong> : polyphénols réduisent l'oxydation du LDL</li>
+<li><strong>Graines de lin et chia</strong> : oméga-3 ALA et fibres solubles</li>
+<li><strong>Thé vert</strong> : catéchines réduisent l'absorption du cholestérol</li>
 </ol>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Dr. David Ludwig, Harvard :</strong> Â« La plus grande erreur nutritionnelle du 20e siÃ¨cle : remplacer les graisses par des glucides raffinÃ©s. Cette substitution a fait exploser les triglycÃ©rides et baisser le HDL â€” le profil le plus dangereux. Â»
+💬 <strong>Dr. David Ludwig, Harvard :</strong> « La plus grande erreur nutritionnelle du 20e siècle : remplacer les graisses par des glucides raffinés. Cette substitution a fait exploser les triglycérides et baisser le HDL — le profil le plus dangereux. »
 </blockquote>
 
-<h2>Les 5 aliments Ã  Ã©viter</h2>
+<h2>Les 5 aliments à éviter</h2>
 
 <ol>
-<li><strong>Sucres ajoutÃ©s</strong> : le fructose est converti en triglycÃ©rides par le foie</li>
-<li><strong>Huiles vÃ©gÃ©tales raffinÃ©es</strong> (tournesol, soja) : excÃ¨s d'omÃ©ga-6</li>
-<li><strong>Aliments ultra-transformÃ©s</strong></li>
-<li><strong>Pain blanc et pÃ¢tes raffinÃ©es</strong> : IG Ã©levÃ©, production de TG</li>
+<li><strong>Sucres ajoutés</strong> : le fructose est converti en triglycérides par le foie</li>
+<li><strong>Huiles végétales raffinées</strong> (tournesol, soja) : excès d'oméga-6</li>
+<li><strong>Aliments ultra-transformés</strong></li>
+<li><strong>Pain blanc et pâtes raffinées</strong> : IG élevé, production de TG</li>
 <li><strong>Alcool excessif</strong> : augmente directement les TG</li>
 </ol>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Siri-Tarino et al. (2010, <em>American Journal of Clinical Nutrition</em>), mÃ©ta-analyse de 21 Ã©tudes (347 747 participants), n'ont trouvÃ© <strong>aucune association significative</strong> entre graisses saturÃ©es et risque cardiovasculaire. Le vrai danger vient des glucides raffinÃ©s qui les remplacent.
+🔬 <strong>Ce que dit la science :</strong> Siri-Tarino et al. (2010, <em>American Journal of Clinical Nutrition</em>), méta-analyse de 21 études (347 747 participants), n'ont trouvé <strong>aucune association significative</strong> entre graisses saturées et risque cardiovasculaire. Le vrai danger vient des glucides raffinés qui les remplacent.
 </blockquote>
 
-<h2>RÃ©sultats attendus</h2>
+<h2>Résultats attendus</h2>
 
 <ul>
-<li><strong>TriglycÃ©rides</strong> : -20 Ã  -40 % en 4-8 semaines</li>
-<li><strong>HDL</strong> : +10 Ã  +20 % en 8-12 semaines</li>
-<li><strong>LDL</strong> : -10 Ã  -15 % en 8-12 semaines</li>
-<li><strong>Ratio TG/HDL</strong> : amÃ©lioration dÃ¨s 6 semaines</li>
+<li><strong>Triglycérides</strong> : -20 à -40 % en 4-8 semaines</li>
+<li><strong>HDL</strong> : +10 à +20 % en 8-12 semaines</li>
+<li><strong>LDL</strong> : -10 à -15 % en 8-12 semaines</li>
+<li><strong>Ratio TG/HDL</strong> : amélioration dès 6 semaines</li>
 </ul>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> inclut un plan nutritionnel optimisÃ© pour le profil lipidique : riche en omÃ©ga-3, fibres, protÃ©ines de qualitÃ©.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> inclut un plan nutritionnel optimisé pour le profil lipidique : riche en oméga-3, fibres, protéines de qualité.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">AmÃ©liorez votre bilan lipidique en 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Améliorez votre bilan lipidique en 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
 </article>`
   },
   {
     slug: "sport-et-diabete-type-2-programme",
-    title: "Sport et DiabÃ¨te Type 2 : Le Programme d'Exercice IdÃ©al",
-    metaDescription: "DiabÃ¨te type 2 et sport : dÃ©couvrez le programme d'exercice idÃ©al validÃ© par la science pour amÃ©liorer glycÃ©mie et sensibilitÃ© Ã  l'insuline.",
+    title: "Sport et Diabète Type 2 : Le Programme d'Exercice Idéal",
+    metaDescription: "Diabète type 2 et sport : découvrez le programme d'exercice idéal validé par la science pour améliorer glycémie et sensibilité à l'insuline.",
     date: "2026-02-21",
     readTime: "11 min",
-    keyword: "sport et diabÃ¨te type 2 programme",
+    keyword: "sport et diabète type 2 programme",
     content: `<article>
-<h1>Sport et DiabÃ¨te Type 2 : Le Programme d'Exercice IdÃ©al</h1>
+<h1>Sport et Diabète Type 2 : Le Programme d'Exercice Idéal</h1>
 
-<p>Si le sport Ã©tait un mÃ©dicament contre le diabÃ¨te de type 2, il serait le plus prescrit au monde. Aucun traitement ne rivalise avec l'exercice pour <strong>amÃ©liorer la sensibilitÃ© Ã  l'insuline et rÃ©duire la glycÃ©mie</strong>.</p>
+<p>Si le sport était un médicament contre le diabète de type 2, il serait le plus prescrit au monde. Aucun traitement ne rivalise avec l'exercice pour <strong>améliorer la sensibilité à l'insuline et réduire la glycémie</strong>.</p>
 
-<p>Pourtant, la plupart des diabÃ©tiques ne savent pas <strong>quel type d'exercice, Ã  quelle frÃ©quence, ni Ã  quelle intensitÃ©</strong>. La science montre qu'un programme <strong>structurÃ© et combinÃ©</strong> est bien plus efficace que Â« 30 minutes de marche Â».</p>
+<p>Pourtant, la plupart des diabétiques ne savent pas <strong>quel type d'exercice, à quelle fréquence, ni à quelle intensité</strong>. La science montre qu'un programme <strong>structuré et combiné</strong> est bien plus efficace que « 30 minutes de marche ».</p>
 
 <h2>Pourquoi l'exercice est si puissant</h2>
 
 <ul>
 <li><strong>Captation du glucose sans insuline</strong> : la contraction musculaire active les GLUT-4</li>
-<li><strong>SensibilitÃ© Ã  l'insuline amÃ©liorÃ©e</strong> 24-72h aprÃ¨s chaque session</li>
-<li><strong>RÃ©duction de la graisse viscÃ©rale</strong></li>
+<li><strong>Sensibilité à l'insuline améliorée</strong> 24-72h après chaque session</li>
+<li><strong>Réduction de la graisse viscérale</strong></li>
 <li><strong>Augmentation de la masse musculaire</strong> : premier organe de captation du glucose</li>
 <li><strong>Effet anti-inflammatoire</strong></li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Umpierre et al. (2011, <em>JAMA</em>), mÃ©ta-analyse de <strong>47 essais contrÃ´lÃ©s</strong>, ont montrÃ© que l'exercice combinÃ© (aÃ©robie + rÃ©sistance) rÃ©duit l'HbA1c de <strong>-0.89 %</strong> â€” comparable Ã  la metformine.
+🔬 <strong>Ce que dit la science :</strong> Umpierre et al. (2011, <em>JAMA</em>), méta-analyse de <strong>47 essais contrôlés</strong>, ont montré que l'exercice combiné (aérobie + résistance) réduit l'HbA1c de <strong>-0.89 %</strong> — comparable à la metformine.
 </blockquote>
 
 <h2>Les 3 types d'exercice essentiels</h2>
 
 <h3>1. Musculation</h3>
 <ul>
-<li>3 sÃ©ances/semaine, jours non consÃ©cutifs</li>
-<li>Exercices composÃ©s : squat, soulevÃ© de terre, dÃ©veloppÃ© couchÃ©, rowing</li>
-<li>3-4 sÃ©ries de 8-12 reps, progression rÃ©guliÃ¨re</li>
+<li>3 séances/semaine, jours non consécutifs</li>
+<li>Exercices composés : squat, soulevé de terre, développé couché, rowing</li>
+<li>3-4 séries de 8-12 reps, progression régulière</li>
 </ul>
 
 <h3>2. Cardio</h3>
 <ul>
-<li>150 min/semaine d'intensitÃ© modÃ©rÃ©e ou 75 min intense</li>
-<li>Marche rapide, vÃ©lo, natation</li>
-<li>RÃ©partir sur 5-6 jours</li>
+<li>150 min/semaine d'intensité modérée ou 75 min intense</li>
+<li>Marche rapide, vélo, natation</li>
+<li>Répartir sur 5-6 jours</li>
 </ul>
 
 <h3>3. HIIT</h3>
 <ul>
-<li>AmÃ©liore la sensibilitÃ© Ã  l'insuline de 25-35 % en 2 semaines</li>
-<li>30 sec effort / 90 sec rÃ©cupÃ©ration Ã— 8-10 cycles, 2x/semaine</li>
+<li>Améliore la sensibilité à l'insuline de 25-35 % en 2 semaines</li>
+<li>30 sec effort / 90 sec récupération × 8-10 cycles, 2x/semaine</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Peter Attia, MD :</strong> Â« Si je devais choisir un seul exercice pour un diabÃ©tique, ce serait la musculation. Le muscle squelettique capte 80 % du glucose stimulÃ© par l'insuline. Plus de muscle = plus de capacitÃ© Ã  gÃ©rer le glucose. Â»
+💬 <strong>Peter Attia, MD :</strong> « Si je devais choisir un seul exercice pour un diabétique, ce serait la musculation. Le muscle squelettique capte 80 % du glucose stimulé par l'insuline. Plus de muscle = plus de capacité à gérer le glucose. »
 </blockquote>
 
 <h2>Programme hebdomadaire</h2>
@@ -1688,200 +1688,200 @@ export const healthArticles: BlogArticle[] = [
 <thead>
 <tr style="background:#f3f4f6;">
 <th style="padding:12px;border:1px solid #e5e7eb;">Jour</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">ActivitÃ©</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">DurÃ©e</th>
+<th style="padding:12px;border:1px solid #e5e7eb;">Activité</th>
+<th style="padding:12px;border:1px solid #e5e7eb;">Durée</th>
 </tr>
 </thead>
 <tbody>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Lundi</td><td style="padding:12px;border:1px solid #e5e7eb;">Musculation haut du corps</td><td style="padding:12px;border:1px solid #e5e7eb;">45 min</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Mardi</td><td style="padding:12px;border:1px solid #e5e7eb;">Marche rapide ou vÃ©lo</td><td style="padding:12px;border:1px solid #e5e7eb;">30-45 min</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">Mardi</td><td style="padding:12px;border:1px solid #e5e7eb;">Marche rapide ou vélo</td><td style="padding:12px;border:1px solid #e5e7eb;">30-45 min</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Mercredi</td><td style="padding:12px;border:1px solid #e5e7eb;">Musculation bas du corps</td><td style="padding:12px;border:1px solid #e5e7eb;">45 min</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Jeudi</td><td style="padding:12px;border:1px solid #e5e7eb;">HIIT</td><td style="padding:12px;border:1px solid #e5e7eb;">20-25 min</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Vendredi</td><td style="padding:12px;border:1px solid #e5e7eb;">Musculation full body</td><td style="padding:12px;border:1px solid #e5e7eb;">45 min</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Samedi</td><td style="padding:12px;border:1px solid #e5e7eb;">ActivitÃ© plaisir</td><td style="padding:12px;border:1px solid #e5e7eb;">45-60 min</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">Samedi</td><td style="padding:12px;border:1px solid #e5e7eb;">Activité plaisir</td><td style="padding:12px;border:1px solid #e5e7eb;">45-60 min</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Dimanche</td><td style="padding:12px;border:1px solid #e5e7eb;">Repos actif</td><td style="padding:12px;border:1px solid #e5e7eb;">20-30 min</td></tr>
 </tbody>
 </table>
 
-<h2>PrÃ©cautions diabÃ©tiques</h2>
+<h2>Précautions diabétiques</h2>
 
 <ul>
-<li>GlycÃ©mie avant exercice : si moins de 0.90 g/L â†’ collation. Si plus de 2.50 g/L â†’ reporter.</li>
-<li>Chaussures adaptÃ©es (neuropathie)</li>
-<li>Hydratation (la dÃ©shydratation augmente la glycÃ©mie)</li>
-<li>Adapter les mÃ©dicaments avec votre mÃ©decin</li>
+<li>Glycémie avant exercice : si moins de 0.90 g/L → collation. Si plus de 2.50 g/L → reporter.</li>
+<li>Chaussures adaptées (neuropathie)</li>
+<li>Hydratation (la déshydratation augmente la glycémie)</li>
+<li>Adapter les médicaments avec votre médecin</li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Church et al. (2010, <em>JAMA</em>) ont montrÃ© que l'exercice <strong>combinÃ©</strong> (aÃ©robie + rÃ©sistance) rÃ©duisait l'HbA1c de <strong>-0.34 %</strong> de plus que chaque type seul. La combinaison est supÃ©rieure.
+🔬 <strong>Ce que dit la science :</strong> Church et al. (2010, <em>JAMA</em>) ont montré que l'exercice <strong>combiné</strong> (aérobie + résistance) réduisait l'HbA1c de <strong>-0.34 %</strong> de plus que chaque type seul. La combinaison est supérieure.
 </blockquote>
 
-<h2>RÃ©sultats attendus</h2>
+<h2>Résultats attendus</h2>
 
 <ul>
-<li><strong>Semaines 1-2</strong> : glycÃ©mie post-repas immÃ©diatement amÃ©liorÃ©e</li>
-<li><strong>Semaines 3-4</strong> : sensibilitÃ© Ã  l'insuline en hausse</li>
-<li><strong>Semaines 5-8</strong> : HbA1c en baisse, graisse viscÃ©rale rÃ©duite</li>
-<li><strong>Semaines 9-12</strong> : amÃ©lioration significative de tous les marqueurs</li>
+<li><strong>Semaines 1-2</strong> : glycémie post-repas immédiatement améliorée</li>
+<li><strong>Semaines 3-4</strong> : sensibilité à l'insuline en hausse</li>
+<li><strong>Semaines 5-8</strong> : HbA1c en baisse, graisse viscérale réduite</li>
+<li><strong>Semaines 9-12</strong> : amélioration significative de tous les marqueurs</li>
 </ul>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> inclut un programme d'exercice progressif combinant musculation et cardio, adaptÃ© aux hommes diabÃ©tiques ou prÃ©diabÃ©tiques.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> inclut un programme d'exercice progressif combinant musculation et cardio, adapté aux hommes diabétiques ou prédiabétiques.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Le programme sport + nutrition anti-diabÃ¨te</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Le programme sport + nutrition anti-diabète</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Consultez votre mÃ©decin avant de commencer un programme d'exercice si vous prenez des hypoglycÃ©miants.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin avant de commencer un programme d'exercice si vous prenez des hypoglycémiants.</em></p>
 </article>`
   },
   {
     slug: "indice-glycemique-bas-liste-aliments",
-    title: "Aliments Ã  Index GlycÃ©mique Bas : La Liste ComplÃ¨te",
-    metaDescription: "DÃ©couvrez la liste complÃ¨te des aliments Ã  index glycÃ©mique bas pour stabiliser glycÃ©mie, perdre du poids et prÃ©venir le diabÃ¨te efficacement.",
+    title: "Aliments à Index Glycémique Bas : La Liste Complète",
+    metaDescription: "Découvrez la liste complète des aliments à index glycémique bas pour stabiliser glycémie, perdre du poids et prévenir le diabète efficacement.",
     date: "2026-02-21",
     readTime: "10 min",
-    keyword: "indice glycÃ©mique bas liste aliments",
+    keyword: "indice glycémique bas liste aliments",
     content: `<article>
-<h1>Aliments Ã  Index GlycÃ©mique Bas : La Liste ComplÃ¨te</h1>
+<h1>Aliments à Index Glycémique Bas : La Liste Complète</h1>
 
-<p>L'index glycÃ©mique (IG) mesure la <strong>vitesse Ã  laquelle un aliment fait monter la glycÃ©mie</strong>. Savoir quels aliments ont un IG bas vous permet de <strong>stabiliser votre glycÃ©mie</strong>, rÃ©duire l'insuline, perdre de la graisse viscÃ©rale et prÃ©venir le diabÃ¨te.</p>
+<p>L'index glycémique (IG) mesure la <strong>vitesse à laquelle un aliment fait monter la glycémie</strong>. Savoir quels aliments ont un IG bas vous permet de <strong>stabiliser votre glycémie</strong>, réduire l'insuline, perdre de la graisse viscérale et prévenir le diabète.</p>
 
-<h2>Comprendre l'index glycÃ©mique</h2>
+<h2>Comprendre l'index glycémique</h2>
 
 <ul>
-<li><strong>IG bas</strong> : â‰¤ 55 â€” montÃ©e lente du glucose</li>
-<li><strong>IG moyen</strong> : 56-69 â€” montÃ©e modÃ©rÃ©e</li>
-<li><strong>IG Ã©levÃ©</strong> : â‰¥ 70 â€” pic glycÃ©mique rapide</li>
+<li><strong>IG bas</strong> : ≤ 55 — montée lente du glucose</li>
+<li><strong>IG moyen</strong> : 56-69 — montée modérée</li>
+<li><strong>IG élevé</strong> : ≥ 70 — pic glycémique rapide</li>
 </ul>
 
-<p><strong>Important :</strong> la <strong>charge glycÃ©mique</strong> (CG = IG Ã— glucides par portion / 100) est plus informative que l'IG seul.</p>
+<p><strong>Important :</strong> la <strong>charge glycémique</strong> (CG = IG × glucides par portion / 100) est plus informative que l'IG seul.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Brand-Miller et al. (2003, <em>American Journal of Clinical Nutrition</em>) ont montrÃ© que les rÃ©gimes Ã  IG bas rÃ©duisaient l'HbA1c de <strong>-0.43 %</strong> chez les diabÃ©tiques â€” comparable Ã  certains mÃ©dicaments.
+🔬 <strong>Ce que dit la science :</strong> Brand-Miller et al. (2003, <em>American Journal of Clinical Nutrition</em>) ont montré que les régimes à IG bas réduisaient l'HbA1c de <strong>-0.43 %</strong> chez les diabétiques — comparable à certains médicaments.
 </blockquote>
 
-<h2>Liste complÃ¨te des aliments Ã  IG bas (â‰¤ 55)</h2>
+<h2>Liste complète des aliments à IG bas (≤ 55)</h2>
 
-<h3>ðŸ¥¬ LÃ©gumes (IG 10-30)</h3>
-<p>Brocoli (10), chou-fleur (10), Ã©pinards (15), courgettes (15), aubergines (15), poivrons (15), haricots verts (15), tomates (15), concombre (15), salade (10), artichaut (20), carottes crues (30).</p>
+<h3>🥬 Légumes (IG 10-30)</h3>
+<p>Brocoli (10), chou-fleur (10), épinards (15), courgettes (15), aubergines (15), poivrons (15), haricots verts (15), tomates (15), concombre (15), salade (10), artichaut (20), carottes crues (30).</p>
 
-<h3>ðŸ«˜ LÃ©gumineuses (IG 20-40)</h3>
+<h3>🫘 Légumineuses (IG 20-40)</h3>
 <p>Lentilles vertes (25), lentilles corail (26), pois chiches (28), haricots rouges (28), haricots blancs (31), flageolets (25), soja (15), tofu (15).</p>
 
-<h3>ðŸŽ Fruits (IG 25-55)</h3>
-<p>Cerises (22), pamplemousse (25), pommes (36), poires (38), oranges (35), fraises (25), framboises (25), myrtilles (25), pÃªches (35), kiwi (47), mangue (51).</p>
+<h3>🍎 Fruits (IG 25-55)</h3>
+<p>Cerises (22), pamplemousse (25), pommes (36), poires (38), oranges (35), fraises (25), framboises (25), myrtilles (25), pêches (35), kiwi (47), mangue (51).</p>
 
-<h3>ðŸŒ¾ CÃ©rÃ©ales et fÃ©culents Ã  IG bas</h3>
-<p>Quinoa (35), sarrasin (40), boulgour (48), avoine complÃ¨te (40), orge (28), seigle complet (45), patate douce (46), riz basmati (50), pain au levain (48), pÃ¢tes al dente (45).</p>
+<h3>🌾 Céréales et féculents à IG bas</h3>
+<p>Quinoa (35), sarrasin (40), boulgour (48), avoine complète (40), orge (28), seigle complet (45), patate douce (46), riz basmati (50), pain au levain (48), pâtes al dente (45).</p>
 
-<h3>ðŸ¥› Produits laitiers</h3>
-<p>Yaourt nature (35), fromage blanc (30), lait entier (27), fromages Ã  pÃ¢te dure (moins de 20).</p>
+<h3>🥛 Produits laitiers</h3>
+<p>Yaourt nature (35), fromage blanc (30), lait entier (27), fromages à pâte dure (moins de 20).</p>
 
-<h3>ðŸ¥œ OlÃ©agineux (IG 15-25)</h3>
-<p>Amandes (15), noix (15), noisettes (15), noix de cajou (22), cacahuÃ¨tes (14).</p>
+<h3>🥜 Oléagineux (IG 15-25)</h3>
+<p>Amandes (15), noix (15), noisettes (15), noix de cajou (22), cacahuètes (14).</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Dr. David Ludwig, Harvard :</strong> Â« L'index glycÃ©mique capture quelque chose de fondamental : la qualitÃ© des glucides. Remplacer les aliments Ã  IG Ã©levÃ© par des IG bas est l'un des changements les plus impactants pour la santÃ© mÃ©tabolique. Â»
+💬 <strong>Dr. David Ludwig, Harvard :</strong> « L'index glycémique capture quelque chose de fondamental : la qualité des glucides. Remplacer les aliments à IG élevé par des IG bas est l'un des changements les plus impactants pour la santé métabolique. »
 </blockquote>
 
-<h2>Aliments Ã  IG Ã©levÃ© Ã  Ã©viter</h2>
+<h2>Aliments à IG élevé à éviter</h2>
 
-<p>Baguette blanche (95), pain de mie (85), riz blanc (70), pommes de terre (78), corn flakes (84), sucre (70), biÃ¨re (110), sodas (68).</p>
+<p>Baguette blanche (95), pain de mie (85), riz blanc (70), pommes de terre (78), corn flakes (84), sucre (70), bière (110), sodas (68).</p>
 
-<h2>7 astuces pour rÃ©duire l'impact glycÃ©mique</h2>
+<h2>7 astuces pour réduire l'impact glycémique</h2>
 
 <ol>
-<li><strong>Mangez lÃ©gumes et protÃ©ines en premier</strong></li>
-<li><strong>Ajoutez du vinaigre de cidre</strong> : -20 Ã  -30 % du pic glycÃ©mique</li>
+<li><strong>Mangez légumes et protéines en premier</strong></li>
+<li><strong>Ajoutez du vinaigre de cidre</strong> : -20 à -30 % du pic glycémique</li>
 <li><strong>Cuisez al dente</strong></li>
-<li><strong>Refroidissez les fÃ©culents</strong> (amidon rÃ©sistant)</li>
-<li><strong>Combinez toujours</strong> : glucides + protÃ©ines + graisses + fibres</li>
-<li><strong>PrÃ©fÃ©rez les aliments entiers</strong></li>
-<li><strong>Marchez aprÃ¨s manger</strong> : -30 Ã  -50 % du pic</li>
+<li><strong>Refroidissez les féculents</strong> (amidon résistant)</li>
+<li><strong>Combinez toujours</strong> : glucides + protéines + graisses + fibres</li>
+<li><strong>Préférez les aliments entiers</strong></li>
+<li><strong>Marchez après manger</strong> : -30 à -50 % du pic</li>
 </ol>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Shukla et al. (2015, <em>Diabetes Care</em>) ont montrÃ© que manger lÃ©gumes et protÃ©ines <strong>avant les glucides</strong> rÃ©duisait le pic glycÃ©mique de <strong>73 %</strong> et le pic d'insuline de <strong>48 %</strong>.
+🔬 <strong>Ce que dit la science :</strong> Shukla et al. (2015, <em>Diabetes Care</em>) ont montré que manger légumes et protéines <strong>avant les glucides</strong> réduisait le pic glycémique de <strong>73 %</strong> et le pic d'insuline de <strong>48 %</strong>.
 </blockquote>
 
-<h2>JournÃ©e type Ã  IG bas</h2>
+<h2>Journée type à IG bas</h2>
 
-<p><strong>Petit-dÃ©jeuner :</strong> Porridge avoine complÃ¨te + myrtilles + noix + cannelle</p>
-<p><strong>DÃ©jeuner :</strong> Salade de lentilles + saumon + avocat + huile d'olive</p>
+<p><strong>Petit-déjeuner :</strong> Porridge avoine complète + myrtilles + noix + cannelle</p>
+<p><strong>Déjeuner :</strong> Salade de lentilles + saumon + avocat + huile d'olive</p>
 <p><strong>Collation :</strong> Pomme + 30 g amandes</p>
-<p><strong>DÃ®ner :</strong> Poulet grillÃ© + quinoa + brocoli + patate douce</p>
+<p><strong>Dîner :</strong> Poulet grillé + quinoa + brocoli + patate douce</p>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> utilise exclusivement des aliments Ã  IG bas et moyen, avec des menus prÃªts Ã  suivre.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> utilise exclusivement des aliments à IG bas et moyen, avec des menus prêts à suivre.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">10 semaines de menus Ã  IG bas, clÃ© en main</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">10 semaines de menus à IG bas, clé en main</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Les valeurs d'IG peuvent varier selon les sources et la prÃ©paration.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Les valeurs d'IG peuvent varier selon les sources et la préparation.</em></p>
 </article>`
   },
   {
     slug: "omega-3-cholesterol-bienfaits",
-    title: "OmÃ©ga-3 et CholestÃ©rol : Bienfaits RÃ©els ou Marketing ?",
-    metaDescription: "Les omÃ©ga-3 amÃ©liorent-ils vraiment le cholestÃ©rol ? Analyse scientifique des Ã©tudes, dosages efficaces et meilleures sources alimentaires.",
+    title: "Oméga-3 et Cholestérol : Bienfaits Réels ou Marketing ?",
+    metaDescription: "Les oméga-3 améliorent-ils vraiment le cholestérol ? Analyse scientifique des études, dosages efficaces et meilleures sources alimentaires.",
     date: "2026-02-21",
     readTime: "10 min",
-    keyword: "omÃ©ga-3 cholestÃ©rol bienfaits",
+    keyword: "oméga-3 cholestérol bienfaits",
     content: `<article>
-<h1>OmÃ©ga-3 et CholestÃ©rol : Bienfaits RÃ©els ou Marketing ?</h1>
+<h1>Oméga-3 et Cholestérol : Bienfaits Réels ou Marketing ?</h1>
 
-<p>Les omÃ©ga-3 sont partout : complÃ©ments, labels, recommandations. On leur prÃªte des vertus quasi miraculeuses. Mais qu'en dit <strong>rÃ©ellement la science</strong> ?</p>
+<p>Les oméga-3 sont partout : compléments, labels, recommandations. On leur prête des vertus quasi miraculeuses. Mais qu'en dit <strong>réellement la science</strong> ?</p>
 
-<h2>Les diffÃ©rents types d'omÃ©ga-3</h2>
+<h2>Les différents types d'oméga-3</h2>
 
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <thead>
 <tr style="background:#f3f4f6;">
 <th style="padding:12px;border:1px solid #e5e7eb;">Type</th>
 <th style="padding:12px;border:1px solid #e5e7eb;">Source</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">EfficacitÃ©</th>
+<th style="padding:12px;border:1px solid #e5e7eb;">Efficacité</th>
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>EPA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Poissons gras</td><td style="padding:12px;border:1px solid #e5e7eb;">â­â­â­ Anti-inflammatoire</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>DHA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Poissons gras</td><td style="padding:12px;border:1px solid #e5e7eb;">â­â­â­ Cerveau + cÅ“ur</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>ALA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Lin, chia, noix</td><td style="padding:12px;border:1px solid #e5e7eb;">â­ Conversion faible</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>EPA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Poissons gras</td><td style="padding:12px;border:1px solid #e5e7eb;">⭐⭐⭐ Anti-inflammatoire</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>DHA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Poissons gras</td><td style="padding:12px;border:1px solid #e5e7eb;">⭐⭐⭐ Cerveau + cÅ“ur</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>ALA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Lin, chia, noix</td><td style="padding:12px;border:1px solid #e5e7eb;">⭐ Conversion faible</td></tr>
 </tbody>
 </table>
 
 <p>Seuls les <strong>EPA et DHA</strong> marins ont des effets significatifs sur le profil lipidique.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Harris et al. (2008, <em>Atherosclerosis</em>) ont montrÃ© qu'un <strong>Omega-3 Index</strong> supÃ©rieur Ã  8 % est associÃ© Ã  une rÃ©duction de <strong>90 %</strong> du risque de mort subite cardiaque par rapport Ã  un index infÃ©rieur Ã  4 %.
+🔬 <strong>Ce que dit la science :</strong> Harris et al. (2008, <em>Atherosclerosis</em>) ont montré qu'un <strong>Omega-3 Index</strong> supérieur à 8 % est associé à une réduction de <strong>90 %</strong> du risque de mort subite cardiaque par rapport à un index inférieur à 4 %.
 </blockquote>
 
 <h2>Effets sur le bilan lipidique</h2>
 
-<h3>âœ… TriglycÃ©rides : -15 Ã  -30 %</h3>
-<p>L'effet le plus puissant. Les EPA/DHA rÃ©duisent la production hÃ©patique de VLDL et augmentent la clairance des triglycÃ©rides.</p>
+<h3>✅ Triglycérides : -15 à -30 %</h3>
+<p>L'effet le plus puissant. Les EPA/DHA réduisent la production hépatique de VLDL et augmentent la clairance des triglycérides.</p>
 
-<h3>âœ… HDL : +5 Ã  +10 %</h3>
+<h3>✅ HDL : +5 à +10 %</h3>
 
-<h3>âš ï¸ LDL : effet variable</h3>
-<p>LÃ©gÃ¨re augmentation possible, mais conversion des petites LDL denses (dangereuses) en grosses LDL flottantes (moins dangereuses) et rÃ©duction de l'oxydation du LDL.</p>
+<h3>⚠ï¸ LDL : effet variable</h3>
+<p>Légère augmentation possible, mais conversion des petites LDL denses (dangereuses) en grosses LDL flottantes (moins dangereuses) et réduction de l'oxydation du LDL.</p>
 
-<h3>âœ… Ratio TG/HDL : amÃ©lioration significative</h3>
+<h3>✅ Ratio TG/HDL : amélioration significative</h3>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Peter Attia, MD :</strong> Â« Le vÃ©ritable pouvoir des omÃ©ga-3 est anti-inflammatoire et anti-triglycÃ©rides. Si votre problÃ¨me est des TG Ã©levÃ©s et un HDL bas, les omÃ©ga-3 Ã  haute dose sont l'un des outils les plus puissants. Â»
+💬 <strong>Peter Attia, MD :</strong> « Le véritable pouvoir des oméga-3 est anti-inflammatoire et anti-triglycérides. Si votre problème est des TG élevés et un HDL bas, les oméga-3 à haute dose sont l'un des outils les plus puissants. »
 </blockquote>
 
-<h2>L'Ã©tude REDUCE-IT : le tournant</h2>
+<h2>L'étude REDUCE-IT : le tournant</h2>
 
-<p>REDUCE-IT (2019, <em>NEJM</em>) : 8 179 patients, 4 g/jour d'EPA pur. RÃ©sultat : <strong>-25 %</strong> d'Ã©vÃ©nements cardiovasculaires majeurs et <strong>-20 %</strong> de mortalitÃ© cardiovasculaire, en plus des statines.</p>
+<p>REDUCE-IT (2019, <em>NEJM</em>) : 8 179 patients, 4 g/jour d'EPA pur. Résultat : <strong>-25 %</strong> d'événements cardiovasculaires majeurs et <strong>-20 %</strong> de mortalité cardiovasculaire, en plus des statines.</p>
 
-<h2>Dosages recommandÃ©s</h2>
+<h2>Dosages recommandés</h2>
 
 <ul>
-<li><strong>PrÃ©vention</strong> : 1-2 g/jour d'EPA+DHA</li>
-<li><strong>TriglycÃ©rides Ã©levÃ©s</strong> : 2-4 g/jour</li>
+<li><strong>Prévention</strong> : 1-2 g/jour d'EPA+DHA</li>
+<li><strong>Triglycérides élevés</strong> : 2-4 g/jour</li>
 <li><strong>Post-infarctus</strong> : 1 g/jour minimum</li>
 </ul>
 
@@ -1890,126 +1890,126 @@ export const healthArticles: BlogArticle[] = [
 <p>Maquereau (2 600 mg/100g), sardines (1 800), saumon sauvage (1 500), hareng (1 700), anchois (1 400), truite (900). Visez 2-3 portions/semaine de poisson gras.</p>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Mozaffarian &amp; Rimm (2006, <em>JAMA</em>) ont calculÃ© que 250 mg/jour d'EPA+DHA rÃ©duit le risque de mort cardiaque de <strong>36 %</strong>.
+🔬 <strong>Ce que dit la science :</strong> Mozaffarian &amp; Rimm (2006, <em>JAMA</em>) ont calculé que 250 mg/jour d'EPA+DHA réduit le risque de mort cardiaque de <strong>36 %</strong>.
 </blockquote>
 
-<h2>OmÃ©ga-3 vs OmÃ©ga-6 : le ratio</h2>
+<h2>Oméga-3 vs Oméga-6 : le ratio</h2>
 
-<p>Ratio idÃ©al omÃ©ga-6/omÃ©ga-3 : <strong>1:1 Ã  4:1</strong>. Ratio occidental moyen : <strong>15:1 Ã  20:1</strong>. RÃ©duisez les omÃ©ga-6 (huiles de tournesol, soja) en cuisinant avec olive, coco ou beurre.</p>
+<p>Ratio idéal oméga-6/oméga-3 : <strong>1:1 à 4:1</strong>. Ratio occidental moyen : <strong>15:1 à 20:1</strong>. Réduisez les oméga-6 (huiles de tournesol, soja) en cuisinant avec olive, coco ou beurre.</p>
 
 <h2>Verdict</h2>
 
-<p><strong>RÃ©els :</strong> anti-triglycÃ©rides puissant, anti-inflammatoire, amÃ©lioration TG/HDL, rÃ©duction du risque CV Ã  haute dose.</p>
-<p><strong>Marketing :</strong> complÃ©ments sous-dosÃ©s, allÃ©gations Â« anti-cholestÃ©rol Â» (c'est les TG, pas le LDL), ALA prÃ©sentÃ© comme Ã©quivalent EPA/DHA.</p>
+<p><strong>Réels :</strong> anti-triglycérides puissant, anti-inflammatoire, amélioration TG/HDL, réduction du risque CV à haute dose.</p>
+<p><strong>Marketing :</strong> compléments sous-dosés, allégations « anti-cholestérol » (c'est les TG, pas le LDL), ALA présenté comme équivalent EPA/DHA.</p>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> intÃ¨gre des sources d'omÃ©ga-3 Ã  chaque journÃ©e : poissons gras 3x/semaine, graines de lin quotidiennes.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> intègre des sources d'oméga-3 à chaque journée : poissons gras 3x/semaine, graines de lin quotidiennes.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
-<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Nutrition optimisÃ©e en omÃ©ga-3 pendant 10 semaines</p>
-<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">DÃ©couvrir le programme â†’</a>
+<p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Nutrition optimisée en oméga-3 pendant 10 semaines</p>
+<a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">âš•ï¸ <em>Cet article est informatif et ne remplace pas un avis mÃ©dical. Si vous prenez des anticoagulants, consultez votre mÃ©decin avant les omÃ©ga-3 Ã  haute dose.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si vous prenez des anticoagulants, consultez votre médecin avant les oméga-3 à haute dose.</em></p>
 </article>`
   },
   {
     slug: "rapport-triglycerides-hdl-calculer",
-    title: "Rapport TriglycÃ©rides/HDL : Comment le Calculer et l'InterprÃ©ter",
-    metaDescription: "Le rapport triglycÃ©rides/HDL est le meilleur marqueur cardiovasculaire. Apprenez Ã  le calculer, l'interprÃ©ter et l'amÃ©liorer efficacement.",
+    title: "Rapport Triglycérides/HDL : Comment le Calculer et l'Interpréter",
+    metaDescription: "Le rapport triglycérides/HDL est le meilleur marqueur cardiovasculaire. Apprenez à le calculer, l'interpréter et l'améliorer efficacement.",
     date: "2026-02-21",
     readTime: "10 min",
-    keyword: "rapport triglycÃ©rides HDL calculer",
+    keyword: "rapport triglycérides HDL calculer",
     content: `<article>
-<h1>Rapport TriglycÃ©rides/HDL : Comment le Calculer et l'InterprÃ©ter</h1>
+<h1>Rapport Triglycérides/HDL : Comment le Calculer et l'Interpréter</h1>
 
-<p>Il y a un marqueur dont on vous parle rarement et qui est le <strong>plus prÃ©dictif du risque cardiovasculaire</strong> : le <strong>rapport triglycÃ©rides/HDL</strong>. Simple Ã  calculer, il en dit plus que le cholestÃ©rol total ou le LDL seuls. C'est aussi un excellent <strong>marqueur d'insulino-rÃ©sistance</strong>.</p>
+<p>Il y a un marqueur dont on vous parle rarement et qui est le <strong>plus prédictif du risque cardiovasculaire</strong> : le <strong>rapport triglycérides/HDL</strong>. Simple à calculer, il en dit plus que le cholestérol total ou le LDL seuls. C'est aussi un excellent <strong>marqueur d'insulino-résistance</strong>.</p>
 
 <h2>Comment calculer</h2>
 
-<p style="background:#f3f4f6;padding:16px 20px;border-radius:8px;text-align:center;font-size:1.2em;"><strong>Ratio = TriglycÃ©rides (g/L) Ã· HDL (g/L)</strong></p>
+<p style="background:#f3f4f6;padding:16px 20px;border-radius:8px;text-align:center;font-size:1.2em;"><strong>Ratio = Triglycérides (g/L) ÷ HDL (g/L)</strong></p>
 
-<p>Exemple : TG = 1.80, HDL = 0.45 â†’ Ratio = <strong>4.0</strong></p>
+<p>Exemple : TG = 1.80, HDL = 0.45 → Ratio = <strong>4.0</strong></p>
 
-<h2>InterprÃ©tation</h2>
+<h2>Interprétation</h2>
 
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <thead>
 <tr style="background:#f3f4f6;">
 <th style="padding:12px;border:1px solid #e5e7eb;">Ratio TG/HDL</th>
-<th style="padding:12px;border:1px solid #e5e7eb;">InterprÃ©tation</th>
+<th style="padding:12px;border:1px solid #e5e7eb;">Interprétation</th>
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.5</td><td style="padding:12px;border:1px solid #e5e7eb;">âœ… Excellent</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">1.5 Ã  2.5</td><td style="padding:12px;border:1px solid #e5e7eb;">ðŸ‘ Bon</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">2.5 Ã  3.5</td><td style="padding:12px;border:1px solid #e5e7eb;">âš ï¸ Limite</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">3.5 Ã  5</td><td style="padding:12px;border:1px solid #e5e7eb;">ðŸ”¶ Ã‰levÃ©</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 5</td><td style="padding:12px;border:1px solid #e5e7eb;">ðŸ”´ TrÃ¨s Ã©levÃ©</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.5</td><td style="padding:12px;border:1px solid #e5e7eb;">✅ Excellent</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">1.5 à 2.5</td><td style="padding:12px;border:1px solid #e5e7eb;">👍 Bon</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">2.5 à 3.5</td><td style="padding:12px;border:1px solid #e5e7eb;">⚠ï¸ Limite</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">3.5 à 5</td><td style="padding:12px;border:1px solid #e5e7eb;">🔶 Élevé</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 5</td><td style="padding:12px;border:1px solid #e5e7eb;">🔴 Très élevé</td></tr>
 </tbody>
 </table>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Da Luz et al. (2008, <em>Clinics</em>) ont montrÃ© que les patients avec un ratio supÃ©rieur Ã  3.5 avaient un risque <strong>16 fois plus Ã©levÃ©</strong> de maladie coronarienne extensive.
+🔬 <strong>Ce que dit la science :</strong> Da Luz et al. (2008, <em>Clinics</em>) ont montré que les patients avec un ratio supérieur à 3.5 avaient un risque <strong>16 fois plus élevé</strong> de maladie coronarienne extensive.
 </blockquote>
 
 <h2>Pourquoi ce ratio est crucial</h2>
 
-<h3>1. ReflÃ¨te la taille des particules LDL</h3>
-<p>Un ratio Ã©levÃ© = prÃ©dominance de <strong>petites LDL denses</strong> (les plus dangereuses). Un ratio bas = grosses LDL flottantes (relativement inoffensives).</p>
+<h3>1. Reflète la taille des particules LDL</h3>
+<p>Un ratio élevé = prédominance de <strong>petites LDL denses</strong> (les plus dangereuses). Un ratio bas = grosses LDL flottantes (relativement inoffensives).</p>
 
-<h3>2. Marqueur d'insulino-rÃ©sistance</h3>
-<p>Le ratio TG/HDL prÃ©dit l'insulino-rÃ©sistance avec 75 % de sensibilitÃ© et 80 % de spÃ©cificitÃ©.</p>
+<h3>2. Marqueur d'insulino-résistance</h3>
+<p>Le ratio TG/HDL prédit l'insulino-résistance avec 75 % de sensibilité et 80 % de spécificité.</p>
 
-<h3>3. Meilleur prÃ©dicteur CV que le LDL</h3>
-<p>Vous pouvez avoir un LDL Â« normal Â» et Ãªtre en danger si votre ratio est Ã©levÃ©.</p>
+<h3>3. Meilleur prédicteur CV que le LDL</h3>
+<p>Vous pouvez avoir un LDL « normal » et être en danger si votre ratio est élevé.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ’¬ <strong>Dr. Robert Lustig, endocrinologue :</strong> Â« Le rapport TG/HDL est le marqueur que je regarde en premier. Il me dit plus sur la santÃ© mÃ©tabolique rÃ©elle que le cholestÃ©rol total ou le LDL. Un ratio Ã©levÃ© signifie trop de sucre, pas trop de graisse. Â»
+💬 <strong>Dr. Robert Lustig, endocrinologue :</strong> « Le rapport TG/HDL est le marqueur que je regarde en premier. Il me dit plus sur la santé métabolique réelle que le cholestérol total ou le LDL. Un ratio élevé signifie trop de sucre, pas trop de graisse. »
 </blockquote>
 
 <h2>Cas pratiques</h2>
 
-<h3>Patient A : LDL Â« normal Â» mais ratio catastrophique</h3>
-<p>LDL : 1.20 g/L âœ… â€” HDL : 0.35 g/L âŒ â€” TG : 2.30 g/L âŒ â€” <strong>Ratio : 6.6</strong> ðŸ”´</p>
-<p>â†’ En danger malgrÃ© le LDL normal. Probablement insulino-rÃ©sistant.</p>
+<h3>Patient A : LDL « normal » mais ratio catastrophique</h3>
+<p>LDL : 1.20 g/L ✅ — HDL : 0.35 g/L ❌ — TG : 2.30 g/L ❌ — <strong>Ratio : 6.6</strong> 🔴</p>
+<p>→ En danger malgré le LDL normal. Probablement insulino-résistant.</p>
 
-<h3>Patient B : LDL Â« Ã©levÃ© Â» mais ratio excellent</h3>
-<p>LDL : 1.50 g/L âŒ â€” HDL : 0.65 g/L âœ… â€” TG : 0.70 g/L âœ… â€” <strong>Ratio : 1.08</strong> âœ…</p>
-<p>â†’ Profil cardiovasculaire excellent malgrÃ© le LDL Â« Ã©levÃ© Â».</p>
+<h3>Patient B : LDL « élevé » mais ratio excellent</h3>
+<p>LDL : 1.50 g/L ❌ — HDL : 0.65 g/L ✅ — TG : 0.70 g/L ✅ — <strong>Ratio : 1.08</strong> ✅</p>
+<p>→ Profil cardiovasculaire excellent malgré le LDL « élevé ».</p>
 
-<h2>Comment amÃ©liorer votre ratio TG/HDL</h2>
+<h2>Comment améliorer votre ratio TG/HDL</h2>
 
-<h3>Pour baisser les triglycÃ©rides</h3>
+<h3>Pour baisser les triglycérides</h3>
 <ul>
-<li><strong>Supprimer les sucres ajoutÃ©s</strong> (facteur nÂ°1)</li>
-<li><strong>RÃ©duire les glucides raffinÃ©s</strong></li>
+<li><strong>Supprimer les sucres ajoutés</strong> (facteur n°1)</li>
+<li><strong>Réduire les glucides raffinés</strong></li>
 <li><strong>Limiter l'alcool</strong></li>
-<li><strong>OmÃ©ga-3</strong> : 2-4 g/jour EPA+DHA</li>
-<li><strong>JeÃ»ne intermittent</strong></li>
+<li><strong>Oméga-3</strong> : 2-4 g/jour EPA+DHA</li>
+<li><strong>Jeûne intermittent</strong></li>
 </ul>
 
 <h3>Pour augmenter le HDL</h3>
 <ul>
-<li><strong>Exercice rÃ©gulier</strong> (surtout HIIT et musculation)</li>
-<li><strong>Graisses mono-insaturÃ©es</strong> : huile d'olive, avocat, noix</li>
-<li><strong>RÃ©duire les glucides raffinÃ©s</strong></li>
-<li><strong>ArrÃªter le tabac</strong></li>
-<li><strong>Consommation modÃ©rÃ©e de vin rouge</strong></li>
+<li><strong>Exercice régulier</strong> (surtout HIIT et musculation)</li>
+<li><strong>Graisses mono-insaturées</strong> : huile d'olive, avocat, noix</li>
+<li><strong>Réduire les glucides raffinés</strong></li>
+<li><strong>Arrêter le tabac</strong></li>
+<li><strong>Consommation modérée de vin rouge</strong></li>
 </ul>
 
 <blockquote style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-ðŸ”¬ <strong>Ce que dit la science :</strong> Volek et al. (2009, <em>Lipids</em>) ont montrÃ© qu'un rÃ©gime pauvre en glucides amÃ©liorait le ratio TG/HDL de <strong>42 %</strong> en 12 semaines â€” significativement mieux qu'un rÃ©gime pauvre en graisses (+8 % seulement).
+🔬 <strong>Ce que dit la science :</strong> Volek et al. (2009, <em>Lipids</em>) ont montré qu'un régime pauvre en glucides améliorait le ratio TG/HDL de <strong>42 %</strong> en 12 semaines — significativement mieux qu'un régime pauvre en graisses (+8 % seulement).
 </blockquote>
 
-<h2>RÃ©sultats attendus</h2>
+<h2>Résultats attendus</h2>
 
 <ul>
-<li><strong>Semaines 2-4</strong> : TG commencent Ã  baisser (-15 Ã  -25 %)</li>
-<li><strong>Semaines 4-8</strong> : HDL commence Ã  monter (+5 Ã  +10 %)</li>
-<li><strong>Semaines 8-12</strong> : ratio significativement amÃ©liorÃ©</li>
+<li><strong>Semaines 2-4</strong> : TG commencent à baisser (-15 à -25 %)</li>
+<li><strong>Semaines 4-8</strong> : HDL commence à monter (+5 à +10 %)</li>
+<li><strong>Semaines 8-12</strong> : ratio significativement amélioré</li>
 </ul>
 
-<p>Le programme <strong><a href="https://seche10semaines.fr">SÃ¨che 10 Semaines</a></strong> est conÃ§u pour optimiser votre ratio TG/HDL : pauvre en glucides raffinÃ©s, riche en omÃ©ga-3 et en graisses saines, avec exercice combinÃ©.</p>
+<p>Le programme <strong><a href="https://seche10semaines.fr">Sèche 10 Semaines</a></strong> est conçu pour optimiser votre ratio TG/HDL : pauvre en glucides raffinés, riche en oméga-3 et en graisses saines, avec exercice combiné.</p>
 
 <div style="background:linear-gradient(135deg,#f97316,#ef4444);padding:24px;border-radius:12px;text-align:center;margin:32px 0;">
 <p style="color:white;font-size:1.2em;font-weight:bold;margin:0 0 12px 0;">Optimisez votre bilan lipidique en 10 semaines</p>
