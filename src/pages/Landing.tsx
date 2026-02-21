@@ -875,25 +875,6 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="section faq-section">
-        <div className="container faq-container">
-          <div className="text-center" style={{ marginBottom: 28 }}>
-            <div className="section-tag">FAQ</div>
-            <h2 className="section-title font-serif">Vos questions.</h2>
-          </div>
-          {faqs.map((faq, i) => (
-            <div key={i} className="faq-item">
-              <button className="faq-question" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
-                {faq.q}
-                <span className={`faq-chevron ${openFaq === i ? 'open' : ''}`}>▾</span>
-              </button>
-              {openFaq === i && <div className="faq-answer">{faq.a}</div>}
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* TÉMOIGNAGES */}
       <section style={{ padding: '80px 20px', background: '#0a0f1a' }}>
         <div className="container" style={{ maxWidth: 900 }}>
@@ -925,6 +906,25 @@ export const Landing: React.FC = () => {
               </div>
               <div style={{ color: '#FFD700', fontSize: 14, marginBottom: 10 }}>★★★★★</div>
               <p style={{ color: '#CBD5E1', fontSize: 14, lineHeight: 1.7, fontStyle: 'italic', margin: 0 }}>"{t.quote}"</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="section faq-section">
+        <div className="container faq-container">
+          <div className="text-center" style={{ marginBottom: 28 }}>
+            <div className="section-tag">FAQ</div>
+            <h2 className="section-title font-serif">Vos questions.</h2>
+          </div>
+          {faqs.map((faq, i) => (
+            <div key={i} className="faq-item">
+              <button className="faq-question" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+                {faq.q}
+                <span className={`faq-chevron ${openFaq === i ? 'open' : ''}`}>▾</span>
+              </button>
+              {openFaq === i && <div className="faq-answer">{faq.a}</div>}
             </div>
           ))}
         </div>

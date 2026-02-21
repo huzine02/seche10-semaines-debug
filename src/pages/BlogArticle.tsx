@@ -9,7 +9,15 @@ export const BlogArticle: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+    if (article) {
+      document.title = `${article.title} | Sèche 10 Semaines`;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', article.metaDescription);
+    }
+    return () => {
+      document.title = 'Sèche 10 Semaines — Programme Métabolique Scientifique';
+    };
+  }, [slug, article]);
 
   if (!article) return <Navigate to="/blog" />;
 

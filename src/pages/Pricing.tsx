@@ -206,7 +206,7 @@ export const Pricing: React.FC = () => {
                   <div className="plan-old">49€</div>
                 </div>
               </div>
-              <div className="plan-saving">🎉 -40% pour les 50 premiers inscrits</div>
+              <div className="plan-saving">⏰ Offre de lancement — valable jusqu'au 31 mars 2026</div>
             </div>
 
             <div className="plan-body">

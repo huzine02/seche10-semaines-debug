@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AuthProvider, useAuth } from './AuthContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { Layout } from './components/Layout';
@@ -52,7 +52,7 @@ export default function App() {
   return (
     <ThemeProvider>
     <AuthProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Auth />} />
@@ -101,7 +101,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <CookieBanner />
-      </HashRouter>
+      </BrowserRouter>
     </AuthProvider>
     </ThemeProvider>
   );
