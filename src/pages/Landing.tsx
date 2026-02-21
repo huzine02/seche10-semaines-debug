@@ -894,6 +894,61 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
+      {/* TÉMOIGNAGES */}
+      <section style={{ padding: '80px 20px', background: '#0a0f1a' }}>
+        <div className="container" style={{ maxWidth: 900 }}>
+          <div className="text-center" style={{ marginBottom: 40 }}>
+            <div className="section-tag">Résultats</div>
+            <h2 className="section-title font-serif" style={{ color: '#fff' }}>Ils ont transformé leur corps.</h2>
+          </div>
+          {[
+            { name: 'Stéphane', age: 47, job: 'Directeur commercial', result: '-7,2 kg en 10 semaines', quote: "J'ai gardé mes restos clients. J'ai juste appris à choisir différemment. Entrée + plat au lieu de plat + dessert + fromage. Des ajustements, pas des sacrifices. Mon médecin m'a demandé ce que j'avais changé.", initials: 'S' },
+            { name: 'Laurent', age: 39, job: 'Responsable marketing', result: '-6 kg en 8 semaines', quote: "Mon fils de 8 ans m'a dit que je courais pas assez vite. 8 semaines plus tard, je cours avec lui sans m'arrêter. Ça vaut plus que n'importe quel chiffre sur la balance.", initials: 'L' },
+            { name: 'Marc', age: 51, job: 'Directeur administratif et financier', result: '-8,4 kg en 10 semaines', quote: "6 ans de comité de direction, 15 kg de plus. Sèche 10 Semaines m'a donné un cadre simple. La photo de famille, c'est moi qui l'ai proposée cette fois.", initials: 'M' },
+          ].map((t, i) => (
+            <div key={i} style={{
+              background: 'linear-gradient(135deg, #141b2d 0%, #1a2340 100%)',
+              borderRadius: 16, padding: '28px 24px', marginBottom: 20,
+              border: '1px solid rgba(255,255,255,0.06)',
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
+                <div style={{
+                  width: 48, height: 48, borderRadius: '50%', background: 'linear-gradient(135deg, #00B894, #00a381)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  color: '#fff', fontWeight: 700, fontSize: 18,
+                }}>{t.initials}</div>
+                <div>
+                  <div style={{ color: '#fff', fontWeight: 700, fontSize: 15 }}>{t.name}, {t.age} ans</div>
+                  <div style={{ color: '#94A3B8', fontSize: 13 }}>{t.job}</div>
+                </div>
+                <div style={{ marginLeft: 'auto', color: '#00B894', fontWeight: 700, fontSize: 14 }}>{t.result}</div>
+              </div>
+              <div style={{ color: '#FFD700', fontSize: 14, marginBottom: 10 }}>★★★★★</div>
+              <p style={{ color: '#CBD5E1', fontSize: 14, lineHeight: 1.7, fontStyle: 'italic', margin: 0 }}>"{t.quote}"</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* URGENCE OFFRE */}
+      <section style={{
+        padding: '50px 20px', textAlign: 'center' as const,
+        background: 'linear-gradient(135deg, #00B894 0%, #00a381 100%)',
+      }}>
+        <div className="container" style={{ maxWidth: 600 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: 'rgba(255,255,255,0.8)', marginBottom: 12 }}>⏰ Offre de lancement</div>
+          <h2 className="font-serif" style={{ color: '#fff', fontSize: 28, marginBottom: 8 }}>
+            <span style={{ textDecoration: 'line-through', opacity: 0.6 }}>49€</span> → 29€<span style={{ fontSize: 16 }}>/mois</span>
+          </h2>
+          <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: 15, marginBottom: 20 }}>
+            Valable jusqu'au <strong>31 mars 2026</strong> · Sans engagement
+          </p>
+          <Link to="/login" className="btn-primary" style={{ background: '#fff', color: '#00a381' }}>
+            Profiter de l'offre →
+          </Link>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="final-cta">
         <h2 className="font-serif">Prêt à retrouver le corps<br />que vous méritez ?</h2>
