@@ -14,6 +14,24 @@ export const BlogArticle: React.FC = () => {
       document.title = `${article.title} | Sèche 10 Semaines`;
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) metaDesc.setAttribute('content', article.metaDescription);
+
+      // Open Graph meta tags
+      const ogTags: Record<string, string> = {
+        'og:title': article.title,
+        'og:description': article.metaDescription,
+        'og:image': `https://seche10semaines.fr/blog-images/blog-img-${article.slug}.png`,
+        'og:url': `https://seche10semaines.fr/#/blog/${article.slug}`,
+        'og:type': 'article',
+      };
+      Object.entries(ogTags).forEach(([prop, content]) => {
+        let tag = document.querySelector(`meta[property="${prop}"]`);
+        if (!tag) {
+          tag = document.createElement('meta');
+          tag.setAttribute('property', prop);
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute('content', content);
+      });
     }
     return () => {
       document.title = 'Sèche 10 Semaines — Programme Métabolique Scientifique';
@@ -195,6 +213,30 @@ export const BlogArticle: React.FC = () => {
       })()}
 
       <article className="art-body" dangerouslySetInnerHTML={{ __html: renderContent(article.content) }} />
+
+      {/* ARTICLES LIÉS — MAILLAGE INTERNE */}
+      <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 20px 40px' }}>
+        <h3 style={{ color: '#fff', fontSize: 20, marginBottom: 16 }}>📚 Articles similaires</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 12 }}>
+          {[...blogArticles, ...seoArticlesRewrite, ...seoArticles25]
+            .filter((a, i, arr) => arr.findIndex(b => b.slug === a.slug) === i)
+            .filter(a => a.slug !== article.slug)
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 3)
+            .map((a, i) => (
+              <Link key={i} to={`/blog/${a.slug}`} style={{
+                display: 'block', padding: '16px', borderRadius: 10,
+                background: 'linear-gradient(135deg, #141b2d 0%, #1a2340 100%)',
+                border: '1px solid rgba(255,255,255,0.06)',
+                textDecoration: 'none', transition: 'transform 0.2s',
+              }}>
+                <div style={{ color: '#00B894', fontSize: 12, fontWeight: 600, marginBottom: 6 }}>ARTICLE</div>
+                <div style={{ color: '#fff', fontSize: 14, fontWeight: 600, lineHeight: 1.4 }}>{a.title}</div>
+                <div style={{ color: '#94A3B8', fontSize: 12, marginTop: 8 }}>Lire l'article →</div>
+              </Link>
+            ))}
+        </div>
+      </div>
 
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 20px 60px' }}>
         <div className="art-cta-box">
