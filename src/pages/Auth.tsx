@@ -23,7 +23,16 @@ export const Auth: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const redirectTo = new URLSearchParams(location.search).get('redirect');
+  const searchParams = new URLSearchParams(location.search);
+  const redirectTo = searchParams.get('redirect');
+  const refCode = searchParams.get('ref');
+
+  // Store referral code in localStorage if present
+  useEffect(() => {
+    if (refCode) {
+      localStorage.setItem('referralCode', refCode);
+    }
+  }, [refCode]);
 
   // Smart redirect: setup first, then pricing if no sub, then dashboard
   const getAfterLoginPath = () => {
@@ -98,8 +107,10 @@ export const Auth: React.FC = () => {
       } else {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const profile = createInitialUserProfile(res.user, name);
+        const storedRef = localStorage.getItem('referralCode');
         // @ts-ignore
-        await setDoc(doc(db, 'users', res.user.uid), profile);
+        await setDoc(doc(db, 'users', res.user.uid), { ...profile, ...(storedRef ? { referredBy: storedRef } : {}) });
+        if (storedRef) localStorage.removeItem('referralCode');
         // Always go to setup first for new accounts (onboarding required)
         navigate('/setup');
       }
@@ -118,8 +129,10 @@ export const Auth: React.FC = () => {
       const userDoc = await getDoc(doc(db, 'users', res.user.uid));
       if (!userDoc.exists()) {
         const profile = createInitialUserProfile(res.user);
+        const storedRef = localStorage.getItem('referralCode');
         // @ts-ignore
-        await setDoc(doc(db, 'users', res.user.uid), profile);
+        await setDoc(doc(db, 'users', res.user.uid), { ...profile, ...(storedRef ? { referredBy: storedRef } : {}) });
+        if (storedRef) localStorage.removeItem('referralCode');
         // Always go to setup first for new accounts (onboarding required)
         navigate('/setup');
       } else {

@@ -330,6 +330,39 @@ export const Landing: React.FC = () => {
     .footer-links a { font-size: 11px; color: rgba(255,255,255,0.4); text-decoration: none; }
     .footer-copy { font-size: 10px; color: rgba(255,255,255,0.25); }
 
+    /* ═══ APP PREVIEW ═══ */
+    .preview-section { background: var(--paper); padding: 56px 20px; }
+    .preview-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 36px; }
+    .preview-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 20px; box-shadow: 0 2px 20px rgba(15,44,89,0.05); transition: all 0.4s; }
+    .preview-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
+    .preview-icon { font-size: 32px; margin-bottom: 12px; }
+    .preview-card-title { font-family: 'Instrument Serif', serif; font-size: 18px; color: var(--ink); margin-bottom: 8px; }
+    .preview-card-desc { font-size: 13px; color: var(--text-mid); line-height: 1.55; margin-bottom: 16px; }
+    .preview-visual { background: var(--cream); border-radius: 10px; padding: 14px; border: 1px solid var(--border); }
+
+    /* Mini macro bars */
+    .mini-bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .mini-bar-label { font-size: 10px; font-weight: 600; color: var(--text-mid); width: 60px; flex-shrink: 0; }
+    .mini-bar-track { flex: 1; height: 8px; background: #E2E8F0; border-radius: 100px; overflow: hidden; }
+    .mini-bar-fill { height: 100%; border-radius: 100px; transition: width 1s ease; }
+    .mini-bar-fill.prot { background: linear-gradient(90deg, #3B82F6, #60A5FA); }
+    .mini-bar-fill.gluc { background: linear-gradient(90deg, #F59E0B, #FBBF24); }
+    .mini-bar-fill.lip { background: linear-gradient(90deg, #EC4899, #F472B6); }
+    .mini-bar-value { font-size: 10px; font-weight: 700; color: var(--text); width: 32px; text-align: right; flex-shrink: 0; }
+
+    /* Mini menu */
+    .mini-menu-item { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .mini-menu-item:last-child { border-bottom: none; }
+    .mini-menu-label { font-size: 10px; font-weight: 700; color: var(--sage-light); }
+    .mini-menu-content { font-size: 11px; color: var(--text-mid); line-height: 1.4; }
+
+    /* Mini progress ring */
+    .progress-ring-container { display: flex; align-items: center; gap: 16px; justify-content: center; }
+    .progress-ring { position: relative; width: 80px; height: 80px; }
+    .progress-ring svg { transform: rotate(-90deg); }
+    .progress-ring-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: var(--sage); }
+    .streak-badge-mini { background: linear-gradient(135deg, #FFF7ED, #FFEDD5); border: 1px solid #FED7AA; border-radius: 10px; padding: 8px 14px; font-size: 14px; font-weight: 700; color: #D97706; }
+
     .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
 
@@ -352,6 +385,7 @@ export const Landing: React.FC = () => {
       .pain-grid { grid-template-columns: 1fr 1fr; }
       .steps-grid { grid-template-columns: repeat(3, 1fr); }
       .testi-grid { grid-template-columns: repeat(3, 1fr); }
+      .preview-grid { grid-template-columns: repeat(3, 1fr); }
       .value-grid { grid-template-columns: 1fr 1fr; max-width: 700px; }
       .sticky-cta { display: none; }
       .cinema-frame { max-width: 700px; aspect-ratio: 16/10; }
@@ -911,6 +945,82 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
+      {/* APP PREVIEW */}
+      <section className="preview-section">
+        <div className="container text-center">
+          <div className="section-tag">APERÇU</div>
+          <h2 className="section-title font-serif">Votre programme en action</h2>
+          <p className="section-sub">Découvrez ce qui vous attend dès votre inscription</p>
+        </div>
+        <div className="container">
+          <div id="preview-grid" data-animate className={`preview-grid fade-up ${isVisible('preview-grid') ? 'visible' : ''}`}>
+            {/* Card 1 — Plan Personnalisé */}
+            <div className="preview-card">
+              <div className="preview-icon">🎯</div>
+              <div className="preview-card-title">Plan calculé pour VOUS</div>
+              <p className="preview-card-desc">Macros adaptées à votre métabolisme, votre âge et votre activité. Jours d'entraînement vs repos différenciés.</p>
+              <div className="preview-visual">
+                <div className="mini-bar-row">
+                  <span className="mini-bar-label">Protéines</span>
+                  <div className="mini-bar-track"><div className="mini-bar-fill prot" style={{ width: '85%' }} /></div>
+                  <span className="mini-bar-value">170g</span>
+                </div>
+                <div className="mini-bar-row">
+                  <span className="mini-bar-label">Glucides</span>
+                  <div className="mini-bar-track"><div className="mini-bar-fill gluc" style={{ width: '72%' }} /></div>
+                  <span className="mini-bar-value">180g</span>
+                </div>
+                <div className="mini-bar-row">
+                  <span className="mini-bar-label">Lipides</span>
+                  <div className="mini-bar-track"><div className="mini-bar-fill lip" style={{ width: '45%' }} /></div>
+                  <span className="mini-bar-value">65g</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 — Repas Quotidiens */}
+            <div className="preview-card" style={{ transitionDelay: '0.12s' }}>
+              <div className="preview-icon">🍽️</div>
+              <div className="preview-card-title">+80 recettes adaptées</div>
+              <p className="preview-card-desc">3 repas + collation calculés chaque jour. Ingrédients simples, 15-20 min de préparation.</p>
+              <div className="preview-visual">
+                <div className="mini-menu-item">
+                  <div>
+                    <div className="mini-menu-label">☀️ Déjeuner</div>
+                    <div className="mini-menu-content">150g Poulet + 70g Riz + Brocolis</div>
+                  </div>
+                </div>
+                <div className="mini-menu-item">
+                  <div>
+                    <div className="mini-menu-label">🌙 Dîner</div>
+                    <div className="mini-menu-content">150g Saumon + Patate douce + Salade</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 — Suivi & Gamification */}
+            <div className="preview-card" style={{ transitionDelay: '0.24s' }}>
+              <div className="preview-icon">🔥</div>
+              <div className="preview-card-title">Suivi intelligent</div>
+              <p className="preview-card-desc">Streaks, badges, compliance, pesées et tour de taille. Votre progression visualisée semaine par semaine.</p>
+              <div className="preview-visual">
+                <div className="progress-ring-container">
+                  <div className="progress-ring">
+                    <svg width="80" height="80" viewBox="0 0 80 80">
+                      <circle cx="40" cy="40" r="34" fill="none" stroke="#E2E8F0" strokeWidth="6" />
+                      <circle cx="40" cy="40" r="34" fill="none" stroke="#00B894" strokeWidth="6" strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 34 * 0.72} ${2 * Math.PI * 34 * 0.28}`} />
+                    </svg>
+                    <div className="progress-ring-text">72%</div>
+                  </div>
+                  <div className="streak-badge-mini">🔥 12 jours</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section id="faq" className="section faq-section">
         <div className="container faq-container">
@@ -969,6 +1079,7 @@ export const Landing: React.FC = () => {
           <Link to="/cgv">CGV</Link>
           <Link to="/politique-confidentialite">Politique de confidentialité</Link>
         </div>
+        <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginBottom: 10 }}>🎁 Parrainez un ami : -50% pour lui, 1 mois offert pour vous</div>
         <div className="footer-copy">© 2026 Sèche10Semaines · Résultats individuels, non contractuels.</div>
       </footer>
 

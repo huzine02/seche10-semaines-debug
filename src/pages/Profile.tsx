@@ -6,6 +6,7 @@ import { useAuth } from '../AuthContext';
 import { UserProfile } from '../types';
 import { StreakBadge } from '../components/StreakBadge';
 import { AchievementGrid } from '../components/Achievements';
+import { ReferralBanner } from '../components/ReferralBanner';
 import { useTheme } from '../contexts/ThemeContext';
 import { lightTheme, darkTheme } from '../theme';
 
@@ -440,6 +441,9 @@ export const Profile: React.FC = () => {
             />
           </div>
         </div>
+
+        {/* PARRAINAGE */}
+        <ReferralBanner />
 
         {/* 3. PROFIL MÉTABOLIQUE (DUAL MACROS) */}
         {diet && (
