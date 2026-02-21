@@ -3,10 +3,11 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { blogArticles } from '../data/blogArticles';
 import { seoArticles25 } from '../data/seoArticles25';
 import { seoArticlesRewrite } from '../data/seoArticlesRewrite';
+import { healthArticles } from '../data/healthArticles';
 
 export const BlogArticle: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const article = blogArticles.find((a) => a.slug === slug) || seoArticlesRewrite.find((a) => a.slug === slug) || seoArticles25.find((a) => a.slug === slug);
+  const article = blogArticles.find((a) => a.slug === slug) || seoArticlesRewrite.find((a) => a.slug === slug) || seoArticles25.find((a) => a.slug === slug) || healthArticles.find((a) => a.slug === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);

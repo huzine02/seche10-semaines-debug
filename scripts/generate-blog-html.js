@@ -331,21 +331,25 @@ function main() {
   const blogSrc = readFile('blogArticles.ts');
   const seo25Src = readFile('seoArticles25.ts');
   const seoRewriteSrc = readFile('seoArticlesRewrite.ts');
+  const healthSrc = readFile('healthArticles.ts');
   
   const blogArticles = extractArticles(blogSrc);
   const seo25Articles = extractArticles(seo25Src);
   const seoRewriteArticles = extractArticles(seoRewriteSrc);
+  const healthArticlesList = extractArticles(healthSrc);
   
   console.log(`  blogArticles: ${blogArticles.length} articles`);
   console.log(`  seoArticles25: ${seo25Articles.length} articles`);
   console.log(`  seoArticlesRewrite: ${seoRewriteArticles.length} articles`);
+  console.log(`  healthArticles: ${healthArticlesList.length} articles`);
   
-  // Merge: blogArticles + seo25 + seoRewrite (rewrite overrides seo25 by slug)
+  // Merge: blogArticles + seo25 + seoRewrite + health (rewrite overrides seo25 by slug)
   const articleMap = new Map();
   
   for (const a of blogArticles) articleMap.set(a.slug, a);
   for (const a of seo25Articles) articleMap.set(a.slug, a);
   for (const a of seoRewriteArticles) articleMap.set(a.slug, a); // overrides seo25
+  for (const a of healthArticlesList) articleMap.set(a.slug, a);
   
   const allArticles = [...articleMap.values()];
   console.log(`\n  Total unique articles: ${allArticles.length}\n`);
