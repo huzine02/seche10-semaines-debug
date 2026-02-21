@@ -180,6 +180,20 @@ export const BlogArticle: React.FC = () => {
         </div>
       </section>
 
+      {(() => {
+        const imgPath = `/blog-images/blog-img-${article.slug}.png`;
+        return (
+          <div style={{ maxWidth: 720, margin: '0 auto', padding: '20px 20px 0' }}>
+            <img
+              src={imgPath}
+              alt={article.title}
+              style={{ width: '100%', borderRadius: 12, marginBottom: 24 }}
+              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+            />
+          </div>
+        );
+      })()}
+
       <article className="art-body" dangerouslySetInnerHTML={{ __html: renderContent(article.content) }} />
 
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 20px 60px' }}>
