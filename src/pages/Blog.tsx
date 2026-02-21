@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { blogArticles } from '../data/blogArticles';
 import { seoArticles25 } from '../data/seoArticles25';
+import { seoArticlesRewrite } from '../data/seoArticlesRewrite';
 
 export const Blog: React.FC = () => {
   const styles = `
@@ -98,7 +99,7 @@ export const Blog: React.FC = () => {
             <div className="blog-card-arrow">Lire l'article →</div>
           </Link>
         ))}
-        {seoArticles25.map((article) => (
+        {[...seoArticles25, ...seoArticlesRewrite].filter((a, i, arr) => arr.findIndex(b => b.slug === a.slug) === i).map((article) => (
           <Link to={`/blog/${article.slug}`} className="blog-card" key={article.slug}>
             <div className="blog-card-meta">
               <span className="blog-card-date">Fév 2026</span>

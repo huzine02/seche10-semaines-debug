@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { blogArticles } from '../data/blogArticles';
 import { seoArticles25 } from '../data/seoArticles25';
+import { seoArticlesRewrite } from '../data/seoArticlesRewrite';
 
 export const BlogArticle: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const article = blogArticles.find((a) => a.slug === slug) || seoArticles25.find((a) => a.slug === slug);
+  const article = blogArticles.find((a) => a.slug === slug) || seoArticlesRewrite.find((a) => a.slug === slug) || seoArticles25.find((a) => a.slug === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
