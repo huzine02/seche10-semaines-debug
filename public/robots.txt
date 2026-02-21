@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://seche10semaines.fr/sitemap.xml
