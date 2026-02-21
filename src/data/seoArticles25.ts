@@ -3,31 +3,31 @@
  * Cible : Hommes 35-55 ans, cadres/entrepreneurs
  * 
  * MOTS-CLÉS CIBLÉS (25) :
- * 1.  "comment sécher sans perdre de muscle" â€” Vol: 720/mois, KD: 18
- * 2.  "petit déjeuner sèche musculation" â€” Vol: 590/mois, KD: 15
- * 3.  "cardio ou musculation pour sécher" â€” Vol: 480/mois, KD: 22
- * 4.  "déficit calorique homme calcul" â€” Vol: 390/mois, KD: 12
- * 5.  "combien de protéines en sèche homme" â€” Vol: 450/mois, KD: 14
- * 6.  "repas sèche homme semaine" â€” Vol: 880/mois, KD: 20
- * 7.  "abdos visibles pourcentage graisse homme" â€” Vol: 320/mois, KD: 16
- * 8.  "jeune intermittent sèche musculation" â€” Vol: 540/mois, KD: 25
- * 9.  "complément alimentaire sèche homme" â€” Vol: 410/mois, KD: 19
- * 10. "perte de graisse abdominale homme exercice" â€” Vol: 620/mois, KD: 23
- * 11. "comment calculer ses macros pour sécher" â€” Vol: 350/mois, KD: 13
- * 12. "entrainement sèche homme salle" â€” Vol: 430/mois, KD: 21
- * 13. "stagnation perte de poids homme solution" â€” Vol: 290/mois, KD: 10
- * 14. "alimentation sèche sans compter calories" â€” Vol: 310/mois, KD: 11
- * 15. "musculation après 45 ans transformation" â€” Vol: 520/mois, KD: 17
- * 16. "collation sèche musculation homme" â€” Vol: 280/mois, KD: 9
- * 17. "programme hiit brûle graisse homme" â€” Vol: 470/mois, KD: 24
- * 18. "erreurs sèche musculation débutant" â€” Vol: 260/mois, KD: 8
- * 19. "sèche express 4 semaines homme" â€” Vol: 380/mois, KD: 20
- * 20. "comment perdre les poignées d'amour homme" â€” Vol: 710/mois, KD: 22
- * 21. "whey protéine sèche avis homme" â€” Vol: 340/mois, KD: 15
- * 22. "meal prep sèche homme recettes" â€” Vol: 300/mois, KD: 12
- * 23. "sport à jeun pour maigrir homme" â€” Vol: 460/mois, KD: 18
- * 24. "rétention d'eau sèche homme solutions" â€” Vol: 270/mois, KD: 10
- * 25. "programme sèche homme sans matériel" â€” Vol: 510/mois, KD: 16
+ * 1.  "comment sécher sans perdre de muscle" — Vol: 720/mois, KD: 18
+ * 2.  "petit déjeuner sèche musculation" — Vol: 590/mois, KD: 15
+ * 3.  "cardio ou musculation pour sécher" — Vol: 480/mois, KD: 22
+ * 4.  "déficit calorique homme calcul" — Vol: 390/mois, KD: 12
+ * 5.  "combien de protéines en sèche homme" — Vol: 450/mois, KD: 14
+ * 6.  "repas sèche homme semaine" — Vol: 880/mois, KD: 20
+ * 7.  "abdos visibles pourcentage graisse homme" — Vol: 320/mois, KD: 16
+ * 8.  "jeune intermittent sèche musculation" — Vol: 540/mois, KD: 25
+ * 9.  "complément alimentaire sèche homme" — Vol: 410/mois, KD: 19
+ * 10. "perte de graisse abdominale homme exercice" — Vol: 620/mois, KD: 23
+ * 11. "comment calculer ses macros pour sécher" — Vol: 350/mois, KD: 13
+ * 12. "entrainement sèche homme salle" — Vol: 430/mois, KD: 21
+ * 13. "stagnation perte de poids homme solution" — Vol: 290/mois, KD: 10
+ * 14. "alimentation sèche sans compter calories" — Vol: 310/mois, KD: 11
+ * 15. "musculation après 45 ans transformation" — Vol: 520/mois, KD: 17
+ * 16. "collation sèche musculation homme" — Vol: 280/mois, KD: 9
+ * 17. "programme hiit brûle graisse homme" — Vol: 470/mois, KD: 24
+ * 18. "erreurs sèche musculation débutant" — Vol: 260/mois, KD: 8
+ * 19. "sèche express 4 semaines homme" — Vol: 380/mois, KD: 20
+ * 20. "comment perdre les poignées d'amour homme" — Vol: 710/mois, KD: 22
+ * 21. "whey protéine sèche avis homme" — Vol: 340/mois, KD: 15
+ * 22. "meal prep sèche homme recettes" — Vol: 300/mois, KD: 12
+ * 23. "sport Ã  jeun pour maigrir homme" — Vol: 460/mois, KD: 18
+ * 24. "rétention d'eau sèche homme solutions" — Vol: 270/mois, KD: 10
+ * 25. "programme sèche homme sans matériel" — Vol: 510/mois, KD: 16
  */
 
 export interface BlogArticle {
@@ -38,17 +38,17 @@ export interface BlogArticle {
 }
 
 export const seoArticles25: BlogArticle[] = [
-  // â”€â”€â”€ ARTICLE 1 â”€â”€â”€
+  // ─── ARTICLE 1 ───
   {
     slug: "comment-secher-sans-perdre-de-muscle",
     title: "Comment Sécher Sans Perdre de Muscle : Le Guide Scientifique pour Homme",
-    metaDescription: "Sécher sans perdre de muscle : stratégies nutrition, entraînement et récupération validées par la science. Guide complet pour hommes de 35 à 55 ans.",
+    metaDescription: "Sécher sans perdre de muscle : stratégies nutrition, entraînement et récupération validées par la science. Guide complet pour hommes de 35 Ã  55 ans.",
     content: `
 <h1>Comment Sécher Sans Perdre de Muscle : Le Guide Scientifique pour Homme</h1>
 
-<p>Vous avez passé des mois, voire des années, à construire votre masse musculaire. Et maintenant, vous voulez révéler ce physique en perdant le gras qui le recouvre. Le problème ? <strong>La peur de perdre vos gains durement acquis</strong>. Cette crainte est légitime â€” mais avec la bonne méthode, elle est totalement évitable.</p>
+<p>Vous avez passé des mois, voire des années, Ã  construire votre masse musculaire. Et maintenant, vous voulez révéler ce physique en perdant le gras qui le recouvre. Le problème ? <strong>La peur de perdre vos gains durement acquis</strong>. Cette crainte est légitime — mais avec la bonne méthode, elle est totalement évitable.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La préservation musculaire en sèche n'est pas une question de chance â€” c'est une question de stratégie. Avec un déficit modéré, des protéines élevées et un stimulus d'entraînement maintenu, vous pouvez conserver 95%+ de votre masse musculaire. » â€” <em>Dr. Eric Helms, chercheur en sciences du sport, Auckland University of Technology</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La préservation musculaire en sèche n'est pas une question de chance — c'est une question de stratégie. Avec un déficit modéré, des protéines élevées et un stimulus d'entraînement maintenu, vous pouvez conserver 95%+ de votre masse musculaire. » — <em>Dr. Eric Helms, chercheur en sciences du sport, Auckland University of Technology</em></blockquote>
 
 <p>Ce guide vous donne les clés pour <strong>sécher proprement</strong>, en préservant chaque gramme de muscle. Pas de broscience, pas de régimes extrêmes. Juste de la stratégie basée sur la recherche.</p>
 
@@ -57,45 +57,45 @@ export const seoArticles25: BlogArticle[] = [
 <p>Avant de résoudre le problème, il faut le comprendre. La perte musculaire en sèche survient principalement pour trois raisons :</p>
 
 <h3>1. Un déficit calorique trop agressif</h3>
-<p>Quand vous coupez trop de calories d'un coup, votre corps entre en mode survie. Il puise dans toutes ses réserves â€” y compris le tissu musculaire. Un <strong>déficit de plus de 25% de vos besoins</strong> augmente significativement le risque de catabolisme musculaire.</p>
+<p>Quand vous coupez trop de calories d'un coup, votre corps entre en mode survie. Il puise dans toutes ses réserves — y compris le tissu musculaire. Un <strong>déficit de plus de 25% de vos besoins</strong> augmente significativement le risque de catabolisme musculaire.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Garthe et al. (2011, <em>International Journal of Sport Nutrition and Exercise Metabolism</em>) ont comparé une perte de 0,7% du poids/semaine vs 1,4%/semaine chez des athlètes. Le groupe lent a gagné 2,1% de masse maigre, tandis que le groupe rapide en a perdu 0,2%. Même conclusion : plus le déficit est modéré, plus le muscle est préservé.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Garthe et al. (2011, <em>International Journal of Sport Nutrition and Exercise Metabolism</em>) ont comparé une perte de 0,7% du poids/semaine vs 1,4%/semaine chez des athlètes. Le groupe lent a gagné 2,1% de masse maigre, tandis que le groupe rapide en a perdu 0,2%. Même conclusion : plus le déficit est modéré, plus le muscle est préservé.</blockquote>
 
 <h3>2. Un apport en protéines insuffisant</h3>
-<p>Les protéines sont les briques de vos muscles. En période de restriction calorique, vos besoins en protéines <em>augmentent</em>, pas l'inverse. C'est contre-intuitif mais essentiel à comprendre.</p>
+<p>Les protéines sont les briques de vos muscles. En période de restriction calorique, vos besoins en protéines <em>augmentent</em>, pas l'inverse. C'est contre-intuitif mais essentiel Ã  comprendre.</p>
 
 <h3>3. L'abandon de la musculation lourde</h3>
 <p>Beaucoup d'hommes passent en mode "séries longues, poids légers" pendant leur sèche. <strong>C'est l'erreur n°1</strong>. Le signal qui a construit le muscle est le même qui le maintient : la tension mécanique avec des charges lourdes.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Ne changez pas votre programme d'entraînement en sèche. Le stimulus qui a construit le muscle est le stimulus qui le préservera. Maintenez l'intensité (charge), réduisez le volume si nécessaire. » â€” <em>Dr. Mike Israetel, co-fondateur de Renaissance Periodization, PhD en Sport Physiology</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Ne changez pas votre programme d'entraînement en sèche. Le stimulus qui a construit le muscle est le stimulus qui le préservera. Maintenez l'intensité (charge), réduisez le volume si nécessaire. » — <em>Dr. Mike Israetel, co-fondateur de Renaissance Periodization, PhD en Sport Physiology</em></blockquote>
 
 <h2>Le déficit calorique idéal pour préserver le muscle</h2>
 
 <p>La recherche scientifique est claire : le déficit optimal se situe entre <strong>300 et 500 kcal par jour</strong>, soit environ 15-20% sous votre maintenance. Cela permet :</p>
 
 <ul>
-<li>Une perte de 0,5 à 0,7% du poids de corps par semaine</li>
+<li>Une perte de 0,5 Ã  0,7% du poids de corps par semaine</li>
 <li>Un maintien quasi-total de la masse musculaire</li>
-<li>Assez d'énergie pour maintenir l'intensité à l'entraînement</li>
+<li>Assez d'énergie pour maintenir l'intensité Ã  l'entraînement</li>
 <li>Un impact minimal sur la testostérone et les hormones thyroïdiennes</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Helms et al. (2014, <em>Journal of the International Society of Sports Nutrition</em>) recommandent une perte de 0,5 à 1% du poids/semaine pour les athlètes naturels en sèche, avec 0,5-0,7% comme fourchette optimale pour la préservation musculaire. Au-delà de 1%/semaine, le risque de perte de masse maigre augmente de manière exponentielle.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Helms et al. (2014, <em>Journal of the International Society of Sports Nutrition</em>) recommandent une perte de 0,5 Ã  1% du poids/semaine pour les athlètes naturels en sèche, avec 0,5-0,7% comme fourchette optimale pour la préservation musculaire. Au-delÃ  de 1%/semaine, le risque de perte de masse maigre augmente de manière exponentielle.</blockquote>
 
-<p><strong>Exemple concret</strong> : Si votre maintenance est à 2 500 kcal, visez 2 000-2 200 kcal par jour. Pas 1 500 kcal comme le recommandent certains coachs pressés.</p>
+<p><strong>Exemple concret</strong> : Si votre maintenance est Ã  2 500 kcal, visez 2 000-2 200 kcal par jour. Pas 1 500 kcal comme le recommandent certains coachs pressés.</p>
 
 <h3>Calculer votre maintenance</h3>
 <p>Utilisez la formule de Mifflin-St Jeor (considérée comme la plus fiable par l'Academy of Nutrition and Dietetics) :</p>
 <ul>
 <li><strong>Métabolisme de base</strong> = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li>
-<li><strong>Maintenance</strong> = MB Ã— facteur d'activité (1,4 à 1,7 selon votre niveau)</li>
+<li><strong>Maintenance</strong> = MB Ã— facteur d'activité (1,4 Ã  1,7 selon votre niveau)</li>
 </ul>
 
-<p>Pour un homme de 42 ans, 82 kg, 178 cm, modérément actif : MB â‰ˆ 1 727 kcal â†’ Maintenance â‰ˆ 2 418 kcal â†’ <strong>Cible sèche : 1 950-2 100 kcal</strong>.</p>
+<p>Pour un homme de 42 ans, 82 kg, 178 cm, modérément actif : MB ≈ 1 727 kcal ↑ Maintenance ≈ 2 418 kcal ↑ <strong>Cible sèche : 1 950-2 100 kcal</strong>.</p>
 
 <h2>L'apport en protéines : votre assurance anti-catabolisme</h2>
 
-<p>En sèche, visez <strong>2,0 à 2,4 g de protéines par kilo de poids de corps</strong>. Oui, c'est plus élevé qu'en prise de masse (1,6-2,0 g/kg). Voici pourquoi :</p>
+<p>En sèche, visez <strong>2,0 Ã  2,4 g de protéines par kilo de poids de corps</strong>. Oui, c'est plus élevé qu'en prise de masse (1,6-2,0 g/kg). Voici pourquoi :</p>
 
 <ul>
 <li>Les protéines ont un effet anti-catabolique direct via l'activation de mTOR</li>
@@ -104,18 +104,18 @@ export const seoArticles25: BlogArticle[] = [
 <li>Elles maintiennent le signal de synthèse protéique musculaire</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Mettler et al. (2010, <em>Medicine & Science in Sports & Exercise</em>) ont montré qu'un apport de 2,3 g/kg vs 1,0 g/kg en déficit de 40% permettait de préserver 100% de la masse maigre sur 2 semaines, tandis que le groupe basse protéine en perdait significativement.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Mettler et al. (2010, <em>Medicine & Science in Sports & Exercise</em>) ont montré qu'un apport de 2,3 g/kg vs 1,0 g/kg en déficit de 40% permettait de préserver 100% de la masse maigre sur 2 semaines, tandis que le groupe basse protéine en perdait significativement.</blockquote>
 
-<p>Pour notre homme de 82 kg, cela représente <strong>164 à 197 g de protéines par jour</strong>. Répartis sur 4 repas, c'est environ 40-50 g par prise â€” tout à fait gérable.</p>
+<p>Pour notre homme de 82 kg, cela représente <strong>164 Ã  197 g de protéines par jour</strong>. Répartis sur 4 repas, c'est environ 40-50 g par prise — tout Ã  fait gérable.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « En déficit, je recommande systématiquement 2,2-2,6 g/kg de protéines. C'est un seuil qui a été validé à plusieurs reprises dans la littérature. Le coût est minime, la protection musculaire est maximale. » â€” <em>Dr. Layne Norton, PhD en Nutritional Sciences, natty bodybuilder pro</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « En déficit, je recommande systématiquement 2,2-2,6 g/kg de protéines. C'est un seuil qui a été validé Ã  plusieurs reprises dans la littérature. Le coût est minime, la protection musculaire est maximale. » — <em>Dr. Layne Norton, PhD en Nutritional Sciences, natty bodybuilder pro</em></blockquote>
 
 <h3>Les meilleures sources de protéines en sèche</h3>
 <ul>
 <li><strong>Blanc de poulet</strong> : 31 g de protéines pour 100 g, très maigre</li>
 <li><strong>Poisson blanc (cabillaud, colin)</strong> : 18-20 g de protéines, quasi zéro lipide</li>
 <li><strong>Å’ufs entiers</strong> : 13 g pour 2 Å“ufs, excellente biodisponibilité (score DIAAS de 1,13)</li>
-<li><strong>Fromage blanc 0%</strong> : 8 g pour 100 g, parfait en collation (caséine à digestion lente)</li>
+<li><strong>Fromage blanc 0%</strong> : 8 g pour 100 g, parfait en collation (caséine Ã  digestion lente)</li>
 <li><strong>Whey protéine</strong> : pratique en complément, score DIAAS le plus élevé (1,09)</li>
 </ul>
 
@@ -123,11 +123,11 @@ export const seoArticles25: BlogArticle[] = [
 
 <p>Voici la règle d'or : <strong>entraînez-vous en sèche comme vous vous entraînez en prise de masse</strong>. Le volume peut baisser de 20-30%, mais l'intensité (la charge) doit rester maximale.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Trappe et al. (2006, <em>Journal of Applied Physiology</em>) ont démontré que réduire l'intensité de l'entraînement entraîne une atrophie musculaire en 32 jours, tandis que réduire uniquement le volume (en maintenant l'intensité) préserve la taille et la force musculaire jusqu'à 32 semaines.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Trappe et al. (2006, <em>Journal of Applied Physiology</em>) ont démontré que réduire l'intensité de l'entraînement entraîne une atrophie musculaire en 32 jours, tandis que réduire uniquement le volume (en maintenant l'intensité) préserve la taille et la force musculaire jusqu'Ã  32 semaines.</blockquote>
 
 <h3>Programme type pour préserver le muscle</h3>
 <ul>
-<li><strong>Fréquence</strong> : 3 à 4 séances de musculation par semaine</li>
+<li><strong>Fréquence</strong> : 3 Ã  4 séances de musculation par semaine</li>
 <li><strong>Structure</strong> : exercices composés en premier (squat, développé couché, soulevé de terre, rowing)</li>
 <li><strong>Séries/Reps</strong> : 3-4 séries de 6-10 reps sur les gros mouvements</li>
 <li><strong>Progression</strong> : maintenez vos charges. Si vous faisiez 100 kg au squat, continuez.</li>
@@ -138,42 +138,42 @@ export const seoArticles25: BlogArticle[] = [
 <p>Le cardio est un <em>outil</em>, pas une obligation. Si votre déficit alimentaire suffit, vous n'en avez pas besoin. Si vous l'ajoutez :</p>
 <ul>
 <li>Privilégiez la <strong>marche rapide</strong> (faible impact sur la récupération)</li>
-<li>Limitez le HIIT à <strong>2 séances maximum par semaine</strong></li>
+<li>Limitez le HIIT Ã  <strong>2 séances maximum par semaine</strong></li>
 <li>Ne faites jamais de cardio intense avant la musculation</li>
 </ul>
 
 <h2>Le sommeil : le facteur sous-estimé</h2>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Nedeltcheva et al. (2010, <em>Annals of Internal Medicine</em>) ont montré que dormir 5,5h vs 8,5h par nuit pendant un régime hypocalorique changeait radicalement la composition de la perte : le groupe privé de sommeil perdait <strong>60% plus de muscle et 55% moins de graisse</strong>. Le ratio graisse/muscle perdu était de 80/20 chez les dormeurs vs 50/50 chez les sous-dormeurs.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Nedeltcheva et al. (2010, <em>Annals of Internal Medicine</em>) ont montré que dormir 5,5h vs 8,5h par nuit pendant un régime hypocalorique changeait radicalement la composition de la perte : le groupe privé de sommeil perdait <strong>60% plus de muscle et 55% moins de graisse</strong>. Le ratio graisse/muscle perdu était de 80/20 chez les dormeurs vs 50/50 chez les sous-dormeurs.</blockquote>
 
-<p>Visez 7-9 heures de sommeil de qualité. C'est non négociable, surtout après 40 ans quand la production naturelle de testostérone et d'hormone de croissance commence à décliner.</p>
+<p>Visez 7-9 heures de sommeil de qualité. C'est non négociable, surtout après 40 ans quand la production naturelle de testostérone et d'hormone de croissance commence Ã  décliner.</p>
 
 <h3>Optimiser votre sommeil en sèche</h3>
 <ul>
-<li>Gardez une collation caséine (fromage blanc) avant le coucher â€” la caséine se digère en 6-8h et nourrit le muscle pendant la nuit</li>
+<li>Gardez une collation caséine (fromage blanc) avant le coucher — la caséine se digère en 6-8h et nourrit le muscle pendant la nuit</li>
 <li>Maintenez une température de chambre entre 18-20°C</li>
 <li>Coupez les écrans 1h avant le coucher (la lumière bleue supprime la mélatonine de 50%)</li>
-<li>Magnésium bisglycinate (400 mg) le soir â€” améliore la qualité du sommeil profond</li>
+<li>Magnésium bisglycinate (400 mg) le soir — améliore la qualité du sommeil profond</li>
 </ul>
 
 <h2>Gérer le stress : le cortisol est l'ennemi du muscle</h2>
 
-<p>Le cortisol, hormone du stress, est directement catabolique â€” il active les voies protéolytiques (dégradation des protéines musculaires). En sèche, il est déjà élevé naturellement à cause du déficit calorique. Si vous ajoutez le stress professionnel du quotidien, vous créez un cocktail destructeur.</p>
+<p>Le cortisol, hormone du stress, est directement catabolique — il active les voies protéolytiques (dégradation des protéines musculaires). En sèche, il est déjÃ  élevé naturellement Ã  cause du déficit calorique. Si vous ajoutez le stress professionnel du quotidien, vous créez un cocktail destructeur.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Le cortisol est le facteur le plus sous-estimé en sèche. Un cadre stressé avec un cortisol chroniquement élevé perdra plus de muscle qu'un ouvrier actif avec un cortisol bas, même à calories et protéines identiques. Les refeeds et les diet breaks sont vos meilleurs outils anti-cortisol. » â€” <em>Lyle McDonald, auteur de The Rapid Fat Loss Handbook</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Le cortisol est le facteur le plus sous-estimé en sèche. Un cadre stressé avec un cortisol chroniquement élevé perdra plus de muscle qu'un ouvrier actif avec un cortisol bas, même Ã  calories et protéines identiques. Les refeeds et les diet breaks sont vos meilleurs outils anti-cortisol. » — <em>Lyle McDonald, auteur de The Rapid Fat Loss Handbook</em></blockquote>
 
 <p><strong>Solutions pratiques</strong> :</p>
 <ul>
 <li>Méditation de 10 min le matin (apps comme Petit Bambou)</li>
 <li>Marche en nature le week-end (le "forest bathing" réduit le cortisol de 12-16% selon une méta-analyse de Li et al., 2010)</li>
-<li>Refeed days (jours à maintenance calorique) 1 fois par semaine pour réguler la leptine et baisser le cortisol</li>
+<li>Refeed days (jours Ã  maintenance calorique) 1 fois par semaine pour réguler la leptine et baisser le cortisol</li>
 <li>Ashwagandha KSM-66 : 600 mg/jour (Chandrasekhar et al., 2012, <em>Indian Journal of Psychological Medicine</em> : réduction du cortisol de 27,9% en 60 jours)</li>
 </ul>
 
 <h2>Le protocole complet en 5 points</h2>
 
 <ol>
-<li><strong>Déficit modéré</strong> : -300 à -500 kcal/jour (15-20% sous maintenance), pas plus</li>
+<li><strong>Déficit modéré</strong> : -300 Ã  -500 kcal/jour (15-20% sous maintenance), pas plus</li>
 <li><strong>Protéines élevées</strong> : 2,0-2,4 g/kg/jour, réparties sur 4 repas de 30-50 g</li>
 <li><strong>Musculation intense</strong> : maintenez les charges, réduisez le volume de 20-33%</li>
 <li><strong>Sommeil optimal</strong> : 7-9h minimum, non négociable</li>
@@ -182,21 +182,21 @@ export const seoArticles25: BlogArticle[] = [
 
 <h2>Durée recommandée d'une sèche</h2>
 
-<p>Pour un homme avec 15-20% de masse grasse visant 10-12%, comptez <strong>8 à 12 semaines</strong>. Au-delà de 12-16 semaines, le risque de perte musculaire augmente significativement à cause de l'adaptation métabolique (baisse du métabolisme de 10-15% selon Rosenbaum & Leibel, 2010, <em>International Journal of Obesity</em>).</p>
+<p>Pour un homme avec 15-20% de masse grasse visant 10-12%, comptez <strong>8 Ã  12 semaines</strong>. Au-delÃ  de 12-16 semaines, le risque de perte musculaire augmente significativement Ã  cause de l'adaptation métabolique (baisse du métabolisme de 10-15% selon Rosenbaum & Leibel, 2010, <em>International Journal of Obesity</em>).</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Je recommande des phases de sèche de 6 à 12 semaines suivies d'une phase de maintenance de 2 à 4 semaines. Cela limite l'adaptation métabolique et la fatigue psychologique. » â€” <em>Eric Helms, co-auteur de The Muscle & Strength Pyramid</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Je recommande des phases de sèche de 6 Ã  12 semaines suivies d'une phase de maintenance de 2 Ã  4 semaines. Cela limite l'adaptation métabolique et la fatigue psychologique. » — <em>Eric Helms, co-auteur de The Muscle & Strength Pyramid</em></blockquote>
 
 <p>C'est exactement pour cette raison que le <strong>programme Sèche 10 Semaines</strong> a été conçu sur cette durée : assez long pour une transformation visible, assez court pour préserver votre masse musculaire.</p>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸŽ¯ Prêt à sécher sans perdre de muscle ?</h3>
+<h3 style="margin-top:0;">🎯 Prêt Ã  sécher sans perdre de muscle ?</h3>
 <p>Le programme <strong>Sèche 10 Semaines</strong> intègre toutes ces stratégies dans un plan jour par jour : nutrition, entraînement, récupération. Tout est calculé pour maximiser la perte de graisse tout en préservant chaque gramme de muscle.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 2 â”€â”€â”€
+  // ─── ARTICLE 2 ───
   {
     slug: "petit-dejeuner-seche-musculation-homme",
     title: "Petit Déjeuner Sèche Musculation : 10 Recettes Rapides pour Homme",
@@ -204,11 +204,11 @@ export const seoArticles25: BlogArticle[] = [
     content: `
 <h1>Petit Déjeuner Sèche Musculation : 10 Recettes Rapides pour Homme</h1>
 
-<p>Le petit déjeuner est le repas qui fait ou défait votre sèche. Trop léger, vous craquez à 10h. Trop calorique, vous mangez la moitié de votre budget journalier dès le matin. <strong>L'objectif : un repas riche en protéines, modéré en calories, qui vous tient jusqu'au déjeuner.</strong></p>
+<p>Le petit déjeuner est le repas qui fait ou défait votre sèche. Trop léger, vous craquez Ã  10h. Trop calorique, vous mangez la moitié de votre budget journalier dès le matin. <strong>L'objectif : un repas riche en protéines, modéré en calories, qui vous tient jusqu'au déjeuner.</strong></p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Le premier repas de la journée devrait contenir au minimum 30 à 40 g de protéines pour activer la synthèse protéique musculaire de manière optimale. En dessous de 20 g, le signal mTOR est insuffisant â€” surtout chez les hommes de plus de 40 ans qui présentent une résistance anabolique. » â€” <em>Stuart Phillips, PhD, professeur de Kinésiologie à l'Université McMaster</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Le premier repas de la journée devrait contenir au minimum 30 Ã  40 g de protéines pour activer la synthèse protéique musculaire de manière optimale. En dessous de 20 g, le signal mTOR est insuffisant — surtout chez les hommes de plus de 40 ans qui présentent une résistance anabolique. » — <em>Stuart Phillips, PhD, professeur de Kinésiologie Ã  l'Université McMaster</em></blockquote>
 
-<p>Voici 10 petits déjeuners testés et approuvés, conçus pour les hommes en sèche qui n'ont pas 30 minutes à passer en cuisine le matin.</p>
+<p>Voici 10 petits déjeuners testés et approuvés, conçus pour les hommes en sèche qui n'ont pas 30 minutes Ã  passer en cuisine le matin.</p>
 
 <h2>Les principes d'un petit déjeuner sèche réussi</h2>
 
@@ -221,7 +221,7 @@ export const seoArticles25: BlogArticle[] = [
 <li><strong>Préparation rapide</strong> : moins de 10 minutes, sinon vous ne le ferez pas</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Moore et al. (2015, <em>Applied Physiology, Nutrition, and Metabolism</em>) ont démontré que répartir les protéines de manière égale sur 3-4 repas (vs les concentrer sur 1-2 repas) augmente la synthèse protéique musculaire de 25% sur 24h. Le seuil de leucine pour activer mTOR est d'environ 2,5-3 g par repas â€” soit environ 30-40 g de protéines de haute qualité.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Moore et al. (2015, <em>Applied Physiology, Nutrition, and Metabolism</em>) ont démontré que répartir les protéines de manière égale sur 3-4 repas (vs les concentrer sur 1-2 repas) augmente la synthèse protéique musculaire de 25% sur 24h. Le seuil de leucine pour activer mTOR est d'environ 2,5-3 g par repas — soit environ 30-40 g de protéines de haute qualité.</blockquote>
 
 <h3>Macro-répartition idéale du petit déjeuner sèche</h3>
 <p>Visez environ : <strong>35 g protéines / 30-40 g glucides / 10-15 g lipides</strong>. Cela donne un repas d'environ 370-450 kcal, suffisant pour démarrer la journée sans excès.</p>
@@ -239,9 +239,9 @@ export const seoArticles25: BlogArticle[] = [
 
 <p><strong>Macros</strong> : 380 kcal | 38 g protéines | 3 g glucides | 22 g lipides</p>
 
-<p>Battez les Å“ufs, ajoutez le jambon et les épinards. Cuisson 3 minutes à feu moyen dans une poêle antiadhésive. Pliez en deux. C'est prêt. Simple, efficace, et <strong>38 g de protéines</strong> en 5 minutes chrono.</p>
+<p>Battez les Å“ufs, ajoutez le jambon et les épinards. Cuisson 3 minutes Ã  feu moyen dans une poêle antiadhésive. Pliez en deux. C'est prêt. Simple, efficace, et <strong>38 g de protéines</strong> en 5 minutes chrono.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Contrairement aux craintes anciennes, les Å“ufs entiers ne posent pas de problème cardiovasculaire. Shin et al. (2018, <em>Heart</em>, cohorte de 500 000 personnes) n'ont trouvé aucune association entre la consommation d'un Å“uf/jour et le risque cardiovasculaire. Les Å“ufs entiers sont même supérieurs aux blancs d'Å“ufs pour la MPS (+45%) selon van Vliet et al. (2017, <em>American Journal of Clinical Nutrition</em>).</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Contrairement aux craintes anciennes, les Å“ufs entiers ne posent pas de problème cardiovasculaire. Shin et al. (2018, <em>Heart</em>, cohorte de 500 000 personnes) n'ont trouvé aucune association entre la consommation d'un Å“uf/jour et le risque cardiovasculaire. Les Å“ufs entiers sont même supérieurs aux blancs d'Å“ufs pour la MPS (+45%) selon van Vliet et al. (2017, <em>American Journal of Clinical Nutrition</em>).</blockquote>
 
 <h2>Recette 2 : Le Bowl Fromage Blanc Protéiné</h2>
 
@@ -282,13 +282,13 @@ export const seoArticles25: BlogArticle[] = [
 <li>40 g de flocons d'avoine</li>
 <li>200 ml de lait d'amande non sucré</li>
 <li>30 g de whey vanille</li>
-<li>1 cuillère à soupe de beurre de cacahuète (15 g)</li>
+<li>1 cuillère Ã  soupe de beurre de cacahuète (15 g)</li>
 <li>Cannelle</li>
 </ul>
 
 <p><strong>Macros</strong> : 410 kcal | 35 g protéines | 35 g glucides | 14 g lipides</p>
 
-<p>Mélangez tout dans un bocal la veille. Le matin, ouvrez le frigo et mangez. <strong>Zéro effort le matin</strong> â€” idéal pour les entrepreneurs qui partent tôt.</p>
+<p>Mélangez tout dans un bocal la veille. Le matin, ouvrez le frigo et mangez. <strong>Zéro effort le matin</strong> — idéal pour les entrepreneurs qui partent tôt.</p>
 
 <h2>Recette 5 : Le Wrap Petit Déjeuner</h2>
 
@@ -322,7 +322,7 @@ export const seoArticles25: BlogArticle[] = [
 
 <p>Blender pendant 30 secondes. C'est le petit déjeuner des matins pressés. Emportez-le dans un shaker si vous êtes en retard.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Un shake n'est pas idéal comme repas quotidien unique â€” les aliments solides offrent une meilleure satiété via la mastication et la distension gastrique. Mais en dépannage, un shake avec 35-40 g de protéines est infiniment mieux qu'un croissant à 3 g de protéines. » â€” <em>Alan Aragon, chercheur en nutrition sportive, consultant</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Un shake n'est pas idéal comme repas quotidien unique — les aliments solides offrent une meilleure satiété via la mastication et la distension gastrique. Mais en dépannage, un shake avec 35-40 g de protéines est infiniment mieux qu'un croissant Ã  3 g de protéines. » — <em>Alan Aragon, chercheur en nutrition sportive, consultant</em></blockquote>
 
 <h2>Recette 7 : Les Å’ufs Turcs Protéinés</h2>
 
@@ -331,7 +331,7 @@ export const seoArticles25: BlogArticle[] = [
 <ul>
 <li>200 g de yaourt grec 0%</li>
 <li>2 Å“ufs pochés</li>
-<li>1 cuillère à café d'huile d'olive pimentée</li>
+<li>1 cuillère Ã  café d'huile d'olive pimentée</li>
 <li>Sel, piment d'Espelette</li>
 <li>1 tranche de pain complet toasté</li>
 </ul>
@@ -400,26 +400,26 @@ export const seoArticles25: BlogArticle[] = [
 <tr><td>Dimanche</td><td>Meal Prep</td><td>Préparez la semaine suivante</td></tr>
 </table>
 
-<h2>Les erreurs à éviter au petit déjeuner en sèche</h2>
+<h2>Les erreurs Ã  éviter au petit déjeuner en sèche</h2>
 
 <ul>
-<li><strong>Sauter le petit déjeuner sans stratégie</strong> : à moins de pratiquer le jeûne intermittent de manière structurée, ne sautez pas ce repas</li>
-<li><strong>Le petit déjeuner 100% glucides</strong> : pain blanc, confiture, jus d'orange = pic glycémique puis crash à 10h</li>
+<li><strong>Sauter le petit déjeuner sans stratégie</strong> : Ã  moins de pratiquer le jeûne intermittent de manière structurée, ne sautez pas ce repas</li>
+<li><strong>Le petit déjeuner 100% glucides</strong> : pain blanc, confiture, jus d'orange = pic glycémique puis crash Ã  10h</li>
 <li><strong>Trop de fruits</strong> : un fruit c'est bien, trois fruits c'est ~45 g de sucre</li>
-<li><strong>Oublier les protéines</strong> : le croissant du boulanger, c'est 3 g de protéines pour 300 kcal â€” un ratio catastrophique</li>
+<li><strong>Oublier les protéines</strong> : le croissant du boulanger, c'est 3 g de protéines pour 300 kcal — un ratio catastrophique</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Leidy et al. (2015, <em>Advances in Nutrition</em>) ont montré qu'un petit déjeuner riche en protéines (35 g) vs un petit déjeuner classique réduit les grignotages de 26% dans la journée, diminue la ghréline (hormone de la faim) et augmente la PYY (hormone de satiété) de manière significative.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Leidy et al. (2015, <em>Advances in Nutrition</em>) ont montré qu'un petit déjeuner riche en protéines (35 g) vs un petit déjeuner classique réduit les grignotages de 26% dans la journée, diminue la ghréline (hormone de la faim) et augmente la PYY (hormone de satiété) de manière significative.</blockquote>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸ³ Envie d'un plan complet avec tous vos repas calculés ?</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> inclut un plan alimentaire complet avec petit déjeuner, déjeuner, dîner et collations â€” le tout adapté à votre profil et vos objectifs.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<h3 style="margin-top:0;">🍳 Envie d'un plan complet avec tous vos repas calculés ?</h3>
+<p>Le programme <strong>Sèche 10 Semaines</strong> inclut un plan alimentaire complet avec petit déjeuner, déjeuner, dîner et collations — le tout adapté Ã  votre profil et vos objectifs.</p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 3 â”€â”€â”€
+  // ─── ARTICLE 3 ───
   {
     slug: "cardio-ou-musculation-pour-secher",
     title: "Cardio ou Musculation pour Sécher ? La Réponse Définitive pour Homme",
@@ -429,26 +429,26 @@ export const seoArticles25: BlogArticle[] = [
 
 <p>C'est LE débat qui anime les vestiaires de toutes les salles de sport. D'un côté, les adeptes du cardio qui enchaînent les heures de tapis de course. De l'autre, les partisans de la fonte qui ne jurent que par les barres et les haltères. <strong>Qui a raison ?</strong></p>
 
-<p>La réponse courte : <strong>les deux</strong>. Mais pas de la manière dont vous le pensez. La clé, c'est la hiérarchie â€” et l'une de ces activités est clairement prioritaire sur l'autre.</p>
+<p>La réponse courte : <strong>les deux</strong>. Mais pas de la manière dont vous le pensez. La clé, c'est la hiérarchie — et l'une de ces activités est clairement prioritaire sur l'autre.</p>
 
 <h2>La musculation : votre priorité absolue en sèche</h2>
 
 <p>Si vous ne deviez choisir qu'une seule activité pendant votre sèche, ce serait la musculation. Point final. Voici pourquoi :</p>
 
 <h3>Elle préserve votre masse musculaire</h3>
-<p>En déficit calorique, votre corps cherche à se débarrasser du tissu métaboliquement coûteux â€” et le muscle en fait partie. La musculation envoie un <strong>signal de survie</strong> à vos fibres musculaires : "Garde-moi, j'ai encore besoin de toi."</p>
+<p>En déficit calorique, votre corps cherche Ã  se débarrasser du tissu métaboliquement coûteux — et le muscle en fait partie. La musculation envoie un <strong>signal de survie</strong> Ã  vos fibres musculaires : "Garde-moi, j'ai encore besoin de toi."</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Longland et al. (2016, <em>American Journal of Clinical Nutrition</em>) ont étudié 40 hommes en surpoids soumis à un déficit de 40%. Le groupe musculation + haute protéine a gagné 1,2 kg de muscle tout en perdant 4,8 kg de graisse en 4 semaines. Le groupe cardio + haute protéine a perdu de la graisse mais n'a gagné aucun muscle. La musculation est l'unique outil de recomposition corporelle en déficit.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Longland et al. (2016, <em>American Journal of Clinical Nutrition</em>) ont étudié 40 hommes en surpoids soumis Ã  un déficit de 40%. Le groupe musculation + haute protéine a gagné 1,2 kg de muscle tout en perdant 4,8 kg de graisse en 4 semaines. Le groupe cardio + haute protéine a perdu de la graisse mais n'a gagné aucun muscle. La musculation est l'unique outil de recomposition corporelle en déficit.</blockquote>
 
 <h3>Elle augmente votre métabolisme post-exercice</h3>
-<p>L'effet EPOC (Excess Post-Exercise Oxygen Consumption) est significativement plus élevé après une séance de musculation intense qu'après du cardio modéré. Concrètement, vous brûlez des calories supplémentaires pendant <strong>24 à 48 heures</strong> après votre séance de musculation.</p>
+<p>L'effet EPOC (Excess Post-Exercise Oxygen Consumption) est significativement plus élevé après une séance de musculation intense qu'après du cardio modéré. Concrètement, vous brûlez des calories supplémentaires pendant <strong>24 Ã  48 heures</strong> après votre séance de musculation.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Schuenke et al. (2002, <em>European Journal of Applied Physiology</em>) ont mesuré un EPOC élevé pendant 38 heures après une séance de musculation avec circuits (exercices composés, 4 séries de 10 reps). Le surplus calorique total post-exercice atteignait 773 kcal sur 48h â€” bien supérieur au cardio modéré (50-80 kcal d'EPOC).</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Schuenke et al. (2002, <em>European Journal of Applied Physiology</em>) ont mesuré un EPOC élevé pendant 38 heures après une séance de musculation avec circuits (exercices composés, 4 séries de 10 reps). Le surplus calorique total post-exercice atteignait 773 kcal sur 48h — bien supérieur au cardio modéré (50-80 kcal d'EPOC).</blockquote>
 
 <h3>Elle maintient votre métabolisme de base élevé</h3>
-<p>Chaque kilo de muscle brûle environ <strong>13 kcal par jour au repos</strong> (Heymsfield et al., 2002). Ce n'est pas énorme en soi, mais si vous perdez 3 kg de muscle pendant une sèche mal gérée, c'est presque 40 kcal de moins par jour â€” et ça s'accumule.</p>
+<p>Chaque kilo de muscle brûle environ <strong>13 kcal par jour au repos</strong> (Heymsfield et al., 2002). Ce n'est pas énorme en soi, mais si vous perdez 3 kg de muscle pendant une sèche mal gérée, c'est presque 40 kcal de moins par jour — et ça s'accumule.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La musculation n'est pas optionnelle en sèche â€” c'est la pièce maîtresse. Si vous devez choisir entre courir 45 minutes et faire 45 minutes de squat/développé couché/rowing, prenez les barres. Chaque fois. » â€” <em>Brad Schoenfeld, PhD, professeur à Lehman College, auteur de Science and Development of Muscle Hypertrophy</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La musculation n'est pas optionnelle en sèche — c'est la pièce maîtresse. Si vous devez choisir entre courir 45 minutes et faire 45 minutes de squat/développé couché/rowing, prenez les barres. Chaque fois. » — <em>Brad Schoenfeld, PhD, professeur Ã  Lehman College, auteur de Science and Development of Muscle Hypertrophy</em></blockquote>
 
 <h2>Le cardio : un outil, pas une fondation</h2>
 
@@ -456,20 +456,20 @@ export const seoArticles25: BlogArticle[] = [
 
 <h3>Les types de cardio classés par efficacité en sèche</h3>
 
-<h3>1. La marche rapide (LISS â€” Low Intensity Steady State)</h3>
+<h3>1. La marche rapide (LISS — Low Intensity Steady State)</h3>
 <p><strong>Le meilleur choix pour la majorité des hommes en sèche</strong>. 30-45 minutes de marche rapide (5,5-6,5 km/h) brûlent 200-300 kcal avec un impact quasi nul sur la récupération musculaire.</p>
 
 <ul>
-<li>Brûle principalement des graisses (60-70% du carburant utilisé à faible intensité)</li>
+<li>Brûle principalement des graisses (60-70% du carburant utilisé Ã  faible intensité)</li>
 <li>Aucun impact négatif sur la récupération</li>
 <li>Réduit le cortisol (contrairement au HIIT qui l'augmente)</li>
 <li>Faisable partout : tapis, extérieur, entre deux réunions</li>
 </ul>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La marche est l'outil de sèche le plus sous-estimé. 8 000-12 000 pas par jour font plus pour la composition corporelle que 3 séances de HIIT par semaine, sans aucun coût de récupération. Le NEAT (activité non-exercice) représente 15-30% de la dépense totale. » â€” <em>Dr. Mike Israetel, Renaissance Periodization</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La marche est l'outil de sèche le plus sous-estimé. 8 000-12 000 pas par jour font plus pour la composition corporelle que 3 séances de HIIT par semaine, sans aucun coût de récupération. Le NEAT (activité non-exercice) représente 15-30% de la dépense totale. » — <em>Dr. Mike Israetel, Renaissance Periodization</em></blockquote>
 
 <h3>2. Le HIIT (High Intensity Interval Training)</h3>
-<p>Efficace mais à utiliser avec parcimonie. Le HIIT brûle beaucoup de calories en peu de temps, mais il est <strong>très demandeur pour le système nerveux</strong>. En sèche, votre capacité de récupération est déjà réduite.</p>
+<p>Efficace mais Ã  utiliser avec parcimonie. Le HIIT brûle beaucoup de calories en peu de temps, mais il est <strong>très demandeur pour le système nerveux</strong>. En sèche, votre capacité de récupération est déjÃ  réduite.</p>
 
 <ul>
 <li>Maximum <strong>2 séances par semaine</strong></li>
@@ -479,9 +479,9 @@ export const seoArticles25: BlogArticle[] = [
 </ul>
 
 <h3>3. Le cardio modéré continu (jogging 45-60 min)</h3>
-<p>C'est le <strong>choix le moins optimal</strong> pour la sèche musculation. 45-60 minutes de jogging à intensité modérée interfère le plus avec la récupération musculaire et active les voies d'endurance AMPK, qui inhibent mTOR â€” la voie anabolique.</p>
+<p>C'est le <strong>choix le moins optimal</strong> pour la sèche musculation. 45-60 minutes de jogging Ã  intensité modérée interfère le plus avec la récupération musculaire et active les voies d'endurance AMPK, qui inhibent mTOR — la voie anabolique.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Wilson et al. (2012, <em>Journal of Strength and Conditioning Research</em>) â€” méta-analyse de 21 études â€” ont montré que le cardio de type endurance réduit les gains de force de 18% et les gains d'hypertrophie de 31% par rapport à la musculation seule (effet d'interférence). Cet effet est maximal avec le jogging et minimal avec le vélo.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Wilson et al. (2012, <em>Journal of Strength and Conditioning Research</em>) — méta-analyse de 21 études — ont montré que le cardio de type endurance réduit les gains de force de 18% et les gains d'hypertrophie de 31% par rapport Ã  la musculation seule (effet d'interférence). Cet effet est maximal avec le jogging et minimal avec le vélo.</blockquote>
 
 <h2>La combinaison optimale : musculation + LISS</h2>
 
@@ -509,12 +509,12 @@ export const seoArticles25: BlogArticle[] = [
 <h2>Les erreurs fréquentes</h2>
 
 <h3>Erreur 1 : "Plus de cardio = plus de résultats"</h3>
-<p>Faux. Au-delà d'un certain seuil, le cardio supplémentaire ne fait que dégrader votre récupération et encourager la perte musculaire. Si vous stagnez, ajustez d'abord votre alimentation avant d'ajouter du cardio.</p>
+<p>Faux. Au-delÃ  d'un certain seuil, le cardio supplémentaire ne fait que dégrader votre récupération et encourager la perte musculaire. Si vous stagnez, ajustez d'abord votre alimentation avant d'ajouter du cardio.</p>
 
-<h3>Erreur 2 : "Le cardio à jeun brûle plus de graisse"</h3>
-<p>Techniquement vrai à l'instant T (vous utilisez plus de graisse comme carburant), mais sur 24h, la perte de graisse totale est identique.</p>
+<h3>Erreur 2 : "Le cardio Ã  jeun brûle plus de graisse"</h3>
+<p>Techniquement vrai Ã  l'instant T (vous utilisez plus de graisse comme carburant), mais sur 24h, la perte de graisse totale est identique.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Schoenfeld et al. (2014, <em>Journal of the International Society of Sports Nutrition</em>) ont comparé directement le cardio à jeun vs après un repas chez 20 femmes en déficit calorique pendant 4 semaines. Résultat : aucune différence significative de perte de graisse entre les deux groupes. La dépense calorique totale sur 24h est ce qui compte, pas le substrat utilisé pendant l'effort.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Schoenfeld et al. (2014, <em>Journal of the International Society of Sports Nutrition</em>) ont comparé directement le cardio Ã  jeun vs après un repas chez 20 femmes en déficit calorique pendant 4 semaines. Résultat : aucune différence significative de perte de graisse entre les deux groupes. La dépense calorique totale sur 24h est ce qui compte, pas le substrat utilisé pendant l'effort.</blockquote>
 
 <h3>Erreur 3 : Remplacer la musculation par du cardio en fin de sèche</h3>
 <p>Quand la motivation baisse et que la fatigue s'installe, beaucoup d'hommes lâchent la musculation pour "faire du cardio, c'est plus facile". C'est la pire décision : vous perdez le stimulus qui préserve vos muscles au moment où vous en avez le plus besoin.</p>
@@ -525,62 +525,62 @@ export const seoArticles25: BlogArticle[] = [
 <h2>Cas pratiques selon votre profil</h2>
 
 <h3>Profil A : Cadre sédentaire, 42 ans, 88 kg, 22% de masse grasse</h3>
-<p>Priorité : créer un déficit alimentaire de 400 kcal + 3 séances musculation + marche quotidienne 30 min (allez au bureau à pied, prenez les escaliers). Le cardio structuré n'est même pas nécessaire au début.</p>
+<p>Priorité : créer un déficit alimentaire de 400 kcal + 3 séances musculation + marche quotidienne 30 min (allez au bureau Ã  pied, prenez les escaliers). Le cardio structuré n'est même pas nécessaire au début.</p>
 
 <h3>Profil B : Ancien sportif, 48 ans, 92 kg, 18% de masse grasse</h3>
-<p>3-4 séances musculation + 2 séances LISS de 40 min + 1 HIIT. Ce profil a une meilleure capacité de récupération grâce à son passé sportif.</p>
+<p>3-4 séances musculation + 2 séances LISS de 40 min + 1 HIIT. Ce profil a une meilleure capacité de récupération grâce Ã  son passé sportif.</p>
 
 <h3>Profil C : Entrepreneur stressé, 38 ans, 85 kg, 20% de masse grasse</h3>
-<p>3 séances musculation + marche quotidienne. <strong>Pas de HIIT</strong> â€” le cortisol est déjà trop élevé. Privilégier le LISS qui réduit le stress.</p>
+<p>3 séances musculation + marche quotidienne. <strong>Pas de HIIT</strong> — le cortisol est déjÃ  trop élevé. Privilégier le LISS qui réduit le stress.</p>
 
 <h2>En résumé</h2>
 
-<p>La musculation est la reine de la sèche. Le cardio (principalement LISS) est un complément utile. Le HIIT est un bonus à utiliser avec précaution. Et rien ne remplace un déficit calorique bien calibré.</p>
+<p>La musculation est la reine de la sèche. Le cardio (principalement LISS) est un complément utile. Le HIIT est un bonus Ã  utiliser avec précaution. Et rien ne remplace un déficit calorique bien calibré.</p>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸ’ª Un programme qui combine parfaitement musculation et cardio ?</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> intègre le ratio optimal musculation/cardio adapté à votre niveau, avec une progression semaine par semaine pour maximiser la perte de graisse.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<h3 style="margin-top:0;">💪 Un programme qui combine parfaitement musculation et cardio ?</h3>
+<p>Le programme <strong>Sèche 10 Semaines</strong> intègre le ratio optimal musculation/cardio adapté Ã  votre niveau, avec une progression semaine par semaine pour maximiser la perte de graisse.</p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 4 â”€â”€â”€
+  // ─── ARTICLE 4 ───
   {
     slug: "deficit-calorique-homme-calcul",
     title: "Déficit Calorique Homme : Comment le Calculer Précisément (Formule + Exemple)",
-    metaDescription: "Calculez votre déficit calorique idéal pour sécher. Formules Mifflin-St Jeor, exemples concrets et ajustements pour hommes de 35 à 55 ans.",
+    metaDescription: "Calculez votre déficit calorique idéal pour sécher. Formules Mifflin-St Jeor, exemples concrets et ajustements pour hommes de 35 Ã  55 ans.",
     content: `
 <h1>Déficit Calorique Homme : Comment le Calculer Précisément</h1>
 
-<p>Le déficit calorique est la <strong>condition sine qua non</strong> de toute perte de graisse. Sans lui, aucun complément, aucun entraînement, aucune technique ne vous fera sécher. C'est la loi fondamentale de la thermodynamique appliquée à votre corps.</p>
+<p>Le déficit calorique est la <strong>condition sine qua non</strong> de toute perte de graisse. Sans lui, aucun complément, aucun entraînement, aucune technique ne vous fera sécher. C'est la loi fondamentale de la thermodynamique appliquée Ã  votre corps.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La balance énergétique reste le facteur déterminant de la perte de poids. Les manipulations hormonales, le timing des repas, le type de régime â€” tout cela est secondaire par rapport au déficit calorique total. C'est la première loi de la thermodynamique, et aucun régime ne peut la contourner. » â€” <em>Kevin Hall, PhD, chercheur au National Institutes of Health, expert en métabolisme énergétique</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La balance énergétique reste le facteur déterminant de la perte de poids. Les manipulations hormonales, le timing des repas, le type de régime — tout cela est secondaire par rapport au déficit calorique total. C'est la première loi de la thermodynamique, et aucun régime ne peut la contourner. » — <em>Kevin Hall, PhD, chercheur au National Institutes of Health, expert en métabolisme énergétique</em></blockquote>
 
 <p>Mais attention : un déficit mal calibré peut être aussi destructeur qu'efficace. Trop petit, vous ne voyez aucun résultat. Trop grand, vous perdez du muscle, votre énergie s'effondre, et vous abandonnez au bout de 3 semaines.</p>
 
 <h2>Qu'est-ce qu'un déficit calorique exactement ?</h2>
 
-<p>C'est simple en théorie : vous consommez <strong>moins de calories que votre corps n'en dépense</strong>. La différence est comblée par vos réserves â€” principalement la graisse, si vous faites les choses correctement.</p>
+<p>C'est simple en théorie : vous consommez <strong>moins de calories que votre corps n'en dépense</strong>. La différence est comblée par vos réserves — principalement la graisse, si vous faites les choses correctement.</p>
 
-<p>Pour perdre 1 kg de tissu adipeux, il faut un déficit cumulé d'environ <strong>7 700 kcal</strong> (cette valeur est une approximation â€” Hall, 2008, <em>International Journal of Obesity</em>, a montré que la valeur réelle varie de 7 000 à 8 000 kcal selon la composition corporelle). Soit :</p>
+<p>Pour perdre 1 kg de tissu adipeux, il faut un déficit cumulé d'environ <strong>7 700 kcal</strong> (cette valeur est une approximation — Hall, 2008, <em>International Journal of Obesity</em>, a montré que la valeur réelle varie de 7 000 Ã  8 000 kcal selon la composition corporelle). Soit :</p>
 <ul>
 <li>Déficit de 500 kcal/jour = ~0,45 kg de graisse perdue par semaine</li>
 <li>Déficit de 300 kcal/jour = ~0,27 kg de graisse perdue par semaine</li>
 <li>Déficit de 750 kcal/jour = ~0,68 kg par semaine (agressif, risque de perte musculaire)</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Hall & Kahan (2018, <em>Medical Clinics of North America</em>) ont montré que la "règle des 3 500 kcal = 0,5 kg" est une simplification excessive. En réalité, l'adaptation métabolique réduit le déficit réel au fil du temps : chaque kg perdu réduit votre dépense d'environ 20-30 kcal/jour. Un outil comme le NIH Body Weight Planner intègre ces adaptations dynamiques.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Hall & Kahan (2018, <em>Medical Clinics of North America</em>) ont montré que la "règle des 3 500 kcal = 0,5 kg" est une simplification excessive. En réalité, l'adaptation métabolique réduit le déficit réel au fil du temps : chaque kg perdu réduit votre dépense d'environ 20-30 kcal/jour. Un outil comme le NIH Body Weight Planner intègre ces adaptations dynamiques.</blockquote>
 
 <h2>Étape 1 : Calculer votre métabolisme de base (MB)</h2>
 
-<p>Le métabolisme de base représente les calories que votre corps brûle au repos complet â€” juste pour maintenir vos fonctions vitales.</p>
+<p>Le métabolisme de base représente les calories que votre corps brûle au repos complet — juste pour maintenir vos fonctions vitales.</p>
 
 <h3>Formule de Mifflin-St Jeor (la plus fiable pour les hommes)</h3>
 
 <p><strong>MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge en années) + 5</strong></p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Mifflin et al. (1990, <em>American Journal of Clinical Nutrition</em>) ont validé cette formule sur 498 individus. L'Academy of Nutrition and Dietetics (Frankenfield et al., 2005) l'a ensuite confirmée comme la plus précise pour les adultes, avec une erreur moyenne de ±10% â€” contre ±15% pour Harris-Benedict.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Mifflin et al. (1990, <em>American Journal of Clinical Nutrition</em>) ont validé cette formule sur 498 individus. L'Academy of Nutrition and Dietetics (Frankenfield et al., 2005) l'a ensuite confirmée comme la plus précise pour les adultes, avec une erreur moyenne de ±10% — contre ±15% pour Harris-Benedict.</blockquote>
 
 <h3>Exemples concrets</h3>
 
@@ -607,7 +607,7 @@ export const seoArticles25: BlogArticle[] = [
 
 <p><strong>Attention</strong> : La plupart des hommes <em>surestiment</em> leur niveau d'activité. Si vous travaillez au bureau et vous entraînez 3-4 fois par semaine, vous êtes "modérément actif" (1,55), pas "très actif".</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Les formules sont un point de départ, pas une vérité absolue. Utilisez-les pour définir vos calories initiales, puis ajustez en fonction de ce qui se passe réellement sur la balance et dans le miroir. L'approche empirique bat toujours l'approche théorique. » â€” <em>Lyle McDonald, auteur de The Rapid Fat Loss Handbook</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Les formules sont un point de départ, pas une vérité absolue. Utilisez-les pour définir vos calories initiales, puis ajustez en fonction de ce qui se passe réellement sur la balance et dans le miroir. L'approche empirique bat toujours l'approche théorique. » — <em>Lyle McDonald, auteur de The Rapid Fat Loss Handbook</em></blockquote>
 
 <h3>Calcul du TDEE pour nos exemples</h3>
 
@@ -617,15 +617,15 @@ export const seoArticles25: BlogArticle[] = [
 
 <h2>Étape 3 : Appliquer le déficit</h2>
 
-<p>Le déficit recommandé est de <strong>15 à 25%</strong> de votre TDEE. Voici comment choisir :</p>
+<p>Le déficit recommandé est de <strong>15 Ã  25%</strong> de votre TDEE. Voici comment choisir :</p>
 
 <ul>
-<li><strong>15% de déficit</strong> : sèche douce, idéale si vous avez peu de gras à perdre (&lt;15% MG) ou si vous débutez</li>
+<li><strong>15% de déficit</strong> : sèche douce, idéale si vous avez peu de gras Ã  perdre (&lt;15% MG) ou si vous débutez</li>
 <li><strong>20% de déficit</strong> : le sweet spot pour la majorité des hommes. Perte régulière sans trop de sacrifice</li>
-<li><strong>25% de déficit</strong> : agressif mais faisable si vous avez beaucoup de gras à perdre (&gt;25% MG) et un bon apport en protéines</li>
+<li><strong>25% de déficit</strong> : agressif mais faisable si vous avez beaucoup de gras Ã  perdre (&gt;25% MG) et un bon apport en protéines</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Areta et al. (2014, <em>Medicine & Science in Sports & Exercise</em>) ont montré qu'un déficit de 25% combiné à 2,4 g/kg de protéines et de la musculation permettait de perdre du gras sans perte musculaire significative. En revanche, Campbell et al. (2020) ont montré qu'un déficit &gt;35% entraînait une perte de masse maigre même avec protéines élevées.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Areta et al. (2014, <em>Medicine & Science in Sports & Exercise</em>) ont montré qu'un déficit de 25% combiné Ã  2,4 g/kg de protéines et de la musculation permettait de perdre du gras sans perte musculaire significative. En revanche, Campbell et al. (2020) ont montré qu'un déficit &gt;35% entraînait une perte de masse maigre même avec protéines élevées.</blockquote>
 
 <h3>Résultats pour nos profils</h3>
 
@@ -641,12 +641,12 @@ export const seoArticles25: BlogArticle[] = [
 <p>Connaître vos calories, c'est bien. Savoir comment les répartir, c'est mieux.</p>
 
 <h3>Protéines : la priorité</h3>
-<p>Fixez-les en premier : <strong>2 à 2,4 g par kg de poids de corps</strong>. Pour l'Homme A (85 kg), cela donne 170-204 g de protéines, soit 680-816 kcal dédiées aux protéines.</p>
+<p>Fixez-les en premier : <strong>2 Ã  2,4 g par kg de poids de corps</strong>. Pour l'Homme A (85 kg), cela donne 170-204 g de protéines, soit 680-816 kcal dédiées aux protéines.</p>
 
 <h3>Lipides : le minimum vital</h3>
-<p>Ne descendez jamais en dessous de <strong>0,7-0,8 g/kg</strong>. Les lipides sont essentiels à la production de testostérone â€” critique pour les hommes, surtout après 40 ans. Pour l'Homme A : minimum 68 g de lipides = 612 kcal.</p>
+<p>Ne descendez jamais en dessous de <strong>0,7-0,8 g/kg</strong>. Les lipides sont essentiels Ã  la production de testostérone — critique pour les hommes, surtout après 40 ans. Pour l'Homme A : minimum 68 g de lipides = 612 kcal.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Dorgan et al. (1996, <em>American Journal of Clinical Nutrition</em>) ont montré qu'un apport en lipides &lt;20% des calories totales réduisait la testostérone de 12-15% chez les hommes. Maintenir les lipides à 25-35% est optimal pour la santé hormonale pendant un déficit.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Dorgan et al. (1996, <em>American Journal of Clinical Nutrition</em>) ont montré qu'un apport en lipides &lt;20% des calories totales réduisait la testostérone de 12-15% chez les hommes. Maintenir les lipides Ã  25-35% est optimal pour la santé hormonale pendant un déficit.</blockquote>
 
 <h3>Glucides : le reste</h3>
 <p>Les glucides comblent les calories restantes. Pour l'Homme A : 2 207 - 816 - 612 = <strong>779 kcal en glucides</strong>, soit environ 195 g de glucides.</p>
@@ -662,7 +662,7 @@ export const seoArticles25: BlogArticle[] = [
 <h2>Comment vérifier que votre déficit fonctionne</h2>
 
 <h3>Le suivi du poids</h3>
-<p>Pesez-vous <strong>tous les matins, à jeun, après les toilettes</strong>. Ne regardez pas le poids quotidien â€” il fluctue de 0,5-2 kg selon l'hydratation, le sodium, le transit. Calculez la <strong>moyenne hebdomadaire</strong> et comparez d'une semaine à l'autre.</p>
+<p>Pesez-vous <strong>tous les matins, Ã  jeun, après les toilettes</strong>. Ne regardez pas le poids quotidien — il fluctue de 0,5-2 kg selon l'hydratation, le sodium, le transit. Calculez la <strong>moyenne hebdomadaire</strong> et comparez d'une semaine Ã  l'autre.</p>
 
 <ul>
 <li><strong>Perte de 0,3-0,7 kg/semaine</strong> : parfait, continuez</li>
@@ -674,7 +674,7 @@ export const seoArticles25: BlogArticle[] = [
 <ul>
 <li><strong>Tour de taille</strong> : le marqueur le plus fiable de la perte de graisse abdominale. Mesurez chaque semaine au même endroit (au nombril).</li>
 <li><strong>Photos</strong> : tous les 2 semaines, même éclairage, même heure. Objectivement le meilleur indicateur visuel.</li>
-<li><strong>Force à l'entraînement</strong> : si vos performances chutent de plus de 10%, votre déficit est probablement trop agressif.</li>
+<li><strong>Force Ã  l'entraînement</strong> : si vos performances chutent de plus de 10%, votre déficit est probablement trop agressif.</li>
 </ul>
 
 <h2>Quand ajuster votre déficit</h2>
@@ -684,33 +684,33 @@ export const seoArticles25: BlogArticle[] = [
 <ol>
 <li><strong>Réduire de 100-200 kcal</strong> (couper dans les glucides en priorité)</li>
 <li><strong>Ajouter 1-2 séances de cardio LISS</strong></li>
-<li><strong>Faire une "diet break"</strong> : 1-2 semaines à calories de maintenance pour relancer le métabolisme</li>
+<li><strong>Faire une "diet break"</strong> : 1-2 semaines Ã  calories de maintenance pour relancer le métabolisme</li>
 </ol>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Byrne et al. (2018, <em>International Journal of Obesity</em>) â€” l'étude MATADOR â€” ont comparé un déficit continu vs un déficit intermittent (2 semaines de déficit / 2 semaines de maintenance). Le groupe intermittent a perdu 47% plus de graisse et mieux préservé son métabolisme de repos. Les diet breaks fonctionnent.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Byrne et al. (2018, <em>International Journal of Obesity</em>) — l'étude MATADOR — ont comparé un déficit continu vs un déficit intermittent (2 semaines de déficit / 2 semaines de maintenance). Le groupe intermittent a perdu 47% plus de graisse et mieux préservé son métabolisme de repos. Les diet breaks fonctionnent.</blockquote>
 
 <h2>Les erreurs de calcul les plus fréquentes</h2>
 
 <ul>
-<li><strong>Ne pas peser les aliments</strong> : "une cuillère d'huile d'olive" peut varier de 50 à 150 kcal selon votre générosité</li>
+<li><strong>Ne pas peser les aliments</strong> : "une cuillère d'huile d'olive" peut varier de 50 Ã  150 kcal selon votre générosité</li>
 <li><strong>Oublier les calories liquides</strong> : le café latte du matin (200 kcal), le jus de fruits (110 kcal), l'alcool du week-end</li>
 <li><strong>Surestimer la dépense sportive</strong> : votre montre connectée surestime systématiquement de 20-40% (Shcherbina et al., 2017, <em>Journal of Personalized Medicine</em>)</li>
 <li><strong>Compenser les "bons jours"</strong> : manger 1 500 kcal lundi puis 3 000 mardi n'est pas un déficit moyen de 2 250 pour la préservation musculaire</li>
 </ul>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸ“Š Pas envie de tout calculer vous-même ?</h3>
+<h3 style="margin-top:0;">📊 Pas envie de tout calculer vous-même ?</h3>
 <p>Le programme <strong>Sèche 10 Semaines</strong> calcule votre déficit, vos macros et vos menus pour vous. Il suffit d'entrer votre profil et de suivre le plan jour par jour.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 5 â”€â”€â”€
+  // ─── ARTICLE 5 ───
   {
     slug: "combien-de-proteines-en-seche-homme",
     title: "Combien de Protéines en Sèche pour un Homme ? Le Dosage Optimal",
-    metaDescription: "Dosage protéines optimal en sèche homme : 2,0-2,4 g/kg validé par la science. Timing, meilleures sources et erreurs à éviter. Guide complet.",
+    metaDescription: "Dosage protéines optimal en sèche homme : 2,0-2,4 g/kg validé par la science. Timing, meilleures sources et erreurs Ã  éviter. Guide complet.",
     content: `
 <h1>Combien de Protéines en Sèche pour un Homme ? Le Dosage Optimal</h1>
 
@@ -718,19 +718,19 @@ export const seoArticles25: BlogArticle[] = [
 
 <h2>Le dosage optimal selon la science</h2>
 
-<p>Les études convergent : en période de déficit calorique, l'apport optimal en protéines pour un homme qui s'entraîne est de <strong>2,0 à 2,4 g par kg de poids de corps par jour</strong>.</p>
+<p>Les études convergent : en période de déficit calorique, l'apport optimal en protéines pour un homme qui s'entraîne est de <strong>2,0 Ã  2,4 g par kg de poids de corps par jour</strong>.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> La méta-analyse de Morton et al. (2018, <em>British Journal of Sports Medicine</em>) â€” 49 études, 1 863 participants â€” a établi que les bénéfices des protéines sur la masse maigre plafonnent à environ 1,6 g/kg en maintenance. Mais Helms et al. (2014, <em>JISSN</em>) et Phillips & Van Loon (2011, <em>Journal of Sports Sciences</em>) recommandent 1,8-2,7 g/kg en déficit pour compenser l'augmentation de l'oxydation des acides aminés.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> La méta-analyse de Morton et al. (2018, <em>British Journal of Sports Medicine</em>) — 49 études, 1 863 participants — a établi que les bénéfices des protéines sur la masse maigre plafonnent Ã  environ 1,6 g/kg en maintenance. Mais Helms et al. (2014, <em>JISSN</em>) et Phillips & Van Loon (2011, <em>Journal of Sports Sciences</em>) recommandent 1,8-2,7 g/kg en déficit pour compenser l'augmentation de l'oxydation des acides aminés.</blockquote>
 
 <p>C'est plus élevé qu'en maintenance (1,6-2,0 g/kg) ou en prise de masse (1,6-2,2 g/kg). Pourquoi ? Parce qu'en déficit :</p>
 
 <ul>
-<li>Votre corps est plus enclin à utiliser les acides aminés comme carburant (oxydation accrue de la leucine)</li>
+<li>Votre corps est plus enclin Ã  utiliser les acides aminés comme carburant (oxydation accrue de la leucine)</li>
 <li>La synthèse protéique musculaire est réduite de 20-30% (les protéines supplémentaires compensent partiellement)</li>
 <li>Le turnover protéique augmente sous l'effet du cortisol élevé</li>
 </ul>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « En sèche, je recommande systématiquement le haut de la fourchette : 2,3-2,6 g/kg. Le coût est minime â€” vous réduisez les glucides ou lipides légèrement â€” mais la protection musculaire est maximale. C'est la stratégie la plus fiable que je connaisse après 15 ans de pratique et de recherche. » â€” <em>Dr. Layne Norton, PhD en Nutritional Sciences</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « En sèche, je recommande systématiquement le haut de la fourchette : 2,3-2,6 g/kg. Le coût est minime — vous réduisez les glucides ou lipides légèrement — mais la protection musculaire est maximale. C'est la stratégie la plus fiable que je connaisse après 15 ans de pratique et de recherche. » — <em>Dr. Layne Norton, PhD en Nutritional Sciences</em></blockquote>
 
 <h3>Tableau des dosages recommandés</h3>
 
@@ -744,13 +744,13 @@ export const seoArticles25: BlogArticle[] = [
 </table>
 
 <h3>Cas particulier : les hommes en surpoids</h3>
-<p>Si votre taux de masse grasse dépasse 25%, calculez sur votre <strong>masse maigre estimée</strong> ou votre poids cible. Un homme de 100 kg à 30% de MG (masse maigre â‰ˆ 70 kg) devrait viser 2,2-2,6 g par kg de masse maigre, soit 154-182 g de protéines.</p>
+<p>Si votre taux de masse grasse dépasse 25%, calculez sur votre <strong>masse maigre estimée</strong> ou votre poids cible. Un homme de 100 kg Ã  30% de MG (masse maigre ≈ 70 kg) devrait viser 2,2-2,6 g par kg de masse maigre, soit 154-182 g de protéines.</p>
 
 <h2>Pourquoi les protéines sont cruciales en sèche</h2>
 
 <h3>1. Préservation musculaire</h3>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Pasiakos et al. (2013, <em>FASEB Journal</em>) ont comparé deux groupes militaires en déficit de 40% pendant 21 jours : apport de 1,6 g/kg vs 2,4 g/kg de protéines. Le groupe haute protéine a maintenu sa masse maigre, tandis que le groupe standard a perdu 0,6 kg de muscle. Le groupe "double dose" (3,2 g/kg) n'apportait aucun bénéfice supplémentaire â€” confirmant que 2,3-2,4 g/kg est le sweet spot.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Pasiakos et al. (2013, <em>FASEB Journal</em>) ont comparé deux groupes militaires en déficit de 40% pendant 21 jours : apport de 1,6 g/kg vs 2,4 g/kg de protéines. Le groupe haute protéine a maintenu sa masse maigre, tandis que le groupe standard a perdu 0,6 kg de muscle. Le groupe "double dose" (3,2 g/kg) n'apportait aucun bénéfice supplémentaire — confirmant que 2,3-2,4 g/kg est le sweet spot.</blockquote>
 
 <h3>2. Effet thermique élevé</h3>
 <p>Les protéines ont un effet thermique de <strong>20-30%</strong> (Westerterp, 2004, <em>Nutrition & Metabolism</em>). Cela signifie que pour 100 kcal de protéines ingérées, votre corps en dépense 20-30 juste pour les digérer. Comparé aux glucides (5-10%) et aux lipides (0-3%), c'est un avantage massif en sèche.</p>
@@ -759,43 +759,43 @@ export const seoArticles25: BlogArticle[] = [
 
 <h3>3. Satiété maximale</h3>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Leidy et al. (2015, <em>Advances in Nutrition</em>) ont analysé les mécanismes de satiété des protéines : elles stimulent le GLP-1 et le PYY (hormones de satiété), suppriment la ghréline (hormone de la faim) de 20-30%, et augmentent la cholécystokinine. En pratique, un repas avec 40 g de protéines vs 15 g de protéines (à calories égales) réduit la prise calorique au repas suivant de 12%.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Leidy et al. (2015, <em>Advances in Nutrition</em>) ont analysé les mécanismes de satiété des protéines : elles stimulent le GLP-1 et le PYY (hormones de satiété), suppriment la ghréline (hormone de la faim) de 20-30%, et augmentent la cholécystokinine. En pratique, un repas avec 40 g de protéines vs 15 g de protéines (Ã  calories égales) réduit la prise calorique au repas suivant de 12%.</blockquote>
 
 <h3>4. Maintien du métabolisme</h3>
 <p>Un apport protéique élevé prévient partiellement l'adaptation métabolique. Wycherley et al. (2012, <em>American Journal of Clinical Nutrition</em>) ont montré dans leur méta-analyse que les régimes haute protéine (1,2-1,6 g/kg) vs protéines standard (0,8-1,0 g/kg) préservaient 0,7 kg de masse maigre supplémentaire et maintenaient un métabolisme de repos plus élevé de ~50 kcal/jour.</p>
 
 <h2>Comment répartir vos protéines dans la journée</h2>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La distribution des protéines sur la journée compte, surtout en sèche. Visez 0,4-0,55 g/kg par repas, réparti sur 3-5 prises espacées de 3-5 heures. C'est la stratégie qui maximise la synthèse protéique cumulée sur 24h. » â€” <em>Brad Schoenfeld, PhD, co-auteur de la méta-analyse sur le timing protéique (JISSN, 2013)</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La distribution des protéines sur la journée compte, surtout en sèche. Visez 0,4-0,55 g/kg par repas, réparti sur 3-5 prises espacées de 3-5 heures. C'est la stratégie qui maximise la synthèse protéique cumulée sur 24h. » — <em>Brad Schoenfeld, PhD, co-auteur de la méta-analyse sur le timing protéique (JISSN, 2013)</em></blockquote>
 
 <h3>La règle des 4 prises</h3>
 <p>Répartissez vos protéines en <strong>4 prises de 30-50 g</strong>, espacées de 3-4 heures :</p>
 
 <ul>
-<li><strong>Petit déjeuner (7h)</strong> : 35-45 g â€” Å“ufs, fromage blanc, whey</li>
-<li><strong>Déjeuner (12h)</strong> : 45-55 g â€” viande/poisson + légumineuses</li>
-<li><strong>Collation (16h)</strong> : 30-40 g â€” whey, cottage cheese, jambon de dinde</li>
-<li><strong>Dîner (20h)</strong> : 40-50 g â€” viande/poisson + légumes</li>
+<li><strong>Petit déjeuner (7h)</strong> : 35-45 g — Å“ufs, fromage blanc, whey</li>
+<li><strong>Déjeuner (12h)</strong> : 45-55 g — viande/poisson + légumineuses</li>
+<li><strong>Collation (16h)</strong> : 30-40 g — whey, cottage cheese, jambon de dinde</li>
+<li><strong>Dîner (20h)</strong> : 40-50 g — viande/poisson + légumes</li>
 </ul>
 
 <h3>Autour de l'entraînement</h3>
 <p>Placez une prise de protéines dans les <strong>2 heures avant et après</strong> votre séance. La "fenêtre anabolique" n'est pas aussi étroite que le marketing le prétend (Schoenfeld et al., 2013 ont montré qu'elle s'étend sur 4-6 heures), mais en sèche, maximiser chaque opportunité de synthèse protéique est pertinent.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Areta et al. (2013, <em>Journal of Physiology</em>) ont testé 3 répartitions chez des athlètes : 8Ã—10 g toutes les 1,5h vs 4Ã—20 g toutes les 3h vs 2Ã—40 g toutes les 6h. Le groupe 4Ã—20 g avait la synthèse protéique musculaire la plus élevée (+31% vs le groupe 8Ã—10 g). Conclusion : 3-5 repas avec 20-40 g de protéines par prise est optimal.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Areta et al. (2013, <em>Journal of Physiology</em>) ont testé 3 répartitions chez des athlètes : 8Ã—10 g toutes les 1,5h vs 4Ã—20 g toutes les 3h vs 2Ã—40 g toutes les 6h. Le groupe 4Ã—20 g avait la synthèse protéique musculaire la plus élevée (+31% vs le groupe 8Ã—10 g). Conclusion : 3-5 repas avec 20-40 g de protéines par prise est optimal.</blockquote>
 
 <h2>Les 10 meilleures sources de protéines pour la sèche</h2>
 
 <ol>
-<li><strong>Blanc de poulet</strong> : 31 g prot / 165 kcal pour 100 g â€” le roi incontesté</li>
-<li><strong>Poisson blanc (cabillaud)</strong> : 18 g prot / 82 kcal pour 100 g â€” le plus maigre</li>
-<li><strong>Fromage blanc 0%</strong> : 8 g prot / 45 kcal pour 100 g â€” parfait en collation</li>
-<li><strong>Thon en boîte (au naturel)</strong> : 26 g prot / 116 kcal pour 100 g â€” pratique (limiter à 2-3 boîtes/semaine pour le mercure)</li>
-<li><strong>Å’ufs entiers</strong> : 13 g prot / 155 kcal pour 2 Å“ufs â€” score DIAAS 1,13</li>
-<li><strong>Dinde</strong> : 29 g prot / 135 kcal pour 100 g â€” alternative au poulet</li>
-<li><strong>Crevettes</strong> : 24 g prot / 99 kcal pour 100 g â€” excellent ratio</li>
-<li><strong>BÅ“uf maigre (5% MG)</strong> : 26 g prot / 137 kcal pour 100 g â€” riche en fer, zinc et créatine</li>
-<li><strong>Cottage cheese</strong> : 11 g prot / 72 kcal pour 100 g â€” caséine naturelle</li>
-<li><strong>Whey protéine</strong> : 24 g prot / 120 kcal pour 30 g â€” complément pratique, score DIAAS 1,09</li>
+<li><strong>Blanc de poulet</strong> : 31 g prot / 165 kcal pour 100 g — le roi incontesté</li>
+<li><strong>Poisson blanc (cabillaud)</strong> : 18 g prot / 82 kcal pour 100 g — le plus maigre</li>
+<li><strong>Fromage blanc 0%</strong> : 8 g prot / 45 kcal pour 100 g — parfait en collation</li>
+<li><strong>Thon en boîte (au naturel)</strong> : 26 g prot / 116 kcal pour 100 g — pratique (limiter Ã  2-3 boîtes/semaine pour le mercure)</li>
+<li><strong>Å’ufs entiers</strong> : 13 g prot / 155 kcal pour 2 Å“ufs — score DIAAS 1,13</li>
+<li><strong>Dinde</strong> : 29 g prot / 135 kcal pour 100 g — alternative au poulet</li>
+<li><strong>Crevettes</strong> : 24 g prot / 99 kcal pour 100 g — excellent ratio</li>
+<li><strong>BÅ“uf maigre (5% MG)</strong> : 26 g prot / 137 kcal pour 100 g — riche en fer, zinc et créatine</li>
+<li><strong>Cottage cheese</strong> : 11 g prot / 72 kcal pour 100 g — caséine naturelle</li>
+<li><strong>Whey protéine</strong> : 24 g prot / 120 kcal pour 30 g — complément pratique, score DIAAS 1,09</li>
 </ol>
 
 <h2>Whey en sèche : utile ou marketing ?</h2>
@@ -803,9 +803,9 @@ export const seoArticles25: BlogArticle[] = [
 <p>La whey est un <strong>outil de praticité</strong>, pas un produit magique. Elle n'a rien de supérieur aux protéines alimentaires en termes de préservation musculaire. Son intérêt :</p>
 
 <ul>
-<li>Rapide à préparer (30 secondes)</li>
+<li>Rapide Ã  préparer (30 secondes)</li>
 <li>Excellent ratio protéines/calories (80% de protéines pour l'isolate)</li>
-<li>Facile à transporter au bureau</li>
+<li>Facile Ã  transporter au bureau</li>
 <li>Absorption rapide (pic sanguin en 60-90 min, idéale post-entraînement)</li>
 </ul>
 
@@ -823,21 +823,21 @@ export const seoArticles25: BlogArticle[] = [
 
 <h2>Trop de protéines, c'est dangereux ?</h2>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Antonio et al. (2016, <em>Journal of the International Society of Sports Nutrition</em>) ont étudié des hommes consommant 3,4 g/kg/jour de protéines pendant 1 an. Résultat : aucun effet néfaste sur les reins, le foie, les lipides sanguins ou la densité osseuse. Les craintes sur les "dégâts rénaux" ne sont étayées que chez les personnes avec une pathologie rénale préexistante (Martin et al., 2005).</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Antonio et al. (2016, <em>Journal of the International Society of Sports Nutrition</em>) ont étudié des hommes consommant 3,4 g/kg/jour de protéines pendant 1 an. Résultat : aucun effet néfaste sur les reins, le foie, les lipides sanguins ou la densité osseuse. Les craintes sur les "dégâts rénaux" ne sont étayées que chez les personnes avec une pathologie rénale préexistante (Martin et al., 2005).</blockquote>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La peur des protéines pour les reins est un mythe persistant basé sur une confusion entre corrélation et causalité. Si vos reins sont sains, un apport élevé en protéines ne les endommagera pas. Point. » â€” <em>Stuart Phillips, PhD, Université McMaster</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La peur des protéines pour les reins est un mythe persistant basé sur une confusion entre corrélation et causalité. Si vos reins sont sains, un apport élevé en protéines ne les endommagera pas. Point. » — <em>Stuart Phillips, PhD, Université McMaster</em></blockquote>
 
-<p>Le seul "risque" d'un excès de protéines : elles prennent la place des glucides et lipides dans votre budget calorique, ce qui peut affecter votre énergie à l'entraînement et vos hormones si poussé trop loin (&lt;15% de lipides).</p>
+<p>Le seul "risque" d'un excès de protéines : elles prennent la place des glucides et lipides dans votre budget calorique, ce qui peut affecter votre énergie Ã  l'entraînement et vos hormones si poussé trop loin (&lt;15% de lipides).</p>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸ¥© Vos protéines calculées au gramme près</h3>
-<p>Dans le programme <strong>Sèche 10 Semaines</strong>, chaque repas est optimisé pour atteindre votre cible protéique quotidienne sans prise de tête. Menus, courses, recettes â€” tout est inclus.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<h3 style="margin-top:0;">🥩 Vos protéines calculées au gramme près</h3>
+<p>Dans le programme <strong>Sèche 10 Semaines</strong>, chaque repas est optimisé pour atteindre votre cible protéique quotidienne sans prise de tête. Menus, courses, recettes — tout est inclus.</p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 6 â”€â”€â”€
+  // ─── ARTICLE 6 ───
   {
     slug: "repas-seche-homme-semaine",
     title: "Repas Sèche Homme : Menu Complet pour une Semaine (avec Courses)",
@@ -847,7 +847,7 @@ export const seoArticles25: BlogArticle[] = [
 
 <p>Vous connaissez vos macros. Vous savez qu'il faut des protéines, un déficit calorique, des bons lipides. Mais concrètement, <strong>on mange quoi ?</strong> C'est la question qui bloque la plupart des hommes.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « L'adhérence est le prédicteur n°1 du succès d'un régime. Un plan alimentaire parfait sur le papier mais impossible à suivre vaut moins qu'un plan "bon" que vous suivez à 90%. La variété, le goût et la simplicité de préparation sont essentiels. » â€” <em>Alan Aragon, M.S., consultant en nutrition sportive</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « L'adhérence est le prédicteur n°1 du succès d'un régime. Un plan alimentaire parfait sur le papier mais impossible Ã  suivre vaut moins qu'un plan "bon" que vous suivez Ã  90%. La variété, le goût et la simplicité de préparation sont essentiels. » — <em>Alan Aragon, M.S., consultant en nutrition sportive</em></blockquote>
 
 <p>Ce guide vous donne un menu complet sur 7 jours, conçu pour un homme de 80-90 kg en sèche, avec environ <strong>2 100 kcal / 180 g protéines / 180 g glucides / 65 g lipides par jour</strong>. Ajustez les portions selon votre propre calcul.</p>
 
@@ -857,37 +857,37 @@ export const seoArticles25: BlogArticle[] = [
 <li><strong>4 repas par jour</strong> : petit déjeuner, déjeuner, collation, dîner</li>
 <li><strong>Chaque repas contient 35-50 g de protéines</strong> (seuil optimal pour la MPS)</li>
 <li><strong>Glucides concentrés autour de l'entraînement</strong> (periodization nutritionnelle)</li>
-<li><strong>Légumes à volonté</strong> (les fibres à ~25 kcal/100g sont négligeables)</li>
+<li><strong>Légumes Ã  volonté</strong> (les fibres Ã  ~25 kcal/100g sont négligeables)</li>
 <li><strong>Préparation simple</strong> : 15-20 min max par repas</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Marquet et al. (2016, <em>Medicine & Science in Sports & Exercise</em>) ont montré que la periodization glucidique (concentrer les glucides autour de l'entraînement) améliore la composition corporelle de 1-2% par rapport à une répartition égale, sans différence de performance. Le concept "fuel for the work required" optimise le partitionnement des nutriments.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Marquet et al. (2016, <em>Medicine & Science in Sports & Exercise</em>) ont montré que la periodization glucidique (concentrer les glucides autour de l'entraînement) améliore la composition corporelle de 1-2% par rapport Ã  une répartition égale, sans différence de performance. Le concept "fuel for the work required" optimise le partitionnement des nutriments.</blockquote>
 
-<h2>Lundi â€” Jour d'entraînement (Haut du corps)</h2>
+<h2>Lundi — Jour d'entraînement (Haut du corps)</h2>
 
-<h3>Petit déjeuner (7h) â€” 420 kcal</h3>
+<h3>Petit déjeuner (7h) — 420 kcal</h3>
 <ul>
 <li>250 g fromage blanc 0% + 30 g whey vanille</li>
 <li>40 g flocons d'avoine</li>
 <li>100 g myrtilles</li>
 </ul>
 
-<h3>Déjeuner (12h30) â€” 580 kcal</h3>
+<h3>Déjeuner (12h30) — 580 kcal</h3>
 <ul>
 <li>150 g blanc de poulet grillé</li>
 <li>150 g riz basmati complet (poids cuit)</li>
 <li>200 g brocoli vapeur</li>
-<li>1 cuillère à café d'huile d'olive</li>
+<li>1 cuillère Ã  café d'huile d'olive</li>
 </ul>
 
-<h3>Collation post-entraînement (17h) â€” 350 kcal</h3>
+<h3>Collation post-entraînement (17h) — 350 kcal</h3>
 <ul>
 <li>40 g whey chocolat + 300 ml lait d'amande</li>
 <li>1 banane</li>
 <li>10 g beurre de cacahuète</li>
 </ul>
 
-<h3>Dîner (20h) â€” 480 kcal</h3>
+<h3>Dîner (20h) — 480 kcal</h3>
 <ul>
 <li>150 g saumon frais au four</li>
 <li>200 g haricots verts</li>
@@ -896,16 +896,16 @@ export const seoArticles25: BlogArticle[] = [
 
 <p><strong>Total jour</strong> : ~2 100 kcal | 185 g P | 175 g G | 62 g L</p>
 
-<h2>Mardi â€” Jour de repos</h2>
+<h2>Mardi — Jour de repos</h2>
 
-<h3>Petit déjeuner â€” 380 kcal</h3>
+<h3>Petit déjeuner — 380 kcal</h3>
 <ul>
 <li>3 Å“ufs brouillés + 2 blancs</li>
 <li>2 tranches de pain complet</li>
 <li>1/4 avocat</li>
 </ul>
 
-<h3>Déjeuner â€” 520 kcal</h3>
+<h3>Déjeuner — 520 kcal</h3>
 <ul>
 <li>150 g thon au naturel (boîte)</li>
 <li>Salade composée : laitue, tomates, concombre, maïs</li>
@@ -913,14 +913,14 @@ export const seoArticles25: BlogArticle[] = [
 <li>Vinaigrette maison (1 cc huile olive + citron)</li>
 </ul>
 
-<h3>Collation â€” 280 kcal</h3>
+<h3>Collation — 280 kcal</h3>
 <ul>
 <li>200 g cottage cheese</li>
 <li>1 pomme</li>
 <li>10 amandes</li>
 </ul>
 
-<h3>Dîner â€” 500 kcal</h3>
+<h3>Dîner — 500 kcal</h3>
 <ul>
 <li>150 g escalope de dinde</li>
 <li>200 g courgettes grillées</li>
@@ -930,16 +930,16 @@ export const seoArticles25: BlogArticle[] = [
 
 <p><strong>Total jour</strong> : ~2 080 kcal | 182 g P | 170 g G | 68 g L</p>
 
-<h2>Mercredi â€” Jour d'entraînement (Bas du corps)</h2>
+<h2>Mercredi — Jour d'entraînement (Bas du corps)</h2>
 
-<h3>Petit déjeuner â€” 430 kcal</h3>
+<h3>Petit déjeuner — 430 kcal</h3>
 <ul>
 <li>Porridge : 50 g flocons d'avoine + 30 g whey (ajoutée après cuisson) + eau</li>
-<li>1 cuillère à soupe de miel</li>
+<li>1 cuillère Ã  soupe de miel</li>
 <li>Cannelle</li>
 </ul>
 
-<h3>Déjeuner â€” 560 kcal</h3>
+<h3>Déjeuner — 560 kcal</h3>
 <ul>
 <li>150 g bÅ“uf haché 5% MG</li>
 <li>150 g pâtes complètes (poids cuit)</li>
@@ -947,44 +947,44 @@ export const seoArticles25: BlogArticle[] = [
 <li>Parmesan râpé (10 g)</li>
 </ul>
 
-<h3>Collation post-entraînement â€” 340 kcal</h3>
+<h3>Collation post-entraînement — 340 kcal</h3>
 <ul>
 <li>40 g whey + 250 ml lait écrémé</li>
 <li>2 galettes de riz</li>
-<li>1 cuillère à soupe de confiture</li>
+<li>1 cuillère Ã  soupe de confiture</li>
 </ul>
 
-<h3>Dîner â€” 470 kcal</h3>
+<h3>Dîner — 470 kcal</h3>
 <ul>
 <li>200 g cabillaud au four</li>
-<li>200 g épinards sautés à l'ail</li>
+<li>200 g épinards sautés Ã  l'ail</li>
 <li>100 g riz basmati</li>
 </ul>
 
 <p><strong>Total jour</strong> : ~2 100 kcal | 180 g P | 195 g G | 58 g L</p>
 
-<h2>Jeudi â€” Jour de repos</h2>
+<h2>Jeudi — Jour de repos</h2>
 
-<h3>Petit déjeuner â€” 370 kcal</h3>
+<h3>Petit déjeuner — 370 kcal</h3>
 <ul>
 <li>Omelette : 2 Å“ufs + 3 blancs + champignons + épinards</li>
 <li>1 tranche pain complet</li>
 </ul>
 
-<h3>Déjeuner â€” 550 kcal</h3>
+<h3>Déjeuner — 550 kcal</h3>
 <ul>
 <li>150 g poulet rôti (cuisse sans peau)</li>
 <li>200 g ratatouille maison</li>
 <li>100 g boulgour</li>
 </ul>
 
-<h3>Collation â€” 300 kcal</h3>
+<h3>Collation — 300 kcal</h3>
 <ul>
 <li>250 g fromage blanc 0% + 1 scoop whey</li>
 <li>30 g granola protéiné</li>
 </ul>
 
-<h3>Dîner â€” 480 kcal</h3>
+<h3>Dîner — 480 kcal</h3>
 <ul>
 <li>150 g crevettes sautées</li>
 <li>200 g wok de légumes (poivrons, oignons, courgettes)</li>
@@ -994,29 +994,29 @@ export const seoArticles25: BlogArticle[] = [
 
 <p><strong>Total jour</strong> : ~2 070 kcal | 178 g P | 168 g G | 65 g L</p>
 
-<h2>Vendredi â€” Jour d'entraînement (Haut du corps)</h2>
+<h2>Vendredi — Jour d'entraînement (Haut du corps)</h2>
 
-<h3>Petit déjeuner â€” 430 kcal</h3>
+<h3>Petit déjeuner — 430 kcal</h3>
 <ul>
 <li>Pancakes protéinés (1 banane + 2 Å“ufs + 30 g whey)</li>
 <li>100 g fruits rouges</li>
 </ul>
 
-<h3>Déjeuner â€” 560 kcal</h3>
+<h3>Déjeuner — 560 kcal</h3>
 <ul>
 <li>150 g filet de dinde</li>
 <li>200 g patate douce rôtie</li>
 <li>Salade verte + vinaigrette légère</li>
 </ul>
 
-<h3>Collation post-entraînement â€” 330 kcal</h3>
+<h3>Collation post-entraînement — 330 kcal</h3>
 <ul>
 <li>40 g whey + eau</li>
 <li>1 banane</li>
 <li>30 g flocons d'avoine (sec, dans le shaker)</li>
 </ul>
 
-<h3>Dîner â€” 480 kcal</h3>
+<h3>Dîner — 480 kcal</h3>
 <ul>
 <li>2 pavés de saumon (120 g total)</li>
 <li>200 g asperges grillées</li>
@@ -1025,28 +1025,28 @@ export const seoArticles25: BlogArticle[] = [
 
 <p><strong>Total jour</strong> : ~2 100 kcal | 182 g P | 185 g G | 60 g L</p>
 
-<h2>Samedi â€” HIIT optionnel + Repos actif</h2>
+<h2>Samedi — HIIT optionnel + Repos actif</h2>
 
-<h3>Petit déjeuner â€” 400 kcal</h3>
+<h3>Petit déjeuner — 400 kcal</h3>
 <ul>
 <li>Overnight oats : 40 g avoine + 200 ml lait amande + 30 g whey + cannelle</li>
-<li>1 cuillère à soupe beurre cacahuète</li>
+<li>1 cuillère Ã  soupe beurre cacahuète</li>
 </ul>
 
-<h3>Déjeuner â€” 580 kcal</h3>
+<h3>Déjeuner — 580 kcal</h3>
 <ul>
 <li>Burger maison : steak haché 5% (150 g) + pain complet + salade, tomate, oignon</li>
 <li>100 g frites de patate douce au four</li>
 </ul>
 
-<h3>Collation â€” 280 kcal</h3>
+<h3>Collation — 280 kcal</h3>
 <ul>
 <li>200 g yaourt grec 0%</li>
 <li>1 poignée de noix (15 g)</li>
 <li>1 kiwi</li>
 </ul>
 
-<h3>Dîner â€” 500 kcal</h3>
+<h3>Dîner — 500 kcal</h3>
 <ul>
 <li>150 g merlu au four</li>
 <li>200 g poêlée de légumes</li>
@@ -1055,33 +1055,33 @@ export const seoArticles25: BlogArticle[] = [
 
 <p><strong>Total jour</strong> : ~2 120 kcal | 176 g P | 185 g G | 66 g L</p>
 
-<h2>Dimanche â€” Refeed Day (optionnel)</h2>
+<h2>Dimanche — Refeed Day (optionnel)</h2>
 
-<p>Le dimanche, vous pouvez remonter vos calories à la maintenance (+300-400 kcal) en ajoutant des glucides. Cela relance le métabolisme, recharge le glycogène et régule la leptine.</p>
+<p>Le dimanche, vous pouvez remonter vos calories Ã  la maintenance (+300-400 kcal) en ajoutant des glucides. Cela relance le métabolisme, recharge le glycogène et régule la leptine.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Dirlewanger et al. (2000, <em>American Journal of Clinical Nutrition</em>) ont montré qu'une suralimentation glucidique de 24h augmentait la leptine de 28% et le métabolisme de repos de 7%, contrant partiellement l'adaptation métabolique d'un déficit prolongé. Les refeeds glucidiques (et non lipidiques) sont les plus efficaces pour ce signal.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Dirlewanger et al. (2000, <em>American Journal of Clinical Nutrition</em>) ont montré qu'une suralimentation glucidique de 24h augmentait la leptine de 28% et le métabolisme de repos de 7%, contrant partiellement l'adaptation métabolique d'un déficit prolongé. Les refeeds glucidiques (et non lipidiques) sont les plus efficaces pour ce signal.</blockquote>
 
-<h3>Petit déjeuner â€” 500 kcal</h3>
+<h3>Petit déjeuner — 500 kcal</h3>
 <ul>
 <li>French toast : 3 tranches pain complet + 2 Å“ufs + cannelle</li>
 <li>30 g sirop d'érable</li>
 <li>100 g fruits frais</li>
 </ul>
 
-<h3>Déjeuner â€” 650 kcal</h3>
+<h3>Déjeuner — 650 kcal</h3>
 <ul>
 <li>200 g poulet grillé</li>
 <li>200 g riz basmati</li>
 <li>Légumes grillés</li>
-<li>1 cuillère à soupe huile olive</li>
+<li>1 cuillère Ã  soupe huile olive</li>
 </ul>
 
-<h3>Collation â€” 300 kcal</h3>
+<h3>Collation — 300 kcal</h3>
 <ul>
 <li>250 g fromage blanc + 30 g muesli + miel</li>
 </ul>
 
-<h3>Dîner â€” 550 kcal</h3>
+<h3>Dîner — 550 kcal</h3>
 <ul>
 <li>150 g steak de thon grillé</li>
 <li>200 g wok de légumes</li>
@@ -1135,29 +1135,29 @@ export const seoArticles25: BlogArticle[] = [
 <li>Lait d'amande non sucré, lait écrémé</li>
 </ul>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Le meal prep du dimanche est le hack le plus sous-estimé de la sèche. 2 heures de préparation = 5 jours de repas prêts. Quand le repas est déjà là, vous ne commandez pas de pizza. L'environnement bat la volonté à chaque fois. » â€” <em>Dr. Mike Israetel, Renaissance Periodization</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Le meal prep du dimanche est le hack le plus sous-estimé de la sèche. 2 heures de préparation = 5 jours de repas prêts. Quand le repas est déjÃ  lÃ , vous ne commandez pas de pizza. L'environnement bat la volonté Ã  chaque fois. » — <em>Dr. Mike Israetel, Renaissance Periodization</em></blockquote>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸ›’ 10 semaines de menus prêts à l'emploi</h3>
+<h3 style="margin-top:0;">🛑 10 semaines de menus prêts Ã  l'emploi</h3>
 <p>Ce menu d'une semaine vous plaît ? Le programme <strong>Sèche 10 Semaines</strong> contient 10 semaines complètes de menus variés, avec listes de courses et alternatives pour chaque repas.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 7 â”€â”€â”€
+  // ─── ARTICLE 7 ───
   {
     slug: "abdos-visibles-pourcentage-graisse-homme",
     title: "Abdos Visibles : À Quel Pourcentage de Graisse Homme ? (Guide Complet)",
-    metaDescription: "À quel taux de masse grasse vos abdos deviennent visibles ? Guide de 8% à 25% avec stratégie complète pour y arriver. Homme 35-55 ans.",
+    metaDescription: "À quel taux de masse grasse vos abdos deviennent visibles ? Guide de 8% Ã  25% avec stratégie complète pour y arriver. Homme 35-55 ans.",
     content: `
 <h1>Abdos Visibles : À Quel Pourcentage de Graisse les Voir Apparaître ?</h1>
 
-<p>C'est la question que se pose tout homme qui commence une sèche : <strong>"À partir de quand je verrai mes abdos ?"</strong> La réponse est un chiffre â€” votre pourcentage de masse grasse. Pas le nombre de crunchs que vous faites.</p>
+<p>C'est la question que se pose tout homme qui commence une sèche : <strong>"À partir de quand je verrai mes abdos ?"</strong> La réponse est un chiffre — votre pourcentage de masse grasse. Pas le nombre de crunchs que vous faites.</p>
 
-<p>Car voici la vérité que personne ne veut entendre : <strong>vous avez déjà des abdos</strong>. Tout le monde en a. Ils sont juste cachés sous une couche de graisse. Et c'est cette couche qu'il faut réduire.</p>
+<p>Car voici la vérité que personne ne veut entendre : <strong>vous avez déjÃ  des abdos</strong>. Tout le monde en a. Ils sont juste cachés sous une couche de graisse. Et c'est cette couche qu'il faut réduire.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « On ne peut pas "sortir" des abdos en faisant des abdos. On les révèle en perdant la graisse qui les recouvre. J'ai vu des milliers de transformations : chaque fois, ce sont la nutrition et le déficit calorique qui font la différence, pas le dernier exercice à la mode. » â€” <em>Jeff Nippard, coach et vulgarisateur scientifique en musculation</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « On ne peut pas "sortir" des abdos en faisant des abdos. On les révèle en perdant la graisse qui les recouvre. J'ai vu des milliers de transformations : chaque fois, ce sont la nutrition et le déficit calorique qui font la différence, pas le dernier exercice Ã  la mode. » — <em>Jeff Nippard, coach et vulgarisateur scientifique en musculation</em></blockquote>
 
 <h2>Le guide visuel : chaque pourcentage expliqué</h2>
 
@@ -1165,28 +1165,28 @@ export const seoArticles25: BlogArticle[] = [
 <p>C'est le physique moyen de l'homme sédentaire français. Pas de définition musculaire visible. Le ventre est rond, les poignées d'amour sont bien installées. La plupart des hommes de 40+ ans qui ne font pas de sport se situent ici. C'est aussi le seuil où le risque cardiovasculaire augmente significativement (tour de taille &gt;102 cm).</p>
 
 <h3>20-25% de masse grasse</h3>
-<p>Un léger embonpoint. Le ventre avance un peu quand vous êtes assis. Aucune ligne abdominale visible. Les bras commencent à montrer un peu de forme s'il y a du muscle dessous. C'est souvent le point de départ réaliste d'une sèche de 10 semaines.</p>
+<p>Un léger embonpoint. Le ventre avance un peu quand vous êtes assis. Aucune ligne abdominale visible. Les bras commencent Ã  montrer un peu de forme s'il y a du muscle dessous. C'est souvent le point de départ réaliste d'une sèche de 10 semaines.</p>
 
 <h3>15-20% de masse grasse</h3>
-<p>Le physique "en forme mais pas sec". Vous commencez à voir les contours du haut des abdos quand la lumière est favorable. Les veines des avant-bras apparaissent. Le ventre est plat mais pas découpé. <strong>C'est l'objectif réaliste pour la plupart des hommes de 40+ ans au quotidien.</strong></p>
+<p>Le physique "en forme mais pas sec". Vous commencez Ã  voir les contours du haut des abdos quand la lumière est favorable. Les veines des avant-bras apparaissent. Le ventre est plat mais pas découpé. <strong>C'est l'objectif réaliste pour la plupart des hommes de 40+ ans au quotidien.</strong></p>
 
 <h3>12-15% de masse grasse</h3>
-<p>Les abdos supérieurs sont visibles en permanence. Les obliques commencent à se dessiner. La séparation musculaire est visible sur les bras et les épaules. Vous avez l'air "fit" habillé et impressionnant torse nu. <strong>C'est le sweet spot : esthétique, tenable et sain.</strong></p>
+<p>Les abdos supérieurs sont visibles en permanence. Les obliques commencent Ã  se dessiner. La séparation musculaire est visible sur les bras et les épaules. Vous avez l'air "fit" habillé et impressionnant torse nu. <strong>C'est le sweet spot : esthétique, tenable et sain.</strong></p>
 
 <h3>10-12% de masse grasse</h3>
-<p>Le six-pack est clairement visible. Les veines commencent à apparaître sur les abdos et les bras. La séparation entre tous les groupes musculaires est nette. C'est le physique "plage" que la plupart des hommes veulent atteindre. Tenable sur quelques mois avec discipline.</p>
+<p>Le six-pack est clairement visible. Les veines commencent Ã  apparaître sur les abdos et les bras. La séparation entre tous les groupes musculaires est nette. C'est le physique "plage" que la plupart des hommes veulent atteindre. Tenable sur quelques mois avec discipline.</p>
 
 <h3>8-10% de masse grasse</h3>
-<p>Niveau compétition ou shooting photo. Vascularisation importante, stries musculaires visibles, six-pack découpé au couteau. <strong>Non tenable à long terme</strong> pour la plupart des hommes sans impact sur la santé, la libido et l'énergie.</p>
+<p>Niveau compétition ou shooting photo. Vascularisation importante, stries musculaires visibles, six-pack découpé au couteau. <strong>Non tenable Ã  long terme</strong> pour la plupart des hommes sans impact sur la santé, la libido et l'énergie.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Rossow et al. (2013, <em>Journal of the International Society of Sports Nutrition</em>) ont suivi un bodybuilder naturel pendant sa préparation : de 14,8% à 4,5% de MG. Sa testostérone a chuté de 9,22 ng/mL à 2,27 ng/mL (-75%), son humeur s'est dégradée, sa force a chuté de 8-10%. Après la compétition, il a mis 6 mois à récupérer ses niveaux hormonaux.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Rossow et al. (2013, <em>Journal of the International Society of Sports Nutrition</em>) ont suivi un bodybuilder naturel pendant sa préparation : de 14,8% Ã  4,5% de MG. Sa testostérone a chuté de 9,22 ng/mL Ã  2,27 ng/mL (-75%), son humeur s'est dégradée, sa force a chuté de 8-10%. Après la compétition, il a mis 6 mois Ã  récupérer ses niveaux hormonaux.</blockquote>
 
 <h3>En dessous de 8%</h3>
-<p>Réservé aux compétiteurs de bodybuilding pour le jour J. Dangereux pour la santé à long terme. Chute de testostérone, fatigue chronique, système immunitaire affaibli. <strong>Ne visez jamais ce niveau de manière chronique.</strong></p>
+<p>Réservé aux compétiteurs de bodybuilding pour le jour J. Dangereux pour la santé Ã  long terme. Chute de testostérone, fatigue chronique, système immunitaire affaibli. <strong>Ne visez jamais ce niveau de manière chronique.</strong></p>
 
 <h2>L'objectif réaliste : 12-15% pour un homme de 35-55 ans</h2>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Pour un homme de 40+ ans avec une carrière, une famille et une vie sociale, le 12-15% de masse grasse est le "sweet spot" absolu. Les abdos sont visibles, la santé est optimale, la testostérone reste élevée, et vous pouvez maintenir ce niveau 365 jours par an avec 80% d'adhérence. Aller plus bas n'apporte que des problèmes. » â€” <em>Menno Henselmans, chercheur et coach, fondateur de Bayesian Bodybuilding</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Pour un homme de 40+ ans avec une carrière, une famille et une vie sociale, le 12-15% de masse grasse est le "sweet spot" absolu. Les abdos sont visibles, la santé est optimale, la testostérone reste élevée, et vous pouvez maintenir ce niveau 365 jours par an avec 80% d'adhérence. Aller plus bas n'apporte que des problèmes. » — <em>Menno Henselmans, chercheur et coach, fondateur de Bayesian Bodybuilding</em></blockquote>
 
 <p>Le <strong>12-15%</strong> offre le meilleur rapport résultat/qualité de vie :</p>
 
@@ -1203,7 +1203,7 @@ export const seoArticles25: BlogArticle[] = [
 <h3>Méthodes fiables</h3>
 <ul>
 <li><strong>DEXA scan</strong> : la référence (précision ±1-2%). Disponible en clinique (~80-120€). Mesure aussi la répartition régionale de la graisse et la densité osseuse.</li>
-<li><strong>Pince à plis cutanés</strong> : 3-7 sites (Jackson-Pollock), précision ±3% si réalisée par un professionnel formé. Reproductible et peu coûteux.</li>
+<li><strong>Pince Ã  plis cutanés</strong> : 3-7 sites (Jackson-Pollock), précision ±3% si réalisée par un professionnel formé. Reproductible et peu coûteux.</li>
 <li><strong>Navy Method</strong> : tour de cou + tour de taille = estimation décente et gratuite (précision ±3-4%)</li>
 </ul>
 
@@ -1224,112 +1224,112 @@ export const seoArticles25: BlogArticle[] = [
 
 <p>Règle rapide : si votre tour de taille dépasse 94 cm, vous êtes probablement au-dessus de 20%. Au-dessus de 102 cm, probablement &gt;25%.</p>
 
-<h2>Combien de temps pour passer de 20% à 12% ?</h2>
+<h2>Combien de temps pour passer de 20% Ã  12% ?</h2>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Avec un déficit de 500 kcal/jour et un programme de musculation + protéines élevées, la perte de graisse moyenne est de 0,5-0,7 kg/semaine chez les hommes entraînés (Helms et al., 2014). Cela donne une estimation fiable pour chaque profil :</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Avec un déficit de 500 kcal/jour et un programme de musculation + protéines élevées, la perte de graisse moyenne est de 0,5-0,7 kg/semaine chez les hommes entraînés (Helms et al., 2014). Cela donne une estimation fiable pour chaque profil :</blockquote>
 
 <table>
-<tr><th>Poids de départ</th><th>Départ</th><th>Objectif</th><th>Graisse à perdre</th><th>Durée estimée</th></tr>
+<tr><th>Poids de départ</th><th>Départ</th><th>Objectif</th><th>Graisse Ã  perdre</th><th>Durée estimée</th></tr>
 <tr><td>85 kg</td><td>20%</td><td>12%</td><td>~7-8 kg</td><td>10-14 semaines</td></tr>
 <tr><td>90 kg</td><td>22%</td><td>12%</td><td>~10 kg</td><td>14-18 semaines</td></tr>
 <tr><td>80 kg</td><td>18%</td><td>12%</td><td>~5 kg</td><td>7-10 semaines</td></tr>
 </table>
 
-<h2>Les abdos se construisent aussi à l'entraînement</h2>
+<h2>Les abdos se construisent aussi Ã  l'entraînement</h2>
 
 <p>Réduire votre masse grasse est nécessaire mais pas suffisant. Des abdos bien développés (hypertrophiés) seront visibles plus tôt (dès 15-16%) que des abdos sous-développés (qui nécessitent 10-12%).</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Les abdos sont un muscle comme les autres. Si vous voulez qu'ils soient visibles plus tôt, entraînez-les en surcharge progressive : ajoutez du poids, des reps, de la difficulté. 3 séries de crunchs au poids de corps ne suffisent pas pour l'hypertrophie. » â€” <em>Brad Schoenfeld, PhD, The Hypertrophy Specialist</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Les abdos sont un muscle comme les autres. Si vous voulez qu'ils soient visibles plus tôt, entraînez-les en surcharge progressive : ajoutez du poids, des reps, de la difficulté. 3 séries de crunchs au poids de corps ne suffisent pas pour l'hypertrophie. » — <em>Brad Schoenfeld, PhD, The Hypertrophy Specialist</em></blockquote>
 
 <h3>Les 5 meilleurs exercices pour des abdos épais</h3>
 <ol>
 <li><strong>Ab wheel rollout</strong> : activation EMG la plus élevée de tous les exercices abdominaux (Escamilla et al., 2006, <em>Journal of Orthopaedic & Sports Physical Therapy</em>). 3Ã—8-12</li>
-<li><strong>Crunch à la poulie haute</strong> : permet la surcharge progressive. 3Ã—12-15</li>
+<li><strong>Crunch Ã  la poulie haute</strong> : permet la surcharge progressive. 3Ã—12-15</li>
 <li><strong>Relevé de jambes suspendu</strong> : cible les abdominaux inférieurs. 3Ã—10-15</li>
 <li><strong>Planche lestée</strong> : gainage profond. 3Ã—30-60 sec</li>
 <li><strong>Pallof press</strong> : exercice anti-rotation au câble, renforce les obliques sans épaissir la taille. 3Ã—12/côté</li>
 </ol>
 
-<p>Entraînez vos abdos <strong>2 à 3 fois par semaine</strong> avec surcharge progressive, comme n'importe quel autre muscle.</p>
+<p>Entraînez vos abdos <strong>2 Ã  3 fois par semaine</strong> avec surcharge progressive, comme n'importe quel autre muscle.</p>
 
 <h2>La génétique joue-t-elle un rôle ?</h2>
 
 <p>Oui, mais moins que vous ne le pensez :</p>
 <ul>
-<li><strong>La forme des abdos</strong> est génétique (4-pack, 6-pack, 8-pack, symétrique ou non) â€” déterminée par les insertions tendineuses</li>
-<li><strong>La distribution de graisse</strong> est partiellement génétique (certains stockent plus au ventre, d'autres aux hanches) â€” liée aux récepteurs alpha/bêta adrénergiques</li>
+<li><strong>La forme des abdos</strong> est génétique (4-pack, 6-pack, 8-pack, symétrique ou non) — déterminée par les insertions tendineuses</li>
+<li><strong>La distribution de graisse</strong> est partiellement génétique (certains stockent plus au ventre, d'autres aux hanches) — liée aux récepteurs alpha/bêta adrénergiques</li>
 <li><strong>Le pourcentage de visibilité</strong> est le même pour tous : en dessous de 15%, tout le monde voit ses abdos</li>
 </ul>
 
 <p>Vous ne pouvez pas changer la forme de vos abdos. Mais vous pouvez absolument contrôler le pourcentage de graisse qui les recouvre.</p>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸŽ¯ Objectif abdos visibles en 10 semaines</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> est conçu pour vous amener de votre taux actuel vers les 12-15% de masse grasse â€” la zone où les abdos deviennent visibles. Nutrition + entraînement + suivi, semaine par semaine.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<h3 style="margin-top:0;">🎯 Objectif abdos visibles en 10 semaines</h3>
+<p>Le programme <strong>Sèche 10 Semaines</strong> est conçu pour vous amener de votre taux actuel vers les 12-15% de masse grasse — la zone où les abdos deviennent visibles. Nutrition + entraînement + suivi, semaine par semaine.</p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
-  // â”€â”€â”€ ARTICLE 8 â”€â”€â”€
+  // ─── ARTICLE 8 ───
   {
     slug: "jeune-intermittent-seche-musculation",
     title: "Jeûne Intermittent et Sèche Musculation : Compatible ou Contre-Productif ?",
-    metaDescription: "Le jeûne intermittent aide-t-il à sécher en musculation ? Analyse des protocoles 16/8, avantages, risques et guide pratique pour homme.",
+    metaDescription: "Le jeûne intermittent aide-t-il Ã  sécher en musculation ? Analyse des protocoles 16/8, avantages, risques et guide pratique pour homme.",
     content: `
 <h1>Jeûne Intermittent et Sèche Musculation : Compatible ou Contre-Productif ?</h1>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Le jeûne intermittent ne possède aucune propriété magique de combustion des graisses. C'est une stratégie de timing qui peut aider certaines personnes à maintenir un déficit plus facilement. Si ça vous convient, utilisez-le. Sinon, ne vous forcez pas. » â€” <em>Alan Aragon, M.S.</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Le jeûne intermittent ne possède aucune propriété magique de combustion des graisses. C'est une stratégie de timing qui peut aider certaines personnes Ã  maintenir un déficit plus facilement. Si ça vous convient, utilisez-le. Sinon, ne vous forcez pas. » — <em>Alan Aragon, M.S.</em></blockquote>
 
 <h2>Les protocoles</h2>
 <ul>
-<li><strong>16/8 (Leangains)</strong> : le plus adapté à la musculation. Manger entre 12h-20h.</li>
+<li><strong>16/8 (Leangains)</strong> : le plus adapté Ã  la musculation. Manger entre 12h-20h.</li>
 <li><strong>20/4 (Warrior Diet)</strong> : plus agressif, difficile d'atteindre la cible protéique</li>
-<li><strong>5:2</strong> : peu adapté à la musculation (jours trop bas en protéines)</li>
+<li><strong>5:2</strong> : peu adapté Ã  la musculation (jours trop bas en protéines)</li>
 </ul>
 
 <h2>Avantages</h2>
 <ul>
 <li><strong>Contrôle calorique naturel</strong> : -300-500 kcal sans effort</li>
-<li><strong>Praticité</strong> : 2 repas au lieu de 4 à préparer</li>
-<li><strong>Sensibilité à l'insuline</strong> améliorée â€” pertinent pour les 40+ ans</li>
+<li><strong>Praticité</strong> : 2 repas au lieu de 4 Ã  préparer</li>
+<li><strong>Sensibilité Ã  l'insuline</strong> améliorée — pertinent pour les 40+ ans</li>
 <li><strong>GH transitoire</strong> : +100-300% pendant le jeûne (mais effet qui diminue avec l'habitude)</li>
 </ul>
 
 <h2>Inconvénients</h2>
 <ul>
 <li><strong>Cible protéique difficile</strong> : 180 g en 2-3 repas = 60-90 g/repas</li>
-<li><strong>Performance réduite</strong> de 5-15% si entraînement matinal à jeun</li>
+<li><strong>Performance réduite</strong> de 5-15% si entraînement matinal Ã  jeun</li>
 <li><strong>Signal catabolique prolongé</strong> : la MPS chute après 3-5h sans protéines</li>
 </ul>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Tinsley et al. (2019, <em>European Journal of Sport Science</em>) ont comparé IF 16/8 + musculation vs alimentation normale + musculation pendant 8 semaines. Résultat : perte de graisse similaire, mais le groupe IF a perdu légèrement plus de masse maigre (-0,2 kg vs +0,5 kg). Pour la préservation musculaire maximale, 4 prises de protéines restent supérieures.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Tinsley et al. (2019, <em>European Journal of Sport Science</em>) ont comparé IF 16/8 + musculation vs alimentation normale + musculation pendant 8 semaines. Résultat : perte de graisse similaire, mais le groupe IF a perdu légèrement plus de masse maigre (-0,2 kg vs +0,5 kg). Pour la préservation musculaire maximale, 4 prises de protéines restent supérieures.</blockquote>
 
 <h2>Protocole optimisé IF + musculation</h2>
 <ul>
-<li><strong>12h</strong> : Repas 1 â€” 50-60 g protéines</li>
-<li><strong>15h30</strong> : Pré-entraînement â€” 30-40 g protéines</li>
+<li><strong>12h</strong> : Repas 1 — 50-60 g protéines</li>
+<li><strong>15h30</strong> : Pré-entraînement — 30-40 g protéines</li>
 <li><strong>16h30-17h30</strong> : Musculation</li>
-<li><strong>18h</strong> : Post-entraînement â€” 50-60 g protéines</li>
-<li><strong>19h30</strong> : Collation finale â€” 30 g protéines (caséine)</li>
+<li><strong>18h</strong> : Post-entraînement — 50-60 g protéines</li>
+<li><strong>19h30</strong> : Collation finale — 30 g protéines (caséine)</li>
 </ul>
 
 <h2>IF vs repas classiques : verdict</h2>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Cioffi et al. (2018, méta-analyse, <em>Advances in Nutrition</em>) â€” à calories et protéines égales, le IF ne produit aucune différence significative de perte de graisse vs alimentation classique. Le facteur déterminant reste le déficit total et l'apport protéique, pas le timing.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Cioffi et al. (2018, méta-analyse, <em>Advances in Nutrition</em>) — Ã  calories et protéines égales, le IF ne produit aucune différence significative de perte de graisse vs alimentation classique. Le facteur déterminant reste le déficit total et l'apport protéique, pas le timing.</blockquote>
 
 <h2>Pour qui ?</h2>
-<p>âœ… Si : pas faim le matin, préférez gros repas, entraînement l'après-midi/soir</p>
+<p>✅ Si : pas faim le matin, préférez gros repas, entraînement l'après-midi/soir</p>
 <p>❌ Si : entraînement tôt, antécédents TCA, médicaments nécessitant de la nourriture</p>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">💡 IF ou pas, le plan s'adapte</h3>
+<h3 style="margin-top:0;">⏰ IF ou pas, le plan s'adapte</h3>
 <p><strong>Sèche 10 Semaines</strong> propose des options avec et sans jeûne intermittent.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 9 â”€â”€â”€
+  // ─── ARTICLE 9 ───
   {
     slug: "complement-alimentaire-seche-homme",
     title: "Compléments Alimentaires Sèche Homme : Lesquels Marchent Vraiment ?",
@@ -1339,48 +1339,48 @@ export const seoArticles25: BlogArticle[] = [
 
 <p>90% des compléments sont inutiles. Mais les 10% restants peuvent réellement faire une différence.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Les compléments représentent 5% de vos résultats, maximum. Si votre nutrition de base n'est pas en place, aucun supplément ne compensera. Mais une fois la base solide, quelques compléments bien choisis peuvent accélérer le processus. » â€” <em>Dr. Layne Norton, PhD</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Les compléments représentent 5% de vos résultats, maximum. Si votre nutrition de base n'est pas en place, aucun supplément ne compensera. Mais une fois la base solide, quelques compléments bien choisis peuvent accélérer le processus. » — <em>Dr. Layne Norton, PhD</em></blockquote>
 
-<h2>Tier S â€” Indispensables</h2>
+<h2>Tier S — Indispensables</h2>
 
-<h3>1. Whey Protéine â˜…â˜…â˜…â˜…â˜…</h3>
+<h3>1. Whey Protéine ★★★★★</h3>
 <p>Outil de praticité, pas produit magique. 1-2 scoops/jour. Excellent ratio prot/kcal (80% pour l'isolate). Budget : 25-40€/mois.</p>
 
-<h3>2. Créatine Monohydrate â˜…â˜…â˜…â˜…â˜…</h3>
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Rawson & Volek (2003, <em>Journal of Strength and Conditioning Research</em>) : méta-analyse de 22 études montrant +8% de force et +14% de reps à l'échec avec la créatine. En sèche, elle maintient la force malgré le déficit et préserve la masse musculaire. Le supplément le plus étudié : 700+ études positives.</blockquote>
+<h3>2. Créatine Monohydrate ★★★★★</h3>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Rawson & Volek (2003, <em>Journal of Strength and Conditioning Research</em>) : méta-analyse de 22 études montrant +8% de force et +14% de reps Ã  l'échec avec la créatine. En sèche, elle maintient la force malgré le déficit et préserve la masse musculaire. Le supplément le plus étudié : 700+ études positives.</blockquote>
 <p>5 g/jour, tous les jours, avec un repas. Pas besoin de phase de charge. Retient 1-2 kg d'eau <em>intramusculaire</em> (muscles plus pleins, pas gonflés). Budget : 10-15€/mois.</p>
 
-<h3>3. Caféine â˜…â˜…â˜…â˜…â˜†</h3>
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Astrup et al. (1990, <em>American Journal of Clinical Nutrition</em>) : la caféine augmente le métabolisme de 3-11% pendant 3h. Goldstein et al. (2010, <em>JISSN</em>) : améliore la performance de 5-15% et supprime l'appétit via l'antagonisme des récepteurs d'adénosine.</blockquote>
+<h3>3. Caféine ★★★★☆</h3>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Astrup et al. (1990, <em>American Journal of Clinical Nutrition</em>) : la caféine augmente le métabolisme de 3-11% pendant 3h. Goldstein et al. (2010, <em>JISSN</em>) : améliore la performance de 5-15% et supprime l'appétit via l'antagonisme des récepteurs d'adénosine.</blockquote>
 <p>200-400 mg/jour. Évitez après 14h. Budget : ~0€ si café.</p>
 
-<h2>Tier A â€” Utiles</h2>
+<h2>Tier A — Utiles</h2>
 
-<h3>4. Oméga-3 (EPA/DHA) â˜…â˜…â˜…â˜…â˜†</h3>
-<p>Anti-inflammatoires, sensibilité à l'insuline, soutien testostérone. 2-3 g EPA+DHA/jour. Smith et al. (2011, <em>AJCN</em>) : les oméga-3 augmentent la MPS de 50% chez les adultes. Budget : 15-25€/mois.</p>
+<h3>4. Oméga-3 (EPA/DHA) ★★★★☆</h3>
+<p>Anti-inflammatoires, sensibilité Ã  l'insuline, soutien testostérone. 2-3 g EPA+DHA/jour. Smith et al. (2011, <em>AJCN</em>) : les oméga-3 augmentent la MPS de 50% chez les adultes. Budget : 15-25€/mois.</p>
 
-<h3>5. Vitamine D â˜…â˜…â˜…â˜…â˜†</h3>
-<p>80% des Français sont en carence. Liée à la testostérone : Pilz et al. (2011, <em>Hormone and Metabolic Research</em>) : +25% de testostérone après 12 mois de supplémentation chez les hommes carencés. 2 000-4 000 UI/jour avec lipides. Budget : 5-10€/mois.</p>
+<h3>5. Vitamine D ★★★★☆</h3>
+<p>80% des Français sont en carence. Liée Ã  la testostérone : Pilz et al. (2011, <em>Hormone and Metabolic Research</em>) : +25% de testostérone après 12 mois de supplémentation chez les hommes carencés. 2 000-4 000 UI/jour avec lipides. Budget : 5-10€/mois.</p>
 
-<h3>6. Magnésium â˜…â˜…â˜…â˜†â˜†</h3>
+<h3>6. Magnésium ★★★☆☆</h3>
 <p>Sommeil, crampes, cortisol, 300+ réactions enzymatiques. 400 mg bisglycinate le soir. Budget : 10-15€/mois.</p>
 
-<h2>Tier B â€” Optionnels</h2>
+<h2>Tier B — Optionnels</h2>
 <ul>
 <li><strong>Ashwagandha KSM-66</strong> : -27,9% cortisol (Chandrasekhar et al., 2012). 600 mg/jour.</li>
 <li><strong>Caséine</strong> : protéine lente pour la nuit, 30 g avant le coucher</li>
 <li><strong>Multivitamines</strong> : assurance en restriction calorique</li>
 </ul>
 
-<h2>Tier F â€” À éviter</h2>
+<h2>Tier F — À éviter</h2>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La majorité des brûleurs de graisse sont de la caféine sur-pricée avec des ingrédients sans preuve. Vous payez 40€ pour ce que 3 cafés font mieux. » â€” <em>Menno Henselmans, Bayesian Bodybuilding</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La majorité des brûleurs de graisse sont de la caféine sur-pricée avec des ingrédients sans preuve. Vous payez 40€ pour ce que 3 cafés font mieux. » — <em>Menno Henselmans, Bayesian Bodybuilding</em></blockquote>
 
 <ul>
 <li>❌ <strong>Brûleurs thermogéniques</strong> : caféine surdosée + placebo pour 40€/mois</li>
 <li>❌ <strong>CLA</strong> : perte de 0,09 kg/semaine en moyenne (Whigham et al., 2007, meta). Négligeable.</li>
 <li>❌ <strong>Cétones exogènes</strong> : aucun avantage prouvé, goût horrible</li>
-<li>❌ <strong>L-Carnitine orale</strong> : biodisponibilité de 5-18%. Corps produit déjà assez.</li>
+<li>❌ <strong>L-Carnitine orale</strong> : biodisponibilité de 5-18%. Corps produit déjÃ  assez.</li>
 <li>❌ <strong>Garcinia / Raspberry Ketones</strong> : zéro preuve chez l'humain</li>
 </ul>
 
@@ -1396,14 +1396,14 @@ export const seoArticles25: BlogArticle[] = [
 </table>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸ’Š Les compléments ne remplacent pas un bon programme</h3>
+<h3 style="margin-top:0;">📊 Les compléments ne remplacent pas un bon programme</h3>
 <p>Les 95% restants, c'est la nutrition et l'entraînement. <strong>Sèche 10 Semaines</strong> met en place ces 95%.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
 
-  // â”€â”€â”€ ARTICLE 10 â”€â”€â”€
+  // ─── ARTICLE 10 ───
   {
     slug: "perte-graisse-abdominale-homme-exercice",
     title: "Perte de Graisse Abdominale Homme : Les Meilleurs Exercices (Top 12)",
@@ -1411,14 +1411,14 @@ export const seoArticles25: BlogArticle[] = [
     content: `
 <h1>Perte de Graisse Abdominale Homme : Les 12 Meilleurs Exercices</h1>
 
-<p>Soyons clairs : <strong>la perte de graisse localisée est un mythe</strong>. Mais certains exercices brûlent massivement plus de calories, accélèrent le métabolisme et créent un environnement hormonal favorable à la perte de graisse globale.</p>
+<p>Soyons clairs : <strong>la perte de graisse localisée est un mythe</strong>. Mais certains exercices brûlent massivement plus de calories, accélèrent le métabolisme et créent un environnement hormonal favorable Ã  la perte de graisse globale.</p>
 
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Vispute et al. (2011, <em>Journal of Strength and Conditioning Research</em>) ont fait faire 7 exercices abdominaux 5Ã—/semaine pendant 6 semaines à un groupe vs un groupe contrôle. Résultat : aucune différence de graisse abdominale. Le spot reduction n'existe pas.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Vispute et al. (2011, <em>Journal of Strength and Conditioning Research</em>) ont fait faire 7 exercices abdominaux 5Ã—/semaine pendant 6 semaines Ã  un groupe vs un groupe contrôle. Résultat : aucune différence de graisse abdominale. Le spot reduction n'existe pas.</blockquote>
 
 <h2>Pourquoi la graisse abdominale est tenace</h2>
-<p>Chez l'homme, le ventre est la première zone de stockage et la dernière à partir. Les adipocytes abdominaux ont une densité élevée de <strong>récepteurs alpha-2 adrénergiques</strong> (qui bloquent la lipolyse) et une faible irrigation sanguine.</p>
+<p>Chez l'homme, le ventre est la première zone de stockage et la dernière Ã  partir. Les adipocytes abdominaux ont une densité élevée de <strong>récepteurs alpha-2 adrénergiques</strong> (qui bloquent la lipolyse) et une faible irrigation sanguine.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « La graisse abdominale est la dernière à partir car elle a le ratio récepteurs alpha/bêta le plus défavorable du corps. La seule solution : un déficit calorique prolongé et de la patience. Les exercices ne ciblent pas la graisse, ils ciblent les muscles en dessous. » â€” <em>Lyle McDonald, Stubborn Fat Solution</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « La graisse abdominale est la dernière Ã  partir car elle a le ratio récepteurs alpha/bêta le plus défavorable du corps. La seule solution : un déficit calorique prolongé et de la patience. Les exercices ne ciblent pas la graisse, ils ciblent les muscles en dessous. » — <em>Lyle McDonald, Stubborn Fat Solution</em></blockquote>
 
 <h2>Catégorie 1 : Brûleurs de calories massifs</h2>
 
@@ -1446,7 +1446,7 @@ export const seoArticles25: BlogArticle[] = [
 <p>HIIT le plus sûr (pas d'impact). 20s sprint / 40s récup Ã— 8-10 rounds.</p>
 
 <h3>7. Kettlebell Swings</h3>
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Chan et al. (2022, <em>Journal of Strength and Conditioning Research</em>) ont montré que les kettlebell swings à haute intensité produisent une dépense énergétique de 20,2 kcal/min â€” comparable au sprint â€” tout en développant la puissance de la chaîne postérieure.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Chan et al. (2022, <em>Journal of Strength and Conditioning Research</em>) ont montré que les kettlebell swings Ã  haute intensité produisent une dépense énergétique de 20,2 kcal/min — comparable au sprint — tout en développant la puissance de la chaîne postérieure.</blockquote>
 <p>15 reps/minute pendant 10 min (EMOM). 20-24 kg pour un homme.</p>
 
 <h3>8. Mountain Climbers</h3>
@@ -1455,7 +1455,7 @@ export const seoArticles25: BlogArticle[] = [
 <h2>Catégorie 3 : Renforcement abdominal</h2>
 
 <h3>9. Ab Wheel Rollout</h3>
-<blockquote>ðŸ”¬ <strong>Ce que dit la science :</strong> Escamilla et al. (2006, <em>JOSPT</em>) : l'ab wheel produit l'activation EMG la plus élevée du rectus abdominis et des obliques parmi 14 exercices testés.</blockquote>
+<blockquote>🔬 <strong>Ce que dit la science :</strong> Escamilla et al. (2006, <em>JOSPT</em>) : l'ab wheel produit l'activation EMG la plus élevée du rectus abdominis et des obliques parmi 14 exercices testés.</blockquote>
 
 <h3>10. Relevé de jambes suspendu</h3>
 <p>Cible les abdos inférieurs. 3Ã—10-15. Clé : amenez le bassin vers le haut.</p>
@@ -1464,7 +1464,7 @@ export const seoArticles25: BlogArticle[] = [
 <p>Anti-rotation au câble. Renforce les obliques sans épaissir la taille. 3Ã—12/côté</p>
 
 <h3>12. Planche lestée</h3>
-<p>Ajoutez un disque sur le dos pour continuer à progresser. 3Ã—30-60s</p>
+<p>Ajoutez un disque sur le dos pour continuer Ã  progresser. 3Ã—30-60s</p>
 
 <h2>Programme type</h2>
 <p><strong>Séance A (Force)</strong> : Squat 4Ã—6, Développé couché 4Ã—6, Rowing 4Ã—8, Ab wheel 3Ã—10</p>
@@ -1474,12 +1474,12 @@ export const seoArticles25: BlogArticle[] = [
 <h2>L'exercice oublié : la marche</h2>
 <p>10 000 pas/jour = ~400-500 kcal brûlées. Équivalent de 45 min de jogging sans la fatigue ni l'impact articulaire.</p>
 
-<blockquote>ðŸ’¬ <strong>Avis d'expert :</strong> « Le NEAT (Non-Exercise Activity Thermogenesis) représente 15-30% de votre dépense totale. Augmenter vos pas quotidiens de 5 000 à 10 000 peut créer un déficit supplémentaire de 200-300 kcal/jour â€” sans toucher à votre alimentation. » â€” <em>Dr. Mike Israetel</em></blockquote>
+<blockquote>💬 <strong>Avis d'expert :</strong> « Le NEAT (Non-Exercise Activity Thermogenesis) représente 15-30% de votre dépense totale. Augmenter vos pas quotidiens de 5 000 Ã  10 000 peut créer un déficit supplémentaire de 200-300 kcal/jour — sans toucher Ã  votre alimentation. » — <em>Dr. Mike Israetel</em></blockquote>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">ðŸ‹✅ Exercices + Nutrition = Résultats</h3>
+<h3 style="margin-top:0;">🏋ï¸ Exercices + Nutrition = Résultats</h3>
 <p><strong>Sèche 10 Semaines</strong> combine ces exercices avec un plan nutritionnel calibré.</p>
-<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">â†’ Découvrir le programme Sèche 10 Semaines</a></p>
+<p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
   },
