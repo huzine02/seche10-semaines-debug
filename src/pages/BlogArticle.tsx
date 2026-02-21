@@ -107,9 +107,20 @@ export const BlogArticle: React.FC = () => {
     return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
   };
 
-  // Simple markdown-to-HTML converter for our article content
+  // Smart content renderer: detects if content is already HTML or markdown
   const renderContent = (content: string) => {
-    const lines = content.trim().split('\n');
+    const trimmed = content.trim();
+    
+    // If content already contains HTML block tags, it's pre-formatted HTML — return as-is
+    // Just apply inline markdown formatting (bold/italic) to any remaining markdown syntax
+    if (/<(h[1-6]|p|div|section|blockquote|ul|ol|table|header|article)\b/i.test(trimmed)) {
+      return trimmed
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+    }
+
+    // Otherwise it's markdown — convert to HTML
+    const lines = trimmed.split('\n');
     const html: string[] = [];
     let inList = false;
     let listType = '';
@@ -125,17 +136,49 @@ export const BlogArticle: React.FC = () => {
         continue;
       }
 
+      // Blockquote (> prefix)
+      if (line.trim().startsWith('> ')) {
+        if (inList) { html.push(listType === 'ul' ? '</ul>' : '</ol>'); inList = false; }
+        const quoteContent = line.trim().slice(2);
+        // Detect science/expert callouts
+        const isScience = quoteContent.includes('🔬');
+        const isExpert = quoteContent.includes('💬');
+        const bgColor = isScience ? '#eff6ff' : isExpert ? '#f0fdf4' : '#ECFDF5';
+        const borderColor = isScience ? '#3b82f6' : isExpert ? '#22c55e' : '#00B894';
+        html.push(`<blockquote style="background:${bgColor};border-left:4px solid ${borderColor};padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">${formatInline(quoteContent)}</blockquote>`);
+        continue;
+      }
+
       // H2
       if (line.startsWith('## ')) {
         if (inList) { html.push(listType === 'ul' ? '</ul>' : '</ol>'); inList = false; }
-        html.push(`<h2>${line.slice(3)}</h2>`);
+        html.push(`<h2>${formatInline(line.slice(3))}</h2>`);
         continue;
       }
 
       // H3
       if (line.startsWith('### ')) {
         if (inList) { html.push(listType === 'ul' ? '</ul>' : '</ol>'); inList = false; }
-        html.push(`<h3>${line.slice(4)}</h3>`);
+        html.push(`<h3>${formatInline(line.slice(4))}</h3>`);
+        continue;
+      }
+
+      // Table rows (|...|)
+      if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+        // Skip separator rows (|---|---|)
+        if (/^\|[\s\-:]+\|/.test(line.trim())) continue;
+        const cells = line.trim().split('|').filter(c => c.trim() !== '');
+        const isHeader = i + 1 < lines.length && /^\|[\s\-:]+\|/.test(lines[i + 1]?.trim() || '');
+        const tag = isHeader ? 'th' : 'td';
+        if (isHeader) html.push('<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;"><thead>');
+        html.push(`<tr>${cells.map(c => `<${tag} style="padding:8px 12px;border:1px solid #E2E8F0;${isHeader ? 'background:#F1F5F9;font-weight:700;' : ''}">${formatInline(c.trim())}</${tag}>`).join('')}</tr>`);
+        if (isHeader) html.push('</thead><tbody>');
+        // Check if next non-separator line is not a table row → close table
+        const nextReal = lines[i + 1]?.trim() || '';
+        const nextNext = lines[i + 2]?.trim() || '';
+        if (!isHeader && (!nextReal.startsWith('|') || nextReal === '')) {
+          html.push('</tbody></table>');
+        }
         continue;
       }
 
@@ -167,7 +210,7 @@ export const BlogArticle: React.FC = () => {
   const formatInline = (text: string): string => {
     return text
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.+?)\*/g, '<em>$1</em>');
+      .replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
   };
 
   return (
@@ -242,7 +285,7 @@ export const BlogArticle: React.FC = () => {
         <div className="art-cta-box">
           <h3>Prêt à transformer votre physique ?</h3>
           <p>Sèche10Semaines calcule vos macros, génère vos repas et suit votre progression. 100% personnalisé. 5 minutes par jour.</p>
-          <Link to="/login" className="art-cta-btn">Commencer maintenant — 29€/mois</Link>
+          <Link to="/login" className="art-cta-btn">Essai gratuit 7 jours → puis 29€/mois</Link>
           <div className="art-cta-guarantee">✓ Satisfait ou remboursé 14 jours · ✓ Sans engagement</div>
         </div>
       </div>
