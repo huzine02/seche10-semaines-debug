@@ -4,10 +4,11 @@ import { blogArticles } from '../data/blogArticles';
 import { seoArticles25 } from '../data/seoArticles25';
 import { seoArticlesRewrite } from '../data/seoArticlesRewrite';
 import { healthArticles } from '../data/healthArticles';
+import { seoArticlesGap } from '../data/seoArticlesGap';
 
 export const BlogArticle: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const article = blogArticles.find((a) => a.slug === slug) || seoArticlesRewrite.find((a) => a.slug === slug) || seoArticles25.find((a) => a.slug === slug) || healthArticles.find((a) => a.slug === slug);
+  const article = blogArticles.find((a) => a.slug === slug) || seoArticlesRewrite.find((a) => a.slug === slug) || seoArticles25.find((a) => a.slug === slug) || healthArticles.find((a) => a.slug === slug) || seoArticlesGap.find((a) => a.slug === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -263,7 +264,7 @@ export const BlogArticle: React.FC = () => {
         <h3 style={{ color: '#fff', fontSize: 20, marginBottom: 16 }}>📚 Articles similaires</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 12 }}>
           {(() => {
-            const allArticles = [...blogArticles, ...seoArticlesRewrite, ...seoArticles25, ...healthArticles]
+            const allArticles = [...blogArticles, ...seoArticlesRewrite, ...seoArticles25, ...healthArticles, ...seoArticlesGap]
               .filter((a, i, arr) => arr.findIndex(b => b.slug === a.slug) === i)
               .filter(a => a.slug !== article.slug);
             const isHealth = healthArticles.some(a => a.slug === slug);

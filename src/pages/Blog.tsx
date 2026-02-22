@@ -4,6 +4,7 @@ import { blogArticles } from '../data/blogArticles';
 import { seoArticles25 } from '../data/seoArticles25';
 import { seoArticlesRewrite } from '../data/seoArticlesRewrite';
 import { healthArticles } from '../data/healthArticles';
+import { seoArticlesGap } from '../data/seoArticlesGap';
 
 export const Blog: React.FC = () => {
   const styles = `
@@ -123,6 +124,18 @@ export const Blog: React.FC = () => {
             <div className="blog-card-arrow">Lire l'article →</div>
           </Link>
         ))}
+        {seoArticlesGap.map((article) => (
+          <Link to={`/blog/${article.slug}`} className="blog-card" key={article.slug}>
+            <div className="blog-card-meta">
+              <span className="blog-card-date">{formatDate(article.date)}</span>
+              <span className="blog-card-read">⏱ {article.readTime}</span>
+              <span className="blog-card-keyword">{article.keyword}</span>
+            </div>
+            <h2>{article.title}</h2>
+            <p>{article.metaDescription}</p>
+            <div className="blog-card-arrow">Lire l'article →</div>
+          </Link>
+        ))}
       </div>
 
       <noscript>
@@ -136,6 +149,9 @@ export const Blog: React.FC = () => {
               <li key={a.slug}><a href={`/blog/${a.slug}`}>{a.title}</a></li>
             ))}
             {healthArticles.map((a) => (
+              <li key={a.slug}><a href={`/blog/${a.slug}`}>{a.title}</a></li>
+            ))}
+            {seoArticlesGap.map((a) => (
               <li key={a.slug}><a href={`/blog/${a.slug}`}>{a.title}</a></li>
             ))}
           </ul>

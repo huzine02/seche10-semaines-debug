@@ -1,4 +1,4 @@
-export interface BlogArticle {
+﻿export interface BlogArticle {
   slug: string;
   title: string;
   metaDescription: string;
@@ -126,7 +126,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir Sèche 10 Semaines →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
@@ -234,7 +234,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
@@ -336,7 +336,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
@@ -453,7 +453,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Commencer le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
@@ -563,7 +563,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin pour un suivi adapté à votre situation.</em></p>
 </article>`
   },
   {
@@ -656,7 +656,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir Sèche 10 Semaines →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin avant de commencer un programme d'exercice, surtout si vous avez des antécédents cardiovasculaires.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin avant de commencer un programme d'exercice, surtout si vous avez des antécédents cardiovasculaires.</em></p>
 </article>`
   },
   {
@@ -745,7 +745,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. La berbérine peut interagir avec certains médicaments — consultez votre médecin avant toute supplémentation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. La berbérine peut interagir avec certains médicaments — consultez votre médecin avant toute supplémentation.</em></p>
 </article>`
   },
   {
@@ -853,7 +853,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Accéder au programme complet →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Adaptez les portions à vos besoins caloriques personnels et consultez un diététicien si nécessaire.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Adaptez les portions à vos besoins caloriques personnels et consultez un diététicien si nécessaire.</em></p>
 </article>`
   },
   {
@@ -952,7 +952,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si vos transaminases sont élevées, consultez un hépatologue pour un bilan complet.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Si vos transaminases sont élevées, consultez un hépatologue pour un bilan complet.</em></p>
 </article>`
   },
   {
@@ -1082,7 +1082,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
 </article>`
   },
   {
@@ -1158,7 +1158,7 @@ export const healthArticles: BlogArticle[] = [
 <li><strong>Stéatose hépatique</strong> : présente chez 80 % des hommes avec un tour de taille supérieur à 102 cm</li>
 <li><strong>Apnée du sommeil</strong></li>
 <li><strong>Baisse de testostérone</strong> : l'aromatase convertit la testostérone en œstrogènes</li>
-<li><strong>Inflammation chronique</strong> : cytokines pro-inflammatoires (TNF-Î±, IL-6)</li>
+<li><strong>Inflammation chronique</strong> : cytokines pro-inflammatoires (TNF-α, IL-6)</li>
 <li><strong>Certains cancers</strong> : côlon, prostate, pancréas</li>
 </ul>
 
@@ -1212,7 +1212,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si votre tour de taille dépasse 102 cm, consultez votre médecin pour un bilan métabolique complet.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Si votre tour de taille dépasse 102 cm, consultez votre médecin pour un bilan métabolique complet.</em></p>
 </article>`
   },
   {
@@ -1256,7 +1256,7 @@ export const healthArticles: BlogArticle[] = [
 <h2>Pourquoi la graisse viscérale est-elle si dangereuse ?</h2>
 
 <h3>1. Inflammation chronique</h3>
-<p>Elle sécrète des cytokines pro-inflammatoires (TNF-Î±, IL-6, MCP-1) créant un état d'<strong>inflammation systémique de bas grade</strong> — terrain commun de toutes les maladies chroniques.</p>
+<p>Elle sécrète des cytokines pro-inflammatoires (TNF-α, IL-6, MCP-1) créant un état d'<strong>inflammation systémique de bas grade</strong> — terrain commun de toutes les maladies chroniques.</p>
 
 <h3>2. Insulino-résistance</h3>
 <p>Les acides gras libérés vont directement au foie via la veine porte, provoquant stéatose hépatique, résistance à l'insuline et hyperinsulinémie compensatoire.</p>
@@ -1306,7 +1306,7 @@ export const healthArticles: BlogArticle[] = [
 <h3>3. Musculation + HIIT</h3>
 <ul>
 <li><strong>Musculation</strong> : augmente le métabolisme basal</li>
-<li><strong>HIIT</strong> : stimule les catécholamines qui mobilisent spécifiquement la graisse viscérale (plus de récepteurs Î²-adrénergiques)</li>
+<li><strong>HIIT</strong> : stimule les catécholamines qui mobilisent spécifiquement la graisse viscérale (plus de récepteurs β-adrénergiques)</li>
 </ul>
 
 <h3>4. Optimiser le sommeil</h3>
@@ -1334,7 +1334,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
 </article>`
   },
   {
@@ -1443,7 +1443,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si vous suspectez une insulino-résistance, demandez un dosage d'insuline à jeun.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Si vous suspectez une insulino-résistance, demandez un dosage d'insuline à jeun.</em></p>
 </article>`
   },
   {
@@ -1465,7 +1465,7 @@ export const healthArticles: BlogArticle[] = [
 <ol>
 <li><strong>Phase 1 — Insulino-résistance</strong> : les cellules répondent moins bien. Le pancréas compense.</li>
 <li><strong>Phase 2 — Hyperinsulinémie</strong> : insuline chroniquement élevée, glycémie encore normale.</li>
-<li><strong>Phase 3 — Prédiabète</strong> : glycémie à jeun 1.10-1.25 g/L ou HbA1c 5.7-6.4 %.</li>
+<li><strong>Phase 3 — Prédiabète</strong> : glycémie à jeun 1,00-1,25 g/L ou HbA1c 5.7-6.4 %.</li>
 <li><strong>Phase 4 — Diabète</strong> : glycémie ≥ 1.26 g/L ou HbA1c ≥ 6.5 %.</li>
 </ol>
 
@@ -1532,7 +1532,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si votre glycémie dépasse 1.10 g/L, consultez rapidement.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Si votre glycémie dépasse 1,00 g/L, consultez rapidement.</em></p>
 </article>`
   },
   {
@@ -1625,7 +1625,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical.</em></p>
 </article>`
   },
   {
@@ -1732,7 +1732,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin avant de commencer un programme d'exercice si vous prenez des hypoglycémiants.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Consultez votre médecin avant de commencer un programme d'exercice si vous prenez des hypoglycémiants.</em></p>
 </article>`
   },
   {
@@ -1819,7 +1819,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Les valeurs d'IG peuvent varier selon les sources et la préparation.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Les valeurs d'IG peuvent varier selon les sources et la préparation.</em></p>
 </article>`
   },
   {
@@ -1909,7 +1909,7 @@ export const healthArticles: BlogArticle[] = [
 <a href="https://seche10semaines.fr" style="display:inline-block;background:white;color:#ef4444;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;">Découvrir le programme →</a>
 </div>
 
-<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕ï¸ <em>Cet article est informatif et ne remplace pas un avis médical. Si vous prenez des anticoagulants, consultez votre médecin avant les oméga-3 à haute dose.</em></p>
+<p style="font-size:0.85em;color:#6b7280;margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;">⚕️ <em>Cet article est informatif et ne remplace pas un avis médical. Si vous prenez des anticoagulants, consultez votre médecin avant les oméga-3 à haute dose.</em></p>
 </article>`
   },
   {
@@ -2200,3 +2200,5 @@ export const healthArticles: BlogArticle[] = [
 </article>`
   }
 ];
+
+

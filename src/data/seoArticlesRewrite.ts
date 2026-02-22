@@ -25,7 +25,7 @@ export const seoArticlesRewrite: BlogArticle[] = [
 <p>Ce guide vous donne la méthode exacte en 4 étapes, calibrée sur les dernières données scientifiques. Pas de formule magique — juste des maths simples et des principes éprouvés.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Une méta-analyse de Aragon et al. (2017, <em>Journal of the ISSN</em>) conclut que la répartition des macros — pas seulement les calories — détermine le ratio masse grasse/masse maigre perdue en déficit calorique. Les sujets avec un apport protéique élevé (2,3-3,1 g/kg de masse maigre) ont perdu 1,6Ã— plus de gras et conservé significativement plus de muscle.
+🔬 <strong>Ce que dit la science :</strong> Une méta-analyse de Aragon et al. (2017, <em>Journal of the ISSN</em>) conclut que la répartition des macros — pas seulement les calories — détermine le ratio masse grasse/masse maigre perdue en déficit calorique. Les sujets avec un apport protéique élevé (2,3-3,1 g/kg de masse maigre) ont perdu 1,6× plus de gras et conservé significativement plus de muscle.
 </blockquote>
 
 <h2>Les 3 macronutriments : rôles et priorités en sèche</h2>
@@ -35,7 +35,7 @@ export const seoArticlesRewrite: BlogArticle[] = [
 <p>Les protéines sont le macronutriment non négociable. Leur rôle en sèche est triple :</p>
 
 <ul>
-<li><strong>Préservation musculaire</strong> : les acides aminés (surtout la leucine) activent mTOR, la voie de signalisation qui dit Ã  votre corps de maintenir le tissu musculaire</li>
+<li><strong>Préservation musculaire</strong> : les acides aminés (surtout la leucine) activent mTOR, la voie de signalisation qui dit à votre corps de maintenir le tissu musculaire</li>
 <li><strong>Satiété</strong> : les protéines stimulent la GLP-1 et le PYY tout en supprimant la ghréline — vous avez moins faim, naturellement</li>
 <li><strong>Effet thermique élevé</strong> : 20-30% des calories protéiques sont brûlées pendant la digestion. Pour 800 kcal ingérées, votre corps en dépense 160-240 kcal juste pour les métaboliser</li>
 </ul>
@@ -45,7 +45,7 @@ export const seoArticlesRewrite: BlogArticle[] = [
 </blockquote>
 
 <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:20px;margin:20px 0;border-radius:8px;">
-<strong>âš ï¸ Règle absolue :</strong> En sèche, vos protéines ne descendent JAMAIS en dessous de 2 g/kg de poids de corps. Idéalement, visez 2,2 g/kg (soit ~2,6-3,0 g/kg de masse maigre pour un homme Ã  15-20% de MG).
+<strong>⚠ï¸ Règle absolue :</strong> En sèche, vos protéines ne descendent JAMAIS en dessous de 2 g/kg de poids de corps. Idéalement, visez 2,2 g/kg (soit ~2,6-3,0 g/kg de masse maigre pour un homme à 15-20% de MG).
 </div>
 
 <h3>Les lipides (9 kcal/g) — Priorité n°2</h3>
@@ -59,7 +59,7 @@ export const seoArticlesRewrite: BlogArticle[] = [
 </ul>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Dorgan et al. (1996, <em>American Journal of Clinical Nutrition</em>) ont montré qu'un régime passant de 40% Ã  25% de lipides réduisait la testostérone totale de 12% et la testostérone libre de 15% chez des hommes en bonne santé. Le minimum recommandé : 0,7-1,0 g/kg de poids de corps.
+🔬 <strong>Ce que dit la science :</strong> Dorgan et al. (1996, <em>American Journal of Clinical Nutrition</em>) ont montré qu'un régime passant de 40% à 25% de lipides réduisait la testostérone totale de 12% et la testostérone libre de 15% chez des hommes en bonne santé. Le minimum recommandé : 0,7-1,0 g/kg de poids de corps.
 </blockquote>
 
 <p>Le minimum vital en sèche : <strong>0,8 g/kg de poids de corps</strong>. Idéalement, visez 0,9-1,0 g/kg pour maintenir vos hormones.</p>
@@ -69,7 +69,7 @@ export const seoArticlesRewrite: BlogArticle[] = [
 <p>Les glucides sont le carburant de la performance. Ils ne sont pas "essentiels" au sens biochimique, mais votre corps fonctionne <em>nettement mieux</em> avec :</p>
 
 <ul>
-<li><strong>Énergie Ã  l'entraînement</strong> : le glycogène musculaire est le carburant principal des séances de musculation intense (>70% 1RM)</li>
+<li><strong>Énergie à l'entraînement</strong> : le glycogène musculaire est le carburant principal des séances de musculation intense (>70% 1RM)</li>
 <li><strong>Récupération</strong> : les glucides post-entraînement rechargent le glycogène et réduisent le cortisol</li>
 <li><strong>Hormones thyroïdiennes</strong> : les glucides soutiennent la conversion de T4 en T3, l'hormone qui régule votre métabolisme</li>
 <li><strong>Cerveau</strong> : ~120 g de glucose/jour pour le fonctionnement cérébral optimal</li>
@@ -83,14 +83,14 @@ export const seoArticlesRewrite: BlogArticle[] = [
 
 <h3>Étape 1 : Déterminer vos calories cibles</h3>
 
-<p><strong>Calories de sèche = TDEE Ã— 0,75 Ã  0,80</strong> (soit un déficit de 20-25%)</p>
+<p><strong>Calories de sèche = TDEE × 0,75 à 0,80</strong> (soit un déficit de 20-25%)</p>
 
 <p>Le TDEE (Total Daily Energy Expenditure) se calcule avec la formule de Mifflin-St Jeor :</p>
 
 <ol>
 <li><strong>Métabolisme de base (MB)</strong> :<br/>
-MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li>
-<li><strong>TDEE</strong> = MB Ã— facteur d'activité :
+MB = (10 × poids en kg) + (6,25 × taille en cm) - (5 × âge) + 5</li>
+<li><strong>TDEE</strong> = MB × facteur d'activité :
 <ul>
 <li>1,2 : sédentaire (bureau, pas de sport)</li>
 <li>1,375 : légèrement actif (1-2 séances/semaine)</li>
@@ -105,16 +105,16 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <div style="background:#e8f5e9;border-left:4px solid #4caf50;padding:20px;margin:20px 0;border-radius:8px;">
 <h4 style="margin-top:0;">📊 Exemple — Pierre, 42 ans, 85 kg, 178 cm, 3 séances/semaine</h4>
-<p>MB = (10 Ã— 85) + (6,25 Ã— 178) - (5 Ã— 42) + 5 = 850 + 1112,5 - 210 + 5 = <strong>1 757 kcal</strong></p>
-<p>TDEE = 1 757 Ã— 1,55 = <strong>2 723 kcal</strong></p>
-<p>Calories de sèche = 2 723 Ã— 0,80 = <strong>~2 180 kcal/jour</strong></p>
+<p>MB = (10 × 85) + (6,25 × 178) - (5 × 42) + 5 = 850 + 1112,5 - 210 + 5 = <strong>1 757 kcal</strong></p>
+<p>TDEE = 1 757 × 1,55 = <strong>2 723 kcal</strong></p>
+<p>Calories de sèche = 2 723 × 0,80 = <strong>~2 180 kcal/jour</strong></p>
 </div>
 
 <h3>Étape 2 : Fixer les protéines</h3>
 
 <p>Multipliez votre poids de corps par 2,2 g :</p>
 
-<p><strong>Pierre : 85 kg Ã— 2,2 = 187 g de protéines = 748 kcal</strong></p>
+<p><strong>Pierre : 85 kg × 2,2 = 187 g de protéines = 748 kcal</strong></p>
 
 <p>Ajustement selon votre profil :</p>
 <ul>
@@ -131,9 +131,9 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p>Multipliez votre poids de corps par 0,9 g :</p>
 
-<p><strong>Pierre : 85 kg Ã— 0,9 = 77 g de lipides = 693 kcal</strong></p>
+<p><strong>Pierre : 85 kg × 0,9 = 77 g de lipides = 693 kcal</strong></p>
 
-<p>Fourchette : 0,8 Ã  1,1 g/kg. En dessous de 0,7 g/kg, les hormones trinquent. Au-dessus de 1,2 g/kg, les calories pour les glucides deviennent insuffisantes.</p>
+<p>Fourchette : 0,8 à 1,1 g/kg. En dessous de 0,7 g/kg, les hormones trinquent. Au-dessus de 1,2 g/kg, les calories pour les glucides deviennent insuffisantes.</p>
 
 <div style="background:#fce4ec;border-left:4px solid #e53935;padding:20px;margin:20px 0;border-radius:8px;">
 <strong>🚨 Attention après 40 ans :</strong> Ne descendez jamais vos lipides en dessous de 0,8 g/kg. La production de testostérone décline naturellement de ~1% par an après 30 ans (Travison et al., 2007, <em>JCEM</em>). Un régime trop pauvre en graisses accélérera ce déclin.
@@ -141,7 +141,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h3>Étape 4 : Calculer les glucides (ce qui reste)</h3>
 
-<p><strong>Pierre : 2 180 - 748 (prot) - 693 (lip) = 739 kcal ↑ 739 Ã· 4 = ~185 g de glucides</strong></p>
+<p><strong>Pierre : 2 180 - 748 (prot) - 693 (lip) = 739 kcal ↑ 739 ÷ 4 = ~185 g de glucides</strong></p>
 
 <h3>Résumé des macros de Pierre</h3>
 
@@ -158,33 +158,33 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h3>Profil A : Karim, 38 ans, 78 kg, 182 cm, 4 séances/semaine</h3>
 <ul>
 <li>TDEE : ~2 640 kcal ↑ Cible sèche : <strong>2 110 kcal</strong></li>
-<li>Protéines : 78 Ã— 2,2 = <strong>172 g</strong> (688 kcal)</li>
-<li>Lipides : 78 Ã— 0,9 = <strong>70 g</strong> (630 kcal)</li>
-<li>Glucides : (2110 - 688 - 630) Ã· 4 = <strong>198 g</strong></li>
+<li>Protéines : 78 × 2,2 = <strong>172 g</strong> (688 kcal)</li>
+<li>Lipides : 78 × 0,9 = <strong>70 g</strong> (630 kcal)</li>
+<li>Glucides : (2110 - 688 - 630) ÷ 4 = <strong>198 g</strong></li>
 </ul>
 
 <h3>Profil B : Stéphane, 50 ans, 92 kg, 175 cm, 3 séances/semaine</h3>
 <ul>
 <li>TDEE : ~2 620 kcal ↑ Cible sèche : <strong>2 096 kcal</strong></li>
-<li>Protéines : 92 Ã— 2,0 = <strong>184 g</strong> (736 kcal) — coefficient Ã  2,0 car >25% MG estimé</li>
-<li>Lipides : 92 Ã— 0,9 = <strong>83 g</strong> (747 kcal)</li>
-<li>Glucides : (2096 - 736 - 747) Ã· 4 = <strong>153 g</strong></li>
+<li>Protéines : 92 × 2,0 = <strong>184 g</strong> (736 kcal) — coefficient à 2,0 car >25% MG estimé</li>
+<li>Lipides : 92 × 0,9 = <strong>83 g</strong> (747 kcal)</li>
+<li>Glucides : (2096 - 736 - 747) ÷ 4 = <strong>153 g</strong></li>
 </ul>
 
-<h3>Profil C : Thomas, 35 ans, 75 kg, 180 cm, déjÃ  Ã  16% MG, 5 séances</h3>
+<h3>Profil C : Thomas, 35 ans, 75 kg, 180 cm, déjà à 16% MG, 5 séances</h3>
 <ul>
 <li>TDEE : ~2 780 kcal ↑ Cible sèche : <strong>2 224 kcal</strong></li>
-<li>Protéines : 75 Ã— 2,4 = <strong>180 g</strong> (720 kcal) — coefficient Ã  2,4 car <20% MG</li>
-<li>Lipides : 75 Ã— 0,9 = <strong>68 g</strong> (612 kcal)</li>
-<li>Glucides : (2224 - 720 - 612) Ã· 4 = <strong>223 g</strong></li>
+<li>Protéines : 75 × 2,4 = <strong>180 g</strong> (720 kcal) — coefficient à 2,4 car <20% MG</li>
+<li>Lipides : 75 × 0,9 = <strong>68 g</strong> (612 kcal)</li>
+<li>Glucides : (2224 - 720 - 612) ÷ 4 = <strong>223 g</strong></li>
 </ul>
 
 <h2>Le carb cycling : optimisation avancée</h2>
 
-<p>Le carb cycling consiste Ã  <strong>varier l'apport en glucides selon vos jours d'entraînement</strong>. Plus de carburant quand vous soulevez des charges, moins les jours de repos.</p>
+<p>Le carb cycling consiste à <strong>varier l'apport en glucides selon vos jours d'entraînement</strong>. Plus de carburant quand vous soulevez des charges, moins les jours de repos.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"Le carb cycling n'est pas magique pour la perte de graisse — le total calorique hebdomadaire reste roi. Mais il optimise les performances Ã  l'entraînement et l'adhérence psychologique."</em> — <strong>Alan Aragon</strong>, chercheur en nutrition sportive
+💬 <strong>Avis d'expert :</strong> <em>"Le carb cycling n'est pas magique pour la perte de graisse — le total calorique hebdomadaire reste roi. Mais il optimise les performances à l'entraînement et l'adhérence psychologique."</em> — <strong>Alan Aragon</strong>, chercheur en nutrition sportive
 </blockquote>
 
 <h3>Comment l'appliquer (exemple de Pierre)</h3>
@@ -221,7 +221,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h3>Phase d'autonomie (semaine 3+)</h3>
 
-<p>Passez Ã  la <strong>méthode de la main</strong> (Precision Nutrition) :</p>
+<p>Passez à la <strong>méthode de la main</strong> (Precision Nutrition) :</p>
 
 <ul>
 <li><strong>1 paume de main</strong> = ~30 g de protéines</li>
@@ -235,10 +235,10 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h2>Quand réajuster vos macros</h2>
 
 <ul>
-<li><strong>Toutes les 3-4 semaines</strong> : recalculez avec votre nouveau poids. C'est généralement -50 Ã  -100 kcal sur les glucides</li>
+<li><strong>Toutes les 3-4 semaines</strong> : recalculez avec votre nouveau poids. C'est généralement -50 à -100 kcal sur les glucides</li>
 <li><strong>Stagnation >2 semaines</strong> : réduisez 20 g de glucides (-80 kcal). Ne touchez pas aux protéines ni aux lipides</li>
 <li><strong>Perte de force >15%</strong> : ajoutez 20-30 g de glucides les jours d'entraînement</li>
-<li><strong>Fatigue chronique après 4+ semaines</strong> : envisagez un diet break d'une semaine Ã  maintenance</li>
+<li><strong>Fatigue chronique après 4+ semaines</strong> : envisagez un diet break d'une semaine à maintenance</li>
 </ul>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
@@ -252,22 +252,22 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <li><strong>Négliger les lipides cachés</strong> ↑ 1 cuillère d'huile d'olive = 14 g de lipides = 126 kcal. Deux oublis = 250 kcal invisibles</li>
 <li><strong>Confondre poids cru et cuit</strong> ↑ 100 g de riz cru = ~350 kcal. 100 g de riz cuit = ~130 kcal. Vérifiez toujours</li>
 <li><strong>Oublier les calories liquides</strong> ↑ Café latte (150 kcal), jus d'orange (120 kcal), vin (130 kcal). Comptez-les</li>
-<li><strong>Viser la perfection quotidienne</strong> ↑ C'est la moyenne hebdomadaire qui compte. Le corps ne remet pas les compteurs Ã  zéro Ã  minuit</li>
+<li><strong>Viser la perfection quotidienne</strong> ↑ C'est la moyenne hebdomadaire qui compte. Le corps ne remet pas les compteurs à zéro à minuit</li>
 </ol>
 
 <div style="background:#f3e5f5;border-left:4px solid #9c27b0;padding:20px;margin:20px 0;border-radius:8px;">
 <h4 style="margin-top:0;">📝 Votre calcul en 4 lignes</h4>
 <ol>
-<li><strong>Calories cible</strong> = (MB Ã— facteur activité) Ã— 0,80 = ______ kcal</li>
-<li><strong>Protéines</strong> = poids Ã— 2,2 = ______ g Ã— 4 = ______ kcal</li>
-<li><strong>Lipides</strong> = poids Ã— 0,9 = ______ g Ã— 9 = ______ kcal</li>
-<li><strong>Glucides</strong> = (calories cible - kcal prot - kcal lip) Ã· 4 = ______ g</li>
+<li><strong>Calories cible</strong> = (MB × facteur activité) × 0,80 = ______ kcal</li>
+<li><strong>Protéines</strong> = poids × 2,2 = ______ g × 4 = ______ kcal</li>
+<li><strong>Lipides</strong> = poids × 0,9 = ______ g × 9 = ______ kcal</li>
+<li><strong>Glucides</strong> = (calories cible - kcal prot - kcal lip) ÷ 4 = ______ g</li>
 </ol>
 </div>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
 <h3 style="margin-top:0;">📊 Macros calculées automatiquement, menus inclus</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> calcule vos macros personnalisées Ã  partir de votre profil, les réajuste automatiquement toutes les 2 semaines, et vous fournit des menus complets qui respectent vos cibles au gramme près.</p>
+<p>Le programme <strong>Sèche 10 Semaines</strong> calcule vos macros personnalisées à partir de votre profil, les réajuste automatiquement toutes les 2 semaines, et vous fournit des menus complets qui respectent vos cibles au gramme près.</p>
 <p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
@@ -283,7 +283,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p>L'erreur n°1 en sèche ? <strong>Changer radicalement son programme d'entraînement.</strong> Passer des charges lourdes aux séries légères. Remplacer la musculation par du cardio. Résultat : le muscle fond et le gras reste.</p>
 
-<p>Le stimulus qui a construit votre muscle est exactement celui qui le maintient. Votre programme de sèche doit ressembler Ã  80% Ã  celui de prise de masse — avec des ajustements chirurgicaux sur le volume et la récupération.</p>
+<p>Le stimulus qui a construit votre muscle est exactement celui qui le maintient. Votre programme de sèche doit ressembler à 80% à celui de prise de masse — avec des ajustements chirurgicaux sur le volume et la récupération.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Trappe et al. (2006, <em>Journal of Applied Physiology</em>) ont démontré qu'une réduction de l'intensité d'entraînement (charges) de 33% entraîne une perte significative de masse musculaire en 32 semaines, même avec un volume maintenu. En revanche, une réduction du volume de 66% avec une intensité maintenue permet de conserver toute la masse musculaire.
@@ -293,16 +293,16 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h3>Principe 1 : Maintenez les charges lourdes</h3>
 
-<p>C'est LA règle la plus importante. Si vous développé couché Ã  90 kg en prise de masse, votre objectif en sèche est de rester Ã  90 kg — ou le plus proche possible.</p>
+<p>C'est LA règle la plus importante. Si vous développé couché à 90 kg en prise de masse, votre objectif en sèche est de rester à 90 kg — ou le plus proche possible.</p>
 
-<p>La tension mécanique (charges lourdes) est le signal n°1 de préservation musculaire. En réduisant les charges, vous dites Ã  votre corps : "Ce muscle est superflu."</p>
+<p>La tension mécanique (charges lourdes) est le signal n°1 de préservation musculaire. En réduisant les charges, vous dites à votre corps : "Ce muscle est superflu."</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
 💬 <strong>Avis d'expert :</strong> <em>"L'intensité relative (% du 1RM) est le facteur le plus important pour préserver la masse musculaire en déficit. Vous pouvez couper le volume de moitié, mais ne coupez jamais l'intensité."</em> — <strong>Eric Helms</strong>, <em>The Muscle & Strength Pyramid</em>
 </blockquote>
 
 <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:20px;margin:20px 0;border-radius:8px;">
-<strong>âš ï¸ Réalité en sèche :</strong> une légère baisse de force (5-10%) est normale après 4-6 semaines de déficit. Au-delÃ  de 15%, votre déficit est trop agressif ou votre récupération insuffisante.
+<strong>⚠ï¸ Réalité en sèche :</strong> une légère baisse de force (5-10%) est normale après 4-6 semaines de déficit. Au-delà de 15%, votre déficit est trop agressif ou votre récupération insuffisante.
 </div>
 
 <h3>Principe 2 : Réduisez le volume de 25-40%</h3>
@@ -310,12 +310,12 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>En déficit calorique, votre capacité de récupération chute. La solution : <strong>gardez l'intensité (charges) mais réduisez le volume (séries totales).</strong></p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Une revue systématique de Schoenfeld et al. (2017, <em>Journal of Sports Sciences</em>) indique qu'un minimum de 10 séries par groupe musculaire par semaine est optimal pour la croissance en surplus. En sèche, Israetel recommande de réduire Ã  60-75% de ce volume — soit <strong>6-12 séries par groupe musculaire par semaine</strong> — tout en maintenant les charges.
+🔬 <strong>Ce que dit la science :</strong> Une revue systématique de Schoenfeld et al. (2017, <em>Journal of Sports Sciences</em>) indique qu'un minimum de 10 séries par groupe musculaire par semaine est optimal pour la croissance en surplus. En sèche, Israetel recommande de réduire à 60-75% de ce volume — soit <strong>6-12 séries par groupe musculaire par semaine</strong> — tout en maintenant les charges.
 </blockquote>
 
 <ul>
-<li>Si vous faisiez 5 séries de développé couché ↑ passez Ã  3-4</li>
-<li>Si vous faisiez 20 séries/semaine par groupe ↑ passez Ã  12-15</li>
+<li>Si vous faisiez 5 séries de développé couché ↑ passez à 3-4</li>
+<li>Si vous faisiez 20 séries/semaine par groupe ↑ passez à 12-15</li>
 <li>Coupez d'abord les exercices d'isolation, gardez les composés</li>
 </ul>
 
@@ -348,17 +348,17 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h2>Le programme complet : Split Push/Pull/Legs + Full Body</h2>
 
-<p>Ce split en 4 jours stimule chaque groupe musculaire 1,5 Ã  2 fois par semaine — la fréquence optimale en déficit.</p>
+<p>Ce split en 4 jours stimule chaque groupe musculaire 1,5 à 2 fois par semaine — la fréquence optimale en déficit.</p>
 
 <h3>Jour 1 — Push (Poitrine, Épaules, Triceps)</h3>
 
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th><th>Notes</th></tr>
-<tr><td>Développé couché barre</td><td>4 Ã— 6-8</td><td>2-3 min</td><td>Charge lourde, priorité absolue</td></tr>
-<tr><td>Développé incliné haltères</td><td>3 Ã— 8-10</td><td>2 min</td><td>30° d'inclinaison max</td></tr>
-<tr><td>Développé militaire barre</td><td>3 Ã— 8-10</td><td>2 min</td><td>Debout ou assis</td></tr>
-<tr><td>Élévations latérales</td><td>3 Ã— 12-15</td><td>60 sec</td><td>Contrôlez la descente</td></tr>
-<tr><td>Dips ou extension triceps poulie</td><td>3 Ã— 10-12</td><td>60-90 sec</td><td>Finisher triceps</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th><th>Notes</th></tr>
+<tr><td>Développé couché barre</td><td>4 × 6-8</td><td>2-3 min</td><td>Charge lourde, priorité absolue</td></tr>
+<tr><td>Développé incliné haltères</td><td>3 × 8-10</td><td>2 min</td><td>30° d'inclinaison max</td></tr>
+<tr><td>Développé militaire barre</td><td>3 × 8-10</td><td>2 min</td><td>Debout ou assis</td></tr>
+<tr><td>Élévations latérales</td><td>3 × 12-15</td><td>60 sec</td><td>Contrôlez la descente</td></tr>
+<tr><td>Dips ou extension triceps poulie</td><td>3 × 10-12</td><td>60-90 sec</td><td>Finisher triceps</td></tr>
 </table>
 
 <p><strong>Durée</strong> : 50-60 min | <strong>Volume total</strong> : 16 séries</p>
@@ -366,12 +366,12 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h3>Jour 2 — Pull (Dos, Biceps, Arrière d'épaule)</h3>
 
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th><th>Notes</th></tr>
-<tr><td>Soulevé de terre conventionnel</td><td>3 Ã— 5</td><td>3 min</td><td>Technique irréprochable</td></tr>
-<tr><td>Tractions (lestées si possible)</td><td>4 Ã— 6-8</td><td>2-3 min</td><td>Prise pronation, largeur épaules</td></tr>
-<tr><td>Rowing haltère unilatéral</td><td>3 Ã— 8-10</td><td>90 sec</td><td>Tirez vers la hanche</td></tr>
-<tr><td>Face pulls</td><td>3 Ã— 15</td><td>60 sec</td><td>Santé des épaules</td></tr>
-<tr><td>Curl barre EZ</td><td>3 Ã— 10-12</td><td>60 sec</td><td>Contrôlez l'égo</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th><th>Notes</th></tr>
+<tr><td>Soulevé de terre conventionnel</td><td>3 × 5</td><td>3 min</td><td>Technique irréprochable</td></tr>
+<tr><td>Tractions (lestées si possible)</td><td>4 × 6-8</td><td>2-3 min</td><td>Prise pronation, largeur épaules</td></tr>
+<tr><td>Rowing haltère unilatéral</td><td>3 × 8-10</td><td>90 sec</td><td>Tirez vers la hanche</td></tr>
+<tr><td>Face pulls</td><td>3 × 15</td><td>60 sec</td><td>Santé des épaules</td></tr>
+<tr><td>Curl barre EZ</td><td>3 × 10-12</td><td>60 sec</td><td>Contrôlez l'égo</td></tr>
 </table>
 
 <p><strong>Durée</strong> : 50-60 min | <strong>Volume total</strong> : 16 séries</p>
@@ -383,12 +383,12 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h3>Jour 4 — Legs (Quadriceps, Ischio-jambiers, Mollets)</h3>
 
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th><th>Notes</th></tr>
-<tr><td>Squat barre</td><td>4 Ã— 6-8</td><td>2-3 min</td><td>Profondeur complète si mobilité OK</td></tr>
-<tr><td>Presse Ã  cuisses</td><td>3 Ã— 10-12</td><td>2 min</td><td>Pieds hauts = plus de fessiers</td></tr>
-<tr><td>Fentes marchées</td><td>3 Ã— 10/jambe</td><td>90 sec</td><td>Haltères ou barre</td></tr>
-<tr><td>Leg curl couché</td><td>3 Ã— 10-12</td><td>60-90 sec</td><td>Ischio-jambiers isolés</td></tr>
-<tr><td>Mollets debout</td><td>4 Ã— 12-15</td><td>60 sec</td><td>Amplitude complète, pause en bas</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th><th>Notes</th></tr>
+<tr><td>Squat barre</td><td>4 × 6-8</td><td>2-3 min</td><td>Profondeur complète si mobilité OK</td></tr>
+<tr><td>Presse à cuisses</td><td>3 × 10-12</td><td>2 min</td><td>Pieds hauts = plus de fessiers</td></tr>
+<tr><td>Fentes marchées</td><td>3 × 10/jambe</td><td>90 sec</td><td>Haltères ou barre</td></tr>
+<tr><td>Leg curl couché</td><td>3 × 10-12</td><td>60-90 sec</td><td>Ischio-jambiers isolés</td></tr>
+<tr><td>Mollets debout</td><td>4 × 12-15</td><td>60 sec</td><td>Amplitude complète, pause en bas</td></tr>
 </table>
 
 <p><strong>Durée</strong> : 55-65 min | <strong>Volume total</strong> : 17 séries</p>
@@ -396,13 +396,13 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h3>Jour 5 — Full Body + Core</h3>
 
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th><th>Notes</th></tr>
-<tr><td>Front squat</td><td>3 Ã— 8</td><td>2 min</td><td>Plus de quadriceps, moins de dos</td></tr>
-<tr><td>Développé couché haltères</td><td>3 Ã— 10</td><td>90 sec</td><td>Amplitude complète</td></tr>
-<tr><td>Rowing barre</td><td>3 Ã— 8</td><td>2 min</td><td>Torse Ã  45° minimum</td></tr>
-<tr><td>Ab wheel rollout</td><td>3 Ã— 10</td><td>60 sec</td><td>Genoux au sol si nécessaire</td></tr>
-<tr><td>Relevé de jambes suspendu</td><td>3 Ã— 12</td><td>60 sec</td><td>Contrôlez le bassin</td></tr>
-<tr><td>Pallof press</td><td>3 Ã— 12/côté</td><td>60 sec</td><td>Anti-rotation pour les obliques</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th><th>Notes</th></tr>
+<tr><td>Front squat</td><td>3 × 8</td><td>2 min</td><td>Plus de quadriceps, moins de dos</td></tr>
+<tr><td>Développé couché haltères</td><td>3 × 10</td><td>90 sec</td><td>Amplitude complète</td></tr>
+<tr><td>Rowing barre</td><td>3 × 8</td><td>2 min</td><td>Torse à 45° minimum</td></tr>
+<tr><td>Ab wheel rollout</td><td>3 × 10</td><td>60 sec</td><td>Genoux au sol si nécessaire</td></tr>
+<tr><td>Relevé de jambes suspendu</td><td>3 × 12</td><td>60 sec</td><td>Contrôlez le bassin</td></tr>
+<tr><td>Pallof press</td><td>3 × 12/côté</td><td>60 sec</td><td>Anti-rotation pour les obliques</td></tr>
 </table>
 
 <p><strong>Durée</strong> : 45-55 min | <strong>Volume total</strong> : 18 séries</p>
@@ -415,14 +415,14 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <table>
 <tr><th>Groupe</th><th>Séries/semaine</th><th>Fréquence</th></tr>
-<tr><td>Poitrine</td><td>10</td><td>2Ã—/sem</td></tr>
-<tr><td>Dos</td><td>10</td><td>2Ã—/sem</td></tr>
-<tr><td>Épaules</td><td>9</td><td>2Ã—/sem</td></tr>
-<tr><td>Quadriceps</td><td>10</td><td>2Ã—/sem</td></tr>
-<tr><td>Ischio-jambiers</td><td>6</td><td>1-2Ã—/sem</td></tr>
-<tr><td>Biceps</td><td>6</td><td>1-2Ã—/sem</td></tr>
-<tr><td>Triceps</td><td>6</td><td>1-2Ã—/sem</td></tr>
-<tr><td>Abdos</td><td>9</td><td>1-2Ã—/sem</td></tr>
+<tr><td>Poitrine</td><td>10</td><td>2×/sem</td></tr>
+<tr><td>Dos</td><td>10</td><td>2×/sem</td></tr>
+<tr><td>Épaules</td><td>9</td><td>2×/sem</td></tr>
+<tr><td>Quadriceps</td><td>10</td><td>2×/sem</td></tr>
+<tr><td>Ischio-jambiers</td><td>6</td><td>1-2×/sem</td></tr>
+<tr><td>Biceps</td><td>6</td><td>1-2×/sem</td></tr>
+<tr><td>Triceps</td><td>6</td><td>1-2×/sem</td></tr>
+<tr><td>Abdos</td><td>9</td><td>1-2×/sem</td></tr>
 </table>
 
 <h2>La progression en sèche</h2>
@@ -431,7 +431,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <ul>
 <li><strong>Charges stables ou -5%</strong> après 5-6 semaines ↑ tout va bien</li>
-<li><strong>Charges -5 Ã  -10%</strong> ↑ normal en fin de sèche (semaines 7-10)</li>
+<li><strong>Charges -5 à -10%</strong> ↑ normal en fin de sèche (semaines 7-10)</li>
 <li><strong>Charges -15% ou plus</strong> ↑ signal d'alarme. Ajustez le déficit, le sommeil ou le volume</li>
 </ul>
 
@@ -448,7 +448,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Si les charges tiennent, ajoutez 1-2 séances de LISS par semaine. Programme musculation inchangé.</p>
 
 <h3>Semaines 8-10 : Phase de finalisation</h3>
-<p>Si la fatigue s'accumule, passez de 4 Ã  3 séances muscu et réduisez le volume de 10-20%. Maintenez les charges sur les gros mouvements Ã  tout prix.</p>
+<p>Si la fatigue s'accumule, passez de 4 à 3 séances muscu et réduisez le volume de 10-20%. Maintenez les charges sur les gros mouvements à tout prix.</p>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
 <h3 style="margin-top:0;">🏋ï¸ Programme clé en main avec vidéos</h3>
@@ -471,7 +471,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>La bonne nouvelle : un plateau n'est pas un échec. C'est une adaptation biologique prévisible et contournable. Voici 8 solutions concrètes, classées par ordre de priorité.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Müller & Bosy-Westphal (2013, <em>Obesity Reviews</em>) ont identifié que l'adaptation métabolique — la réduction du métabolisme au-delÃ  de ce que prédit la perte de poids — peut atteindre 80-120 kcal/jour après 8-12 semaines de déficit. C'est réel, mais souvent surestimé par les gens en plateau.
+🔬 <strong>Ce que dit la science :</strong> Müller & Bosy-Westphal (2013, <em>Obesity Reviews</em>) ont identifié que l'adaptation métabolique — la réduction du métabolisme au-delà de ce que prédit la perte de poids — peut atteindre 80-120 kcal/jour après 8-12 semaines de déficit. C'est réel, mais souvent surestimé par les gens en plateau.
 </blockquote>
 
 <h2>D'abord : est-ce vraiment un plateau ?</h2>
@@ -479,7 +479,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Avant d'agir, vérifiez que vous êtes réellement en stagnation :</p>
 
 <ul>
-<li><strong>La balance seule ment.</strong> Rétention d'eau, cycle hormonal, volume alimentaire dans l'intestin ↑ le poids peut fluctuer de 0,5 Ã  2 kg d'un jour Ã  l'autre</li>
+<li><strong>La balance seule ment.</strong> Rétention d'eau, cycle hormonal, volume alimentaire dans l'intestin ↑ le poids peut fluctuer de 0,5 à 2 kg d'un jour à l'autre</li>
 <li><strong>Comparez sur 2 semaines minimum.</strong> Si votre moyenne hebdomadaire (7 pesées) ne bouge pas pendant 14 jours, c'est un vrai plateau</li>
 <li><strong>Regardez aussi :</strong> le tour de taille, les photos (même éclairage, même heure), la force en salle, l'apparence dans le miroir</li>
 </ul>
@@ -506,7 +506,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 🔬 <strong>Ce que dit la science :</strong> Levine et al. (1999, <em>Science</em>) ont montré que le NEAT pouvait varier de 2 000 kcal/jour entre individus. En déficit, votre corps réduit inconsciemment le NEAT : vous bougez moins, vous vous asseyez plus, vous faites des mouvements plus économes. Cette réduction peut représenter 200-400 kcal/jour.
 </blockquote>
 
-<p><strong>Protocole :</strong> Visez 8 000-10 000 pas/jour (utilisez votre téléphone comme podomètre). Si vous êtes Ã  4 000, chaque tranche de 2 000 pas supplémentaires brûle ~100 kcal.</p>
+<p><strong>Protocole :</strong> Visez 8 000-10 000 pas/jour (utilisez votre téléphone comme podomètre). Si vous êtes à 4 000, chaque tranche de 2 000 pas supplémentaires brûle ~100 kcal.</p>
 
 <h2>Solution 3 : Implémentez un diet break</h2>
 
@@ -517,16 +517,16 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 </blockquote>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"Le diet break n'est pas de la faiblesse. C'est une stratégie de conservation métabolique. Après 6-8 semaines de déficit, une semaine Ã  maintenance fait plus de bien que de mal."</em> — <strong>Dr. Layne Norton</strong>, PhD en sciences nutritionnelles
+💬 <strong>Avis d'expert :</strong> <em>"Le diet break n'est pas de la faiblesse. C'est une stratégie de conservation métabolique. Après 6-8 semaines de déficit, une semaine à maintenance fait plus de bien que de mal."</em> — <strong>Dr. Layne Norton</strong>, PhD en sciences nutritionnelles
 </blockquote>
 
-<p><strong>Protocole :</strong> Remontez vos calories Ã  maintenance pendant 7-14 jours. Augmentez principalement les glucides (+80-120 g). Gardez les protéines et lipides identiques.</p>
+<p><strong>Protocole :</strong> Remontez vos calories à maintenance pendant 7-14 jours. Augmentez principalement les glucides (+80-120 g). Gardez les protéines et lipides identiques.</p>
 
 <h2>Solution 4 : Ajustez le déficit calorique</h2>
 
 <p>Votre TDEE a changé. Vous avez perdu du poids, donc votre métabolisme a baissé. Les calories qui créaient un déficit de 500 kcal au début ne créent peut-être plus qu'un déficit de 100-200 kcal maintenant.</p>
 
-<p><strong>Protocole :</strong> Recalculez votre TDEE avec votre poids actuel. Réduisez de 100-150 kcal (principalement sur les glucides). Ne descendez jamais en dessous de MB Ã— 1,2.</p>
+<p><strong>Protocole :</strong> Recalculez votre TDEE avec votre poids actuel. Réduisez de 100-150 kcal (principalement sur les glucides). Ne descendez jamais en dessous de MB × 1,2.</p>
 
 <h2>Solution 5 : Améliorez votre sommeil</h2>
 
@@ -534,7 +534,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 🔬 <strong>Ce que dit la science :</strong> Nedeltcheva et al. (2010, <em>Annals of Internal Medicine</em>) ont comparé 8,5h vs 5,5h de sommeil pendant un déficit calorique. Les deux groupes ont perdu le même poids total, mais le groupe privé de sommeil a perdu <strong>60% plus de masse maigre</strong> et 55% moins de graisse. Le ratio muscle/graisse perdu était catastrophique avec un sommeil insuffisant.
 </blockquote>
 
-<p><strong>Protocole :</strong> Visez 7-9h de sommeil. Chambre Ã  18°C, pas d'écran 1h avant, dernier repas glucidique 2-3h avant le coucher (les glucides favorisent la production de sérotonine puis de mélatonine).</p>
+<p><strong>Protocole :</strong> Visez 7-9h de sommeil. Chambre à 18°C, pas d'écran 1h avant, dernier repas glucidique 2-3h avant le coucher (les glucides favorisent la production de sérotonine puis de mélatonine).</p>
 
 <h2>Solution 6 : Gérez le stress et le cortisol</h2>
 
@@ -550,11 +550,11 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p>Le cardio basse intensité (marche rapide, vélo léger) brûle des calories sans augmenter significativement le cortisol ni compromettre la récupération musculaire.</p>
 
-<p><strong>Protocole :</strong> Ajoutez 2-3 séances de 30-40 min de marche rapide (6-7 km/h). Dépense supplémentaire : ~150-200 kcal/séance. Équivalent Ã  une réduction calorique de 100 kcal/jour sur la semaine.</p>
+<p><strong>Protocole :</strong> Ajoutez 2-3 séances de 30-40 min de marche rapide (6-7 km/h). Dépense supplémentaire : ~150-200 kcal/séance. Équivalent à une réduction calorique de 100 kcal/jour sur la semaine.</p>
 
 <h2>Solution 8 : Refeed day stratégique</h2>
 
-<p>Un refeed est une journée Ã  surplus calorique modéré (+20-30% au-dessus de la maintenance), principalement via les glucides. Objectif : stimuler la leptine, hormone qui régule le métabolisme et la satiété.</p>
+<p>Un refeed est une journée à surplus calorique modéré (+20-30% au-dessus de la maintenance), principalement via les glucides. Objectif : stimuler la leptine, hormone qui régule le métabolisme et la satiété.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Dirlewanger et al. (2000, <em>American Journal of Clinical Nutrition</em>) ont montré qu'une suralimentation glucidique de 3 jours augmentait la leptine de 28% et le métabolisme de repos de 7%. Un seul refeed a un effet plus modeste (5-10% sur la leptine) mais psychologiquement puissant.
@@ -578,7 +578,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
     content: `
 <h1>Sèche Sans Compter les Calories : La Méthode Intuitive pour Homme</h1>
 
-<p>Peser chaque aliment, scanner chaque code-barre, calculer chaque macro... c'est efficace mais <strong>insoutenable pour la majorité des hommes</strong>. La bonne nouvelle ? Vous pouvez sécher sans jamais ouvrir MyFitnessPal — Ã  condition de suivre des règles structurelles précises.</p>
+<p>Peser chaque aliment, scanner chaque code-barre, calculer chaque macro... c'est efficace mais <strong>insoutenable pour la majorité des hommes</strong>. La bonne nouvelle ? Vous pouvez sécher sans jamais ouvrir MyFitnessPal — à condition de suivre des règles structurelles précises.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Gardner et al. (2018, étude DIETFITS, <em>JAMA</em>, n=609) ont montré qu'après 12 mois, les groupes qui suivaient des "règles alimentaires simples" (qualité des aliments, portions visuelles) perdaient autant de poids que ceux qui comptaient les calories — avec un taux d'adhérence supérieur de 23%.
@@ -586,10 +586,10 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h2>Le principe : créer un déficit par la structure, pas par les chiffres</h2>
 
-<p>Au lieu de compter, vous allez <strong>construire un environnement alimentaire</strong> qui rend le déficit automatique. La densité calorique, la satiété, et les habitudes font le travail Ã  votre place.</p>
+<p>Au lieu de compter, vous allez <strong>construire un environnement alimentaire</strong> qui rend le déficit automatique. La densité calorique, la satiété, et les habitudes font le travail à votre place.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"La meilleure diète est celle que vous pouvez suivre. Pour 80% des gens, compter les calories est un outil temporaire d'éducation, pas une stratégie Ã  vie. Les règles structurelles sont plus durables."</em> — <strong>Alan Aragon</strong>, chercheur en nutrition sportive
+💬 <strong>Avis d'expert :</strong> <em>"La meilleure diète est celle que vous pouvez suivre. Pour 80% des gens, compter les calories est un outil temporaire d'éducation, pas une stratégie à vie. Les règles structurelles sont plus durables."</em> — <strong>Alan Aragon</strong>, chercheur en nutrition sportive
 </blockquote>
 
 <h2>Règle 1 : La méthode de l'assiette</h2>
@@ -598,7 +598,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <ul>
 <li><strong>1/3 de l'assiette = protéines</strong> : une portion de la taille de votre paume (poulet, poisson, Å“ufs, viande maigre, tofu)</li>
-<li><strong>1/3 de l'assiette = légumes</strong> : Ã  volonté ou presque — brocoli, courgettes, haricots verts, épinards, salade</li>
+<li><strong>1/3 de l'assiette = légumes</strong> : à volonté ou presque — brocoli, courgettes, haricots verts, épinards, salade</li>
 <li><strong>1/3 de l'assiette = glucides complexes</strong> : un poing de riz complet, patate douce, quinoa, pâtes complètes</li>
 <li><strong>1 pouce de lipides</strong> : huile d'olive, avocat, noix — mesuré visuellement, pas au hasard</li>
 </ul>
@@ -607,9 +607,9 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 🔬 <strong>Ce que dit la science :</strong> Rolls (2009, <em>Physiology & Behavior</em>) a démontré que la densité énergétique des aliments (kcal/g) est le prédicteur n°1 de la quantité totale de calories consommées. Les légumes (0,1-0,5 kcal/g) et les protéines maigres (1,0-1,5 kcal/g) induisent la satiété avec beaucoup moins de calories que les aliments transformés (3-5 kcal/g).
 </blockquote>
 
-<h2>Règle 2 : Protéines Ã  chaque repas — non négociable</h2>
+<h2>Règle 2 : Protéines à chaque repas — non négociable</h2>
 
-<p>Visez une source de protéines Ã  chaque repas et collation. Sans compter, l'objectif est <strong>4-5 portions de protéines par jour</strong> (1 paume = ~30 g de protéines) :</p>
+<p>Visez une source de protéines à chaque repas et collation. Sans compter, l'objectif est <strong>4-5 portions de protéines par jour</strong> (1 paume = ~30 g de protéines) :</p>
 
 <ul>
 <li>Petit-déjeuner : 3-4 Å“ufs ou yaourt grec + whey</li>
@@ -619,12 +619,12 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"La distribution des protéines sur 3-4 repas est optimale pour la synthèse protéique musculaire. Visez 0,4-0,55 g/kg par repas, soit environ 30-45 g de protéines par repas pour un homme de 80 kg."</em> — <strong>Stuart Phillips</strong>, professeur Ã  l'Université McMaster, expert mondial en métabolisme protéique
+💬 <strong>Avis d'expert :</strong> <em>"La distribution des protéines sur 3-4 repas est optimale pour la synthèse protéique musculaire. Visez 0,4-0,55 g/kg par repas, soit environ 30-45 g de protéines par repas pour un homme de 80 kg."</em> — <strong>Stuart Phillips</strong>, professeur à l'Université McMaster, expert mondial en métabolisme protéique
 </blockquote>
 
 <h2>Règle 3 : Éliminez les calories liquides</h2>
 
-<p>Les boissons caloriques ne déclenchent presque aucune satiété. C'est le poste de dépense le plus facile Ã  couper :</p>
+<p>Les boissons caloriques ne déclenchent presque aucune satiété. C'est le poste de dépense le plus facile à couper :</p>
 
 <ul>
 <li>Sodas ↑ eau gazeuse + citron</li>
@@ -635,7 +635,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h2>Règle 4 : Le principe du "premier et dernier"</h2>
 
-<p>Commencez chaque repas par les protéines et les légumes. Finissez par les glucides. Résultat : vous êtes déjÃ  partiellement rassasié quand vous attaquez les féculents, donc vous en mangez naturellement moins.</p>
+<p>Commencez chaque repas par les protéines et les légumes. Finissez par les glucides. Résultat : vous êtes déjà partiellement rassasié quand vous attaquez les féculents, donc vous en mangez naturellement moins.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Shukla et al. (2017, <em>BMJ Open Diabetes Research & Care</em>) ont montré que manger les protéines et légumes AVANT les glucides réduisait le pic de glycémie post-prandial de 73% et l'insuline de 48%. Bonus indirect : moins de fringales dans les heures suivantes.
@@ -645,9 +645,9 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p>Il faut environ 20 minutes pour que les signaux de satiété (leptine, CCK, PYY) atteignent le cerveau. Manger vite = manger trop.</p>
 
-<p><strong>Astuce pratique :</strong> posez vos couverts entre chaque bouchée. Mâchez 15-20 fois. Ã‡a paraît ridicule — ça marche.</p>
+<p><strong>Astuce pratique :</strong> posez vos couverts entre chaque bouchée. Mâchez 15-20 fois. Ça paraît ridicule — ça marche.</p>
 
-<h2>Règle 6 : Préparez vos repas Ã  l'avance</h2>
+<h2>Règle 6 : Préparez vos repas à l'avance</h2>
 
 <p>Le moment où vous faites de mauvais choix ? Quand vous avez faim et rien de prêt. Le meal prep dominical élimine 90% des décisions alimentaires de la semaine.</p>
 
@@ -656,7 +656,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>80% de vos repas suivent les règles ci-dessus. 20% sont flexibles. Un repas social, un dessert occasionnel, un plat moins "optimal". Cette flexibilité <strong>augmente l'adhérence</strong> et rend la sèche soutenable sur 10 semaines.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"La rigidité alimentaire est le premier prédicteur de l'échec d'un régime. Les approches flexibles produisent de meilleurs résultats Ã  long terme que les approches rigides, même si les approches rigides semblent meilleures Ã  court terme."</em> — <strong>Dr. Layne Norton</strong>, PhD
+💬 <strong>Avis d'expert :</strong> <em>"La rigidité alimentaire est le premier prédicteur de l'échec d'un régime. Les approches flexibles produisent de meilleurs résultats à long terme que les approches rigides, même si les approches rigides semblent meilleures à court terme."</em> — <strong>Dr. Layne Norton</strong>, PhD
 </blockquote>
 
 <h2>Quand cette méthode ne suffit PAS</h2>
@@ -668,7 +668,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <li>Vous préparez une compétition ou un shooting photo</li>
 </ul>
 
-<p>Pour passer de 25% Ã  15% de MG, l'approche intuitive fonctionne très bien. En dessous de 15%, la précision du tracking devient nécessaire.</p>
+<p>Pour passer de 25% à 15% de MG, l'approche intuitive fonctionne très bien. En dessous de 15%, la précision du tracking devient nécessaire.</p>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
 <h3 style="margin-top:0;">🍽½ï¸ Menus structurés, zéro calcul</h3>
@@ -698,10 +698,10 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h3>La testostérone décline — mais c'est gérable</h3>
 
-<p>La testostérone totale diminue de ~1-2% par an après 30 ans. À 50 ans, vous avez potentiellement 20-30% de moins qu'Ã  25 ans. Mais la musculation et la nutrition peuvent partiellement compenser.</p>
+<p>La testostérone totale diminue de ~1-2% par an après 30 ans. À 50 ans, vous avez potentiellement 20-30% de moins qu'à 25 ans. Mais la musculation et la nutrition peuvent partiellement compenser.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Travison et al. (2007, <em>Journal of Clinical Endocrinology & Metabolism</em>) ont suivi 1 667 hommes de 40 Ã  70 ans pendant 15 ans. La testostérone totale déclinait de 1,6%/an et la testostérone libre de 2-3%/an. Cependant, Hayes & Elliott (2019) ont montré que l'entraînement en résistance augmente la testostérone de 15-20% dans les heures suivant la séance — un effet chronique bénéfique.
+🔬 <strong>Ce que dit la science :</strong> Travison et al. (2007, <em>Journal of Clinical Endocrinology & Metabolism</em>) ont suivi 1 667 hommes de 40 à 70 ans pendant 15 ans. La testostérone totale déclinait de 1,6%/an et la testostérone libre de 2-3%/an. Cependant, Hayes & Elliott (2019) ont montré que l'entraînement en résistance augmente la testostérone de 15-20% dans les heures suivant la séance — un effet chronique bénéfique.
 </blockquote>
 
 <h3>La sarcopénie : la menace silencieuse</h3>
@@ -732,53 +732,53 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h4>Jour A (lundi)</h4>
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th></tr>
-<tr><td>Squat goblet ou barre</td><td>3 Ã— 8-10</td><td>2-3 min</td></tr>
-<tr><td>Développé couché haltères</td><td>3 Ã— 8-10</td><td>2 min</td></tr>
-<tr><td>Rowing haltère unilatéral</td><td>3 Ã— 10-12</td><td>90 sec</td></tr>
-<tr><td>Développé épaules haltères</td><td>3 Ã— 10-12</td><td>90 sec</td></tr>
-<tr><td>Planche</td><td>3 Ã— 30-45 sec</td><td>60 sec</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th></tr>
+<tr><td>Squat goblet ou barre</td><td>3 × 8-10</td><td>2-3 min</td></tr>
+<tr><td>Développé couché haltères</td><td>3 × 8-10</td><td>2 min</td></tr>
+<tr><td>Rowing haltère unilatéral</td><td>3 × 10-12</td><td>90 sec</td></tr>
+<tr><td>Développé épaules haltères</td><td>3 × 10-12</td><td>90 sec</td></tr>
+<tr><td>Planche</td><td>3 × 30-45 sec</td><td>60 sec</td></tr>
 </table>
 
 <h4>Jour B (mercredi)</h4>
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th></tr>
-<tr><td>Soulevé de terre roumain</td><td>3 Ã— 8-10</td><td>2-3 min</td></tr>
-<tr><td>Tractions ou tirage vertical</td><td>3 Ã— 8-10</td><td>2 min</td></tr>
-<tr><td>Développé incliné haltères</td><td>3 Ã— 10-12</td><td>90 sec</td></tr>
-<tr><td>Fentes haltères</td><td>3 Ã— 10/jambe</td><td>90 sec</td></tr>
-<tr><td>Pallof press</td><td>3 Ã— 12/côté</td><td>60 sec</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th></tr>
+<tr><td>Soulevé de terre roumain</td><td>3 × 8-10</td><td>2-3 min</td></tr>
+<tr><td>Tractions ou tirage vertical</td><td>3 × 8-10</td><td>2 min</td></tr>
+<tr><td>Développé incliné haltères</td><td>3 × 10-12</td><td>90 sec</td></tr>
+<tr><td>Fentes haltères</td><td>3 × 10/jambe</td><td>90 sec</td></tr>
+<tr><td>Pallof press</td><td>3 × 12/côté</td><td>60 sec</td></tr>
 </table>
 
 <h4>Jour C (vendredi)</h4>
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th></tr>
-<tr><td>Presse Ã  cuisses</td><td>3 Ã— 10-12</td><td>2 min</td></tr>
-<tr><td>Développé couché barre</td><td>3 Ã— 6-8</td><td>2-3 min</td></tr>
-<tr><td>Rowing barre</td><td>3 Ã— 8-10</td><td>2 min</td></tr>
-<tr><td>Face pulls</td><td>3 Ã— 15</td><td>60 sec</td></tr>
-<tr><td>Relevé de jambes suspendu</td><td>3 Ã— 10-12</td><td>60 sec</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th></tr>
+<tr><td>Presse à cuisses</td><td>3 × 10-12</td><td>2 min</td></tr>
+<tr><td>Développé couché barre</td><td>3 × 6-8</td><td>2-3 min</td></tr>
+<tr><td>Rowing barre</td><td>3 × 8-10</td><td>2 min</td></tr>
+<tr><td>Face pulls</td><td>3 × 15</td><td>60 sec</td></tr>
+<tr><td>Relevé de jambes suspendu</td><td>3 × 10-12</td><td>60 sec</td></tr>
 </table>
 
 <h2>La nutrition après 45 ans en sèche</h2>
 
 <ul>
-<li><strong>Protéines</strong> : 2,0-2,2 g/kg — plus élevé que les jeunes Ã  cause de la résistance anabolique</li>
+<li><strong>Protéines</strong> : 2,0-2,2 g/kg — plus élevé que les jeunes à cause de la résistance anabolique</li>
 <li><strong>Lipides</strong> : 0,9-1,1 g/kg — ne descendez jamais en dessous de 0,8 g/kg (testostérone)</li>
-<li><strong>Glucides</strong> : le reste, priorité aux sources Ã  index glycémique bas</li>
+<li><strong>Glucides</strong> : le reste, priorité aux sources à index glycémique bas</li>
 <li><strong>Leucine</strong> : visez 3-4 g par repas (40 g de whey en contiennent ~4 g)</li>
 </ul>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Wall et al. (2015, <em>Journal of Nutrition</em>) ont montré que les adultes de 65+ ans nécessitaient ~0,40 g/kg de protéines par repas pour maximiser la synthèse protéique musculaire, contre ~0,25 g/kg chez les jeunes. Ce seuil plus élevé est lié Ã  la résistance anabolique liée Ã  l'âge.
+🔬 <strong>Ce que dit la science :</strong> Wall et al. (2015, <em>Journal of Nutrition</em>) ont montré que les adultes de 65+ ans nécessitaient ~0,40 g/kg de protéines par repas pour maximiser la synthèse protéique musculaire, contre ~0,25 g/kg chez les jeunes. Ce seuil plus élevé est lié à la résistance anabolique liée à l'âge.
 </blockquote>
 
 <h2>Résultats réalistes sur 10 semaines</h2>
 
 <ul>
 <li><strong>Perte de graisse</strong> : 3-5 kg (0,3-0,5 kg/semaine)</li>
-<li><strong>Tour de taille</strong> : -4 Ã  -6 cm</li>
-<li><strong>Force</strong> : +15 Ã  25% si débutant, maintien si expérimenté</li>
+<li><strong>Tour de taille</strong> : -4 à -6 cm</li>
+<li><strong>Force</strong> : +15 à 25% si débutant, maintien si expérimenté</li>
 <li><strong>Énergie et humeur</strong> : amélioration notable après 3-4 semaines</li>
 </ul>
 
@@ -787,7 +787,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 </blockquote>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">🎯 Programme adapté Ã  votre âge</h3>
+<h3 style="margin-top:0;">🎯 Programme adapté à votre âge</h3>
 <p>Le programme <strong>Sèche 10 Semaines</strong> inclut des variantes spécifiques pour les hommes de 40-60 ans : charges adaptées, volume réduit, échauffements renforcés et nutrition calibrée pour la résistance anabolique.</p>
 <p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
@@ -819,14 +819,14 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>200 g de fromage blanc 0% + 1 cc de cannelle. <strong>20 g de protéines, 8 g de glucides, 0 g de lipides.</strong> La caséine du fromage blanc se digère lentement — parfait entre les repas ou le soir.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Res et al. (2012, <em>Medicine & Science in Sports & Exercise</em>) ont montré que 40 g de caséine avant le coucher augmentaient la synthèse protéique musculaire de 22% pendant la nuit chez des hommes s'entraînant en résistance, comparé Ã  un placebo.
+🔬 <strong>Ce que dit la science :</strong> Res et al. (2012, <em>Medicine & Science in Sports & Exercise</em>) ont montré que 40 g de caséine avant le coucher augmentaient la synthèse protéique musculaire de 22% pendant la nuit chez des hommes s'entraînant en résistance, comparé à un placebo.
 </blockquote>
 
 <h3>3. Å’ufs durs (2-3 pièces) (150-220 kcal)</h3>
 <p>Préparez-en 6-8 le dimanche. <strong>13-19 g de protéines, 10-15 g de lipides.</strong> Pratiques, transportables, rassasiants.</p>
 
 <h3>4. Thon en conserve + moutarde (110 kcal)</h3>
-<p>1 boîte de thon au naturel (130 g) + 1 cc de moutarde. <strong>27 g de protéines, <1 g de lipides.</strong> Limitez Ã  2-3 boîtes/semaine (mercure).</p>
+<p>1 boîte de thon au naturel (130 g) + 1 cc de moutarde. <strong>27 g de protéines, <1 g de lipides.</strong> Limitez à 2-3 boîtes/semaine (mercure).</p>
 
 <h3>5. Skyr nature (100-120 kcal)</h3>
 <p>200 g de Skyr nature. <strong>22 g de protéines, 8 g de glucides, <1 g de lipides.</strong> Texture épaisse et crémeuse — plus satisfaisant qu'un yaourt classique.</p>
@@ -877,7 +877,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
 <h3 style="margin-top:0;">🥗 Collations intégrées dans vos menus</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> inclut des collations pré-calculées dans chaque journée alimentaire, adaptées Ã  vos macros et votre timing d'entraînement.</p>
+<p>Le programme <strong>Sèche 10 Semaines</strong> inclut des collations pré-calculées dans chaque journée alimentaire, adaptées à vos macros et votre timing d'entraînement.</p>
 <p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
@@ -891,7 +891,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
     content: `
 <h1>Programme HIIT Brûle-Graisse Homme : 4 Séances de 20 Minutes</h1>
 
-<p>Le HIIT (High-Intensity Interval Training) est l'outil cardio le plus efficace en termes de <strong>temps investi vs graisse brûlée</strong>. En 20 minutes, vous créez un déficit calorique comparable Ã  40-50 minutes de cardio classique — avec un bonus métabolique qui dure des heures.</p>
+<p>Le HIIT (High-Intensity Interval Training) est l'outil cardio le plus efficace en termes de <strong>temps investi vs graisse brûlée</strong>. En 20 minutes, vous créez un déficit calorique comparable à 40-50 minutes de cardio classique — avec un bonus métabolique qui dure des heures.</p>
 
 <p>Mais attention : mal utilisé, le HIIT détruit votre récupération et compromet vos séances de musculation. Voici comment l'intégrer intelligemment dans votre sèche.</p>
 
@@ -906,7 +906,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Après une séance de HIIT intense, votre métabolisme reste élevé pendant 12-24 heures. C'est l'EPOC — votre corps dépense de l'énergie supplémentaire pour se remettre de l'effort.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Knab et al. (2011, <em>Medicine & Science in Sports & Exercise</em>) ont mesuré que 45 minutes d'exercice intense augmentaient le métabolisme de 190 kcal sur les 14 heures suivantes. Pour une séance HIIT de 20 minutes, l'EPOC est estimé Ã  50-80 kcal supplémentaires — modeste mais réel.
+🔬 <strong>Ce que dit la science :</strong> Knab et al. (2011, <em>Medicine & Science in Sports & Exercise</em>) ont mesuré que 45 minutes d'exercice intense augmentaient le métabolisme de 190 kcal sur les 14 heures suivantes. Pour une séance HIIT de 20 minutes, l'EPOC est estimé à 50-80 kcal supplémentaires — modeste mais réel.
 </blockquote>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
@@ -919,7 +919,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p><strong>Durée totale :</strong> 16 minutes | <strong>Matériel :</strong> aucun</p>
 
-<p>Structure : 8 rounds de (20 sec effort maximal / 10 sec repos) Ã— 2 blocs, avec 2 min de récupération entre les blocs.</p>
+<p>Structure : 8 rounds de (20 sec effort maximal / 10 sec repos) × 2 blocs, avec 2 min de récupération entre les blocs.</p>
 
 <p><strong>Bloc A (8 min) :</strong></p>
 <ol>
@@ -938,18 +938,18 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p><strong>Bloc B (8 min) :</strong> même séquence.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Tabata et al. (1996, <em>Medicine & Science in Sports & Exercise</em>) ont montré que 4 minutes de HIIT 20/10 amélioraient Ã  la fois la VO2max (+14%) et la capacité anaérobie (+28%) en 6 semaines, alors que 60 minutes de cardio modéré n'amélioraient que la VO2max.
+🔬 <strong>Ce que dit la science :</strong> Tabata et al. (1996, <em>Medicine & Science in Sports & Exercise</em>) ont montré que 4 minutes de HIIT 20/10 amélioraient à la fois la VO2max (+14%) et la capacité anaérobie (+28%) en 6 semaines, alors que 60 minutes de cardio modéré n'amélioraient que la VO2max.
 </blockquote>
 
 <h3>Séance 2 : Intervalles Sprint (intermédiaire)</h3>
 
 <p><strong>Durée totale :</strong> 20 minutes | <strong>Matériel :</strong> vélo d'appartement ou piste</p>
 
-<p>Échauffement : 3 min Ã  intensité légère</p>
+<p>Échauffement : 3 min à intensité légère</p>
 <ul>
-<li>8 Ã— (30 sec sprint maximal / 90 sec récupération active)</li>
+<li>8 × (30 sec sprint maximal / 90 sec récupération active)</li>
 </ul>
-<p>Retour au calme : 3 min Ã  intensité légère</p>
+<p>Retour au calme : 3 min à intensité légère</p>
 
 <p><strong>Dépense estimée :</strong> 200-300 kcal selon votre poids et votre intensité.</p>
 
@@ -974,18 +974,18 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p><strong>Durée totale :</strong> 18 minutes | <strong>Matériel :</strong> rameur</p>
 
-<p>Échauffement : 3 min Ã  20 coups/min</p>
+<p>Échauffement : 3 min à 20 coups/min</p>
 <ul>
-<li>6 Ã— (1 min effort intense Ã  28-32 coups/min / 1 min récupération Ã  18-20 coups/min)</li>
+<li>6 × (1 min effort intense à 28-32 coups/min / 1 min récupération à 18-20 coups/min)</li>
 </ul>
-<p>Retour au calme : 3 min Ã  18 coups/min</p>
+<p>Retour au calme : 3 min à 18 coups/min</p>
 
 <p>Le rameur est idéal : faible impact articulaire, travail full body (80% jambes, 20% haut du corps), excellente dépense calorique.</p>
 
 <h2>Comment intégrer le HIIT dans votre programme de sèche</h2>
 
 <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:20px;margin:20px 0;border-radius:8px;">
-<strong>âš ï¸ Règles d'intégration :</strong>
+<strong>⚠ï¸ Règles d'intégration :</strong>
 <ul style="margin-bottom:0;">
 <li>Maximum 2-3 séances HIIT par semaine en sèche</li>
 <li>Jamais le même jour qu'une séance de musculation jambes</li>
@@ -1030,7 +1030,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h2>Erreur 1 : Déficit trop agressif</h2>
 
-<p>Manger 1 200 kcal quand votre TDEE est Ã  2 700 kcal. Résultat : perte de muscle massive, effondrement hormonal, fatigue chronique, et rebond garanti.</p>
+<p>Manger 1 200 kcal quand votre TDEE est à 2 700 kcal. Résultat : perte de muscle massive, effondrement hormonal, fatigue chronique, et rebond garanti.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Garthe et al. (2011, <em>International Journal of Sport Nutrition</em>) ont comparé un déficit lent (0,7% du poids/semaine, ~500 kcal/jour) vs rapide (1,4%/semaine, ~1 000 kcal/jour) chez des athlètes. Le groupe lent a <strong>gagné</strong> 2,1% de masse maigre. Le groupe rapide en a <strong>perdu</strong> 0,2%. Les deux ont perdu la même quantité de graisse sur la durée totale.
@@ -1076,13 +1076,13 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p><strong>La solution :</strong> 7-9h de sommeil par nuit. C'est aussi important que votre alimentation.</p>
 
-<h2>Erreur 6 : Se fier uniquement Ã  la balance</h2>
+<h2>Erreur 6 : Se fier uniquement à la balance</h2>
 
 <p>La balance ne distingue pas graisse, muscle, eau et contenu intestinal. Vous pouvez perdre 1 kg de graisse et gagner 1 kg d'eau ↑ la balance ne bouge pas ↑ vous paniquez et coupez encore plus de calories.</p>
 
 <p><strong>La solution :</strong> combinez pesée quotidienne (moyenne hebdomadaire), tour de taille, photos mensuelles et force en salle.</p>
 
-<h2>Erreur 7 : Couper les lipides Ã  zéro</h2>
+<h2>Erreur 7 : Couper les lipides à zéro</h2>
 
 <p>Les régimes "zéro gras" des années 90 sont morts. Les lipides sont essentiels pour la testostérone, les hormones thyroïdiennes et la santé cérébrale.</p>
 
@@ -1102,7 +1102,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p>10 semaines de déficit continu sans pause = adaptation métabolique maximale, leptine au plancher, cortisol au plafond.</p>
 
-<p><strong>La solution :</strong> 1 refeed/semaine (glucides augmentés de 100-150 g) + 1 diet break d'une semaine Ã  maintenance après 6-8 semaines de déficit.</p>
+<p><strong>La solution :</strong> 1 refeed/semaine (glucides augmentés de 100-150 g) + 1 diet break d'une semaine à maintenance après 6-8 semaines de déficit.</p>
 
 <h2>Erreur 10 : Changer de programme chaque semaine</h2>
 
@@ -1113,7 +1113,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Reprendre d'un coup votre alimentation normale après 10 semaines de sèche ↑ reprise de graisse rapide et effet rebond.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Trexler et al. (2014, <em>Journal of the ISSN</em>) recommandent un reverse diet progressif après la sèche : augmentez les calories de 100-150 kcal/semaine (principalement glucides) jusqu'Ã  atteindre votre nouveau TDEE. Cela minimise le regain de graisse tout en restaurant le métabolisme.
+🔬 <strong>Ce que dit la science :</strong> Trexler et al. (2014, <em>Journal of the ISSN</em>) recommandent un reverse diet progressif après la sèche : augmentez les calories de 100-150 kcal/semaine (principalement glucides) jusqu'à atteindre votre nouveau TDEE. Cela minimise le regain de graisse tout en restaurant le métabolisme.
 </blockquote>
 
 <p><strong>La solution :</strong> après la sèche, augmentez de 100-150 kcal par semaine pendant 4-6 semaines.</p>
@@ -1151,7 +1151,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 </blockquote>
 
 <div style="background:#fce4ec;border-left:4px solid #e53935;padding:20px;margin:20px 0;border-radius:8px;">
-<strong>🚨 Prérequis :</strong> Ce programme accéléré n'est PAS pour les débutants complets ni les hommes en surpoids important (>30% MG). Il est conçu pour les hommes qui s'entraînent déjÃ  depuis au moins 3 mois et qui veulent un "coup de boost" rapide.
+<strong>🚨 Prérequis :</strong> Ce programme accéléré n'est PAS pour les débutants complets ni les hommes en surpoids important (>30% MG). Il est conçu pour les hommes qui s'entraînent déjà depuis au moins 3 mois et qui veulent un "coup de boost" rapide.
 </div>
 
 <h2>Les paramètres du programme express</h2>
@@ -1160,7 +1160,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p>Plus agressif qu'une sèche classique (20%). Pour un homme de 80 kg avec un TDEE de 2 600 kcal :</p>
 <ul>
-<li>Cible : 2 600 Ã— 0,72 = <strong>~1 870 kcal/jour</strong></li>
+<li>Cible : 2 600 × 0,72 = <strong>~1 870 kcal/jour</strong></li>
 <li>Perte attendue : 0,7-1% du poids de corps par semaine, soit 0,6-0,8 kg/semaine</li>
 <li>Total sur 4 semaines : <strong>2-4 kg de graisse pure</strong> (+ 1-2 kg d'eau et de glycogène)</li>
 </ul>
@@ -1170,7 +1170,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Plus le déficit est agressif, plus les protéines doivent être élevées. C'est la loi de la préservation musculaire.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"Pour une perte de poids rapide en préservant le muscle, les protéines doivent être au maximum de la fourchette recommandée. Je mets mes clients Ã  2,5 g/kg minimum pour les déficits agressifs de courte durée."</em> — <strong>Menno Henselmans</strong>
+💬 <strong>Avis d'expert :</strong> <em>"Pour une perte de poids rapide en préservant le muscle, les protéines doivent être au maximum de la fourchette recommandée. Je mets mes clients à 2,5 g/kg minimum pour les déficits agressifs de courte durée."</em> — <strong>Menno Henselmans</strong>
 </blockquote>
 
 <h3>Lipides : 0,8 g/kg (minimum fonctionnel)</h3>
@@ -1184,7 +1184,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h3>Jour d'entraînement (~1 950 kcal)</h3>
 <ul>
 <li><strong>Petit-déjeuner</strong> : 4 blancs d'Å“uf + 1 Å“uf entier + 40 g de flocons d'avoine + 100 g de myrtilles (350 kcal)</li>
-<li><strong>Déjeuner</strong> : 180 g de poulet grillé + 150 g de riz complet cuit + légumes verts Ã  volonté (450 kcal)</li>
+<li><strong>Déjeuner</strong> : 180 g de poulet grillé + 150 g de riz complet cuit + légumes verts à volonté (450 kcal)</li>
 <li><strong>Collation pré-entraînement</strong> : 30 g de whey + 1 banane (250 kcal)</li>
 <li><strong>Post-entraînement</strong> : 30 g de whey + 30 g de dextrose (220 kcal)</li>
 <li><strong>Dîner</strong> : 200 g de saumon + 200 g de patate douce + brocoli (530 kcal)</li>
@@ -1216,25 +1216,25 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 </ul>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Longland et al. (2016, <em>American Journal of Clinical Nutrition</em>) ont soumis des hommes Ã  un déficit de 40% (très agressif) pendant 4 semaines avec 2,4 g/kg de protéines et un programme combiné musculation + HIIT. Résultat : -4,8 kg de graisse et +1,2 kg de masse maigre. La clé : protéines très élevées et musculation intense.
+🔬 <strong>Ce que dit la science :</strong> Longland et al. (2016, <em>American Journal of Clinical Nutrition</em>) ont soumis des hommes à un déficit de 40% (très agressif) pendant 4 semaines avec 2,4 g/kg de protéines et un programme combiné musculation + HIIT. Résultat : -4,8 kg de graisse et +1,2 kg de masse maigre. La clé : protéines très élevées et musculation intense.
 </blockquote>
 
 <h2>Résultats attendus sur 4 semaines</h2>
 
 <ul>
-<li><strong>Semaine 1</strong> : -1,5 Ã  -2 kg (dont eau et glycogène)</li>
-<li><strong>Semaine 2</strong> : -0,6 Ã  -0,8 kg (graisse pure)</li>
-<li><strong>Semaine 3</strong> : -0,5 Ã  -0,7 kg</li>
-<li><strong>Semaine 4</strong> : -0,5 Ã  -0,7 kg</li>
+<li><strong>Semaine 1</strong> : -1,5 à -2 kg (dont eau et glycogène)</li>
+<li><strong>Semaine 2</strong> : -0,6 à -0,8 kg (graisse pure)</li>
+<li><strong>Semaine 3</strong> : -0,5 à -0,7 kg</li>
+<li><strong>Semaine 4</strong> : -0,5 à -0,7 kg</li>
 <li><strong>Total</strong> : 3-4 kg sur la balance (2-3 kg de graisse + 1-1,5 kg d'eau/glycogène)</li>
 </ul>
 
 <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:20px;margin:20px 0;border-radius:8px;">
-<strong>âš ï¸ Après les 4 semaines :</strong> Passez OBLIGATOIREMENT en reverse diet progressif (+100-150 kcal/semaine) ou en sèche classique Ã  -20% de déficit. Ne prolongez pas le programme express au-delÃ  de 4 semaines — le risque de perte musculaire et d'adaptation métabolique devient trop élevé.
+<strong>⚠ï¸ Après les 4 semaines :</strong> Passez OBLIGATOIREMENT en reverse diet progressif (+100-150 kcal/semaine) ou en sèche classique à -20% de déficit. Ne prolongez pas le programme express au-delà de 4 semaines — le risque de perte musculaire et d'adaptation métabolique devient trop élevé.
 </div>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">âš¡ Programme express intégré</h3>
+<h3 style="margin-top:0;">⚡ Programme express intégré</h3>
 <p>Le programme <strong>Sèche 10 Semaines</strong> peut être configuré en mode accéléré sur les 4 premières semaines, puis transition vers un rythme soutenable pour les 6 semaines restantes.</p>
 <p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
@@ -1252,17 +1252,17 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Les poignées d'amour sont la <strong>bête noire des hommes en sèche</strong>. Elles arrivent en premier et partent en dernier. Ce n'est pas un hasard — c'est de la biologie. La distribution de graisse chez l'homme est principalement abdominale et latérale, sous l'influence de la testostérone et du cortisol.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Vispute et al. (2011, <em>Journal of Strength & Conditioning Research</em>) ont soumis des sujets Ã  6 semaines d'exercices abdominaux quotidiens SANS déficit calorique. Résultat : zéro réduction de la graisse abdominale. Les abdominaux étaient plus forts, mais la graisse n'avait pas bougé. La perte de graisse localisée N'EXISTE PAS.
+🔬 <strong>Ce que dit la science :</strong> Vispute et al. (2011, <em>Journal of Strength & Conditioning Research</em>) ont soumis des sujets à 6 semaines d'exercices abdominaux quotidiens SANS déficit calorique. Résultat : zéro réduction de la graisse abdominale. Les abdominaux étaient plus forts, mais la graisse n'avait pas bougé. La perte de graisse localisée N'EXISTE PAS.
 </blockquote>
 
 <h2>Pourquoi la graisse des poignées d'amour est si tenace</h2>
 
 <h3>La densité en récepteurs alpha-2</h3>
 
-<p>Les cellules graisseuses de la zone abdominale et des flancs ont une densité plus élevée de <strong>récepteurs alpha-2 adrénergiques</strong> par rapport aux récepteurs bêta-2. Les récepteurs alpha-2 inhibent la lipolyse (libération des acides gras). Résultat : cette graisse résiste davantage Ã  la mobilisation.</p>
+<p>Les cellules graisseuses de la zone abdominale et des flancs ont une densité plus élevée de <strong>récepteurs alpha-2 adrénergiques</strong> par rapport aux récepteurs bêta-2. Les récepteurs alpha-2 inhibent la lipolyse (libération des acides gras). Résultat : cette graisse résiste davantage à la mobilisation.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"La graisse 'tenace' est réelle, pas un mythe. Les zones Ã  forte densité de récepteurs alpha-2 (abdomen, bas du dos, hanches chez l'homme) sont les dernières Ã  se vider. La seule solution : continuer le déficit calorique suffisamment longtemps. Il n'y a pas de raccourci."</em> — <strong>Lyle McDonald</strong>, auteur de <em>The Stubborn Fat Solution</em>
+💬 <strong>Avis d'expert :</strong> <em>"La graisse 'tenace' est réelle, pas un mythe. Les zones à forte densité de récepteurs alpha-2 (abdomen, bas du dos, hanches chez l'homme) sont les dernières à se vider. La seule solution : continuer le déficit calorique suffisamment longtemps. Il n'y a pas de raccourci."</em> — <strong>Lyle McDonald</strong>, auteur de <em>The Stubborn Fat Solution</em>
 </blockquote>
 
 <h3>Le rôle du cortisol</h3>
@@ -1300,33 +1300,33 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Les abdominaux ne font PAS disparaître les poignées d'amour — mais ils créent le muscle qui sera visible une fois la graisse partie :</p>
 
 <ul>
-<li><strong>Pallof press</strong> : 3 Ã— 12/côté — travaille les obliques en anti-rotation (pas en crunch latéral qui épaissit la taille)</li>
-<li><strong>Farmer's walk unilatéral</strong> : 3 Ã— 30m/côté — obliques et stabilisation du tronc</li>
-<li><strong>Ab wheel rollout</strong> : 3 Ã— 10-12 — grand droit et transverse</li>
-<li><strong>Dead bug</strong> : 3 Ã— 10/côté — stabilisation profonde</li>
+<li><strong>Pallof press</strong> : 3 × 12/côté — travaille les obliques en anti-rotation (pas en crunch latéral qui épaissit la taille)</li>
+<li><strong>Farmer's walk unilatéral</strong> : 3 × 30m/côté — obliques et stabilisation du tronc</li>
+<li><strong>Ab wheel rollout</strong> : 3 × 10-12 — grand droit et transverse</li>
+<li><strong>Dead bug</strong> : 3 × 10/côté — stabilisation profonde</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
 💬 <strong>Avis d'expert :</strong> <em>"Arrêtez les crunchs obliques avec poids qui épaississent votre taille. Faites des exercices anti-latéroflexion et anti-rotation — Pallof press, farmer's walk unilatéral. Ils sculptent les obliques sans élargir."</em> — <strong>Jeff Nippard</strong>
 </blockquote>
 
-<h2>Protocole avancé : le cardio Ã  jeun ciblé</h2>
+<h2>Protocole avancé : le cardio à jeun ciblé</h2>
 
-<p>Pour les hommes déjÃ  en dessous de 15% MG qui veulent cibler les dernières poches de graisse tenace :</p>
+<p>Pour les hommes déjà en dessous de 15% MG qui veulent cibler les dernières poches de graisse tenace :</p>
 
 <ul>
-<li>Marche rapide Ã  jeun le matin (30-45 min, 6-7 km/h)</li>
+<li>Marche rapide à jeun le matin (30-45 min, 6-7 km/h)</li>
 <li>Optionnel : 200 mg de caféine 30 min avant (augmente la mobilisation des acides gras via les catécholamines)</li>
 <li>Premier repas riche en protéines dans l'heure suivante</li>
 </ul>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Schoenfeld et al. (2014, <em>Journal of the ISSN</em>) ont montré que le cardio Ã  jeun ne brûle PAS plus de graisse totale que le cardio nourri sur 24h. Cependant, certains chercheurs comme Lyle McDonald argumentent que pour la graisse tenace spécifiquement (récepteurs alpha-2), l'état Ã  jeun avec catécholamines élevées peut avoir un léger avantage de mobilisation — mais l'effet reste modeste.
+🔬 <strong>Ce que dit la science :</strong> Schoenfeld et al. (2014, <em>Journal of the ISSN</em>) ont montré que le cardio à jeun ne brûle PAS plus de graisse totale que le cardio nourri sur 24h. Cependant, certains chercheurs comme Lyle McDonald argumentent que pour la graisse tenace spécifiquement (récepteurs alpha-2), l'état à jeun avec catécholamines élevées peut avoir un léger avantage de mobilisation — mais l'effet reste modeste.
 </blockquote>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
 <h3 style="margin-top:0;">🎯 Perdez les poignées d'amour durablement</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> est calibré pour vous amener dans la zone où les poignées d'amour commencent Ã  fondre — avec une stratégie nutritionnelle et un entraînement qui ciblent la graisse abdominale tenace.</p>
+<p>Le programme <strong>Sèche 10 Semaines</strong> est calibré pour vous amener dans la zone où les poignées d'amour commencent à fondre — avec une stratégie nutritionnelle et un entraînement qui ciblent la graisse abdominale tenace.</p>
 <p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
@@ -1342,7 +1342,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <p>La whey est le complément le plus utilisé en sèche — et pour cause. C'est la source de protéines avec le <strong>meilleur rapport qualité/calories/prix/praticité</strong>. Mais entre isolate, concentrate, hydrolysée, native... le choix est un champ de mines marketing.</p>
 
-<p>Ce guide coupe Ã  travers le bruit. Voici ce que dit vraiment la science — et ce dont vous avez réellement besoin.</p>
+<p>Ce guide coupe à travers le bruit. Voici ce que dit vraiment la science — et ce dont vous avez réellement besoin.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Morton et al. (2018, <em>British Journal of Sports Medicine</em>, méta-analyse de 49 études, n=1 863) ont conclu que la supplémentation en protéines augmente significativement les gains de masse musculaire (+0,3 kg) et de force (+2,49 kg au 1RM) chez les personnes pratiquant la musculation. L'effet est plus marqué chez les sujets entraînés et en déficit calorique.
@@ -1386,11 +1386,11 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <ul>
 <li><strong>1-2 scoops/jour</strong> (25-50 g de protéines) = la dose utile pour la plupart des hommes</li>
 <li><strong>Maximum recommandé via suppléments</strong> : 40-50% de votre apport protéique total. Le reste doit venir d'aliments entiers</li>
-<li><strong>Pour un homme de 80 kg Ã  2,2 g/kg</strong> : 176 g de protéines/jour ↑ ~90 g de whey max (le reste en viande, poisson, Å“ufs, produits laitiers)</li>
+<li><strong>Pour un homme de 80 kg à 2,2 g/kg</strong> : 176 g de protéines/jour ↑ ~90 g de whey max (le reste en viande, poisson, Å“ufs, produits laitiers)</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"La dose de 20-40 g de protéines par prise est le sweet spot pour maximiser la synthèse protéique musculaire. Au-delÃ , il y a un plateau de stimulation — les acides aminés supplémentaires sont oxydés comme carburant, pas utilisés pour construire du muscle."</em> — <strong>Stuart Phillips</strong>, Université McMaster
+💬 <strong>Avis d'expert :</strong> <em>"La dose de 20-40 g de protéines par prise est le sweet spot pour maximiser la synthèse protéique musculaire. Au-delà, il y a un plateau de stimulation — les acides aminés supplémentaires sont oxydés comme carburant, pas utilisés pour construire du muscle."</em> — <strong>Stuart Phillips</strong>, Université McMaster
 </blockquote>
 
 <h2>Timing : quand prendre sa whey</h2>
@@ -1410,15 +1410,15 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Critères de qualité, par ordre d'importance :</p>
 
 <ol>
-<li><strong>Profil protéique</strong> : >80% de protéines (vérifiez l'étiquette : protéines/100g Ã· calories/100g Ã— 400 devrait être >80)</li>
+<li><strong>Profil protéique</strong> : >80% de protéines (vérifiez l'étiquette : protéines/100g ÷ calories/100g × 400 devrait être >80)</li>
 <li><strong>Certification tierce</strong> : Informed Sport, NSF, ou labo indépendant</li>
-<li><strong>Liste d'ingrédients courte</strong> : protéines de lactosérum, arôme, édulcorant. Méfiez-vous des listes Ã  rallonge</li>
+<li><strong>Liste d'ingrédients courte</strong> : protéines de lactosérum, arôme, édulcorant. Méfiez-vous des listes à rallonge</li>
 <li><strong>Goût</strong> : si ça vous dégoûte, vous ne la prendrez pas. Testez plusieurs saveurs</li>
 </ol>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
-<h3 style="margin-top:0;">🥤 Protéines intégrées Ã  vos menus</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> intègre la whey dans vos menus quotidiens quand c'est pertinent — avec les dosages, le timing et les recettes de shakes adaptés Ã  votre phase de sèche.</p>
+<h3 style="margin-top:0;">🥤 Protéines intégrées à vos menus</h3>
+<p>Le programme <strong>Sèche 10 Semaines</strong> intègre la whey dans vos menus quotidiens quand c'est pertinent — avec les dosages, le timing et les recettes de shakes adaptés à votre phase de sèche.</p>
 <p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
@@ -1451,7 +1451,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h3>Le planning des 2 heures</h3>
 <ol>
-<li><strong>0-15 min</strong> : Lancez le riz/quinoa + préchauffez le four Ã  200°C</li>
+<li><strong>0-15 min</strong> : Lancez le riz/quinoa + préchauffez le four à 200°C</li>
 <li><strong>15-45 min</strong> : Préparez et enfournez les protéines (poulet, saumon, bÅ“uf)</li>
 <li><strong>45-75 min</strong> : Préparez les légumes pendant que les protéines cuisent</li>
 <li><strong>75-105 min</strong> : Assemblez les conteneurs + nettoyage</li>
@@ -1479,7 +1479,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <ol>
 <li>Coupez le poulet en cubes, assaisonnez avec cumin + paprika + ail</li>
 <li>Cuisez le riz</li>
-<li>Grillez le poulet Ã  la poêle 6-8 min</li>
+<li>Grillez le poulet à la poêle 6-8 min</li>
 <li>Découpez les poivrons et faites-les revenir 5 min</li>
 <li>Assemblez : riz + poulet + poivrons + haricots noirs + maïs + jus de citron vert</li>
 </ol>
@@ -1499,8 +1499,8 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p><strong>Préparation :</strong></p>
 <ol>
 <li>Marinez le saumon dans la sauce teriyaki 15 min</li>
-<li>Enfournez le saumon Ã  200°C pendant 15 min</li>
-<li>Cuisez le riz et faites cuire le brocoli Ã  la vapeur 5 min</li>
+<li>Enfournez le saumon à 200°C pendant 15 min</li>
+<li>Cuisez le riz et faites cuire le brocoli à la vapeur 5 min</li>
 <li>Assemblez dans les conteneurs</li>
 </ol>
 
@@ -1551,7 +1551,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <li>Servez avec le riz</li>
 </ol>
 
-<h3>Recette 5 : Egg Muffins (petit-déjeuner Ã— 5 jours)</h3>
+<h3>Recette 5 : Egg Muffins (petit-déjeuner × 5 jours)</h3>
 
 <p><strong>Par portion (3 muffins) :</strong> 250 kcal | 22 g protéines | 5 g glucides | 16 g lipides</p>
 
@@ -1567,20 +1567,20 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p><strong>Préparation :</strong></p>
 <ol>
 <li>Battez les Å“ufs, ajoutez légumes et épices</li>
-<li>Répartissez dans un moule Ã  muffins huilé</li>
-<li>Enfournez 20 min Ã  180°C</li>
+<li>Répartissez dans un moule à muffins huilé</li>
+<li>Enfournez 20 min à 180°C</li>
 <li>Stockez au frigo — 2 min au micro-ondes le matin</li>
 </ol>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Ducrot et al. (2017, <em>International Journal of Behavioral Nutrition</em>) ont montré que les personnes qui planifient leurs repas Ã  l'avance ont une alimentation de meilleure qualité nutritionnelle, une plus grande variété alimentaire, et un IMC plus faible. La planification alimentaire réduit aussi le risque d'obésité de 27%.
+🔬 <strong>Ce que dit la science :</strong> Ducrot et al. (2017, <em>International Journal of Behavioral Nutrition</em>) ont montré que les personnes qui planifient leurs repas à l'avance ont une alimentation de meilleure qualité nutritionnelle, une plus grande variété alimentaire, et un IMC plus faible. La planification alimentaire réduit aussi le risque d'obésité de 27%.
 </blockquote>
 
 <h2>Conservation et sécurité alimentaire</h2>
 
 <ul>
 <li><strong>Frigo</strong> : 3-4 jours maximum pour les plats avec viande/poisson</li>
-<li><strong>Congélateur</strong> : jusqu'Ã  3 mois. Décongelez au frigo la veille</li>
+<li><strong>Congélateur</strong> : jusqu'à 3 mois. Décongelez au frigo la veille</li>
 <li><strong>Réchauffage</strong> : 2-3 min au micro-ondes, couvercle entrouvert</li>
 <li><strong>Règle d'or</strong> : préparez 3 jours au frigo + congelez le reste</li>
 </ul>
@@ -1596,14 +1596,14 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
   // â”â”â” ARTICLE 23 â”â”â”
   {
     slug: "sport-a-jeun-pour-maigrir-homme",
-    title: "Sport Ã  Jeun pour Maigrir Homme : Efficace ou Mythe ?",
-    metaDescription: "Le sport Ã  jeun aide-t-il Ã  perdre du gras ? Analyse complète des études scientifiques et protocole optimal pour homme.",
+    title: "Sport à Jeun pour Maigrir Homme : Efficace ou Mythe ?",
+    metaDescription: "Le sport à jeun aide-t-il à perdre du gras ? Analyse complète des études scientifiques et protocole optimal pour homme.",
     content: `
-<h1>Sport Ã  Jeun pour Maigrir Homme : Efficace ou Mythe ?</h1>
+<h1>Sport à Jeun pour Maigrir Homme : Efficace ou Mythe ?</h1>
 
-<p>Se lever Ã  6h, enfiler ses chaussures et courir le ventre vide pour "brûler directement dans les graisses". L'idée est séduisante. Mais est-elle scientifiquement fondée ? <strong>La réponse est nuancée — et probablement pas celle que vous attendez.</strong></p>
+<p>Se lever à 6h, enfiler ses chaussures et courir le ventre vide pour "brûler directement dans les graisses". L'idée est séduisante. Mais est-elle scientifiquement fondée ? <strong>La réponse est nuancée — et probablement pas celle que vous attendez.</strong></p>
 
-<h2>La théorie derrière le sport Ã  jeun</h2>
+<h2>La théorie derrière le sport à jeun</h2>
 
 <p>Le raisonnement est logique en apparence :</p>
 <ul>
@@ -1618,50 +1618,50 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h2>Ce que disent les études</h2>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Schoenfeld et al. (2014, <em>Journal of the ISSN</em>, essai contrôlé randomisé) ont comparé le cardio Ã  jeun vs nourri chez 20 femmes en déficit calorique pendant 4 semaines. Résultat : <strong>aucune différence significative</strong> dans la perte de graisse totale entre les deux groupes. La composition corporelle finale était identique.
+🔬 <strong>Ce que dit la science :</strong> Schoenfeld et al. (2014, <em>Journal of the ISSN</em>, essai contrôlé randomisé) ont comparé le cardio à jeun vs nourri chez 20 femmes en déficit calorique pendant 4 semaines. Résultat : <strong>aucune différence significative</strong> dans la perte de graisse totale entre les deux groupes. La composition corporelle finale était identique.
 </blockquote>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Hackett & Hagstrom (2017, méta-analyse, <em>Journal of Functional Morphology and Kinesiology</em>) ont analysé 5 études comparant cardio Ã  jeun vs nourri. Conclusion : pas de différence significative sur la perte de masse grasse. Le facteur déterminant est le <strong>déficit calorique total sur 24h</strong>, pas l'état alimentaire pendant l'exercice.
+🔬 <strong>Ce que dit la science :</strong> Hackett & Hagstrom (2017, méta-analyse, <em>Journal of Functional Morphology and Kinesiology</em>) ont analysé 5 études comparant cardio à jeun vs nourri. Conclusion : pas de différence significative sur la perte de masse grasse. Le facteur déterminant est le <strong>déficit calorique total sur 24h</strong>, pas l'état alimentaire pendant l'exercice.
 </blockquote>
 
-<h2>L'oxydation des graisses â‰  perte de graisse</h2>
+<h2>L'oxydation des graisses ≠ perte de graisse</h2>
 
 <p>C'est la nuance clé que la plupart des articles de fitness ignorent :</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"Oui, vous oxydez plus de graisses pendant l'exercice Ã  jeun. Mais le corps compense parfaitement dans les heures qui suivent : vous oxydez moins de graisses le reste de la journée. Sur 24h, la différence nette est proche de zéro. Ce qui compte, c'est le déficit calorique total."</em> — <strong>Brad Schoenfeld</strong>, PhD
+💬 <strong>Avis d'expert :</strong> <em>"Oui, vous oxydez plus de graisses pendant l'exercice à jeun. Mais le corps compense parfaitement dans les heures qui suivent : vous oxydez moins de graisses le reste de la journée. Sur 24h, la différence nette est proche de zéro. Ce qui compte, c'est le déficit calorique total."</em> — <strong>Brad Schoenfeld</strong>, PhD
 </blockquote>
 
 <p>Le corps est un système qui s'autorégule sur 24h, pas un compte en banque qui se vide exercice par exercice.</p>
 
-<h2>Les risques du sport intense Ã  jeun</h2>
+<h2>Les risques du sport intense à jeun</h2>
 
 <ul>
 <li><strong>Perte musculaire</strong> : sans acides aminés circulants, le corps peut cataboliser le muscle pour fournir de l'énergie (surtout en HIIT)</li>
-<li><strong>Performance réduite</strong> : -10 Ã  -20% de performance en moyenne pendant l'exercice Ã  jeun (Aird et al., 2018)</li>
+<li><strong>Performance réduite</strong> : -10 à -20% de performance en moyenne pendant l'exercice à jeun (Aird et al., 2018)</li>
 <li><strong>Cortisol élevé</strong> : le stress du jeûne + exercice = pic de cortisol qui peut favoriser la rétention d'eau et le stockage abdominal</li>
 <li><strong>Risque d'hypoglycémie</strong> : malaise, vertiges, nausées chez les personnes sensibles</li>
 </ul>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Aird et al. (2018, <em>Journal of Science and Medicine in Sport</em>, méta-analyse) ont conclu que le sport Ã  jeun réduisait les performances d'exercice d'endurance de haute intensité, mais pas celles de basse intensité. La distinction est cruciale.
+🔬 <strong>Ce que dit la science :</strong> Aird et al. (2018, <em>Journal of Science and Medicine in Sport</em>, méta-analyse) ont conclu que le sport à jeun réduisait les performances d'exercice d'endurance de haute intensité, mais pas celles de basse intensité. La distinction est cruciale.
 </blockquote>
 
 <h2>Le verdict : quand ça peut marcher</h2>
 
-<p>Le sport Ã  jeun n'est ni une solution miracle ni une catastrophe. Voici le protocole intelligent :</p>
+<p>Le sport à jeun n'est ni une solution miracle ni une catastrophe. Voici le protocole intelligent :</p>
 
-<h3>✅ Cardio LISS Ã  jeun : ACCEPTABLE</h3>
+<h3>✅ Cardio LISS à jeun : ACCEPTABLE</h3>
 <ul>
 <li>Marche rapide ou vélo léger (30-45 min, FC < 65% FCmax)</li>
-<li>Faible risque de catabolisme Ã  cette intensité</li>
+<li>Faible risque de catabolisme à cette intensité</li>
 <li>Pas de baisse de performance significative</li>
 <li>Peut aider psychologiquement (routine matinale, sentiment d'accomplissement)</li>
 <li>Optionnel : 10 g de BCAA ou 5 g de leucine avant pour protéger le muscle</li>
 </ul>
 
-<h3>❌ HIIT ou musculation Ã  jeun : DÉCONSEILLÉ</h3>
+<h3>❌ HIIT ou musculation à jeun : DÉCONSEILLÉ</h3>
 <ul>
 <li>Performances réduites de 10-20%</li>
 <li>Risque de catabolisme musculaire élevé sans acides aminés circulants</li>
@@ -1670,7 +1670,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"Si vous aimez faire du cardio léger Ã  jeun le matin, faites-le. Si vous détestez ça, ne le faites pas. La différence sur la perte de graisse est marginale — votre adhérence au déficit calorique total est 100Ã— plus importante."</em> — <strong>Eric Helms</strong>
+💬 <strong>Avis d'expert :</strong> <em>"Si vous aimez faire du cardio léger à jeun le matin, faites-le. Si vous détestez ça, ne le faites pas. La différence sur la perte de graisse est marginale — votre adhérence au déficit calorique total est 100× plus importante."</em> — <strong>Eric Helms</strong>
 </blockquote>
 
 <h2>Le protocole optimal pour les hommes en sèche</h2>
@@ -1679,7 +1679,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <li><strong>Réveil</strong> : café noir (0 kcal) + optionnel 5 g de leucine</li>
 <li><strong>30 min de marche rapide</strong> (6-7 km/h) ou vélo léger</li>
 <li><strong>Petit-déjeuner protéiné dans l'heure</strong> : 30-40 g de protéines (Å“ufs, whey + flocons d'avoine)</li>
-<li><strong>Musculation plus tard dans la journée</strong> (toujours nourri, jamais Ã  jeun)</li>
+<li><strong>Musculation plus tard dans la journée</strong> (toujours nourri, jamais à jeun)</li>
 </ol>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
@@ -1698,7 +1698,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
     content: `
 <h1>Rétention d'Eau en Sèche Homme : 10 Solutions Naturelles</h1>
 
-<p>Vous suivez votre diète Ã  la lettre, vous vous entraînez dur — mais votre physique semble "mou" et "gonflé". Le coupable probable : la <strong>rétention d'eau</strong>. Elle peut masquer plusieurs semaines de progrès et vous faire croire que votre sèche ne fonctionne pas.</p>
+<p>Vous suivez votre diète à la lettre, vous vous entraînez dur — mais votre physique semble "mou" et "gonflé". Le coupable probable : la <strong>rétention d'eau</strong>. Elle peut masquer plusieurs semaines de progrès et vous faire croire que votre sèche ne fonctionne pas.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Kreitzman et al. (1992, <em>American Journal of Clinical Nutrition</em>) ont documenté que les premières semaines de déficit calorique provoquent une augmentation de la rétention d'eau dans le tissu adipeux. Quand les cellules graisseuses se vident partiellement, elles se remplissent temporairement d'eau. C'est le fameux "whoosh effect" — un matin, l'eau est libérée d'un coup et vous perdez 0,5-1 kg overnight.
@@ -1727,7 +1727,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h3>2. Stabilisez votre apport en sodium</h3>
 
-<p>Le problème n'est pas le sel lui-même — c'est les <strong>fluctuations</strong>. Passer de 2 g un jour Ã  6 g le lendemain provoque une rétention massive.</p>
+<p>Le problème n'est pas le sel lui-même — c'est les <strong>fluctuations</strong>. Passer de 2 g un jour à 6 g le lendemain provoque une rétention massive.</p>
 
 <p><strong>Protocole :</strong> visez 2-3 g de sodium/jour de façon constante. Ne coupez pas le sel brutalement (le corps surcompense avec l'aldostérone).</p>
 
@@ -1747,7 +1747,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <ul>
 <li>7-9h de sommeil</li>
 <li>Méditation ou respiration guidée 10 min/jour</li>
-<li>Réduisez la caféine Ã  <300 mg/jour et pas après 14h</li>
+<li>Réduisez la caféine à <300 mg/jour et pas après 14h</li>
 <li>1 refeed/semaine (les glucides abaissent le cortisol)</li>
 </ul>
 
@@ -1756,7 +1756,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>Un jour de glucides élevés abaisse le cortisol et "flush" l'eau. Souvent, le "whoosh effect" se produit 24-48h après un refeed.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"Le refeed est l'outil anti-rétention le plus puissant. Un jour Ã  +100-150 g de glucides au-dessus de la maintenance fait chuter le cortisol et déclenche souvent un whoosh dans les 48h. Placez-le la veille d'un jour de repos."</em> — <strong>Dr. Mike Israetel</strong>
+💬 <strong>Avis d'expert :</strong> <em>"Le refeed est l'outil anti-rétention le plus puissant. Un jour à +100-150 g de glucides au-dessus de la maintenance fait chuter le cortisol et déclenche souvent un whoosh dans les 48h. Placez-le la veille d'un jour de repos."</em> — <strong>Dr. Mike Israetel</strong>
 </blockquote>
 
 <h3>6. Le magnésium</h3>
@@ -1788,10 +1788,10 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 
 <h3>10. Le sauna ou bain chaud</h3>
 
-<p>15-20 minutes de sauna ou bain chaud Ã  38-40°C dilatent les vaisseaux et augmentent la sudation. Effet temporaire mais visuellement impressionnant. Réhydratez-vous après.</p>
+<p>15-20 minutes de sauna ou bain chaud à 38-40°C dilatent les vaisseaux et augmentent la sudation. Effet temporaire mais visuellement impressionnant. Réhydratez-vous après.</p>
 
 <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:20px;margin:20px 0;border-radius:8px;">
-<strong>âš ï¸ À éviter :</strong> les diurétiques pharmaceutiques (furosémide, etc.) sauf prescription médicale. Ils sont dangereux, peuvent causer des déséquilibres électrolytiques graves, et la rétention revient en force Ã  l'arrêt.
+<strong>⚠ï¸ À éviter :</strong> les diurétiques pharmaceutiques (furosémide, etc.) sauf prescription médicale. Ils sont dangereux, peuvent causer des déséquilibres électrolytiques graves, et la rétention revient en force à l'arrêt.
 </div>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
@@ -1806,11 +1806,11 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
   {
     slug: "programme-seche-homme-sans-materiel",
     title: "Programme Sèche Homme Sans Matériel : Entraînement Poids de Corps",
-    metaDescription: "Programme sèche complet sans matériel pour homme. Entraînement au poids de corps Ã  la maison ou en voyage, résultats prouvés.",
+    metaDescription: "Programme sèche complet sans matériel pour homme. Entraînement au poids de corps à la maison ou en voyage, résultats prouvés.",
     content: `
 <h1>Programme Sèche Homme Sans Matériel : Entraînement Poids de Corps</h1>
 
-<p>Pas de salle de sport ? Pas d'excuses. Un programme au poids de corps bien conçu peut <strong>maintenir votre masse musculaire en sèche</strong> — Ã  condition de respecter les principes de surcharge progressive et d'intensité suffisante.</p>
+<p>Pas de salle de sport ? Pas d'excuses. Un programme au poids de corps bien conçu peut <strong>maintenir votre masse musculaire en sèche</strong> — à condition de respecter les principes de surcharge progressive et d'intensité suffisante.</p>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
 🔬 <strong>Ce que dit la science :</strong> Kikuchi & Nakazato (2017, <em>Journal of Exercise Science & Fitness</em>) ont montré que les pompes et le développé couché avec charge similaire produisent une activation musculaire comparable du grand pectoral et des triceps. La clé : l'intensité relative (effort proche de l'échec) est plus importante que la charge absolue pour la préservation musculaire.
@@ -1825,7 +1825,7 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p>En musculation classique, vous ajoutez des kilos sur la barre. Au poids de corps, vous progressez en :</p>
 
 <ul>
-<li><strong>Variantes plus difficiles</strong> : pompes ↑ pompes déclinées ↑ pompes archer ↑ pompes Ã  1 bras</li>
+<li><strong>Variantes plus difficiles</strong> : pompes ↑ pompes déclinées ↑ pompes archer ↑ pompes à 1 bras</li>
 <li><strong>Tempo</strong> : 4 secondes en descente, 2 secondes en montée = plus de temps sous tension</li>
 <li><strong>Unilatéral</strong> : squats pistol, fentes arrière, pompes archer = double la charge relative par membre</li>
 <li><strong>Pauses isométriques</strong> : 2-3 secondes en bas du mouvement</li>
@@ -1836,23 +1836,23 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h3>Jour 1 — Push (Poitrine, Épaules, Triceps)</h3>
 
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th><th>Tempo</th></tr>
-<tr><td>Pompes déclinées (pieds surélevés)</td><td>4 Ã— 8-12</td><td>90 sec</td><td>3-1-2-0</td></tr>
-<tr><td>Pompes diamant</td><td>3 Ã— 8-12</td><td>90 sec</td><td>3-1-2-0</td></tr>
-<tr><td>Pike push-ups (épaules)</td><td>3 Ã— 8-10</td><td>90 sec</td><td>2-1-2-0</td></tr>
-<tr><td>Dips entre deux chaises</td><td>3 Ã— 10-15</td><td>60 sec</td><td>3-0-2-0</td></tr>
-<tr><td>Pompes archer (avancé)</td><td>3 Ã— 5-8/côté</td><td>90 sec</td><td>3-1-2-0</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th><th>Tempo</th></tr>
+<tr><td>Pompes déclinées (pieds surélevés)</td><td>4 × 8-12</td><td>90 sec</td><td>3-1-2-0</td></tr>
+<tr><td>Pompes diamant</td><td>3 × 8-12</td><td>90 sec</td><td>3-1-2-0</td></tr>
+<tr><td>Pike push-ups (épaules)</td><td>3 × 8-10</td><td>90 sec</td><td>2-1-2-0</td></tr>
+<tr><td>Dips entre deux chaises</td><td>3 × 10-15</td><td>60 sec</td><td>3-0-2-0</td></tr>
+<tr><td>Pompes archer (avancé)</td><td>3 × 5-8/côté</td><td>90 sec</td><td>3-1-2-0</td></tr>
 </table>
 
 <h3>Jour 2 — Pull + Core</h3>
 
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th><th>Notes</th></tr>
-<tr><td>Tractions (barre de porte)</td><td>4 Ã— max</td><td>2 min</td><td>Si pas de barre : rowing inversé sous une table</td></tr>
-<tr><td>Rowing inversé (table solide)</td><td>3 Ã— 10-12</td><td>90 sec</td><td>Pieds surélevés pour plus de difficulté</td></tr>
-<tr><td>Superman hold</td><td>3 Ã— 20 sec</td><td>60 sec</td><td>Serrez les fessiers et le haut du dos</td></tr>
-<tr><td>Ab wheel ou mountain climbers lents</td><td>3 Ã— 12</td><td>60 sec</td><td>Contrôle total du bassin</td></tr>
-<tr><td>Dead bug</td><td>3 Ã— 10/côté</td><td>60 sec</td><td>Anti-extension du dos</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th><th>Notes</th></tr>
+<tr><td>Tractions (barre de porte)</td><td>4 × max</td><td>2 min</td><td>Si pas de barre : rowing inversé sous une table</td></tr>
+<tr><td>Rowing inversé (table solide)</td><td>3 × 10-12</td><td>90 sec</td><td>Pieds surélevés pour plus de difficulté</td></tr>
+<tr><td>Superman hold</td><td>3 × 20 sec</td><td>60 sec</td><td>Serrez les fessiers et le haut du dos</td></tr>
+<tr><td>Ab wheel ou mountain climbers lents</td><td>3 × 12</td><td>60 sec</td><td>Contrôle total du bassin</td></tr>
+<tr><td>Dead bug</td><td>3 × 10/côté</td><td>60 sec</td><td>Anti-extension du dos</td></tr>
 </table>
 
 <h3>Jour 3 — Repos ou LISS (30 min marche)</h3>
@@ -1860,12 +1860,12 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <h3>Jour 4 — Legs</h3>
 
 <table>
-<tr><th>Exercice</th><th>Séries Ã— Reps</th><th>Repos</th><th>Notes</th></tr>
-<tr><td>Bulgarian split squat</td><td>4 Ã— 10-12/jambe</td><td>90 sec</td><td>Pied arrière sur chaise ou canapé</td></tr>
-<tr><td>Squat pistol (ou assisté)</td><td>3 Ã— 5-8/jambe</td><td>2 min</td><td>Tenez un meuble pour l'équilibre au début</td></tr>
-<tr><td>Pont fessier unilatéral</td><td>3 Ã— 12-15/jambe</td><td>60 sec</td><td>Pause 2 sec en haut</td></tr>
-<tr><td>Nordic curl négatif</td><td>3 Ã— 5-8</td><td>90 sec</td><td>Pieds coincés sous un meuble, descendez lentement</td></tr>
-<tr><td>Mollets unilatéral sur marche</td><td>4 Ã— 15-20</td><td>45 sec</td><td>Amplitude complète</td></tr>
+<tr><th>Exercice</th><th>Séries × Reps</th><th>Repos</th><th>Notes</th></tr>
+<tr><td>Bulgarian split squat</td><td>4 × 10-12/jambe</td><td>90 sec</td><td>Pied arrière sur chaise ou canapé</td></tr>
+<tr><td>Squat pistol (ou assisté)</td><td>3 × 5-8/jambe</td><td>2 min</td><td>Tenez un meuble pour l'équilibre au début</td></tr>
+<tr><td>Pont fessier unilatéral</td><td>3 × 12-15/jambe</td><td>60 sec</td><td>Pause 2 sec en haut</td></tr>
+<tr><td>Nordic curl négatif</td><td>3 × 5-8</td><td>90 sec</td><td>Pieds coincés sous un meuble, descendez lentement</td></tr>
+<tr><td>Mollets unilatéral sur marche</td><td>4 × 15-20</td><td>45 sec</td><td>Amplitude complète</td></tr>
 </table>
 
 <h3>Jour 5 — Full Body HIIT</h3>
@@ -1889,21 +1889,21 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <table>
 <tr><th>Semaine</th><th>Objectif</th></tr>
 <tr><td>1-2</td><td>Maîtrisez la technique et le tempo. Identifiez vos niveaux de reps.</td></tr>
-<tr><td>3-4</td><td>Ajoutez 1-2 reps par séance ou passez Ã  la variante supérieure</td></tr>
+<tr><td>3-4</td><td>Ajoutez 1-2 reps par séance ou passez à la variante supérieure</td></tr>
 <tr><td>5-6</td><td>Augmentez le tempo (4 sec descente) ou ajoutez une pause isométrique</td></tr>
 <tr><td>7-8</td><td>Passez aux variantes avancées (archer, pistol, planche 1 bras)</td></tr>
 <tr><td>9-10</td><td>Maintenez l'intensité. Le volume peut baisser si la fatigue s'accumule.</td></tr>
 </table>
 
 <blockquote style="background:#e8f4fd;border-left:4px solid #0ea5e9;padding:16px 20px;margin:20px 0;border-radius:8px;">
-🔬 <strong>Ce que dit la science :</strong> Lasevicius et al. (2018, <em>Frontiers in Physiology</em>) ont montré que les charges légères (30% 1RM) produisent une hypertrophie similaire aux charges lourdes (80% 1RM) <strong>Ã  condition de travailler près de l'échec musculaire</strong>. C'est le principe qui valide l'entraînement au poids de corps : l'intensité de l'effort (proximité de l'échec) prime sur la charge absolue.
+🔬 <strong>Ce que dit la science :</strong> Lasevicius et al. (2018, <em>Frontiers in Physiology</em>) ont montré que les charges légères (30% 1RM) produisent une hypertrophie similaire aux charges lourdes (80% 1RM) <strong>à condition de travailler près de l'échec musculaire</strong>. C'est le principe qui valide l'entraînement au poids de corps : l'intensité de l'effort (proximité de l'échec) prime sur la charge absolue.
 </blockquote>
 
 <h2>Limites et solution hybride</h2>
 
 <p>Soyons honnêtes : le poids de corps a ses limites :</p>
 <ul>
-<li><strong>Dos</strong> : difficile Ã  travailler sans barre de traction ou table solide</li>
+<li><strong>Dos</strong> : difficile à travailler sans barre de traction ou table solide</li>
 <li><strong>Ischio-jambiers</strong> : le Nordic curl est excellent mais très avancé</li>
 <li><strong>Surcharge progressive plafonnée</strong> : après un certain niveau, la progression ralentit sans charges externes</li>
 </ul>
@@ -1911,16 +1911,16 @@ MB = (10 Ã— poids en kg) + (6,25 Ã— taille en cm) - (5 Ã— âge) + 5</li
 <p><strong>La solution hybride idéale :</strong></p>
 <ul>
 <li><strong>2 séances en salle</strong> (charges lourdes : squat, développé couché, soulevé de terre)</li>
-<li><strong>2 séances Ã  la maison</strong> (poids de corps : ce programme)</li>
+<li><strong>2 séances à la maison</strong> (poids de corps : ce programme)</li>
 </ul>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:8px;">
-💬 <strong>Avis d'expert :</strong> <em>"L'entraînement au poids de corps est suffisant pour maintenir le muscle en sèche chez la plupart des hommes, Ã  condition de travailler près de l'échec et de progresser en difficulté. Pour construire du muscle, les charges externes restent supérieures."</em> — <strong>Menno Henselmans</strong>
+💬 <strong>Avis d'expert :</strong> <em>"L'entraînement au poids de corps est suffisant pour maintenir le muscle en sèche chez la plupart des hommes, à condition de travailler près de l'échec et de progresser en difficulté. Pour construire du muscle, les charges externes restent supérieures."</em> — <strong>Menno Henselmans</strong>
 </blockquote>
 
 <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:20px;margin:30px 0;border-radius:8px;">
 <h3 style="margin-top:0;">🏠 Chez vous ou en salle, le résultat compte</h3>
-<p>Le programme <strong>Sèche 10 Semaines</strong> propose des variantes avec et sans matériel pour chaque séance. Que vous ayez accès Ã  une salle complète ou seulement Ã  votre salon, vous avez un plan efficace.</p>
+<p>Le programme <strong>Sèche 10 Semaines</strong> propose des variantes avec et sans matériel pour chaque séance. Que vous ayez accès à une salle complète ou seulement à votre salon, vous avez un plan efficace.</p>
 <p><a href="https://seche10semaines.fr" style="color:#2563eb;font-weight:bold;">↑ Découvrir le programme Sèche 10 Semaines</a></p>
 </div>
 `
