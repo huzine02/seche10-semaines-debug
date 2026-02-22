@@ -243,6 +243,10 @@ export const Pricing: React.FC = () => {
             </div>
           </div>
 
+          <div style={{ maxWidth: 440, marginTop: 16, padding: '10px 16px', fontSize: 11, color: 'rgba(255,255,255,0.35)', lineHeight: 1.6, textAlign: 'center' as const }}>
+            ⚕️ Ce programme ne remplace pas un avis médical. Consultez votre médecin si vous êtes en situation de prédiabète, cholestérol élevé ou toute condition métabolique.
+          </div>
+
           <div className="trust-row">
             <div className="trust-item">✅ Sans engagement</div>
             <div className="trust-item">🔒 Paiement sécurisé</div>

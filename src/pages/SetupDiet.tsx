@@ -595,6 +595,11 @@ export const SetupDiet: React.FC = () => {
               {' '}Cyclage : +{diet.training.calories - diet.rest.calories} kcal training (glucides).
             </div>
 
+            {/* Disclaimer médical */}
+            <div style={{ background: '#FEF3C7', border: '1px solid #FDE68A', borderRadius: 10, padding: '10px 13px', fontSize: '0.72rem', color: '#92400E', lineHeight: 1.6, marginBottom: 14 }}>
+              ⚕️ <strong>Important :</strong> Ce programme est un outil d'aide nutritionnelle et ne remplace pas un avis médical. Si vous êtes en situation de prédiabète, cholestérol élevé ou toute condition métabolique, consultez votre médecin avant de commencer.
+            </div>
+
             {/* CTA */}
             <div style={{ display: 'flex', gap: 10 }}>
               <button onClick={() => setStep(2)} style={{ flex: 1, padding: 13, borderRadius: 50, fontWeight: 700, fontSize: '0.92rem', cursor: 'pointer', background: C.surface, color: C.textMuted, border: `2px solid ${C.border}` }}>
