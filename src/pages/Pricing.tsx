@@ -227,7 +227,7 @@ export const Pricing: React.FC = () => {
                   trackEvent('checkout_start');
                   navigate('/login?redirect=pricing');
                 }}>
-                  Obtenir mon programme personnalisé →
+                  Démarrer mon programme → 7 jours offerts
                 </button>
               )}
 

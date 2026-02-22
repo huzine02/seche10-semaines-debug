@@ -107,7 +107,7 @@ export const StripeCheckout: React.FC = () => {
               Redirection vers le paiement...
             </span>
           ) : (
-            'Obtenir mon programme personnalisé →'
+            'Démarrer mon programme → 7 jours offerts'
           )}
         </button>
 
