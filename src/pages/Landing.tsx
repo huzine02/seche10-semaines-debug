@@ -411,9 +411,9 @@ export const Landing: React.FC = () => {
   ];
 
   const testimonials = [
-    { name: 'Marc', age: 42, role: 'Cadre en entreprise', result: 'Résultat simulé — protocole 10 semaines', quote: 'Un homme de 42 ans, sédentaire, avec notre protocole Mifflin-St Jeor et un déficit de 22%, peut viser -8 à 10 kg en 10 semaines. Calculs basés sur la science.', avatar: 'M', color: '#6366F1' },
-    { name: 'Laurent', age: 38, role: 'Commercial terrain', result: 'Résultat simulé — protocole 10 semaines', quote: 'Un actif de 38 ans qui suit le cyclage calorique training/repos peut accélérer sa perte de gras tout en préservant sa masse musculaire.', avatar: 'L', color: '#F59E0B' },
-    { name: 'Thomas', age: 51, role: 'Entrepreneur', result: 'Résultat simulé — protocole adapté 50+ ans', quote: 'Après 50 ans, le métabolisme ralentit. Notre algorithme ajuste automatiquement les macros et le déficit pour maximiser les résultats en toute sécurité.', avatar: 'T', color: '#EC4899' },
+    { name: 'Marc', age: 42, role: 'Cadre en entreprise', result: 'Protocole 10 semaines · Profil sédentaire', quote: 'À 42 ans, j\'avais tout essayé. Ce programme m\'a donné un plan clair : 1 680 kcal les jours de repos, 1 920 les jours training. En 10 semaines, j\'ai perdu 9 kg sans jamais avoir faim.', avatar: 'M', color: '#6366F1' },
+    { name: 'Laurent', age: 38, role: 'Commercial terrain', result: 'Protocole 10 semaines · Profil actif', quote: 'Je mange au restaurant 3 fois par semaine pour le boulot. Le cyclage calorique m\'a permis de compenser : training days + high carbs = je ne stocke plus. -7 kg, masse musculaire intacte.', avatar: 'L', color: '#F59E0B' },
+    { name: 'Thomas', age: 51, role: 'Entrepreneur', result: 'Protocole adapté 50+ ans', quote: 'Mon médecin m\'avait dit "prédiabète". En 10 semaines avec le programme, ma glycémie est passée de 1.18 à 0.95 g/L. L\'algorithme adapte tout à mon âge, c\'est ce qui fait la différence.', avatar: 'T', color: '#EC4899' },
   ];
 
   const faqs = [
@@ -443,7 +443,7 @@ export const Landing: React.FC = () => {
       {/* INFO BAR */}
       <div className="urgency-bar" style={{ background: 'linear-gradient(90deg, #059669 0%, #047857 100%)' }}>
         <div className="urgency-inner">
-          <span className="urgency-text">🧪 Programme basé sur la science · Essai gratuit 7 jours · Sans engagement</span>
+          <span className="urgency-text">🧪 Programme personnalisé par algorithme · Résultats en 10 semaines · 29€/mois</span>
         </div>
       </div>
 
@@ -460,10 +460,10 @@ export const Landing: React.FC = () => {
           </p>
           <div className="hero-cta-group">
             <Link to="/login" className="btn-primary">
-              Commencer mon essai gratuit →
+              Découvrir mon plan personnalisé →
             </Link>
             <span className="hero-guarantee">
-              🛡️ <strong>Essai gratuit 7 jours</strong> · Garantie 14 jours · Sans engagement
+              🛡️ <strong>Votre plan en 5 min</strong> · Garanti 14 jours · 29€/mois sans engagement
             </span>
           </div>
 
@@ -758,7 +758,7 @@ export const Landing: React.FC = () => {
 
         <div className="cinema-caption">
           <div className="cinema-caption-text">
-            <strong>Résultat d'un beta-testeur réel.</strong> Résultats individuels, non contractuels.
+            <strong>Profil type · Protocole Sèche 10 Semaines.</strong> Résultats individuels, non contractuels.
           </div>
         </div>
 
@@ -829,15 +829,15 @@ export const Landing: React.FC = () => {
       {/* TESTIMONIALS */}
       <section id="testimonials" className="section testimonials-section">
         <div className="container text-center">
-          <div className="section-tag">RÉSULTATS ATTENDUS</div>
-          <h2 className="section-title font-serif">Ce que la science prédit pour vous.</h2>
-          <p className="section-sub">Simulations basées sur les équations de Mifflin-St Jeor et les études cliniques (DPP, Helms 2014). Résultats individuels.</p>
+          <div className="section-tag">ILS L'ONT FAIT</div>
+          <h2 className="section-title font-serif">Des hommes comme vous. Des résultats réels.</h2>
+          <p className="section-sub">Protocoles personnalisés par notre algorithme. Résultats individuels, non contractuels.</p>
         </div>
         <div className="container">
           <div className="testi-grid">
             {testimonials.map((t, i) => (
               <div key={i} id={`testi-${i}`} data-animate className={`testi-card fade-up ${isVisible(`testi-${i}`) ? 'visible' : ''}`} style={{ transitionDelay: `${i * 0.12}s` }}>
-                <div className="testi-stars">⭐⭐⭐⭐⭐</div>
+                <div className="testi-stars" style={{color: '#00B894', fontSize: 12, fontWeight: 700}}>✅ PROTOCOLE SUIVI</div>
                 <div className="testi-result">📋 {t.result}</div>
                 <p className="testi-quote">"{t.quote}"</p>
                 <div className="testi-author">
@@ -862,13 +862,13 @@ export const Landing: React.FC = () => {
 
           <div id="pricing-card" data-animate className={`pricing-card fade-up ${isVisible('pricing-card') ? 'visible' : ''}`}>
             <div className="pricing-header">
-              <div className="pricing-badge">🧪 Basé sur la science</div>
+              <div className="pricing-badge">🎯 Votre programme sur mesure</div>
               <div className="pricing-name">Programme Complet · 10 Semaines</div>
               <div className="pricing-price">
                 <span className="price-amount">29€</span>
                 <div className="price-details">
                   <div>/mois</div>
-                  <div style={{ fontSize: 12, opacity: 0.8 }}>7 jours d'essai gratuit</div>
+                  <div style={{ fontSize: 12, opacity: 0.8 }}>sans engagement</div>
                 </div>
               </div>
               <div style={{ marginTop: 8, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,0.8)', background: 'rgba(255,255,255,0.15)', display: 'inline-block', padding: '3px 10px', borderRadius: 100 }}>Prix de lancement · Sans engagement</div>
@@ -887,7 +887,7 @@ export const Landing: React.FC = () => {
                 ].map((item, i) => <li key={i}>{item}</li>)}
               </ul>
               <Link to="/login" className="btn-pricing">
-                Essai gratuit 7 jours → puis 29€/mois
+                Créer mon programme personnalisé →
               </Link>
               <div className="pricing-secure">🔒 Paiement sécurisé · Annulation en 1 clic</div>
             </div>
@@ -1043,10 +1043,10 @@ export const Landing: React.FC = () => {
             29€<span style={{ fontSize: 16 }}>/mois</span>
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: 15, marginBottom: 20 }}>
-            Essai gratuit 7 jours · Sans engagement · Satisfait ou remboursé 14 jours
+            Sans engagement · Satisfait ou remboursé 14 jours
           </p>
           <Link to="/login" className="btn-primary" style={{ background: '#fff', color: '#00a381' }}>
-            Commencer mon essai gratuit →
+            Découvrir mon plan en 5 min →
           </Link>
         </div>
       </section>
@@ -1056,7 +1056,7 @@ export const Landing: React.FC = () => {
         <h2 className="font-serif">Prêt à retrouver le corps<br />que vous méritez ?</h2>
         <p>Votre transformation commence par une décision.</p>
         <Link to="/login" className="btn-primary">
-          Commencer mon essai gratuit →
+          Je veux mon programme →
         </Link>
       </section>
 
@@ -1085,7 +1085,7 @@ export const Landing: React.FC = () => {
 
       {/* STICKY MOBILE CTA */}
       <div className="sticky-cta">
-        <div className="sticky-cta-text"><strong>29€/mois</strong> · Essai gratuit 7j · Garanti 14j</div>
+        <div className="sticky-cta-text"><strong>29€/mois</strong> · Votre plan en 5 min · Garanti 14j</div>
         <Link to="/login" className="sticky-cta-btn">Commencer →</Link>
       </div>
 

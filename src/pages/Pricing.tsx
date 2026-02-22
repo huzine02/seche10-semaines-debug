@@ -189,8 +189,8 @@ export const Pricing: React.FC = () => {
         </header>
 
         <div className="pricing-content">
-          <div className="spots-banner" style={{background: 'linear-gradient(90deg, #059669, #047857)'}}>🧪 Programme basé sur la science — Essai gratuit 7 jours</div>
-          <div className="pricing-tag">Programme scientifique</div>
+          <div className="spots-banner" style={{background: 'linear-gradient(90deg, #059669, #047857)'}}>🎯 Votre plan personnalisé est prêt — Plus que le paiement</div>
+          <div className="pricing-tag">Dernière étape</div>
           <h1 className="pricing-headline">
             Votre transformation<br />commence aujourd'hui.
           </h1>
@@ -200,8 +200,8 @@ export const Pricing: React.FC = () => {
 
           <div className="plan-card">
             <div className="plan-header">
-              <div className="plan-badge" style={{background: 'rgba(255,255,255,0.3)', fontSize: 12, padding: '6px 16px', marginBottom: 6}}>🎁 ESSAI GRATUIT 7 JOURS</div>
-              <div className="plan-badge">🧪 Basé sur la science</div>
+              <div className="plan-badge" style={{background: 'rgba(255,255,255,0.3)', fontSize: 12, padding: '6px 16px', marginBottom: 6}}>🎯 PROGRAMME PERSONNALISÉ</div>
+              <div className="plan-badge">🧪 Algorithme scientifique</div>
               <div className="plan-name">Programme Complet · 10 Semaines</div>
               <div className="plan-price-row">
                 <span className="plan-price">29€</span>
@@ -210,7 +210,7 @@ export const Pricing: React.FC = () => {
                   <div style={{fontSize: 12, opacity: 0.8}}>7 jours d'essai gratuit</div>
                 </div>
               </div>
-              <div className="plan-saving">🎁 7 jours d'essai gratuit · puis 29€/mois</div>
+              <div className="plan-saving">🔓 Accès immédiat · Sans engagement</div>
             </div>
 
             <div className="plan-body">
@@ -227,7 +227,7 @@ export const Pricing: React.FC = () => {
                   trackEvent('checkout_start');
                   navigate('/login?redirect=pricing');
                 }}>
-                  Essai gratuit 7 jours → puis 29€/mois
+                  Obtenir mon programme personnalisé →
                 </button>
               )}
 
