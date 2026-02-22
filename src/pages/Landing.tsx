@@ -420,8 +420,8 @@ export const Landing: React.FC = () => {
     { q: 'Est-ce que je dois compter mes calories ?', a: 'Non. Chaque repas est pré-calculé pour votre profil. Pas de pesée obsessionnelle.' },
     { q: 'Ça marche vraiment après 40 ans ?', a: 'Le programme est conçu pour le métabolisme qui ralentit avec l\'âge. Équations de Mifflin-St Jeor calibrées + cyclage calorique.' },
     { q: 'Combien de temps ça prend par jour ?', a: '5 minutes. Ouvrez le journal, suivez les repas, cochez les compléments. C\'est tout.' },
-    { q: 'Je peux annuler quand je veux ?', a: 'Oui, en 1 clic depuis votre profil. Aucun engagement. Garantie 14 jours.' },
-    { q: 'Et si ça ne marche pas pour moi ?', a: 'Garantie 14 jours. Si vous suivez le protocole et ne voyez rien bouger, remboursement intégral.' },
+    { q: 'Je peux annuler quand je veux ?', a: 'Oui, en 1 clic depuis votre profil. Vous avez 7 jours gratuits pour tester. Ensuite c\'est 29€/mois, sans engagement — annulable à tout moment.' },
+    { q: 'Et si ça ne marche pas pour moi ?', a: 'Vous ne payez rien pendant 7 jours. Si le programme ne vous convient pas, annulez avant la fin de l\'essai et vous ne serez jamais facturé.' },
     { q: 'C\'est quoi la différence avec un régime ?', a: 'Un régime dit quoi ne pas manger. Ce programme dit quoi manger, quand, combien — personnalisé à votre profil avec suivi quotidien.' },
   ];
 
@@ -463,7 +463,7 @@ export const Landing: React.FC = () => {
               Découvrir mon plan personnalisé →
             </Link>
             <span className="hero-guarantee">
-              🛡️ <strong>Votre plan en 5 min</strong> · Garanti 14 jours · 29€/mois sans engagement
+              ✅ <strong>7 jours gratuits</strong> · Puis 29€/mois · Annulation en 1 clic
             </span>
           </div>
 
@@ -595,7 +595,7 @@ export const Landing: React.FC = () => {
         <div className="trust-inner">
           <div className="trust-item"><span>🔬</span>Science (Mifflin-St Jeor)</div>
           <div className="trust-item"><span>🔒</span>Paiement Stripe</div>
-          <div className="trust-item"><span>🛡️</span>Garantie 14j</div>
+          <div className="trust-item"><span>🎁</span>7 jours gratuits</div>
           <div className="trust-item"><span>📱</span>100% mobile</div>
         </div>
       </div>
@@ -856,7 +856,7 @@ export const Landing: React.FC = () => {
       {/* PRICING */}
       <section id="pricing" className="section pricing-section text-center">
         <div className="container">
-          <div className="section-tag">OFFRE DE LANCEMENT</div>
+          <div className="section-tag">VOTRE PROGRAMME</div>
           <h2 className="section-title font-serif">Tout inclus. Résultats garantis.</h2>
           <p className="section-sub">L'investissement le plus rentable de votre santé.</p>
 
@@ -871,7 +871,7 @@ export const Landing: React.FC = () => {
                   <div style={{ fontSize: 12, opacity: 0.8 }}>sans engagement</div>
                 </div>
               </div>
-              <div style={{ marginTop: 8, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,0.8)', background: 'rgba(255,255,255,0.15)', display: 'inline-block', padding: '3px 10px', borderRadius: 100 }}>Prix de lancement · Sans engagement</div>
+              <div style={{ marginTop: 8, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,0.8)', background: 'rgba(255,255,255,0.15)', display: 'inline-block', padding: '3px 10px', borderRadius: 100 }}>7 jours gratuits · Sans engagement</div>
             </div>
             <div className="pricing-body">
               <ul className="pricing-list">
@@ -883,7 +883,7 @@ export const Landing: React.FC = () => {
                   'Suivi poids, tour de taille, glycémie',
                   'Guide complet téléchargeable',
                   'Communauté privée Telegram',
-                  'Garantie 14 jours satisfait ou remboursé',
+                  '7 jours gratuits · Annulation en 1 clic',
                 ].map((item, i) => <li key={i}>{item}</li>)}
               </ul>
               <Link to="/login" className="btn-pricing">
@@ -899,11 +899,11 @@ export const Landing: React.FC = () => {
       <section className="section guarantee-section">
         <div className="container">
           <div id="guarantee" data-animate className={`guarantee-box fade-up ${isVisible('guarantee') ? 'visible' : ''}`}>
-            <div className="guarantee-icon">🛡️</div>
-            <div className="guarantee-title font-serif">Garantie 14 jours — Zéro risque</div>
+            <div className="guarantee-icon">🎁</div>
+            <div className="guarantee-title font-serif">7 jours gratuits — Zéro risque</div>
             <p className="guarantee-text">
-              Essayez pendant 14 jours. Si vous n'êtes pas convaincu, remboursement intégral.<br /><br />
-              <strong>Pas de conditions cachées. Un email suffit.</strong>
+              Testez le programme complet pendant 7 jours. Aucun paiement avant la fin de l'essai.<br /><br />
+              <strong>Annulation en 1 clic depuis votre profil. Aucun engagement.</strong>
             </p>
           </div>
         </div>
@@ -1043,7 +1043,7 @@ export const Landing: React.FC = () => {
             29€<span style={{ fontSize: 16 }}>/mois</span>
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: 15, marginBottom: 20 }}>
-            Sans engagement · Satisfait ou remboursé 14 jours
+            7 jours gratuits · Puis 29€/mois · Annulation en 1 clic
           </p>
           <Link to="/login" className="btn-primary" style={{ background: '#fff', color: '#00a381' }}>
             Découvrir mon plan en 5 min →

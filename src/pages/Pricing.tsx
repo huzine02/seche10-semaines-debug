@@ -176,7 +176,7 @@ export const Pricing: React.FC = () => {
     'Suivi poids, tour de taille et glycémie',
     'Guide complet téléchargeable',
     'Communauté privée Telegram',
-    'Garantie 14 jours satisfait ou remboursé',
+    '7 jours gratuits · Annulation en 1 clic',
   ];
 
   return (
@@ -234,10 +234,10 @@ export const Pricing: React.FC = () => {
               <div className="plan-secure">🔒 Paiement sécurisé Stripe · SSL · Annulation en 1 clic</div>
 
               <div className="plan-guarantee">
-                <span style={{ fontSize: 18 }}>🛡️</span>
+                <span style={{ fontSize: 18 }}>🎁</span>
                 <div>
-                  <strong>Garantie 14 jours satisfait ou remboursé.</strong><br />
-                  Pas de conditions cachées. Un email suffit.
+                  <strong>7 jours gratuits. Aucun paiement avant la fin de l'essai.</strong><br />
+                  Annulation en 1 clic. Aucun engagement.
                 </div>
               </div>
             </div>
@@ -250,7 +250,7 @@ export const Pricing: React.FC = () => {
           <div className="trust-row">
             <div className="trust-item">✅ Sans engagement</div>
             <div className="trust-item">🔒 Paiement sécurisé</div>
-            <div className="trust-item">🛡️ Garanti 14 jours</div>
+            <div className="trust-item">🎁 7 jours gratuits</div>
           </div>
         </div>
 
