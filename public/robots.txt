@@ -1,3 +1,22 @@
 User-agent: *
 Allow: /
+Disallow: /dashboard/
+Disallow: /journal/
+Disallow: /profile/
+Disallow: /setup/
+
+User-agent: GPTBot
+Allow: /
+Allow: /blog/
+Allow: /llms.txt
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://seche10semaines.fr/sitemap.xml

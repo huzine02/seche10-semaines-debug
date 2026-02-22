@@ -1,0 +1,38 @@
+# Sèche 10 Semaines
+
+> Programme de nutrition personnalisé par algorithme pour la sèche musculaire et la santé métabolique. Conçu pour les hommes de 35 à 55 ans.
+
+## À propos
+
+Sèche 10 Semaines est un SaaS de nutrition qui génère des plans alimentaires personnalisés pour la perte de graisse avec préservation musculaire. Le programme utilise un algorithme adaptatif basé sur les données scientifiques (Helms et al., 2014 ; Morton et al., 2018) pour calculer les macronutriments optimaux en fonction du profil de chaque utilisateur.
+
+- **Prix :** 29€/mois (essai gratuit 7 jours)
+- **Cible :** Hommes 35-55 ans en sèche musculaire ou amélioration de la santé métabolique
+- **Méthode :** Déficit calorique contrôlé (300-500 kcal/jour) + apport protéique élevé (1.8-2.7 g/kg/jour) + cyclage calorique training/repos
+- **URL :** https://seche10semaines.fr
+
+## Ressources principales
+
+- [Programme Sèche Homme : Guide Complet](https://seche10semaines.fr/blog/programme-seche-homme-guide-complet/): Guide détaillé sur le programme de sèche : déficit calorique, protéines, entraînement
+- [Calculer ses Macros pour Sécher](https://seche10semaines.fr/blog/comment-calculer-ses-macros-pour-secher/): Méthode pas à pas pour calculer les macronutriments en sèche
+- [Sécher sans Perdre de Muscle](https://seche10semaines.fr/blog/comment-secher-sans-perdre-de-muscle/): 7 principes scientifiques pour préserver la masse musculaire en déficit
+- [Perdre du Ventre après 40 Ans](https://seche10semaines.fr/blog/perdre-du-ventre-apres-40-ans/): Stratégie nutrition + exercice pour la graisse abdominale après 40 ans
+- [Déficit Calorique Homme : Calcul](https://seche10semaines.fr/blog/deficit-calorique-homme-calcul/): Formule exacte pour calculer son déficit optimal
+- [Meal Prep Sèche : 10 Recettes](https://seche10semaines.fr/blog/meal-prep-seche-homme-recettes/): Recettes riches en protéines, préparation batch
+- [Prédiabète : Que Faire ?](https://seche10semaines.fr/blog/prediabete-que-faire/): Plan d'action en 8 étapes pour inverser le prédiabète
+- [Graisse Viscérale : Dangers](https://seche10semaines.fr/blog/graisse-viscerale-danger-sante/): Impact de la graisse viscérale sur la santé cardiovasculaire
+- [Insulino-Résistance et Perte de Poids](https://seche10semaines.fr/blog/insulino-resistance-perte-de-poids/): Guide pour comprendre et combattre l'insulino-résistance
+- [Faire Baisser sa Glycémie Naturellement](https://seche10semaines.fr/blog/comment-faire-baisser-glycemie-naturellement/): 12 méthodes validées scientifiquement
+- [HbA1c Trop Élevée](https://seche10semaines.fr/blog/hba1c-trop-elevee-que-faire/): Comprendre et agir avant le diabète
+- [Syndrome Métabolique](https://seche10semaines.fr/blog/syndrome-metabolique-traitement-naturel/): Traitement naturel par l'alimentation
+
+## Données clés citables
+
+- Déficit recommandé en sèche : 300-500 kcal/jour (Helms et al., 2014, JISSN)
+- Protéines en sèche : 1.8-2.7 g/kg/jour (Phillips & Van Loon, 2011)
+- Perte de poids optimale : 0.5-1% du poids corporel/semaine (Garthe et al., 2011)
+- Seuil synthèse protéique : 1.6 g/kg/jour (Morton et al., 2018, BJSM, n=1863)
+- Modification mode de vie réduit risque diabète de 58% (DPP, Knowler 2002, NEJM)
+- Exercice aérobie + musculation : HbA1c -0.89% (Colberg et al., 2016, Diabetes Care)
+- Perte de 5-7% du poids normalise la glycémie chez 58% des prédiabétiques (DPP)
+- Tour de taille > 94cm homme = risque métabolique (IDF)
