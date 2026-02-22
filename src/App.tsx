@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AuthProvider, useAuth } from './AuthContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { Layout } from './components/Layout';
@@ -18,6 +18,7 @@ import { BlogArticle } from './pages/BlogArticle';
 import { MentionsLegales } from './pages/MentionsLegales';
 import { CGV } from './pages/CGV';
 import { PolitiqueConfidentialite } from './pages/PolitiqueConfidentialite';
+import { APropos } from './pages/APropos';
 import { LoadingScreen } from './components/LoadingScreen';
 import { CookieBanner } from './components/CookieBanner';
 
@@ -52,7 +53,7 @@ export default function App() {
   return (
     <ThemeProvider>
     <AuthProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Auth />} />
@@ -62,6 +63,7 @@ export default function App() {
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="/a-propos" element={<APropos />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogArticle />} />
           <Route
@@ -101,7 +103,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <CookieBanner />
-      </HashRouter>
+      </BrowserRouter>
     </AuthProvider>
     </ThemeProvider>
   );

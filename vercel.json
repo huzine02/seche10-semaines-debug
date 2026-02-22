@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" }
+    { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" },
+    { "source": "/((?!blog/)(?!assets/)(?!blog-images/)(?!favicon)(?!manifest)(?!sw\\.js)(?!sitemap)(?!robots)(?!google).*)", "destination": "/index.html" }
   ],
   "headers": [
     {

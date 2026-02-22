@@ -21,7 +21,7 @@ export const BlogArticle: React.FC = () => {
         'og:title': article.title,
         'og:description': article.metaDescription,
         'og:image': `https://seche10semaines.fr/blog-images/blog-img-${article.slug}.png`,
-        'og:url': `https://seche10semaines.fr/#/blog/${article.slug}`,
+        'og:url': `https://seche10semaines.fr/blog/${article.slug}`,
         'og:type': 'article',
       };
       Object.entries(ogTags).forEach(([prop, content]) => {
@@ -262,11 +262,16 @@ export const BlogArticle: React.FC = () => {
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 20px 40px' }}>
         <h3 style={{ color: '#fff', fontSize: 20, marginBottom: 16 }}>📚 Articles similaires</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 12 }}>
-          {[...blogArticles, ...seoArticlesRewrite, ...seoArticles25]
-            .filter((a, i, arr) => arr.findIndex(b => b.slug === a.slug) === i)
-            .filter(a => a.slug !== article.slug)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3)
+          {(() => {
+            const allArticles = [...blogArticles, ...seoArticlesRewrite, ...seoArticles25, ...healthArticles]
+              .filter((a, i, arr) => arr.findIndex(b => b.slug === a.slug) === i)
+              .filter(a => a.slug !== article.slug);
+            const isHealth = healthArticles.some(a => a.slug === slug);
+            // Prioritize same category
+            const sameCategory = allArticles.filter(a => isHealth ? healthArticles.some(h => h.slug === a.slug) : !healthArticles.some(h => h.slug === a.slug));
+            const otherCategory = allArticles.filter(a => !sameCategory.includes(a));
+            return [...sameCategory.sort(() => Math.random() - 0.5).slice(0, 2), ...otherCategory.sort(() => Math.random() - 0.5).slice(0, 1)].slice(0, 3);
+          })()
             .map((a, i) => (
               <Link key={i} to={`/blog/${a.slug}`} style={{
                 display: 'block', padding: '16px', borderRadius: 10,
@@ -281,6 +286,17 @@ export const BlogArticle: React.FC = () => {
             ))}
         </div>
       </div>
+
+      {/* DISCLAIMER MÉDICAL (articles santé uniquement) */}
+      {healthArticles.find(a => a.slug === slug) && (
+        <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 20px 16px' }}>
+          <div style={{ background: '#FEF3C7', border: '1px solid #FDE68A', borderRadius: 12, padding: '16px 20px' }}>
+            <p style={{ fontSize: 13, color: '#92400E', lineHeight: 1.6, margin: 0 }}>
+              ⚕️ <strong>Avertissement :</strong> Cet article est fourni à titre informatif et ne remplace pas un avis médical. Si vous êtes concerné par le prédiabète, le cholestérol ou toute condition métabolique, consultez votre médecin avant de modifier votre alimentation.
+            </p>
+          </div>
+        </div>
+      )}
 
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 20px 60px' }}>
         <div className="art-cta-box">

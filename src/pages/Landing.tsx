@@ -406,14 +406,14 @@ export const Landing: React.FC = () => {
     { icon: '🔄', title: 'Les régimes ? Toujours le même cycle', desc: '-3 kg, +5 kg. Restriction, craquage, culpabilité. Rien ne tient.' },
     { icon: '⏰', title: 'Zéro temps pour des plans compliqués', desc: 'Boulot, enfants, dîners clients — compter les calories est irréaliste.' },
     { icon: '📉', title: 'Votre métabolisme vous a lâché', desc: 'Ce qui marchait à 25 ans ne marche plus. Manger "normalement" fait grossir.' },
+    { icon: '⚠️', title: 'Votre médecin a parlé de prédiabète', desc: 'Glycémie élevée, cholestérol, tour de taille qui augmente. Les signaux sont là.' },
     { icon: '😓', title: 'Essoufflé en montant les escaliers', desc: 'L\'énergie d\'avant a disparu. Fatigue, sommeil médiocre, motivation en berne.' },
-    { icon: '🏖️', title: 'Vous évitez les photos en maillot', desc: 'L\'été approche et l\'idée de retirer votre t-shirt vous stresse.' },
   ];
 
   const testimonials = [
-    { name: 'Marc', age: 42, role: 'Beta-testeur · Cadre en entreprise', result: 'A suivi le protocole 7 semaines', quote: 'Pour la première fois, j\'ai un plan que je peux suivre sans y passer 2h par jour. Simple et efficace.', avatar: 'M', color: '#6366F1' },
-    { name: 'Julien', age: 38, role: 'Beta-testeur · Commercial terrain', result: 'A terminé le programme complet', quote: 'Le journal quotidien m\'a surpris. C\'est comme avoir un coach dans la poche.', avatar: 'J', color: '#F59E0B' },
-    { name: 'Thomas', age: 51, role: 'Beta-testeur · Entrepreneur', result: 'En cours — semaine 6', quote: 'À 51 ans j\'étais sceptique. Mais le protocole adapté à mon âge, c\'est du sérieux.', avatar: 'T', color: '#EC4899' },
+    { name: 'Marc', age: 42, role: 'Cadre en entreprise', result: 'Résultat simulé — protocole 10 semaines', quote: 'Un homme de 42 ans, sédentaire, avec notre protocole Mifflin-St Jeor et un déficit de 22%, peut viser -8 à 10 kg en 10 semaines. Calculs basés sur la science.', avatar: 'M', color: '#6366F1' },
+    { name: 'Laurent', age: 38, role: 'Commercial terrain', result: 'Résultat simulé — protocole 10 semaines', quote: 'Un actif de 38 ans qui suit le cyclage calorique training/repos peut accélérer sa perte de gras tout en préservant sa masse musculaire.', avatar: 'L', color: '#F59E0B' },
+    { name: 'Thomas', age: 51, role: 'Entrepreneur', result: 'Résultat simulé — protocole adapté 50+ ans', quote: 'Après 50 ans, le métabolisme ralentit. Notre algorithme ajuste automatiquement les macros et le déficit pour maximiser les résultats en toute sécurité.', avatar: 'T', color: '#EC4899' },
   ];
 
   const faqs = [
@@ -440,30 +440,30 @@ export const Landing: React.FC = () => {
         </div>
       </header>
 
-      {/* URGENCY BAR */}
-      <div className="urgency-bar">
+      {/* INFO BAR */}
+      <div className="urgency-bar" style={{ background: 'linear-gradient(90deg, #059669 0%, #047857 100%)' }}>
         <div className="urgency-inner">
-          <span className="urgency-text">🚀 Offre de lancement — 29€/mois au lieu de 49€</span>
+          <span className="urgency-text">🧪 Programme basé sur la science · Essai gratuit 7 jours · Sans engagement</span>
         </div>
       </div>
 
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-badge">🎯 Programme coaching · Hommes 35-55 ans</div>
+          <div className="hero-badge">🎯 Programme nutrition scientifique · Hommes 35-55 ans</div>
           <h1 className="font-serif">
-            Retrouvez le corps<br />que vous aviez <em>à 30 ans.</em>
+            Perdez du gras.<br />Reprenez votre <em>santé en main.</em>
           </h1>
           <p className="hero-sub">
-            Un programme de sèche <strong>100% personnalisé</strong> par algorithme.
-            Vos repas sont prêts chaque jour. <strong>5 minutes par jour suffisent.</strong>
+            Sèche musculaire ou santé métabolique — un programme <strong>100% personnalisé</strong> par algorithme.
+            Glycémie, cholestérol, tour de taille : tout est suivi. <strong>5 minutes par jour suffisent.</strong>
           </p>
           <div className="hero-cta-group">
             <Link to="/login" className="btn-primary">
               Commencer mon essai gratuit →
             </Link>
             <span className="hero-guarantee">
-              🛡️ <strong>Garantie 14 jours</strong> · Sans engagement · 29€/mois au lieu de 49€
+              🛡️ <strong>Essai gratuit 7 jours</strong> · Garantie 14 jours · Sans engagement
             </span>
           </div>
 
@@ -829,9 +829,9 @@ export const Landing: React.FC = () => {
       {/* TESTIMONIALS */}
       <section id="testimonials" className="section testimonials-section">
         <div className="container text-center">
-          <div className="section-tag">PREMIERS RETOURS</div>
-          <h2 className="section-title font-serif">Ce qu'en disent nos beta-testeurs.</h2>
-          <p className="section-sub">De vrais utilisateurs. Résultats individuels.</p>
+          <div className="section-tag">RÉSULTATS ATTENDUS</div>
+          <h2 className="section-title font-serif">Ce que la science prédit pour vous.</h2>
+          <p className="section-sub">Simulations basées sur les équations de Mifflin-St Jeor et les études cliniques (DPP, Helms 2014). Résultats individuels.</p>
         </div>
         <div className="container">
           <div className="testi-grid">
@@ -862,16 +862,16 @@ export const Landing: React.FC = () => {
 
           <div id="pricing-card" data-animate className={`pricing-card fade-up ${isVisible('pricing-card') ? 'visible' : ''}`}>
             <div className="pricing-header">
-              <div className="pricing-badge">🚀 Offre de lancement</div>
+              <div className="pricing-badge">🧪 Basé sur la science</div>
               <div className="pricing-name">Programme Complet · 10 Semaines</div>
               <div className="pricing-price">
                 <span className="price-amount">29€</span>
                 <div className="price-details">
                   <div>/mois</div>
-                  <div className="price-old">49€</div>
+                  <div style={{ fontSize: 12, opacity: 0.8 }}>7 jours d'essai gratuit</div>
                 </div>
               </div>
-              <div style={{ marginTop: 8, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,0.8)', background: 'rgba(255,255,255,0.15)', display: 'inline-block', padding: '3px 10px', borderRadius: 100 }}>-40% pour les 50 premiers</div>
+              <div style={{ marginTop: 8, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,0.8)', background: 'rgba(255,255,255,0.15)', display: 'inline-block', padding: '3px 10px', borderRadius: 100 }}>Prix de lancement · Sans engagement</div>
             </div>
             <div className="pricing-body">
               <ul className="pricing-list">
@@ -909,37 +909,29 @@ export const Landing: React.FC = () => {
         </div>
       </section>
 
-      {/* TÉMOIGNAGES */}
+      {/* LA SCIENCE DERRIÈRE LE PROGRAMME */}
       <section style={{ padding: '80px 20px', background: '#0a0f1a' }}>
         <div className="container" style={{ maxWidth: 900 }}>
           <div className="text-center" style={{ marginBottom: 40 }}>
-            <div className="section-tag">Résultats</div>
-            <h2 className="section-title font-serif" style={{ color: '#fff' }}>Ils ont transformé leur corps.</h2>
+            <div className="section-tag">Fondations scientifiques</div>
+            <h2 className="section-title font-serif" style={{ color: '#fff' }}>Chaque calcul est basé sur la recherche.</h2>
           </div>
           {[
-            { name: 'Stéphane', age: 47, job: 'Directeur commercial', result: '-7,2 kg en 10 semaines', quote: "J'ai gardé mes restos clients. J'ai juste appris à choisir différemment. Entrée + plat au lieu de plat + dessert + fromage. Des ajustements, pas des sacrifices. Mon médecin m'a demandé ce que j'avais changé.", initials: 'S' },
-            { name: 'Laurent', age: 39, job: 'Responsable marketing', result: '-6 kg en 8 semaines', quote: "Mon fils de 8 ans m'a dit que je courais pas assez vite. 8 semaines plus tard, je cours avec lui sans m'arrêter. Ça vaut plus que n'importe quel chiffre sur la balance.", initials: 'L' },
-            { name: 'Marc', age: 51, job: 'Directeur administratif et financier', result: '-8,4 kg en 10 semaines', quote: "6 ans de comité de direction, 15 kg de plus. Sèche 10 Semaines m'a donné un cadre simple. La photo de famille, c'est moi qui l'ai proposée cette fois.", initials: 'M' },
-          ].map((t, i) => (
+            { icon: '🔬', title: 'Équation de Mifflin-St Jeor (1990)', desc: 'La référence mondiale pour calculer votre métabolisme de base. Plus précise que Harris-Benedict, validée sur des milliers de sujets. C\'est elle qui détermine vos calories quotidiennes.' },
+            { icon: '📊', title: 'Étude DPP — New England Journal of Medicine (2002)', desc: 'Sur 3 234 participants prédiabétiques, une modification du mode de vie a réduit le risque de diabète de 58%. C\'est le fondement de notre approche santé métabolique.' },
+            { icon: '💪', title: 'Protéines en déficit — Helms et al. (2014)', desc: '2.0 à 2.2g/kg de protéines par jour en période de déficit calorique pour préserver la masse musculaire. C\'est exactement ce que notre algorithme applique.' },
+            { icon: '🔄', title: 'Cyclage calorique — Byrne et al. (2018)', desc: 'Alterner jours d\'entraînement (plus de glucides) et jours de repos (moins de glucides) préserve le métabolisme et accélère la perte de gras vs. déficit continu.' },
+          ].map((item, i) => (
             <div key={i} style={{
               background: 'linear-gradient(135deg, #141b2d 0%, #1a2340 100%)',
               borderRadius: 16, padding: '28px 24px', marginBottom: 20,
               border: '1px solid rgba(255,255,255,0.06)',
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
-                <div style={{
-                  width: 48, height: 48, borderRadius: '50%', background: 'linear-gradient(135deg, #00B894, #00a381)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: '#fff', fontWeight: 700, fontSize: 18,
-                }}>{t.initials}</div>
-                <div>
-                  <div style={{ color: '#fff', fontWeight: 700, fontSize: 15 }}>{t.name}, {t.age} ans</div>
-                  <div style={{ color: '#94A3B8', fontSize: 13 }}>{t.job}</div>
-                </div>
-                <div style={{ marginLeft: 'auto', color: '#00B894', fontWeight: 700, fontSize: 14 }}>{t.result}</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 12 }}>
+                <span style={{ fontSize: 28 }}>{item.icon}</span>
+                <div style={{ color: '#fff', fontWeight: 700, fontSize: 16 }}>{item.title}</div>
               </div>
-              <div style={{ color: '#FFD700', fontSize: 14, marginBottom: 10 }}>★★★★★</div>
-              <p style={{ color: '#CBD5E1', fontSize: 14, lineHeight: 1.7, fontStyle: 'italic', margin: 0 }}>"{t.quote}"</p>
+              <p style={{ color: '#CBD5E1', fontSize: 14, lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
             </div>
           ))}
         </div>
@@ -1046,12 +1038,12 @@ export const Landing: React.FC = () => {
         background: 'linear-gradient(135deg, #00B894 0%, #00a381 100%)',
       }}>
         <div className="container" style={{ maxWidth: 600 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: 'rgba(255,255,255,0.8)', marginBottom: 12 }}>⏰ Offre de lancement</div>
+          <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: 'rgba(255,255,255,0.8)', marginBottom: 12 }}>Votre transformation commence ici</div>
           <h2 className="font-serif" style={{ color: '#fff', fontSize: 28, marginBottom: 8 }}>
-            <span style={{ textDecoration: 'line-through', opacity: 0.6 }}>49€</span> → 29€<span style={{ fontSize: 16 }}>/mois</span>
+            29€<span style={{ fontSize: 16 }}>/mois</span>
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: 15, marginBottom: 20 }}>
-            Valable jusqu'au <strong>31 mars 2026</strong> · Sans engagement
+            Essai gratuit 7 jours · Sans engagement · Satisfait ou remboursé 14 jours
           </p>
           <Link to="/login" className="btn-primary" style={{ background: '#fff', color: '#00a381' }}>
             Commencer mon essai gratuit →
@@ -1068,11 +1060,19 @@ export const Landing: React.FC = () => {
         </Link>
       </section>
 
+      {/* DISCLAIMER MÉDICAL */}
+      <div style={{ background: '#0a0f1a', borderTop: '1px solid rgba(255,255,255,0.06)', padding: '20px 16px', textAlign: 'center' as const }}>
+        <p style={{ fontSize: 11, color: 'rgba(255,255,255,0.35)', maxWidth: 700, margin: '0 auto', lineHeight: 1.6 }}>
+          ⚕️ <strong style={{ color: 'rgba(255,255,255,0.5)' }}>Avertissement santé :</strong> Sèche 10 Semaines est un programme de nutrition et ne remplace en aucun cas un avis médical. Si vous êtes en situation de prédiabète, de cholestérol élevé ou de toute autre condition métabolique, consultez votre médecin avant de commencer un programme alimentaire. Les résultats présentés sont des estimations basées sur des modèles scientifiques et varient selon les individus.
+        </p>
+      </div>
+
       {/* FOOTER */}
       <footer className="site-footer">
         <div className="footer-logo">Sèche<span>10</span>Semaines</div>
         <div className="footer-links">
           <Link to="/blog">Blog</Link>
+          <Link to="/a-propos">À propos</Link>
           <Link to="/login">Espace Membre</Link>
           <a href="mailto:contact@seche10semaines.fr">Contact</a>
           <Link to="/mentions-legales">Mentions légales</Link>
@@ -1085,7 +1085,7 @@ export const Landing: React.FC = () => {
 
       {/* STICKY MOBILE CTA */}
       <div className="sticky-cta">
-        <div className="sticky-cta-text"><strong>29€/mois</strong> <span style={{textDecoration:'line-through',opacity:0.6}}>49€</span> · Garanti 14j</div>
+        <div className="sticky-cta-text"><strong>29€/mois</strong> · Essai gratuit 7j · Garanti 14j</div>
         <Link to="/login" className="sticky-cta-btn">Commencer →</Link>
       </div>
 
