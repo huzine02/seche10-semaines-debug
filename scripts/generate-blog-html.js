@@ -160,9 +160,9 @@ function generateHtml(article) {
   const url = `https://seche10semaines.fr/blog/${slug}`;
   const contentHtml = markdownToHtml(content);
   
-  // Escape for JSON-LD
-  const jsonTitle = title.replace(/"/g, '\\"');
-  const jsonDesc = metaDescription.replace(/"/g, '\\"');
+  // Escape for JSON-LD (remove backslashes, escape quotes, strip control chars)
+  const jsonTitle = title.replace(/\\/g, '').replace(/"/g, '\\"').replace(/[\n\r\t]/g, ' ');
+  const jsonDesc = metaDescription.replace(/\\/g, '').replace(/"/g, '\\"').replace(/[\n\r\t]/g, ' ');
 
   return `<!DOCTYPE html>
 <html lang="fr">
