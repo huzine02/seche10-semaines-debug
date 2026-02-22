@@ -49,7 +49,7 @@ export const healthArticles: BlogArticle[] = [
 <ul>
 <li><strong>Réduisez les glucides raffinés</strong> : pain blanc, pâtes blanches, riz blanc, viennoiseries. Remplacez-les par des versions complètes ou des alternatives (patate douce, quinoa, légumineuses).</li>
 <li><strong>Augmentez les fibres</strong> : visez 30 g/jour minimum. Légumes verts, légumineuses, graines de chia, psyllium.</li>
-<li><strong>Priorisez les protéines</strong> : elles stabilisent la glycémie et favorisent la satiété. Poisson, volaille, Å“ufs, tofu.</li>
+<li><strong>Priorisez les protéines</strong> : elles stabilisent la glycémie et favorisent la satiété. Poisson, volaille, œufs, tofu.</li>
 <li><strong>Intégrez des graisses saines</strong> : huile d'olive extra-vierge, avocat, noix, poissons gras.</li>
 <li><strong>Éliminez les sucres liquides</strong> : sodas, jus de fruits, boissons sucrées. C'est la mesure la plus impactante.</li>
 </ul>
@@ -148,7 +148,7 @@ export const healthArticles: BlogArticle[] = [
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <tr style="background:#f3f4f6;"><th style="padding:12px;border:1px solid #d1d5db;text-align:left;">Valeur</th><th style="padding:12px;border:1px solid #d1d5db;text-align:left;">Interprétation</th></tr>
 <tr><td style="padding:12px;border:1px solid #d1d5db;">&lt; 1,00 g/L (5,6 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">✅ Normale</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">1,00 - 1,25 g/L (5,6 - 6,9 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">⚠ï¸ Prédiabète</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">1,00 - 1,25 g/L (5,6 - 6,9 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">⚠️ Prédiabète</td></tr>
 <tr><td style="padding:12px;border:1px solid #d1d5db;">≥ 1,26 g/L (7,0 mmol/L)</td><td style="padding:12px;border:1px solid #d1d5db;">🔴 Diabète (à confirmer)</td></tr>
 </table>
 
@@ -315,7 +315,7 @@ export const healthArticles: BlogArticle[] = [
 <p><strong>Dîner :</strong> Saumon au four avec brocoli vapeur et patate douce. Filet d'huile d'olive. Yaourt nature en dessert.</p>
 
 <blockquote style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;">
-💬 <strong>Avis d'expert :</strong> « Arrêtez de compter le cholestérol dans vos Å“ufs. Concentrez-vous sur la qualité globale de votre alimentation : plus de végétaux, plus de fibres, plus de bonnes graisses, moins de sucres raffinés. C'est là que se joue vraiment votre santé cardiovasculaire. » — <strong>Dr. Peter Attia</strong>
+💬 <strong>Avis d'expert :</strong> « Arrêtez de compter le cholestérol dans vos œufs. Concentrez-vous sur la qualité globale de votre alimentation : plus de végétaux, plus de fibres, plus de bonnes graisses, moins de sucres raffinés. C'est là que se joue vraiment votre santé cardiovasculaire. » — <strong>Dr. Peter Attia</strong>
 </blockquote>
 
 <h2>Au-delà de l'alimentation : les autres leviers</h2>
@@ -511,7 +511,7 @@ export const healthArticles: BlogArticle[] = [
 <li>Pain blanc → Pain complet au levain (ou supprimez le pain au dîner)</li>
 <li>Pâtes blanches → Lentilles, pois chiches, quinoa</li>
 <li>Riz blanc → Riz basmati complet ou patate douce</li>
-<li>Céréales du petit-déjeuner → Porridge d'avoine nature ou Å“ufs</li>
+<li>Céréales du petit-déjeuner → Porridge d'avoine nature ou œufs</li>
 </ul>
 
 <h3>Étape 3 : Augmenter les oméga-3</h3>
@@ -609,7 +609,7 @@ export const healthArticles: BlogArticle[] = [
 <h3>2. L'alimentation protéinée et anti-inflammatoire</h3>
 <p>Après 50 ans, les besoins en protéines augmentent (résistance anabolique). Visez <strong>1,6 à 2 g de protéines par kg de poids corporel par jour</strong> répartis sur 3-4 repas.</p>
 
-<p><strong>Petit-déjeuner type :</strong> 3 Å“ufs brouillés + avocat + tomates + café noir</p>
+<p><strong>Petit-déjeuner type :</strong> 3 œufs brouillés + avocat + tomates + café noir</p>
 <p><strong>Déjeuner type :</strong> 150 g de poulet ou poisson + légumes verts + huile d'olive + patate douce (petite portion)</p>
 <p><strong>Dîner type :</strong> 150 g de saumon + brocoli vapeur + salade + noix</p>
 
@@ -680,7 +680,7 @@ export const healthArticles: BlogArticle[] = [
 <table style="width:100%;border-collapse:collapse;margin:20px 0;">
 <tr style="background:#f3f4f6;"><th style="padding:12px;border:1px solid #d1d5db;">HbA1c</th><th style="padding:12px;border:1px solid #d1d5db;">Interprétation</th><th style="padding:12px;border:1px solid #d1d5db;">Glycémie moyenne estimée</th></tr>
 <tr><td style="padding:12px;border:1px solid #d1d5db;">&lt; 5,7 %</td><td style="padding:12px;border:1px solid #d1d5db;">✅ Normale</td><td style="padding:12px;border:1px solid #d1d5db;">~1,00 g/L</td></tr>
-<tr><td style="padding:12px;border:1px solid #d1d5db;">5,7 - 6,4 %</td><td style="padding:12px;border:1px solid #d1d5db;">⚠ï¸ Prédiabète</td><td style="padding:12px;border:1px solid #d1d5db;">1,17 - 1,37 g/L</td></tr>
+<tr><td style="padding:12px;border:1px solid #d1d5db;">5,7 - 6,4 %</td><td style="padding:12px;border:1px solid #d1d5db;">⚠️ Prédiabète</td><td style="padding:12px;border:1px solid #d1d5db;">1,17 - 1,37 g/L</td></tr>
 <tr><td style="padding:12px;border:1px solid #d1d5db;">≥ 6,5 %</td><td style="padding:12px;border:1px solid #d1d5db;">🔴 Diabète</td><td style="padding:12px;border:1px solid #d1d5db;">≥ 1,40 g/L</td></tr>
 </table>
 
@@ -704,7 +704,7 @@ export const healthArticles: BlogArticle[] = [
 <li><strong>Réduisez les glucides à IG élevé</strong> : pain blanc, riz blanc, pommes de terre, pâtisseries</li>
 <li><strong>Chaque repas doit contenir</strong> : protéines + fibres + bonnes graisses</li>
 <li><strong>Ordre des aliments</strong> : légumes → protéines/graisses → glucides (réduit les pics de 30-40 %)</li>
-<li><strong>Petit-déjeuner protéiné</strong> : Å“ufs, yaourt grec nature, fromage blanc plutôt que céréales et jus d'orange</li>
+<li><strong>Petit-déjeuner protéiné</strong> : œufs, yaourt grec nature, fromage blanc plutôt que céréales et jus d'orange</li>
 </ul>
 
 <h3>2. L'exercice ciblé</h3>
@@ -778,7 +778,7 @@ export const healthArticles: BlogArticle[] = [
 <h2>Menu complet : Semaine type</h2>
 
 <h3>🟢 Lundi</h3>
-<p><strong>Petit-déjeuner :</strong> Omelette 3 Å“ufs aux épinards et champignons + 1/2 avocat + café noir<br/>
+<p><strong>Petit-déjeuner :</strong> Omelette 3 œufs aux épinards et champignons + 1/2 avocat + café noir<br/>
 <strong>Déjeuner :</strong> Salade de quinoa, pois chiches, concombre, tomates, feta, olives, vinaigrette huile d'olive/citron. 1 pomme en dessert.<br/>
 <strong>Collation :</strong> 20 g d'amandes + 1 carré de chocolat noir 85 %<br/>
 <strong>Dîner :</strong> Pavé de saumon au four + haricots verts vapeur + filet d'huile d'olive. Yaourt nature.</p>
@@ -787,34 +787,34 @@ export const healthArticles: BlogArticle[] = [
 <p><strong>Petit-déjeuner :</strong> Porridge d'avoine (50 g) cuit à l'eau + 1 c. à soupe de beurre d'amande + myrtilles + cannelle<br/>
 <strong>Déjeuner :</strong> Poulet grillé (150 g) + lentilles vertes en salade tiède + roquette + huile d'olive + graines de courge<br/>
 <strong>Collation :</strong> 1 pomme + 15 g de noix<br/>
-<strong>Dîner :</strong> Soupe de brocoli maison + 2 Å“ufs mollets + pain complet au levain (1 tranche)</p>
+<strong>Dîner :</strong> Soupe de brocoli maison + 2 œufs mollets + pain complet au levain (1 tranche)</p>
 
 <h3>🟢 Mercredi</h3>
 <p><strong>Petit-déjeuner :</strong> Yaourt grec nature (150 g) + graines de chia (15 g) + framboises + noix concassées<br/>
 <strong>Déjeuner :</strong> Sardines grillées + taboulé de chou-fleur (chou-fleur râpé, persil, menthe, tomates, citron, huile d'olive)<br/>
 <strong>Collation :</strong> Bâtonnets de céleri + houmous maison (2 c. à soupe)<br/>
-<strong>Dîner :</strong> Sauté de bÅ“uf (120 g) aux légumes (poivrons, courgettes, oignons) + riz basmati complet (petite portion)</p>
+<strong>Dîner :</strong> Sauté de bœuf (120 g) aux légumes (poivrons, courgettes, oignons) + riz basmati complet (petite portion)</p>
 
 <h3>🟢 Jeudi</h3>
-<p><strong>Petit-déjeuner :</strong> 2 Å“ufs au plat + 2 tranches de jambon de qualité + tomate grillée + café noir<br/>
+<p><strong>Petit-déjeuner :</strong> 2 œufs au plat + 2 tranches de jambon de qualité + tomate grillée + café noir<br/>
 <strong>Déjeuner :</strong> Bowl méditerranéen : houmous, falafel (maison), salade verte, concombre, tomates séchées, huile d'olive<br/>
 <strong>Collation :</strong> 30 g de fromage + 5 noix<br/>
 <strong>Dîner :</strong> Filet de cabillaud en papillote (citron, herbes) + ratatouille + 1 patate douce moyenne</p>
 
 <h3>🟢 Vendredi</h3>
 <p><strong>Petit-déjeuner :</strong> Smoothie protéiné : lait d'amande, 1 mesure protéine whey vanille, 1/2 banane, épinards, beurre de cacahuète (1 c. à soupe)<br/>
-<strong>Déjeuner :</strong> Salade niçoise revisitée : thon (en conserve, huile d'olive), haricots verts, Å“uf dur, olives, tomates, anchois<br/>
+<strong>Déjeuner :</strong> Salade niçoise revisitée : thon (en conserve, huile d'olive), haricots verts, œuf dur, olives, tomates, anchois<br/>
 <strong>Collation :</strong> 1 poire + 15 g d'amandes<br/>
 <strong>Dîner :</strong> Soupe de lentilles corail au curcuma + 1 filet de poulet grillé + salade verte</p>
 
 <h3>🟢 Samedi</h3>
-<p><strong>Petit-déjeuner :</strong> Pancakes protéinés (2 Å“ufs, 1 banane écrasée, 30 g flocons d'avoine) + myrtilles + cannelle<br/>
+<p><strong>Petit-déjeuner :</strong> Pancakes protéinés (2 œufs, 1 banane écrasée, 30 g flocons d'avoine) + myrtilles + cannelle<br/>
 <strong>Déjeuner :</strong> Magret de canard dégraissé (150 g) + salade de roquette, noix, poire, parmesan, vinaigre balsamique<br/>
 <strong>Collation :</strong> Edamame (100 g)<br/>
 <strong>Dîner :</strong> Gambas sautées à l'ail + courgettes grillées + quinoa (petite portion)</p>
 
 <h3>🟢 Dimanche</h3>
-<p><strong>Petit-déjeuner :</strong> Brunch : Shakshuka (2 Å“ufs pochés dans une sauce tomate épicée) + avocat + pain complet grillé<br/>
+<p><strong>Petit-déjeuner :</strong> Brunch : Shakshuka (2 œufs pochés dans une sauce tomate épicée) + avocat + pain complet grillé<br/>
 <strong>Déjeuner :</strong> Rôti de veau (150 g) + gratin de légumes (courgettes, aubergines, tomates, huile d'olive) + mesclun<br/>
 <strong>Collation :</strong> Yaourt nature + noix + carré chocolat noir 85 %<br/>
 <strong>Dîner :</strong> Velouté de butternut + saumon fumé (80 g) + salade de mâche</p>
@@ -825,7 +825,7 @@ export const healthArticles: BlogArticle[] = [
 
 <h2>La liste de courses type</h2>
 
-<p><strong>Protéines :</strong> Å“ufs (18), poulet (500 g), saumon (400 g), sardines, bÅ“uf maigre (250 g), cabillaud (200 g), gambas, yaourt grec nature (500 g), fromage</p>
+<p><strong>Protéines :</strong> œufs (18), poulet (500 g), saumon (400 g), sardines, bœuf maigre (250 g), cabillaud (200 g), gambas, yaourt grec nature (500 g), fromage</p>
 <p><strong>Légumes :</strong> épinards, brocoli, haricots verts, courgettes, poivrons, tomates, concombres, roquette, avocat (3-4), oignons, ail</p>
 <p><strong>Glucides IG bas :</strong> avoine, quinoa, lentilles, pois chiches, patate douce, pain complet au levain, riz basmati complet</p>
 <p><strong>Graisses :</strong> huile d'olive extra-vierge, amandes, noix, beurre d'amande, olives</p>
@@ -839,7 +839,7 @@ export const healthArticles: BlogArticle[] = [
 
 <ul>
 <li><strong>Préparez le dimanche</strong> : cuisinez les lentilles, le quinoa et les protéines en batch pour la semaine</li>
-<li><strong>Gardez des options d'urgence</strong> : boîtes de sardines, Å“ufs durs, noix — pour ne jamais vous retrouver sans option saine</li>
+<li><strong>Gardez des options d'urgence</strong> : boîtes de sardines, œufs durs, noix — pour ne jamais vous retrouver sans option saine</li>
 <li><strong>Hydratation</strong> : 2L d'eau par jour minimum. Thé vert (riche en catéchines anti-glycémiques) en journée</li>
 <li><strong>Ne sautez pas le petit-déjeuner</strong> si vous n'êtes pas en jeûne intermittent — un petit-déjeuner protéiné stabilise la glycémie pour toute la matinée</li>
 </ul>
@@ -927,7 +927,7 @@ export const healthArticles: BlogArticle[] = [
 
 <h2>Plan alimentaire anti-stéatose : journée type</h2>
 
-<p><strong>Matin (10h — après jeûne 16/8) :</strong> 3 Å“ufs brouillés au curcuma + avocat + café noir (2 tasses)</p>
+<p><strong>Matin (10h — après jeûne 16/8) :</strong> 3 œufs brouillés au curcuma + avocat + café noir (2 tasses)</p>
 <p><strong>Midi :</strong> Sardines grillées + grande salade de roquette, betterave crue râpée, noix + huile d'olive + citron</p>
 <p><strong>Collation :</strong> Poignée d'amandes + thé vert</p>
 <p><strong>Soir (avant 20h) :</strong> Poulet rôti + brocoli vapeur + filet d'huile d'olive + artichaut vinaigrette</p>
@@ -1112,7 +1112,7 @@ export const healthArticles: BlogArticle[] = [
 </thead>
 <tbody>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 94 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">✅ Normal</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">94 à 102 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">⚠ï¸ Risque accru</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">94 à 102 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">⚠️ Risque accru</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 102 cm</td><td style="padding:12px;border:1px solid #e5e7eb;">🔴 Risque élevé</td></tr>
 </tbody>
 </table>
@@ -1157,7 +1157,7 @@ export const healthArticles: BlogArticle[] = [
 <li><strong>Maladies cardiovasculaires</strong> : infarctus, AVC, hypertension</li>
 <li><strong>Stéatose hépatique</strong> : présente chez 80 % des hommes avec un tour de taille supérieur à 102 cm</li>
 <li><strong>Apnée du sommeil</strong></li>
-<li><strong>Baisse de testostérone</strong> : l'aromatase convertit la testostérone en Å“strogènes</li>
+<li><strong>Baisse de testostérone</strong> : l'aromatase convertit la testostérone en œstrogènes</li>
 <li><strong>Inflammation chronique</strong> : cytokines pro-inflammatoires (TNF-Î±, IL-6)</li>
 <li><strong>Certains cancers</strong> : côlon, prostate, pancréas</li>
 </ul>
@@ -1225,7 +1225,7 @@ export const healthArticles: BlogArticle[] = [
     content: `<article>
 <h1>Graisse Viscérale : Le Danger Invisible (et Comment l'Éliminer)</h1>
 
-<p>Toutes les graisses ne se valent pas. La graisse sous-cutanée — celle que vous pouvez pincer — est relativement inoffensive. Mais il existe un autre type, <strong>caché en profondeur autour de vos organes</strong> : foie, pancréas, intestins, cÅ“ur. C'est la <strong>graisse viscérale</strong>, le moteur silencieux de presque toutes les maladies métaboliques.</p>
+<p>Toutes les graisses ne se valent pas. La graisse sous-cutanée — celle que vous pouvez pincer — est relativement inoffensive. Mais il existe un autre type, <strong>caché en profondeur autour de vos organes</strong> : foie, pancréas, intestins, cœur. C'est la <strong>graisse viscérale</strong>, le moteur silencieux de presque toutes les maladies métaboliques.</p>
 
 <p>Vous pouvez avoir un IMC normal et être en danger. C'est pourquoi on l'appelle le <strong>« tueur silencieux »</strong>.</p>
 
@@ -1263,7 +1263,7 @@ export const healthArticles: BlogArticle[] = [
 
 <h3>3. Perturbation hormonale</h3>
 <ul>
-<li><strong>Baisse de testostérone</strong> : l'aromatase convertit la testostérone en Å“stradiol</li>
+<li><strong>Baisse de testostérone</strong> : l'aromatase convertit la testostérone en œstradiol</li>
 <li><strong>Résistance à la leptine</strong> : vous ne ressentez plus la satiété</li>
 <li><strong>Augmentation du cortisol</strong> : plus de récepteurs au cortisol dans la graisse viscérale</li>
 </ul>
@@ -1846,7 +1846,7 @@ export const healthArticles: BlogArticle[] = [
 </thead>
 <tbody>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>EPA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Poissons gras</td><td style="padding:12px;border:1px solid #e5e7eb;">⭐⭐⭐ Anti-inflammatoire</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>DHA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Poissons gras</td><td style="padding:12px;border:1px solid #e5e7eb;">⭐⭐⭐ Cerveau + cÅ“ur</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>DHA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Poissons gras</td><td style="padding:12px;border:1px solid #e5e7eb;">⭐⭐⭐ Cerveau + cœur</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;"><strong>ALA</strong></td><td style="padding:12px;border:1px solid #e5e7eb;">Lin, chia, noix</td><td style="padding:12px;border:1px solid #e5e7eb;">⭐ Conversion faible</td></tr>
 </tbody>
 </table>
@@ -1864,7 +1864,7 @@ export const healthArticles: BlogArticle[] = [
 
 <h3>✅ HDL : +5 à +10 %</h3>
 
-<h3>⚠ï¸ LDL : effet variable</h3>
+<h3>⚠️ LDL : effet variable</h3>
 <p>Légère augmentation possible, mais conversion des petites LDL denses (dangereuses) en grosses LDL flottantes (moins dangereuses) et réduction de l'oxydation du LDL.</p>
 
 <h3>✅ Ratio TG/HDL : amélioration significative</h3>
@@ -1942,7 +1942,7 @@ export const healthArticles: BlogArticle[] = [
 <tbody>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Moins de 1.5</td><td style="padding:12px;border:1px solid #e5e7eb;">✅ Excellent</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">1.5 à 2.5</td><td style="padding:12px;border:1px solid #e5e7eb;">👍 Bon</td></tr>
-<tr><td style="padding:12px;border:1px solid #e5e7eb;">2.5 à 3.5</td><td style="padding:12px;border:1px solid #e5e7eb;">⚠ï¸ Limite</td></tr>
+<tr><td style="padding:12px;border:1px solid #e5e7eb;">2.5 à 3.5</td><td style="padding:12px;border:1px solid #e5e7eb;">⚠️ Limite</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">3.5 à 5</td><td style="padding:12px;border:1px solid #e5e7eb;">🔶 Élevé</td></tr>
 <tr><td style="padding:12px;border:1px solid #e5e7eb;">Plus de 5</td><td style="padding:12px;border:1px solid #e5e7eb;">🔴 Très élevé</td></tr>
 </tbody>
