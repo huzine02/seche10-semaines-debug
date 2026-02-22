@@ -443,7 +443,7 @@ export const Landing: React.FC = () => {
       {/* INFO BAR */}
       <div className="urgency-bar" style={{ background: 'linear-gradient(90deg, #059669 0%, #047857 100%)' }}>
         <div className="urgency-inner">
-          <span className="urgency-text">🧪 Programme personnalisé par algorithme · Résultats en 10 semaines · 29€/mois</span>
+          <span className="urgency-text">🧪 Programme personnalisé par algorithme · Résultats en 10 semaines · 29€/mois · 7 jours gratuits</span>
         </div>
       </div>
 
